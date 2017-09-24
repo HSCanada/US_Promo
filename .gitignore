@@ -4,6 +4,7 @@
 *.mdb
 *.xlsx
 *.csv
+*.zip
 
 # Prerequisites
 *.d
