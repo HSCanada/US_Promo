@@ -1,3 +1,10 @@
+# MS Office
+*.accdb
+*.laccdb
+*.mdb
+*.xlsx
+*.csv
+
 # Prerequisites
 *.d
 

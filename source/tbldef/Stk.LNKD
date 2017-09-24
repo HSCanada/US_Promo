@@ -1,0 +1,3 @@
+﻿Stk
+Text;DSN=F4101StockType Link Specification;FMT=Delimited;HDR=NO;IMEX=2;CharacterSet=1252;;DATABASE=\\usnym3fs03\Data\dental\dentmkt\ItemData
+F4101StockType.csv

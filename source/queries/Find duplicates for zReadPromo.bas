@@ -1,0 +1,129 @@
+﻿Operation =1
+Option =0
+Where ="(((zReadPromo.Type) In (SELECT [Type] FROM [zReadPromo] As Tmp GROUP BY [Type],["
+    "PromoNm] HAVING Count(*)>1  And [PromoNm] = [zReadPromo].[PromoNm])))"
+Begin InputTables
+    Name ="zReadPromo"
+End
+Begin OutputColumns
+    Expression ="zReadPromo.Type"
+    Expression ="zReadPromo.PromoNm"
+    Expression ="zReadPromo.RecID"
+    Expression ="zReadPromo.ID"
+    Expression ="zReadPromo.SubmittedBy"
+    Expression ="zReadPromo.SubmitDt"
+    Expression ="zReadPromo.SubmitOffice"
+    Expression ="zReadPromo.Title"
+    Expression ="zReadPromo.Tel"
+    Expression ="zReadPromo.Ext"
+    Expression ="zReadPromo.Fax"
+    Expression ="zReadPromo.Email"
+    Expression ="zReadPromo.EffDate"
+    Expression ="zReadPromo.ExpDate"
+    Expression ="zReadPromo.HSImedia"
+    Expression ="zReadPromo.MediaMn"
+    Expression ="zReadPromo.Tier1"
+    Expression ="zReadPromo.Tier2"
+    Expression ="zReadPromo.Tier3"
+    Expression ="zReadPromo.Tier4"
+    Expression ="zReadPromo.TOC"
+    Expression ="zReadPromo.TOCNm"
+    Expression ="zReadPromo.STOC"
+    Expression ="zReadPromo.STOCNm"
+    Expression ="zReadPromo.EffMnth"
+    Expression ="zReadPromo.EffQtr"
+    Expression ="zReadPromo.EffYr"
+    Expression ="zReadPromo.ImpQtr"
+    Expression ="zReadPromo.ImpYr"
+    Expression ="zReadPromo.SamplDesc"
+    Expression ="zReadPromo.Lit"
+    Expression ="zReadPromo.PcsRep"
+    Expression ="zReadPromo.PcsCtr"
+    Expression ="zReadPromo.Div"
+    Expression ="zReadPromo.Dept"
+    Expression ="zReadPromo.Approvd"
+    Expression ="zReadPromo.ApprvBy"
+    Expression ="zReadPromo.ApprvDt"
+    Expression ="zReadPromo.DftPromo"
+    Expression ="zReadPromo.SaleFlyer"
+    Expression ="zReadPromo.TargetGroup"
+    Expression ="zReadPromo.TargetZone"
+    Expression ="zReadPromo.OrderLevel"
+    Expression ="zReadPromo.SWO"
+    Expression ="zReadPromo.RedeemDt"
+    Expression ="zReadPromo.RdmTel"
+    Expression ="zReadPromo.RdmFax"
+    Expression ="zReadPromo.FlyerNm"
+    Expression ="zReadPromo.PgNo"
+    Expression ="zReadPromo.FSCSells"
+    Expression ="zReadPromo.FSCGets"
+    Expression ="zReadPromo.HSIMinVolume"
+    Expression ="zReadPromo.HSIRebate"
+    Expression ="zReadPromo.BuyInStart"
+    Expression ="zReadPromo.BuyInEnd"
+    Expression ="zReadPromo.Fulfillment"
+    Expression ="zReadPromo.Quantity"
+    Expression ="zReadPromo.PromoCode"
+    Expression ="zReadPromo.EZ"
+    Expression ="zReadPromo.MP"
+    Expression ="zReadPromo.HowSent"
+    Expression ="zReadPromo.SentDate"
+    Expression ="zReadPromo.DistReps"
+    Expression ="zReadPromo.HSIContact"
+    Expression ="zReadPromo.FlyerPg"
+    Expression ="zReadPromo.FldCom"
+    Expression ="zReadPromo.FldNotes"
+    Expression ="zReadPromo.MgdNotes"
+    Expression ="zReadPromo.StreetSuite"
+    Expression ="zReadPromo.CityStZip"
+    Expression ="zReadPromo.VndTel"
+    Expression ="zReadPromo.VndFax"
+    Expression ="zReadPromo.WebSite"
+    Expression ="zReadPromo.PromoCd"
+    Expression ="zReadPromo.AdMn"
+    Expression ="zReadPromo.AdStart"
+    Expression ="zReadPromo.AdEnd"
+    Expression ="zReadPromo.AdNm"
+    Expression ="zReadPromo.AdRdmDt"
+    Expression ="zReadPromo.Deletd"
+    Expression ="zReadPromo.DelDt"
+    Expression ="zReadPromo.DelUSER"
+    Expression ="zReadPromo.SelItmSet"
+End
+Begin OrderBy
+    Expression ="zReadPromo.Type"
+    Flag =0
+    Expression ="zReadPromo.PromoNm"
+    Flag =0
+End
+dbBoolean "ReturnsRecords" ="-1"
+dbInteger "ODBCTimeout" ="60"
+dbByte "RecordsetType" ="0"
+dbBoolean "OrderByOn" ="0"
+dbByte "Orientation" ="0"
+dbByte "DefaultView" ="2"
+Begin
+End
+Begin
+    State =0
+    Left =62
+    Top =84
+    Right =1002
+    Bottom =396
+    Left =-1
+    Top =-1
+    Right =933
+    Bottom =144
+    Left =0
+    Top =0
+    ColumnsShown =539
+    Begin
+        Left =38
+        Top =6
+        Right =134
+        Bottom =113
+        Top =0
+        Name ="zReadPromo"
+        Name =""
+    End
+End
