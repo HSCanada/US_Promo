@@ -1,0 +1,4 @@
+﻿dbo_OL_ItemCode
+ODBC;DSN=SQ03_Offline;APP=Microsoft Office 2003;WSID=CAHSIONNLD3108;DATABASE=Offline;Trusted_Connection=Yes
+dbo.OL_ItemCode
+Item Number

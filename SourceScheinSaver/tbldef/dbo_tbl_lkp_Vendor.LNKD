@@ -1,0 +1,4 @@
+﻿dbo_tbl_lkp_Vendor
+ODBC;DSN=Redemptions;UID=us_redemptions;PWD=qakUb3-e;APP=Microsoft Office 2003;WSID=CAHSIONNLD3108;DATABASE=Redemptions
+dbo.tbl_lkp_Vendor
+VendorNumber

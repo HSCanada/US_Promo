@@ -1,0 +1,4 @@
+﻿1_Promo_Final_Note_Export
+ODBC;DSN=Redemptions;Trusted_Connection=Yes;APP=Microsoft Office 2003;WSID=CAHSIONNLD3108;DATABASE=Redemptions
+dbo.Asysnote_Export
+ID

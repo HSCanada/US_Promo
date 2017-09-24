@@ -1,0 +1,4 @@
+﻿dbo_tbl_Main
+ODBC;DSN=Redemptions;Trusted_Connection=Yes;APP=Microsoft Office 2003;WSID=CAHSIONNLD3108;DATABASE=Redemptions
+dbo.tbl_Main
+RecID
