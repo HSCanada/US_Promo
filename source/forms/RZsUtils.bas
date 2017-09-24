@@ -549,7 +549,7 @@ Private Sub PrintMacroTxt_Click()
     sExportLocation = "X:\Dental\dentmkt\Zbase\Promos\MacroTxt\"
     Set c = Db.Containers("Scripts")
     For Each d In c.Documents
-       Application.SaveAsText acMacro, d.name, sExportLocation & "Macro_" & d.name & ".txt"
+       Application.SaveAsText acMacro, d.Name, sExportLocation & "Macro_" & d.Name & ".txt"
     Next d
     
     MsgBox "Promo ACCDB Text Files have been sent to X:\Dental\dentmkt\Zbase\Promos\MacroTxt\"

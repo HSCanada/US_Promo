@@ -11178,7 +11178,7 @@ End If
 '****                                                   *****
 '************************************************************
 stMyDir = Application.CodeProject.Path
-stMyNm = Application.CurrentProject.name
+stMyNm = Application.CurrentProject.Name
 stMyPath = Application.CurrentProject.Path
 
 If IsNull(Me![EmlUpDt]) Or IsNull(Me![EmlTech]) Then

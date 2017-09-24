@@ -1,4 +1,4 @@
 ﻿mReadGiftCode
-;DATABASE=\\nym2212t\corpshare\dental\dentmkt\2KFLDTBL.mdb
+;DATABASE=.\DataSourceUS\2KFLDTBL.mdb
 zGiftCode
 CodeID
