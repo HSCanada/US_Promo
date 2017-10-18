@@ -6,6 +6,7 @@
 *.csv
 *.zip
 *.xls
+DataSourceUS/
 
 # Prerequisites
 *.d
