@@ -5,6 +5,7 @@
 *.xlsx
 *.csv
 *.zip
+*.xls
 
 # Prerequisites
 *.d

@@ -1,0 +1,3 @@
+﻿WCS ITEMFILEsunset
+Text;DSN=WcsSpec;FMT=Delimited;HDR=NO;IMEX=2;CharacterSet=437;;DATABASE=.\DataSourceUS
+WcsItemFile.csv

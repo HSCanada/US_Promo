@@ -1,0 +1,3 @@
+﻿Stk
+Text;DSN=F4101StockType Link Specification;FMT=Delimited;HDR=NO;IMEX=2;CharacterSet=1252;;DATABASE=.\DataSourceUS
+F4101StockType.csv

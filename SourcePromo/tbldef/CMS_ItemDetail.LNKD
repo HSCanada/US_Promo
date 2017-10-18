@@ -1,0 +1,4 @@
+﻿CMS_ItemDetail
+ODBC;DRIVER=SQL Server;SERVER=USNYMEDNT1;UID=Richard.Zepernick;Trusted_Connection=Yes;APP=Microsoft Office 2010;DATABASE=Dental
+CMS.ItemDetail
+Item
