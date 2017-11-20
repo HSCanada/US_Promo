@@ -1,6 +1,6 @@
 Option Compare Database
 
-Global Db As Database
+Global db As Database
 Global rs As Recordset
 
 Sub CreateTableLinks()
@@ -21,18 +21,18 @@ Dim intTableExists As Integer
     strServer = InputBox("Enter the Server Path.  EX: \\usnym3fs03\Data", _
         "Server Path", "\\usnym3fs03\Data")
     
-    Set Db = CurrentDb
+    Set db = CurrentDb
     
     'If Linkstable exists, do not overwrite
-    If DoesExist(Db, "LinksTable") Then
+    If DoesExist(db, "LinksTable") Then
         'Delete Previous version
-        Db.TableDefs.Delete ("LinksTable")
+        db.TableDefs.Delete ("LinksTable")
         
         'Create LinksTable
         strSQL = "SELECT MSysObjects.Connect, MSysObjects.Database, " _
             & "MSysObjects.ForeignName, MSysObjects.Name, '' AS ErrNumber, '' AS ErrDescription INTO [LinksTable] " _
             & "FROM MSysObjects WHERE (((MSysObjects.Database) Is Not Null));"
-        Set qd = Db.CreateQueryDef("", strSQL)
+        Set qd = db.CreateQueryDef("", strSQL)
             qd.Execute
             qd.Close
             Set qd = Nothing
@@ -41,7 +41,7 @@ Dim intTableExists As Integer
         strSQL = "SELECT MSysObjects.Connect, MSysObjects.Database, " _
             & "MSysObjects.ForeignName, MSysObjects.Name, '' AS ErrNumber, '' AS ErrDescription INTO [LinksTable] " _
             & "FROM MSysObjects WHERE (((MSysObjects.Database) Is Not Null));"
-        Set qd = Db.CreateQueryDef("", strSQL)
+        Set qd = db.CreateQueryDef("", strSQL)
             qd.Execute
             qd.Close
             Set qd = Nothing
@@ -49,7 +49,7 @@ Dim intTableExists As Integer
     
     
     strSQL = "Linkstable"
-    Set rs = Db.OpenRecordset(strSQL, dbOpenDynaset)
+    Set rs = db.OpenRecordset(strSQL, dbOpenDynaset)
     
     With rs
         .MoveFirst
@@ -84,20 +84,20 @@ Dim intTableExists As Integer
                 '    Exit Sub
                 End If
             
-                If DoesExist(Db, "LinksTableTEST") Then
+                If DoesExist(db, "LinksTableTEST") Then
                     'Delete Previous version
-                    Db.TableDefs.Delete ("LinksTableTEST")
+                    db.TableDefs.Delete ("LinksTableTEST")
                 End If
                 
-                intTableExists = ConnectOutputTEMP(Db, "LinksTableTEST", strTablePath, strForeignName)
+                intTableExists = ConnectOutputTEMP(db, "LinksTableTEST", strTablePath, strForeignName)
                 If intTableExists = 0 Then
                       'Delete linked table so you can re-link it without a drive designation
-                    If DoesExist(Db, strName) Then
+                    If DoesExist(db, strName) Then
                         'If table exists, this will kill it
-                        Db.TableDefs.Delete (strName)
+                        db.TableDefs.Delete (strName)
                     End If
                     'Creates the link based on the data provided in LinksTable
-                    ConnectOutput Db, strName, strTablePath, strForeignName
+                    ConnectOutput db, strName, strTablePath, strForeignName
                     Debug.Print Right(strDatabase, (Len(strDatabase) - 2))
                 Else
                     
@@ -106,16 +106,16 @@ Dim intTableExists As Integer
             .MoveNext
         Loop
     End With
-    If DoesExist(Db, "LinksTableTEST") Then
+    If DoesExist(db, "LinksTableTEST") Then
         'Delete Previous version
-        Db.TableDefs.Delete ("LinksTableTEST")
+        db.TableDefs.Delete ("LinksTableTEST")
     End If
     
     'Clean up
     rs.Close
     Set rs = Nothing
-    Db.Close
-    Set Db = Nothing
+    db.Close
+    Set db = Nothing
     
  End Sub
 Function ConnectOutputTEMP(dbsTemp As Database, _

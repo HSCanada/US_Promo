@@ -539,15 +539,15 @@ Private Sub PrintMacroTxt_Click()
 'Public Sub ExportDatabaseObjects()
 'On Error GoTo Err_ExportDatabaseObjects
 
-    Dim Db As Database
+    Dim db As Database
     Dim d As Document
     Dim c As Container
     Dim sExportLocation As String
 
-    Set Db = CurrentDb()
+    Set db = CurrentDb()
 
     sExportLocation = "X:\Dental\dentmkt\Zbase\Promos\MacroTxt\"
-    Set c = Db.Containers("Scripts")
+    Set c = db.Containers("Scripts")
     For Each d In c.Documents
        Application.SaveAsText acMacro, d.Name, sExportLocation & "Macro_" & d.Name & ".txt"
     Next d

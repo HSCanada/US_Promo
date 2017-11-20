@@ -1354,7 +1354,7 @@ Private Sub FindUnlisted_Click()
     Dim objOutlookMsg As Outlook.MailItem
     Dim objOutlookRecip As Outlook.Recipient
     Dim objOutlookAttach As Outlook.Attachment
-    Dim Db As Database
+    Dim db As Database
     Dim rs As Recordset
     '
 
@@ -1362,9 +1362,9 @@ Private Sub FindUnlisted_Click()
     ' Change "tablename" to the name of your table
     ' Select statement can be more complex if you need only a subset of the
     ' records from the table
-    Set Db = CurrentDb()
+    Set db = CurrentDb()
 '***********************
-    Set rs = Db.OpenRecordset("SELECT * FROM [zCorpNSubSend];", dbOpenSnapshot)
+    Set rs = db.OpenRecordset("SELECT * FROM [zCorpNSubSend];", dbOpenSnapshot)
 'Change [zCorpNSubTest] to [zCorpNSubSend] for regular operations
 '***********************
 
@@ -1466,11 +1466,11 @@ Private Sub FindUnlisted_Click()
         rs.MoveNext
         Loop
         rs.Close
-        Db.Close
+        db.Close
 
         Set objOutlook = Nothing
         Set rs = Nothing
-        Set Db = Nothing
+        Set db = Nothing
            
        Next x
 
@@ -1593,7 +1593,7 @@ On Error GoTo Err_SendIt_Click
     Dim objOutlookMsg As Outlook.MailItem
     Dim objOutlookRecip As Outlook.Recipient
     Dim objOutlookAttach As Outlook.Attachment
-    Dim Db As Database
+    Dim db As Database
     Dim rs As Recordset
     '
 
@@ -1601,9 +1601,9 @@ On Error GoTo Err_SendIt_Click
     ' Change "tablename" to the name of your table
     ' Select statement can be more complex if you need only a subset of the
     ' records from the table
-    Set Db = CurrentDb()
+    Set db = CurrentDb()
 '***********************
-    Set rs = Db.OpenRecordset("SELECT * FROM [zCorpNSubT];", dbOpenSnapshot)
+    Set rs = db.OpenRecordset("SELECT * FROM [zCorpNSubT];", dbOpenSnapshot)
 'Change [zCorpNSubTest] to [zCorpNSubT] for regular operations
 '***********************
     'Loop through records sending a message to each person
@@ -1664,11 +1664,11 @@ On Error GoTo Err_SendIt_Click
         rs.MoveNext
         Loop
         rs.Close
-        Db.Close
+        db.Close
 
         Set objOutlook = Nothing
         Set rs = Nothing
-        Set Db = Nothing
+        Set db = Nothing
            
        'Next x
 

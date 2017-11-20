@@ -9,15 +9,15 @@ Public Function AttachMyFile()
     Dim objOutlookMsg As Outlook.MailItem
     Dim objOutlookRecip As Outlook.Recipient
     Dim objOutlookAttach As Outlook.Attachment
-    Dim Db As Database
+    Dim db As Database
     Dim rs As Recordset
 
     ' Create Recordset from table that contains the list of recipients
     ' Change "tablename" to the name of your table
     ' Select statement can be more complex if you need only a subset of the
     ' records from the table
-    Set Db = CurrentDb()
-    Set rs = Db.OpenRecordset("SELECT * FROM [zCorpNSubTest];", dbOpenSnapshot)
+    Set db = CurrentDb()
+    Set rs = db.OpenRecordset("SELECT * FROM [zCorpNSubTest];", dbOpenSnapshot)
     'Loop through records sending a message to each person
     Do Until rs.EOF
 
@@ -70,7 +70,7 @@ Public Function AttachMyFile()
     rs.MoveNext
     Loop
     rs.Close
-    Db.Close
+    db.Close
 End Function
 Sub Send_Via_Outlook(sTo$, sSubject$, sMessage$, bAttach_Batch_File As Boolean, Optional File_PathAndName$)
 Dim objOutlook As Outlook.Application, sCurrentMessage As MailItem

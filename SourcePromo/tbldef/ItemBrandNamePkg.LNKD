@@ -1,3 +1,3 @@
 ﻿ItemBrandNamePkg
-Text;DSN=ItemBrandNamePkg Link Specification;FMT=Delimited;HDR=NO;IMEX=2;CharacterSet=437;;DATABASE=.\DataSourceUS
+Text;DSN=CatTocItmDEN Link Specification;FMT=Delimited;HDR=NO;IMEX=2;CharacterSet=437;;DATABASE=.\DataSourceUS
 ItemBrandNamePkg.csv

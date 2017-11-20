@@ -4,11 +4,11 @@ Option Compare Database
 
 
 Sub DSNCreate()
-Dim Db As DAO.Database
+Dim db As DAO.Database
 Dim rs As DAO.Recordset
     
-    Set Db = CurrentDb
-    Set rs = Db.OpenRecordset("LinksTable_SQL", dbOpenSnapshot)
+    Set db = CurrentDb
+    Set rs = db.OpenRecordset("LinksTable_SQL", dbOpenSnapshot)
     With rs
         .MoveFirst
         Do
@@ -22,7 +22,7 @@ Dim rs As DAO.Recordset
     End With
     rs.Close
     Set rs = Nothing
-    Db.Close
+    db.Close
     
     MsgBox "DSN-Less Links complete..."
     
