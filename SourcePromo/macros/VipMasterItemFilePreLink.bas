@@ -1,6 +1,9 @@
 ﻿Version =196611
 ColumnsShown =0
 Begin
+    Comment ="debug.print(\"x\")"
+End
+Begin
     Comment ="Launched from [ItemMasterUpDateM] Taken out of Line 5/22/2013"
 End
 Begin
@@ -106,83 +109,82 @@ End
 Begin
     Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
         "nterfaceMacro MinimumClientDesignVersion=\"14.0.0000.0000\" xmlns=\"http://schem"
-        "as.microsoft.com/office/accessservices/2009/11/application\" xmlns:a=\"http://sc"
-        "hemas.microsoft.com/office/acc"
+        "as.microsoft.com/office/accessservices/2009/11/application\"><Statements><Commen"
+        "t>debug.print(\"x\")</Comment><"
 End
 Begin
-    Comment ="_AXL:essservices/2009/11/forms\"><Statements><Comment>Launched from [ItemMasterU"
-        "pDateM] Taken out of Line 5/22/2013</Comment><Comment>Off - Just replace existin"
-        "g  [VipMasterItemFilePre] table</Comment><Action Name=\"SetWarnings\"/><Comment>"
-        "\\\\nahsinyhqdw07\\"
+    Comment ="_AXL:Comment>Launched from [ItemMasterUpDateM] Taken out of Line 5/22/2013</Comm"
+        "ent><Comment>Off - Just replace existing  [VipMasterItemFilePre] table</Comment>"
+        "<Action Name=\"SetWarnings\"/><Comment>\\\\nahsinyhqdw07\\vip_promos_prod\\Vip_P"
+        "ickup\\OKdData.mdb  "
 End
 Begin
-    Comment ="_AXL:vip_promos_prod\\Vip_Pickup\\OKdData.mdb  Tbl [ItemMasterStruct] copied as "
-        "[VipMasterItemFilePre]</Comment><Action Name=\"CopyObject\"><Argument Name=\"Des"
-        "tinationDatabase\">\\\\dvhsinyhqdw01\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb</"
-        "Argument><Argument Name="
+    Comment ="_AXL:Tbl [ItemMasterStruct] copied as [VipMasterItemFilePre]</Comment><Action Na"
+        "me=\"CopyObject\"><Argument Name=\"DestinationDatabase\">\\\\dvhsinyhqdw01\\vip_"
+        "promos_prod\\Vip_Pickup\\OKdData.mdb</Argument><Argument Name=\"NewName\">VipMas"
+        "terItemFilePre</Argument"
 End
 Begin
-    Comment ="_AXL:\"NewName\">VipMasterItemFilePre</Argument><Argument Name=\"SourceObjectTyp"
-        "e\">Table</Argument><Argument Name=\"SourceObjectName\">ItemMasterStruct</Argume"
-        "nt></Action><Comment>On</Comment><Action Name=\"SetWarnings\"><Argument Name=\"W"
-        "arningsOn\">Yes</Argume"
+    Comment ="_AXL:><Argument Name=\"SourceObjectType\">Table</Argument><Argument Name=\"Sourc"
+        "eObjectName\">ItemMasterStruct</Argument></Action><Comment>On</Comment><Action N"
+        "ame=\"SetWarnings\"><Argument Name=\"WarningsOn\">Yes</Argument></Action><Condit"
+        "ionalBlock><If><Condi"
 End
 Begin
-    Comment ="_AXL:nt></Action><ConditionalBlock><If><Condition>DCount(\"*\",\"VipMasterItemFi"
-        "lePre\")&lt;50000</Condition><Statements><Comment>Couldn't find [VipMasterItemFi"
-        "lePre]</Comment><Action Name=\"EMailDatabaseObject\"><Argument Name=\"To\">richa"
-        "rd.zepernick@henrysch"
+    Comment ="_AXL:tion>DCount(\"*\",\"VipMasterItemFilePre\")&lt;50000</Condition><Statements"
+        "><Comment>Couldn't find [VipMasterItemFilePre]</Comment><Action Name=\"EMailData"
+        "baseObject\"><Argument Name=\"To\">richard.zepernick@henryschein.com</Argument><"
+        "Argument Name=\"Subjec"
 End
 Begin
-    Comment ="_AXL:ein.com</Argument><Argument Name=\"Subject\">Promo.mdb [VipMasterItemFilePr"
-        "e] Not Found</Argument><Argument Name=\"MessageText\">Couldn't find [VipMasterIt"
-        "emFilePre]</Argument><Argument Name=\"EditMessage\">No</Argument></Action><Actio"
-        "n Name=\"StopMacro\"/"
+    Comment ="_AXL:t\">Promo.mdb [VipMasterItemFilePre] Not Found</Argument><Argument Name=\"M"
+        "essageText\">Couldn't find [VipMasterItemFilePre]</Argument><Argument Name=\"Edi"
+        "tMessage\">No</Argument></Action><Action Name=\"StopMacro\"/></Statements></If><"
+        "/ConditionalBlock><C"
 End
 Begin
-    Comment ="_AXL:></Statements></If></ConditionalBlock><Comment>Subject: Promo.mdb No [VipMa"
-        "sterItemFilePre] Found</Comment><Comment>To: richard.zepernick@henryschein.com</"
-        "Comment><Comment>Subject: Promo.mdb Got [VipMasterItemFilePre]</Comment><Comment"
-        ">To: richard."
+    Comment ="_AXL:omment>Subject: Promo.mdb No [VipMasterItemFilePre] Found</Comment><Comment"
+        ">To: richard.zepernick@henryschein.com</Comment><Comment>Subject: Promo.mdb Got "
+        "[VipMasterItemFilePre]</Comment><Comment>To: richard.zepernick@henryschein.com</"
+        "Comment><Cond"
 End
 Begin
-    Comment ="_AXL:zepernick@henryschein.com</Comment><ConditionalBlock><If><Condition>DCount("
-        "\"*\",\"VipMasterItemFilePre\")&gt;50000</Condition><Statements><Comment>Located"
-        " [VipMasterItemFilePre], del old [VipMasterItemFilePre] make new - in \\\\nahsin"
-        "yhqdw07\\vip_promos_"
+    Comment ="_AXL:itionalBlock><If><Condition>DCount(\"*\",\"VipMasterItemFilePre\")&gt;50000"
+        "</Condition><Statements><Comment>Located [VipMasterItemFilePre], del old [VipMas"
+        "terItemFilePre] make new - in \\\\nahsinyhqdw07\\vip_promos_prod\\Vip_Pickup\\OK"
+        "dData.mdb</Comment><Ac"
 End
 Begin
-    Comment ="_AXL:prod\\Vip_Pickup\\OKdData.mdb</Comment><Action Name=\"EMailDatabaseObject\""
-        "><Argument Name=\"To\">richard.zepernick@henryschein.com</Argument><Argument Nam"
-        "e=\"Subject\">Promo.mdb Got it [VipMasterItemFilePre]</Argument><Argument Name=\""
-        "MessageText\">Located "
+    Comment ="_AXL:tion Name=\"EMailDatabaseObject\"><Argument Name=\"To\">richard.zepernick@h"
+        "enryschein.com</Argument><Argument Name=\"Subject\">Promo.mdb Got it [VipMasterI"
+        "temFilePre]</Argument><Argument Name=\"MessageText\">Located [VipMasterItemFileP"
+        "re], del old [VipMast"
 End
 Begin
-    Comment ="_AXL:[VipMasterItemFilePre], del old [VipMasterItemFilePre] local tbl and link n"
-        "ew - in \\\\nahsinyhqdw07\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb</Argument><A"
-        "rgument Name=\"EditMessage\">No</Argument></Action><Comment>Off</Comment><Action"
-        " Name=\"SetWarnings\"/"
+    Comment ="_AXL:erItemFilePre] local tbl and link new - in \\\\nahsinyhqdw07\\vip_promos_pr"
+        "od\\Vip_Pickup\\OKdData.mdb</Argument><Argument Name=\"EditMessage\">No</Argumen"
+        "t></Action><Comment>Off</Comment><Action Name=\"SetWarnings\"/><Comment>existsTa"
+        "ble = DCount(\"MyTableN"
 End
 Begin
-    Comment ="_AXL:><Comment>existsTable = DCount(\"MyTableName\", \"MSysObjects\",  \"[Name]="
-        "'MyTableName'\")   - On IsTable = True, delete [VipMasterItemFilePre]</Comment><"
-        "Action Name=\"DeleteObject\"><Argument Name=\"ObjectType\">Table</Argument><Argu"
-        "ment Name=\"ObjectName\">"
+    Comment ="_AXL:ame\", \"MSysObjects\",  \"[Name]='MyTableName'\")   - On IsTable = True, d"
+        "elete [VipMasterItemFilePre]</Comment><Action Name=\"DeleteObject\"><Argument Na"
+        "me=\"ObjectType\">Table</Argument><Argument Name=\"ObjectName\">VipMasterItemFil"
+        "ePre</Argument></Action>"
 End
 Begin
-    Comment ="_AXL:VipMasterItemFilePre</Argument></Action><Comment>After creating, link \\\\n"
-        "ahsinyhqdw07\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb [VipMasterItemFilePre] in"
-        "to current db</Comment><Action Name=\"ImportExportData\"><Argument Name=\"Transf"
-        "erType\">Link</Argumen"
+    Comment ="_AXL:<Comment>After creating, link \\\\nahsinyhqdw07\\vip_promos_prod\\Vip_Picku"
+        "p\\OKdData.mdb [VipMasterItemFilePre] into current db</Comment><Action Name=\"Im"
+        "portExportData\"><Argument Name=\"TransferType\">Link</Argument><Argument Name=\""
+        "DatabaseName\">\\\\dvhsin"
 End
 Begin
-    Comment ="_AXL:t><Argument Name=\"DatabaseName\">\\\\dvhsinyhqdw01\\vip_promos_prod\\Vip_P"
-        "ickup\\OKdData.mdb</Argument><Argument Name=\"Source\">VipMasterItemFilePre</Arg"
-        "ument><Argument Name=\"Destination\">VipMasterItemFilePre</Argument></Action><Co"
-        "mment>On</Comment><Actio"
+    Comment ="_AXL:yhqdw01\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb</Argument><Argument Name="
+        "\"Source\">VipMasterItemFilePre</Argument><Argument Name=\"Destination\">VipMast"
+        "erItemFilePre</Argument></Action><Comment>On</Comment><Action Name=\"SetWarnings"
+        "\"><Argument Name=\"War"
 End
 Begin
-    Comment ="_AXL:n Name=\"SetWarnings\"><Argument Name=\"WarningsOn\">Yes</Argument></Action"
-        "></Statements></If></ConditionalBlock><Comment></Comment></Statements></UserInte"
-        "rfaceMacro>"
+    Comment ="_AXL:ningsOn\">Yes</Argument></Action></Statements></If></ConditionalBlock><Comm"
+        "ent></Comment></Statements></UserInterfaceMacro>"
 End

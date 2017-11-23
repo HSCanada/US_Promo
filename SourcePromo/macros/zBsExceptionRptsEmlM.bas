@@ -1,6 +1,9 @@
 ﻿Version =196611
 ColumnsShown =0
 Begin
+    Comment ="debug.print(\"x\")"
+End
+Begin
     Comment ="Promotion Exceptions Reports"
 End
 Begin
@@ -8,8 +11,6 @@ Begin
 End
 Begin
     Comment ="2. Promos w/o ItemSub records"
-End
-Begin
 End
 Begin
     Action ="SendObject"
@@ -34,8 +35,6 @@ Begin
         "ot have a linked [zBuy] record. \""
 End
 Begin
-End
-Begin
     Action ="SendObject"
     Comment ="2. Promos w/o ItemSub records - Send Richard Zepernick message with exceptions r"
         "eport attachment"
@@ -56,4 +55,61 @@ End
 Begin
     Comment ="Body: \"The attached report [zBsPromoWoItemSubQ] shows promotions [zPromo] that "
         "do not have a linked [zItemSuby] record. \""
+End
+Begin
+    Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+        "nterfaceMacro MinimumClientDesignVersion=\"14.0.0000.0000\" xmlns=\"http://schem"
+        "as.microsoft.com/office/accessservices/2009/11/application\"><Statements><Commen"
+        "t>debug.print(\"x\")</Comment><"
+End
+Begin
+    Comment ="_AXL:Comment>Promotion Exceptions Reports</Comment><Comment>1. Promos w/o Buy re"
+        "cords</Comment><Comment>2. Promos w/o ItemSub records</Comment><Comment>1. Promo"
+        "s w/o Buy records - Send Richard Zepernick message with exceptions report attach"
+        "ment</Comment"
+End
+Begin
+    Comment ="_AXL:><Action Name=\"EMailDatabaseObject\"><Argument Name=\"ObjectType\">Query</"
+        "Argument><Argument Name=\"ObjectName\">zBsPromoWoBuyQ</Argument><Argument Name=\""
+        "OutputFormat\">MicrosoftExcelBiff8(*.xls)</Argument><Argument Name=\"To\">Richar"
+        "d.Zepernick@henryschei"
+End
+Begin
+    Comment ="_AXL:n.com;Eric.Silverstein@henryschein.com;</Argument><Argument Name=\"Cc\">Ron"
+        ".Kralik@henryschein.com</Argument><Argument Name=\"Subject\">Promos w/o Buys - E"
+        "xception Report</Argument><Argument Name=\"MessageText\">The attached report [zB"
+        "sPromoWoBuyQ] shows"
+End
+Begin
+    Comment ="_AXL: promotions [zPromo] that do not have a linked [zBuy] record.</Argument><Ar"
+        "gument Name=\"EditMessage\">No</Argument></Action><Comment>Subject: \"Promos w/o"
+        " Buys - Exception Report\"</Comment><Comment>Body: \"The attached report [zBsPro"
+        "moWoBuyQ] shows pr"
+End
+Begin
+    Comment ="_AXL:omotions [zPromo] that do not have a linked [zBuy] record. \"</Comment><Com"
+        "ment>2. Promos w/o ItemSub records - Send Richard Zepernick message with excepti"
+        "ons report attachment</Comment><Action Name=\"EMailDatabaseObject\"><Argument Na"
+        "me=\"ObjectType\">"
+End
+Begin
+    Comment ="_AXL:Query</Argument><Argument Name=\"ObjectName\">zBsPromoWoItemSubQ</Argument>"
+        "<Argument Name=\"OutputFormat\">MicrosoftExcelBiff8(*.xls)</Argument><Argument N"
+        "ame=\"To\">Richard.Zepernick@henryschein.com;Eric.Silverstein@henryschein.com;</"
+        "Argument><Argument "
+End
+Begin
+    Comment ="_AXL:Name=\"Cc\">Ron.Kralik@henryschein.com</Argument><Argument Name=\"Subject\""
+        ">Promos w/o ItemSubs - Exception Report</Argument><Argument Name=\"MessageText\""
+        ">The attached report [zBsPromoWoItemSubQ] shows promotions [zPromo] that do not "
+        "have a linked [zIte"
+End
+Begin
+    Comment ="_AXL:mSub] record.</Argument><Argument Name=\"EditMessage\">No</Argument></Actio"
+        "n><Comment>Subject: \"Promos w/o ItemSubs - Exception Report\"</Comment><Comment"
+        ">Body: \"The attached report [zBsPromoWoItemSubQ] shows promotions [zPromo] that"
+        " do not have a lin"
+End
+Begin
+    Comment ="_AXL:ked [zItemSuby] record. \"</Comment></Statements></UserInterfaceMacro>"
 End

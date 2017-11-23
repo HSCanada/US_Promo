@@ -1,6 +1,9 @@
 ﻿Version =196611
 ColumnsShown =0
 Begin
+    Comment ="debug.print(\"x\")"
+End
+Begin
     Action ="SetWarnings"
     Comment ="Update Toc/Stoc to Itemcode cross-reference"
     Argument ="0"
@@ -71,52 +74,51 @@ End
 Begin
     Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
         "nterfaceMacro MinimumClientDesignVersion=\"14.0.0000.0000\" xmlns=\"http://schem"
-        "as.microsoft.com/office/accessservices/2009/11/application\" xmlns:a=\"http://sc"
-        "hemas.microsoft.com/office/acc"
+        "as.microsoft.com/office/accessservices/2009/11/application\"><Statements><Commen"
+        "t>debug.print(\"x\")</Comment><"
 End
 Begin
-    Comment ="_AXL:essservices/2009/11/forms\"><Statements><Comment>Update Toc/Stoc to Itemcod"
-        "e cross-reference</Comment><Action Name=\"SetWarnings\"/><Action Name=\"OnError\""
-        "/><Comment>[zTSICsMTQ]&gt;[zTSIC]</Comment><Action Name=\"OpenQuery\"><Argument "
-        "Name=\"QueryName\">zT"
+    Comment ="_AXL:Comment>Update Toc/Stoc to Itemcode cross-reference</Comment><Action Name=\""
+        "SetWarnings\"/><Action Name=\"OnError\"/><Comment>[zTSICsMTQ]&gt;[zTSIC]</Commen"
+        "t><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">zTSICsMTQ</Argument></"
+        "Action><Comment>[zWC"
 End
 Begin
-    Comment ="_AXL:SICsMTQ</Argument></Action><Comment>[zWCSsupplier].[ITMSET]+[E3NAME].[JDE_D"
-        "escription]&amp;[JDE_Combined]+[CatTocItemsUQ]+[AllSTOC]</Comment><Comment>[CatT"
-        "ocItemsUQ] combines [CatTocItmDEN]+[CatTocItmLAB]</Comment><Comment>[zTSIC] to \\"
-        "\\usnym3fs03\\D"
+    Comment ="_AXL:Ssupplier].[ITMSET]+[E3NAME].[JDE_Description]&amp;[JDE_Combined]+[CatTocIt"
+        "emsUQ]+[AllSTOC]</Comment><Comment>[CatTocItemsUQ] combines [CatTocItmDEN]+[CatT"
+        "ocItmLAB]</Comment><Comment>[zTSIC] to \\\\usnym3fs03\\Data\\Dental\\dentmkt\\Ma"
+        "jTOC\\zTSIC.txt</Com"
 End
 Begin
-    Comment ="_AXL:ata\\Dental\\dentmkt\\MajTOC\\zTSIC.txt</Comment><Action Name=\"ImportExpor"
-        "tText\"><Argument Name=\"TableName\">zTSIC</Argument><Argument Name=\"FileName\""
-        ">\\\\usnym3fs03\\Data\\Dental\\dentmkt\\MajTOC\\zTSIC.txt</Argument><Argument Na"
-        "me=\"HasFieldNames\">Yes</Argume"
+    Comment ="_AXL:ment><Action Name=\"ImportExportText\"><Argument Name=\"TableName\">zTSIC</"
+        "Argument><Argument Name=\"FileName\">\\\\usnym3fs03\\Data\\Dental\\dentmkt\\MajT"
+        "OC\\zTSIC.txt</Argument><Argument Name=\"HasFieldNames\">Yes</Argument></Action>"
+        "<Comment>To richard.zepernic"
 End
 Begin
-    Comment ="_AXL:nt></Action><Comment>To richard.zepernick@henryschein.com</Comment><Action "
-        "Name=\"EMailDatabaseObject\"><Argument Name=\"To\">richard.zepernick@henryschein"
-        ".com</Argument><Argument Name=\"Subject\">Toc/Stoc ItemCode UpDt </Argument><Arg"
-        "ument Name=\"Message"
+    Comment ="_AXL:k@henryschein.com</Comment><Action Name=\"EMailDatabaseObject\"><Argument N"
+        "ame=\"To\">richard.zepernick@henryschein.com</Argument><Argument Name=\"Subject\""
+        ">Toc/Stoc ItemCode UpDt </Argument><Argument Name=\"MessageText\">The TOC/STOC t"
+        "o ITEMCODE cross-ref"
 End
 Begin
-    Comment ="_AXL:Text\">The TOC/STOC to ITEMCODE cross-reference update for Promos and for T"
-        "om Samluk has been processed and exported to \\\\...\\MajTOC\\zTSIC.txt. This is"
-        " an automated message, no reply is needed.</Argument><Argument Name=\"EditMessag"
-        "e\">No</Argument></A"
+    Comment ="_AXL:erence update for Promos and for Tom Samluk has been processed and exported"
+        " to \\\\...\\MajTOC\\zTSIC.txt. This is an automated message, no reply is needed"
+        ".</Argument><Argument Name=\"EditMessage\">No</Argument></Action><Action Name=\""
+        "SetWarnings\"><Argume"
 End
 Begin
-    Comment ="_AXL:ction><Action Name=\"SetWarnings\"><Argument Name=\"WarningsOn\">Yes</Argum"
-        "ent></Action><Action Name=\"QuitAccess\"><Argument Name=\"Options\">Exit</Argume"
-        "nt></Action><Action Name=\"EMailDatabaseObject\"><Argument Name=\"To\">richard.z"
-        "epernick@henryschein.com<"
+    Comment ="_AXL:nt Name=\"WarningsOn\">Yes</Argument></Action><Action Name=\"QuitAccess\"><"
+        "Argument Name=\"Options\">Exit</Argument></Action><Action Name=\"EMailDatabaseOb"
+        "ject\"><Argument Name=\"To\">richard.zepernick@henryschein.com</Argument><Argume"
+        "nt Name=\"Subject\">END S"
 End
 Begin
-    Comment ="_AXL:/Argument><Argument Name=\"Subject\">END SSPEvent - Promo10Z* TocStoc - 4:4"
-        "0 AM - UpDt N Export 2Ds Launch Macro [zUpDtzTSICm]</Argument><Argument Name=\"M"
-        "essageText\">\\\\usnym3fs03\\Data\\Dental\\dentmkt\\Promo\\Promo10Z.accdb /x zUp"
-        "DtzTSICm</Argument><Argu"
+    Comment ="_AXL:SPEvent - Promo10Z* TocStoc - 4:40 AM - UpDt N Export 2Ds Launch Macro [zUp"
+        "DtzTSICm]</Argument><Argument Name=\"MessageText\">\\\\usnym3fs03\\Data\\Dental\\"
+        "dentmkt\\Promo\\Promo10Z.accdb /x zUpDtzTSICm</Argument><Argument Name=\"EditMes"
+        "sage\">No</Argument></A"
 End
 Begin
-    Comment ="_AXL:ment Name=\"EditMessage\">No</Argument></Action></Statements></UserInterfac"
-        "eMacro>"
+    Comment ="_AXL:ction></Statements></UserInterfaceMacro>"
 End

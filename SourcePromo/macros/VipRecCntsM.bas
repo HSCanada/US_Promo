@@ -1,6 +1,9 @@
 ﻿Version =196611
 ColumnsShown =0
 Begin
+    Comment ="debug.print(\"x\")"
+End
+Begin
     Action ="SetWarnings"
     Comment ="VIP record count check"
     Argument ="0"
@@ -27,21 +30,18 @@ End
 Begin
     Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
         "nterfaceMacro MinimumClientDesignVersion=\"14.0.0000.0000\" xmlns=\"http://schem"
-        "as.microsoft.com/office/accessservices/2009/11/application\" xmlns:a=\"http://sc"
-        "hemas.microsoft.com/office/acc"
+        "as.microsoft.com/office/accessservices/2009/11/application\"><Statements><Commen"
+        "t>debug.print(\"x\")</Comment><"
 End
 Begin
-    Comment ="_AXL:essservices/2009/11/forms\"><Statements><Comment>VIP record count check</Co"
-        "mment><Action Name=\"SetWarnings\"/><Action Name=\"OnError\"/><Action Name=\"Exp"
-        "ortWithFormatting\"><Argument Name=\"ObjectType\">Query</Argument><Argument Name"
-        "=\"ObjectName\">VipRecCn"
+    Comment ="_AXL:Comment>VIP record count check</Comment><Action Name=\"SetWarnings\"/><Acti"
+        "on Name=\"OnError\"/><Action Name=\"ExportWithFormatting\"><Argument Name=\"Obje"
+        "ctType\">Query</Argument><Argument Name=\"ObjectName\">VipRecCntsQ</Argument><Ar"
+        "gument Name=\"OutputForm"
 End
 Begin
-    Comment ="_AXL:tsQ</Argument><Argument Name=\"OutputFormat\">ExcelWorkbook(*.xlsx)</Argume"
-        "nt><Argument Name=\"OutputFile\">C:\\Users\\Richard.Zepernick\\Desktop\\VipRecCn"
-        "tsQ.xlsx</Argument></Action><Action Name=\"QuitAccess\"><Argument Name=\"Options"
-        "\">Exit</Argument></Actio"
-End
-Begin
-    Comment ="_AXL:n></Statements></UserInterfaceMacro>"
+    Comment ="_AXL:at\">ExcelWorkbook(*.xlsx)</Argument><Argument Name=\"OutputFile\">C:\\User"
+        "s\\Richard.Zepernick\\Desktop\\VipRecCntsQ.xlsx</Argument></Action><Action Name="
+        "\"QuitAccess\"><Argument Name=\"Options\">Exit</Argument></Action></Statements><"
+        "/UserInterfaceMacro>"
 End
