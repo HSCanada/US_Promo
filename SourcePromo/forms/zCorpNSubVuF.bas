@@ -30,6 +30,10 @@ Begin Form
     Caption ="zCorpNSubT"
     OnClose ="[Event Procedure]"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     FilterOnLoad =0
     AllowLayoutView =0
     DatasheetGridlinesColor12 =12632256
@@ -769,6 +773,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Close_Click()
+Debug.Print "x"
 On Error GoTo Err_Close_Click
 
     DoCmd.Close
@@ -783,6 +788,7 @@ Err_Close_Click:
 End Sub
 
 Private Sub Form_Close()
+Debug.Print "x"
 On Error GoTo Err_Form_Close
 
     Dim stDocName As String

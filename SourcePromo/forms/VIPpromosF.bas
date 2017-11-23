@@ -28,6 +28,10 @@ Begin Form
     End
     OnOpen ="[Event Procedure]"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     OnActivate ="[Event Procedure]"
     OnLoad ="[Event Procedure]"
     FilterOnLoad =0
@@ -241,7 +245,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =4
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
                     Name ="SelVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCT zVendor.ID, zVendor.Company, zPromo.EffYr, zPromo.EffQtr FROM zV"
@@ -307,7 +311,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =5
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
                     Name ="SFselVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCTROW zVendor.ID, zVendor.Company FROM zVendor ORDER BY zVendor.Com"
@@ -771,6 +775,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub CloseF_Click()
+Debug.Print "x"
 On Error GoTo Err_CloseF_Click
 
      CommandBars.ActiveMenuBar.Enabled = True 'Turn Access' Menu Bar ON !!
@@ -790,6 +795,7 @@ Err_CloseF_Click:
 End Sub
 
 Private Sub Default_Promo_Price_Cntrl_Rpt_Click()
+Debug.Print "x"
 On Error GoTo Err_Default_Promo_Price_Cntrl_Rpt_Click
 
     Dim stDocName As String
@@ -809,6 +815,7 @@ Err_Default_Promo_Price_Cntrl_Rpt_Click:
 End Sub
 
 Private Sub Form_Activate()
+Debug.Print "x"
 DoCmd.Maximize
 End Sub
 
@@ -817,12 +824,14 @@ End Sub
 'End Sub
 
 Private Sub Form_Load()
+Debug.Print "x"
 CommandBars.ActiveMenuBar.Enabled = False 'Turn Access' Menu Bar OFF !!
 DoCmd.ShowToolbar "Form View", acToolbarNo
 DoCmd.ShowToolbar "Formatting (Form/Report)", acToolbarNo
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
+Debug.Print "x"
 On Error GoTo Err_Form_Open
 
 Z_EffYr = DatePart("yyyy", Now())
@@ -843,6 +852,8 @@ Err_Form_Open:
 End Sub
 
 Private Sub MnQYr_Click()
+Debug.Print "x"
+
 On Error GoTo Err_MnQYr_Click
 
     MsgBox "Selected Qtr = " & ZEffQtr() & ", " & "Mn = " & ZEffMn() & ", " & "Yr = " & ZEffYr()
@@ -856,6 +867,8 @@ Err_MnQYr_Click:
 End Sub
 
 Private Sub SelVndr_AfterUpdate()
+Debug.Print "x"
+
 On Error GoTo Err_SelVndr_Click
 
     Dim stDocName As String
@@ -882,10 +895,12 @@ Err_SelVndr_Click:
 End Sub
 
 Private Sub SelVndr_GotFocus()
+Debug.Print "x"
     DoCmd.Maximize
 End Sub
 
 Private Sub VuSelQtr_Click()
+Debug.Print "x"
 On Error GoTo Err_VuSelQtr_Click
 
     Dim stDocName As String

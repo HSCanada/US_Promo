@@ -14,10 +14,10 @@ Begin Form
     Width =1560
     DatasheetFontHeight =10
     ItemSuffix =17
-    Left =1590
-    Top =1320
-    Right =3585
-    Bottom =4410
+    Left =4470
+    Top =5985
+    Right =5835
+    Bottom =7770
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
         0x825b508df786e240
@@ -393,6 +393,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Form_Load()
+Debug.Print "x"
 Me![StartAt] = 1
 Me![EndAt] = 100
 End Sub

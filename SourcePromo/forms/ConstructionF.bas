@@ -16813,12 +16813,14 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Form_Open(Cancel As Integer)
+Debug.Print "x"
 
     DoCmd.Maximize
     'DoCmd.Close acForm, "z1__EntryScreen"
 End Sub
 
 Private Sub Form_Timer()
+Debug.Print "x"
 
     DoCmd.Quit
     

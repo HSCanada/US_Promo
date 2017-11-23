@@ -23,6 +23,10 @@ Begin Form
         "OM dbLog ORDER BY dbLog.LogDate;"
     Caption ="dbLog"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     FilterOnLoad =0
     DatasheetGridlinesColor12 =12632256
     Begin
@@ -373,6 +377,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub By_AfterUpdate()
+Debug.Print "x"
 On Error GoTo Err_By_AfterUpdate
 
 If IsNull(Me![LogDate]) Then Me![LogDate] = Format(Now(), "mm/dd/yyyy")
@@ -386,6 +391,7 @@ Err_By_AfterUpdate:
 End Sub
 
 Private Sub Close_Click()
+Debug.Print "x"
 On Error GoTo Err_Close_Click
 
 

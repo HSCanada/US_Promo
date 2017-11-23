@@ -15,10 +15,10 @@ Begin Form
     Width =17595
     DatasheetFontHeight =10
     ItemSuffix =273
-    Left =420
-    Top =810
-    Right =13905
-    Bottom =4830
+    Left =360
+    Top =2625
+    Right =14940
+    Bottom =11040
     DatasheetGridlinesColor =12632256
     PaintPalette = Begin
         0x000301000000000000000000
@@ -1359,6 +1359,7 @@ Option Explicit
 
 
 Private Sub AdMn_AfterUpdate()
+Debug.Print "x"
 On Error GoTo Err_AdMn_AfterUpdate
 
 Dim dbMn As Double
@@ -1385,14 +1386,17 @@ Err_AdMn_AfterUpdate:
 End Sub
 
 Private Sub Approvd_AfterUpdate()
+Debug.Print "x"
     Me![ApprvDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub Deletd_AfterUpdate()
+Debug.Print "x"
     Me![DelDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub DftPromo_AfterUpdate()
+Debug.Print "x"
     If Me![DftPromo] = -1 Then
        If IsNull(Me![SWO]) Then Me![SWO] = -1
     Else
@@ -1400,16 +1404,19 @@ Private Sub DftPromo_AfterUpdate()
 End Sub
 
 Private Sub EffMnth_LostFocus()
+Debug.Print "x"
 CopyRec.Visible = "False"
 End Sub
 
 Private Sub Form_AfterUpdate()
+Debug.Print "x"
 If IsNull(Me!ID) Or Me!ID = "" Then
   Me!ID = Me!zVndDefProF.ID
 End If
 End Sub
 
 Private Sub Type_AfterUpdate()
+Debug.Print "x"
 On Error GoTo Err_Type_AfterUpdate
 
     Dim stType As String
@@ -1431,12 +1438,14 @@ Err_Type_AfterUpdate:
 End Sub
 
 Private Sub Unbnd_GotFocus()
+Debug.Print "x"
 Dim lngRed As Long
 lngRed = RGB(255, 0, 0)
 Me!Unbnd.BackColor = lngRed
 End Sub
 
 Private Sub ViewDet_Click()
+Debug.Print "x"
 On Error GoTo Err_ViewDet_Click
 
     'DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -1465,6 +1474,7 @@ Err_ViewDet_Click:
 End Sub
 
 Private Sub Export_Click()
+Debug.Print "x_PASS"
 On Error GoTo Err_Export_Click
 
 
@@ -1479,7 +1489,9 @@ Err_Export_Click:
     Resume Exit_Export_Click
     
 End Sub
+
 Private Sub CopyRec_Click()
+Debug.Print "x"
 On Error GoTo Err_CopyRec_Click
 
 Z_RecOld = Me![RecID]
@@ -1559,7 +1571,9 @@ Err_CopyItems_Click:
     Resume Exit_CopyItems_Click
     
 End Sub
+
 Private Sub ShowCopy_Click()
+Debug.Print "x"
 On Error GoTo Err_ShowCopy_Click
 
 HideCopy.Visible = "True"
@@ -1573,7 +1587,9 @@ Err_ShowCopy_Click:
     Resume Exit_ShowCopy_Click
     
 End Sub
+
 Private Sub HideCopy_Click()
+Debug.Print "x"
 On Error GoTo Err_HideCopy_Click
 
 CopyRec.Visible = "False"
@@ -1586,7 +1602,9 @@ Err_HideCopy_Click:
     Resume Exit_HideCopy_Click
     
 End Sub
+
 Private Sub AddNew_Click()
+Debug.Print "x"
 On Error GoTo Err_AddNew_Click
 
     Dim stDataF As String
@@ -1603,7 +1621,9 @@ Err_AddNew_Click:
     Resume Exit_AddNew_Click
     
 End Sub
+
 Private Sub CloseIt_Click()
+Debug.Print "x"
 On Error GoTo Err_CloseIt_Click
 
 
@@ -1617,7 +1637,9 @@ Err_CloseIt_Click:
     Resume Exit_CloseIt_Click
     
 End Sub
+
 Private Sub RefreshIt_Click()
+Debug.Print "x"
 On Error GoTo Err_RefreshIt_Click
 
 Me.Requery
@@ -1633,6 +1655,7 @@ Err_RefreshIt_Click:
 End Sub
 
 Private Sub VuDft_BeforeUpdate(Cancel As Integer)
+Debug.Print "x"
 On Error GoTo Err_VuDft_AfterUpdate
 
     Dim stForm As String
@@ -1652,7 +1675,9 @@ Err_VuDft_AfterUpdate:
 
 
 End Sub
+
 Private Sub allow_Edits_Click()
+Debug.Print "x"
 On Error GoTo Err_allow_Edits_Click
 
 

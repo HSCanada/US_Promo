@@ -8,7 +8,10 @@ Begin Form
     GridY =5
     Width =10110
     ItemSuffix =370
-    Right =1320
+    Left =1935
+    Top =2895
+    Right =13830
+    Bottom =5850
     RecSrcDt = Begin
         0x9c95ee73cb83e240
     End
@@ -20,6 +23,10 @@ Begin Form
         "roTo)=-1)) OR (((CorpList.DSMktTo)=-1)) OR (((CorpList.DSEqpTo)=-1)) OR (((CorpL"
         "ist.DSLabTo)=-1)) OR (((CorpList.DSProTo)=-1)) ORDER BY CorpList.Company;"
     Caption ="MKT Vendor Contact"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     FilterOnLoad =0
     AllowLayoutView =0
     Begin
@@ -440,3 +447,7 @@ Attribute VB_Creatable = True
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Compare Database   'Use database order for string comparisons
+
+
+
+'Debug.Print "x"

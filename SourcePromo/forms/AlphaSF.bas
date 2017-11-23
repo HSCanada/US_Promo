@@ -11,7 +11,9 @@ Begin Form
     Width =7815
     DatasheetFontHeight =10
     ItemSuffix =18
-    Right =1320
+    Top =600
+    Right =9255
+    Bottom =2580
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
         0xcb58a9df1462e240
@@ -19,6 +21,10 @@ Begin Form
     RecordSource ="Alpha"
     Caption ="Archive"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     FilterOnLoad =0
     AllowLayoutView =0
     DatasheetGridlinesColor12 =12632256
@@ -280,6 +286,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub NuRec_Click()
+Debug.Print "x"
 On Error GoTo Err_NuRec_Click
 
 
@@ -295,6 +302,7 @@ Err_NuRec_Click:
 End Sub
 
 Private Sub Project_AfterUpdate()
+Debug.Print "x"
 
 If IsNull(Me![Entered]) Then Me![Entered] = Format(Now(), "mm/dd/yyyy")
 

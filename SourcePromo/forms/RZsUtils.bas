@@ -491,7 +491,8 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Close_Click()
-Debug.Print "Close_Click"
+Debug.Print "Close_Click_XXX"
+Debug.Assert False
 
 On Error GoTo Err_Close_Click
 

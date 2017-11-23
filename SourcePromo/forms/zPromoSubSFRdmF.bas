@@ -3,7 +3,6 @@ VersionRequired =20
 Begin Form
     AutoCenter = NotDefault
     DividingLines = NotDefault
-    FilterOn = NotDefault
     OrderByOn = NotDefault
     ScrollBars =2
     PictureAlignment =5
@@ -1474,6 +1473,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub AdMn_AfterUpdate()
+Debug.Print "x"
 On Error GoTo Err_AdMn_AfterUpdate
 
 Dim dbMn As Double
@@ -1501,10 +1501,12 @@ End Sub
 
 
 Private Sub Approvd_AfterUpdate()
+Debug.Print "x"
     Me![ApprvDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub CopyRec_Click()
+Debug.Print "x"
 On Error GoTo Err_CopyRec_Click
 
 'DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -1564,10 +1566,12 @@ Err_CopyRec_Click:
 End Sub
 
 Private Sub EffMnth_LostFocus()
+Debug.Print "x"
 CopyRec.Visible = "False"
 End Sub
 
 Private Sub Form_AfterUpdate()
+Debug.Print "x"
 If IsNull(Me!ID) Or Me!ID = "" Then
   'Me!ID = Me!zVndDefProF.ID
   Me!ID = Me.Parent!ID
@@ -1575,6 +1579,7 @@ End If
 End Sub
 
 Private Sub ShowCopy_Click()
+Debug.Print "x"
 On Error GoTo Err_ShowCopy_Click
 
 DoCmd.RunCommand acCmdSaveRecord
@@ -1591,7 +1596,9 @@ Err_ShowCopy_Click:
     Resume Exit_ShowCopy_Click
     
 End Sub
+
 Private Sub HideCopy_Click()
+Debug.Print "x"
 On Error GoTo Err_HideCopy_Click
 
 CopyRec.Visible = "False"
@@ -1606,6 +1613,7 @@ Err_HideCopy_Click:
 End Sub
 
 Private Sub DftPromo_AfterUpdate()
+Debug.Print "x"
 
     If Me![DftPromo] = -1 Then
        If IsNull(Me![SWO]) Then Me![SWO] = 0 '3/3/15 was -1
@@ -1631,6 +1639,7 @@ End Sub
 'End Sub
 
 Private Sub PromoCode_AfterUpdate()
+Debug.Print "x_PASS"
 
 
 'Dim stAdNm As String
@@ -1656,6 +1665,8 @@ Private Sub PromoCode_AfterUpdate()
 End Sub
 
 Private Sub MakeAd_Click()
+Debug.Print "x"
+
 On Error GoTo Err_MakeAd_Click
 
     Dim stDocName As String
@@ -1682,6 +1693,8 @@ Err_MakeAd_Click:
 End Sub
 
 Private Sub NewAd_Click()
+Debug.Print "x"
+
 On Error GoTo Err_NewAd_Click
 
 
@@ -1695,7 +1708,9 @@ Err_NewAd_Click:
     Resume Exit_NewAd_Click
     
 End Sub
+
 Private Sub ICs_Click()  'Command178_Click()
+Debug.Print "x"
 On Error GoTo Err_ICs_Click   'Command178_Click
 Dim stText As String
 
@@ -1718,7 +1733,9 @@ Err_ICs_Click:   'Command178_Click:
     Resume Exit_ICs_Click  'Command178_Click
     
 End Sub
+
 Private Sub SWO_Click()
+Debug.Print "x"
    If Me![DftPromo] = -1 Then
       MsgBox "There is Defaulted Promo text in the SubForm - which we remove for SWO only entries."
    Else
@@ -1726,6 +1743,7 @@ Private Sub SWO_Click()
 End Sub
 
 Private Sub Type_AfterUpdate()
+Debug.Print "x"
 On Error GoTo Err_Type_AfterUpdate
 
     Dim stType As String
@@ -1747,12 +1765,14 @@ Err_Type_AfterUpdate:
 End Sub
 
 Private Sub Unbnd_GotFocus()
+Debug.Print "x"
    'Dim lngRed As Long
    'lngRed = RGB(255, 0, 0)
    'Me!Unbnd.BackColor = lngRed
 End Sub
 
 Private Sub ViewDet_Click()
+Debug.Print "x"
 On Error GoTo Err_ViewDet_Click
 
 If IsNull(Me!ID) Or Me!ID = "" Then

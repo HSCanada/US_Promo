@@ -15,7 +15,7 @@ Begin Form
     Left =435
     Top =4575
     Right =7725
-    Bottom =4830
+    Bottom =4650
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
         0x61f3bf898ee8e140
@@ -24,6 +24,10 @@ Begin Form
         "Company;"
     Caption ="vVendorCompF"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     FilterOnLoad =0
     AllowLayoutView =0
     DatasheetGridlinesColor12 =12632256
@@ -285,6 +289,8 @@ Option Compare Database
 Option Explicit
 
 Private Sub Command10_Click()
+Debug.Print "x"
+
 On Error GoTo Err_Command10_Click
 
 

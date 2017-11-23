@@ -28,6 +28,10 @@ Begin Form
     End
     OnCurrent ="[Event Procedure]"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     FilterOnLoad =0
     AllowLayoutView =0
     DatasheetGridlinesColor12 =12632256
@@ -150,6 +154,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub AdReplace_Click()
+Debug.Print "x"
 On Error GoTo Err_AdReplace_Click
 
     Z_Confirm = -1
@@ -163,7 +168,9 @@ Err_AdReplace_Click:
     Resume Exit_AdReplace_Click
     
 End Sub
+
 Private Sub AdKeep_Click()
+Debug.Print "x"
 On Error GoTo Err_AdKeep_Click
 
     Z_Confirm = 0
@@ -177,7 +184,9 @@ Err_AdKeep_Click:
     Resume Exit_AdKeep_Click
     
 End Sub
+
 Private Sub Command0_Click()
+Debug.Print "x"
 On Error GoTo Err_Command0_Click
 
 
@@ -193,5 +202,6 @@ Err_Command0_Click:
 End Sub
 
 Private Sub Form_Current()
+Debug.Print "x"
     Z_Confirm = 0
 End Sub

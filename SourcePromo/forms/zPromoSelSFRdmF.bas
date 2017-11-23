@@ -46,6 +46,10 @@ Begin Form
         "Promo.PromoNm;"
     Caption ="zPromo"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     FilterOnLoad =255
     AllowLayoutView =0
     PictureSizeMode =1
@@ -626,7 +630,7 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =14
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"2\";\"1\""
+                    ColumnInfo ="\"\";\"\";\"\";\">\";\"\";\"\";\"\";\"\";\"\";\"\";\"2\";\"1\""
                     Name ="AdMn"
                     ControlSource ="AdMn"
                     RowSourceType ="Table/Query"
@@ -1012,6 +1016,8 @@ Option Compare Database
 Option Explicit
 
 Private Sub AdMn_AfterUpdate()
+Debug.Print "x"
+
 On Error GoTo Err_AdMn_AfterUpdate
 
 Dim dbMn As Double
@@ -1039,6 +1045,7 @@ End Sub
 
 
 Private Sub PromoCode_AfterUpdate()
+Debug.Print "x"
 
 
 Dim stAdNm As String
@@ -1064,6 +1071,7 @@ If IsNull([AdRdmDt]) Then dtAdRdmDt = Me![RedeemDt]: Me![AdRdmDt] = dtAdRdmDt
 End Sub
 
 Private Sub ViewDet_Click()
+Debug.Print "x"
 On Error GoTo Err_ViewDet_Click
 
     Dim stDocName As String
@@ -1084,6 +1092,7 @@ Err_ViewDet_Click:
 End Sub
 
 Private Sub Command174_Click()
+Debug.Print "x"
 On Error GoTo Err_Command174_Click
 
 

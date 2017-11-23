@@ -3563,6 +3563,8 @@ Option Compare Database
 Option Explicit
 
 Private Sub Command102_Click()
+Debug.Print "x"
+
 On Error GoTo Err_Command102_Click
 
 
@@ -3587,6 +3589,8 @@ End Sub
 
 
 Private Sub Form_Close()
+Debug.Print "x_PASS"
+
 'For the Manual process' "Buy" statement...
 'First get a count of all [zHdr] records linked to the promotion's [RecID].
 'How?
@@ -3634,6 +3638,7 @@ Private Sub Form_Close()
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
+Debug.Print "x"
 
     'Dim stVndrCd As String
     'DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -3648,6 +3653,7 @@ Private Sub Form_Open(Cancel As Integer)
 End Sub
 
 Private Sub STOC_AfterUpdate()
+Debug.Print "x"
 On Error GoTo Err_STOC_AfterUpdate_Click
 
     Dim stDocName As String
@@ -3669,6 +3675,7 @@ Err_STOC_AfterUpdate_Click:
 End Sub
 
 Private Sub TOC_AfterUpdate()
+Debug.Print "x"
 On Error GoTo Err_TOC_AfterUpdate_Click
 
     Dim stDocName As String
@@ -3693,6 +3700,7 @@ Err_TOC_AfterUpdate_Click:
 End Sub
 
 Private Sub Type_AfterUpdate()
+Debug.Print "x"
 On Error GoTo Err_Type_AfterUpdate
 
     Dim stType As String
@@ -3714,6 +3722,7 @@ Err_Type_AfterUpdate:
 End Sub
 
 Private Sub UpTOC_Click()
+Debug.Print "x"
 On Error GoTo Err_UpTOC_Click
 
     Dim stDocName As String
@@ -3737,7 +3746,9 @@ Err_UpTOC_Click:
     Resume Exit_UpTOC_Click
     
 End Sub
+
 Private Sub AddAllSTOC_Click()
+Debug.Print "x"
 On Error GoTo Err_AddAllSTOC_Click
 
     DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -3755,7 +3766,9 @@ Err_AddAllSTOC_Click:
     Resume Exit_AddAllSTOC_Click
     
 End Sub
+
 Private Sub SELICs_Click()
+Debug.Print "x"
 On Error GoTo Err_SELICs_Click
 
     DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -3794,7 +3807,9 @@ Err_SELICs_Click:
     Resume Exit_SELICs_Click
     
 End Sub
+
 Private Sub CancelPop_Click()
+Debug.Print "x"
 On Error GoTo Err_CancelPop_Click
 
     [TOC].Visible = False
@@ -3809,7 +3824,9 @@ Err_CancelPop_Click:
     Resume Exit_CancelPop_Click
     
 End Sub
+
 Private Sub UpdtFromVndrIC_Click()
+Debug.Print "x"
 On Error GoTo Err_UpdtFromVndrIC_Click
 
     DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70

@@ -2,7 +2,6 @@
 VersionRequired =20
 Begin Form
     AutoCenter = NotDefault
-    FilterOn = NotDefault
     OrderByOn = NotDefault
     AllowDesignChanges = NotDefault
     TabularFamily =0
@@ -15,8 +14,8 @@ Begin Form
     ItemSuffix =15
     Left =1860
     Top =3465
-    Right =24780
-    Bottom =17955
+    Right =23085
+    Bottom =13890
     DatasheetGridlinesColor =12632256
     Filter ="([ImportOKQ].[ID]=50)"
     OrderBy ="[ImportOKQ].[ImportDt] DESC, [ImportOKQ].[ID]"
@@ -384,6 +383,8 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub CloseIt_Click()
+Debug.Print "x"
+
 On Error GoTo Err_CloseIt_Click
 
 

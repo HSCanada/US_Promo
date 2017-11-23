@@ -1104,6 +1104,8 @@ Option Explicit
 
 
 Private Sub AdMn_AfterUpdate()
+Debug.Print "x"
+
 On Error GoTo Err_AdMn_AfterUpdate
 
 Dim dbMn As Double
@@ -1130,14 +1132,17 @@ Err_AdMn_AfterUpdate:
 End Sub
 
 Private Sub Approvd_AfterUpdate()
+Debug.Print "x"
     Me![ApprvDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub Deletd_AfterUpdate()
+Debug.Print "x"
     Me![DelDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub DftPromo_AfterUpdate()
+Debug.Print "x"
     If Me![DftPromo] = -1 Then
        If IsNull(Me![SWO]) Then Me![SWO] = -1
     Else
@@ -1145,10 +1150,12 @@ Private Sub DftPromo_AfterUpdate()
 End Sub
 
 Private Sub EffMnth_LostFocus()
+Debug.Print "x"
 CopyRec.Visible = "False"
 End Sub
 
 Private Sub Type_AfterUpdate()
+Debug.Print "x"
 On Error GoTo Err_Type_AfterUpdate
 
     Dim stType As String
@@ -1170,6 +1177,7 @@ Err_Type_AfterUpdate:
 End Sub
 
 Private Sub ViewDet_Click()
+Debug.Print "x"
 On Error GoTo Err_ViewDet_Click
 
     DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -1191,6 +1199,7 @@ Err_ViewDet_Click:
 End Sub
 
 Private Sub Export_Click()
+Debug.Print "x"
 On Error GoTo Err_Export_Click
 
 
@@ -1205,7 +1214,9 @@ Err_Export_Click:
     Resume Exit_Export_Click
     
 End Sub
+
 Private Sub CopyRec_Click()
+Debug.Print "x"
 On Error GoTo Err_CopyRec_Click
 
 Z_RecOld = Me![RecID]
@@ -1263,7 +1274,9 @@ Err_CopyRec_Click:
     Resume Exit_CopyRec_Click
     
 End Sub
+
 Private Sub CopyItems_Click()
+Debug.Print "x"
 On Error GoTo Err_CopyItems_Click
 
 'Dim intRec As Integer
@@ -1283,7 +1296,9 @@ Err_CopyItems_Click:
     Resume Exit_CopyItems_Click
     
 End Sub
+
 Private Sub ShowCopy_Click()
+Debug.Print "x"
 On Error GoTo Err_ShowCopy_Click
 
 HideCopy.Visible = "True"
@@ -1297,7 +1312,9 @@ Err_ShowCopy_Click:
     Resume Exit_ShowCopy_Click
     
 End Sub
+
 Private Sub HideCopy_Click()
+Debug.Print "x"
 On Error GoTo Err_HideCopy_Click
 
 CopyRec.Visible = "False"

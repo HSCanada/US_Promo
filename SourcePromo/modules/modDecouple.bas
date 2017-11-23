@@ -28,3 +28,12 @@ Debug.Print config("Key2")
 
 
 End Sub
+
+
+Sub test2()
+Debug.Print Application.VBE.ActiveCodePane.CodeModule.ProcOfLine(Application.VBE.ActiveCodePane.TopLine, 0)
+'Debug.Print Me.Name & "." & Application.VBE.ActiveCodePane.CodeModule.ProcOfLine(Application.VBE.ActiveCodePane.TopLine, 0)
+
+Debug.Print "test"
+
+End Sub

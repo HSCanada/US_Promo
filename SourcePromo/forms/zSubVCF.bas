@@ -12,10 +12,10 @@ Begin Form
     Width =2370
     DatasheetFontHeight =10
     ItemSuffix =6
-    Left =11520
-    Top =645
-    Right =12780
-    Bottom =1455
+    Left =11490
+    Top =1905
+    Right =12705
+    Bottom =2700
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
         0xf17c7cd6ec18e240
@@ -185,3 +185,6 @@ Attribute VB_Creatable = True
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Compare Database
+
+
+' Debug.Print "x"

@@ -1219,6 +1219,8 @@ Option Compare Database
 Option Explicit
 
 Private Sub CloseIt_Click()
+Debug.Print "x"
+
 On Error GoTo Err_CloseIt_Click
 
     DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -1234,16 +1236,19 @@ Err_CloseIt_Click:
 End Sub
 
 Private Sub Form_Current()
+Debug.Print "x"
 S_VID = Me![ID]
 S_Rec = Me![RecID]
 End Sub
 
 Private Sub Form_Load()
+Debug.Print "x_PASS"
 'Forms!zSWOVuF!SelIC = 0
 
 End Sub
 
 Private Sub ID_AfterUpdate()
+Debug.Print "x"
 On Error GoTo Err_ID_AfterUpdate
 
     Me![EffDate] = SWOEff()
@@ -1274,6 +1279,7 @@ Err_ID_AfterUpdate:
 End Sub
 
 Private Sub DftPromo_AfterUpdate()
+Debug.Print "x"
     If Me![DftPromo] = -1 Then
        If IsNull(Me![SO]) Then Me![SO] = -1
     Else
@@ -1281,10 +1287,13 @@ Private Sub DftPromo_AfterUpdate()
 End Sub
 
 Private Sub Form_AfterUpdate()
+Debug.Print "x_PASS"
 'MsgBox "Main form AfterUpDate event has occurred. Thank you."
 End Sub
 
 Private Sub Form_Close()
+Debug.Print "x_PASS"
+
 'For the Manual process' "Buy" statement...
 'First get a count of all [zHdr] records linked to the promotion's [RecID].
 'How?
@@ -1332,6 +1341,7 @@ Private Sub Form_Close()
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
+Debug.Print "x_PASS"
 
     'Dim stVndrCd As String
     'DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -1346,6 +1356,7 @@ Private Sub Form_Open(Cancel As Integer)
 End Sub
 
 Private Sub STOC_AfterUpdate()
+Debug.Print "x"
 On Error GoTo Err_STOC_AfterUpdate_Click
 
     Dim stDocName As String
@@ -1367,6 +1378,7 @@ Err_STOC_AfterUpdate_Click:
 End Sub
 
 Private Sub TOC_AfterUpdate()
+Debug.Print "x"
 On Error GoTo Err_TOC_AfterUpdate_Click
 
     Dim stDocName As String
@@ -1392,6 +1404,7 @@ Err_TOC_AfterUpdate_Click:
 End Sub
 
 Private Sub Type_AfterUpdate()
+Debug.Print "x"
 On Error GoTo Err_Type_AfterUpdate
 
     Dim stType As String
@@ -1413,6 +1426,7 @@ Err_Type_AfterUpdate:
 End Sub
 
 Private Sub UpTOC_Click()
+Debug.Print "x"
 On Error GoTo Err_UpTOC_Click
 
     Dim stDocName As String
@@ -1436,7 +1450,9 @@ Err_UpTOC_Click:
     Resume Exit_UpTOC_Click
     
 End Sub
+
 Private Sub AddAllSTOC_Click()
+Debug.Print "x"
 On Error GoTo Err_AddAllSTOC_Click
 
     DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -1455,7 +1471,9 @@ Err_AddAllSTOC_Click:
     Resume Exit_AddAllSTOC_Click
     
 End Sub
+
 Private Sub SELICs_Click()
+Debug.Print "x"
 On Error GoTo Err_SELICs_Click
 
     DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -1494,7 +1512,9 @@ Err_SELICs_Click:
     Resume Exit_SELICs_Click
     
 End Sub
+
 Private Sub CancelPop_Click()
+Debug.Print "x"
 On Error GoTo Err_CancelPop_Click
 
     '[TOC].Visible = False
@@ -1509,7 +1529,9 @@ Err_CancelPop_Click:
     Resume Exit_CancelPop_Click
     
 End Sub
+
 Private Sub UpdtFromVndrIC_Click()
+Debug.Print "x"
 On Error GoTo Err_UpdtFromVndrIC_Click
 
     DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -1529,14 +1551,19 @@ Err_UpdtFromVndrIC_Click:
     Resume Exit_UpdtFromVndrIC_Click
     
 End Sub
+
 Private Sub Approvd_AfterUpdate()
+Debug.Print "x"
     Me![ApprvDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub Deletd_AfterUpdate()
+Debug.Print "x"
     Me![DelDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
+
 Private Sub AddNew_Click()
+Debug.Print "x"
 On Error GoTo Err_AddNew_Click
 
     DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -1552,6 +1579,8 @@ Err_AddNew_Click:
 End Sub
 
 Private Sub SelIC_AfterUpdate()
+Debug.Print "x"
+
 On Error GoTo Err_SelIC_AfterUpdate
 
 Dim stSForm As String
@@ -1587,6 +1616,7 @@ Err_SelIC_AfterUpdate:
 End Sub
 
 Private Sub SelIC_Click()
+Debug.Print "x"
 On Error GoTo Err_SelIC_Click
 
     If IsNull(Me![SrchIC]) Then
@@ -1606,6 +1636,7 @@ Err_SelIC_Click:
 End Sub
 
 Private Sub SrchIC_AfterUpdate()
+Debug.Print "x"
 'S_ICRec = Me![SelIC]
 S_IC = Left(Me![SrchIC], 3) & Right(Me![SrchIC], 4) 'S_IC = Me![SrchIC] ' = ItemCode being sought
 S_VID = Me![ID] ' = Vendor ID
@@ -1614,7 +1645,9 @@ S_VID = Me![ID] ' = Vendor ID
 '" with effective days nearer than " & Date - 700  'almost 2 years history
 
 End Sub
+
 Private Sub ShoNu_Click()
+Debug.Print "x"
 On Error GoTo Err_ShoNu_Click
 
 
@@ -1631,7 +1664,10 @@ Err_ShoNu_Click:
     Resume Exit_ShoNu_Click
     
 End Sub
+
 Private Sub Test_Click()
+Debug.Print "x"
+
 On Error GoTo Err_Test_Click
 
 MsgBox "SIC()=" & SIC() & " SVID()=" & SVID()
@@ -1645,7 +1681,9 @@ Err_Test_Click:
     Resume Exit_Test_Click
     
 End Sub
+
 Private Sub SaveIt_Click()
+Debug.Print "x"
 On Error GoTo Err_SaveIt_Click
 
 
@@ -1659,7 +1697,9 @@ Err_SaveIt_Click:
     Resume Exit_SaveIt_Click
     
 End Sub
+
 Private Sub SelByFamSet_Click()
+Debug.Print "x"
 On Error GoTo Err_SelByFamSet_Click
 
 Dim stSForm As String

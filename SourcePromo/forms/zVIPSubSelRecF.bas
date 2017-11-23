@@ -13,10 +13,10 @@ Begin Form
     Width =19500
     DatasheetFontHeight =10
     ItemSuffix =246
-    Left =435
-    Top =2400
-    Right =13905
-    Bottom =4830
+    Left =360
+    Top =2505
+    Right =15285
+    Bottom =11475
     DatasheetGridlinesColor =12632256
     PaintPalette = Begin
         0x000301000000000000000000
@@ -1948,6 +1948,7 @@ Option Explicit
 
 
 Private Sub AdMn_AfterUpdate()
+Debug.Print "x"
 On Error GoTo Err_AdMn_AfterUpdate
 
 Dim dbMn As Double
@@ -1974,14 +1975,17 @@ Err_AdMn_AfterUpdate:
 End Sub
 
 Private Sub Approvd_AfterUpdate()
+Debug.Print "x"
     Me![ApprvDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub Deletd_AfterUpdate()
+Debug.Print "x"
     Me![DelDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub DftPromo_AfterUpdate()
+Debug.Print "x"
     If Me![DftPromo] = -1 Then
        If IsNull(Me![SWO]) Then Me![SWO] = -1
     Else
@@ -1989,20 +1993,25 @@ Private Sub DftPromo_AfterUpdate()
 End Sub
 
 Private Sub EffMnth_LostFocus()
+Debug.Print "x"
 CopyRec.Visible = "False"
 End Sub
 
 Private Sub Form_AfterUpdate()
+Debug.Print "x"
 If IsNull(Me!ID) Or Me!ID = "" Then
   Me!ID = Me!zVndDefProF.ID
 End If
 End Sub
 
 Private Sub Form_Current()
+Debug.Print "x_PASS"
 'If Me![DftSub] = -1 Then [DSbx].Visible = True
 
 End Sub
+
 Private Sub SWO_Click()
+Debug.Print "x"
    If Me![DftPromo] = -1 Then
       MsgBox "There is Defaulted Promo text in the SubForm - which we remove for SWO only entries."
    Else
@@ -2010,6 +2019,7 @@ Private Sub SWO_Click()
 End Sub
 
 Private Sub Type_AfterUpdate()
+Debug.Print "x"
 On Error GoTo Err_Type_AfterUpdate
 
     Dim stType As String
@@ -2031,6 +2041,7 @@ Err_Type_AfterUpdate:
 End Sub
 
 Private Sub Unbnd_GotFocus()
+Debug.Print "x"
 Dim lngRed As Long
 lngRed = RGB(255, 0, 0)
 Me!Unbnd.BackColor = lngRed
@@ -2057,6 +2068,7 @@ Err_ViewDet_Click:
 End Sub
 
 Private Sub Export_Click()
+Debug.Print "x_PASS"
 On Error GoTo Err_Export_Click
 
 
@@ -2071,7 +2083,9 @@ Err_Export_Click:
     Resume Exit_Export_Click
     
 End Sub
+
 Private Sub CopyRec_Click()
+Debug.Print "x"
 On Error GoTo Err_CopyRec_Click
 
 Z_RecOld = Me![RecID]
@@ -2130,7 +2144,9 @@ Err_CopyRec_Click:
     Resume Exit_CopyRec_Click
     
 End Sub
+
 Private Sub CopyItems_Click()
+Debug.Print "x"
 On Error GoTo Err_CopyItems_Click
 
 'Dim intRec As Integer
@@ -2150,7 +2166,9 @@ Err_CopyItems_Click:
     Resume Exit_CopyItems_Click
     
 End Sub
+
 Private Sub ShowCopy_Click()
+Debug.Print "x"
 On Error GoTo Err_ShowCopy_Click
 
 HideCopy.Visible = "True"
@@ -2164,7 +2182,9 @@ Err_ShowCopy_Click:
     Resume Exit_ShowCopy_Click
     
 End Sub
+
 Private Sub HideCopy_Click()
+Debug.Print "x"
 On Error GoTo Err_HideCopy_Click
 
 CopyRec.Visible = "False"

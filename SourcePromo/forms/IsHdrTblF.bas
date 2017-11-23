@@ -25,6 +25,10 @@ Begin Form
     RecordSource ="IsHdrTbl"
     OnCurrent ="[Event Procedure]"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     FilterOnLoad =0
     DatasheetGridlinesColor12 =12632256
     Begin
@@ -104,6 +108,9 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Form_Current()
+Debug.Print "x"
+Debug.Assert False
+
 Dim stTbl As String
 Dim stSrc As String
 Dim stDST As String

@@ -2024,6 +2024,8 @@ Option Compare Database
 Option Explicit
 
 Private Sub AdMn_AfterUpdate()
+Debug.Print "x"
+
 On Error GoTo Err_AdMn_AfterUpdate
 
 Dim dbMn As Double
@@ -2050,14 +2052,17 @@ Err_AdMn_AfterUpdate:
 End Sub
 
 Private Sub Approvd_AfterUpdate()
+Debug.Print "x"
     Me![ApprvDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub Deletd_AfterUpdate()
+Debug.Print "x"
     Me![DelDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub DftPromo_AfterUpdate()
+Debug.Print "x"
     If Me![DftPromo] = -1 Then
        If IsNull(Me![SWO]) Then Me![SWO] = 0 '3/3/15 was -1
        'If IsNull(Me![DftSub]) Then
@@ -2077,10 +2082,12 @@ Private Sub DftPromo_AfterUpdate()
 End Sub
 
 Private Sub EffMnth_LostFocus()
+Debug.Print "x"
 CopyRec.Visible = "False"
 End Sub
 
 Private Sub Form_AfterUpdate()
+Debug.Print "x"
 If IsNull(Me!ID) Or Me!ID = "" Then
   Me!ID = Me!zVndDefProF.ID
 End If
@@ -2091,6 +2098,7 @@ Private Sub Form_Current()
 
 End Sub
 Private Sub SWO_Click()
+Debug.Print "x"
    If Me![DftPromo] = -1 Then
       MsgBox "There is Defaulted Promo text in the SubForm - which we remove for SWO only entries."
    Else
@@ -2099,6 +2107,7 @@ End Sub
 
 Private Sub Type_AfterUpdate()
 On Error GoTo Err_Type_AfterUpdate
+Debug.Print "x"
 
     Dim stType As String
     Dim stDept As String
@@ -2119,12 +2128,14 @@ Err_Type_AfterUpdate:
 End Sub
 
 Private Sub Unbnd_GotFocus()
+Debug.Print "x_PASS"
 'Dim lngRed As Long
 'lngRed = RGB(255, 0, 0)
 'Me!Unbnd.BackColor = lngRed
 End Sub
 
 Private Sub ViewDet_Click()
+Debug.Print "x"
 On Error GoTo Err_ViewDet_Click
 
     'DoCmd.RunCommand acCmdSaveRecord
@@ -2154,6 +2165,7 @@ Err_ViewDet_Click:
 End Sub
 
 Private Sub Export_Click()
+Debug.Print "x"
 On Error GoTo Err_Export_Click
 
 
@@ -2168,7 +2180,9 @@ Err_Export_Click:
     Resume Exit_Export_Click
     
 End Sub
+
 Private Sub CopyRec_Click()
+Debug.Print "x"
 On Error GoTo Err_CopyRec_Click
 
 'Z_RecOld = Me![RecID]
@@ -2243,7 +2257,9 @@ Err_CopyItems_Click:
     Resume Exit_CopyItems_Click
     
 End Sub
+
 Private Sub ShowCopy_Click()
+Debug.Print "x"
 On Error GoTo Err_ShowCopy_Click
 
 DoCmd.RunCommand acCmdSaveRecord
@@ -2260,7 +2276,9 @@ Err_ShowCopy_Click:
     Resume Exit_ShowCopy_Click
     
 End Sub
+
 Private Sub HideCopy_Click()
+Debug.Print "x"
 On Error GoTo Err_HideCopy_Click
 
 CopyRec.Visible = "False"

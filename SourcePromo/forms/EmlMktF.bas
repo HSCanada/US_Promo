@@ -1104,6 +1104,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Close_Click()
+Debug.Print "x"
 On Error GoTo Err_Close_Click
 
 
@@ -1117,7 +1118,9 @@ Err_Close_Click:
     Resume Exit_Close_Click
     
 End Sub
+
 Private Sub AddPromo_Click()
+Debug.Print "x"
 On Error GoTo Err_AddPromo_Click
 
     Dim stDocName As String
@@ -1134,7 +1137,11 @@ Err_AddPromo_Click:
     Resume Exit_AddPromo_Click
     
 End Sub
+
 Private Sub FindUnlisted_Click()
+Debug.Print "x"
+Debug.Assert False
+
  On Error GoTo Err_FindUnlisted_Click
 
    Dim intX As Integer
@@ -1484,6 +1491,7 @@ Err_FindUnlisted_Click:
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
+Debug.Print "x_PASS"
 'Dim stUser As String
 'stUser = Forms![EmlMktF]![ExpDtsF]![User]
 'DoCmd.FindRecord stUser, , True, , True
@@ -1491,6 +1499,7 @@ Private Sub Form_Open(Cancel As Integer)
 End Sub
 
 Private Sub VuDelList_Click()
+Debug.Print "x"
 On Error GoTo Err_VuDelList_Click
 
     Dim stDocName As String
@@ -1508,7 +1517,9 @@ Err_VuDelList_Click:
     Resume Exit_VuDelList_Click
     
 End Sub
+
 Private Sub PreVuExpLtr_Click()
+Debug.Print "x"
 On Error GoTo Err_PreVuExpLtr_Click
 
     Dim stDocName As String
@@ -1524,7 +1535,11 @@ Err_PreVuExpLtr_Click:
     Resume Exit_PreVuExpLtr_Click
     
 End Sub
+
 Private Sub MkLtr_Click()
+Debug.Print "x"
+Debug.Assert False
+
 On Error GoTo Err_MkLtr_Click
 
    '1. Generate Instruction Letter
@@ -1552,7 +1567,9 @@ Err_MkLtr_Click:
     Resume Exit_MkLtr_Click
     
 End Sub
+
 Private Sub SelEml_Click()
+Debug.Print "x"
 On Error GoTo Err_SelEml_Click
 
     Dim stAQ As String
@@ -1576,7 +1593,9 @@ Err_SelEml_Click:
     Resume Exit_SelEml_Click
     
 End Sub
+
 Private Sub SendIt_Click()
+Debug.Print "x"
 On Error GoTo Err_SendIt_Click
 
    Dim stUser As String
@@ -1680,7 +1699,9 @@ Err_SendIt_Click:
     Resume Exit_SendIt_Click
     
 End Sub
+
 Private Sub VuSel_Click()
+Debug.Print "x"
 On Error GoTo Err_VuSel_Click
 
     Dim stDocName As String
@@ -1697,7 +1718,9 @@ Err_VuSel_Click:
     Resume Exit_VuSel_Click
     
 End Sub
+
 Private Sub OpenEml_Click()
+Debug.Print "x"
 On Error GoTo Err_OpenEml_Click
 
     FindUnlisted.Visible = True
@@ -1711,7 +1734,9 @@ Err_OpenEml_Click:
     Resume Exit_OpenEml_Click
     
 End Sub
+
 Private Sub Cancel_Click()
+Debug.Print "x"
 On Error GoTo Err_Cancel_Click
 
     FindUnlisted.Visible = False
@@ -1724,7 +1749,9 @@ Err_Cancel_Click:
     Resume Exit_Cancel_Click
     
 End Sub
+
 Private Sub EmlContacts_Click()
+Debug.Print "x"
 On Error GoTo Err_EmlContacts_Click
 
     Dim stDocName As String
@@ -1740,7 +1767,9 @@ Err_EmlContacts_Click:
     Resume Exit_EmlContacts_Click
     
 End Sub
+
 Private Sub EmlMissingContact_Click()
+Debug.Print "x"
 On Error GoTo Err_EmlMissingContact_Click
 
     Dim stDocName As String

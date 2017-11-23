@@ -26,6 +26,10 @@ Begin Form
     RecordSource ="zItmSbSFQ"
     Caption ="zItemSubSF"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     OnLoad ="[Event Procedure]"
     FilterOnLoad =0
     AllowLayoutView =0
@@ -636,6 +640,7 @@ Option Compare Database
 
 
 Private Sub CopyAdd_Click()
+Debug.Print "x"
 On Error GoTo Err_CopyAdd_Click
 
     Dim stDocName As String
@@ -660,6 +665,7 @@ Err_CopyAdd_Click:
 End Sub
 
 Private Sub Form_Load()
+Debug.Print "x"
 
 DoCmd.OpenQuery "ItemSubCopyAQ"  'Add check marks to all items
 
@@ -669,7 +675,9 @@ DoCmd.OpenQuery "ItemSubCopyAQ"  'Add check marks to all items
 'End If
 
 End Sub
+
 Private Sub CloseIt_Click()
+Debug.Print "x"
 On Error GoTo Err_CloseIt_Click
 
 

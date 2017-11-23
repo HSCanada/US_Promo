@@ -23,6 +23,10 @@ Begin Form
         0xfad871336c85e340
     End
     DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     FilterOnLoad =0
     ShowPageMargins =0
     DatasheetGridlinesColor12 =12632256
@@ -964,6 +968,9 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub VuImpSrc_Click()
+Debug.Print "x_XXX"
+Debug.Assert False
+
 On Error GoTo Err_VuImpSrc_Click
 
     Dim stShell As String
@@ -982,7 +989,9 @@ Err_VuImpSrc_Click:
     Resume Exit_VuImpSrc_Click
     
 End Sub
+
 Private Sub Close_Click()
+Debug.Print "x"
 On Error GoTo Err_Close_Click
 
 
@@ -996,7 +1005,11 @@ Err_Close_Click:
     Resume Exit_Close_Click
     
 End Sub
+
 Private Sub VuSrcTbls_Click()
+Debug.Print "x"
+Debug.Assert False
+
 On Error GoTo Err_VuSrcTbls_Click
 
     Dim stShell As String
@@ -1016,6 +1029,9 @@ Err_VuSrcTbls_Click:
     
 End Sub
 Private Sub VuExpFldr_Click()
+Debug.Print "x"
+Debug.Assert False
+
 On Error GoTo Err_VuExpFldr_Click
 
     Dim stShell As String
@@ -1034,7 +1050,10 @@ Err_VuExpFldr_Click:
     Resume Exit_VuExpFldr_Click
     
 End Sub
+
 Private Sub VuExpTbls_Click()
+Debug.Print "x"
+Debug.Assert False
 On Error GoTo Err_VuExpTbls_Click
 
     Dim stShell As String
@@ -1053,7 +1072,10 @@ Err_VuExpTbls_Click:
     Resume Exit_VuExpTbls_Click
     
 End Sub
+
 Private Sub VuLog_Click()
+Debug.Print "x"
+
 On Error GoTo Err_VuLog_Click
 
     DoCmd.OpenQuery "SchdLogVQ", acViewNormal, acReadOnly
@@ -1068,7 +1090,11 @@ Err_VuLog_Click:
     Resume Exit_VuLog_Click
     
 End Sub
+
 Private Sub VuBuyGetStats_Click()
+Debug.Print "x"
+Debug.Assert False
+
 On Error GoTo Err_VuBuyGetStats_Click
 
     Dim stShell As String
@@ -1088,7 +1114,11 @@ Err_VuBuyGetStats_Click:
     Resume Exit_VuBuyGetStats_Click
     
 End Sub
+
 Private Sub VuBuyFldr_Click()
+Debug.Print "x"
+Debug.Assert False
+
 On Error GoTo Err_VuBuyFldr_Click
 
     Dim stShell As String
@@ -1105,7 +1135,11 @@ Err_VuBuyFldr_Click:
     Resume Exit_VuBuyFldr_Click
     
 End Sub
+
 Private Sub VuQaFldr_Click()
+Debug.Print "x"
+Debug.Assert False
+
 On Error GoTo Err_VuQaFldr_Click
 
     Dim stShell As String
@@ -1122,7 +1156,11 @@ Err_VuQaFldr_Click:
     Resume Exit_VuQaFldr_Click
     
 End Sub
+
 Private Sub VuBkUpFiles_Click()
+Debug.Print "x"
+Debug.Assert False
+
 On Error GoTo Err_VuBkUpFiles_Click
 
     Dim stShell As String
@@ -1139,7 +1177,11 @@ Err_VuBkUpFiles_Click:
     Resume Exit_VuBkUpFiles_Click
     
 End Sub
+
 Private Sub QAFileSrc_Click()
+Debug.Print "x"
+Debug.Assert False
+
 On Error GoTo Err_QAFileSrc_Click
 
     Dim stShell As String
@@ -1156,7 +1198,11 @@ Err_QAFileSrc_Click:
     Resume Exit_QAFileSrc_Click
     
 End Sub
+
 Private Sub QAExpDB_Click()
+Debug.Print "x"
+Debug.Assert False
+
 On Error GoTo Err_QAExpDB_Click
 
     Dim stShell As String
@@ -1173,7 +1219,11 @@ Err_QAExpDB_Click:
     Resume Exit_QAExpDB_Click
     
 End Sub
+
 Private Sub QAImpFldr_Click()
+Debug.Print "x"
+Debug.Assert False
+
 On Error GoTo Err_QAImpFldr_Click
 
     Dim stShell As String
@@ -1190,7 +1240,11 @@ Err_QAImpFldr_Click:
     Resume Exit_QAImpFldr_Click
     
 End Sub
+
 Private Sub QAXportFldr_Click()
+Debug.Print "x"
+Debug.Assert False
+
 On Error GoTo Err_QAXportFldr_Click
 
     Dim stShell As String
@@ -1207,7 +1261,11 @@ Err_QAXportFldr_Click:
     Resume Exit_QAXportFldr_Click
     
 End Sub
+
 Private Sub ProdVsQA_Click()
+Debug.Print "x"
+Debug.Assert False
+
 On Error GoTo Err_ProdVsQA_Click
 
 Dim stMyDir As String
@@ -1238,7 +1296,11 @@ Err_ProdVsQA_Click:
     Resume Exit_ProdVsQA_Click
     
 End Sub
+
 Private Sub VIPmanualImp_Click()
+Debug.Print "x"
+Debug.Assert False
+
 On Error GoTo Err_VIPmanualImp_Click
 
 Dim stMyDir As String
@@ -1269,7 +1331,11 @@ Err_VIPmanualImp_Click:
     Resume Exit_VIPmanualImp_Click
     
 End Sub
+
 Private Sub VIPmanualXport_Click()
+Debug.Print "x"
+Debug.Assert False
+
 On Error GoTo Err_VIPmanualXport_Click
 
 Dim stMyDir As String
@@ -1301,7 +1367,10 @@ Err_VIPmanualXport_Click:
     Resume Exit_VIPmanualXport_Click
     
 End Sub
+
 Private Sub VIPHdrReVu_Click()
+Debug.Print "x"
+
 On Error GoTo Err_VIPHdrReVu_Click
 
     Dim stDocName As String
@@ -1317,7 +1386,9 @@ Err_VIPHdrReVu_Click:
     Resume Exit_VIPHdrReVu_Click
     
 End Sub
+
 Private Sub VIPBuyReVu_Click()
+Debug.Print "x"
 On Error GoTo Err_VIPBuyReVu_Click
 
     Dim stDocName As String
@@ -1334,6 +1405,7 @@ Err_VIPBuyReVu_Click:
     
 End Sub
 Private Sub VIPDetReVu_Click()
+Debug.Print "x"
 On Error GoTo Err_VIPDetReVu_Click
 
     Dim stDocName As String
@@ -1349,7 +1421,9 @@ Err_VIPDetReVu_Click:
     Resume Exit_VIPDetReVu_Click
     
 End Sub
+
 Private Sub ChkVndrsIDbyPendIDQ_Click()
+Debug.Print "x"
 On Error GoTo Err_ChkVndrsIDbyPendIDQ_Click
 
     Dim stDocName As String
@@ -1365,7 +1439,9 @@ Err_ChkVndrsIDbyPendIDQ_Click:
     Resume Exit_ChkVndrsIDbyPendIDQ_Click
     
 End Sub
+
 Private Sub VuImps_Click()
+Debug.Print "x"
 On Error GoTo Err_VuImps_Click
 
     DoCmd.OpenQuery "ImpOKVQ", acViewNormal, acReadOnly
@@ -1380,7 +1456,9 @@ Err_VuImps_Click:
     Resume Exit_VuImps_Click
     
 End Sub
+
 Private Sub BuyCntChk_Click()
+Debug.Print "x"
 On Error GoTo Err_BuyCntChk_Click
 
     Dim stDocName As String
@@ -1396,7 +1474,9 @@ Err_BuyCntChk_Click:
     Resume Exit_BuyCntChk_Click
     
 End Sub
+
 Private Sub ISubsWICs_Click()
+Debug.Print "x"
 On Error GoTo Err_ISubsWICs_Click
 
     Dim stDocName As String
@@ -1412,7 +1492,9 @@ Err_ISubsWICs_Click:
     Resume Exit_ISubsWICs_Click
     
 End Sub
+
 Private Sub ISubsICsWoBParts_Click()
+Debug.Print "x"
 On Error GoTo Err_ISubsICsWoBParts_Click
 
     Dim stDocName As String
@@ -1428,7 +1510,9 @@ Err_ISubsICsWoBParts_Click:
     Resume Exit_ISubsICsWoBParts_Click
     
 End Sub
+
 Private Sub MultiOrderPromos_Click()
+Debug.Print "x"
 On Error GoTo Err_MultiOrderPromos_Click
 
     Dim stDocName As String
@@ -1444,7 +1528,9 @@ Err_MultiOrderPromos_Click:
     Resume Exit_MultiOrderPromos_Click
     
 End Sub
+
 Private Sub RevuSame_Click()
+Debug.Print "x"
 On Error GoTo Err_RevuSame_Click
 
     Dim stDocName As String

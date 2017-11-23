@@ -1667,6 +1667,8 @@ Option Compare Database   'Use database order for string comparisons
 
 
 Private Sub Deadline___Eff__Mont_Click()
+Debug.Print "x"
+
 On Error GoTo Err_Deadline___Eff__Mont_Click
 
     Dim DocName As String
@@ -1685,6 +1687,7 @@ Err_Deadline___Eff__Mont_Click:
 End Sub
 
 Private Sub Exit_Deadlin_Mn_Click()
+Debug.Print "x"
 On Error GoTo Err_Exit_Deadlin_Mn_Click
 
     DoCmd.Close
@@ -1699,14 +1702,17 @@ Err_Exit_Deadlin_Mn_Click:
 End Sub
 
 Private Sub Form_AfterUpdate()
+Debug.Print "x"
     DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Form_Close()
+Debug.Print "x"
 '   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Form_Current()
+Debug.Print "x"
 
 Dim stVC As String
 Dim stCompany As String
@@ -1736,6 +1742,7 @@ End Sub
 
 
 Private Sub Open_Vndr_Edit_Form__Click()
+Debug.Print "x"
 On Error GoTo Err_Open_Vndr_Edit_Form__Click
 
     Dim DocName As String
@@ -1754,6 +1761,7 @@ Err_Open_Vndr_Edit_Form__Click:
 End Sub
 
 Private Sub FaxCvrB_Click()
+Debug.Print "x"
 On Error GoTo Err_FaxCvrB_Click
 
     Dim stDocName As String
@@ -1776,6 +1784,7 @@ End Sub
 
 
 Private Sub Eml_Click()
+Debug.Print "x"
 On Error GoTo Err_Eml_Click
 
 'Send an email w/ bcc to user

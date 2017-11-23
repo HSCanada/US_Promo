@@ -2,7 +2,6 @@
 VersionRequired =20
 Begin Report
     LayoutForPrint = NotDefault
-    FilterOn = NotDefault
     DefaultView =0
     DateGrouping =1
     GrpKeepTogether =1
@@ -509,6 +508,8 @@ Option Compare Database
 Option Explicit
 
 Private Sub Report_Open(Cancel As Integer)
+Debug.Print "x"
+
 If ZRptType() = "Default Promos" Then
     'MsgBox "OK"
    FlyerPg.Visible = False

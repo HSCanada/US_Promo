@@ -33,9 +33,6 @@ Begin Form
     End
     OnActivate ="[Event Procedure]"
     AllowDatasheetView =0
-    AllowPivotTableView =0
-    AllowPivotChartView =0
-    AllowPivotChartView =0
     FilterOnLoad =0
     ShowPageMargins =0
     DisplayOnSharePointSite =1
@@ -317,6 +314,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Form_Activate()
+Debug.Print "x"
 On Error GoTo Err_Form_Activate
 
 Dim NowDt As Date

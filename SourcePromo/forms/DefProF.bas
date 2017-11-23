@@ -22,6 +22,10 @@ Begin Form
     RecordSource ="DefPro"
     Caption ="DefPro"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     FilterOnLoad =0
     DatasheetGridlinesColor12 =12632256
     Begin
@@ -537,6 +541,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub DftFlier_AfterUpdate()
+Debug.Print "x"
 If Not IsNull(Me!DftFlier) Then Me!DftPromo = -1
 If Not IsNull(Me!DftFlier) Then Forms![zPromoF]![DftPromo] = -1
 'If IsNull(Forms![zPromoF]![DftPromo]) Then Forms![zPromoF]![DftPromo] = -1
@@ -544,6 +549,7 @@ Me.Refresh
 End Sub
 
 Private Sub DftPromo_AfterUpdate()
+Debug.Print "x"
 On Error GoTo Err_DftPromo_AfterUpdate
 
 If Me![DftPromo] = -1 Then Me![DivPrc] = 0
@@ -557,6 +563,7 @@ Err_DftPromo_AfterUpdate:
 End Sub
 
 Private Sub DivPrc_AfterUpdate()
+Debug.Print "x"
 On Error GoTo Err_DivPrc_AfterUpdate
 
 If Me![DivPrc] = -1 Then Me![DftPromo] = 0
@@ -570,6 +577,7 @@ Err_DivPrc_AfterUpdate:
 End Sub
 
 Private Sub Dt_Click()
+Debug.Print "x"
 On Error GoTo Err_Dt_Click
 
 Dim dtEff As Date
@@ -598,10 +606,12 @@ Err_Dt_Click:
 End Sub
 
 Private Sub ProCd_AfterUpdate()
+Debug.Print "x"
 If Not IsNull(Me!ProCd) Then Me!DftPromo = -1
 End Sub
 
 Private Sub InFly_AfterUpdate()
+Debug.Print "x"
 'If Not IsNull(Me!DftFlier) Then
 Me!DftPromo = -1
 'If Not IsNull(Me!DftFlier) Then

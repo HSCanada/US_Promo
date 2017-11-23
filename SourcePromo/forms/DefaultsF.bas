@@ -18,6 +18,10 @@ Begin Form
     RecordSource ="Defaults"
     Caption ="Defaults"
     OnClose ="[Event Procedure]"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     FilterOnLoad =0
     AllowLayoutView =0
     Begin
@@ -1573,6 +1577,7 @@ Option Compare Database   'Use database order for string comparisons
 
 
 Private Sub Button57_Click()
+Debug.Print "x"
 On Error GoTo Err_Button57_Click
 
 
@@ -1588,6 +1593,7 @@ Err_Button57_Click:
 End Sub
 
 Private Sub Form_Close()
+Debug.Print "x"
   Z_DCompany = [DCompany]
   Z_DSPAprefix = [DSPAprefix]
   Z_DSPAsuffix = [DSPAsuffix]
@@ -1645,6 +1651,7 @@ Private Sub Form_Close()
 End Sub
 
 Private Sub Preview_Defaults_Click()
+Debug.Print "x"
 On Error GoTo Err_Preview_Defaults_Click
 
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70

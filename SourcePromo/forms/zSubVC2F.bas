@@ -25,6 +25,10 @@ Begin Form
     Caption ="zSubVC"
     OnOpen ="[Event Procedure]"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     FilterOnLoad =0
     AllowLayoutView =0
     DatasheetGridlinesColor12 =12632256
@@ -255,6 +259,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Close_Click()
+Debug.Print "x"
 On Error GoTo Err_Close_Click
 
 
@@ -270,5 +275,6 @@ Err_Close_Click:
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
+Debug.Print "x"
 DoCmd.GoToRecord , "zSubVC2F", acNewRec
 End Sub
