@@ -14,7 +14,7 @@ Begin Form
     ItemSuffix =173
     Left =1065
     Top =210
-    Right =25890
+    Right =23085
     Bottom =13275
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
@@ -3970,7 +3970,6 @@ Private Sub VuDivPrcR_Click()
 Debug.Print "VuDivPrcR_Click_XXX"
 Debug.Assert False
 
-Debug.Assert False
 On Error GoTo Err_VuDivPrcR_Click
 
     Dim stDocName As String

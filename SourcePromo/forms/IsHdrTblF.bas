@@ -108,7 +108,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Form_Current()
-Debug.Print "x"
+Debug.Print "Form_Current_XXX"
 Debug.Assert False
 
 Dim stTbl As String

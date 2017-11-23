@@ -1,7 +1,7 @@
 ﻿Version =196611
 ColumnsShown =0
 Begin
-    Comment ="debug.print(\"x\")"
+    Comment ="debug.print(\"XXX\")"
 End
 Begin
     Comment ="Scheduler Launches weekdays, 6:45 PM   edited 2015-09-18 was 5:55 am"
@@ -179,119 +179,119 @@ Begin
     Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
         "nterfaceMacro MinimumClientDesignVersion=\"14.0.0000.0000\" xmlns=\"http://schem"
         "as.microsoft.com/office/accessservices/2009/11/application\"><Statements><Commen"
-        "t>debug.print(\"x\")</Comment><"
+        "t>debug.print(\"XXX\")</Comment"
 End
 Begin
-    Comment ="_AXL:Comment>Scheduler Launches weekdays, 6:45 PM   edited 2015-09-18 was 5:55 a"
-        "m</Comment><Comment>To: richard.zepernick@henryschein.com, Subject: \"Promo.mdb "
-        "[VIPitmMstrUpDtM] Launched\"</Comment><Action Name=\"EMailDatabaseObject\"><Argu"
-        "ment Name=\"To\">ri"
+    Comment ="_AXL:><Comment>Scheduler Launches weekdays, 6:45 PM   edited 2015-09-18 was 5:55"
+        " am</Comment><Comment>To: richard.zepernick@henryschein.com, Subject: \"Promo.md"
+        "b [VIPitmMstrUpDtM] Launched\"</Comment><Action Name=\"EMailDatabaseObject\"><Ar"
+        "gument Name=\"To\">"
 End
 Begin
-    Comment ="_AXL:chard.zepernick@henryschein.com</Argument><Argument Name=\"Subject\">Promo."
-        "mdb [VIPitmMstrUpDtM] Launched</Argument><Argument Name=\"MessageText\">MasterIt"
-        "emFile update/replace process</Argument><Argument Name=\"EditMessage\">No</Argum"
+    Comment ="_AXL:richard.zepernick@henryschein.com</Argument><Argument Name=\"Subject\">Prom"
+        "o.mdb [VIPitmMstrUpDtM] Launched</Argument><Argument Name=\"MessageText\">Master"
+        "ItemFile update/replace process</Argument><Argument Name=\"EditMessage\">No</Arg"
+        "ument></Action><Com"
+End
+Begin
+    Comment ="_AXL:ment>Text: \"MasterItemFile update/replace process\"</Comment><Comment>[E3N"
+        "mDQ] Delete records in [E3 NAME]</Comment><Action Name=\"OpenQuery\"><Argument N"
+        "ame=\"QueryName\">E3NmDQ</Argument></Action><Comment>Wait 15 seconds</Comment><A"
+        "ction Name=\"RunCode"
+End
+Begin
+    Comment ="_AXL:\"><Argument Name=\"FunctionName\">Wait15sec()</Argument></Action><Comment>"
+        "[E3NameAQ] Repopulate [E3 NAME]&gt;[E3NmQ]&gt;[JDEDesc]+[JDESzeStr]</Comment><Ac"
+        "tion Name=\"OpenQuery\"><Argument Name=\"QueryName\">E3NameAQ</Argument></Action"
+        "><Comment>     [AVLC"
+End
+Begin
+    Comment ="_AXL:DE]&lt;&gt;\"Z\", (Product Class, i.e. \"D80\") DL: Left([prdcl1],1) = \"D\""
+        " or \"L\"</Comment><Comment>VIP Item Master File</Comment><Comment>Export Item L"
+        "isting for Participating Vendors (This segment processes in three minutes)</Comm"
+        "ent><Comment>Export "
+End
+Begin
+    Comment ="_AXL:Master Item Files, Wayne will provide table of SubSupplier codes to filter "
+        "[VipItemFileAQ] by VIP \"approved\" Suppliers</Comment><Comment>    [VipSuppUQ]&"
+        "gt;[VipSuppVipQ]+[VipSuppSubVcQ] Filters [VipItemFileAQ] for \"Live\" vendors on"
+        "ly (i.e. 95 K ite"
+End
+Begin
+    Comment ="_AXL:ms vs. 356 K)</Comment><Comment>[VipMasterItemFileDQ] to replace RunSQL \"D"
+        "ELETE * FROM [VipMasterItemFile];\" Empty the file before appending </Comment><A"
+        "ction Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipMasterItemFileDQ</Argum"
         "ent></Action><Comme"
 End
 Begin
-    Comment ="_AXL:nt>Text: \"MasterItemFile update/replace process\"</Comment><Comment>[E3NmD"
-        "Q] Delete records in [E3 NAME]</Comment><Action Name=\"OpenQuery\"><Argument Nam"
-        "e=\"QueryName\">E3NmDQ</Argument></Action><Comment>Wait 15 seconds</Comment><Act"
-        "ion Name=\"RunCode\">"
+    Comment ="_AXL:nt>    [VipItemFileAQ]&gt;[VipSuppUQ]+[WCS ITEMFILE]+[E3 NAME]+[ItemCdWdisp"
+        "MfgCd]+[DispMfgNmQ]&gt;[DispMfgNm]</Comment><Comment>[RZsizeAVLDQ] Empty [RZsize"
+        "AVL]</Comment><Comment>[RZsizeAVLAQ] Re-Populate [RZsizeAVL]</Comment><Comment> "
+        "  20090829 - "
 End
 Begin
-    Comment ="_AXL:<Argument Name=\"FunctionName\">Wait15sec()</Argument></Action><Comment>[E3"
-        "NameAQ] Repopulate [E3 NAME]&gt;[E3NmQ]&gt;[JDEDesc]+[JDESzeStr]</Comment><Actio"
-        "n Name=\"OpenQuery\"><Argument Name=\"QueryName\">E3NameAQ</Argument></Action><C"
-        "omment>     [AVLCDE"
+    Comment ="_AXL:Add [SizeQty] (Integer) and [PkgQty] (Y/N) from [RZsizeAVLQ] &gt;[E3NAME]+["
+        "WCS ITEMFILE]+[zSubVC]</Comment><Comment>   [PkgQty] tells us to use package qua"
+        "ntity rather than [QtyValu] in determining purchases and eligibility</Comment><C"
+        "omment>[VipIt"
 End
 Begin
-    Comment ="_AXL:]&lt;&gt;\"Z\", (Product Class, i.e. \"D80\") DL: Left([prdcl1],1) = \"D\" "
-        "or \"L\"</Comment><Comment>VIP Item Master File</Comment><Comment>Export Item Li"
-        "sting for Participating Vendors (This segment processes in three minutes)</Comme"
-        "nt><Comment>Export Ma"
+    Comment ="_AXL:emFileAQ] writes to local table [VipMasterItemFile] </Comment><Action Name="
+        "\"OpenQuery\"><Argument Name=\"QueryName\">VipItemFileAQ</Argument></Action><Com"
+        "ment>   Add [Stk].[Stk] for stocking status \"S\", stocking, or \"N\", Non</Comm"
+        "ent><Action Name=\"Ope"
 End
 Begin
-    Comment ="_AXL:ster Item Files, Wayne will provide table of SubSupplier codes to filter [V"
-        "ipItemFileAQ] by VIP \"approved\" Suppliers</Comment><Comment>    [VipSuppUQ]&gt"
-        ";[VipSuppVipQ]+[VipSuppSubVcQ] Filters [VipItemFileAQ] for \"Live\" vendors only"
-        " (i.e. 95 K items"
+    Comment ="_AXL:nQuery\"><Argument Name=\"QueryName\">VipMasterItemFileOKdDQ</Argument></Ac"
+        "tion><Comment>[VipMstrItmFileOKdAQ]  -  [VipMasterItemFile]&gt;[VipMasterItemFil"
+        "eOKd]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipMstrIt"
+        "mFileOKdAQ</Argument"
 End
 Begin
-    Comment ="_AXL: vs. 356 K)</Comment><Comment>[VipMasterItemFileDQ] to replace RunSQL \"DEL"
-        "ETE * FROM [VipMasterItemFile];\" Empty the file before appending </Comment><Act"
-        "ion Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipMasterItemFileDQ</Argumen"
-        "t></Action><Comment"
+    Comment ="_AXL:></Action><Action Name=\"EMailDatabaseObject\"><Argument Name=\"To\">Richar"
+        "d.zepernick@henryschein.com</Argument><Argument Name=\"Subject\">[VIPitmMstrUpDt"
+        "M] - Yes [VipMasterItemFile]T &gt;100K records</Argument><Argument Name=\"Messag"
+        "eText\">[VipMasterIte"
 End
 Begin
-    Comment ="_AXL:>    [VipItemFileAQ]&gt;[VipSuppUQ]+[WCS ITEMFILE]+[E3 NAME]+[ItemCdWdispMf"
-        "gCd]+[DispMfgNmQ]&gt;[DispMfgNm]</Comment><Comment>[RZsizeAVLDQ] Empty [RZsizeAV"
-        "L]</Comment><Comment>[RZsizeAVLAQ] Re-Populate [RZsizeAVL]</Comment><Comment>   "
-        "20090829 - Ad"
+    Comment ="_AXL:mFile]T has &gt;100K records, so, ran [VipMasterItemFileOKdDQ] and [VipMstr"
+        "ItmFileOKdAQ] repopulating tbl [VipMstrItmFileOKd]</Argument><Argument Name=\"Ed"
+        "itMessage\">No</Argument></Action><Comment>VipMasterItemFileOKdDQ  replacing \"D"
+        "ELETE * FROM Vip"
 End
 Begin
-    Comment ="_AXL:d [SizeQty] (Integer) and [PkgQty] (Y/N) from [RZsizeAVLQ] &gt;[E3NAME]+[WC"
-        "S ITEMFILE]+[zSubVC]</Comment><Comment>   [PkgQty] tells us to use package quant"
-        "ity rather than [QtyValu] in determining purchases and eligibility</Comment><Com"
-        "ment>[VipItem"
+    Comment ="_AXL:MasterItemFileOKd;\"</Comment><Comment>To: richard.zepernick@henryschein.co"
+        "m, Subject: \"Promo.mdb [VIPitmMstrUpDtM] COMPLETED\"</Comment><Comment>Text: \""
+        "MasterItemFile update/replace process\"</Comment><Action Name=\"EMailDatabaseObj"
+        "ect\"><Argument Name"
 End
 Begin
-    Comment ="_AXL:FileAQ] writes to local table [VipMasterItemFile] </Comment><Action Name=\""
-        "OpenQuery\"><Argument Name=\"QueryName\">VipItemFileAQ</Argument></Action><Comme"
-        "nt>   Add [Stk].[Stk] for stocking status \"S\", stocking, or \"N\", Non</Commen"
-        "t><Action Name=\"OpenQ"
+    Comment ="_AXL:=\"To\">richard.zepernick@henryschein.com</Argument><Argument Name=\"Subjec"
+        "t\">Promo.mdb [VIPitmMstrUpDtM] COMPLETED</Argument><Argument Name=\"MessageText"
+        "\">MasterItemFile update/replace process</Argument><Argument Name=\"EditMessage\""
+        ">No</Argument></Acti"
 End
 Begin
-    Comment ="_AXL:uery\"><Argument Name=\"QueryName\">VipMasterItemFileOKdDQ</Argument></Acti"
-        "on><Comment>[VipMstrItmFileOKdAQ]  -  [VipMasterItemFile]&gt;[VipMasterItemFileO"
-        "Kd]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipMstrItmF"
-        "ileOKdAQ</Argument><"
+    Comment ="_AXL:on><Action Name=\"QuitAccess\"><Argument Name=\"Options\">Exit</Argument></"
+        "Action><Comment>StopMacro</Comment><Action Name=\"EMailDatabaseObject\"><Argumen"
+        "t Name=\"To\">Richard.zepernick@henryschein.com</Argument><Argument Name=\"Subje"
+        "ct\">[VIPitmMstrUpDtM] "
 End
 Begin
-    Comment ="_AXL:/Action><Action Name=\"EMailDatabaseObject\"><Argument Name=\"To\">Richard."
-        "zepernick@henryschein.com</Argument><Argument Name=\"Subject\">[VIPitmMstrUpDtM]"
-        " - Yes [VipMasterItemFile]T &gt;100K records</Argument><Argument Name=\"MessageT"
-        "ext\">[VipMasterItemF"
+    Comment ="_AXL:- NO File failed [VipMasterItemFile]T IS NOT &gt;100K records</Argument><Ar"
+        "gument Name=\"MessageText\">[VipMasterItemFile]T has &gt;100K records, so, ran ["
+        "VipMasterItemFileOKdDQ] and [VipMstrItmFileOKdAQ] DID NOT repopulat tbl [VipMstr"
+        "ItmFileOKd]</Ar"
 End
 Begin
-    Comment ="_AXL:ile]T has &gt;100K records, so, ran [VipMasterItemFileOKdDQ] and [VipMstrIt"
-        "mFileOKdAQ] repopulating tbl [VipMstrItmFileOKd]</Argument><Argument Name=\"Edit"
-        "Message\">No</Argument></Action><Comment>VipMasterItemFileOKdDQ  replacing \"DEL"
-        "ETE * FROM VipMa"
+    Comment ="_AXL:gument><Argument Name=\"EditMessage\">No</Argument></Action><Action Name=\""
+        "EMailDatabaseObject\"><Argument Name=\"To\">richard.zepernick@henryschein.com</A"
+        "rgument><Argument Name=\"Subject\">END SSPEvent - Promo10Z* ICs UpDt 6:45pm 5Ds "
+        "Launch ItemMasterUpDa"
 End
 Begin
-    Comment ="_AXL:sterItemFileOKd;\"</Comment><Comment>To: richard.zepernick@henryschein.com,"
-        " Subject: \"Promo.mdb [VIPitmMstrUpDtM] COMPLETED\"</Comment><Comment>Text: \"Ma"
-        "sterItemFile update/replace process\"</Comment><Action Name=\"EMailDatabaseObjec"
-        "t\"><Argument Name=\""
-End
-Begin
-    Comment ="_AXL:To\">richard.zepernick@henryschein.com</Argument><Argument Name=\"Subject\""
-        ">Promo.mdb [VIPitmMstrUpDtM] COMPLETED</Argument><Argument Name=\"MessageText\">"
-        "MasterItemFile update/replace process</Argument><Argument Name=\"EditMessage\">N"
-        "o</Argument></Action"
-End
-Begin
-    Comment ="_AXL:><Action Name=\"QuitAccess\"><Argument Name=\"Options\">Exit</Argument></Ac"
-        "tion><Comment>StopMacro</Comment><Action Name=\"EMailDatabaseObject\"><Argument "
-        "Name=\"To\">Richard.zepernick@henryschein.com</Argument><Argument Name=\"Subject"
-        "\">[VIPitmMstrUpDtM] - "
-End
-Begin
-    Comment ="_AXL:NO File failed [VipMasterItemFile]T IS NOT &gt;100K records</Argument><Argu"
-        "ment Name=\"MessageText\">[VipMasterItemFile]T has &gt;100K records, so, ran [Vi"
-        "pMasterItemFileOKdDQ] and [VipMstrItmFileOKdAQ] DID NOT repopulat tbl [VipMstrIt"
-        "mFileOKd]</Argu"
-End
-Begin
-    Comment ="_AXL:ment><Argument Name=\"EditMessage\">No</Argument></Action><Action Name=\"EM"
-        "ailDatabaseObject\"><Argument Name=\"To\">richard.zepernick@henryschein.com</Arg"
-        "ument><Argument Name=\"Subject\">END SSPEvent - Promo10Z* ICs UpDt 6:45pm 5Ds La"
-        "unch ItemMasterUpDate"
-End
-Begin
-    Comment ="_AXL:M</Argument><Argument Name=\"MessageText\">\\\\usnym3fs03\\Data\\Dental\\de"
-        "ntmkt\\Promo\\Promo10Z.accdb /x ItemMasterUpDateM</Argument><Argument Name=\"Edi"
-        "tMessage\">No</Argument></Action><Action Name=\"StopMacro\"/></Statements></User"
-        "InterfaceMacro>"
+    Comment ="_AXL:teM</Argument><Argument Name=\"MessageText\">\\\\usnym3fs03\\Data\\Dental\\"
+        "dentmkt\\Promo\\Promo10Z.accdb /x ItemMasterUpDateM</Argument><Argument Name=\"E"
+        "ditMessage\">No</Argument></Action><Action Name=\"StopMacro\"/></Statements></Us"
+        "erInterfaceMacro>"
 End

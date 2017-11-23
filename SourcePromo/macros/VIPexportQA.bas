@@ -1,7 +1,7 @@
 ﻿Version =196611
 ColumnsShown =0
 Begin
-    Comment ="debug.print(\"x\")"
+    Comment ="debug.print(\"XXX\")"
 End
 Begin
     Comment ="Production - Export for VIP"
@@ -421,279 +421,279 @@ Begin
     Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
         "nterfaceMacro MinimumClientDesignVersion=\"14.0.0000.0000\" xmlns=\"http://schem"
         "as.microsoft.com/office/accessservices/2009/11/application\"><Statements><Commen"
-        "t>debug.print(\"x\")</Comment><"
+        "t>debug.print(\"XXX\")</Comment"
 End
 Begin
-    Comment ="_AXL:Comment>Production - Export for VIP</Comment><Comment>         REM: \"Heali"
-        "ng rain is falling down (repeat), I'm not afraid, I'm not afraid.\"</Comment><Co"
-        "mment>RZ Export runs second, RZ import runs first</Comment><Comment>W:\\ drive ="
-        " \\\\nahsinyhqdw07"
+    Comment ="_AXL:><Comment>Production - Export for VIP</Comment><Comment>         REM: \"Hea"
+        "ling rain is falling down (repeat), I'm not afraid, I'm not afraid.\"</Comment><"
+        "Comment>RZ Export runs second, RZ import runs first</Comment><Comment>W:\\ drive"
+        " = \\\\nahsinyhqdw"
 End
 Begin
-    Comment ="_AXL:\\Vip_Promos_prod</Comment><Comment>Repopulate database   \\\\nahsinyhqdw07"
-        "\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb </Comment><Comment>     OKdData.mdb  "
-        "contains Promos, Details, and WCS-like Item file. Specifically:</Comment><Commen"
-        "t>          [Import"
+    Comment ="_AXL:07\\Vip_Promos_prod</Comment><Comment>Repopulate database   \\\\nahsinyhqdw"
+        "07\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb </Comment><Comment>     OKdData.mdb"
+        "  contains Promos, Details, and WCS-like Item file. Specifically:</Comment><Comm"
+        "ent>          [Impo"
 End
 Begin
-    Comment ="_AXL:OK] = [Pending_id], Status, and Date of all imported promotions</Comment><C"
-        "omment>          [VipItems] = Promotion Details, ItemSub</Comment><Comment>     "
-        "     [VipMasterItemFile] = List of all valid itemcodes for all valid supplier co"
-        "des</Comment>"
+    Comment ="_AXL:rtOK] = [Pending_id], Status, and Date of all imported promotions</Comment>"
+        "<Comment>          [VipItems] = Promotion Details, ItemSub</Comment><Comment>   "
+        "       [VipMasterItemFile] = List of all valid itemcodes for all valid supplier "
+        "codes</Commen"
 End
 Begin
-    Comment ="_AXL:<Comment>          [VipPromos] = Promotion Headers</Comment><Comment>      "
-        "    [VipSubVCs] = Compiled list of combined current supplier codes</Comment><Com"
-        "ment>          [VipType] = \"Nat'l Promo\", \"Zahn Nat'l Promo\", \"Convention S"
-        "pecial\"</Comment><"
+    Comment ="_AXL:t><Comment>          [VipPromos] = Promotion Headers</Comment><Comment>    "
+        "      [VipSubVCs] = Compiled list of combined current supplier codes</Comment><C"
+        "omment>          [VipType] = \"Nat'l Promo\", \"Zahn Nat'l Promo\", \"Convention"
+        " Special\"</Comment"
 End
 Begin
-    Comment ="_AXL:Comment>          [VipBuy] = Buy data</Comment><Comment>@ 17:00 hrs (5:00 p"
-        "m) W:\\Vip_Dropoff\\update_vip_buffer.mdb appears; then 7 hours later...</Commen"
-        "t><Comment>@ 0:15 hrs (12:15 am) W:\\Vip_Dropoff\\update_vip_buffer.mdb VIP (Way"
-        "ne Slingluff) pic"
+    Comment ="_AXL:><Comment>          [VipBuy] = Buy data</Comment><Comment>@ 17:00 hrs (5:00"
+        " pm) W:\\Vip_Dropoff\\update_vip_buffer.mdb appears; then 7 hours later...</Comm"
+        "ent><Comment>@ 0:15 hrs (12:15 am) W:\\Vip_Dropoff\\update_vip_buffer.mdb VIP (W"
+        "ayne Slingluff) p"
 End
 Begin
-    Comment ="_AXL:ks up the data and deletes the database.</Comment><Comment>Process Descript"
-        "ion -</Comment><Comment>     So, Promos.mdb has until midnight to pick up and pr"
-        "ocess the VIP info, checking the [Promotion_Header_Update].[Done] flag for each "
-        "completed imp"
+    Comment ="_AXL:icks up the data and deletes the database.</Comment><Comment>Process Descri"
+        "ption -</Comment><Comment>     So, Promos.mdb has until midnight to pick up and "
+        "process the VIP info, checking the [Promotion_Header_Update].[Done] flag for eac"
+        "h completed i"
 End
 Begin
-    Comment ="_AXL:ort.</Comment><Comment>Wayne reads the database [Promotion_Header_Update].["
-        "Done] field and then deletes those records from the next night's pending file.</"
-        "Comment><Comment>     Scheduler launchs [VIPimportAppM] the import append macro "
-        "@ 21:00 hrs ("
+    Comment ="_AXL:mport.</Comment><Comment>Wayne reads the database [Promotion_Header_Update]"
+        ".[Done] field and then deletes those records from the next night's pending file."
+        "</Comment><Comment>     Scheduler launchs [VIPimportAppM] the import append macr"
+        "o @ 21:00 hrs"
 End
 Begin
-    Comment ="_AXL:9:00 pm), then launches [VIPexportM] @ 21:30 hrs (9:30 pm)</Comment><Commen"
-        "t>[VIPimportAppM] gets data, (Approved Headers, Details and Active Vendors), add"
-        "s it to the master listings (in Promos.mdb), and then marks the records imported"
-        ".</Comment><C"
+    Comment ="_AXL: (9:00 pm), then launches [VIPexportM] @ 21:30 hrs (9:30 pm)</Comment><Comm"
+        "ent>[VIPimportAppM] gets data, (Approved Headers, Details and Active Vendors), a"
+        "dds it to the master listings (in Promos.mdb), and then marks the records import"
+        "ed.</Comment>"
 End
 Begin
-    Comment ="_AXL:omment>Then (a half hour later) the Scheduler launches this macro, [VIPexpo"
-        "rtM] </Comment><Comment>History Export - </Comment><Comment>Allows VIP users to "
-        "copy 'recent' promotions as time-saving feature</Comment><Comment>Export two fil"
-        "es, [VipPromo"
+    Comment ="_AXL:<Comment>Then (a half hour later) the Scheduler launches this macro, [VIPex"
+        "portM] </Comment><Comment>History Export - </Comment><Comment>Allows VIP users t"
+        "o copy 'recent' promotions as time-saving feature</Comment><Comment>Export two f"
+        "iles, [VipPro"
 End
 Begin
-    Comment ="_AXL:ExpAQ]&gt;[zPromo] and [VipItemSubExpQ]&gt;[zItemSub] </Comment><Comment>Cr"
-        "iteria [Apprvd] = -1 and [EffYr] = DatePart(\"yyyy\",Now()) Or DatePart(\"yyyy\""
-        ",Now())-1</Comment><Comment>That is: All approved promos for current and prior y"
-        "ears (a range of "
+    Comment ="_AXL:moExpAQ]&gt;[zPromo] and [VipItemSubExpQ]&gt;[zItemSub] </Comment><Comment>"
+        "Criteria [Apprvd] = -1 and [EffYr] = DatePart(\"yyyy\",Now()) Or DatePart(\"yyyy"
+        "\",Now())-1</Comment><Comment>That is: All approved promos for current and prior"
+        " years (a range o"
 End
 Begin
-    Comment ="_AXL:13 to 24 months)</Comment><Comment>\\\\nahsinyhqdw07\\vip_promos_prod\\Vip_"
-        "Pickup\\ Master_Vip_Promos.mdb [Promotion_Header_Update] and [Promotion_Detail_U"
-        "pdate]</Comment><Comment>Edit 9/23/2008 - [VipPromoExpAQ] criteria [DftPromo]=0 "
-        "(eliminates defaul"
+    Comment ="_AXL:f 13 to 24 months)</Comment><Comment>\\\\nahsinyhqdw07\\vip_promos_prod\\Vi"
+        "p_Pickup\\ Master_Vip_Promos.mdb [Promotion_Header_Update] and [Promotion_Detail"
+        "_Update]</Comment><Comment>Edit 9/23/2008 - [VipPromoExpAQ] criteria [DftPromo]="
+        "0 (eliminates defa"
 End
 Begin
-    Comment ="_AXL:ted promotions from history to Wayne) to [VIPpromos]</Comment><Comment>Log "
-        "the following event in [SchdLog]</Comment><Comment>LogFunc(\"Export Begin [VIPex"
-        "portM]\")</Comment><Action Name=\"RunCode\"><Argument Name=\"FunctionName\">LogF"
-        "unc(\"Export Begin ["
+    Comment ="_AXL:ulted promotions from history to Wayne) to [VIPpromos]</Comment><Comment>Lo"
+        "g the following event in [SchdLog]</Comment><Comment>LogFunc(\"Export Begin [VIP"
+        "exportM]\")</Comment><Action Name=\"RunCode\"><Argument Name=\"FunctionName\">Lo"
+        "gFunc(\"Export Begin"
 End
 Begin
-    Comment ="_AXL:VIPexportM]\")</Argument></Action><Comment>SchdLogAQ</Comment><Action Name="
-        "\"OpenQuery\"><Argument Name=\"QueryName\">SchdLogAQ</Argument></Action><Comment"
-        ">Export Promotions (All for current and one prior year)</Comment><Comment>[VipPr"
-        "omosDQ]  to replac"
+    Comment ="_AXL: [VIPexportM]\")</Argument></Action><Comment>SchdLogAQ</Comment><Action Nam"
+        "e=\"OpenQuery\"><Argument Name=\"QueryName\">SchdLogAQ</Argument></Action><Comme"
+        "nt>Export Promotions (All for current and one prior year)</Comment><Comment>[Vip"
+        "PromosDQ]  to repl"
 End
 Begin
-    Comment ="_AXL:e the data in [VipPromos] RunSQL \"DELETE * FROM VipPromos;\"</Comment><Act"
-        "ion Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipPromosDQ</Argument></Acti"
-        "on><Comment>[VipPromoExpAQ]&gt;[zPromo] writes to linked table [VipPromos] in \\"
-        "\\nahsinyhqdw07\\vip_p"
+    Comment ="_AXL:ace the data in [VipPromos] RunSQL \"DELETE * FROM VipPromos;\"</Comment><A"
+        "ction Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipPromosDQ</Argument></Ac"
+        "tion><Comment>[VipPromoExpAQ]&gt;[zPromo] writes to linked table [VipPromos] in "
+        "\\\\nahsinyhqdw07\\vip"
 End
 Begin
-    Comment ="_AXL:romos_prod\\Vip_Pickup\\OKdData.mdb [VipPromos]  aka [VipPromos]</Comment><"
-        "Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipPromoExpAQ </Argument>"
-        "</Action><Comment>20090708 - Added fields- [RdmOpt5], [GetValu], [BuyCnt], [1inv"
-        "], [DftNote], [Comm"
+    Comment ="_AXL:_promos_prod\\Vip_Pickup\\OKdData.mdb [VipPromos]  aka [VipPromos]</Comment"
+        "><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipPromoExpAQ </Argumen"
+        "t></Action><Comment>20090708 - Added fields- [RdmOpt5], [GetValu], [BuyCnt], [1i"
+        "nv], [DftNote], [Co"
 End
 Begin
-    Comment ="_AXL:ent], [Same], [BrandNmPkg]</Comment><Comment>Export Buy info</Comment><Comm"
-        "ent>[VIPBuyAQ]</Comment><Comment>[zBuy](aka zEBuy)+[zReadPromo]&gt;[VIPBuyAQ]&gt"
-        ";[zReadBuy]</Comment><Comment>Export Details (ItemSub)</Comment><Comment>[VipIte"
-        "msDQ]  to rep"
+    Comment ="_AXL:mment], [Same], [BrandNmPkg]</Comment><Comment>Export Buy info</Comment><Co"
+        "mment>[VIPBuyAQ]</Comment><Comment>[zBuy](aka zEBuy)+[zReadPromo]&gt;[VIPBuyAQ]&"
+        "gt;[zReadBuy]</Comment><Comment>Export Details (ItemSub)</Comment><Comment>[VipI"
+        "temsDQ]  to r"
 End
 Begin
-    Comment ="_AXL:lace RunSQL \"DELETE * FROM [VipItems];\"</Comment><Action Name=\"OpenQuery"
-        "\"><Argument Name=\"QueryName\">VipItemsDQ</Argument></Action><Comment>[VipItemS"
-        "ubExpAQ]&gt;[zItemSub]+[VipPromoExpQ]</Comment><Comment>[VipItemSubExpAQ]  write"
-        "s to linked table ["
+    Comment ="_AXL:eplace RunSQL \"DELETE * FROM [VipItems];\"</Comment><Action Name=\"OpenQue"
+        "ry\"><Argument Name=\"QueryName\">VipItemsDQ</Argument></Action><Comment>[VipIte"
+        "mSubExpAQ]&gt;[zItemSub]+[VipPromoExpQ]</Comment><Comment>[VipItemSubExpAQ]  wri"
+        "tes to linked table"
 End
 Begin
-    Comment ="_AXL:VipItems] in \\\\nahsinyhqdw07\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb  a"
-        "ka [VipItems]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">V"
-        "ipItemSubExpAQ</Argument></Action><Comment>20090707 - Now includes [BuyPart], [I"
-        "tmQty], [BrandNmPkg]</"
+    Comment ="_AXL: [VipItems] in \\\\nahsinyhqdw07\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb "
+        " aka [VipItems]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\""
+        ">VipItemSubExpAQ</Argument></Action><Comment>20090707 - Now includes [BuyPart], "
+        "[ItmQty], [BrandNmPkg]"
 End
 Begin
-    Comment ="_AXL:Comment><Comment>Export SubVCs</Comment><Comment>[VipSubVCsDQ] Delete curre"
-        "nt [VipSubVCs] data</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryNa"
-        "me\">VipSubVCsDQ</Argument></Action><Comment>[VipSubVCsAQ] writes to linked tabl"
-        "e [VipSubVCs] in "
+    Comment ="_AXL:</Comment><Comment>Export SubVCs</Comment><Comment>[VipSubVCsDQ] Delete cur"
+        "rent [VipSubVCs] data</Comment><Action Name=\"OpenQuery\"><Argument Name=\"Query"
+        "Name\">VipSubVCsDQ</Argument></Action><Comment>[VipSubVCsAQ] writes to linked ta"
+        "ble [VipSubVCs] i"
 End
 Begin
-    Comment ="_AXL:\\\\nahsinyhqdw07\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb    aka [VipSubV"
-        "Cs]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipSubVCsAQ"
-        "</Argument></Action><Comment>Export Type</Comment><Comment>[VipTypeDQ] Delete cu"
-        "rrent [VipType] data</"
+    Comment ="_AXL:n \\\\nahsinyhqdw07\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb    aka [VipSu"
+        "bVCs]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipSubVCs"
+        "AQ</Argument></Action><Comment>Export Type</Comment><Comment>[VipTypeDQ] Delete "
+        "current [VipType] data"
 End
 Begin
-    Comment ="_AXL:Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipTypeDQ</"
-        "Argument></Action><Comment>[VipTypeAQ] writes to linked table [VipType] in \\\\n"
-        "ahsinyhqdw07\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb    aka [VipType]</Comment"
-        "><Action Name=\"OpenQue"
+    Comment ="_AXL:</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipTypeDQ"
+        "</Argument></Action><Comment>[VipTypeAQ] writes to linked table [VipType] in \\\\"
+        "nahsinyhqdw07\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb    aka [VipType]</Commen"
+        "t><Action Name=\"OpenQ"
 End
 Begin
-    Comment ="_AXL:ry\"><Argument Name=\"QueryName\">VipTypeAQ</Argument></Action><Comment>Exp"
-        "ort Item Listing for Participating Vendors (This segment processes in three minu"
-        "tes)</Comment><Comment>Export Master Item Files, Wayne will provide table of Sub"
-        "Supplier codes t"
+    Comment ="_AXL:uery\"><Argument Name=\"QueryName\">VipTypeAQ</Argument></Action><Comment>E"
+        "xport Item Listing for Participating Vendors (This segment processes in three mi"
+        "nutes)</Comment><Comment>Export Master Item Files, Wayne will provide table of S"
+        "ubSupplier codes"
 End
 Begin
-    Comment ="_AXL:o filter [VipItemFileAQ] by VIP \"approved\" Suppliers</Comment><Comment>  "
-        "  [VipSuppUQ]&gt;[VipSuppVipQ]+[VipSuppSubVcQ]</Comment><Comment>[VipMasterItemF"
-        "ileDQ] to replace RunSQL \"DELETE * FROM [VipMasterItemFile];\" Empty the file b"
-        "efore appending <"
+    Comment ="_AXL: to filter [VipItemFileAQ] by VIP \"approved\" Suppliers</Comment><Comment>"
+        "    [VipSuppUQ]&gt;[VipSuppVipQ]+[VipSuppSubVcQ]</Comment><Comment>[VipMasterIte"
+        "mFileDQ] to replace RunSQL \"DELETE * FROM [VipMasterItemFile];\" Empty the file"
+        " before appending"
 End
 Begin
-    Comment ="_AXL:/Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipMasterI"
-        "temFileDQ</Argument></Action><Comment>    [VipItemFileAQ]&gt;[VipSuppUQ]+[WCS IT"
-        "EMFILE]+[E3 NAME]+[ItemCdWdispMfgCd]+[DispMfgNmQ]&gt;[DispMfgNm]</Comment><Comme"
-        "nt>[RZsizeAVLDQ] "
+    Comment ="_AXL: </Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipMaste"
+        "rItemFileDQ</Argument></Action><Comment>    [VipItemFileAQ]&gt;[VipSuppUQ]+[WCS "
+        "ITEMFILE]+[E3 NAME]+[ItemCdWdispMfgCd]+[DispMfgNmQ]&gt;[DispMfgNm]</Comment><Com"
+        "ment>[RZsizeAVLDQ"
 End
 Begin
-    Comment ="_AXL:Empty [RZsizeAVL]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"Quer"
-        "yName\">RZsizeAVLDQ</Argument></Action><Comment>[RZsizeAVLAQ] Re-Populate [RZsiz"
-        "eAVL]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">RZsizeAVL"
-        "AQ</Argument></Action"
+    Comment ="_AXL:] Empty [RZsizeAVL]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"Qu"
+        "eryName\">RZsizeAVLDQ</Argument></Action><Comment>[RZsizeAVLAQ] Re-Populate [RZs"
+        "izeAVL]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">RZsizeA"
+        "VLAQ</Argument></Acti"
 End
 Begin
-    Comment ="_AXL:><Comment>   20090829 - Add [SizeQty] (Integer) and [PkgQty] (Y/N) from [RZ"
-        "sizeAVLQ] &gt;[E3NAME]+[WCS ITEMFILE]+[zSubVC]</Comment><Comment>   [PkgQty] tel"
-        "ls us to use package quantity rather than [QtyValu] in determining purchases and"
-        " eligibility<"
+    Comment ="_AXL:on><Comment>   20090829 - Add [SizeQty] (Integer) and [PkgQty] (Y/N) from ["
+        "RZsizeAVLQ] &gt;[E3NAME]+[WCS ITEMFILE]+[zSubVC]</Comment><Comment>   [PkgQty] t"
+        "ells us to use package quantity rather than [QtyValu] in determining purchases a"
+        "nd eligibilit"
 End
 Begin
-    Comment ="_AXL:/Comment><Comment>[VipItemFileAQ] writes to linked table [VipMasterItemFile"
-        "] in \\\\nahsinyhqdw07\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb    aka [VipMast"
-        "erItemFile]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">Vip"
-        "ItemFileAQ</Argument><"
+    Comment ="_AXL:y</Comment><Comment>[VipItemFileAQ] writes to linked table [VipMasterItemFi"
+        "le] in \\\\nahsinyhqdw07\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb    aka [VipMa"
+        "sterItemFile]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">V"
+        "ipItemFileAQ</Argument"
 End
 Begin
-    Comment ="_AXL:/Action><Comment>   Add [Stk].[Stk] for stocking status \"S\", stocking, or"
-        " \"N\", Non</Comment><Comment>Generate Exception Report -</Comment><Comment>Upda"
-        "te exception report table [ExcpRptSuppliers] of unmatched Supplier codes from VI"
-        "P or Promos Db li"
+    Comment ="_AXL:></Action><Comment>   Add [Stk].[Stk] for stocking status \"S\", stocking, "
+        "or \"N\", Non</Comment><Comment>Generate Exception Report -</Comment><Comment>Up"
+        "date exception report table [ExcpRptSuppliers] of unmatched Supplier codes from "
+        "VIP or Promos Db "
 End
 Begin
-    Comment ="_AXL:stings</Comment><Comment>[ExcpRptSuppDQ]    Delete current [ExcpRptSupplier"
-        "s] data</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">ExcpRpt"
-        "SuppDQ</Argument></Action><Comment>[ExcpRptSuppAQ]&gt;[ExcRptSuppliersUQ]TABLE ["
-        "ExcRptVipLiveVCsW"
+    Comment ="_AXL:listings</Comment><Comment>[ExcpRptSuppDQ]    Delete current [ExcpRptSuppli"
+        "ers] data</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">ExcpR"
+        "ptSuppDQ</Argument></Action><Comment>[ExcpRptSuppAQ]&gt;[ExcRptSuppliersUQ]TABLE"
+        " [ExcRptVipLiveVC"
 End
 Begin
-    Comment ="_AXL:ozSubVCmatchQ] UNION TABLE [ExcRptzSubVCwoVipLiveVCsMatch];\015\012</Commen"
-        "t><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">ExcpRptSuppAQ</Argumen"
-        "t></Action><Comment>Log the following event in [SchdLog]</Comment><Comment>LogFu"
-        "nc(\"Export Completed [V"
+    Comment ="_AXL:sWozSubVCmatchQ] UNION TABLE [ExcRptzSubVCwoVipLiveVCsMatch];\015\012</Comm"
+        "ent><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">ExcpRptSuppAQ</Argum"
+        "ent></Action><Comment>Log the following event in [SchdLog]</Comment><Comment>Log"
+        "Func(\"Export Completed "
 End
 Begin
-    Comment ="_AXL:IPexportM]\")</Comment><Action Name=\"RunCode\"><Argument Name=\"FunctionNa"
-        "me\">LogFunc(\"Export Completed [VIPexportM]\")</Argument></Action><Comment>Schd"
-        "LogAQ</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">SchdLogAQ"
-        "</Argument></Action><Com"
+    Comment ="_AXL:[VIPexportM]\")</Comment><Action Name=\"RunCode\"><Argument Name=\"Function"
+        "Name\">LogFunc(\"Export Completed [VIPexportM]\")</Argument></Action><Comment>Sc"
+        "hdLogAQ</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">SchdLog"
+        "AQ</Argument></Action><C"
 End
 Begin
-    Comment ="_AXL:ment>REM: Quit - This macro is NOT launched from Scheduler</Comment><Commen"
-        "t>StopMacro</Comment><Action Name=\"StopMacro\"/><Comment>REMs</Comment><Comment"
-        ">Send Richard Zepernick message with XLS exceptions report attachment</Comment><"
-        "Action Name=\"EM"
+    Comment ="_AXL:omment>REM: Quit - This macro is NOT launched from Scheduler</Comment><Comm"
+        "ent>StopMacro</Comment><Action Name=\"StopMacro\"/><Comment>REMs</Comment><Comme"
+        "nt>Send Richard Zepernick message with XLS exceptions report attachment</Comment"
+        "><Action Name=\""
 End
 Begin
-    Comment ="_AXL:ailDatabaseObject\"><Argument Name=\"ObjectType\">Table</Argument><Argument"
-        " Name=\"ObjectName\">ExcpRptSuppliers</Argument><Argument Name=\"OutputFormat\">"
-        "MicrosoftExcelBiff8(*.xls)</Argument><Argument Name=\"To\">Richard.Zepernick@hen"
-        "ryschein.com;</Argumen"
+    Comment ="_AXL:EMailDatabaseObject\"><Argument Name=\"ObjectType\">Table</Argument><Argume"
+        "nt Name=\"ObjectName\">ExcpRptSuppliers</Argument><Argument Name=\"OutputFormat\""
+        ">MicrosoftExcelBiff8(*.xls)</Argument><Argument Name=\"To\">Richard.Zepernick@he"
+        "nryschein.com;</Argum"
 End
 Begin
-    Comment ="_AXL:t><Argument Name=\"Subject\">VIP File Updates</Argument><Argument Name=\"Me"
-        "ssageText\">Updated Promotion header and details [VipPromos] and [VipItems]. Als"
-        "o: [VipMasterItemFile], [VipType], [VipSubVCs] and generated attached Supplier e"
-        "xception report. "
+    Comment ="_AXL:ent><Argument Name=\"Subject\">VIP File Updates</Argument><Argument Name=\""
+        "MessageText\">Updated Promotion header and details [VipPromos] and [VipItems]. A"
+        "lso: [VipMasterItemFile], [VipType], [VipSubVCs] and generated attached Supplier"
+        " exception report"
 End
 Begin
-    Comment ="_AXL:</Argument><Argument Name=\"EditMessage\">No</Argument></Action><Comment>Su"
-        "bject: \"VIP File Updates\"</Comment><Comment>Body: \"Updated Promotion header a"
-        "nd details [VipPromos] and [VipItems]. Also: [VipMasterItemFile], [VipType], [Vi"
-        "pSubVCs] and gener"
+    Comment ="_AXL:. </Argument><Argument Name=\"EditMessage\">No</Argument></Action><Comment>"
+        "Subject: \"VIP File Updates\"</Comment><Comment>Body: \"Updated Promotion header"
+        " and details [VipPromos] and [VipItems]. Also: [VipMasterItemFile], [VipType], ["
+        "VipSubVCs] and gen"
 End
 Begin
-    Comment ="_AXL:ated attached Supplier exception report. \"</Comment><Comment>Exception Rep"
-        "orts</Comment><Comment>[ExcRptVipLiveVCsWozSubVCmatchQ] VIP suppliers not listed"
-        " in Promo DB</Comment><Comment>[ExcRptzSubVCwoVipLiveVCsMatch] Promo DB supplier"
-        "s not listed i"
+    Comment ="_AXL:erated attached Supplier exception report. \"</Comment><Comment>Exception R"
+        "eports</Comment><Comment>[ExcRptVipLiveVCsWozSubVCmatchQ] VIP suppliers not list"
+        "ed in Promo DB</Comment><Comment>[ExcRptzSubVCwoVipLiveVCsMatch] Promo DB suppli"
+        "ers not listed"
 End
 Begin
-    Comment ="_AXL:n VIP</Comment><Comment>\\\\nahsinyhqdw07\\vip_promos_qa\\Vip_Pickup\\VipPr"
-        "omoExp.xls</Comment><Action Name=\"ImportExportSpreadsheet\"><Argument Name=\"Tr"
-        "ansferType\">Export</Argument><Argument Name=\"SpreadsheetType\">Microsoft Excel"
-        " 97 - Excel 2003 Workboo"
+    Comment ="_AXL: in VIP</Comment><Comment>\\\\nahsinyhqdw07\\vip_promos_qa\\Vip_Pickup\\Vip"
+        "PromoExp.xls</Comment><Action Name=\"ImportExportSpreadsheet\"><Argument Name=\""
+        "TransferType\">Export</Argument><Argument Name=\"SpreadsheetType\">Microsoft Exc"
+        "el 97 - Excel 2003 Workb"
 End
 Begin
-    Comment ="_AXL:k</Argument><Argument Name=\"TableName\">VipPromoExpQ</Argument><Argument N"
-        "ame=\"FileName\">\\\\nahsinyhqdw07\\vip_promos_qa\\Vip_Pickup\\VipPromoExp.xls</"
-        "Argument><Argument Name=\"HasFieldNames\">Yes</Argument></Action><Comment>\\\\na"
-        "hsinyhqdw07\\vip_promos_qa\\"
+    Comment ="_AXL:ook</Argument><Argument Name=\"TableName\">VipPromoExpQ</Argument><Argument"
+        " Name=\"FileName\">\\\\nahsinyhqdw07\\vip_promos_qa\\Vip_Pickup\\VipPromoExp.xls"
+        "</Argument><Argument Name=\"HasFieldNames\">Yes</Argument></Action><Comment>\\\\"
+        "nahsinyhqdw07\\vip_promos_q"
 End
 Begin
-    Comment ="_AXL:Vip_Pickup\\VipItemSubExp.xls</Comment><Action Name=\"ImportExportSpreadshe"
-        "et\"><Argument Name=\"TransferType\">Export</Argument><Argument Name=\"Spreadshe"
-        "etType\">Microsoft Excel 97 - Excel 2003 Workbook</Argument><Argument Name=\"Tab"
-        "leName\">VipItemSubExp"
+    Comment ="_AXL:a\\Vip_Pickup\\VipItemSubExp.xls</Comment><Action Name=\"ImportExportSpread"
+        "sheet\"><Argument Name=\"TransferType\">Export</Argument><Argument Name=\"Spread"
+        "sheetType\">Microsoft Excel 97 - Excel 2003 Workbook</Argument><Argument Name=\""
+        "TableName\">VipItemSubE"
 End
 Begin
-    Comment ="_AXL:Q</Argument><Argument Name=\"FileName\">\\\\nahsinyhqdw07\\vip_promos_qa\\V"
-        "ip_Pickup\\VipItemSubExp.xls</Argument><Argument Name=\"HasFieldNames\">Yes</Arg"
-        "ument></Action><Comment>Export WCS or equivalent, Wayne will provide table of Su"
-        "bSupplier codes to fil"
+    Comment ="_AXL:xpQ</Argument><Argument Name=\"FileName\">\\\\nahsinyhqdw07\\vip_promos_qa\\"
+        "Vip_Pickup\\VipItemSubExp.xls</Argument><Argument Name=\"HasFieldNames\">Yes</Ar"
+        "gument></Action><Comment>Export WCS or equivalent, Wayne will provide table of S"
+        "ubSupplier codes to f"
 End
 Begin
-    Comment ="_AXL:ter [VipItemFilePreQ] by VIP \"approved\" Suppliers</Comment><Comment>    ["
-        "VipItemFilePreQ]&gt;[WCS ITEMFILE]+[E3 NAME]+[ItemCdWdispMfgCd]+[DispMfgNmQ]&gt;"
-        "[DispMfgNm]</Comment><Comment>VipItemFilePreQ                               VipI"
-        "temFileMTQ</Com"
+    Comment ="_AXL:ilter [VipItemFilePreQ] by VIP \"approved\" Suppliers</Comment><Comment>   "
+        " [VipItemFilePreQ]&gt;[WCS ITEMFILE]+[E3 NAME]+[ItemCdWdispMfgCd]+[DispMfgNmQ]&g"
+        "t;[DispMfgNm]</Comment><Comment>VipItemFilePreQ                               Vi"
+        "pItemFileMTQ</C"
 End
 Begin
-    Comment ="_AXL:ment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipItemFilePre"
-        "Q</Argument></Action><Comment>\\\\nahsinyhqdw07\\vip_promos_qa\\Vip_Pickup\\VipI"
-        "temFile.xls</Comment><Action Name=\"ImportExportSpreadsheet\"><Argument Name=\"S"
-        "preadsheetType\">Microsoft"
+    Comment ="_AXL:omment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipItemFileP"
+        "reQ</Argument></Action><Comment>\\\\nahsinyhqdw07\\vip_promos_qa\\Vip_Pickup\\Vi"
+        "pItemFile.xls</Comment><Action Name=\"ImportExportSpreadsheet\"><Argument Name=\""
+        "SpreadsheetType\">Microso"
 End
 Begin
-    Comment ="_AXL: Excel 97 - Excel 2003 Workbook</Argument></Action><Comment>Post Wayne's Su"
-        "bSupplier file, create an Exception report - Compare VIP SubSupplier listing wit"
-        "h Mktg's [zSubVC]</Comment><Comment>Export Suppliers Listing? </Comment><Comment"
-        ">    Then use"
+    Comment ="_AXL:ft Excel 97 - Excel 2003 Workbook</Argument></Action><Comment>Post Wayne's "
+        "SubSupplier file, create an Exception report - Compare VIP SubSupplier listing w"
+        "ith Mktg's [zSubVC]</Comment><Comment>Export Suppliers Listing? </Comment><Comme"
+        "nt>    Then u"
 End
 Begin
-    Comment ="_AXL: TransferSpreadsheet, Export</Comment><Comment>    Table: VipPromoExpQ</Com"
-        "ment><Comment>    File Name: \\\\nahsinyhqdw07\\vip_promos_qa\\Vip_Pickup\\VipVe"
-        "ndorExp.xls</Comment><Action Name=\"StopMacro\"/><Comment>\"DELETE * FROM c;\"</"
-        "Comment><Action Name=\""
+    Comment ="_AXL:se TransferSpreadsheet, Export</Comment><Comment>    Table: VipPromoExpQ</C"
+        "omment><Comment>    File Name: \\\\nahsinyhqdw07\\vip_promos_qa\\Vip_Pickup\\Vip"
+        "VendorExp.xls</Comment><Action Name=\"StopMacro\"/><Comment>\"DELETE * FROM c;\""
+        "</Comment><Action Name"
 End
 Begin
-    Comment ="_AXL:RunSQL\"><Argument Name=\"SQLStatement\">DELETE c.* FROM c;</Argument></Act"
-        "ion><Comment>\"DELETE * FROM cb;\"</Comment><Action Name=\"RunSQL\"><Argument Na"
-        "me=\"SQLStatement\">\"DELETE * FROM cb;\"</Argument></Action><Comment>\"DELETE *"
-        " FROM cmcz;\"</Comment><Ac"
+    Comment ="_AXL:=\"RunSQL\"><Argument Name=\"SQLStatement\">DELETE c.* FROM c;</Argument></"
+        "Action><Comment>\"DELETE * FROM cb;\"</Comment><Action Name=\"RunSQL\"><Argument"
+        " Name=\"SQLStatement\">\"DELETE * FROM cb;\"</Argument></Action><Comment>\"DELET"
+        "E * FROM cmcz;\"</Comment><"
 End
 Begin
-    Comment ="_AXL:tion Name=\"RunSQL\"><Argument Name=\"SQLStatement\">\"DELETE * FROM cmcz;\""
-        "</Argument></Action></Statements></UserInterfaceMacro>"
+    Comment ="_AXL:Action Name=\"RunSQL\"><Argument Name=\"SQLStatement\">\"DELETE * FROM cmcz"
+        ";\"</Argument></Action></Statements></UserInterfaceMacro>"
 End

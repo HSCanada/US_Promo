@@ -1,6 +1,9 @@
 Option Compare Database
 Option Explicit
 
+'
+'
+'
 
 Private cConfig As Collection
     
@@ -22,18 +25,6 @@ End Function
 
 
 Sub Test()
-'config_init
-
-Debug.Print config("Key2")
-
-
-End Sub
-
-
-Sub test2()
-Debug.Print Application.VBE.ActiveCodePane.CodeModule.ProcOfLine(Application.VBE.ActiveCodePane.TopLine, 0)
-'Debug.Print Me.Name & "." & Application.VBE.ActiveCodePane.CodeModule.ProcOfLine(Application.VBE.ActiveCodePane.TopLine, 0)
-
-Debug.Print "test"
-
+    config_init
+    Debug.Print config("Key2")
 End Sub

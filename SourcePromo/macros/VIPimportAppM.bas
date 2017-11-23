@@ -1,7 +1,7 @@
 ﻿Version =196611
 ColumnsShown =0
 Begin
-    Comment ="debug.print(\"x\")"
+    Comment ="debug.print(\"XXX\")"
 End
 Begin
     Comment ="Promo Import New VIP Supplier Promotions and Append them to [A3Promos*.mdb]   Wa"
@@ -640,412 +640,412 @@ Begin
     Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
         "nterfaceMacro MinimumClientDesignVersion=\"14.0.0000.0000\" xmlns=\"http://schem"
         "as.microsoft.com/office/accessservices/2009/11/application\"><Statements><Commen"
-        "t>debug.print(\"x\")</Comment><"
+        "t>debug.print(\"XXX\")</Comment"
 End
 Begin
-    Comment ="_AXL:Comment>Promo Import New VIP Supplier Promotions and Append them to [A3Prom"
-        "os*.mdb]   Wayne's Drop-Offs are our Imports</Comment><Comment>Production and QA"
-        " - Tables are relinked by usage</Comment><Comment>***** Players, Begin Data ****"
-        "*</Comment><C"
+    Comment ="_AXL:><Comment>Promo Import New VIP Supplier Promotions and Append them to [A3Pr"
+        "omos*.mdb]   Wayne's Drop-Offs are our Imports</Comment><Comment>Production and "
+        "QA - Tables are relinked by usage</Comment><Comment>***** Players, Begin Data **"
+        "***</Comment>"
 End
 Begin
-    Comment ="_AXL:omment>RGZ</Comment><Comment>Kishore.Jain@henryschein.com; Christine.Bates@"
-        "henryschein.com; Marie.Catalano@henryschein.com; Ron.Kralik@henryschein.com;Anne"
-        "tte.Mahon-Rostad@henryschein.com</Comment><Comment>Kishore Jain, Sr. Programmer "
-        "Analyst, 631-"
+    Comment ="_AXL:<Comment>RGZ</Comment><Comment>Kishore.Jain@henryschein.com; Christine.Bate"
+        "s@henryschein.com; Marie.Catalano@henryschein.com; Ron.Kralik@henryschein.com;An"
+        "nette.Mahon-Rostad@henryschein.com</Comment><Comment>Kishore Jain, Sr. Programme"
+        "r Analyst, 63"
 End
 Begin
-    Comment ="_AXL:843-5500 x3623</Comment><Comment>Christine Bates, Senior Project Manager, 6"
-        "31-843-5702</Comment><Comment>Annette Mahon-Rostad, Dir Business Systems, 631-84"
-        "3-5523</Comment><Comment>Ron Kralik, Dir Marketing and E Commerce, 631-390-8030<"
-        "/Comment><Com"
+    Comment ="_AXL:1-843-5500 x3623</Comment><Comment>Christine Bates, Senior Project Manager,"
+        " 631-843-5702</Comment><Comment>Annette Mahon-Rostad, Dir Business Systems, 631-"
+        "843-5523</Comment><Comment>Ron Kralik, Dir Marketing and E Commerce, 631-390-803"
+        "0</Comment><C"
 End
 Begin
-    Comment ="_AXL:ment>Marie Catalano, Billing Administrator - Dental, 631-454-3059</Comment>"
-        "<Comment>Wayne Slingluff, retired</Comment><Comment>***** Players, End Data ****"
-        "*</Comment><Comment>This process is run from the Scheduler</Comment><Comment>RZ "
-        "Import runs f"
+    Comment ="_AXL:omment>Marie Catalano, Billing Administrator - Dental, 631-454-3059</Commen"
+        "t><Comment>Wayne Slingluff, retired</Comment><Comment>***** Players, End Data **"
+        "***</Comment><Comment>This process is run from the Scheduler</Comment><Comment>R"
+        "Z Import runs"
 End
 Begin
-    Comment ="_AXL:irst, then RZ Xport</Comment><Comment>Backups sent to X: drive \\\\usnym3fs"
-        "03\\Data\\Dental\\dentmkt\\Promo\\VIPsrc\\Mon (Tue, Wed, Thu, Fri, Sat)</Comment"
-        "><Comment>      to:  \\Update_Vip_Buffer.mdb (6 days weekly @ 21:20 hours - 9:20"
-        " PM)</Comment><Comment"
+    Comment ="_AXL: first, then RZ Xport</Comment><Comment>Backups sent to X: drive \\\\usnym3"
+        "fs03\\Data\\Dental\\dentmkt\\Promo\\VIPsrc\\Mon (Tue, Wed, Thu, Fri, Sat)</Comme"
+        "nt><Comment>      to:  \\Update_Vip_Buffer.mdb (6 days weekly @ 21:20 hours - 9:"
+        "20 PM)</Comment><Comme"
 End
 Begin
-    Comment ="_AXL:>Y:\\ = \\\\dvhsinyhqdw01\\Vip_Promos_ProdObsoleted 20150821 is W:\\ = \\\\"
-        "nahsinyhqdw07\\Vip_Promos_prod</Comment><Comment>Production Import begins at 21."
-        "00 hours (9:00 PM)     Q/A import 19:30 (7:30 PM)</Comment><Comment>  Production"
-        " Xport begins at 21.3"
+    Comment ="_AXL:nt>Y:\\ = \\\\dvhsinyhqdw01\\Vip_Promos_ProdObsoleted 20150821 is W:\\ = \\"
+        "\\nahsinyhqdw07\\Vip_Promos_prod</Comment><Comment>Production Import begins at 2"
+        "1.00 hours (9:00 PM)     Q/A import 19:30 (7:30 PM)</Comment><Comment>  Producti"
+        "on Xport begins at 21"
 End
 Begin
-    Comment ="_AXL:0 hours (9:30 PM)     Q/A Xport 20:00 (8:00 PM)</Comment><Comment>2010-02-2"
-        "3 @ 9:22 AM, Wayne Slingluff says of data transfer process -</Comment><Comment> "
-        "     Production is updated from web at 18:00:00 and reset from your file at 01:3"
-        "0:00</Comment"
+    Comment ="_AXL:.30 hours (9:30 PM)     Q/A Xport 20:00 (8:00 PM)</Comment><Comment>2010-02"
+        "-23 @ 9:22 AM, Wayne Slingluff says of data transfer process -</Comment><Comment"
+        ">      Production is updated from web at 18:00:00 and reset from your file at 01"
+        ":30:00</Comme"
 End
 Begin
-    Comment ="_AXL:><Comment>      QA is updated from web at 17:00:00 and reset from your file"
-        " at 01:30:00</Comment><Comment>      BU's - \\\\usnym3fs03\\Data\\Dental\\dentmk"
-        "t\\ZBase\\ZBUpromo.mdb /x BUs</Comment><Comment>      ZBUPromo.mdb launches at 2"
-        "1.20 hours (9:20 PM)"
+    Comment ="_AXL:nt><Comment>      QA is updated from web at 17:00:00 and reset from your fi"
+        "le at 01:30:00</Comment><Comment>      BU's - \\\\usnym3fs03\\Data\\Dental\\dent"
+        "mkt\\ZBase\\ZBUpromo.mdb /x BUs</Comment><Comment>      ZBUPromo.mdb launches at"
+        " 21.20 hours (9:20 P"
 End
 Begin
-    Comment ="_AXL:  </Comment><Comment>@ 17:00 hrs (5:00 pm) W:\\Vip_Dropoff\\update_vip_buff"
-        "er.mdb appears; then 7 hours later...</Comment><Comment>@ 0:15 hrs (12:15 am) W:"
-        "\\Vip_Dropoff\\update_vip_buffer.mdb VIP (Wayne Slingluff) picks up the data and"
-        " deletes the data"
+    Comment ="_AXL:M)  </Comment><Comment>@ 17:00 hrs (5:00 pm) W:\\Vip_Dropoff\\update_vip_bu"
+        "ffer.mdb appears; then 7 hours later...</Comment><Comment>@ 0:15 hrs (12:15 am) "
+        "W:\\Vip_Dropoff\\update_vip_buffer.mdb VIP (Wayne Slingluff) picks up the data a"
+        "nd deletes the da"
 End
 Begin
-    Comment ="_AXL:base.</Comment><Comment>Explanation of timing</Comment><Comment>So, Promos."
-        "mdb has until midnight to pick up and process the VIP info, checking the [Promot"
-        "ion_Header_Update].[Done] flag for each completed import.</Comment><Comment>Wayn"
-        "e reads the d"
+    Comment ="_AXL:tabase.</Comment><Comment>Explanation of timing</Comment><Comment>So, Promo"
+        "s.mdb has until midnight to pick up and process the VIP info, checking the [Prom"
+        "otion_Header_Update].[Done] flag for each completed import.</Comment><Comment>Wa"
+        "yne reads the"
 End
 Begin
-    Comment ="_AXL:atabase [Promotion_Header_Update].[Done] field and then deletes those recor"
-        "ds from the next night's pending file.</Comment><Comment>Scheduler launchs this "
-        "import append new macro @ 21:00 hrs (9:00 pm), then launches [VIPexportM] @ 21:3"
-        "0 hrs (9:30 p"
+    Comment ="_AXL: database [Promotion_Header_Update].[Done] field and then deletes those rec"
+        "ords from the next night's pending file.</Comment><Comment>Scheduler launchs thi"
+        "s import append new macro @ 21:00 hrs (9:00 pm), then launches [VIPexportM] @ 21"
+        ":30 hrs (9:30"
 End
 Begin
-    Comment ="_AXL:m)</Comment><Comment>[VIPimportAppM] gets data, (Approved Headers, Details "
-        "and Active Vendors), adds it to the master listings (in Promos.mdb), and then ma"
-        "rks the records imported.</Comment><Comment>Then (a half hour later) the Schedul"
-        "er launches ["
+    Comment ="_AXL: pm)</Comment><Comment>[VIPimportAppM] gets data, (Approved Headers, Detail"
+        "s and Active Vendors), adds it to the master listings (in Promos.mdb), and then "
+        "marks the records imported.</Comment><Comment>Then (a half hour later) the Sched"
+        "uler launches"
 End
 Begin
-    Comment ="_AXL:VIPexportM] </Comment><Comment>From DB: V:\\Vip_Dropoff\\update_vip_buffer."
-        "mdb      =       \\\\nahsinyhqdw07\\Vip_Promos_prod\\Vip_Dropoff\\update_vip_buf"
-        "fer.mdb </Comment><Comment>From Table/Field:  [A3Promos*].mdb [VipLiveVCs] is li"
-        "nked from [Vip_Activ"
+    Comment ="_AXL: [VIPexportM] </Comment><Comment>From DB: V:\\Vip_Dropoff\\update_vip_buffe"
+        "r.mdb      =       \\\\nahsinyhqdw07\\Vip_Promos_prod\\Vip_Dropoff\\update_vip_b"
+        "uffer.mdb </Comment><Comment>From Table/Field:  [A3Promos*].mdb [VipLiveVCs] is "
+        "linked from [Vip_Act"
 End
 Begin
-    Comment ="_AXL:e_Promo_Vendors].[Vendor_Key]</Comment><Comment>Match [VipLiveVCs].[Vendor_"
-        "Key] with  [A3Promos*].mdb [zSubVC].[SubVC] to get the Marketing Codes for the l"
-        "isted suppliers [VendorCode]</Comment><Comment>REM: 4/26/13 [VIPImportAppM] is W"
-        "orking Fine s"
+    Comment ="_AXL:ive_Promo_Vendors].[Vendor_Key]</Comment><Comment>Match [VipLiveVCs].[Vendo"
+        "r_Key] with  [A3Promos*].mdb [zSubVC].[SubVC] to get the Marketing Codes for the"
+        " listed suppliers [VendorCode]</Comment><Comment>REM: 4/26/13 [VIPImportAppM] is"
+        " Working Fine"
 End
 Begin
-    Comment ="_AXL:o REM out</Comment><Comment>REM: Send Richard Zepernick message LAUNCH [VIP"
-        "ImportAppM]</Comment><Comment>REM: Subject: \"Promo Launch[VIPImportAppM]\"</Com"
-        "ment><Comment>REM: Body: \"Launching Promo.mdb, Launch [VIPImportAppM]. \"</Comm"
-        "ent><Action Name="
-End
-Begin
-    Comment ="_AXL:\"OnError\"><Argument Name=\"Goto\">Fail</Argument></Action><Comment>Test f"
-        "or  \\\\nahsinyhqdw07\\Vip_Promos_prod\\Vip_Dropoff\\update_vip_buffer.mdb </Com"
-        "ment><Action Name=\"OpenForm\"><Argument Name=\"FormName\">IsHdrTblF</Argument><"
-        "/Action><Comment>Record He"
-End
-Begin
-    Comment ="_AXL:ader exists to table [IsHdrTbl]</Comment><Action Name=\"CloseWindow\"><Argu"
-        "ment Name=\"ObjectType\">Form</Argument><Argument Name=\"ObjectName\">IsHdrTblF<"
-        "/Argument><Argument Name=\"Save\">Yes</Argument></Action><Comment>Log the follow"
-        "ing event in [SchdLog"
-End
-Begin
-    Comment ="_AXL:]</Comment><Comment>LogFunc(\"Begin [VIPimportAppM]\")</Comment><Action Nam"
-        "e=\"RunCode\"><Argument Name=\"FunctionName\">LogFunc(\"1/6.Begin [VIPimportAppM"
-        "]\")</Argument></Action><Comment>    Set: Z_Log = FuncText</Comment><Comment>Sch"
-        "dLogAQ - Query append"
-End
-Begin
-    Comment ="_AXL:s GloVars, Process name and Date/Time to table [SchdLog]</Comment><Action N"
-        "ame=\"OpenQuery\"><Argument Name=\"QueryName\">SchdLogAQ</Argument></Action><Com"
-        "ment>Make a copy of \\\\nahsinyhqdw07\\Vip_Promos_QA\\Vip_Dropoff\\Update_Vip_Bu"
-        "ffer.mdb to...</Commen"
-End
-Begin
-    Comment ="_AXL:t><Comment>       \\\\nahsinyhqdw07\\Vip_Promos_QA\\Vip_Dropoff\\Archive\\U"
-        "pdate_Vip_Buffer.mdb</Comment><Comment>[ImpVipNu]</Comment><Action Name=\"Delete"
-        "Object\"><Argument Name=\"ObjectType\">Table</Argument><Argument Name=\"ObjectNa"
-        "me\">ImpVipNu</Argument><"
-End
-Begin
-    Comment ="_AXL:/Action><Comment>Create [ImpVipNu] by copying [ImpVipNuStruct]</Comment><Ac"
-        "tion Name=\"CopyObject\"><Argument Name=\"NewName\">ImpVipNu</Argument><Argument"
-        " Name=\"SourceObjectType\">Table</Argument><Argument Name=\"SourceObjectName\">I"
-        "mpVipNuStruct</Argume"
-End
-Begin
-    Comment ="_AXL:nt></Action><Comment>PROMO - Import Promotions</Comment><Comment>20090225 ["
-        "ImpVipNu-VndAQ] contains/transmits all Phase II fields XCEPT [Division] field - "
-        "something's wrong w/ data </Comment><Comment>[zPromo] contains all Phase II fiel"
-        "ds (additiona"
-End
-Begin
-    Comment ="_AXL:l DelMe and HideMe fields not transmitted fields)</Comment><Comment>1 MsgBo"
-        "x                  </Comment><Action Name=\"RunCode\"><Argument Name=\"FunctionN"
-        "ame\">LogFunc(\"2/6. Populate [ImpVipNu] from [ImpVipNu-VndAQ\")</Argument></Act"
-        "ion><Action Name=\"O"
-End
-Begin
-    Comment ="_AXL:penQuery\"><Argument Name=\"QueryName\">SchdLogAQ</Argument></Action><Comme"
-        "nt>Populate [ImpVipNu] from [ImpVipNu-VndAQ] &gt; [ImpVipNu-VndQ] where [VIPbuff"
-        "erHeader].[VIPType] =1 (New Submission)    Pick up VendorNumber (2=Edit)  (3=Rem"
-        "ove)</Comment><A"
-End
-Begin
-    Comment ="_AXL:ction Name=\"OpenQuery\"><Argument Name=\"QueryName\">ImpVipNu-VndAQ</Argum"
-        "ent></Action><Comment>       [ImpVipNu-VndQ] criteria:  [PendingID] is not null,"
-        " [Type] = \"1\" (new submission) and any of [Typ1], [Typ2], [Typ3] = -1</Comment"
-        "><Comment>[ImpVipNu"
-End
-Begin
-    Comment ="_AXL:-VndAQ] populates [zPromo]     Automatically approve on import as of 5/22/2"
-        "008 per MK/RK/JG</Comment><Comment>Require Null match to [zPromo].[Pending_id] t"
-        "o eliminate Dups 2011-10-17</Comment><Comment>    Redeem Instructions- imported "
-        "via Link to ["
-End
-Begin
-    Comment ="_AXL:VIPbufferHeader].[RedeemOpt] - Properties = Memo Field</Comment><Comment>  "
-        "      [ImpVipNu-VndQ].[RedeemOpt] is a pass-thru w/ no filters/trims - Populates"
-        "  [ImpVipNu-VndAQ]</Comment><Comment>              20130108 Edit (Add Fax to sta"
-        "rt of Redeem "
-End
-Begin
-    Comment ="_AXL:statement)</Comment><Comment>              RdmOpt: IIf(IsNull([VIPbufferHea"
-        "der].[RdmFax]),Null,\"Fax: \" &amp; [VIPbufferHeader].[RdmFax]) &amp; [VIPbuffer"
-        "Header].[RedeemOpt]</Comment><Comment>        [ImpVipNu-VndAQ].[RedeemOpt] is al"
-        "so a  pass-thru"
-End
-Begin
-    Comment ="_AXL: w/ no filters/trims </Comment><Comment>              20130108 Edit (Add [R"
-        "dmFax] replacing [RedeemOpt] in  [ImpVipNu-VndAQ])</Comment><Comment>        [Im"
-        "pVipNu-VndAQ].[RedeemOpt] populates [zPromo].[RedeemOpt]</Comment><Comment>     "
-        "   [zPromo].["
-End
-Begin
-    Comment ="_AXL:RedeemOpt] Properties = Memo field</Comment><Comment>20090505 Added [RdmOpt"
-        "5], [GetValu], [BuyCnt], [1inv]</Comment><Comment>Update [RedeemOpt] from [VipIm"
-        "pRdmOptUQ]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipI"
-        "mpRdmOptUQ</Argum"
-End
-Begin
-    Comment ="_AXL:ent></Action><Comment>        Concatenating [RdmOpt1]2]3]4]5]</Comment><Com"
-        "ment>2 MsgBox</Comment><Comment>BUYS - Import Buy info                 REM - Tur"
-        "n Off Warnings for Buys Imports (till VIP upgrades in place)</Comment><Comment>2"
-        "0090225 [ImpV"
-End
-Begin
-    Comment ="_AXL:ipNu-BuyAQ] contains/transmits all Phase II fields</Comment><Comment>BUY - "
-        "Parsed Buy Text and Quantity</Comment><Action Name=\"RunCode\"><Argument Name=\""
-        "FunctionName\">LogFunc(\"3/6. Populate [zBuy] from [ImpVipNu-BuyAQ\")</Argument>"
-        "</Action><Action Na"
-End
-Begin
-    Comment ="_AXL:me=\"OpenQuery\"><Argument Name=\"QueryName\">SchdLogAQ</Argument></Action>"
-        "<Comment>Populate [zBuy] from [ImpVipNu-BuyAQ] Appends to [zBuy] from [zPromo] a"
-        "nd [VIPbufferBuy] - (require Null match to [zBuy].[BuyPart] to eliminate Dups 20"
-        "11-10-17)</Commen"
-End
-Begin
-    Comment ="_AXL:t><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">ImpVipNu-BuyAQ</A"
-        "rgument></Action><Comment>3 MsgBox             </Comment><Comment>    REM - &gt;"
-        " [ImpVipNu-VndQ] where [VIPbufferHeader].[VIPType] =1 (New Submission)    Pick u"
-        "p VendorNumber (2"
-End
-Begin
-    Comment ="_AXL:=Edit)  (3=Remove)</Comment><Comment>PROMO Update BuyCnt</Comment><Comment>"
-        "Update [zPromo].[BuyCnt] from [VIPbufferBuy].[BuyPart]</Comment><Comment>\"DELET"
-        "E * FROM BuyCnt;\" 'Clear table [BuyCnt]   (This is different from the field  [z"
-        "Promo].[BuyCnt]"
-End
-Begin
-    Comment ="_AXL:)</Comment><Action Name=\"RunSQL\"><Argument Name=\"SQLStatement\">DELETE *"
-        " FROM BuyCnt;</Argument></Action><Comment>4 MsgBox                  </Comment><C"
-        "omment>[BuyCntUQ]&gt;[ImpVipNuBuyCntPreQ]   'Re-Populate [zPromo].[BuyCnt] to Gl"
-        "oVar: HBuyCnt()</"
-End
-Begin
-    Comment ="_AXL:Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">BuyCntUQ</A"
-        "rgument></Action><Comment>5 MsgBox                  </Comment><Comment>[ImpVipNu"
-        "BuyCntUQ]&gt;[zPromo]+[VIPbufferBuy] updates  [zPromo].[MaxPart]   (?Why???)</Co"
+    Comment ="_AXL: so REM out</Comment><Comment>REM: Send Richard Zepernick message LAUNCH [V"
+        "IPImportAppM]</Comment><Comment>REM: Subject: \"Promo Launch[VIPImportAppM]\"</C"
+        "omment><Comment>REM: Body: \"Launching Promo.mdb, Launch [VIPImportAppM]. \"</Co"
         "mment><Action Nam"
 End
 Begin
-    Comment ="_AXL:e=\"OpenQuery\"><Argument Name=\"QueryName\">ImpVipNuBuyCntUQ</Argument></A"
-        "ction><Comment>6 MsgBox               </Comment><Comment>ITEMSUB - Import Detail"
-        "s</Comment><Comment>     TESTING NOTE: Until Header is imported, Detail query wo"
-        "n't work - Query "
+    Comment ="_AXL:e=\"OnError\"><Argument Name=\"Goto\">Fail</Argument></Action><Comment>Test"
+        " for  \\\\nahsinyhqdw07\\Vip_Promos_prod\\Vip_Dropoff\\update_vip_buffer.mdb </C"
+        "omment><Action Name=\"OpenForm\"><Argument Name=\"FormName\">IsHdrTblF</Argument"
+        "></Action><Comment>Record "
 End
 Begin
-    Comment ="_AXL:is looking for [zPromo].[RecID] to add as link in detail tbl</Comment><Comm"
-        "ent>     Rem: DELETE * FROM E3NmPkgSz;</Comment><Comment>     UpDating [zItemSub"
-        "].[ItmQty]</Comment><Comment>     NOTE: To update all [zItemSub].[ItmQty] record"
-        "s via [E3NmPk"
+    Comment ="_AXL:Header exists to table [IsHdrTbl]</Comment><Action Name=\"CloseWindow\"><Ar"
+        "gument Name=\"ObjectType\">Form</Argument><Argument Name=\"ObjectName\">IsHdrTbl"
+        "F</Argument><Argument Name=\"Save\">Yes</Argument></Action><Comment>Log the foll"
+        "owing event in [SchdL"
 End
 Begin
-    Comment ="_AXL:gSz] run the query [zItemSubPkgSzUQ]</Comment><Comment>[E3NmPkgSz]</Comment"
-        "><Action Name=\"DeleteObject\"><Argument Name=\"ObjectType\">Table</Argument><Ar"
-        "gument Name=\"ObjectName\">E3NmPkgSz</Argument></Action><Comment>Copy [E3NmPkgSz"
-        "Struct] as [E3NmPkg"
+    Comment ="_AXL:og]</Comment><Comment>LogFunc(\"Begin [VIPimportAppM]\")</Comment><Action N"
+        "ame=\"RunCode\"><Argument Name=\"FunctionName\">LogFunc(\"1/6.Begin [VIPimportAp"
+        "pM]\")</Argument></Action><Comment>    Set: Z_Log = FuncText</Comment><Comment>S"
+        "chdLogAQ - Query appe"
 End
 Begin
-    Comment ="_AXL:Sz] to replace deleted original</Comment><Action Name=\"CopyObject\"><Argum"
-        "ent Name=\"NewName\">E3NmPkgSz</Argument><Argument Name=\"SourceObjectType\">Tab"
-        "le</Argument><Argument Name=\"SourceObjectName\">E3NmPkgSzStruct</Argument></Act"
-        "ion><Comment>E3NmPkgS"
+    Comment ="_AXL:nds GloVars, Process name and Date/Time to table [SchdLog]</Comment><Action"
+        " Name=\"OpenQuery\"><Argument Name=\"QueryName\">SchdLogAQ</Argument></Action><C"
+        "omment>Make a copy of \\\\nahsinyhqdw07\\Vip_Promos_QA\\Vip_Dropoff\\Update_Vip_"
+        "Buffer.mdb to...</Comm"
 End
 Begin
-    Comment ="_AXL:zAQ  IsNumeric([PkgSz]) - Table [E3NmPkgSz] will populate to over 220,000 r"
-        "ecords</Comment><Action Name=\"RunCode\"><Argument Name=\"FunctionName\">LogFunc"
-        "(\"4/6. Populate [E3NmPkgSz] from [E3NmPkgSzAQ\")</Argument></Action><Action Nam"
-        "e=\"OpenQuery\"><Argu"
+    Comment ="_AXL:ent><Comment>       \\\\nahsinyhqdw07\\Vip_Promos_QA\\Vip_Dropoff\\Archive\\"
+        "Update_Vip_Buffer.mdb</Comment><Comment>[ImpVipNu]</Comment><Action Name=\"Delet"
+        "eObject\"><Argument Name=\"ObjectType\">Table</Argument><Argument Name=\"ObjectN"
+        "ame\">ImpVipNu</Argument"
 End
 Begin
-    Comment ="_AXL:ment Name=\"QueryName\">SchdLogAQ</Argument></Action><Action Name=\"OpenQue"
-        "ry\"><Argument Name=\"QueryName\">E3NmPkgSzAQ</Argument></Action><Comment>***** "
-        " RZ Clear  *****</Comment><Action Name=\"RunCode\"><Argument Name=\"FunctionName"
-        "\">LogFunc(\"5/6. Popula"
+    Comment ="_AXL:></Action><Comment>Create [ImpVipNu] by copying [ImpVipNuStruct]</Comment><"
+        "Action Name=\"CopyObject\"><Argument Name=\"NewName\">ImpVipNu</Argument><Argume"
+        "nt Name=\"SourceObjectType\">Table</Argument><Argument Name=\"SourceObjectName\""
+        ">ImpVipNuStruct</Argu"
 End
 Begin
-    Comment ="_AXL:te [zItemSub from [ImpVipNu-zDetAQ\")</Argument></Action><Action Name=\"Ope"
-        "nQuery\"><Argument Name=\"QueryName\">SchdLogAQ</Argument></Action><Comment>[Imp"
-        "VipNu-zDetAQ] 2012-03-14 Replaces [ImpVipNu-DetAQ] Diff? Removed [ImpVipNu-VndQ]"
-        " from append query"
+    Comment ="_AXL:ment></Action><Comment>PROMO - Import Promotions</Comment><Comment>20090225"
+        " [ImpVipNu-VndAQ] contains/transmits all Phase II fields XCEPT [Division] field "
+        "- something's wrong w/ data </Comment><Comment>[zPromo] contains all Phase II fi"
+        "elds (additio"
 End
 Begin
-    Comment ="_AXL:</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">ImpVipNu-"
-        "zDetAQ</Argument></Action><Comment>Append to [zSubItem] from [ImpVipNu-DetAQ] &g"
-        "t; [ImpVipNu-VndQ] +[zPromo] + [VIPbufferDetail] + [rVndICs] + [RZsizeAVL]</Comm"
-        "ent><Comment>    "
+    Comment ="_AXL:nal DelMe and HideMe fields not transmitted fields)</Comment><Comment>1 Msg"
+        "Box                  </Comment><Action Name=\"RunCode\"><Argument Name=\"Functio"
+        "nName\">LogFunc(\"2/6. Populate [ImpVipNu] from [ImpVipNu-VndAQ\")</Argument></A"
+        "ction><Action Name="
 End
 Begin
-    Comment ="_AXL: (to get item descriptions; Items must be listed in [rVndICs])</Comment><Co"
-        "mment>In [ImpVipNu-DetAQ] 2010-4-12 </Comment><Comment>REPLACE [VIPbufferDetail]"
-        " WITH [VIPbufferDetailQ].[Unique] test for unique combo [Pending_Id] &amp; [HSI_"
-        "Code]</Commen"
+    Comment ="_AXL:\"OpenQuery\"><Argument Name=\"QueryName\">SchdLogAQ</Argument></Action><Co"
+        "mment>Populate [ImpVipNu] from [ImpVipNu-VndAQ] &gt; [ImpVipNu-VndQ] where [VIPb"
+        "ufferHeader].[VIPType] =1 (New Submission)    Pick up VendorNumber (2=Edit)  (3="
+        "Remove)</Comment>"
 End
 Begin
-    Comment ="_AXL:t><Comment>     Add [zItemSubQ] to replace [zItemSub]</Comment><Comment>   "
-        "  If ItemCode not in [rVndICs] first check for Supplier in [zSubVC]</Comment><Co"
-        "mment>NEXT - Update \"update_vip_buffer.mdb\" [VIPbufferHeader].[Done] to = 1 fo"
-        "r imported prom"
+    Comment ="_AXL:<Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">ImpVipNu-VndAQ</Arg"
+        "ument></Action><Comment>       [ImpVipNu-VndQ] criteria:  [PendingID] is not nul"
+        "l, [Type] = \"1\" (new submission) and any of [Typ1], [Typ2], [Typ3] = -1</Comme"
+        "nt><Comment>[ImpVip"
 End
 Begin
-    Comment ="_AXL:otions</Comment><Comment>2010-3-4 Updated [BuyPart] and [ImpQty]</Comment><"
-        "Comment>2010-4-12 Add [RZsizeAVL].[SizeQty] to [ImpVipNu-DetAQ]</Comment><Commen"
-        "t>7 MsgBox                  </Comment><Comment>[ImpVipNu-OkUQ]</Comment><Action "
-        "Name=\"OpenQue"
+    Comment ="_AXL:Nu-VndAQ] populates [zPromo]     Automatically approve on import as of 5/22"
+        "/2008 per MK/RK/JG</Comment><Comment>Require Null match to [zPromo].[Pending_id]"
+        " to eliminate Dups 2011-10-17</Comment><Comment>    Redeem Instructions- importe"
+        "d via Link to"
 End
 Begin
-    Comment ="_AXL:ry\"><Argument Name=\"QueryName\">ImpVipNu-OkUQ</Argument></Action><Comment"
-        ">Updates one field, [VIPbufferHeader].[Done]</Comment><Comment>[ImpVipNu-OkUQ] &"
-        "gt; [zPromo].[Pending_ Id] +  [VIPbufferHeader].[Pending_Id] Update [Done] to \""
-        "1\" - \"Not updatea"
+    Comment ="_AXL: [VIPbufferHeader].[RedeemOpt] - Properties = Memo Field</Comment><Comment>"
+        "        [ImpVipNu-VndQ].[RedeemOpt] is a pass-thru w/ no filters/trims - Populat"
+        "es  [ImpVipNu-VndAQ]</Comment><Comment>              20130108 Edit (Add Fax to s"
+        "tart of Redee"
 End
 Begin
-    Comment ="_AXL:ble\"</Comment><Comment>NOTE: [ImpVipNu-OkUQ] confirms each promotion impor"
-        "ted, NOT each item code imported.</Comment><Comment>NOTE:  Confirmation is for V"
-        "IP - File then dissappears - SO, we need our own file to show what we imported i"
-        "nto [zPromo]</"
+    Comment ="_AXL:m statement)</Comment><Comment>              RdmOpt: IIf(IsNull([VIPbufferH"
+        "eader].[RdmFax]),Null,\"Fax: \" &amp; [VIPbufferHeader].[RdmFax]) &amp; [VIPbuff"
+        "erHeader].[RedeemOpt]</Comment><Comment>        [ImpVipNu-VndAQ].[RedeemOpt] is "
+        "also a  pass-th"
 End
 Begin
-    Comment ="_AXL:Comment><Comment>NOTE: VIP users should be advised to review their promotio"
-        "ns to see the final listing of active and available products displayed</Comment>"
-        "<Comment>NOTE: Query works only while  \\\\nahsinyhqdw07\\Vip_Dropoff\\update_vi"
-        "p_buffer.mdb  exi"
+    Comment ="_AXL:ru w/ no filters/trims </Comment><Comment>              20130108 Edit (Add "
+        "[RdmFax] replacing [RedeemOpt] in  [ImpVipNu-VndAQ])</Comment><Comment>        ["
+        "ImpVipNu-VndAQ].[RedeemOpt] populates [zPromo].[RedeemOpt]</Comment><Comment>   "
+        "     [zPromo]"
 End
 Begin
-    Comment ="_AXL:sts (currently 7PM-12:30AM)</Comment><Comment>Log the following event in [S"
-        "chdLog]</Comment><Comment>2009-02-18: [zItemSub].[ProdDesc] = Desc: Trim([Descri"
-        "ption])</Comment><Comment>                     [zItemSub].[ProdDesc] Properties "
-        "= 255 CHRs</C"
+    Comment ="_AXL:.[RedeemOpt] Properties = Memo field</Comment><Comment>20090505 Added [RdmO"
+        "pt5], [GetValu], [BuyCnt], [1inv]</Comment><Comment>Update [RedeemOpt] from [Vip"
+        "ImpRdmOptUQ]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">Vi"
+        "pImpRdmOptUQ</Arg"
 End
 Begin
-    Comment ="_AXL:omment><Comment>8 MsgBox                 </Comment><Comment>LogFunc(\"Compl"
-        "eted [VIPimportAppM]\")</Comment><Action Name=\"RunCode\"><Argument Name=\"Funct"
-        "ionName\">LogFunc(\"6/6. Completed [VIPimportAppM]\")</Argument></Action><Commen"
-        "t>SchdLogAQ</Comment>"
+    Comment ="_AXL:ument></Action><Comment>        Concatenating [RdmOpt1]2]3]4]5]</Comment><C"
+        "omment>2 MsgBox</Comment><Comment>BUYS - Import Buy info                 REM - T"
+        "urn Off Warnings for Buys Imports (till VIP upgrades in place)</Comment><Comment"
+        ">20090225 [Im"
 End
 Begin
-    Comment ="_AXL:<Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">SchdLogAQ</Argument"
-        "></Action><Comment>contains ZLog() &amp; \" \" &amp; ZQP() and Now()</Comment><C"
-        "omment>9 MsgBox                 </Comment><Comment>NEXT - Create a confirmation "
-        "in  \\\\nahsinyhqdw07"
+    Comment ="_AXL:pVipNu-BuyAQ] contains/transmits all Phase II fields</Comment><Comment>BUY "
+        "- Parsed Buy Text and Quantity</Comment><Action Name=\"RunCode\"><Argument Name="
+        "\"FunctionName\">LogFunc(\"3/6. Populate [zBuy] from [ImpVipNu-BuyAQ\")</Argumen"
+        "t></Action><Action "
 End
 Begin
-    Comment ="_AXL:\\Vip_Pickup\\OKdData.mdb in the table [ImportOK]</Comment><Comment>Destina"
-        "tion table - [ImportOK]</Comment><Comment>[ImpVipNu-OkAQ] &gt; [zPromo].[Pending"
-        "_ Id] +  [VIPbufferHeader].[Pending_Id] </Comment><Action Name=\"OpenQuery\"><Ar"
-        "gument Name=\"Quer"
+    Comment ="_AXL:Name=\"OpenQuery\"><Argument Name=\"QueryName\">SchdLogAQ</Argument></Actio"
+        "n><Comment>Populate [zBuy] from [ImpVipNu-BuyAQ] Appends to [zBuy] from [zPromo]"
+        " and [VIPbufferBuy] - (require Null match to [zBuy].[BuyPart] to eliminate Dups "
+        "2011-10-17)</Comm"
 End
 Begin
-    Comment ="_AXL:yName\">ImpVipNu-OkAQ</Argument></Action><Comment>NOTE: in the table [Impor"
-        "tOK] fields are: [Pending_Id], [VIPStatus], and [ImportDt]</Comment><Comment>NOT"
-        "E: [VIPStatus] = 1 (imported), [Pending_Id] = [zPromo]. [Pending_Id], and [Impor"
-        "tDt] = Format("
+    Comment ="_AXL:ent><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">ImpVipNu-BuyAQ<"
+        "/Argument></Action><Comment>3 MsgBox             </Comment><Comment>    REM - &g"
+        "t; [ImpVipNu-VndQ] where [VIPbufferHeader].[VIPType] =1 (New Submission)    Pick"
+        " up VendorNumber "
 End
 Begin
-    Comment ="_AXL:Now(),\"mm/dd/yyyy\")</Comment><Comment>NOTE: [ImpVipNu-OkAQ] appends confi"
-        "rmation of each promotion imported, NOT each item code imported.</Comment><Comme"
-        "nt>NOTE: Query works only while  \\\\nahsinyhqdw07\\Vip_Dropoff\\update_vip_buff"
-        "er.mdb  exists (cur"
+    Comment ="_AXL:(2=Edit)  (3=Remove)</Comment><Comment>PROMO Update BuyCnt</Comment><Commen"
+        "t>Update [zPromo].[BuyCnt] from [VIPbufferBuy].[BuyPart]</Comment><Comment>\"DEL"
+        "ETE * FROM BuyCnt;\" 'Clear table [BuyCnt]   (This is different from the field  "
+        "[zPromo].[BuyCn"
 End
 Begin
-    Comment ="_AXL:rently 7PM-12:30AM)</Comment><Comment>10 MsgBox                 </Comment><"
-        "Comment>TESTING - Go to \\\\nahsinyhqdw07\\Vip_Dropoff\\ and copy and rename the"
-        " test file (left there) to \" update_vip_buffer.mdb\"</Comment><Comment>2010-09-"
-        "08 Addition Create "
+    Comment ="_AXL:t])</Comment><Action Name=\"RunSQL\"><Argument Name=\"SQLStatement\">DELETE"
+        " * FROM BuyCnt;</Argument></Action><Comment>4 MsgBox                  </Comment>"
+        "<Comment>[BuyCntUQ]&gt;[ImpVipNuBuyCntPreQ]   'Re-Populate [zPromo].[BuyCnt] to "
+        "GloVar: HBuyCnt()"
 End
 Begin
-    Comment ="_AXL:[DispNm] and add to [zItemSubF] to show Display Mfg in ItemSub (without slo"
-        "w-down of 300K item match)</Comment><Comment>\"DELETE * FROM DispMfg;\" 'Clear t"
-        "able [DispMfg]   </Comment><Action Name=\"RunSQL\"><Argument Name=\"SQLStatement"
-        "\">DELETE * FROM Di"
+    Comment ="_AXL:</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">BuyCntUQ<"
+        "/Argument></Action><Comment>5 MsgBox                  </Comment><Comment>[ImpVip"
+        "NuBuyCntUQ]&gt;[zPromo]+[VIPbufferBuy] updates  [zPromo].[MaxPart]   (?Why???)</"
+        "Comment><Action N"
 End
 Begin
-    Comment ="_AXL:spMfg;</Argument></Action><Comment>Run [DispMfgAQ ] - re-populate [DispMfg]"
-        " </Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">DispMfgAQ</Ar"
-        "gument></Action><Action Name=\"RunCode\"><Argument Name=\"FunctionName\">LogFunc"
-        "(\"Msg 5. Populate [Di"
+    Comment ="_AXL:ame=\"OpenQuery\"><Argument Name=\"QueryName\">ImpVipNuBuyCntUQ</Argument><"
+        "/Action><Comment>6 MsgBox               </Comment><Comment>ITEMSUB - Import Deta"
+        "ils</Comment><Comment>     TESTING NOTE: Until Header is imported, Detail query "
+        "won't work - Quer"
 End
 Begin
-    Comment ="_AXL:spMfg from [ImpVipNu-BuyAQ\")</Argument></Action><Action Name=\"OpenQuery\""
-        "><Argument Name=\"QueryName\">SchdLogAQ</Argument></Action><Comment>\"DELETE * F"
-        "ROM DispNm;\" 'Clear table [DispNm]   </Comment><Action Name=\"RunSQL\"><Argumen"
-        "t Name=\"SQLStatement\">"
+    Comment ="_AXL:y is looking for [zPromo].[RecID] to add as link in detail tbl</Comment><Co"
+        "mment>     Rem: DELETE * FROM E3NmPkgSz;</Comment><Comment>     UpDating [zItemS"
+        "ub].[ItmQty]</Comment><Comment>     NOTE: To update all [zItemSub].[ItmQty] reco"
+        "rds via [E3Nm"
 End
 Begin
-    Comment ="_AXL:DELETE * FROM DispNm;</Argument></Action><Comment>Run [DispNmAQ ] - re-popu"
-        "late [DispNm] </Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">"
-        "DispNmAQ</Argument></Action><Comment>[UpDtBNPm] UpDt Brand Name on Pkg on both ["
-        "zPromo] and [zRea"
+    Comment ="_AXL:PkgSz] run the query [zItemSubPkgSzUQ]</Comment><Comment>[E3NmPkgSz]</Comme"
+        "nt><Action Name=\"DeleteObject\"><Argument Name=\"ObjectType\">Table</Argument><"
+        "Argument Name=\"ObjectName\">E3NmPkgSz</Argument></Action><Comment>Copy [E3NmPkg"
+        "SzStruct] as [E3NmP"
 End
 Begin
-    Comment ="_AXL:dPromo]</Comment><Action Name=\"RunMacro\"><Argument Name=\"MacroName\">UpD"
-        "tBNPm</Argument></Action><Comment>REM: Send Richard Zepernick message COMPLETED "
-        "[VIPImportAppM]</Comment><Comment>REM: Subject: \"Promo COMPLETED [VIPImportAppM"
-        "]\"</Comment><Comme"
+    Comment ="_AXL:kgSz] to replace deleted original</Comment><Action Name=\"CopyObject\"><Arg"
+        "ument Name=\"NewName\">E3NmPkgSz</Argument><Argument Name=\"SourceObjectType\">T"
+        "able</Argument><Argument Name=\"SourceObjectName\">E3NmPkgSzStruct</Argument></A"
+        "ction><Comment>E3NmPk"
 End
 Begin
-    Comment ="_AXL:nt>REM: Body: \"COMPLETED Promo.mdb, [VIPImportAppM]. \"</Comment><Comment>"
-        "This macro is launched from the Scheduler</Comment><Action Name=\"QuitAccess\"><"
-        "Argument Name=\"Options\">Exit</Argument></Action><Action Name=\"StopMacro\"/><A"
-        "ction Name=\"EMailData"
+    Comment ="_AXL:gSzAQ  IsNumeric([PkgSz]) - Table [E3NmPkgSz] will populate to over 220,000"
+        " records</Comment><Action Name=\"RunCode\"><Argument Name=\"FunctionName\">LogFu"
+        "nc(\"4/6. Populate [E3NmPkgSz] from [E3NmPkgSzAQ\")</Argument></Action><Action N"
+        "ame=\"OpenQuery\"><Ar"
 End
 Begin
-    Comment ="_AXL:baseObject\"><Argument Name=\"To\">richard.zepernick@henryschein.com</Argum"
-        "ent><Argument Name=\"Subject\">END SSPEvent - Promo10Z* VIP Import - 19:00pm 5Ds"
-        " Launch VIPimportAppM</Argument><Argument Name=\"MessageText\">\\\\usnym3fs03\\D"
-        "ata\\Dental\\dentmkt\\Prom"
+    Comment ="_AXL:gument Name=\"QueryName\">SchdLogAQ</Argument></Action><Action Name=\"OpenQ"
+        "uery\"><Argument Name=\"QueryName\">E3NmPkgSzAQ</Argument></Action><Comment>****"
+        "*  RZ Clear  *****</Comment><Action Name=\"RunCode\"><Argument Name=\"FunctionNa"
+        "me\">LogFunc(\"5/6. Popu"
 End
 Begin
-    Comment ="_AXL:o\\Promo10Z.accdb /x VIPimportAppM</Argument><Argument Name=\"EditMessage\""
-        ">No</Argument></Action><Comment>History -</Comment><Comment>2012-03-14 I discove"
-        "red that Wayne Slingluff's  [VIPbufferHeader].[VIPType] =1 (New Submission) is n"
-        "o longer being p"
+    Comment ="_AXL:late [zItemSub from [ImpVipNu-zDetAQ\")</Argument></Action><Action Name=\"O"
+        "penQuery\"><Argument Name=\"QueryName\">SchdLogAQ</Argument></Action><Comment>[I"
+        "mpVipNu-zDetAQ] 2012-03-14 Replaces [ImpVipNu-DetAQ] Diff? Removed [ImpVipNu-Vnd"
+        "Q] from append que"
 End
 Begin
-    Comment ="_AXL:opulated   ( Pick up VendorNumber (2=Edit)  (3=Remove))</Comment><Comment> "
-        "     We had been using [VIPType]=\"1\" as a criteria for pulling in ItemCode det"
-        "ails, somewhere recently, that got dropped and is no longer being populated.</Co"
-        "mment><Comment>"
+    Comment ="_AXL:ry</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">ImpVipN"
+        "u-zDetAQ</Argument></Action><Comment>Append to [zSubItem] from [ImpVipNu-DetAQ] "
+        "&gt; [ImpVipNu-VndQ] +[zPromo] + [VIPbufferDetail] + [rVndICs] + [RZsizeAVL]</Co"
+        "mment><Comment>  "
 End
 Begin
-    Comment ="_AXL:      So I was forced to modify [ImpVipNu-VndQ] criteria modified, 2012-3-1"
-        "4 remove [Type] = \"1\" Kishore says he is not maintaining it</Comment><Comment>"
-        "</Comment></Statements></UserInterfaceMacro>"
+    Comment ="_AXL:   (to get item descriptions; Items must be listed in [rVndICs])</Comment><"
+        "Comment>In [ImpVipNu-DetAQ] 2010-4-12 </Comment><Comment>REPLACE [VIPbufferDetai"
+        "l] WITH [VIPbufferDetailQ].[Unique] test for unique combo [Pending_Id] &amp; [HS"
+        "I_Code]</Comm"
+End
+Begin
+    Comment ="_AXL:ent><Comment>     Add [zItemSubQ] to replace [zItemSub]</Comment><Comment> "
+        "    If ItemCode not in [rVndICs] first check for Supplier in [zSubVC]</Comment><"
+        "Comment>NEXT - Update \"update_vip_buffer.mdb\" [VIPbufferHeader].[Done] to = 1 "
+        "for imported pr"
+End
+Begin
+    Comment ="_AXL:omotions</Comment><Comment>2010-3-4 Updated [BuyPart] and [ImpQty]</Comment"
+        "><Comment>2010-4-12 Add [RZsizeAVL].[SizeQty] to [ImpVipNu-DetAQ]</Comment><Comm"
+        "ent>7 MsgBox                  </Comment><Comment>[ImpVipNu-OkUQ]</Comment><Actio"
+        "n Name=\"OpenQ"
+End
+Begin
+    Comment ="_AXL:uery\"><Argument Name=\"QueryName\">ImpVipNu-OkUQ</Argument></Action><Comme"
+        "nt>Updates one field, [VIPbufferHeader].[Done]</Comment><Comment>[ImpVipNu-OkUQ]"
+        " &gt; [zPromo].[Pending_ Id] +  [VIPbufferHeader].[Pending_Id] Update [Done] to "
+        "\"1\" - \"Not updat"
+End
+Begin
+    Comment ="_AXL:eable\"</Comment><Comment>NOTE: [ImpVipNu-OkUQ] confirms each promotion imp"
+        "orted, NOT each item code imported.</Comment><Comment>NOTE:  Confirmation is for"
+        " VIP - File then dissappears - SO, we need our own file to show what we imported"
+        " into [zPromo]"
+End
+Begin
+    Comment ="_AXL:</Comment><Comment>NOTE: VIP users should be advised to review their promot"
+        "ions to see the final listing of active and available products displayed</Commen"
+        "t><Comment>NOTE: Query works only while  \\\\nahsinyhqdw07\\Vip_Dropoff\\update_"
+        "vip_buffer.mdb  e"
+End
+Begin
+    Comment ="_AXL:xists (currently 7PM-12:30AM)</Comment><Comment>Log the following event in "
+        "[SchdLog]</Comment><Comment>2009-02-18: [zItemSub].[ProdDesc] = Desc: Trim([Desc"
+        "ription])</Comment><Comment>                     [zItemSub].[ProdDesc] Propertie"
+        "s = 255 CHRs<"
+End
+Begin
+    Comment ="_AXL:/Comment><Comment>8 MsgBox                 </Comment><Comment>LogFunc(\"Com"
+        "pleted [VIPimportAppM]\")</Comment><Action Name=\"RunCode\"><Argument Name=\"Fun"
+        "ctionName\">LogFunc(\"6/6. Completed [VIPimportAppM]\")</Argument></Action><Comm"
+        "ent>SchdLogAQ</Commen"
+End
+Begin
+    Comment ="_AXL:t><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">SchdLogAQ</Argume"
+        "nt></Action><Comment>contains ZLog() &amp; \" \" &amp; ZQP() and Now()</Comment>"
+        "<Comment>9 MsgBox                 </Comment><Comment>NEXT - Create a confirmatio"
+        "n in  \\\\nahsinyhqdw"
+End
+Begin
+    Comment ="_AXL:07\\Vip_Pickup\\OKdData.mdb in the table [ImportOK]</Comment><Comment>Desti"
+        "nation table - [ImportOK]</Comment><Comment>[ImpVipNu-OkAQ] &gt; [zPromo].[Pendi"
+        "ng_ Id] +  [VIPbufferHeader].[Pending_Id] </Comment><Action Name=\"OpenQuery\"><"
+        "Argument Name=\"Qu"
+End
+Begin
+    Comment ="_AXL:eryName\">ImpVipNu-OkAQ</Argument></Action><Comment>NOTE: in the table [Imp"
+        "ortOK] fields are: [Pending_Id], [VIPStatus], and [ImportDt]</Comment><Comment>N"
+        "OTE: [VIPStatus] = 1 (imported), [Pending_Id] = [zPromo]. [Pending_Id], and [Imp"
+        "ortDt] = Forma"
+End
+Begin
+    Comment ="_AXL:t(Now(),\"mm/dd/yyyy\")</Comment><Comment>NOTE: [ImpVipNu-OkAQ] appends con"
+        "firmation of each promotion imported, NOT each item code imported.</Comment><Com"
+        "ment>NOTE: Query works only while  \\\\nahsinyhqdw07\\Vip_Dropoff\\update_vip_bu"
+        "ffer.mdb  exists (c"
+End
+Begin
+    Comment ="_AXL:urrently 7PM-12:30AM)</Comment><Comment>10 MsgBox                 </Comment"
+        "><Comment>TESTING - Go to \\\\nahsinyhqdw07\\Vip_Dropoff\\ and copy and rename t"
+        "he test file (left there) to \" update_vip_buffer.mdb\"</Comment><Comment>2010-0"
+        "9-08 Addition Creat"
+End
+Begin
+    Comment ="_AXL:e [DispNm] and add to [zItemSubF] to show Display Mfg in ItemSub (without s"
+        "low-down of 300K item match)</Comment><Comment>\"DELETE * FROM DispMfg;\" 'Clear"
+        " table [DispMfg]   </Comment><Action Name=\"RunSQL\"><Argument Name=\"SQLStateme"
+        "nt\">DELETE * FROM "
+End
+Begin
+    Comment ="_AXL:DispMfg;</Argument></Action><Comment>Run [DispMfgAQ ] - re-populate [DispMf"
+        "g] </Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">DispMfgAQ</"
+        "Argument></Action><Action Name=\"RunCode\"><Argument Name=\"FunctionName\">LogFu"
+        "nc(\"Msg 5. Populate ["
+End
+Begin
+    Comment ="_AXL:DispMfg from [ImpVipNu-BuyAQ\")</Argument></Action><Action Name=\"OpenQuery"
+        "\"><Argument Name=\"QueryName\">SchdLogAQ</Argument></Action><Comment>\"DELETE *"
+        " FROM DispNm;\" 'Clear table [DispNm]   </Comment><Action Name=\"RunSQL\"><Argum"
+        "ent Name=\"SQLStatement"
+End
+Begin
+    Comment ="_AXL:\">DELETE * FROM DispNm;</Argument></Action><Comment>Run [DispNmAQ ] - re-p"
+        "opulate [DispNm] </Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName"
+        "\">DispNmAQ</Argument></Action><Comment>[UpDtBNPm] UpDt Brand Name on Pkg on bot"
+        "h [zPromo] and [zR"
+End
+Begin
+    Comment ="_AXL:eadPromo]</Comment><Action Name=\"RunMacro\"><Argument Name=\"MacroName\">U"
+        "pDtBNPm</Argument></Action><Comment>REM: Send Richard Zepernick message COMPLETE"
+        "D [VIPImportAppM]</Comment><Comment>REM: Subject: \"Promo COMPLETED [VIPImportAp"
+        "pM]\"</Comment><Com"
+End
+Begin
+    Comment ="_AXL:ment>REM: Body: \"COMPLETED Promo.mdb, [VIPImportAppM]. \"</Comment><Commen"
+        "t>This macro is launched from the Scheduler</Comment><Action Name=\"QuitAccess\""
+        "><Argument Name=\"Options\">Exit</Argument></Action><Action Name=\"StopMacro\"/>"
+        "<Action Name=\"EMailDa"
+End
+Begin
+    Comment ="_AXL:tabaseObject\"><Argument Name=\"To\">richard.zepernick@henryschein.com</Arg"
+        "ument><Argument Name=\"Subject\">END SSPEvent - Promo10Z* VIP Import - 19:00pm 5"
+        "Ds Launch VIPimportAppM</Argument><Argument Name=\"MessageText\">\\\\usnym3fs03\\"
+        "Data\\Dental\\dentmkt\\Pr"
+End
+Begin
+    Comment ="_AXL:omo\\Promo10Z.accdb /x VIPimportAppM</Argument><Argument Name=\"EditMessage"
+        "\">No</Argument></Action><Comment>History -</Comment><Comment>2012-03-14 I disco"
+        "vered that Wayne Slingluff's  [VIPbufferHeader].[VIPType] =1 (New Submission) is"
+        " no longer being"
+End
+Begin
+    Comment ="_AXL: populated   ( Pick up VendorNumber (2=Edit)  (3=Remove))</Comment><Comment"
+        ">      We had been using [VIPType]=\"1\" as a criteria for pulling in ItemCode d"
+        "etails, somewhere recently, that got dropped and is no longer being populated.</"
+        "Comment><Commen"
+End
+Begin
+    Comment ="_AXL:t>      So I was forced to modify [ImpVipNu-VndQ] criteria modified, 2012-3"
+        "-14 remove [Type] = \"1\" Kishore says he is not maintaining it</Comment><Commen"
+        "t></Comment></Statements></UserInterfaceMacro>"
 End

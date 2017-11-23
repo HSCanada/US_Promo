@@ -1,7 +1,7 @@
 ﻿Version =196611
 ColumnsShown =0
 Begin
-    Comment ="debug.print(\"x\")"
+    Comment ="debug.print(\"XXX\")"
 End
 Begin
     Action ="SetWarnings"
@@ -31,17 +31,17 @@ Begin
     Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
         "nterfaceMacro MinimumClientDesignVersion=\"14.0.0000.0000\" xmlns=\"http://schem"
         "as.microsoft.com/office/accessservices/2009/11/application\"><Statements><Commen"
-        "t>debug.print(\"x\")</Comment><"
+        "t>debug.print(\"XXX\")</Comment"
 End
 Begin
-    Comment ="_AXL:Comment>VIP record count check</Comment><Action Name=\"SetWarnings\"/><Acti"
-        "on Name=\"OnError\"/><Action Name=\"ExportWithFormatting\"><Argument Name=\"Obje"
-        "ctType\">Query</Argument><Argument Name=\"ObjectName\">VipRecCntsQ</Argument><Ar"
-        "gument Name=\"OutputForm"
+    Comment ="_AXL:><Comment>VIP record count check</Comment><Action Name=\"SetWarnings\"/><Ac"
+        "tion Name=\"OnError\"/><Action Name=\"ExportWithFormatting\"><Argument Name=\"Ob"
+        "jectType\">Query</Argument><Argument Name=\"ObjectName\">VipRecCntsQ</Argument><"
+        "Argument Name=\"OutputFo"
 End
 Begin
-    Comment ="_AXL:at\">ExcelWorkbook(*.xlsx)</Argument><Argument Name=\"OutputFile\">C:\\User"
-        "s\\Richard.Zepernick\\Desktop\\VipRecCntsQ.xlsx</Argument></Action><Action Name="
-        "\"QuitAccess\"><Argument Name=\"Options\">Exit</Argument></Action></Statements><"
-        "/UserInterfaceMacro>"
+    Comment ="_AXL:rmat\">ExcelWorkbook(*.xlsx)</Argument><Argument Name=\"OutputFile\">C:\\Us"
+        "ers\\Richard.Zepernick\\Desktop\\VipRecCntsQ.xlsx</Argument></Action><Action Nam"
+        "e=\"QuitAccess\"><Argument Name=\"Options\">Exit</Argument></Action></Statements"
+        "></UserInterfaceMacro>"
 End

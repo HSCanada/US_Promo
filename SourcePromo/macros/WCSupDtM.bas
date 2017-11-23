@@ -1,7 +1,7 @@
 ﻿Version =196611
 ColumnsShown =0
 Begin
-    Comment ="debug.print(\"x\")"
+    Comment ="debug.print(\"XXX\")"
 End
 Begin
     Comment ="UpDate ItemCodes Files - Launched from ProScheduler covered by [ItemMasterUpDate"
@@ -151,92 +151,92 @@ Begin
     Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
         "nterfaceMacro MinimumClientDesignVersion=\"14.0.0000.0000\" xmlns=\"http://schem"
         "as.microsoft.com/office/accessservices/2009/11/application\"><Statements><Commen"
-        "t>debug.print(\"x\")</Comment><"
+        "t>debug.print(\"XXX\")</Comment"
 End
 Begin
-    Comment ="_AXL:Comment>UpDate ItemCodes Files - Launched from ProScheduler covered by [Ite"
-        "mMasterUpDateM]</Comment><Comment>REM: 4/26/13 [VIPImportAppM] is Working Fine s"
-        "o REM out</Comment><Comment>Send Richard Zepernick message LAUNCH [WCSupDtM]</Co"
-        "mment><Commen"
+    Comment ="_AXL:><Comment>UpDate ItemCodes Files - Launched from ProScheduler covered by [I"
+        "temMasterUpDateM]</Comment><Comment>REM: 4/26/13 [VIPImportAppM] is Working Fine"
+        " so REM out</Comment><Comment>Send Richard Zepernick message LAUNCH [WCSupDtM]</"
+        "Comment><Comm"
 End
 Begin
-    Comment ="_AXL:t>Subject: \"Promo Launch [WCSupDtM]\"</Comment><Comment>Body: \"Launching "
-        "Promo.mdb, Launch [WCSupDtM]. \"</Comment><Comment>Off</Comment><Action Name=\"O"
-        "nError\"/><Action Name=\"SetWarnings\"/><Comment>Delete [E3 NAME]</Comment><Acti"
-        "on Name=\"DeleteObject"
+    Comment ="_AXL:ent>Subject: \"Promo Launch [WCSupDtM]\"</Comment><Comment>Body: \"Launchin"
+        "g Promo.mdb, Launch [WCSupDtM]. \"</Comment><Comment>Off</Comment><Action Name=\""
+        "OnError\"/><Action Name=\"SetWarnings\"/><Comment>Delete [E3 NAME]</Comment><Act"
+        "ion Name=\"DeleteObje"
 End
 Begin
-    Comment ="_AXL:\"><Argument Name=\"ObjectType\">Table</Argument><Argument Name=\"ObjectNam"
-        "e\">E3 NAME</Argument></Action><Comment>Copy [E3NmStruct] As [E3 NAME]</Comment>"
-        "<Action Name=\"CopyObject\"><Argument Name=\"NewName\">E3 NAME</Argument><Argume"
-        "nt Name=\"SourceObjectT"
+    Comment ="_AXL:ct\"><Argument Name=\"ObjectType\">Table</Argument><Argument Name=\"ObjectN"
+        "ame\">E3 NAME</Argument></Action><Comment>Copy [E3NmStruct] As [E3 NAME]</Commen"
+        "t><Action Name=\"CopyObject\"><Argument Name=\"NewName\">E3 NAME</Argument><Argu"
+        "ment Name=\"SourceObjec"
 End
 Begin
-    Comment ="_AXL:ype\">Table</Argument><Argument Name=\"SourceObjectName\">E3NmStruct</Argum"
-        "ent></Action><Comment>Populate [E3 NAME] Via [E3NameAQ]</Comment><Action Name=\""
-        "OpenQuery\"><Argument Name=\"QueryName\">E3NameAQ</Argument></Action><Comment>Cl"
-        "ose [E3NameAQ]</Comm"
+    Comment ="_AXL:tType\">Table</Argument><Argument Name=\"SourceObjectName\">E3NmStruct</Arg"
+        "ument></Action><Comment>Populate [E3 NAME] Via [E3NameAQ]</Comment><Action Name="
+        "\"OpenQuery\"><Argument Name=\"QueryName\">E3NameAQ</Argument></Action><Comment>"
+        "Close [E3NameAQ]</Co"
 End
 Begin
-    Comment ="_AXL:ent><Action Name=\"CloseWindow\"><Argument Name=\"ObjectType\">Query</Argum"
-        "ent><Argument Name=\"ObjectName\">E3NameAQ</Argument></Action><Comment>[zWCSsupp"
-        "lierMTQ] &gt; [zWCSsupplier]</Comment><Action Name=\"OpenQuery\"><Argument Name="
-        "\"QueryName\">zWCSsuppl"
+    Comment ="_AXL:mment><Action Name=\"CloseWindow\"><Argument Name=\"ObjectType\">Query</Arg"
+        "ument><Argument Name=\"ObjectName\">E3NameAQ</Argument></Action><Comment>[zWCSsu"
+        "pplierMTQ] &gt; [zWCSsupplier]</Comment><Action Name=\"OpenQuery\"><Argument Nam"
+        "e=\"QueryName\">zWCSsup"
 End
 Begin
-    Comment ="_AXL:ierMTQ</Argument></Action><Comment>[zUpDtDesc-ICM] Macro runs three queries"
-        " adding descriptive data</Comment><Action Name=\"RunMacro\"><Argument Name=\"Mac"
-        "roName\">zUpDtDesc-ICM</Argument></Action><Comment>     [zWCS-VCsMTQ]</Comment><"
-        "Comment>     [zWC"
+    Comment ="_AXL:plierMTQ</Argument></Action><Comment>[zUpDtDesc-ICM] Macro runs three queri"
+        "es adding descriptive data</Comment><Action Name=\"RunMacro\"><Argument Name=\"M"
+        "acroName\">zUpDtDesc-ICM</Argument></Action><Comment>     [zWCS-VCsMTQ]</Comment"
+        "><Comment>     [z"
 End
 Begin
-    Comment ="_AXL:SICUQ]</Comment><Comment>     [zWCSDescUQ]</Comment><Comment>Off</Comment><"
-        "Action Name=\"SetWarnings\"><Argument Name=\"WarningsOn\">Yes</Argument></Action"
-        "><Comment>ReName [rVndICs] As [rVndICsTemp]</Comment><Action Name=\"RenameObject"
-        "\"><Argument Name=\""
+    Comment ="_AXL:WCSICUQ]</Comment><Comment>     [zWCSDescUQ]</Comment><Comment>Off</Comment"
+        "><Action Name=\"SetWarnings\"><Argument Name=\"WarningsOn\">Yes</Argument></Acti"
+        "on><Comment>ReName [rVndICs] As [rVndICsTemp]</Comment><Action Name=\"RenameObje"
+        "ct\"><Argument Name"
 End
 Begin
-    Comment ="_AXL:NewName\">rVndICsTemp</Argument><Argument Name=\"ObjectType\">Table</Argume"
-        "nt><Argument Name=\"OldName\">rVndICs</Argument></Action><Comment>Copy [rVndICsS"
-        "truct] As [rVndICs]</Comment><Action Name=\"CopyObject\"><Argument Name=\"NewNam"
-        "e\">rVndICs</Argument>"
+    Comment ="_AXL:=\"NewName\">rVndICsTemp</Argument><Argument Name=\"ObjectType\">Table</Arg"
+        "ument><Argument Name=\"OldName\">rVndICs</Argument></Action><Comment>Copy [rVndI"
+        "CsStruct] As [rVndICs]</Comment><Action Name=\"CopyObject\"><Argument Name=\"New"
+        "Name\">rVndICs</Argumen"
 End
 Begin
-    Comment ="_AXL:<Argument Name=\"SourceObjectType\">Table</Argument><Argument Name=\"Source"
-        "ObjectName\">rVndICsStruct</Argument></Action><Comment>[rVendorListAQ]        (."
-        "..MTQ)</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">rVendorL"
-        "istAQ</Argument></Act"
+    Comment ="_AXL:t><Argument Name=\"SourceObjectType\">Table</Argument><Argument Name=\"Sour"
+        "ceObjectName\">rVndICsStruct</Argument></Action><Comment>[rVendorListAQ]        "
+        "(...MTQ)</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">rVendo"
+        "rListAQ</Argument></A"
 End
 Begin
-    Comment ="_AXL:ion><Comment>     [zSubVC]+[zWCSsupplier]+[E3 NAME] &gt; [rVndICs]</Comment"
-        "><ConditionalBlock><If><Condition>DCount(\"*\",\"[rVndICs]\")&lt;90000</Conditio"
-        "n><Statements><Comment>[rVndICs]</Comment><Action Name=\"DeleteObject\"><Argumen"
-        "t Name=\"ObjectType\""
+    Comment ="_AXL:ction><Comment>     [zSubVC]+[zWCSsupplier]+[E3 NAME] &gt; [rVndICs]</Comme"
+        "nt><ConditionalBlock><If><Condition>DCount(\"*\",\"[rVndICs]\")&lt;90000</Condit"
+        "ion><Statements><Comment>[rVndICs]</Comment><Action Name=\"DeleteObject\"><Argum"
+        "ent Name=\"ObjectTyp"
 End
 Begin
-    Comment ="_AXL:>Table</Argument><Argument Name=\"ObjectName\">rVndICs</Argument></Action><"
-        "/Statements></If></ConditionalBlock><ConditionalBlock><If><Condition>DCount(\"*\""
-        ",\"[rVndICs]\")&lt;90000</Condition><Statements><Comment>Rename [rVndICsTemp] As"
-        " [rVndICs]</Commen"
+    Comment ="_AXL:e\">Table</Argument><Argument Name=\"ObjectName\">rVndICs</Argument></Actio"
+        "n></Statements></If></ConditionalBlock><ConditionalBlock><If><Condition>DCount(\""
+        "*\",\"[rVndICs]\")&lt;90000</Condition><Statements><Comment>Rename [rVndICsTemp]"
+        " As [rVndICs]</Comm"
 End
 Begin
-    Comment ="_AXL:t><Action Name=\"RenameObject\"><Argument Name=\"NewName\">rVndICsTemp</Arg"
-        "ument><Argument Name=\"OldName\">rVndICs</Argument></Action></Statements></If></"
-        "ConditionalBlock><Comment>Delete [rVndICsTemp]</Comment><Action Name=\"DeleteObj"
-        "ect\"><Argument Name="
+    Comment ="_AXL:ent><Action Name=\"RenameObject\"><Argument Name=\"NewName\">rVndICsTemp</A"
+        "rgument><Argument Name=\"OldName\">rVndICs</Argument></Action></Statements></If>"
+        "</ConditionalBlock><Comment>Delete [rVndICsTemp]</Comment><Action Name=\"DeleteO"
+        "bject\"><Argument Nam"
 End
 Begin
-    Comment ="_AXL:\"ObjectType\">Table</Argument><Argument Name=\"ObjectName\">rVndICsTemp</A"
-        "rgument></Action><Comment>On</Comment><Action Name=\"SetWarnings\"><Argument Nam"
-        "e=\"WarningsOn\">Yes</Argument></Action><Comment>Send Richard Zepernick message "
-        "COMPLETED [WCSupDtM]<"
+    Comment ="_AXL:e=\"ObjectType\">Table</Argument><Argument Name=\"ObjectName\">rVndICsTemp<"
+        "/Argument></Action><Comment>On</Comment><Action Name=\"SetWarnings\"><Argument N"
+        "ame=\"WarningsOn\">Yes</Argument></Action><Comment>Send Richard Zepernick messag"
+        "e COMPLETED [WCSupDtM"
 End
 Begin
-    Comment ="_AXL:/Comment><Comment>Subject: \"Promo COMPLETED [WCSupDtM]\"</Comment><Comment"
-        ">Body: \"COMPLETED Promo.mdb, [WCSupDtM]. \"</Comment><Action Name=\"QuitAccess\""
-        "><Argument Name=\"Options\">Exit</Argument></Action><Action Name=\"StopMacro\"/>"
-        "</Statements></UserInt"
+    Comment ="_AXL:]</Comment><Comment>Subject: \"Promo COMPLETED [WCSupDtM]\"</Comment><Comme"
+        "nt>Body: \"COMPLETED Promo.mdb, [WCSupDtM]. \"</Comment><Action Name=\"QuitAcces"
+        "s\"><Argument Name=\"Options\">Exit</Argument></Action><Action Name=\"StopMacro\""
+        "/></Statements></UserI"
 End
 Begin
-    Comment ="_AXL:erfaceMacro>"
+    Comment ="_AXL:nterfaceMacro>"
 End

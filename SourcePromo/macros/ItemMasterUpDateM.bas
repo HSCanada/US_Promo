@@ -1,7 +1,7 @@
 ﻿Version =196611
 ColumnsShown =0
 Begin
-    Comment ="debug.print(\"x\")"
+    Comment ="debug.print(\"XXX\")"
 End
 Begin
     Comment ="ItemMasterUpDateM"
@@ -306,190 +306,190 @@ Begin
     Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
         "nterfaceMacro MinimumClientDesignVersion=\"14.0.0000.0000\" xmlns=\"http://schem"
         "as.microsoft.com/office/accessservices/2009/11/application\"><Statements><Commen"
-        "t>debug.print(\"x\")</Comment><"
+        "t>debug.print(\"XXX\")</Comment"
 End
 Begin
-    Comment ="_AXL:Comment>ItemMasterUpDateM</Comment><Comment>Send Richard Zepernick message "
-        "LAUNCH [ItemMasterUpDateM]</Comment><Action Name=\"RunCode\"><Argument Name=\"Fu"
-        "nctionName\">LogFunc(\"1/4. Begin Promo10.accdb [ItemMasterUpDateM]\")</Argument"
-        "></Action><Action N"
+    Comment ="_AXL:><Comment>ItemMasterUpDateM</Comment><Comment>Send Richard Zepernick messag"
+        "e LAUNCH [ItemMasterUpDateM]</Comment><Action Name=\"RunCode\"><Argument Name=\""
+        "FunctionName\">LogFunc(\"1/4. Begin Promo10.accdb [ItemMasterUpDateM]\")</Argume"
+        "nt></Action><Action"
 End
 Begin
-    Comment ="_AXL:ame=\"OpenQuery\"><Argument Name=\"QueryName\">SchdLogAQ</Argument></Action"
-        "><Comment>Subject: \"Promo Launch [ItemMasterUpDateM]\"</Comment><Comment>Body: "
-        "\"Launching Promo.mdb, Launch [ItemMasterUpDateM]. \"</Comment><Comment>RunMacro"
-        " [VipMasterItemFilePr"
+    Comment ="_AXL: Name=\"OpenQuery\"><Argument Name=\"QueryName\">SchdLogAQ</Argument></Acti"
+        "on><Comment>Subject: \"Promo Launch [ItemMasterUpDateM]\"</Comment><Comment>Body"
+        ": \"Launching Promo.mdb, Launch [ItemMasterUpDateM]. \"</Comment><Comment>RunMac"
+        "ro [VipMasterItemFile"
 End
 Begin
-    Comment ="_AXL:eLink] - test added 5/10/13 (precursor to replacement process)</Comment><Co"
-        "mment>Turn off warnings: sometimes Memory shortage holds up process</Comment><Ac"
-        "tion Name=\"SetWarnings\"/><Comment>1. AS400 ItemCodes UpDate</Comment><Conditio"
-        "nalBlock><If><C"
+    Comment ="_AXL:PreLink] - test added 5/10/13 (precursor to replacement process)</Comment><"
+        "Comment>Turn off warnings: sometimes Memory shortage holds up process</Comment><"
+        "Action Name=\"SetWarnings\"/><Comment>1. AS400 ItemCodes UpDate</Comment><Condit"
+        "ionalBlock><If>"
 End
 Begin
-    Comment ="_AXL:ondition>DCount(\"*\",\"WcsItemFileQ\")&gt;300000</Condition><Statements><C"
-        "omment>Off ----------------------</Comment><Action Name=\"SetWarnings\"><Argumen"
-        "t Name=\"WarningsOn\">Yes</Argument></Action><Comment>Delete [zWCSsupplier]</Com"
-        "ment><Action Name=\"De"
+    Comment ="_AXL:<Condition>DCount(\"*\",\"WcsItemFileQ\")&gt;300000</Condition><Statements>"
+        "<Comment>Off ----------------------</Comment><Action Name=\"SetWarnings\"><Argum"
+        "ent Name=\"WarningsOn\">Yes</Argument></Action><Comment>Delete [zWCSsupplier]</C"
+        "omment><Action Name=\""
 End
 Begin
-    Comment ="_AXL:leteObject\"><Argument Name=\"ObjectType\">Table</Argument><Argument Name=\""
-        "ObjectName\">zWCSsupplier</Argument></Action><Comment>On  ----------------------"
-        "</Comment><Action Name=\"SetWarnings\"><Argument Name=\"WarningsOn\">Yes</Argume"
-        "nt></Action><Comment>"
+    Comment ="_AXL:DeleteObject\"><Argument Name=\"ObjectType\">Table</Argument><Argument Name"
+        "=\"ObjectName\">zWCSsupplier</Argument></Action><Comment>On  -------------------"
+        "---</Comment><Action Name=\"SetWarnings\"><Argument Name=\"WarningsOn\">Yes</Arg"
+        "ument></Action><Commen"
 End
 Begin
-    Comment ="_AXL:[zWCSsupplierStruct]&gt;[zWCSsupplier]</Comment><Action Name=\"CopyObject\""
-        "><Argument Name=\"NewName\">zWCSsupplier</Argument><Argument Name=\"SourceObject"
-        "Type\">Table</Argument><Argument Name=\"SourceObjectName\">zWCSsupplierStruct</A"
-        "rgument></Action><Com"
-End
-Begin
-    Comment ="_AXL:ment>Append [WcsItemFileCSV]&gt;[zWCSsupplierAQ]&gt;[zWCSsupplier]</Comment"
-        "><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">zWCSsupplierAQ</Argumen"
-        "t></Action><Action Name=\"RunCode\"><Argument Name=\"FunctionName\">LogFunc(\"2/"
-        "4. Just ran [zWCSsuppl"
-End
-Begin
-    Comment ="_AXL:ierAQ], [WcsItemFileQ]&gt;300000\")</Argument></Action><Action Name=\"OpenQ"
-        "uery\"><Argument Name=\"QueryName\">SchdLogAQ</Argument></Action></Statements></"
-        "If></ConditionalBlock><Comment>2. Update ItemCodes and Descriptions</Comment><Co"
-        "mment>RunMacro [zU"
-End
-Begin
-    Comment ="_AXL:pDtDesc-ICM]  WHENCONDITION DCount(\"*\",\"JDEDesc\")&gt;500000 And DCount("
-        "\"*\",\"JDESzeStr\")&gt;500000</Comment><Comment>3. [rVndICs] - UpDate Product L"
-        "istings for All Promo Vendors</Comment><ConditionalBlock><If><Condition>DCount(\""
-        "*\",\"zWCSsupplier\")&gt"
-End
-Begin
-    Comment ="_AXL:;300000 And DCount(\"*\",\"E3NmQ\")&gt;300000</Condition><Statements><Comme"
-        "nt>Off ----------------------</Comment><Action Name=\"SetWarnings\"><Argument Na"
-        "me=\"WarningsOn\">Yes</Argument></Action><Comment>Delete [rVndICs]</Comment><Act"
-        "ion Name=\"DeleteObjec"
-End
-Begin
-    Comment ="_AXL:t\"><Argument Name=\"ObjectType\">Table</Argument><Argument Name=\"ObjectNa"
-        "me\">rVndICs</Argument></Action><Comment>On</Comment><Action Name=\"SetWarnings\""
-        "><Argument Name=\"WarningsOn\">Yes</Argument></Action><Comment>[rVndICsStruct]&g"
-        "t;[rVndICs]</Comment>"
-End
-Begin
-    Comment ="_AXL:<Action Name=\"CopyObject\"><Argument Name=\"NewName\">rVndICs</Argument><A"
-        "rgument Name=\"SourceObjectType\">Table</Argument><Argument Name=\"SourceObjectN"
-        "ame\">rVndICsStruct</Argument></Action><Comment>Append via [rVendorListAQ]&gt;[r"
-        "VndICs] </Comment><Ac"
-End
-Begin
-    Comment ="_AXL:tion Name=\"OpenQuery\"><Argument Name=\"QueryName\">rVendorListAQ</Argumen"
-        "t></Action></Statements></If></ConditionalBlock><Comment>4. [zItemSub] - ItemSub"
-        " Desc UpDate (but only for current promos, from [zReadPromo])</Comment><Comment>"
-        "Off -------------"
-End
-Begin
-    Comment ="_AXL:---------</Comment><Action Name=\"SetWarnings\"><Argument Name=\"WarningsOn"
-        "\">Yes</Argument></Action><Comment>Delete [E3 NAME]</Comment><Action Name=\"Dele"
-        "teObject\"><Argument Name=\"ObjectType\">Table</Argument><Argument Name=\"Object"
-        "Name\">E3 NAME</Argumen"
-End
-Begin
-    Comment ="_AXL:t></Action><Comment>On</Comment><Action Name=\"SetWarnings\"><Argument Name"
-        "=\"WarningsOn\">Yes</Argument></Action><Comment>[E3NmStruct]&gt;[E3 NAME]</Comme"
-        "nt><Action Name=\"CopyObject\"><Argument Name=\"NewName\">E3 NAME</Argument><Arg"
-        "ument Name=\"SourceObj"
-End
-Begin
-    Comment ="_AXL:ectType\">Table</Argument><Argument Name=\"SourceObjectName\">E3NmStruct</A"
-        "rgument></Action><Comment>Append [E3NameAQ]&gt;[E3 NAME]</Comment><Action Name=\""
-        "OpenQuery\"><Argument Name=\"QueryName\">E3NameAQ</Argument></Action><Comment>[z"
-        "ReadPromo]+[zItemSu"
-End
-Begin
-    Comment ="_AXL:b]+[rVndICs]&gt;[zItmSbDescUQ]</Comment><Action Name=\"OpenQuery\"><Argumen"
-        "t Name=\"QueryName\">zItmSbDescUQ</Argument></Action><Comment>5. [zReadItemSub] "
-        "- ItemSub Description Read UpDate</Comment><Comment>[zReadItemSub]+[rVndICs]&gt;"
-        "[zItmSbDescReadUQ"
-End
-Begin
-    Comment ="_AXL:]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">zItmSbDe"
-        "scReadUQ</Argument></Action><Comment>6. [zItemSub] - ItemSub Desc Read UpDate</C"
-        "omment><Comment>[zItemSub]+[E3 NAME]&gt;[ProdNmNDescUQ]</Comment><Action Name=\""
-        "OpenQuery\"><Argume"
-End
-Begin
-    Comment ="_AXL:nt Name=\"QueryName\">ProdNmNDescUQ</Argument></Action><Comment>Send Richar"
-        "d Zepernick message IN PROCESS [ItemMasterUpDateM]</Comment><Action Name=\"RunCo"
-        "de\"><Argument Name=\"FunctionName\">LogFunc(\"3/4. Just ran [ProdNmNDescUQ]\")<"
+    Comment ="_AXL:t>[zWCSsupplierStruct]&gt;[zWCSsupplier]</Comment><Action Name=\"CopyObject"
+        "\"><Argument Name=\"NewName\">zWCSsupplier</Argument><Argument Name=\"SourceObje"
+        "ctType\">Table</Argument><Argument Name=\"SourceObjectName\">zWCSsupplierStruct<"
         "/Argument></Action><C"
 End
 Begin
-    Comment ="_AXL:omment>Subject: \"Promo.mdb [ItemMasterUpDateM] IN PROCESS - Step 6 done\"<"
-        "/Comment><Comment>Body: \"IN PROCESS Promo.mdb, [ItemMasterUpDateM]  - Step 6 do"
-        "ne. \"</Comment><Comment>7.  [VipMasterItemFile] - Repopulate local table</Comme"
-        "nt><Comment>Expor"
+    Comment ="_AXL:omment>Append [WcsItemFileCSV]&gt;[zWCSsupplierAQ]&gt;[zWCSsupplier]</Comme"
+        "nt><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">zWCSsupplierAQ</Argum"
+        "ent></Action><Action Name=\"RunCode\"><Argument Name=\"FunctionName\">LogFunc(\""
+        "2/4. Just ran [zWCSsup"
 End
 Begin
-    Comment ="_AXL:t Item Listing for Participating Vendors - Takes three minutes</Comment><Co"
-        "mment>Export Master Item Files, Wayne will provide table of SubSupplier codes to"
-        " filter [VipItemFileAQ] by VIP \"approved\" Suppliers</Comment><Comment>    [Vip"
-        "SuppUQ]&gt;[Vip"
+    Comment ="_AXL:plierAQ], [WcsItemFileQ]&gt;300000\")</Argument></Action><Action Name=\"Ope"
+        "nQuery\"><Argument Name=\"QueryName\">SchdLogAQ</Argument></Action></Statements>"
+        "</If></ConditionalBlock><Comment>2. Update ItemCodes and Descriptions</Comment><"
+        "Comment>RunMacro ["
 End
 Begin
-    Comment ="_AXL:SuppVipQ]+[VipSuppSubVcQ]</Comment><Comment>[VipMasterItemFileDQ] to replac"
-        "e RunSQL \"DELETE * FROM [VipMasterItemFile];\" Empty the file before appending "
-        "</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipMasterItemF"
-        "ileDQ</Argument></A"
+    Comment ="_AXL:zUpDtDesc-ICM]  WHENCONDITION DCount(\"*\",\"JDEDesc\")&gt;500000 And DCoun"
+        "t(\"*\",\"JDESzeStr\")&gt;500000</Comment><Comment>3. [rVndICs] - UpDate Product"
+        " Listings for All Promo Vendors</Comment><ConditionalBlock><If><Condition>DCount"
+        "(\"*\",\"zWCSsupplier\")&"
 End
 Begin
-    Comment ="_AXL:ction><Comment>    [VipItemFileAQ]&gt;[VipSuppUQ]+[WCS ITEMFILE]+[E3 NAME]+"
-        "[ItemCdWdispMfgCd]+[DispMfgNmQ]&gt;[DispMfgNm]</Comment><Comment>[RZsizeAVLDQ] E"
-        "mpty [RZsizeAVL]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\""
-        ">RZsizeAVLDQ</Ar"
+    Comment ="_AXL:gt;300000 And DCount(\"*\",\"E3NmQ\")&gt;300000</Condition><Statements><Com"
+        "ment>Off ----------------------</Comment><Action Name=\"SetWarnings\"><Argument "
+        "Name=\"WarningsOn\">Yes</Argument></Action><Comment>Delete [rVndICs]</Comment><A"
+        "ction Name=\"DeleteObj"
 End
 Begin
-    Comment ="_AXL:gument></Action><Comment>[RZsizeAVLAQ] Re-Populate [RZsizeAVL]</Comment><Ac"
-        "tion Name=\"OpenQuery\"><Argument Name=\"QueryName\">RZsizeAVLAQ</Argument></Act"
-        "ion><Comment>   20090829 - Add [SizeQty] (Integer) and [PkgQty] (Y/N) from [RZsi"
-        "zeAVLQ] &gt;[E3NA"
+    Comment ="_AXL:ect\"><Argument Name=\"ObjectType\">Table</Argument><Argument Name=\"Object"
+        "Name\">rVndICs</Argument></Action><Comment>On</Comment><Action Name=\"SetWarning"
+        "s\"><Argument Name=\"WarningsOn\">Yes</Argument></Action><Comment>[rVndICsStruct"
+        "]&gt;[rVndICs]</Commen"
 End
 Begin
-    Comment ="_AXL:ME]+[WCS ITEMFILE]+[zSubVC]</Comment><Comment>   [PkgQty] tells us to use p"
-        "ackage quantity rather than [QtyValu] in determining purchases and eligibility</"
-        "Comment><Comment>[VipItemFileAQ] writes to linked table [VipMasterItemFile] in \\"
-        "\\nahsinyhqdw0"
+    Comment ="_AXL:t><Action Name=\"CopyObject\"><Argument Name=\"NewName\">rVndICs</Argument>"
+        "<Argument Name=\"SourceObjectType\">Table</Argument><Argument Name=\"SourceObjec"
+        "tName\">rVndICsStruct</Argument></Action><Comment>Append via [rVendorListAQ]&gt;"
+        "[rVndICs] </Comment><"
 End
 Begin
-    Comment ="_AXL:7\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb    aka [VipMasterItemFile]</Com"
-        "ment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipItemFileAQ</Argu"
-        "ment></Action><Comment>   Add [Stk].[Stk] for stocking status \"S\", stocking, o"
-        "r \"N\", Non</Comment><C"
+    Comment ="_AXL:Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">rVendorListAQ</Argum"
+        "ent></Action></Statements></If></ConditionalBlock><Comment>4. [zItemSub] - ItemS"
+        "ub Desc UpDate (but only for current promos, from [zReadPromo])</Comment><Commen"
+        "t>Off -----------"
 End
 Begin
-    Comment ="_AXL:omment>8.  [VipMasterItemFileOKd] - Repopulate [VipMasterItemFileOKd] if [V"
-        "ipMasterItemFile] has 150K+ records</Comment><ConditionalBlock><If><Condition>DC"
-        "ount(\"*\",\"VipMasterItemFile\")&gt;150000</Condition><Statements><Comment>[Vip"
-        "MasterItemFileOKd"
+    Comment ="_AXL:-----------</Comment><Action Name=\"SetWarnings\"><Argument Name=\"Warnings"
+        "On\">Yes</Argument></Action><Comment>Delete [E3 NAME]</Comment><Action Name=\"De"
+        "leteObject\"><Argument Name=\"ObjectType\">Table</Argument><Argument Name=\"Obje"
+        "ctName\">E3 NAME</Argum"
 End
 Begin
-    Comment ="_AXL:DQ] Empty [VipMasterItemFileOKd]</Comment><Action Name=\"OpenQuery\"><Argum"
-        "ent Name=\"QueryName\">VipMasterItemFileOKdDQ</Argument></Action></Statements></"
-        "If></ConditionalBlock><Comment>    Otherwise, leave [VipMasterItemFileOKd] as is"
-        " for now</Comment"
+    Comment ="_AXL:ent></Action><Comment>On</Comment><Action Name=\"SetWarnings\"><Argument Na"
+        "me=\"WarningsOn\">Yes</Argument></Action><Comment>[E3NmStruct]&gt;[E3 NAME]</Com"
+        "ment><Action Name=\"CopyObject\"><Argument Name=\"NewName\">E3 NAME</Argument><A"
+        "rgument Name=\"SourceO"
 End
 Begin
-    Comment ="_AXL:><Comment>[VipMstrItmFileOKdAQ] - [VipMasterItemFile]&gt; [VipMstrItmFileOK"
-        "dAQ] &gt; [VipMasterItemFileOKd] </Comment><Action Name=\"OpenQuery\"><Argument "
-        "Name=\"QueryName\">VipMstrItmFileOKdAQ</Argument></Action><Comment>Send Richard "
-        "Zepernick message"
+    Comment ="_AXL:bjectType\">Table</Argument><Argument Name=\"SourceObjectName\">E3NmStruct<"
+        "/Argument></Action><Comment>Append [E3NameAQ]&gt;[E3 NAME]</Comment><Action Name"
+        "=\"OpenQuery\"><Argument Name=\"QueryName\">E3NameAQ</Argument></Action><Comment"
+        ">[zReadPromo]+[zItem"
 End
 Begin
-    Comment ="_AXL: COMPLETED [ItemMasterUpDateM]</Comment><Action Name=\"RunCode\"><Argument "
-        "Name=\"FunctionName\">LogFunc(\"4/4. Completed Promo10.accdb [ItemMasterUpDateM]"
-        "\")</Argument></Action><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">S"
-        "chdLogAQ</Argument></Ac"
+    Comment ="_AXL:Sub]+[rVndICs]&gt;[zItmSbDescUQ]</Comment><Action Name=\"OpenQuery\"><Argum"
+        "ent Name=\"QueryName\">zItmSbDescUQ</Argument></Action><Comment>5. [zReadItemSub"
+        "] - ItemSub Description Read UpDate</Comment><Comment>[zReadItemSub]+[rVndICs]&g"
+        "t;[zItmSbDescRead"
 End
 Begin
-    Comment ="_AXL:tion><Comment>Subject: \"Promo.mdb [ItemMasterUpDateM] COMPLETED\"</Comment"
-        "><Comment>Body: \"COMPLETED Promo.mdb, [ItemMasterUpDateM]. \"</Comment><Action "
-        "Name=\"QuitAccess\"/></Statements></UserInterfaceMacro>"
+    Comment ="_AXL:UQ]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">zItmSb"
+        "DescReadUQ</Argument></Action><Comment>6. [zItemSub] - ItemSub Desc Read UpDate<"
+        "/Comment><Comment>[zItemSub]+[E3 NAME]&gt;[ProdNmNDescUQ]</Comment><Action Name="
+        "\"OpenQuery\"><Argu"
+End
+Begin
+    Comment ="_AXL:ment Name=\"QueryName\">ProdNmNDescUQ</Argument></Action><Comment>Send Rich"
+        "ard Zepernick message IN PROCESS [ItemMasterUpDateM]</Comment><Action Name=\"Run"
+        "Code\"><Argument Name=\"FunctionName\">LogFunc(\"3/4. Just ran [ProdNmNDescUQ]\""
+        ")</Argument></Action>"
+End
+Begin
+    Comment ="_AXL:<Comment>Subject: \"Promo.mdb [ItemMasterUpDateM] IN PROCESS - Step 6 done\""
+        "</Comment><Comment>Body: \"IN PROCESS Promo.mdb, [ItemMasterUpDateM]  - Step 6 d"
+        "one. \"</Comment><Comment>7.  [VipMasterItemFile] - Repopulate local table</Comm"
+        "ent><Comment>Exp"
+End
+Begin
+    Comment ="_AXL:ort Item Listing for Participating Vendors - Takes three minutes</Comment><"
+        "Comment>Export Master Item Files, Wayne will provide table of SubSupplier codes "
+        "to filter [VipItemFileAQ] by VIP \"approved\" Suppliers</Comment><Comment>    [V"
+        "ipSuppUQ]&gt;[V"
+End
+Begin
+    Comment ="_AXL:ipSuppVipQ]+[VipSuppSubVcQ]</Comment><Comment>[VipMasterItemFileDQ] to repl"
+        "ace RunSQL \"DELETE * FROM [VipMasterItemFile];\" Empty the file before appendin"
+        "g </Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipMasterIte"
+        "mFileDQ</Argument><"
+End
+Begin
+    Comment ="_AXL:/Action><Comment>    [VipItemFileAQ]&gt;[VipSuppUQ]+[WCS ITEMFILE]+[E3 NAME"
+        "]+[ItemCdWdispMfgCd]+[DispMfgNmQ]&gt;[DispMfgNm]</Comment><Comment>[RZsizeAVLDQ]"
+        " Empty [RZsizeAVL]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryNam"
+        "e\">RZsizeAVLDQ</"
+End
+Begin
+    Comment ="_AXL:Argument></Action><Comment>[RZsizeAVLAQ] Re-Populate [RZsizeAVL]</Comment><"
+        "Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">RZsizeAVLAQ</Argument></A"
+        "ction><Comment>   20090829 - Add [SizeQty] (Integer) and [PkgQty] (Y/N) from [RZ"
+        "sizeAVLQ] &gt;[E3"
+End
+Begin
+    Comment ="_AXL:NAME]+[WCS ITEMFILE]+[zSubVC]</Comment><Comment>   [PkgQty] tells us to use"
+        " package quantity rather than [QtyValu] in determining purchases and eligibility"
+        "</Comment><Comment>[VipItemFileAQ] writes to linked table [VipMasterItemFile] in"
+        " \\\\nahsinyhqd"
+End
+Begin
+    Comment ="_AXL:w07\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb    aka [VipMasterItemFile]</C"
+        "omment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipItemFileAQ</Ar"
+        "gument></Action><Comment>   Add [Stk].[Stk] for stocking status \"S\", stocking,"
+        " or \"N\", Non</Comment>"
+End
+Begin
+    Comment ="_AXL:<Comment>8.  [VipMasterItemFileOKd] - Repopulate [VipMasterItemFileOKd] if "
+        "[VipMasterItemFile] has 150K+ records</Comment><ConditionalBlock><If><Condition>"
+        "DCount(\"*\",\"VipMasterItemFile\")&gt;150000</Condition><Statements><Comment>[V"
+        "ipMasterItemFileO"
+End
+Begin
+    Comment ="_AXL:KdDQ] Empty [VipMasterItemFileOKd]</Comment><Action Name=\"OpenQuery\"><Arg"
+        "ument Name=\"QueryName\">VipMasterItemFileOKdDQ</Argument></Action></Statements>"
+        "</If></ConditionalBlock><Comment>    Otherwise, leave [VipMasterItemFileOKd] as "
+        "is for now</Comme"
+End
+Begin
+    Comment ="_AXL:nt><Comment>[VipMstrItmFileOKdAQ] - [VipMasterItemFile]&gt; [VipMstrItmFile"
+        "OKdAQ] &gt; [VipMasterItemFileOKd] </Comment><Action Name=\"OpenQuery\"><Argumen"
+        "t Name=\"QueryName\">VipMstrItmFileOKdAQ</Argument></Action><Comment>Send Richar"
+        "d Zepernick messa"
+End
+Begin
+    Comment ="_AXL:ge COMPLETED [ItemMasterUpDateM]</Comment><Action Name=\"RunCode\"><Argumen"
+        "t Name=\"FunctionName\">LogFunc(\"4/4. Completed Promo10.accdb [ItemMasterUpDate"
+        "M]\")</Argument></Action><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\""
+        ">SchdLogAQ</Argument></"
+End
+Begin
+    Comment ="_AXL:Action><Comment>Subject: \"Promo.mdb [ItemMasterUpDateM] COMPLETED\"</Comme"
+        "nt><Comment>Body: \"COMPLETED Promo.mdb, [ItemMasterUpDateM]. \"</Comment><Actio"
+        "n Name=\"QuitAccess\"/></Statements></UserInterfaceMacro>"
 End

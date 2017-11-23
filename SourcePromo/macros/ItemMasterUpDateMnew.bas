@@ -4,7 +4,7 @@ Begin
     Comment ="ItemMasterUpDateM"
 End
 Begin
-    Comment ="debug.print(\"x\")"
+    Comment ="debug.print(\"XXX\")"
 End
 Begin
     Action ="SendObject"
@@ -198,108 +198,108 @@ Begin
         "t>ItemMasterUpDateM</Comment>"
 End
 Begin
-    Comment ="_AXL:<Comment>debug.print(\"x\")</Comment><Comment>Send Richard Zepernick messag"
-        "e LAUNCH [ItemMasterUpDateM]</Comment><Action Name=\"EMailDatabaseObject\"><Argu"
-        "ment Name=\"To\">Richard.Zepernick@henryschein.com;</Argument><Argument Name=\"S"
-        "ubject\">Promo Launch"
+    Comment ="_AXL:<Comment>debug.print(\"XXX\")</Comment><Comment>Send Richard Zepernick mess"
+        "age LAUNCH [ItemMasterUpDateM]</Comment><Action Name=\"EMailDatabaseObject\"><Ar"
+        "gument Name=\"To\">Richard.Zepernick@henryschein.com;</Argument><Argument Name=\""
+        "Subject\">Promo Laun"
 End
 Begin
-    Comment ="_AXL: [ItemMasterUpDateM] and</Argument><Argument Name=\"MessageText\">Launching"
-        " Promo.mdb, Launch [ItemMasterUpDateM]</Argument><Argument Name=\"EditMessage\">"
-        "No</Argument></Action><Comment>Subject: \"Promo Launch [ItemMasterUpDateM]\"</Co"
-        "mment><Comment>Body"
+    Comment ="_AXL:ch [ItemMasterUpDateM] and</Argument><Argument Name=\"MessageText\">Launchi"
+        "ng Promo.mdb, Launch [ItemMasterUpDateM]</Argument><Argument Name=\"EditMessage\""
+        ">No</Argument></Action><Comment>Subject: \"Promo Launch [ItemMasterUpDateM]\"</C"
+        "omment><Comment>Bo"
 End
 Begin
-    Comment ="_AXL:: \"Launching Promo.mdb, Launch [ItemMasterUpDateM]. \"</Comment><Comment>V"
-        "ipMasterItemFilePreLink - test added 5/10/13 (precursor to replacement process)<"
-        "/Comment><Action Name=\"RunMacro\"><Argument Name=\"MacroName\">VipMasterItemFil"
-        "ePreLink</Argument>"
+    Comment ="_AXL:dy: \"Launching Promo.mdb, Launch [ItemMasterUpDateM]. \"</Comment><Comment"
+        ">VipMasterItemFilePreLink - test added 5/10/13 (precursor to replacement process"
+        ")</Comment><Action Name=\"RunMacro\"><Argument Name=\"MacroName\">VipMasterItemF"
+        "ilePreLink</Argumen"
 End
 Begin
-    Comment ="_AXL:</Action><Comment>1. AS400 ItemCodes UpDate</Comment><Comment>Off</Comment>"
-        "<Action Name=\"SetWarnings\"/><Comment>Delete [zWCSsupplier]</Comment><Action Na"
-        "me=\"DeleteObject\"><Argument Name=\"ObjectType\">Table</Argument><Argument Name"
-        "=\"ObjectName\">zWCSs"
+    Comment ="_AXL:t></Action><Comment>1. AS400 ItemCodes UpDate</Comment><Comment>Off</Commen"
+        "t><Action Name=\"SetWarnings\"/><Comment>Delete [zWCSsupplier]</Comment><Action "
+        "Name=\"DeleteObject\"><Argument Name=\"ObjectType\">Table</Argument><Argument Na"
+        "me=\"ObjectName\">zWC"
 End
 Begin
-    Comment ="_AXL:upplier</Argument></Action><Comment>On</Comment><Action Name=\"SetWarnings\""
-        "><Argument Name=\"WarningsOn\">Yes</Argument></Action><Comment>[zWCSsupplierStru"
-        "ct]&gt;[zWCSsupplier]</Comment><Action Name=\"CopyObject\"><Argument Name=\"NewN"
-        "ame\">zWCSsupplier</"
+    Comment ="_AXL:Ssupplier</Argument></Action><Comment>On</Comment><Action Name=\"SetWarning"
+        "s\"><Argument Name=\"WarningsOn\">Yes</Argument></Action><Comment>[zWCSsupplierS"
+        "truct]&gt;[zWCSsupplier]</Comment><Action Name=\"CopyObject\"><Argument Name=\"N"
+        "ewName\">zWCSsupplier"
+End
+Begin
+    Comment ="_AXL:</Argument><Argument Name=\"SourceObjectType\">Table</Argument><Argument Na"
+        "me=\"SourceObjectName\">zWCSsupplierStruct</Argument></Action><Comment>Append [z"
+        "WCSsupplierAQ]&gt;[zWCSsupplier]</Comment><Action Name=\"OpenQuery\"><Argument N"
+        "ame=\"QueryName\">zWC"
+End
+Begin
+    Comment ="_AXL:SsupplierAQ</Argument></Action><Comment>2. Update ItemCodes and Description"
+        "s</Comment><Comment>[zUpDtDesc-ICM]</Comment><Action Name=\"RunMacro\"><Argument"
+        " Name=\"MacroName\">zUpDtDesc-ICM</Argument></Action><Comment>3. UpDate Product "
+        "Listings for All "
+End
+Begin
+    Comment ="_AXL:Promo Vendors to [rVndICs]</Comment><Comment>Off ----------------------</Co"
+        "mment><Action Name=\"SetWarnings\"/><Comment>Delete [rVndICs]</Comment><Action N"
+        "ame=\"DeleteObject\"><Argument Name=\"ObjectType\">Table</Argument><Argument Nam"
+        "e=\"ObjectName\">rVnd"
+End
+Begin
+    Comment ="_AXL:ICs</Argument></Action><Comment>On</Comment><Action Name=\"SetWarnings\"><A"
+        "rgument Name=\"WarningsOn\">Yes</Argument></Action><Comment>[rVndICsStruct]&gt;["
+        "rVndICs]</Comment><Action Name=\"CopyObject\"><Argument Name=\"NewName\">rVndICs"
+        "</Argument><Argument "
+End
+Begin
+    Comment ="_AXL:Name=\"SourceObjectType\">Table</Argument><Argument Name=\"SourceObjectName"
+        "\">rVndICsStruct</Argument></Action><Comment>Append [rVendorListAQ]&gt;[rVndICs]"
+        "</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">rVendorListAQ<"
+        "/Argument></Action><C"
+End
+Begin
+    Comment ="_AXL:omment>z</Comment><Comment>4. ItemSub Desc UpDate</Comment><Comment>No ----"
+        "------------------</Comment><Action Name=\"SetWarnings\"/><Comment>Delete [E3 NA"
+        "ME]</Comment><Action Name=\"DeleteObject\"><Argument Name=\"ObjectType\">Table</"
+        "Argument><Argument "
+End
+Begin
+    Comment ="_AXL:Name=\"ObjectName\">E3 NAME</Argument></Action><Comment>On</Comment><Action"
+        " Name=\"SetWarnings\"><Argument Name=\"WarningsOn\">Yes</Argument></Action><Comm"
+        "ent>[E3NmStruct]&gt;[E3 NAME]</Comment><Action Name=\"CopyObject\"><Argument Nam"
+        "e=\"NewName\">E3 NAME</"
 End
 Begin
     Comment ="_AXL:Argument><Argument Name=\"SourceObjectType\">Table</Argument><Argument Name"
-        "=\"SourceObjectName\">zWCSsupplierStruct</Argument></Action><Comment>Append [zWC"
-        "SsupplierAQ]&gt;[zWCSsupplier]</Comment><Action Name=\"OpenQuery\"><Argument Nam"
-        "e=\"QueryName\">zWCSs"
+        "=\"SourceObjectName\">E3NmStruct</Argument></Action><Comment>Append [E3NameAQ]&g"
+        "t;[E3 NAME]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">E3N"
+        "ameAQ</Argument></Act"
 End
 Begin
-    Comment ="_AXL:upplierAQ</Argument></Action><Comment>2. Update ItemCodes and Descriptions<"
-        "/Comment><Comment>[zUpDtDesc-ICM]</Comment><Action Name=\"RunMacro\"><Argument N"
-        "ame=\"MacroName\">zUpDtDesc-ICM</Argument></Action><Comment>3. UpDate Product Li"
-        "stings for All Pr"
+    Comment ="_AXL:ion><Comment>[zItmSbDescUQ]</Comment><Action Name=\"OpenQuery\"><Argument N"
+        "ame=\"QueryName\">zItmSbDescUQ</Argument></Action><Comment>5.  ItemSub Descripti"
+        "on Read UpDate</Comment><Comment>[zItmSbDescReadUQ]</Comment><Action Name=\"Open"
+        "Query\"><Argument N"
 End
 Begin
-    Comment ="_AXL:omo Vendors to [rVndICs]</Comment><Comment>Off ----------------------</Comm"
-        "ent><Action Name=\"SetWarnings\"/><Comment>Delete [rVndICs]</Comment><Action Nam"
-        "e=\"DeleteObject\"><Argument Name=\"ObjectType\">Table</Argument><Argument Name="
-        "\"ObjectName\">rVndIC"
+    Comment ="_AXL:ame=\"QueryName\">zItmSbDescReadUQ</Argument></Action><Comment>6. ItemSub D"
+        "esc Read UpDate</Comment><Comment>[ProdNmNDescUQ]</Comment><Action Name=\"OpenQu"
+        "ery\"><Argument Name=\"QueryName\">ProdNmNDescUQ</Argument></Action><Comment>Sen"
+        "d Richard Zepernick"
 End
 Begin
-    Comment ="_AXL:s</Argument></Action><Comment>On</Comment><Action Name=\"SetWarnings\"><Arg"
-        "ument Name=\"WarningsOn\">Yes</Argument></Action><Comment>[rVndICsStruct]&gt;[rV"
-        "ndICs]</Comment><Action Name=\"CopyObject\"><Argument Name=\"NewName\">rVndICs</"
-        "Argument><Argument Na"
+    Comment ="_AXL: message COMPLETED [ItemMasterUpDateM]</Comment><Action Name=\"EMailDatabas"
+        "eObject\"><Argument Name=\"To\">Richard.Zepernick@henryschein.com;</Argument><Ar"
+        "gument Name=\"Subject\">Promo COMPLETED [ItemMasterUpDateM]</Argument><Argument "
+        "Name=\"MessageText\">"
 End
 Begin
-    Comment ="_AXL:me=\"SourceObjectType\">Table</Argument><Argument Name=\"SourceObjectName\""
-        ">rVndICsStruct</Argument></Action><Comment>Append [rVendorListAQ]&gt;[rVndICs]</"
-        "Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">rVendorListAQ</A"
-        "rgument></Action><Com"
+    Comment ="_AXL:COMPLETED Promo.mdb, [ItemMasterUpDateM]</Argument><Argument Name=\"EditMes"
+        "sage\">No</Argument></Action><Comment>Subject: \"Promo COMPLETED [ItemMasterUpDa"
+        "teM]\"</Comment><Comment>Body: \"COMPLETED Promo.mdb, [ItemMasterUpDateM]. \"</C"
+        "omment><Action Name"
 End
 Begin
-    Comment ="_AXL:ment>z</Comment><Comment>4. ItemSub Desc UpDate</Comment><Comment>No ------"
-        "----------------</Comment><Action Name=\"SetWarnings\"/><Comment>Delete [E3 NAME"
-        "]</Comment><Action Name=\"DeleteObject\"><Argument Name=\"ObjectType\">Table</Ar"
-        "gument><Argument Na"
-End
-Begin
-    Comment ="_AXL:me=\"ObjectName\">E3 NAME</Argument></Action><Comment>On</Comment><Action N"
-        "ame=\"SetWarnings\"><Argument Name=\"WarningsOn\">Yes</Argument></Action><Commen"
-        "t>[E3NmStruct]&gt;[E3 NAME]</Comment><Action Name=\"CopyObject\"><Argument Name="
-        "\"NewName\">E3 NAME</Ar"
-End
-Begin
-    Comment ="_AXL:gument><Argument Name=\"SourceObjectType\">Table</Argument><Argument Name=\""
-        "SourceObjectName\">E3NmStruct</Argument></Action><Comment>Append [E3NameAQ]&gt;["
-        "E3 NAME]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">E3Name"
-        "AQ</Argument></Actio"
-End
-Begin
-    Comment ="_AXL:n><Comment>[zItmSbDescUQ]</Comment><Action Name=\"OpenQuery\"><Argument Nam"
-        "e=\"QueryName\">zItmSbDescUQ</Argument></Action><Comment>5.  ItemSub Description"
-        " Read UpDate</Comment><Comment>[zItmSbDescReadUQ]</Comment><Action Name=\"OpenQu"
-        "ery\"><Argument Nam"
-End
-Begin
-    Comment ="_AXL:e=\"QueryName\">zItmSbDescReadUQ</Argument></Action><Comment>6. ItemSub Des"
-        "c Read UpDate</Comment><Comment>[ProdNmNDescUQ]</Comment><Action Name=\"OpenQuer"
-        "y\"><Argument Name=\"QueryName\">ProdNmNDescUQ</Argument></Action><Comment>Send "
-        "Richard Zepernick m"
-End
-Begin
-    Comment ="_AXL:essage COMPLETED [ItemMasterUpDateM]</Comment><Action Name=\"EMailDatabaseO"
-        "bject\"><Argument Name=\"To\">Richard.Zepernick@henryschein.com;</Argument><Argu"
-        "ment Name=\"Subject\">Promo COMPLETED [ItemMasterUpDateM]</Argument><Argument Na"
-        "me=\"MessageText\">CO"
-End
-Begin
-    Comment ="_AXL:MPLETED Promo.mdb, [ItemMasterUpDateM]</Argument><Argument Name=\"EditMessa"
-        "ge\">No</Argument></Action><Comment>Subject: \"Promo COMPLETED [ItemMasterUpDate"
-        "M]\"</Comment><Comment>Body: \"COMPLETED Promo.mdb, [ItemMasterUpDateM]. \"</Com"
-        "ment><Action Name=\""
-End
-Begin
-    Comment ="_AXL:QuitAccess\"><Argument Name=\"Options\">Exit</Argument></Action></Statement"
-        "s></UserInterfaceMacro>"
+    Comment ="_AXL:=\"QuitAccess\"><Argument Name=\"Options\">Exit</Argument></Action></Statem"
+        "ents></UserInterfaceMacro>"
 End

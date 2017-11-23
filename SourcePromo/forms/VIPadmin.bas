@@ -968,7 +968,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub VuImpSrc_Click()
-Debug.Print "x_XXX"
+Debug.Print "VuImpSrc_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_VuImpSrc_Click
@@ -1007,7 +1007,7 @@ Err_Close_Click:
 End Sub
 
 Private Sub VuSrcTbls_Click()
-Debug.Print "x"
+Debug.Print "VuSrcTbls_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_VuSrcTbls_Click
@@ -1029,7 +1029,7 @@ Err_VuSrcTbls_Click:
     
 End Sub
 Private Sub VuExpFldr_Click()
-Debug.Print "x"
+Debug.Print "VuExpFldr_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_VuExpFldr_Click
@@ -1052,7 +1052,7 @@ Err_VuExpFldr_Click:
 End Sub
 
 Private Sub VuExpTbls_Click()
-Debug.Print "x"
+Debug.Print "VuExpTbls_Click_XXX"
 Debug.Assert False
 On Error GoTo Err_VuExpTbls_Click
 
@@ -1092,7 +1092,7 @@ Err_VuLog_Click:
 End Sub
 
 Private Sub VuBuyGetStats_Click()
-Debug.Print "x"
+Debug.Print "VuBuyGetStats_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_VuBuyGetStats_Click
@@ -1116,7 +1116,7 @@ Err_VuBuyGetStats_Click:
 End Sub
 
 Private Sub VuBuyFldr_Click()
-Debug.Print "x"
+Debug.Print "VuBuyFldr_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_VuBuyFldr_Click
@@ -1137,7 +1137,7 @@ Err_VuBuyFldr_Click:
 End Sub
 
 Private Sub VuQaFldr_Click()
-Debug.Print "x"
+Debug.Print "VuQaFldr_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_VuQaFldr_Click
@@ -1158,7 +1158,7 @@ Err_VuQaFldr_Click:
 End Sub
 
 Private Sub VuBkUpFiles_Click()
-Debug.Print "x"
+Debug.Print "VuBkUpFiles_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_VuBkUpFiles_Click
@@ -1179,7 +1179,7 @@ Err_VuBkUpFiles_Click:
 End Sub
 
 Private Sub QAFileSrc_Click()
-Debug.Print "x"
+Debug.Print "QAFileSrc_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_QAFileSrc_Click
@@ -1200,7 +1200,7 @@ Err_QAFileSrc_Click:
 End Sub
 
 Private Sub QAExpDB_Click()
-Debug.Print "x"
+Debug.Print "QAExpDB_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_QAExpDB_Click
@@ -1221,7 +1221,7 @@ Err_QAExpDB_Click:
 End Sub
 
 Private Sub QAImpFldr_Click()
-Debug.Print "x"
+Debug.Print "QAImpFldr_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_QAImpFldr_Click
@@ -1242,7 +1242,7 @@ Err_QAImpFldr_Click:
 End Sub
 
 Private Sub QAXportFldr_Click()
-Debug.Print "x"
+Debug.Print "QAXportFldr_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_QAXportFldr_Click
@@ -1263,7 +1263,7 @@ Err_QAXportFldr_Click:
 End Sub
 
 Private Sub ProdVsQA_Click()
-Debug.Print "x"
+Debug.Print "ProdVsQA_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_ProdVsQA_Click
@@ -1298,7 +1298,7 @@ Err_ProdVsQA_Click:
 End Sub
 
 Private Sub VIPmanualImp_Click()
-Debug.Print "x"
+Debug.Print "VIPmanualImp_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_VIPmanualImp_Click
@@ -1333,7 +1333,7 @@ Err_VIPmanualImp_Click:
 End Sub
 
 Private Sub VIPmanualXport_Click()
-Debug.Print "x"
+Debug.Print "VIPmanualXport_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_VIPmanualXport_Click

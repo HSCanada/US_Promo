@@ -1,7 +1,7 @@
 ﻿Version =196611
 ColumnsShown =0
 Begin
-    Comment ="debug.print(\"x\")"
+    Comment ="debug.print(\"XXX\")"
 End
 Begin
     Comment ="Runs at the end of the OnLine UpDate Process"
@@ -148,130 +148,130 @@ Begin
     Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
         "nterfaceMacro MinimumClientDesignVersion=\"14.0.0000.0000\" xmlns=\"http://schem"
         "as.microsoft.com/office/accessservices/2009/11/application\"><Statements><Commen"
-        "t>debug.print(\"x\")</Comment><"
+        "t>debug.print(\"XXX\")</Comment"
 End
 Begin
-    Comment ="_AXL:Comment>Runs at the end of the OnLine UpDate Process</Comment><Comment>For "
-        "Marie Catalano</Comment><ConditionalBlock><If><Condition>DCount(\"*\",\"InvalidR"
-        "dmDtQ\")&gt;0</Condition><Statements><Comment>[zReadPromo]&gt;[InvalidRdmDtQ] Em"
-        "ail to ZEmlUpDt()"
+    Comment ="_AXL:><Comment>Runs at the end of the OnLine UpDate Process</Comment><Comment>Fo"
+        "r Marie Catalano</Comment><ConditionalBlock><If><Condition>DCount(\"*\",\"Invali"
+        "dRdmDtQ\")&gt;0</Condition><Statements><Comment>[zReadPromo]&gt;[InvalidRdmDtQ] "
+        "Email to ZEmlUpDt"
 End
 Begin
-    Comment ="_AXL:</Comment><Action Name=\"EMailDatabaseObject\"><Argument Name=\"ObjectType\""
-        ">Query</Argument><Argument Name=\"ObjectName\">InvalidRdmDtQ</Argument><Argument"
-        " Name=\"OutputFormat\">MicrosoftExcelBiff8(*.xls)</Argument><Argument Name=\"To\""
-        ">=ZEmlUpDt()</Argumen"
+    Comment ="_AXL:()</Comment><Action Name=\"EMailDatabaseObject\"><Argument Name=\"ObjectTyp"
+        "e\">Query</Argument><Argument Name=\"ObjectName\">InvalidRdmDtQ</Argument><Argum"
+        "ent Name=\"OutputFormat\">MicrosoftExcelBiff8(*.xls)</Argument><Argument Name=\""
+        "To\">=ZEmlUpDt()</Argum"
 End
 Begin
-    Comment ="_AXL:t><Argument Name=\"Subject\">Promos: Invalid Redeem Dates in [zReadPromo]</"
-        "Argument><Argument Name=\"MessageText\">From Button #1 in the Data Check screen."
-        "</Argument><Argument Name=\"EditMessage\">No</Argument></Action></Statements></I"
-        "f></ConditionalBloc"
+    Comment ="_AXL:ent><Argument Name=\"Subject\">Promos: Invalid Redeem Dates in [zReadPromo]"
+        "</Argument><Argument Name=\"MessageText\">From Button #1 in the Data Check scree"
+        "n.</Argument><Argument Name=\"EditMessage\">No</Argument></Action></Statements><"
+        "/If></ConditionalBl"
 End
 Begin
-    Comment ="_AXL:k><Comment>Subject: Promos: Invalid Redeem Dates in [zReadPromo]</Comment><"
-        "Comment>Text: From Button #1 in the Data Check screen.</Comment><ConditionalBloc"
-        "k><If><Condition>DCount(\"*\",\"MissingItmCdsQ\")&gt;0</Condition><Statements><C"
-        "omment>[zReadProm"
+    Comment ="_AXL:ock><Comment>Subject: Promos: Invalid Redeem Dates in [zReadPromo]</Comment"
+        "><Comment>Text: From Button #1 in the Data Check screen.</Comment><ConditionalBl"
+        "ock><If><Condition>DCount(\"*\",\"MissingItmCdsQ\")&gt;0</Condition><Statements>"
+        "<Comment>[zReadPr"
 End
 Begin
-    Comment ="_AXL:o]+[zReadItemSub]&gt;[MissingItmCdsQ] Email to ZEmlUpDt()</Comment><Action "
-        "Name=\"EMailDatabaseObject\"><Argument Name=\"ObjectType\">Query</Argument><Argu"
-        "ment Name=\"ObjectName\">MissingItmCdsQ</Argument><Argument Name=\"OutputFormat\""
-        ">MicrosoftExcelBiff8"
+    Comment ="_AXL:omo]+[zReadItemSub]&gt;[MissingItmCdsQ] Email to ZEmlUpDt()</Comment><Actio"
+        "n Name=\"EMailDatabaseObject\"><Argument Name=\"ObjectType\">Query</Argument><Ar"
+        "gument Name=\"ObjectName\">MissingItmCdsQ</Argument><Argument Name=\"OutputForma"
+        "t\">MicrosoftExcelBif"
 End
 Begin
-    Comment ="_AXL:(*.xls)</Argument><Argument Name=\"To\">=ZEmlUpDt()</Argument><Argument Nam"
-        "e=\"Subject\">Promos With No Item Codes [zReadPromo...ItemSub]</Argument><Argume"
-        "nt Name=\"MessageText\">From Button #2.A. in the Data Check screen.</Argument><A"
-        "rgument Name=\"EditM"
+    Comment ="_AXL:f8(*.xls)</Argument><Argument Name=\"To\">=ZEmlUpDt()</Argument><Argument N"
+        "ame=\"Subject\">Promos With No Item Codes [zReadPromo...ItemSub]</Argument><Argu"
+        "ment Name=\"MessageText\">From Button #2.A. in the Data Check screen.</Argument>"
+        "<Argument Name=\"Edi"
 End
 Begin
-    Comment ="_AXL:essage\">No</Argument></Action></Statements></If></ConditionalBlock><Commen"
-        "t>Subject: Promos With No Item Codes [zReadPromo...ItemSub]</Comment><Comment>Te"
-        "xt: From Button #2.A. in the Data Check screen.</Comment><ConditionalBlock><If><"
-        "Condition>DCou"
+    Comment ="_AXL:tMessage\">No</Argument></Action></Statements></If></ConditionalBlock><Comm"
+        "ent>Subject: Promos With No Item Codes [zReadPromo...ItemSub]</Comment><Comment>"
+        "Text: From Button #2.A. in the Data Check screen.</Comment><ConditionalBlock><If"
+        "><Condition>DC"
 End
 Begin
-    Comment ="_AXL:nt(\"*\",\"BadGetValuQ\")&gt;0</Condition><Statements><Comment>[zReadPromo]"
-        "&gt;[BadGetValuQ] Email to ZEmlUpDt()</Comment><Action Name=\"EMailDatabaseObjec"
-        "t\"><Argument Name=\"ObjectType\">Query</Argument><Argument Name=\"ObjectName\">"
-        "BadGetValuQ</Argument><"
+    Comment ="_AXL:ount(\"*\",\"BadGetValuQ\")&gt;0</Condition><Statements><Comment>[zReadProm"
+        "o]&gt;[BadGetValuQ] Email to ZEmlUpDt()</Comment><Action Name=\"EMailDatabaseObj"
+        "ect\"><Argument Name=\"ObjectType\">Query</Argument><Argument Name=\"ObjectName\""
+        ">BadGetValuQ</Argument"
 End
 Begin
-    Comment ="_AXL:Argument Name=\"OutputFormat\">MicrosoftExcelBiff8(*.xls)</Argument><Argume"
-        "nt Name=\"To\">=ZEmlUpDt()</Argument><Argument Name=\"Subject\">Promos: Low (Inv"
-        "alid) Get Value</Argument><Argument Name=\"MessageText\">From Button #61 in the "
-        "Data Check screen.</A"
+    Comment ="_AXL:><Argument Name=\"OutputFormat\">MicrosoftExcelBiff8(*.xls)</Argument><Argu"
+        "ment Name=\"To\">=ZEmlUpDt()</Argument><Argument Name=\"Subject\">Promos: Low (I"
+        "nvalid) Get Value</Argument><Argument Name=\"MessageText\">From Button #61 in th"
+        "e Data Check screen.<"
 End
 Begin
-    Comment ="_AXL:rgument><Argument Name=\"EditMessage\">No</Argument></Action></Statements><"
-        "/If></ConditionalBlock><Comment>Subject: Promos: Low (Invalid) Get Value</Commen"
-        "t><Comment>Text: From Button #61 in the Data Check screen.</Comment><Conditional"
-        "Block><If><Cond"
+    Comment ="_AXL:/Argument><Argument Name=\"EditMessage\">No</Argument></Action></Statements"
+        "></If></ConditionalBlock><Comment>Subject: Promos: Low (Invalid) Get Value</Comm"
+        "ent><Comment>Text: From Button #61 in the Data Check screen.</Comment><Condition"
+        "alBlock><If><Co"
 End
 Begin
-    Comment ="_AXL:ition>DCount(\"*\",\"FindBuyGetDupsQ\")&gt;0</Condition><Statements><Commen"
-        "t>[zReadPromo]+[zVendor]&gt;[zReadBuyGetQ]&gt;[FindBuyGetDupsPreQ]&gt;[FindBuyGe"
-        "tDupsQ] Email to ZEmlUpDt()</Comment><Action Name=\"EMailDatabaseObject\"><Argum"
-        "ent Name=\"ObjectTyp"
+    Comment ="_AXL:ndition>DCount(\"*\",\"FindBuyGetDupsQ\")&gt;0</Condition><Statements><Comm"
+        "ent>[zReadPromo]+[zVendor]&gt;[zReadBuyGetQ]&gt;[FindBuyGetDupsPreQ]&gt;[FindBuy"
+        "GetDupsQ] Email to ZEmlUpDt()</Comment><Action Name=\"EMailDatabaseObject\"><Arg"
+        "ument Name=\"ObjectT"
 End
 Begin
-    Comment ="_AXL:e\">Query</Argument><Argument Name=\"ObjectName\">FindBuyGetDupsQ</Argument"
-        "><Argument Name=\"OutputFormat\">MicrosoftExcelBiff8(*.xls)</Argument><Argument "
-        "Name=\"To\">=ZEmlUpDt()</Argument><Argument Name=\"Subject\">Promos: BuyGet Dups"
-        "</Argument><Argument N"
+    Comment ="_AXL:ype\">Query</Argument><Argument Name=\"ObjectName\">FindBuyGetDupsQ</Argume"
+        "nt><Argument Name=\"OutputFormat\">MicrosoftExcelBiff8(*.xls)</Argument><Argumen"
+        "t Name=\"To\">=ZEmlUpDt()</Argument><Argument Name=\"Subject\">Promos: BuyGet Du"
+        "ps</Argument><Argument"
 End
 Begin
-    Comment ="_AXL:ame=\"MessageText\">From Button #62 in the Data Check screen.</Argument><Ar"
-        "gument Name=\"EditMessage\">No</Argument></Action></Statements></If></Conditiona"
-        "lBlock><Comment>Subject: Promos: BuyGet Dups</Comment><Comment>Text: From Button"
-        " #62 in the Data "
+    Comment ="_AXL: Name=\"MessageText\">From Button #62 in the Data Check screen.</Argument><"
+        "Argument Name=\"EditMessage\">No</Argument></Action></Statements></If></Conditio"
+        "nalBlock><Comment>Subject: Promos: BuyGet Dups</Comment><Comment>Text: From Butt"
+        "on #62 in the Dat"
 End
 Begin
-    Comment ="_AXL:Check screen.</Comment><Comment>For Ron Kralik</Comment><ConditionalBlock><"
-        "If><Condition>DCount(\"*\",\"RKPkgQtyValuVsQtyQ\")&gt;0</Condition><Statements><"
-        "Comment>[zVendor]+[zReadPromo]+[zReadBuy]+[zReadItemSub]+[VipMasterItemFile]&gt;"
-        "[RKPkgQtyValuVsQt"
+    Comment ="_AXL:a Check screen.</Comment><Comment>For Ron Kralik</Comment><ConditionalBlock"
+        "><If><Condition>DCount(\"*\",\"RKPkgQtyValuVsQtyQ\")&gt;0</Condition><Statements"
+        "><Comment>[zVendor]+[zReadPromo]+[zReadBuy]+[zReadItemSub]+[VipMasterItemFile]&g"
+        "t;[RKPkgQtyValuVs"
 End
 Begin
-    Comment ="_AXL:yQ] Email to ZEmlTech()</Comment><Action Name=\"EMailDatabaseObject\"><Argu"
-        "ment Name=\"ObjectType\">Query</Argument><Argument Name=\"ObjectName\">RKPkgQtyV"
-        "aluVsQtyQ</Argument><Argument Name=\"OutputFormat\">MicrosoftExcelBiff8(*.xls)</"
-        "Argument><Argument Na"
+    Comment ="_AXL:QtyQ] Email to ZEmlTech()</Comment><Action Name=\"EMailDatabaseObject\"><Ar"
+        "gument Name=\"ObjectType\">Query</Argument><Argument Name=\"ObjectName\">RKPkgQt"
+        "yValuVsQtyQ</Argument><Argument Name=\"OutputFormat\">MicrosoftExcelBiff8(*.xls)"
+        "</Argument><Argument "
 End
 Begin
-    Comment ="_AXL:me=\"To\">=ZEmlTech()</Argument><Argument Name=\"Subject\">Promos: Missing "
-        "ItemCodes</Argument><Argument Name=\"MessageText\">From Button #62 in the Data C"
-        "heck screen.</Argument><Argument Name=\"EditMessage\">No</Argument></Action></St"
-        "atements></If></Condi"
+    Comment ="_AXL:Name=\"To\">=ZEmlTech()</Argument><Argument Name=\"Subject\">Promos: Missin"
+        "g ItemCodes</Argument><Argument Name=\"MessageText\">From Button #62 in the Data"
+        " Check screen.</Argument><Argument Name=\"EditMessage\">No</Argument></Action></"
+        "Statements></If></Con"
 End
 Begin
-    Comment ="_AXL:tionalBlock><Comment>Subject: Promos: Package Quantity Mismatch</Comment><C"
-        "omment>Text: From Button #3.A. in the Data Check screen.</Comment><ConditionalBl"
-        "ock><If><Condition>DCount(\"*\",\"RecByMfgCdItmCdsQ\")&gt;0</Condition><Statemen"
-        "ts><Comment>[RecD"
+    Comment ="_AXL:ditionalBlock><Comment>Subject: Promos: Package Quantity Mismatch</Comment>"
+        "<Comment>Text: From Button #3.A. in the Data Check screen.</Comment><Conditional"
+        "Block><If><Condition>DCount(\"*\",\"RecByMfgCdItmCdsQ\")&gt;0</Condition><Statem"
+        "ents><Comment>[Re"
 End
 Begin
-    Comment ="_AXL:ispMfgDups]+[zReadPromoDSLQ]+[zVendor]&gt;[zReadItemSub]&gt;[RecByMfgCdItmC"
-        "dsQ] Email to ZEmlTech()</Comment><Action Name=\"EMailDatabaseObject\"><Argument"
-        " Name=\"ObjectType\">Query</Argument><Argument Name=\"ObjectName\">RecByMfgCdItm"
-        "CdsQ</Argument><Arg"
+    Comment ="_AXL:cDispMfgDups]+[zReadPromoDSLQ]+[zVendor]&gt;[zReadItemSub]&gt;[RecByMfgCdIt"
+        "mCdsQ] Email to ZEmlTech()</Comment><Action Name=\"EMailDatabaseObject\"><Argume"
+        "nt Name=\"ObjectType\">Query</Argument><Argument Name=\"ObjectName\">RecByMfgCdI"
+        "tmCdsQ</Argument><A"
 End
 Begin
-    Comment ="_AXL:ument Name=\"OutputFormat\">MicrosoftExcelBiff8(*.xls)</Argument><Argument "
-        "Name=\"To\">=ZEmlTech()</Argument><Argument Name=\"Subject\">Promos: Brand Name "
-        "Pkg Exception ItemCodes</Argument><Argument Name=\"MessageText\">From Button #4."
-        "C. in the Data Check "
+    Comment ="_AXL:rgument Name=\"OutputFormat\">MicrosoftExcelBiff8(*.xls)</Argument><Argumen"
+        "t Name=\"To\">=ZEmlTech()</Argument><Argument Name=\"Subject\">Promos: Brand Nam"
+        "e Pkg Exception ItemCodes</Argument><Argument Name=\"MessageText\">From Button #"
+        "4.C. in the Data Chec"
 End
 Begin
-    Comment ="_AXL:screen.</Argument><Argument Name=\"EditMessage\">No</Argument></Action></St"
-        "atements></If></ConditionalBlock><Comment>[zReadItemSub]&gt;[RecByMfgCdPreQ]&gt;"
-        "[RecDispMfgDups]</Comment><Comment>[RecByMfgCdItmCdsQ]</Comment><Comment>[zReadP"
-        "romo]&gt;[zRead"
+    Comment ="_AXL:k screen.</Argument><Argument Name=\"EditMessage\">No</Argument></Action></"
+        "Statements></If></ConditionalBlock><Comment>[zReadItemSub]&gt;[RecByMfgCdPreQ]&g"
+        "t;[RecDispMfgDups]</Comment><Comment>[RecByMfgCdItmCdsQ]</Comment><Comment>[zRea"
+        "dPromo]&gt;[zRe"
 End
 Begin
-    Comment ="_AXL:PromoDSLQ]</Comment><Comment>Subject: Promos: Brand Name Pkg Exception Item"
-        "Codes</Comment><Comment>Text: From Button #4.C. in the Data Check screen.</Comme"
-        "nt></Statements></UserInterfaceMacro>"
+    Comment ="_AXL:adPromoDSLQ]</Comment><Comment>Subject: Promos: Brand Name Pkg Exception It"
+        "emCodes</Comment><Comment>Text: From Button #4.C. in the Data Check screen.</Com"
+        "ment></Statements></UserInterfaceMacro>"
 End
