@@ -68,6 +68,10 @@ Dim bDirFound As Boolean
 Dim sCrlf As String
 
 Sub OnClickSend()
+
+Debug.Print "OnClickSend_XXX"
+Debug.Assert False
+
     On Error GoTo SomeError
     
     Dim sTxt As String
@@ -113,6 +117,10 @@ SomeError:
 End Sub
 
 Sub CleanUpWorkFiles()
+
+Debug.Print "CleanUpWorkFiles_XXX"
+Debug.Assert False
+
     Close
     DeleteFile ("C:\temp\PRLINFG.tmp")
     DeleteFile ("C:\temp\PRLINFG.ftp")
@@ -122,6 +130,9 @@ Sub CleanUpWorkFiles()
 End Sub
 
 Function ValidateSpreadsheetData() As Boolean
+
+Debug.Print "ValidateSpreadsheetData"
+
 On Error GoTo SomeError:
 
     ValidateSpreadsheetData = True
@@ -175,18 +186,29 @@ SomeError:
 End Function
 
 Sub SetApplicationName()
+
+Debug.Print "SetApplicationName"
+
     Dim sRange As String
     sRange = APPLICATION_TITLE_CELL
     'Range(sRange).Select
     'ActiveCell.FormulaR1C1 = APPLICATION_TITLE
 End Sub
+
 Sub SetAdjustmentName()
+
+Debug.Print "SetAdjustmentName"
+
     Dim sRange As String
     sRange = ADJUSTMENT_CODE_CELL
     'Range(sRange).Select
     'ActiveCell.FormulaR1C1 = ADJUSTMENT_CODE
 End Sub
+
 Sub SetRevisionDate()
+
+Debug.Print "SetRevisionDate"
+
     Dim sRange As String
     sRange = REVISION_DATE_CELL
     'Range(sRange).Select
@@ -194,6 +216,9 @@ Sub SetRevisionDate()
 End Sub
 
 Function CheckForValidProductionTestFlag() As Boolean
+
+Debug.Print "CheckForValidProductionTestFlag_PASS"
+
     'Dim sRange As String
     'sRange = PRODUCTION_TEST_CELL
     'sProdTest = UCase(LeftJustify(sRange, 1))
@@ -215,6 +240,9 @@ Function CheckForValidProductionTestFlag() As Boolean
 End Function
 
 Function CheckForValidRunHoldJobFlag() As Boolean
+
+Debug.Print "CheckForValidRunHoldJobFlag"
+
     Dim sRange As String
     sRange = RUN_HOLD_JOB_CELL
     sRunHoldJob = UCase(LeftJustify(sRange, 1))
@@ -228,7 +256,11 @@ Function CheckForValidRunHoldJobFlag() As Boolean
     'End If
     CheckForValidRunHoldJobFlag = True
 End Function
+
 Function CheckForRefNo() As Boolean
+
+Debug.Print "CheckForRefNo"
+
     Dim sRange As String
     Dim sRefNo As String
     'sRange = "C3"
@@ -243,7 +275,11 @@ Function CheckForRefNo() As Boolean
     End If
     CheckForRefNo = True
 End Function
+
 Function CheckForAtLeastOneLine() As Boolean
+
+Debug.Print "CheckForAtLeastOneLine"
+
     Dim sRange As String
     Dim sItemPriceGroup As String
     'sRange = "A7"
@@ -276,6 +312,9 @@ End Function
     'CheckForAddExpire = True
 'End Function
 Function CheckForPromoCode() As Boolean
+
+Debug.Print "CheckForPromoCode"
+
     Dim sRange As String
     Dim sPromo As String
     sRange = "C5"
@@ -292,7 +331,11 @@ Function CheckForPromoCode() As Boolean
     End If
     CheckForPromoCode = True
 End Function
+
 Function CheckForAdjustment() As Boolean
+
+Debug.Print "CheckForAdjustment"
+
     Dim sRange As String
     Dim sAdjNo As String
     sRange = ADJUSTMENT_CODE_CELL
@@ -310,7 +353,11 @@ Function CheckForAdjustment() As Boolean
     End If
     CheckForAdjustment = True
 End Function
+
 Function CheckNonRequiredFields() As Boolean
+
+Debug.Print "CheckNonRequiredFields_PASS"
+
     Dim nRow As Integer
     
     CheckNonRequiredFields = True
@@ -322,6 +369,9 @@ Function CheckNonRequiredFields() As Boolean
 End Function
 
 Function CheckRequiredFields() As Boolean
+
+Debug.Print "CheckRequiredFields_PASS"
+
     Dim nRow As Integer
     
     CheckRequiredFields = True
@@ -382,6 +432,9 @@ Function CheckRequiredFields() As Boolean
 End Function
 
 Function CheckForNextRecord(nRow As Integer) As Boolean
+
+Debug.Print "CheckForNextRecord_PASS"
+
     Dim sValue As String
     Dim sRange As String
     CheckForNextRecord = False
@@ -439,6 +492,9 @@ Function CheckForNextRecord(nRow As Integer) As Boolean
 End Function
 
 Function CheckPriceGroup(nRow As Integer) As Boolean
+
+Debug.Print "CheckPriceGroup_PASS"
+
    ' If Not CheckCell("A", nRow, "Item") Then
    '     CheckPriceGroup = False
    '     Exit Function
@@ -446,6 +502,9 @@ Function CheckPriceGroup(nRow As Integer) As Boolean
    ' CheckPriceGroup = True
 End Function
 Function CheckPromoLimit(nRow As Integer) As Boolean
+
+Debug.Print "CheckPromoLimit"
+
     Dim sValue As String
     Dim sRange As String
     Dim sPromo As Integer
@@ -468,7 +527,11 @@ Function CheckPromoLimit(nRow As Integer) As Boolean
       
    CheckPromoLimit = True
 End Function
+
 Function CheckQuantity(nRow As Integer) As Boolean
+
+Debug.Print "CheckQuantity_PASS"
+
    ' Dim sValue As String
    ' Dim sRange As String
    ' sRange = "D" & nRow
@@ -481,14 +544,22 @@ Function CheckQuantity(nRow As Integer) As Boolean
       
    CheckQuantity = True
 End Function
+
 Function CheckFreeGoodItem(nRow As Integer) As Boolean
+
+Debug.Print "CheckFreeGoodItem_PASS"
+
    ' If Not CheckCell("G", nRow, "Free Good Item") Then
    '     CheckFreeGoodItem = False
    '     Exit Function
     'End If
     CheckFreeGoodItem = True
 End Function
+
 Function CheckFreeGoodQty(nRow As Integer) As Boolean
+
+Debug.Print "CheckFreeGoodQty_PASS"
+
   'Free Good Qty
   ' Dim sValue As String
   ' Dim sValue1 As String
@@ -503,7 +574,11 @@ Function CheckFreeGoodQty(nRow As Integer) As Boolean
   
    CheckFreeGoodQty = True
 End Function
+
 Function CheckCatalogPrice(nRow As Integer) As Boolean
+
+Debug.Print "CheckCatalogPrice_PASS"
+
   'Free Good Price
   ' Dim sValue As String
   ' Dim sValue1 As String
@@ -519,7 +594,11 @@ Function CheckCatalogPrice(nRow As Integer) As Boolean
   
    CheckCatalogPrice = True
 End Function
+ 
  Function CheckPriceEffectiveDate(nRow As Integer) As Boolean
+
+Debug.Print "CheckPriceEffectiveDate_PASS"
+
    ' Dim sValue As String
    ' Dim sRange As String
    ' sRange = "E" & nRow
@@ -527,7 +606,11 @@ End Function
                    
     CheckPriceEffectiveDate = True
 End Function
+
 Function CheckPriceExpiryDate(nRow As Integer) As Boolean
+
+Debug.Print "CheckPriceExpiryDate_PASS"
+
    ' Dim sValue As String
    ' Dim sRange As String
    ' sRange = "F" & nRow
@@ -535,7 +618,11 @@ Function CheckPriceExpiryDate(nRow As Integer) As Boolean
                    
     CheckPriceExpiryDate = True
 End Function
+
 Function CheckFSI(nRow As Integer) As Boolean
+
+Debug.Print "CheckFSI_PASS"
+
    ' Dim sValue As String
    ' Dim sRange As String
    ' sRange = "B" & nRow
@@ -550,7 +637,11 @@ Function CheckFSI(nRow As Integer) As Boolean
    ' End If
     CheckFSI = True
 End Function
+
 Function CheckCell(sCol As String, nRow As Integer, sFieldName As String)
+
+Debug.Print "CheckCell_PASS"
+
    ' Dim sValue As String
    ' Dim sRange As String
     
@@ -566,6 +657,9 @@ Function CheckCell(sCol As String, nRow As Integer, sFieldName As String)
 End Function
 
 Function CheckNumeric(sCol As String, nRow As Integer, sFieldName As String) As Boolean
+
+Debug.Print "CheckNumeric_PASS"
+
    ' Dim sValue As String
    ' Dim sRange As String
     
@@ -583,6 +677,9 @@ Function CheckNumeric(sCol As String, nRow As Integer, sFieldName As String) As 
 End Function
 
 Function MakeFileOfSpreadsheetData(sFileName As String) As Boolean
+
+Debug.Print "MakeFileOfSpreadsheetData_PASS"
+
    ' Dim sLine As String
    ' Dim sRange As String
    ' Dim nRow As Integer
@@ -635,6 +732,9 @@ SomeError:
 End Function
 
 Sub SetJobDescription()
+
+Debug.Print "SetJobDescription"
+
     If sProdTest = "P" Then
         sJobd = PRODUCTION_JOBD
         sJobdLib = PRODUCTION_JOBD_LIBRARY
@@ -652,36 +752,62 @@ Sub SetJobDescription()
 End Sub
 
 Sub PositionToHomeCell()
+
+Debug.Print "PositionToHomeCell_PASS"
+
     'Range(RECORD_START_CELL).Select
 End Sub
 
 Function GetItemPriceGroup(nRow As Integer)
+
+Debug.Print "GetItemPriceGroup_PASS"
+
     'Dim sRange As String
     'sRange = "A" & nRow
     'GetItemPriceGroup = UCase(LeftJustify(sRange, 25))
 End Function
 Function GetFreeItem(nRow As Integer)
+
+Debug.Print "GetFreeItem_PASS"
+
     'Dim sRange As String
     'sRange = "G" & nRow
     'GetFreeItem = UCase(LeftJustify(sRange, 15))
 End Function
 Function GetQuantity(nRow As Integer)
+
+Debug.Print "GetQuantity_PASS"
+
     'For Item Qty
     'GetQuantity = RightJustifyZeroFilled(nRow, "D", 10, 0)
 End Function
 Function GetFreeQuantity(nRow As Integer)
+
+Debug.Print "GetFreeQuantity_PASS"
+
     'Free Good Qty
     'GetFreeQuantity = RightJustifyZeroFilled(nRow, "I", 8, 0)
 End Function
+
 Function GetPromoLimit(nRow As Integer)
+
+Debug.Print "GetPromoLimit_PASS"
+
     '    GetPromoLimit = RightJustifyZeroFilled(nRow, "C", 8, 0)
 End Function
+
 Function GetCatalogPrice(nRow As Integer)
+
+Debug.Print "GetCatalogPrice_PASS"
+
 'Free item price
     'GetCatalogPrice = RightJustifyZeroFilled(nRow, "J", 15, 4)
 End Function
 
 Function GetPriceEffectiveDate(nRow As Integer)
+
+Debug.Print "GetPriceEffectiveDate_PASS"
+
     'Promo Start Date
     'Dim sRange As String
     'sRange = "D" & nRow
@@ -726,7 +852,11 @@ Function GetPriceEffectiveDate(nRow As Integer)
     '    GetPriceEffectiveDate = "          "
     ' End If
 End Function
+
 Function GetPriceExpiryDate(nRow As Integer)
+
+Debug.Print "GetPriceExpiryDate_PASS"
+
     'Promo End Date
     'Dim sRange As String
     'Dim sCol As String
@@ -767,22 +897,38 @@ Function GetPriceExpiryDate(nRow As Integer)
     '    GetPriceExpiryDate = "          "
     ' End If
 End Function
+
 Function GetFSI(nRow As Integer)
+
+Debug.Print "GetFSI_PASS"
+
     'Dim sRange As String
     'sRange = "B" & nRow
     'GetFSI = UCase(LeftJustify(sRange, 1))
 End Function
+
 Function GetAddExpire()
+
+Debug.Print "GetAddExpire_PASS"
+
     'Dim sRange As String
     'sRange = AddExpire_Cell
     'GetAddExpire = UCase(LeftJustify(sRange, 1))
 End Function
+
 Function GetReferenceNumber()
+
+Debug.Print "GetReferenceNumber_PASS"
+
     'Dim sRange As String
     'sRange = ReferenceNumber_Cell
     'GetReferenceNumber = UCase(LeftJustify(sRange, 15))
 End Function
+
 Function GetAdjustment(nRow As Integer)
+
+Debug.Print "GetAdjustment_PASS"
+
     'Dim sRange As String
         
     '    If GetFSI(nRow) = "I" Then
@@ -793,27 +939,47 @@ Function GetAdjustment(nRow As Integer)
     'End If
       
 End Function
+
 Function GetUserID()
+
+Debug.Print "GetUserID_PASS"
+
     'Dim sRange As String
     'sRange = USER_ID_CELL
     'GetUserID = UCase(LeftJustify(sRange, 10))
 End Function
+
 Function GetPromoCode()
+
+Debug.Print "GetPromoCode_PASS"
+
     'Dim sRange As String
     'sRange = PromoCode_Cell
     'GetPromoCode = UCase(LeftJustify(sRange, 3))
 End Function
+
 Function GetCustCode()
+
+Debug.Print "GetCustCode_PASS"
+
     'Dim sRange As String
     'sRange = Cust_Cell
     'GetCustCode = UCase(LeftJustify(sRange, 8))
 End Function
+
 Function GetContractNo()
+
+Debug.Print "GetContractNo_PASS"
+
     'Dim sRange As String
     'sRange = Contract_Cell
     'GetContractNo = UCase(LeftJustify(sRange, 15))
 End Function
+
 Function SendFileToServer(sFileName As String) As Boolean
+
+Debug.Print "SendFileToServer"
+
     Dim bGetFile As Boolean
     
     SendFileToServer = True
@@ -838,6 +1004,9 @@ SomeError:
 End Function
 
 Sub SubmitJobOnServer()
+
+Debug.Print "SubmitJobOnServer"
+
     Dim sTxt As String
     Dim sRange As String
     Dim sValue As String
@@ -865,6 +1034,9 @@ Sub SubmitJobOnServer()
 End Sub
 
 Sub PutFileOnServer(sFileName As String)
+
+Debug.Print "PutFileOnServer"
+
     Dim sTxt As String
     ClearLogFile
     CreateTempFileForDelayingApplication
@@ -883,6 +1055,9 @@ Sub PutFileOnServer(sFileName As String)
 End Sub
 
 Function GetServerAddress()
+
+Debug.Print "GetServerAddress"
+
     If sProdTest = "P" Then
         GetServerAddress = PRODUCTION_SERVER_ADDRESS
         sSUBMIT_USERID = PRODUCTION_USERID
@@ -895,6 +1070,9 @@ Function GetServerAddress()
 End Function
 
 Function GetServerFileLibrary()
+
+Debug.Print "GetServerFileLibrary"
+
     If sProdTest = "P" Then
         GetServerFileLibrary = PRODUCTION_SERVER_FILE_LIBRARY
     Else
@@ -903,18 +1081,27 @@ Function GetServerFileLibrary()
 End Function
 
 Sub CreateTempFileForDelayingApplication()
+
+Debug.Print "CreateTempFileForDelayingApplication"
+
     Open "C:\temp\PRLINFG.tmp" For Output As #1
     Print #1, "Temp File for Delaying Application"
     Close #1
 End Sub
 
 Sub ClearLogFile()
+
+Debug.Print "ClearLogFile"
+
     Open "C:\temp\PRLINFG.log" For Output As #1
     Print #1, ""
     Close #1
 End Sub
 
 Sub CreatePutFTPFile(sFileName As String)
+
+Debug.Print "CreatePutFTPFile"
+
     Open "C:\temp\PRLINFG.ftp" For Output As #1
     Print #1, "open " & GetServerAddress()
     Print #1, "user " & sSUBMIT_USERID
@@ -926,6 +1113,10 @@ Sub CreatePutFTPFile(sFileName As String)
 End Sub
 
 Sub CreateSubmitFTPFile()
+
+Debug.Print "CreateSubmitFTPFile_XXX"
+Debug.Assert False
+
     Dim sRange As String
     Dim sParam1 As String
     Dim sParam2 As String
@@ -949,6 +1140,10 @@ Sub CreateSubmitFTPFile()
 End Sub
 
 Sub CreateFTPBatchFile()
+
+Debug.Print "CreateFTPBatchFile_XXX"
+Debug.Assert False
+
     Open "C:\temp\PRLINFG.BAT" For Output As #1
     Print #1, "@echo off"
     Print #1, "ftp -n -s:C:\temp\PRLINFG.ftp  >>C:\temp\PRLINFG.log"
@@ -957,6 +1152,10 @@ Sub CreateFTPBatchFile()
 End Sub
 
 Sub RunFTPBatchFile()
+
+Debug.Print "RunFTPBatchFile_XXX"
+Debug.Assert False
+
 On Error GoTo ShellError:
   
     Dim iNum As Integer
@@ -981,12 +1180,18 @@ ShellError:
 End Sub
 
 Function LeftJustify(sRange As String, nLen As Integer) As String
+
+Debug.Print "LeftJustify_XXX"
+
    ' Dim sCell As String
    ' sCell = Trim(Range(sRange).Value) & String(nLen, " ")
    ' LeftJustify = Left(sCell, nLen)
 End Function
 
 Function RightJustify(nRow As Integer, sCol As String, nLen As Integer) As String
+
+Debug.Print "RightJustify_XXX"
+
    ' Dim sCell As String
    ' Dim sRange As String
    ' sRange = sCol & nRow
@@ -995,6 +1200,9 @@ Function RightJustify(nRow As Integer, sCol As String, nLen As Integer) As Strin
 End Function
 
 Function RightJustifyZeroFilled(nRow As Integer, sCol As String, nLen As Integer, nDecimal As Integer) As String
+
+Debug.Print "RightJustifyZeroFilled_PASS"
+
    ' Dim sCell As String
    ' Dim sRange As String
    ' Dim sFormat As String
@@ -1022,6 +1230,10 @@ Function RightJustifyZeroFilled(nRow As Integer, sCol As String, nLen As Integer
 End Function
 
 Sub CheckFTPResults()
+
+Debug.Print "CheckFTPResults_XXX"
+Debug.Assert False
+
     Dim bGoodFTP As Boolean
     Dim sTxt$
     Dim return_count%
@@ -1124,6 +1336,9 @@ nxtrcd:
 End Sub
 
 Sub DeleteFile(sFile$)
+
+Debug.Print "DeleteFile"
+
     On Error Resume Next
     
     If CheckIfFileExists(sFile) Then
@@ -1132,6 +1347,9 @@ Sub DeleteFile(sFile$)
 End Sub
 
 Function CheckIfFileExists(sFile$) As Boolean
+
+Debug.Print "CheckIfFileExists"
+
     CheckIfFileExists = True
     Dim nResult As Integer
     On Error GoTo FileError
@@ -1142,6 +1360,9 @@ FileError:
 End Function
 
 Function GenerateReferenceNumber() As String
+
+Debug.Print "GenerateReferenceNumber"
+
     Dim sName As String
     Dim sDay As String
     Dim sHours As String

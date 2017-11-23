@@ -31,6 +31,10 @@ Begin Form
     Caption ="zVendor"
     OnOpen ="[Event Procedure]"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     FilterOnLoad =0
     AllowLayoutView =0
     PictureSizeMode =1
@@ -262,7 +266,7 @@ Begin Form
                         0xffffffff52006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff020000000a00030000000000c0000000 ,
-                        0x00000046000000000000000000000000505db7e62279d00103000000800c0000 ,
+                        0x0000004600000000000000000000000000edfc07d063d30103000000800c0000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -989,10 +993,14 @@ Option Compare Database
 Option Explicit
 
 Private Sub Form_Open(Cancel As Integer)
+Debug.Print "Form_Open"
+
    'Forms![zVendorSelRecF]![Company].SetFocus
    
 End Sub
+
 Private Sub Close_Click()
+Debug.Print "Close_Click"
 On Error GoTo Err_Close_Click
 
 
@@ -1008,6 +1016,7 @@ Err_Close_Click:
 End Sub
 
 Private Sub GoRecID_Click()
+Debug.Print "GoRecID_Click"
 On Error GoTo Err_GoRecID_Click
 
     Dim rst As Recordset, intRec As Integer, intID As Integer, strCriteria As String
@@ -1042,6 +1051,7 @@ Err_GoRecID_Click:
 End Sub
 
 Private Sub SelGoVndr_AfterUpdate()
+Debug.Print "SelGoVndr_AfterUpdate"
    Dim rst As Recordset, strCriteria As String
     'strCriteria = "[ContactName] Like '*" & InputBox("Enter the " _
     '    & "first few letters of the name to find") & "*'"

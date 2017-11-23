@@ -25,6 +25,10 @@ Begin Form
     End
     RecordSource ="Done"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     FilterOnLoad =0
     DatasheetGridlinesColor12 =12632256
     Begin
@@ -334,6 +338,8 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Close_Click()
+Debug.Print "Close_Click"
+
 On Error GoTo Err_Close_Click
 
     DoCmd.Close
@@ -346,7 +352,9 @@ Err_Close_Click:
     Resume Exit_Close_Click
     
 End Sub
+
 Private Sub Step1_Click()
+Debug.Print "Step1_Click"
 On Error GoTo Err_Step1_Click
 
     Dim stDocName As String
@@ -370,7 +378,9 @@ Err_Step1_Click:
     Resume Exit_Step1_Click
     
 End Sub
+
 Private Sub Step2_Click()
+Debug.Print "Step2_Click"
 On Error GoTo Err_Step2_Click
 
     Dim stDocName As String
@@ -402,7 +412,11 @@ Err_Step2_Click:
     Resume Exit_Step2_Click
     
 End Sub
+
 Private Sub Step3_Click()
+Debug.Print "Step3_Click_XXX"
+Debug.Assert False
+
 On Error GoTo Err_Step3_Click
 
     Dim stDocName As String
@@ -437,7 +451,9 @@ Err_Step3_Click:
     Resume Exit_Step3_Click
     
 End Sub
+
 Private Sub ManSet_Click()
+Debug.Print "ManSet_Click"
 On Error GoTo Err_ManSet_Click
 
     Z_MktID = Me![SetID]

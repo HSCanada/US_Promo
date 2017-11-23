@@ -20,6 +20,10 @@ Begin Form
     End
     RecordSource ="SWOInpt"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     OnLoad ="[Event Procedure]"
     FilterOnLoad =0
     DatasheetGridlinesColor12 =12632256
@@ -674,7 +678,7 @@ Begin Form
                     TabIndex =1
                     BoundColumn =1
                     BackColor =13434828
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
                     Name ="Vendor Name"
                     ControlSource ="Vendor Name"
                     RowSourceType ="Table/Query"
@@ -1085,6 +1089,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub BuyNo_AfterUpdate()
+Debug.Print "BuyNo_AfterUpdate"
 On Error GoTo Err_BuyNo_AfterUpdate
 
 Dim DblBuy As Double
@@ -1125,6 +1130,7 @@ Err_BuyNo_AfterUpdate:
 End Sub
 
 Private Sub Form_Load()
+Debug.Print "Form_Load"
 On Error GoTo Err_Form_Load
 
     'S_WOEff = DLookup("[SWOEff]", "DefQtr")
@@ -1142,6 +1148,7 @@ Err_Form_Load:
 End Sub
 
 Private Sub GetNo_AfterUpdate()
+Debug.Print "GetNo_AfterUpdate"
 On Error GoTo Err_GetNo_AfterUpdate
 
 Dim DblBuy As Double
@@ -1181,6 +1188,7 @@ Err_GetNo_AfterUpdate:
 End Sub
 
 Private Sub Vendor_Name_AfterUpdate()
+Debug.Print "Vendor_Name_AfterUpdate"
 On Error GoTo Err_Vendor_Name_AfterUpdate
 
     Dim intVID As Integer
@@ -1253,6 +1261,7 @@ Err_Vendor_Name_AfterUpdate:
 End Sub
 
 Private Sub VID_AfterUpdate()
+Debug.Print "VID_AfterUpdate"
 'On Error GoTo Err_VID_AfterUpdate
 
 '    Dim intVID As Integer
@@ -1293,7 +1302,9 @@ Private Sub VID_AfterUpdate()
 '    MsgBox Err.Description
 '    Resume Exit_VID_AfterUpdate
 End Sub
+
 Private Sub CloseIt_Click()
+Debug.Print "CloseIt_Click"
 On Error GoTo Err_CloseIt_Click
 
 
@@ -1307,7 +1318,11 @@ Err_CloseIt_Click:
     Resume Exit_CloseIt_Click
     
 End Sub
+
 Private Sub SaveExpClear_Click()
+Debug.Print "SaveExpClear_Click_XXX"
+Debug.Assert False
+
 On Error GoTo Err_SaveExpClear_Click
 
     Dim intNull As Integer
@@ -1386,7 +1401,9 @@ Err_SaveExpClear_Click:
     Resume Exit_SaveExpClear_Click
     
 End Sub
+
 Private Sub Purge_Click()
+Debug.Print "Purge_Click"
 On Error GoTo Err_Purge_Click
 
 DeleteIt.Visible = True
@@ -1400,7 +1417,9 @@ Err_Purge_Click:
     Resume Exit_Purge_Click
     
 End Sub
+
 Private Sub GloVarTest_Click()
+Debug.Print "GloVarTest_Click"
 On Error GoTo Err_GloVarTest_Click
 
 Dim dtEff As Date
@@ -1431,7 +1450,9 @@ Err_GloVarTest_Click:
     Resume Exit_GloVarTest_Click
     
 End Sub
+
 Private Sub ViewDet_Click()
+Debug.Print "ViewDet_Click"
 On Error GoTo Err_ViewDet_Click
 
     'DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -1458,7 +1479,9 @@ Err_ViewDet_Click:
     Resume Exit_ViewDet_Click
     
 End Sub
+
 Private Sub DeleteIt_Click()
+Debug.Print "DeleteIt_Click"
 On Error GoTo Err_DeleteIt_Click
 
     Dim stDocName As String
@@ -1475,7 +1498,9 @@ Err_DeleteIt_Click:
     Resume Exit_DeleteIt_Click
     
 End Sub
+
 Private Sub CancelIt_Click()
+Debug.Print "CancelIt_Click"
 On Error GoTo Err_CancelIt_Click
 
 DeleteIt.Visible = False
@@ -1488,7 +1513,9 @@ Err_CancelIt_Click:
     Resume Exit_CancelIt_Click
     
 End Sub
+
 Private Sub BuyNoGetNo_Click()
+Debug.Print "BuyNoGetNo_Click"
 On Error GoTo Err_BuyNoGetNo_Click
 
 Dim DblBuy As Double
@@ -1515,7 +1542,9 @@ Err_BuyNoGetNo_Click:
     Resume Exit_BuyNoGetNo_Click
     
 End Sub
+
 Private Sub TxtTestMod_Click()
+Debug.Print "TxtTestMod_Click"
 On Error GoTo Err_TxtTestMod_Click
 
 Dim DblBuyPos As Double

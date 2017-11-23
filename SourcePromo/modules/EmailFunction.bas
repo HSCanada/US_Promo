@@ -2,6 +2,9 @@ Option Compare Database
 Option Explicit
 
 Public Function AttachMyFile()
+Debug.Print "AttachMyFile_XXX"
+Debug.Assert False
+
 'On Error GoTo AttachMyFile_Err
 
     'Reference created to: Microsoft Outlook 9.0 Object Library
@@ -72,7 +75,10 @@ Public Function AttachMyFile()
     rs.Close
     db.Close
 End Function
+
 Sub Send_Via_Outlook(sTo$, sSubject$, sMessage$, bAttach_Batch_File As Boolean, Optional File_PathAndName$)
+Debug.Print "Send_Via_Outlook"
+
 Dim objOutlook As Outlook.Application, sCurrentMessage As MailItem
 Set objOutlook = CreateObject("Outlook.application")
 Set sCurrentMessage = objOutlook.CreateItem(olMailItem)

@@ -25,6 +25,10 @@ Begin Form
     End
     OnOpen ="[Event Procedure]"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     FilterOnLoad =0
     DatasheetGridlinesColor12 =12632256
     Begin
@@ -487,6 +491,8 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Close_Click()
+Debug.Print "Close_Click"
+
 On Error GoTo Err_Close_Click
 
 
@@ -502,6 +508,8 @@ Err_Close_Click:
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
+Debug.Print "Form_Open_XXX"
+Debug.Assert False
 
 Dim strConnectString As String
 Dim strFilePath As String
@@ -532,6 +540,10 @@ Dim td As DAO.TableDef
 End Sub
 
 Private Sub PrintMacroTxt_Click()
+Debug.Print "PrintMacroTxt_Click_XXX"
+Debug.Assert False
+
+
 'Option Compare Database
 
 'Option Explicit
@@ -565,6 +577,9 @@ Private Sub PrintMacroTxt_Click()
 End Sub
 
 Private Sub ProdVsQA_Click()
+Debug.Print "ProdVsQA_Click_XXX"
+Debug.Assert False
+
 On Error GoTo Err_ProdVsQA_Click
 
 Dim stMyDir As String
@@ -595,7 +610,9 @@ Err_ProdVsQA_Click:
     Resume Exit_ProdVsQA_Click
     
 End Sub
+
 Private Sub BuyXcptions_Click()
+Debug.Print "BuyXcptions_Click"
 On Error GoTo Err_BuyXcptions_Click
 
     Dim stDocName As String
@@ -611,7 +628,9 @@ Err_BuyXcptions_Click:
     Resume Exit_BuyXcptions_Click
     
 End Sub
+
 Private Sub E3SzLftDgtsQ_Click()
+Debug.Print "E3SzLftDgtsQ_Click"
 On Error GoTo Err_E3SzLftDgtsQ_Click
 
     Dim stDocName As String
@@ -627,7 +646,9 @@ Err_E3SzLftDgtsQ_Click:
     Resume Exit_E3SzLftDgtsQ_Click
     
 End Sub
+
 Private Sub E3NmSizeAvlVndLDigitsQ_Click()
+Debug.Print "E3NmSizeAvlVndLDigitsQ_Click"
 On Error GoTo Err_E3NmSizeAvlVndLDigitsQ_Click
 
     Dim stDocName As String
@@ -645,6 +666,7 @@ Err_E3NmSizeAvlVndLDigitsQ_Click:
 End Sub
 
 Private Sub PreVuBuys_Click()
+Debug.Print "PreVuBuys_Click"
 On Error GoTo Err_PreVuBuys_Click
 
     Dim stDocName As String
@@ -662,6 +684,7 @@ Err_PreVuBuys_Click:
 End Sub
 
 Private Sub SelBuysDts_Click()
+Debug.Print "SelBuysDts_Click"
 On Error GoTo Err_SelBuysDts_Click
 
     Dim stDocName As String

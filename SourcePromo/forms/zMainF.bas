@@ -13,10 +13,10 @@ Begin Form
     Width =17775
     DatasheetFontHeight =10
     ItemSuffix =283
-    Left =1065
-    Top =960
-    Right =16830
-    Bottom =14610
+    Left =165
+    Top =240
+    Right =7485
+    Bottom =11865
     TimerInterval =60000
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
@@ -242,7 +242,7 @@ Begin Form
                     FontSize =7
                     TabIndex =3
                     BoundColumn =1
-                    ColumnInfo ="\"Company Name\";\"\";\"\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SelID"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCTROW zVendor.Company, zVendor.ID FROM zVendor ORDER BY zVendor.Com"
@@ -373,7 +373,7 @@ Begin Form
                         0x8000000052006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff02000000e33ffe89f69f1b10b6780402 ,
-                        0x1c007002000000000000000000000000c0ca85144e62d3010300000000010000 ,
+                        0x1c007002000000000000000000000000d0981cd2f762d3010300000000010000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -3203,7 +3203,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =22
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SelVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCT zVendor.ID, zVendor.Company FROM zVendor INNER JOIN zPromo ON zV"
@@ -3280,7 +3280,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =23
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SFselVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCTROW zVendor.ID, zVendor.Company FROM zVendor ORDER BY zVendor.Com"
@@ -4402,7 +4402,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =47
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="Combo119"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCTROW zVendor.ID, zVendor.Company FROM zVendor ORDER BY zVendor.Com"
@@ -4482,7 +4482,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =49
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SelMnByVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCT zVendor.ID, zVendor.Company FROM zVendor INNER JOIN zPromo ON zV"
@@ -10461,7 +10461,7 @@ End Sub
 
 Private Sub Form_Open(Cancel As Integer)
 Debug.Print "Form_Open-XXX"
-Debug.Assert True
+' Debug.Assert False
 
 Dim strConnectString As String
 Dim strFilePath As String
@@ -10520,7 +10520,7 @@ End Sub
 
 Private Sub Import_Click()
 Debug.Print "Import_Click-XXX"
-Debug.Assert True
+Debug.Assert False
 
 On Error GoTo Err_Import_Click
 
@@ -10821,7 +10821,7 @@ End Sub
 
 Private Sub SetImp_Click()
 Debug.Print "SetImp_Click-XXX"
-Debug.Assert True
+Debug.Assert False
 
 On Error GoTo Err_SetImp_Click
 
@@ -11240,7 +11240,7 @@ End Sub
 
 Private Sub EUpDt_Click()
 Debug.Print "EUpDt_Click-XXX"
-Debug.Assert True
+Debug.Assert False
 
 On Error GoTo Err_EUpDt_Click
 

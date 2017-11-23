@@ -9,6 +9,10 @@ Declare PtrSafe Sub sapiSleep Lib "kernel32" _
         (ByVal dwMilliseconds As Long)
 
 Sub CopyFile(SourceFile As String, DestFile As String)
+
+Debug.Print "CopyFile"
+
+
 '---------------------------------------------------------------
 ' PURPOSE: Copy a file on disk from one location to another.
 ' ACCEPTS: The name of the source file and destination file.
@@ -22,7 +26,11 @@ Sub CopyFile(SourceFile As String, DestFile As String)
       Result = apiCopyFile(SourceFile, DestFile, False)
    End If
 End Sub
+
 Public Function IsTable(tblName As String)
+
+Debug.Print "IsTable"
+
  'Dim MyDB As DAO.Database
  Dim MyDB As Database
  Set MyDB = CurrentDb
@@ -38,7 +46,11 @@ Public Function IsTable(tblName As String)
  
 'We could also pass a reference to MyDB into the function.
 End Function
+
 Public Function LogFunc(FuncText As String)
+
+Debug.Print "LogFunc"
+
     Z_Log = FuncText
 End Function
 'Sub CopyFile(SourceFile As String, DestFile As String)
@@ -62,6 +74,9 @@ End Function
 'End Sub
 
 Public Function fCountFiles(sPattern As String)
+
+Debug.Print "fCountFiles"
+
 Dim strFileName As String, n As Integer
    strFileName = Dir(sPattern)
    On Error Resume Next
@@ -71,7 +86,11 @@ Dim strFileName As String, n As Integer
    Loop
    fCountFiles = n
 End Function
+
 Public Function CheckCommandLine() As Boolean
+
+Debug.Print "CheckCommandLine"
+
   CheckCommandLine = True
   If Len(Trim(Command)) = 0 Then Exit Function ' this is a regular open
   Dim iPos As Integer
@@ -91,7 +110,11 @@ Public Function CheckCommandLine() As Boolean
       'DoCmd.OpenForm "Employee_Form"
   End Select
 End Function
+
 Function FileExists(ByVal strFile As String, Optional bFindFolders As Boolean) As Boolean
+
+Debug.Print "FileExists"
+
     'Purpose:   Return True if the file exists, even if it is hidden.
     'Arguments: strFile: File name to look for. Current directory searched if no path included.
     '           bFindFolders. If strFile is a folder, FileExists() returns False unless this argument is True.
@@ -132,11 +155,17 @@ Function FileExists(ByVal strFile As String, Optional bFindFolders As Boolean) A
 End Function
 
 Function FolderExists(strPath As String) As Boolean
+
+Debug.Print "FolderExists"
+
     On Error Resume Next
     FolderExists = ((GetAttr(strPath) And vbDirectory) = vbDirectory)
 End Function
 
 Function TrailingSlash(varIn As Variant) As String
+
+Debug.Print "TrailingSlash"
+
     If Len(varIn) > 0 Then
         If Right(varIn, 1) = "\" Then
             TrailingSlash = varIn
@@ -145,16 +174,27 @@ Function TrailingSlash(varIn As Variant) As String
         End If
     End If
 End Function
+
 Function Wait15sec()
+
+Debug.Print "Wait15sec"
+
     sSleep 15000
 End Function
 
 Sub sSleep(lngMilliSec As Long)
+
+Debug.Print "sSleep"
+
     If lngMilliSec > 0 Then
         Call sapiSleep(lngMilliSec)
     End If
 End Sub
+
 Public Function GetUserName() As String
+
+Debug.Print "GetUserName"
+
     ' GetUserName = Environ("USERNAME")
     ' Better method, see comment by HansUp
     GetUserName = CreateObject("WScript.Network").UserName

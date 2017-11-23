@@ -2,6 +2,8 @@ Option Compare Database
 Option Explicit
 
 Sub SendMessageToDbAdmin(sMessageHdr As String, sMessage As String, Optional bSilent As Boolean = False)
+Debug.Print "SendMessageToDbAdmin"
+
     Dim objOutlook As Outlook.Application
     Dim objOutlookMsg As Outlook.MailItem
     Dim objOutlookRecip As Outlook.Recipient
@@ -48,6 +50,8 @@ End Sub
 'and here's how to send an attachment
 
 Function SendDataToNY(sZipFile As String) As Boolean
+Debug.Print "SendDataToNY"
+
 ' Send the file who's full path is in sZipFile as an attachment via email
 '
     Dim objOutlook As Outlook.Application
@@ -84,6 +88,8 @@ Function SendDataToNY(sZipFile As String) As Boolean
 End Function
 
 Function SendEmailMessage(objOutlookMsg As Outlook.MailItem) As Boolean
+Debug.Print "SendEmailMessage"
+
 'Return True on success, else False
 Dim objOutlookRecip As Outlook.Recipient
     For Each objOutlookRecip In objOutlookMsg.Recipients

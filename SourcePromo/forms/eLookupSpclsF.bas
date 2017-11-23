@@ -600,6 +600,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Command22_Click()
+Debug.Print "Command22_Click"
 On Error GoTo Err_Command22_Click
 
 
@@ -613,7 +614,9 @@ Err_Command22_Click:
     Resume Exit_Command22_Click
     
 End Sub
+
 Private Sub GoToPromo_Click()
+Debug.Print "GoToPromo_Click"
 On Error GoTo Err_GoToPromo_Click
 
     Dim stDocName As String
@@ -632,7 +635,9 @@ Err_GoToPromo_Click:
     Resume Exit_GoToPromo_Click
     
 End Sub
+
 Private Sub GoTozPromo_Click()
+Debug.Print "GoTozPromo_Click"
 On Error GoTo Err_GoTozPromo_Click
 
     Dim stDocName As String

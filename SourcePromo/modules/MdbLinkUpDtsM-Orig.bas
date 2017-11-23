@@ -5,6 +5,10 @@ Global rs As Recordset
 
 Sub CreateTableLinks()
 
+Debug.Print "CreateTableLinks_XXX"
+Debug.Assert False
+
+
 'Dim db As Database
 'Dim rs As Recordset
 Dim qd As QueryDef
@@ -118,9 +122,12 @@ Dim intTableExists As Integer
     Set db = Nothing
     
  End Sub
+ 
 Function ConnectOutputTEMP(dbsTemp As Database, _
    strTable As String, strConnect As String, _
    strSourceTable As String) As Integer
+
+Debug.Print "ConnectOutputTEMP"
 
 Dim tdfLinked As TableDef
 Dim rstLinked As Recordset
@@ -155,9 +162,12 @@ errChk:
     ConnectOutputTEMP = Err.Number
     
 End Function
+
 Sub ConnectOutput(dbsTemp As Database, _
    strTable As String, strConnect As String, _
    strSourceTable As String)
+
+Debug.Print "ConnectOutput"
 
    Dim tdfLinked As TableDef
    Dim rstLinked As Recordset
@@ -175,9 +185,12 @@ Sub ConnectOutput(dbsTemp As Database, _
    'Table is now linked by server instead of Drive letter
 
 End Sub
+
 Function DoesExist(dbIn As Database, strTable As String) As Boolean
+Debug.Print "DoesExist"
 'Tests if table exists, returns True if it does & False if it doesn't
 Dim td As TableDef
+
 
 On Error GoTo ErrOut
 

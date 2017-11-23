@@ -14,14 +14,18 @@ Begin Form
     ItemSuffix =176
     Left =600
     Top =4545
-    Right =28470
-    Bottom =13755
+    Right =4080
+    Bottom =12330
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
         0xfa12174d8c18e240
     End
     RecordSource ="DefQtr"
     DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     OnGotFocus ="[Event Procedure]"
     FilterOnLoad =0
     AllowLayoutView =0
@@ -1499,12 +1503,12 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = True
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-
-
 Option Compare Database
 Option Explicit
 
 Private Sub Command1_Click()
+Debug.Print "Command1_Click"
+
 On Error GoTo Err_Command1_Click
 
 
@@ -1520,6 +1524,7 @@ Err_Command1_Click:
 End Sub
 
 Private Sub YrsBuyGetDups_Click()
+Debug.Print "YrsBuyGetDups_Click"
 On Error GoTo Err_YrsBuyGetDups_Click
 
     Dim stDocName As String
@@ -1536,6 +1541,7 @@ Err_YrsBuyGetDups_Click:
 End Sub
 
 Private Sub FSCRptByTyp_Click()
+Debug.Print "FSCRptByTyp_Click"
 On Error GoTo Err_FSCRptByTyp_Click
 
     Dim stDocName As String
@@ -1553,6 +1559,7 @@ Err_FSCRptByTyp_Click:
 End Sub
 
 Private Sub CurrVsPriorNoSWOorDft_Click()
+Debug.Print "CurrVsPriorNoSWOorDft_Click"
 On Error GoTo Err_CurrVsPriorNoSWOorDft
 
     Dim stDocName As String
@@ -1569,10 +1576,12 @@ Err_CurrVsPriorNoSWOorDft:
 End Sub
 
 Private Sub Form_GotFocus()
+Debug.Print "Form_GotFocus"
    Me.Refresh
 End Sub
 
 Private Sub ISubsICsWoBParts_Click()
+Debug.Print "ISubsICsWoBParts_Click"
 On Error GoTo Err_ISubsICsWoBParts_Click
 
     Dim stDocName As String
@@ -1590,6 +1599,7 @@ Err_ISubsICsWoBParts_Click:
 End Sub
 
 Private Sub ISubsWICs_Click()
+Debug.Print "ISubsWICs_Click"
 On Error GoTo Err_ISubsWICs_Click
 
     Dim stDocName As String
@@ -1607,6 +1617,7 @@ Err_ISubsWICs_Click:
 End Sub
 
 Private Sub MultiOrderPromos_Click()
+Debug.Print "MultiOrderPromos_Click"
 On Error GoTo Err_MultiOrderPromos_Click
 
     Dim stDocName As String
@@ -1624,6 +1635,7 @@ Err_MultiOrderPromos_Click:
 End Sub
 
 Private Sub NullBuyOrItem_Click()
+Debug.Print "NullBuyOrItem_Click"
 On Error GoTo Err_NullBuyOrItem_Click
 
     Dim stDocName As String
@@ -1641,6 +1653,8 @@ Err_NullBuyOrItem_Click:
 End Sub
 
 Private Sub RevuSame_Click()
+Debug.Print "RevuSame_Click"
+
 On Error GoTo Err_RevuSame_Click
 
     Dim stDocName As String
@@ -1658,6 +1672,7 @@ Err_RevuSame_Click:
 End Sub
 
 Private Sub VndrListQ_Click()
+Debug.Print "VndrListQ_Click"
 On Error GoTo Err_VndrListQ_Click
 
     Dim stDocName As String
@@ -1673,7 +1688,9 @@ Err_VndrListQ_Click:
     Resume Exit_VndrListQ_Click
     
 End Sub
+
 Private Sub VndWOpromo_Click()
+Debug.Print "VndWOpromo_Click"
 On Error GoTo Err_VndWOpromo_Click
 
     Dim stDocName As String
@@ -1689,7 +1706,9 @@ Err_VndWOpromo_Click:
     Resume Exit_VndWOpromo_Click
     
 End Sub
+
 Private Sub CurrYrPromo_Click()
+Debug.Print "CurrYrPromo_Click"
 On Error GoTo Err_CurrYrPromo_Click
 
     Dim stDocName As String
@@ -1705,7 +1724,9 @@ Err_CurrYrPromo_Click:
     Resume Exit_CurrYrPromo_Click
     
 End Sub
+
 Private Sub CurrVsPrior_Click()
+Debug.Print "CurrVsPrior_Click"
 On Error GoTo Err_CurrVsPrior_Click
 
     Dim stDocName As String
@@ -1724,6 +1745,7 @@ End Sub
 
 
 Private Sub LongRedeemVu_Click()
+Debug.Print "LongRedeemVu_Click"
 On Error GoTo Err_LongRedeemVu_Click
 
     Dim stDocName As String
@@ -1739,7 +1761,9 @@ Err_LongRedeemVu_Click:
     Resume Exit_LongRedeemVu_Click
     
 End Sub
+
 Private Sub RdmTextLenXceptns_Click()
+Debug.Print "RdmTextLenXceptns_Click"
 On Error GoTo Err_RdmTextLenXceptns_Click
 
     Dim stDocName As String
@@ -1759,6 +1783,7 @@ End Sub
 
 
 Private Sub InvalidRdm_Click()
+Debug.Print "InvalidRdm_Click"
 On Error GoTo Err_InvalidRdm_Click
 
     Dim stDocName As String
@@ -1774,7 +1799,9 @@ Err_InvalidRdm_Click:
     Resume Exit_InvalidRdm_Click
     
 End Sub
+
 Private Sub MissingICs_Click()
+Debug.Print "MissingICs_Click"
 On Error GoTo Err_MissingICs_Click
 
     Dim stDocName As String
@@ -1790,7 +1817,9 @@ Err_MissingICs_Click:
     Resume Exit_MissingICs_Click
     
 End Sub
+
 Private Sub DispVariants_Click()
+Debug.Print "DispVariants_Click"
 On Error GoTo Err_DispVariants_Click
 
     Dim stDocName As String
@@ -1806,7 +1835,9 @@ Err_DispVariants_Click:
     Resume Exit_DispVariants_Click
     
 End Sub
+
 Private Sub InvalidGet_Click()
+Debug.Print "InvalidGet_Click"
 On Error GoTo Err_InvalidGet_Click
 
     Dim stDocName As String
@@ -1822,7 +1853,9 @@ Err_InvalidGet_Click:
     Resume Exit_InvalidGet_Click
     
 End Sub
+
 Private Sub HiGetValu_Click()
+Debug.Print "HiGetValu_Click"
 On Error GoTo Err_HiGetValu_Click
 
     Dim stDocName As String
@@ -1838,7 +1871,9 @@ Err_HiGetValu_Click:
     Resume Exit_HiGetValu_Click
     
 End Sub
+
 Private Sub PkgQtys_Click()
+Debug.Print "PkgQtys_Click"
 On Error GoTo Err_PkgQtys_Click
 
     Dim stDocName As String
@@ -1854,7 +1889,9 @@ Err_PkgQtys_Click:
     Resume Exit_PkgQtys_Click
     
 End Sub
+
 Private Sub BuyPartErrs_Click()
+Debug.Print "BuyPartErrs_Click"
 On Error GoTo Err_BuyPartErrs_Click
 
     Dim stDocName As String
@@ -1870,7 +1907,9 @@ Err_BuyPartErrs_Click:
     Resume Exit_BuyPartErrs_Click
     
 End Sub
+
 Private Sub BuyNICsNullR_Click()
+Debug.Print "BuyNICsNullR_Click"
 On Error GoTo Err_BuyNICsNullR_Click
 
     Dim stDocName As String
@@ -1886,7 +1925,9 @@ Err_BuyNICsNullR_Click:
     Resume Exit_BuyNICsNullR_Click
     
 End Sub
+
 Private Sub FixItmQty_Click()
+Debug.Print "FixItmQty_Click"
 On Error GoTo Err_FixItmQty_Click
 
     Dim stDocName As String
@@ -1908,7 +1949,9 @@ Err_FixItmQty_Click:
     Resume Exit_FixItmQty_Click
     
 End Sub
+
 Private Sub VuBuyPartDups_Click()
+Debug.Print "VuBuyPartDups_Click"
 On Error GoTo Err_VuBuyPartDups_Click
 
     Dim stDocName As String
@@ -1926,7 +1969,9 @@ Err_VuBuyPartDups_Click:
     Resume Exit_VuBuyPartDups_Click
     
 End Sub
+
 Private Sub DelzBuyDups_Click()
+Debug.Print "DelzBuyDups_Click"
 On Error GoTo Err_DelzBuyDups_Click
 
     Dim stMTQ As String
@@ -1949,7 +1994,9 @@ Err_DelzBuyDups_Click:
     Resume Exit_DelzBuyDups_Click
     
 End Sub
+
 Private Sub BRndNmPkgItmCds_Click()
+Debug.Print "BRndNmPkgItmCds_Click"
 On Error GoTo Err_BRndNmPkgItmCds_Click
 
     Dim stDocName As String
@@ -1965,7 +2012,9 @@ Err_BRndNmPkgItmCds_Click:
     Resume Exit_BRndNmPkgItmCds_Click
     
 End Sub
+
 Private Sub BrndNmRecCnt_Click()
+Debug.Print "BrndNmRecCnt_Click"
 On Error GoTo Err_BrndNmRecCnt_Click
 
     Dim stDocName As String
@@ -1981,7 +2030,9 @@ Err_BrndNmRecCnt_Click:
     Resume Exit_BrndNmRecCnt_Click
     
 End Sub
+
 Private Sub DispNmXcptns_Click()
+Debug.Print "DispNmXcptns_Click"
 On Error GoTo Err_DispNmXcptns_Click
 
     Dim stDocName As String
@@ -1997,7 +2048,9 @@ Err_DispNmXcptns_Click:
     Resume Exit_DispNmXcptns_Click
     
 End Sub
+
 Private Sub MainMissingItems_Click()
+Debug.Print "MainMissingItems_Click"
 On Error GoTo Err_MainMissingItems_Click
 
     Dim stDocName As String
@@ -2013,7 +2066,9 @@ Err_MainMissingItems_Click:
     Resume Exit_MainMissingItems_Click
     
 End Sub
+
 Private Sub LostBuyPart1_Click()
+Debug.Print "LostBuyPart1_Click"
 On Error GoTo Err_LostBuyPart1_Click
 
     Dim stDocName As String
@@ -2029,7 +2084,9 @@ Err_LostBuyPart1_Click:
     Resume Exit_LostBuyPart1_Click
     
 End Sub
+
 Private Sub PromosWOitemCodes_Click()
+Debug.Print "PromosWOitemCodes_Click"
 On Error GoTo Err_PromosWOitemCodes_Click
 
     Dim stDocName As String
@@ -2045,7 +2102,9 @@ Err_PromosWOitemCodes_Click:
     Resume Exit_PromosWOitemCodes_Click
     
 End Sub
+
 Private Sub ICDups_Click()
+Debug.Print "ICDups_Click"
 On Error GoTo Err_ICDups_Click
 
     Dim stDocName As String
@@ -2061,7 +2120,9 @@ Err_ICDups_Click:
     Resume Exit_ICDups_Click
     
 End Sub
+
 Private Sub ICDelDups_Click()
+Debug.Print "ICDelDups_Click"
 On Error GoTo Err_ICDelDups_Click
 
     Dim stMTQ As String
@@ -2081,7 +2142,9 @@ Err_ICDelDups_Click:
     Resume Exit_ICDelDups_Click
     
 End Sub
+
 Private Sub zBsItmQtyChk_Click()
+Debug.Print "zBsItmQtyChk_Click"
 On Error GoTo Err_zBsItmQtyChk_Click
 
     Dim stDocName As String
@@ -2097,7 +2160,9 @@ Err_zBsItmQtyChk_Click:
     Resume Exit_zBsItmQtyChk_Click
     
 End Sub
+
 Private Sub ItmQtyChk_Click()
+Debug.Print "ItmQtyChk_Click"
 On Error GoTo Err_ItmQtyChk_Click
 
     Dim stDocName As String
@@ -2113,7 +2178,9 @@ Err_ItmQtyChk_Click:
     Resume Exit_ItmQtyChk_Click
     
 End Sub
+
 Private Sub QtyMisMatch_Click()
+Debug.Print "QtyMisMatch_Click"
 On Error GoTo Err_QtyMisMatch_Click
 
    DoCmd.DeleteObject acTable, "QtyMisMatch"
@@ -2131,7 +2198,9 @@ Err_QtyMisMatch_Click:
     Resume Exit_QtyMisMatch_Click
     
 End Sub
+
 Private Sub BuyGetDups_Click()
+Debug.Print "BuyGetDups_Click"
 On Error GoTo Err_BuyGetDups_Click
 
     Dim stDocName As String
@@ -2147,7 +2216,9 @@ Err_BuyGetDups_Click:
     Resume Exit_BuyGetDups_Click
     
 End Sub
+
 Private Sub fixPkgQty_Click()
+Debug.Print "fixPkgQty_Click"
 On Error GoTo Err_fixPkgQty_Click
 
     Dim stDocName As String
@@ -2169,7 +2240,9 @@ Err_fixPkgQty_Click:
     Resume Exit_fixPkgQty_Click
     
 End Sub
+
 Private Sub FindNmBuyGetNDtsDups_Click()
+Debug.Print "FindNmBuyGetNDtsDups_Click"
 On Error GoTo Err_FindNmBuyGetNDtsDups_Click
 
     Dim stDocName As String

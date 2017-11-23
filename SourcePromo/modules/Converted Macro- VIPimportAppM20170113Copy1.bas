@@ -5,6 +5,9 @@ Option Compare Database
 '
 '------------------------------------------------------------
 Function VIPimportAppM20170113Copy1()
+Debug.Print "VIPimportAppM20170113Copy1_XXX"
+Debug.Assert False
+
 On Error GoTo VIPimportAppM20170113Copy1_Err
 
     ' Promo Import New VIP Supplier Promotions and Append them to [A3Promos*.mdb]   Wayne's Drop-Offs are our Imports

@@ -262,7 +262,7 @@ Begin Form
                         0xffffffff52006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff020000000a00030000000000c0000000 ,
-                        0x00000046000000000000000000000000f0484d2d3d79d00103000000800c0000 ,
+                        0x0000004600000000000000000000000070883dd0cf63d30103000000800c0000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -790,7 +790,7 @@ Begin Form
                     Width =1860
                     ColumnOrder =10
                     TabIndex =13
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"Company Name\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SelGoVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCT zVendor.Company, zVendor.VendorCode, zVendor.CityStZip, ActiveQY"
@@ -988,9 +988,14 @@ Option Compare Database
 Option Explicit
 
 Private Sub Form_Open(Cancel As Integer)
+Debug.Print "Form_Open"
+
    'Forms![zVendorSelRecF]![Company].SetFocus
 End Sub
+
 Private Sub Close_Click()
+Debug.Print "Close_Click"
+
 On Error GoTo Err_Close_Click
 
     DoCmd.Close
@@ -1007,6 +1012,8 @@ End Sub
 
 
 Private Sub SelGoVndr_AfterUpdate()
+Debug.Print "SelGoVndr_AfterUpdate"
+
     ' Find the record that matches the control.
     'Dim rs As Object
 
@@ -1032,7 +1039,9 @@ Private Sub SelGoVndr_AfterUpdate()
 
    
 End Sub
+
 Private Sub GoRecID_Click()
+Debug.Print "GoRecID_Click"
 On Error GoTo Err_GoRecID_Click
 
     Dim rst As Recordset, intRec As Integer, intID As Integer, strCriteria As String

@@ -2723,6 +2723,8 @@ Option Compare Database
 Option Explicit
 
 Private Sub BadTextS_Click()
+Debug.Print "BadTextS_Click"
+
 On Error GoTo Err_BadTextS_Click
 
     Dim stDocName As String
@@ -2755,6 +2757,8 @@ Err_BadTextS_Click:
 End Sub
 
 Private Sub Command1_Click()
+Debug.Print "Command1_Click"
+
 On Error GoTo Err_Command1_Click
 
 
@@ -2772,6 +2776,8 @@ End Sub
 
 
 Private Sub xFSCRptByTyp_Click()
+Debug.Print "xFSCRptByTyp_Click"
+
 'On Error GoTo Err_FSCRptByTyp_Click
     
     'V_Typ1 = Me![Type1]
@@ -2795,10 +2801,12 @@ Private Sub xFSCRptByTyp_Click()
 End Sub
 
 Private Sub Command151_Click()
+Debug.Print "Command151_Click"
 
 End Sub
 
 Private Sub CurrVsPriorNoSWOorDft_Click()
+Debug.Print "CurrVsPriorNoSWOorDft_Click"
 On Error GoTo Err_CurrVsPriorNoSWOorDft
 
     Dim stDocName As String
@@ -2815,21 +2823,25 @@ Err_CurrVsPriorNoSWOorDft:
 End Sub
 
 Private Sub EffMn_AfterUpdate()
+Debug.Print "EffMn_AfterUpdate"
   Z_EffMn = Me![EffMn]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub EffQtr_AfterUpdate()
+Debug.Print "EffQtr_AfterUpdate"
   Z_EffQtr = Me![EffQtr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub EffYr_AfterUpdate()
+Debug.Print "EffYr_AfterUpdate"
   Z_EffYr = Me![EffYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Form_Current()
+Debug.Print "Form_Current"
 On Error GoTo Err_Form_Current
 
 Me![TestEffDt] = Format(Now(), "mm/dd/yyyy")
@@ -2844,12 +2856,14 @@ Err_Form_Current:
 End Sub
 
 Private Sub Form_GotFocus()
+Debug.Print "Form_GotFocus"
    Me.Refresh
 End Sub
 
 
 
 Private Sub LabWcodes_Click()
+Debug.Print "LabWcodes_Click"
 On Error GoTo Err_LabWcodes_Click
 
     Dim stDocName As String
@@ -2866,6 +2880,7 @@ Err_LabWcodes_Click:
 End Sub
 
 Private Sub MnNo_AfterUpdate()
+Debug.Print "MnNo_AfterUpdate"
    Z_Var2 = Me![MnNo]
    'MsgBox ZVar2()
    Me.Refresh
@@ -2873,6 +2888,8 @@ Private Sub MnNo_AfterUpdate()
 End Sub
 
 Private Sub OnLineDtls_Click()
+Debug.Print "OnLineDtls_Click"
+
 On Error GoTo Err_OnLineDtls_Click
 
 
@@ -2891,6 +2908,7 @@ Err_OnLineDtls_Click:
 End Sub
 
 Private Sub ProCode_AfterUpdate()
+Debug.Print "ProCode_AfterUpdate"
 On Error GoTo Err_ProCode_AfterUpdate
 
     S_PrCd = Me![ProCode]
@@ -2905,6 +2923,7 @@ Err_ProCode_AfterUpdate:
 End Sub
 
 Private Sub ProCode_KeyPress(KeyAscii As Integer)
+Debug.Print "ProCode_KeyPress"
 '   Dim strCharacter As String
     
     ' Convert ANSI value to character string.
@@ -2914,6 +2933,7 @@ Private Sub ProCode_KeyPress(KeyAscii As Integer)
 End Sub
 
 Private Sub PromobyQw_oICsActive_Click()
+Debug.Print "PromobyQw_oICsActive_Click"
 On Error GoTo Err_PromobyQw_oICsActive_Click
 
     Dim stDocName As String
@@ -2930,6 +2950,7 @@ Err_PromobyQw_oICsActive_Click:
 End Sub
 
 Private Sub SSDPromo_Click()
+Debug.Print "SSDPromo_Click"
 On Error GoTo Err_SSDPromo_Click
 
     Dim stDocName As String
@@ -2947,6 +2968,7 @@ Err_SSDPromo_Click:
 End Sub
 
 Private Sub TestEffDt_AfterUpdate()
+Debug.Print "TestEffDt_AfterUpdate"
 
     If IsNull(Me![TestEffDt]) Then
        Me![TestEffDt] = Format(Now(), "mm/dd/yyyy")
@@ -2963,6 +2985,7 @@ Private Sub TestEffDt_AfterUpdate()
 End Sub
 
 Private Sub TestEffDtS_AfterUpdate()
+Debug.Print "TestEffDtS_AfterUpdate"
 
     If IsNull(Me![TestEffDtS]) Then
        Me![TestEffDtS] = Format(Now(), "mm/dd/yyyy")
@@ -2979,16 +3002,19 @@ Private Sub TestEffDtS_AfterUpdate()
 End Sub
 
 Private Sub Text46_AfterUpdate()
+Debug.Print "Text46_AfterUpdate"
   Z_EffQtr = Me![EffQtr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Text48_AfterUpdate()
+Debug.Print "Text48_AfterUpdate"
   Z_EffYr = Me![EffYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub w_ICs_Click()
+Debug.Print "w_ICs_Click"
 On Error GoTo Err_w_ICs_Click
 
     Dim stDocName As String
@@ -3004,7 +3030,9 @@ Err_w_ICs_Click:
     Resume Exit_w_ICs_Click
     
 End Sub
+
 Private Sub PromoCmpICs_Click()
+Debug.Print "PromoCmpICs_Click"
 On Error GoTo Err_PromoCmpICs_Click
 
 Dim stDocName As String
@@ -3138,6 +3166,7 @@ Err_PromoCmpICs_Click:
 End Sub
 
 Private Sub ProWcodes_Click()
+Debug.Print "ProWcodes_Click"
 On Error GoTo Err_ProWcodes_Click
 
     Dim stDocName As String
@@ -3153,7 +3182,9 @@ Err_ProWcodes_Click:
     Resume Exit_ProWcodes_Click
     
 End Sub
+
 Private Sub PromobyQw_oICs_Click()
+Debug.Print "PromobyQw_oICs_Click"
 On Error GoTo Err_PromobyQw_oICs_Click
 
     Dim stDocName As String
@@ -3169,7 +3200,9 @@ Err_PromobyQw_oICs_Click:
     Resume Exit_PromobyQw_oICs_Click
     
 End Sub
+
 Private Sub ProDetails_Click()
+Debug.Print "ProDetails_Click"
 On Error GoTo Err_ProDetails_Click
 
     Dim stDocName As String
@@ -3185,7 +3218,9 @@ Err_ProDetails_Click:
     Resume Exit_ProDetails_Click
     
 End Sub
+
 Private Sub OpenProW_ICs_Click()
+Debug.Print "OpenProW_ICs_Click"
 On Error GoTo Err_OpenProW_ICs_Click
 
     Cancel.Visible = True
@@ -3209,6 +3244,7 @@ Err_OpenProW_ICs_Click:
 End Sub
 
 Private Sub Cancel_Click()
+Debug.Print "Cancel_Click"
 On Error GoTo Err_Cancel_Click
 
     ProWcodes.Visible = False
@@ -3227,7 +3263,9 @@ Err_Cancel_Click:
     Resume Exit_Cancel_Click
     
 End Sub
+
 Private Sub ApprvDisplayNm_Click()
+Debug.Print "ApprvDisplayNm_Click"
 On Error GoTo Err_ApprvDisplayNm_Click
 
     Dim stDocName As String
@@ -3243,7 +3281,9 @@ Err_ApprvDisplayNm_Click:
     Resume Exit_ApprvDisplayNm_Click
     
 End Sub
+
 Private Sub NoDisplayNms_Click()
+Debug.Print "NoDisplayNms_Click"
 On Error GoTo Err_NoDisplayNms_Click
 
     Dim stDocName As String
@@ -3259,7 +3299,9 @@ Err_NoDisplayNms_Click:
     Resume Exit_NoDisplayNms_Click
     
 End Sub
+
 Private Sub MnSWO_Click()
+Debug.Print "MnSWO_Click"
 On Error GoTo Err_MnSWO_Click
 
     Dim stDocName As String
@@ -3286,7 +3328,9 @@ Err_MnSWO_Click:
     Resume Exit_MnSWO_Click
     
 End Sub
+
 Private Sub DftPromo_Click()
+Debug.Print "DftPromo_Click"
 On Error GoTo Err_DftPromo_Click
 
     Dim stDocName As String
@@ -3306,7 +3350,9 @@ Err_DftPromo_Click:
     Resume Exit_DftPromo_Click
     
 End Sub
+
 Private Sub Test_Click()
+Debug.Print "Test_Click"
 On Error GoTo Err_Test_Click
 
     Dim intISCode As String 'Integer '[CodeID] from [zItemSub] As [ISCode]
@@ -3340,6 +3386,7 @@ Err_Test_Click:
 End Sub
 
 Private Sub ZDftPromo_Click()
+Debug.Print "ZDftPromo_Click"
 On Error GoTo Err_ZDftPromo_Click
 
     Dim stDocName As String
@@ -3360,22 +3407,26 @@ Err_ZDftPromo_Click:
 End Sub
 
 Private Sub ZEffMn_AfterUpdate()
+Debug.Print "ZEffMn_AfterUpdate"
   Z_EffMn = Me![ZEffMn]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub ZNowGV_AfterUpdate()
+Debug.Print "ZNowGV_AfterUpdate"
   Z_EffDate = Me![ZNowGV]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub ZEffYr_AfterUpdate()
+Debug.Print "ZEffYr_AfterUpdate"
   Z_EffYr = Me![ZEffYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 
 Private Sub ZMnSWO_Click()
+Debug.Print "ZMnSWO_Click"
 On Error GoTo Err_ZMnSWO_Click
 
     Dim stDocName As String
@@ -3394,7 +3445,9 @@ Err_ZMnSWO_Click:
     MsgBox Err.Description
     Resume Exit_ZMnSWO_Click
 End Sub
+
 Private Sub DenCnvSpcR_Click()
+Debug.Print "DenCnvSpcR_Click"
 On Error GoTo Err_DenCnvSpcR_Click
 
     Dim stDocName As String
@@ -3410,7 +3463,9 @@ Err_DenCnvSpcR_Click:
     Resume Exit_DenCnvSpcR_Click
     
 End Sub
+
 Private Sub VndrListQ_Click()
+Debug.Print "VndrListQ_Click"
 On Error GoTo Err_VndrListQ_Click
 
     Dim stDocName As String
@@ -3426,7 +3481,9 @@ Err_VndrListQ_Click:
     Resume Exit_VndrListQ_Click
     
 End Sub
+
 Private Sub VndWOpromo_Click()
+Debug.Print "VndWOpromo_Click"
 On Error GoTo Err_VndWOpromo_Click
 
     Dim stDocName As String
@@ -3442,7 +3499,9 @@ Err_VndWOpromo_Click:
     Resume Exit_VndWOpromo_Click
     
 End Sub
+
 Private Sub CurrYrPromo_Click()
+Debug.Print "CurrYrPromo_Click"
 On Error GoTo Err_CurrYrPromo_Click
 
     Dim stDocName As String
@@ -3458,7 +3517,9 @@ Err_CurrYrPromo_Click:
     Resume Exit_CurrYrPromo_Click
     
 End Sub
+
 Private Sub CurrVsPrior_Click()
+Debug.Print "CurrVsPrior_Click"
 On Error GoTo Err_CurrVsPrior_Click
 
     Dim stDocName As String
@@ -3474,7 +3535,9 @@ Err_CurrVsPrior_Click:
     Resume Exit_CurrVsPrior_Click
     
 End Sub
+
 Private Sub ZhnAllDet_Click()
+Debug.Print "ZhnAllDet_Click"
 On Error GoTo Err_ZhnAllDet_Click
 
     Dim stDocName As String
@@ -3490,7 +3553,9 @@ Err_ZhnAllDet_Click:
     Resume Exit_ZhnAllDet_Click
     
 End Sub
+
 Private Sub ZahnNoICs_Click()
+Debug.Print "ZahnNoICs_Click"
 On Error GoTo Err_ZahnNoICs_Click
 
     Dim stDocName As String
@@ -3506,7 +3571,9 @@ Err_ZahnNoICs_Click:
     Resume Exit_ZahnNoICs_Click
     
 End Sub
+
 Private Sub LongRedeemVu_Click()
+Debug.Print "LongRedeemVu_Click"
 On Error GoTo Err_LongRedeemVu_Click
 
     Dim stDocName As String
@@ -3522,7 +3589,9 @@ Err_LongRedeemVu_Click:
     Resume Exit_LongRedeemVu_Click
     
 End Sub
+
 Private Sub RdmTextLenXceptns_Click()
+Debug.Print "RdmTextLenXceptns_Click"
 On Error GoTo Err_RdmTextLenXceptns_Click
 
     Dim stDocName As String
@@ -3538,7 +3607,9 @@ Err_RdmTextLenXceptns_Click:
     Resume Exit_RdmTextLenXceptns_Click
     
 End Sub
+
 Private Sub FSCRptNoRedeemOrICs_Click()
+Debug.Print "FSCRptNoRedeemOrICs_Click"
 On Error GoTo Err_FSCRptNoRedeemOrICs_Click
 
     Dim stDocName As String
@@ -3554,7 +3625,9 @@ Err_FSCRptNoRedeemOrICs_Click:
     Resume Exit_FSCRptNoRedeemOrICs_Click
     
 End Sub
+
 Private Sub ProdNmNDescUQ_Click()
+Debug.Print "ProdNmNDescUQ_Click"
 On Error GoTo Err_ProdNmNDescUQ_Click
 
     Dim stDocName As String
@@ -3570,7 +3643,9 @@ Err_ProdNmNDescUQ_Click:
     Resume Exit_ProdNmNDescUQ_Click
     
 End Sub
+
 Private Sub TabStop0_Click()
+Debug.Print "TabStop0_Click"
 On Error GoTo Err_TabStop0_Click
 
 
@@ -3584,7 +3659,9 @@ Err_TabStop0_Click:
     Resume Exit_TabStop0_Click
     
 End Sub
+
 Private Sub InvalidRdm_Click()
+Debug.Print "InvalidRdm_Click"
 On Error GoTo Err_InvalidRdm_Click
 
     Dim stDocName As String
@@ -3600,7 +3677,10 @@ Err_InvalidRdm_Click:
     Resume Exit_InvalidRdm_Click
     
 End Sub
+
 Private Sub MissingICs_Click()
+Debug.Print "MissingICs_Click"
+
 On Error GoTo Err_MissingICs_Click
 
     Dim stDocName As String
@@ -3616,7 +3696,9 @@ Err_MissingICs_Click:
     Resume Exit_MissingICs_Click
     
 End Sub
+
 Private Sub DispVariants_Click()
+Debug.Print "DispVariants_Click"
 On Error GoTo Err_DispVariants_Click
 
     Dim stDocName As String
@@ -3632,7 +3714,9 @@ Err_DispVariants_Click:
     Resume Exit_DispVariants_Click
     
 End Sub
+
 Private Sub InvalidGet_Click()
+Debug.Print "x"
 On Error GoTo Err_InvalidGet_Click
 
     Dim stDocName As String
@@ -3648,7 +3732,9 @@ Err_InvalidGet_Click:
     Resume Exit_InvalidGet_Click
     
 End Sub
+
 Private Sub PromoByTypSel_Click()
+Debug.Print "PromoByTypSel_Click"
 On Error GoTo Err_PromoByTypSel_Click
 
     Dim stDocName As String
@@ -3669,7 +3755,9 @@ Err_PromoByTypSel_Click:
     Resume Exit_PromoByTypSel_Click
     
 End Sub
+
 Private Sub HiGetValu_Click()
+Debug.Print "HiGetValu_Click"
 On Error GoTo Err_HiGetValu_Click
 
     Dim stDocName As String
@@ -3685,7 +3773,9 @@ Err_HiGetValu_Click:
     Resume Exit_HiGetValu_Click
     
 End Sub
+
 Private Sub VndrParticByMn_Click()
+Debug.Print "VndrParticByMn_Click"
 On Error GoTo Err_VndrParticByMn_Click
 
     Dim stDocName As String
@@ -3701,7 +3791,9 @@ Err_VndrParticByMn_Click:
     Resume Exit_VndrParticByMn_Click
     
 End Sub
+
 Private Sub VnAdsByMnDesc_Click()
+Debug.Print "VnAdsByMnDesc_Click"
 On Error GoTo Err_VnAdsByMnDesc_Click
 
     Dim stDocName As String
@@ -3717,7 +3809,11 @@ Err_VnAdsByMnDesc_Click:
     Resume Exit_VnAdsByMnDesc_Click
     
 End Sub
+
 Private Sub Default_Promo_Price_Cntrl_Rpt_Click()
+Debug.Print "Default_Promo_Price_Cntrl_Rpt_Click_XXX"
+Debug.Assert False
+
 On Error GoTo Err_Default_Promo_Price_Cntrl_Rpt_Click
 
     Dim stDocName As String
@@ -3746,7 +3842,10 @@ Err_Default_Promo_Price_Cntrl_Rpt_Click:
     Resume Exit_Default_Promo_Price_Cntrl_Rpt_Click
     
 End Sub
+
 Private Sub MnQYr_Click()
+Debug.Print "MnQYr_Click"
+
 On Error GoTo Err_MnQYr_Click
 
 
@@ -3760,7 +3859,11 @@ Err_MnQYr_Click:
     Resume Exit_MnQYr_Click
     
 End Sub
+
 Private Sub VuDftArchFldr_Click()
+Debug.Print "VuDftArchFldr_Click_XXX"
+Debug.Assert False
+
 On Error GoTo Err_VuDftArchFldr_Click
 
     Dim stShell As String
@@ -3785,7 +3888,9 @@ Err_VuDftArchFldr_Click:
     Resume Exit_VuDftArchFldr_Click
     
 End Sub
+
 Private Sub TurboTues_Click()
+Debug.Print "TurboTues_Click"
 On Error GoTo Err_TurboTues_Click
 
     Dim stDocName As String
@@ -3804,7 +3909,9 @@ Err_TurboTues_Click:
     Resume Exit_TurboTues_Click
     
 End Sub
+
 Private Sub BadText_Click()
+Debug.Print "BadText_Click"
 On Error GoTo Err_BadText_Click
 
     Dim stDocName As String
@@ -3858,7 +3965,12 @@ Err_BadText_Click:
     Resume Exit_BadText_Click
     
 End Sub
+
 Private Sub VuDivPrcR_Click()
+Debug.Print "VuDivPrcR_Click_XXX"
+Debug.Assert False
+
+Debug.Assert False
 On Error GoTo Err_VuDivPrcR_Click
 
     Dim stDocName As String

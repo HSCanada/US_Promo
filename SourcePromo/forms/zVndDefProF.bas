@@ -4,8 +4,6 @@ Begin Form
     RecordSelectors = NotDefault
     AutoCenter = NotDefault
     DividingLines = NotDefault
-    FilterOn = NotDefault
-    OrderByOn = NotDefault
     DefaultView =0
     ScrollBars =0
     PictureAlignment =5
@@ -274,7 +272,7 @@ Begin Form
                         0xffffffff52006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff020000000a00030000000000c0000000 ,
-                        0x0000004600000000000000000000000080bb9a77e907d30103000000800c0000 ,
+                        0x00000046000000000000000000000000b0e7c544d963d30103000000800c0000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -811,7 +809,7 @@ Begin Form
                     ColumnOrder =10
                     TabIndex =13
                     BackColor =13434828
-                    ColumnInfo ="\"Company Name\";\"\";\"\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SelGoVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCT zVendor.Company, IIf(IsNull([CSubVCs]),\"Must Assign Sub Vendor "
@@ -1019,9 +1017,13 @@ Option Compare Database
 Option Explicit
 
 Private Sub Form_Open(Cancel As Integer)
+Debug.Print "Form_Open"
+
    'Forms![zVendorSelRecF]![Company].SetFocus
 End Sub
+
 Private Sub Close_Click()
+Debug.Print "Close_Click"
 On Error GoTo Err_Close_Click
 
     DoCmd.Close
@@ -1036,6 +1038,7 @@ Err_Close_Click:
 End Sub
 
 Private Sub ID_Change()
+Debug.Print "ID_Change"
 On Error GoTo Err_ID_Change
 
     Z_ID = Me!ID
@@ -1049,6 +1052,7 @@ Err_ID_Change:
 End Sub
 
 Private Sub SelGoVndr_AfterUpdate()
+Debug.Print "SelGoVndr_AfterUpdate"
     ' Find the record that matches the control.
     'Dim rs As Object
 
@@ -1075,7 +1079,9 @@ Private Sub SelGoVndr_AfterUpdate()
     Z_ID = Me!ID ' Get the Marketing ID
    
 End Sub
+
 Private Sub GoRecID_Click()
+Debug.Print "GoRecID_Click"
 On Error GoTo Err_GoRecID_Click
 
     Dim rst As Recordset, intRec As Integer, intID As Integer, strCriteria As String
@@ -1111,6 +1117,7 @@ Err_GoRecID_Click:
 End Sub
 
 Private Sub zVndDefProSF_Enter()
+Debug.Print "zVndDefProSF_Enter"
 On Error GoTo Err_zVndDefProSF_Enter
 
 'Forms("Order Entry").Controls("OK").OnEnter = "Enter_Macro"

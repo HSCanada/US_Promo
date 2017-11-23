@@ -1,9 +1,11 @@
 Option Compare Database
-
-        
+      
 
 
 Sub DSNCreate()
+
+Debug.Print "DSNCreate"
+
 Dim db As DAO.Database
 Dim rs As DAO.Recordset
     
@@ -40,6 +42,8 @@ End Sub
 '//     stUsername: Name of the SQL Server user who can connect to SQL Server, leave blank to use a Trusted Connection
 '//     stPassword: SQL Server user password
 Function AttachDSNLessTable(stLocalTableName As String, stRemoteTableName As String, stServer As String, stDatabase As String, Optional stUsername As String, Optional stPassword As String)
+Debug.Print "AttachDSNLessTable"
+
     On Error GoTo AttachDSNLessTable_Err
     Dim td As TableDef
     Dim stConnect As String

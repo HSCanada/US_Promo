@@ -3,6 +3,9 @@ Option Compare Database
 Public Const CONNSTR = "ODBC;DSN=eZ;UID=REPORTS;PWD=delphi;DB="
 
 Function CheckDSN()
+Debug.Print "CheckDSN_XXX"
+Debug.Assert False
+
    Dim dsndrv As String
    Dim dbpath As String
    Dim newDBPath As String
@@ -44,6 +47,9 @@ Function CheckDSN()
 End Function
        
 Sub CreateDSN()
+
+Debug.Print "CreateDSN_XXX"
+Debug.Assert False
 
    Dim DataSourceName As String
    Dim DatabaseName As String
@@ -98,6 +104,7 @@ End Sub
 
 
 Function PreConnect(strConnect) As Boolean
+Debug.Print "PreConnect"
    Dim wrkRemote As Workspace, dbsRemote As Database
    On Error GoTo preconnect_err
    
