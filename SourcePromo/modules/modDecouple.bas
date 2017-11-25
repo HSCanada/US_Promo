@@ -1,8 +1,11 @@
 Option Compare Database
 Option Explicit
 
-'
-'
+' function decouple tag map:
+'   1. debug.print "*.XXX"      = hard-coded info
+'   2. debug.print "function"   = OK, Core
+'   3. debug.print "x"          = OK,non-core
+'   4. debug.print "*.PASS"     = function does nothing
 '
 
 Private cConfig As Collection
