@@ -2,7 +2,6 @@
 *.accdb
 *.laccdb
 *.mdb
-*.xlsx
 *.csv
 *.zip
 *.xls
