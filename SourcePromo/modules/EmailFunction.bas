@@ -48,7 +48,7 @@ Debug.Assert False
 
             ' Add attachments to the message. Drive:\Folder\FileName needs
             'to be the full path to the file such as "C:\MY Documents\My File.XLS".
-            Set objOutlookAttach = .Attachments.Add("M:\Dental\dentmkt\Promo\ProExp\Promo.xls")
+            Set objOutlookAttach = .Attachments.Add(config("PATH_MAIN_PROD") & "Promo.xls")
 
             ' Resolve each Recipient's name.
             For Each objOutlookRecip In .Recipients

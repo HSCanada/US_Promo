@@ -1,9 +1,18 @@
 ﻿Version =196611
 ColumnsShown =0
 Begin
-    Action ="SetWarnings"
+    Action ="MsgBox"
     Comment ="[zTSIC] is linked from M:\\Dental\\dentmkt\\Tbls\\Tbls.mdb but Z-Base.mdb is the"
         " update source"
+    Argument ="Not yet implemented"
+    Argument ="-1"
+    Argument ="0"
+End
+Begin
+    Action ="StopMacro"
+End
+Begin
+    Action ="SetWarnings"
     Argument ="0"
 End
 Begin
@@ -29,12 +38,17 @@ Begin
 End
 Begin
     Comment ="_AXL:ental\\dentmkt\\Tbls\\Tbls.mdb but Z-Base.mdb is the update source</Comment"
-        "><Action Name=\"SetWarnings\"/><Comment>zTSICUQ - Update TOC/STOC Descriptions b"
-        "y Item Code</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">zTS"
-        "ICUQ</Argument></Actio"
+        "><Action Name=\"MessageBox\"><Argument Name=\"Message\">Not yet implemented</Arg"
+        "ument></Action><Action Name=\"StopMacro\"/><Action Name=\"SetWarnings\"/><Commen"
+        "t>zTSICUQ - Update TOC/S"
 End
 Begin
-    Comment ="_AXL:n><Comment>zTSICDescUQ - Update Product Description by Item Code</Comment><"
-        "Action Name=\"SetWarnings\"><Argument Name=\"WarningsOn\">Yes</Argument></Action"
-        "><Comment>debug.print(\"x\")</Comment></Statements></UserInterfaceMacro>"
+    Comment ="_AXL:TOC Descriptions by Item Code</Comment><Action Name=\"OpenQuery\"><Argument"
+        " Name=\"QueryName\">zTSICUQ</Argument></Action><Comment>zTSICDescUQ - Update Pro"
+        "duct Description by Item Code</Comment><Action Name=\"SetWarnings\"><Argument Na"
+        "me=\"WarningsOn\">Yes"
+End
+Begin
+    Comment ="_AXL:</Argument></Action><Comment>debug.print(\"x\")</Comment></Statements></Use"
+        "rInterfaceMacro>"
 End

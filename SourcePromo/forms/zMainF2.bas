@@ -289,7 +289,7 @@ Begin Form
                         0x8000000052006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff02000000e33ffe89f69f1b10b6780402 ,
-                        0x1c007002000000000000000000000000204fe1bc9a64d3010300000000010000 ,
+                        0x1c007002000000000000000000000000207371ae4a78d3010300000000010000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -2558,8 +2558,8 @@ Begin Form
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x00000000030000000ac1000008000000e93d0000ed06000000000000542b26c2 ,
-                        0xffffffff0100090000037960000001009a5f00000000050000000b0200000000 ,
+                        0x00000000030000000ac1000008000000e93d0000ed06000000000000f21a267a ,
+                        0x000000000100090000037960000001009a5f00000000050000000b0200000000 ,
                         0x050000000c02ed06e93d030000001e00070000001604ed06e93d000000000500 ,
                         0x00000b0200000000050000000c02ed06e93d050000000b020000000003000000 ,
                         0x1e00070000001604ed06e93d00000000050000000b0200000000050000000c02 ,
@@ -4927,7 +4927,7 @@ Dim stText As String
    DoCmd.DeleteObject acTable, "TmpPromo"
    DoCmd.CopyObject , "TmpPromo", acTable, "zTmpPromoStruct"
    DoCmd.TransferSpreadsheet acImport, 8, "TmpPromo", _
-      "M:\Dental\dentmkt\Promo\ProData\Promo.xls", True, "Sheet1!A1:AA2"  '"ProData!A1:AS2
+      config("PATH_MAIN_PROD") & "Promo\ProData\Promo.xls", True, "Sheet1!A1:AA2"  '"ProData!A1:AS2
    'Search for existing Vendor Code record. Use VC from temp table.
    stVC = DLookup("[VendorCode]", "TmpPromo", "[ID] = 1")
        'MsgBox "VendorCode is " & stVC
@@ -4968,7 +4968,7 @@ Dim stText As String
    DoCmd.CopyObject , "TmpIC", acTable, "zTmpICStruct"
 'MsgBox "Flag 4"
    DoCmd.TransferSpreadsheet acImport, 8, "TmpIC", _
-      "M:\Dental\dentmkt\Promo\ProData\Promo.xls", True, "Sheet1!A31:L231" ' "Sheet1!A31:R231"  '"ItemCodes!A1:G200"
+      config("PATH_MAIN_PROD") & "Promo\ProData\Promo.xls", True, "Sheet1!A31:L231" ' "Sheet1!A31:R231"  '"ItemCodes!A1:G200"
 'MsgBox "Flag 5"
    DoCmd.OpenQuery "zICAppQ"
       'MsgBox "Flag 2"
@@ -4990,8 +4990,8 @@ Dim stText As String
    Next x
    'SECTION II
    stPromoNm = DLookup("[PromoNm]", "zPromo", "[RecID] = " & ZVar3())
-   stOldName = "M:\Dental\dentmkt\Promo\ProData\Promo.xls"
-   stNewName = "M:\Dental\dentmkt\Promo\ProData\" & Format(Now(), "mmddyy") & _
+   stOldName = config("PATH_MAIN_PROD") & "Promo\ProData\Promo.xls"
+   stNewName = config("PATH_MAIN_PROD") & "Promo\ProData\" & Format(Now(), "mmddyy") & _
                stVC & Format(Time(), "hhmmss") & stText & ".xls"   'Left(stPromoNm, 12) & ".xls"
 'MsgBox stOldName
 'MsgBox "Flag 8, " & stNewName
@@ -5131,11 +5131,11 @@ Debug.Assert False
 On Error GoTo Err_SetImp_Click
 
 Dim fs, i, NmPath
-NmPath = "M:\Dental\dentmkt\Promo\ProData\Promo.xls"
+NmPath = config("PATH_MAIN_PROD") & "Promo\ProData\Promo.xls"
 
 Set fs = Application.FileSearch
 With fs
-    .LookIn = "M:\Dental\dentmkt\Promo\ProData\"
+    .LookIn = config("PATH_MAIN_PROD") & "Promo\ProData\"
     .fileName = "Promo.xls"
     If .Execute > 0 Then
         'MsgBox "There were " & .FoundFiles.Count & _
@@ -5152,7 +5152,7 @@ With fs
         'When file not found...
         MsgBox "No file was found to import!  The file to import must " & _
         "be named 'Promo.xls' and it must be located in " & _
-        "'M:\Dental\dentmkt\Promo\ProData\...'"
+        "'" & config("PATH_MAIN_PROD") & "Promo\ProData\...'"
         Exit Sub
     End If
 End With

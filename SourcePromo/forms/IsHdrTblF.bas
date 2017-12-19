@@ -150,25 +150,18 @@ If IsTable(stTbl) = "True" Then
     'DoCmd.TransferText acLinkDelim, stSpec, stTbl, stFullNm, True, ""
    '****************************************************************************
    '****              Copy/Archive "Update_Vip_Buffer.mdb"                 *****
-   '****      If Q/A, copy to \\nahsinyhqdw07\Vip_Promos_QA\Archive\       *****
-   '****     If Prod, copy to \\dvhsinyhqdw01\Vip_Promos_Prod\Archive      *****
-   '**** Obsoleted 20150821, Prod, copy to \\nahsinyhqdw07\Vip_Promos_Prod\Archive\     *****
    '****                                                                   *****
    '****************************************************************************
    If ZQP() = "Q/A" Then
-      stSrc = "\\nahsinyhqdw07\Vip_Promos_QA\Vip_Dropoff\Update_Vip_Buffer.mdb"
+      stSrc = config("PATH_VIP_QA") & "Vip_Dropoff\Update_Vip_Buffer.mdb"
       stDt = DatePart("yyyy", Now()) & StMn & stDay
-      stDST = "\\nahsinyhqdw07\Vip_Promos_QA\Archive\Update_Vip_Buffer" & stDt & ".mdb"
+      stDST = config("PATH_VIP_QA") & "Archive\Update_Vip_Buffer" & stDt & ".mdb"
       CopyFile stSrc, stDST
       'MsgBox "QP = " & ZQP() & "  and M = " & stMn & "  and D = " & stDay
    ElseIf ZQP() = "Prod" Then
-      stSrc = "\\dvhsinyhqdw01\Vip_Promos_Prod\Vip_Dropoff\Update_Vip_Buffer.mdb"
+      stSrc = config("PATH_VIP_PROD") & "Vip_Dropoff\Update_Vip_Buffer.mdb"
       stDt = DatePart("yyyy", Now()) & StMn & stDay
-      stDST = "\\dvhsinyhqdw01\Vip_Promos_Prod\Archive\Update_Vip_Buffer" & stDt & ".mdb"
-      '3 Lines following, obsoleted 20150821
-      'stSrc = "\\nahsinyhqdw07\Vip_Promos_Prod\Vip_Dropoff\Update_Vip_Buffer.mdb"
-      'stDt = DatePart("yyyy", Now()) & stMn & stDay
-      'stDST = "\\nahsinyhqdw07\Vip_Promos_Prod\Archive\Update_Vip_Buffer" & stDt & ".mdb"
+      stDST = config("PATH_VIP_PROD") & "Archive\Update_Vip_Buffer" & stDt & ".mdb"
       CopyFile stSrc, stDST
       'MsgBox "QP = " & ZQP() & "  and M = " & stMn & "  and D = " & stDay
    Else

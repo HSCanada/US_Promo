@@ -141,13 +141,9 @@ Debug.Print "FileExists"
 '****                         FileExists() Examples                             *****
 '****                                                                           *****
 '****  Look for a file named MyFile.mdb in the Data folder:                     *****
-'****      FileExists ("C:\Data\MyFile.mdb")                                    *****
 '****  Look for a folder named System in the Windows folder on C: drive:        *****
-'****      FolderExists ("C:\Windows\System")                                   *****
 '****  Look for a file named MyFile.txt on a network server:                    *****
-'****      FileExists ("\\MyServer\MyPath\MyFile.txt")                          *****
 '****  Check for a file or folder name Wotsit on the server:                    *****
-'****      FileExists("\\MyServer\Wotsit", True)                                *****
 '****  Check the folder of the current database for a file named GetThis.xls:   *****
 '****      FileExists (TrailingSlash(CurrentProject.Path) & "GetThis.xls")      *****
 '****                                                                           *****

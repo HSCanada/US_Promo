@@ -26,8 +26,6 @@ Dim intTableExists As Integer
 Dim stMyDir As String
 Dim stPorQ As String
 
-' RESET before using, to Y:\
-' "Server Path", "\\dvhsinyhqdw01\Vip_Promos_Prod\Vip_Dropoff")
 
 '**********************************************************
 '****              Who/Where am I ???                 *****
@@ -38,23 +36,26 @@ Dim stPorQ As String
 
 stMyDir = Application.CodeProject.Path
 
-If stMyDir = "X:\PromoQA" Then
+' TC hard code logic start --------------------------------
+If stMyDir = config("PATH_MAIN_QA") Then
     stPorQ = "QA"
-    strServerFind = InputBox("Enter the Server Path you want to replace (current).  EX: \\usnym3fs03\Data", _
-        "Server Path", "\\usnym3fs03\Data\dental\dentmkt")
-    strDrive = InputBox("Enter the Drive letter to replace.  EX: X:\", _
-        "Server Path", "X:\")
-    strServerNEW = InputBox("Enter the NEW Server Path.  EX: \\usnym3fs03\Data", _
-        "Server Path", "\\usnym3fs03\Data\promoQA\PromoData")
+    strServerFind = InputBox("Enter the Server Path you want to replace (current).  EX: " & config("PATH_MAIN_QA"), _
+        "Server Path", config("PATH_MAIN_QA"))
+    strDrive = InputBox("Enter the Drive letter to replace.  EX: S:\", _
+        "Server Path", "S:\")
+    strServerNEW = InputBox("Enter the NEW Server Path.  EX: " & config("PATH_MAIN_QA"), _
+        "Server Path", config("PATH_MAIN_QA") & "PromoData")
         
-ElseIf stMyDir = "X:\Dental\dentmkt\Promo" Then
+ElseIf stMyDir = config("PATH_MAIN_PROD") & "Promo" Then
     stPorQ = "Prod"
-    strServerFind = InputBox("Enter the Server Path you want to replace (current).  EX: \\usnym3fs03\Data", _
-        "Server Path", "\\usnym3fs03\Data\promoQA\PromoData")
-    strDrive = InputBox("Enter the Drive letter to replace.  EX: X:\", _
-        "Server Path", "X:\")
-    strServerNEW = InputBox("Enter the NEW Server Path.  EX: \\usnym3fs03\Data", _
-        "Server Path", "\\usnym3fs03\Data\dental\dentmkt")
+    strServerFind = InputBox("Enter the Server Path you want to replace (current).  EX: " & config("PATH_MAIN_PROD"), _
+        "Server Path", config("PATH_MAIN_PROD") & "PromoData")
+    strDrive = InputBox("Enter the Drive letter to replace.  EX: S:\", _
+        "Server Path", "S:\")
+    strServerNEW = InputBox("Enter the NEW Server Path.  EX: " & config("PATH_MAIN_PROD"), _
+        "Server Path", config("PATH_MAIN_PROD"))
+
+' TC hard code logic stop --------------------------------
 
 Else
     stPorQ = "Daffy Duck"
@@ -109,7 +110,6 @@ End If
             
             'Check to see if the path has a dive letter or is already
             'using a network path
-            'If Left(strDatabase, 3) = "M:\" Or Left(strDatabase, 20) = "\\nym2212t\CorpShare" Then
             If Left(strDatabase, Len(strServerFind)) = strServerFind Or Left(strDatabase, 3) = strDrive Then
                 'Using LinksTable make a temp connection to the table to see if it exists
                 If Mid(strDatabase, 2, 1) = ":" Then

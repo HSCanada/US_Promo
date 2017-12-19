@@ -1,13 +1,9 @@
 Option Compare Database
 Option Explicit
 
-'Sendxls
-
-'End Sub
 
 
 'Here's how to send an attachment
-'"M:\Dental\dentmkt\Promo\ProExp\Promo.xls"
 Function Sendxls(sZipFile As String) As Boolean
 
 Debug.Print "Sendxls_XXX"
@@ -27,7 +23,7 @@ Debug.Assert False
 
     With objOutlookMsg
          ' Add the To recipient(s) to the message.
-        Set objOutlookRecip = .Recipients.Add("Richard.Zeprnick@henryschein.com") ' modify for your needs
+        Set objOutlookRecip = .Recipients.Add(config("OPERATOR_EMAIL")) ' modify for your needs
         objOutlookRecip.Type = olTo
         ' Make Outlook remind the recipient to read the message
         .FlagRequest = "Follow Up"

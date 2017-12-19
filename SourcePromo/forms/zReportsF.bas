@@ -14,8 +14,8 @@ Begin Form
     ItemSuffix =173
     Left =1065
     Top =210
-    Right =23085
-    Bottom =13275
+    Right =6930
+    Bottom =13245
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
         0xfa12174d8c18e240
@@ -3825,7 +3825,7 @@ On Error GoTo Err_Default_Promo_Price_Cntrl_Rpt_Click
  
     
     stDocName = "DefPrcCntrlR"
-    stPath = "\\usnym3fs03\Data\Dental\1User Data Marketing\Promos\" & ZEffYr() & ZEffMn() & _
+    stPath = config("PATH_EXPORT_MARKETING_PROD") & "Promos\" & ZEffYr() & ZEffMn() & _
     "DefaultedPromos" & Format(Now(), "yyyymmdd") & ".snp"
     
     DoCmd.OpenQuery "zWCSDescUQ"
@@ -3871,14 +3871,11 @@ On Error GoTo Err_VuDftArchFldr_Click
 
     stAppName = "explorer.exe"
     'VIP DropOff is Promo db's Import file-source
-    stShell = Shell(stAppName & " \\usnym3fs03\Data\Dental\1User Data Marketing\Promos\", 1)
+    stShell = Shell(stAppName & " " & config("PATH_EXPORT_MARKETING_PROD") & "Promos\", 1)
 'Dim accapp As Access.Application
 
 'Set accapp = New Access.Application
 
-'accapp.OpenCurrentDatabase ("\\usnym3fs03\Data\Dental\dentmkt\Promo\PromoUpLd.mdb")
-'("c:\whatever\blah.mdb")
-'accapp.Visible = True
 
 Exit_VuDftArchFldr_Click:
     Exit Sub
@@ -3978,7 +3975,7 @@ On Error GoTo Err_VuDivPrcR_Click
     stDocName = "DivPrcCntrlR"
     'DoCmd.OpenReport stDocName, acPreview
     
-    stPath = "\\usnym3fs03\Data\Dental\1User Data Marketing\Promos\" & ZEffYr() & ZEffMn() & _
+    stPath = config("PATH_EXPORT_MARKETING_PROD") & "Promos\" & ZEffYr() & ZEffMn() & _
     "DivisionalPricingPromos" & Format(Now(), "yyyymmdd") & ".snp"
     
     DoCmd.OpenQuery "zWCSDescUQ"

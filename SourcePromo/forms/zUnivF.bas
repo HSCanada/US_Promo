@@ -14,7 +14,7 @@ Begin Form
     DatasheetFontHeight =10
     ItemSuffix =129
     Top =315
-    Right =14550
+    Right =6930
     Bottom =4830
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
@@ -328,7 +328,7 @@ Begin Form
                         0x8000000052006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff02000000e33ffe89f69f1b10b6780402 ,
-                        0x1c00700200000000000000000000000090f81cbd9a64d3010300000000010000 ,
+                        0x1c0070020000000000000000000000007073d8f44c78d3010300000000010000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -2597,8 +2597,8 @@ Begin Form
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x00000000030000000ac1000008000000e93d0000ed06000000000000f41426c3 ,
-                        0xffffffff0100090000037960000001009a5f00000000050000000b0200000000 ,
+                        0x00000000030000000ac1000008000000e93d0000ed060000000000005612266f ,
+                        0x000000000100090000037960000001009a5f00000000050000000b0200000000 ,
                         0x050000000c02ed06e93d030000001e00070000001604ed06e93d000000000500 ,
                         0x00000b0200000000050000000c02ed06e93d050000000b020000000003000000 ,
                         0x1e00070000001604ed06e93d00000000050000000b0200000000050000000c02 ,
@@ -6114,7 +6114,7 @@ stNuVnd = Me![NuVnd]
    DoCmd.DeleteObject acTable, "TmpPromo"
    DoCmd.CopyObject , "TmpPromo", acTable, "zTmpPromoStruct"
    DoCmd.TransferSpreadsheet acImport, 8, "TmpPromo", _
-      "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls", True, "Promo!A1:AA2"  '5/23/02"Sheet1!A1:AA2" /01"ProData!A1:AS2
+      config("PATH_EXPORT_MARKETING_PROD") & "Promo\ProData\Promo.xls", True, "Promo!A1:AA2"  '5/23/02"Sheet1!A1:AA2" /01"ProData!A1:AS2
    'Search for existing Vendor Code record. Use VC from temp table.
    stVC = DLookup("[VendorCode]", "TmpPromo", "[ID] = 1")
        'MsgBox "VendorCode is " & stVC
@@ -6172,12 +6172,8 @@ stNuVnd = Me![NuVnd]
    'DoCmd.CopyObject , "TmpIC", acTable, "zTmpICStruct"
    DoCmd.CopyObject , "PreIC", acTable, "zPreICStruct"
    'MsgBox "Flag 4"
-'02/28/2005 Change import here: Use FamilySet instead of ItemCode
-'   DoCmd.TransferSpreadsheet acImport, 8, "TmpIC", _
-'      "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls", True, "ItemCodes!A5:D205" ' 05/23/02 "Sheet1!A31:L231", /01"Sheet1!A31:R231"  '"ItemCodes!A1:G200"
-'IMPORT 200 rows from ItemCodes sheet of current Promo.xls
    DoCmd.TransferSpreadsheet acImport, 8, "PreIC", _
-      "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls", True, "ItemCodes!A5:A205" ' 05/23/02 "Sheet1!A31:L231", /01"Sheet1!A31:R231"  '"ItemCodes!A1:G200"
+      config("PATH_EXPORT_MARKETING_PROD") & "Promo\ProData\Promo.xls", True, "ItemCodes!A5:A205" ' 05/23/02 "Sheet1!A31:L231", /01"Sheet1!A31:R231"  '"ItemCodes!A1:G200"
    'MsgBox "Flag 5"
 '!!!!!!!!!!!!!!!!!!!!Here is where it is messing up!
    DoCmd.OpenQuery "ssICAppQ"
@@ -6209,8 +6205,8 @@ stNuVnd = Me![NuVnd]
    Next x
    'SECTION II
    stPromoNm = DLookup("[PromoNm]", "zPromo", "[RecID] = " & ZVar3())
-   stOldName = "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls"
-   stNewName = "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\" & Format(Now(), "mmddyy") & _
+   stOldName = config("PATH_EXPORT_MARKETING_PROD") & "Promo\ProData\Promo.xls"
+   stNewName = config("PATH_EXPORT_MARKETING_PROD") & "Promo\ProData\" & Format(Now(), "mmddyy") & _
                stVC & Format(Time(), "hhmmss") & stText & ".xls"   'Left(stPromoNm, 12) & ".xls"
       'MsgBox stOldName
       'MsgBox "Flag 9, " & stNewName
@@ -6372,11 +6368,11 @@ Debug.Assert False
 On Error GoTo Err_SetImp_Click
 
 Dim fs, i, NmPath
-NmPath = "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls"
+NmPath = config("PATH_EXPORT_MARKETING_PROD") & "Promo\ProData\Promo.xls"
 
 Set fs = Application.FileSearch
 With fs
-    .LookIn = "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\"
+    .LookIn = config("PATH_EXPORT_MARKETING_PROD") & "Promo\ProData\"
     .fileName = "Promo.xls"
     If .Execute > 0 Then
         'Con
@@ -6396,7 +6392,7 @@ With fs
         'When file not found...
         MsgBox "No file was found to import!  The file to import must " & _
         "be named 'Promo.xls' and it must be located in " & _
-        "'\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\...'"
+        "'" & config("PATH_EXPORT_MARKETING_PROD") & "Promo\ProData\...'"
         Exit Sub
     End If
 End With
@@ -6741,7 +6737,7 @@ Dim stChar As String
 Dim stText As String
 'Dim stDocName As String
 'Dim stLink As String
-NmPath = "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData"
+NmPath = config("PATH_EXPORT_MARKETING_PROD") & "Promo\ProData"
 
 ProFind = "Promo*.xls" 'Add files and rename all to Promo(plus anything to non-unique it)
     'When run code will change 1st name to Promo.xls so I can use the code from the
@@ -6774,7 +6770,7 @@ With fs
    DoCmd.DeleteObject acTable, "TmpPromo"
    DoCmd.CopyObject , "TmpPromo", acTable, "zTmpPromoStruct"
    DoCmd.TransferSpreadsheet acImport, 8, "TmpPromo", _
-      "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls", True, "Promo!A1:AA2"  '5/23/02"Sheet1!A1:AA2" /01"ProData!A1:AS2
+      config("PATH_EXPORT_MARKETING_PROD") & "Promo\ProData\Promo.xls", True, "Promo!A1:AA2" '5/23/02"Sheet1!A1:AA2" /01"ProData!A1:AS2
    'Search for existing Vendor Code record. Use VC from temp table.
    stVC = DLookup("[VendorCode]", "TmpPromo", "[ID] = 1")
        'MsgBox "VendorCode is " & stVC
@@ -6815,7 +6811,7 @@ With fs
    DoCmd.CopyObject , "TmpIC", acTable, "zTmpICStruct"
       'MsgBox "Flag 4"
    DoCmd.TransferSpreadsheet acImport, 8, "TmpIC", _
-      "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls", True, "ItemCodes!A5:D205" ' 05/23/02 "Sheet1!A31:L231", /01"Sheet1!A31:R231"  '"ItemCodes!A1:G200"
+      config("PATH_EXPORT_MARKETING_PROD") & "Promo\ProData\Promo.xls", True, "ItemCodes!A5:D205" ' 05/23/02 "Sheet1!A31:L231", /01"Sheet1!A31:R231"  '"ItemCodes!A1:G200"
 '      MsgBox "Flag 5"
 '!!!!!!!!!!!!!!!!!!!!Here is where it is messing up!
    DoCmd.OpenQuery "zICAppQ"
@@ -6837,8 +6833,8 @@ With fs
    Next x
    'SECTION II
    stPromoNm = DLookup("[PromoNm]", "zPromo", "[RecID] = " & ZVar3())
-   stOldName = "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls"
-   stNewName = "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\" & Format(Now(), "mmddyy") & _
+   stOldName = config("PATH_EXPORT_MARKETING_PROD") & "Promo\ProData\Promo.xls"
+   stNewName = config("PATH_EXPORT_MARKETING_PROD") & "Promo\ProData\" & Format(Now(), "mmddyy") & _
                stVC & Format(Time(), "hhmmss") & stText & ".xls"   'Left(stPromoNm, 12) & ".xls"
       'MsgBox stOldName
       'MsgBox "Flag 8, " & stNewName

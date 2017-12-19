@@ -1238,7 +1238,7 @@ Debug.Assert False
     Dim sTxt$
     Dim return_count%
     Dim instring$
-    Dim txt$
+    Dim TXT$
         
     return_count% = 0
     bGoodFTP = False

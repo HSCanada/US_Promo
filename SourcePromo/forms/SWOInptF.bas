@@ -1336,7 +1336,7 @@ On Error GoTo Err_SaveExpClear_Click
     intAll = DCount("*", "SWOinpt")
     intPop = DCount("[VCd]", "SWOinpt")
     intNull = intAll - intPop 'DCount("[Vendor Name]", "SWOinpt", "LEN([VCd])<3")
-    stPath = "\\usnym3fs03\Data\Dental\1User Data Marketing\SWO\"
+    stPath = config("PATH_EXPORT_MARKETING_PROD") & "SWO\"
     stFile = SWOYr() & SWOMn() & "SWOFreeGoods" & Format(Now(), "ddhhnnss") & ".xls"
     stExp = stPath & stFile
     stTmp = stPath & "FreeGoodsTemplate.xls"
@@ -1378,11 +1378,7 @@ Else
          'Mark all records as SENT
          'MsgBox "Flag 4"
          DoCmd.OpenQuery "SWOSentUQ"  'Posts [SWOInpt].[Sent] as -1
-         'Database [zPromo], [zItemSub] and [zSubVC] have been updated & recs marked
-         'NEXT...
-         'Export Spreadsheet to \\usnym3fs03\Data\Dental\1User Data Marketing\SWO
-         'MsgBox "Flag"
-         'DoCmd.TransferSpreadsheet acExport, acSpreadsheetTypeExcel9, "SWOExpR", stExp
+         
          DoCmd.OutputTo acOutputReport, "SWOExpR", acFormatXLS, stExp, True, stTmp
          MsgBox "You have successfully Appended the new SWOs and exported the SWO report " & _
          "to " & stExp & " .  Please make note of this file location and name to notify " & _

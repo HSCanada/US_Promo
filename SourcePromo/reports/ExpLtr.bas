@@ -15,7 +15,7 @@ Begin Report
     Left =390
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
-        0xcb8029670e60e340
+        0xbd746c82f409e540
     End
     RecordSource ="SELECT ExpDts.User, ExpDts.DueDt, xyPermissions.Signature, xyPermissions.eml, Ex"
         "pDts.EffQtr, ExpDts.EffYr, ExpDts.EffDt, ExpDts.ExpDt, xyPermissions.UserTel FRO"
@@ -220,7 +220,8 @@ Begin Report
                     Height =315
                     FontSize =12
                     Name ="Label69"
-                    Caption ="https://vendor.henryschein.com/FormStaticDisplay.aspx?PAGE=PromoFaqdental.com "
+                    Caption ="https://vendor.henryschein.com/FormStaticDisplay.aspx?PAGE=PromoFaqdental.com \015"
+                        "\012=config(\"URL_VIP_PROD\")\015\012config(\"URL_VIP_PROD\")"
                     LayoutCachedTop =7995
                     LayoutCachedWidth =9690
                     LayoutCachedHeight =8310

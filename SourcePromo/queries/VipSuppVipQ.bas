@@ -13,20 +13,25 @@ dbByte "RecordsetType" ="0"
 dbBoolean "OrderByOn" ="0"
 dbByte "Orientation" ="0"
 dbByte "DefaultView" ="2"
-dbText "Description" ="\\\\nahsinyhqdw07\\vip_promos_prod\\ W:\\Vip_Dropoff\\Update_VIP_Buffer.mdb  [Vi"
-    "p_Active_Promo_Vendors].[Vendor_Key]"
+dbBoolean "FilterOnLoad" ="0"
+dbBoolean "OrderByOnLoad" ="-1"
+dbBoolean "TotalsRow" ="0"
 Begin
+    Begin
+        dbText "Name" ="SuppCd"
+        dbLong "AggregateType" ="-1"
+    End
 End
 Begin
     State =0
-    Left =62
-    Top =84
-    Right =1002
-    Bottom =396
+    Left =85
+    Top =112
+    Right =850
+    Bottom =705
     Left =-1
     Top =-1
-    Right =933
-    Bottom =144
+    Right =747
+    Bottom =127
     Left =0
     Top =0
     ColumnsShown =539

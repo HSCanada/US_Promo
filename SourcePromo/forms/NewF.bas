@@ -430,7 +430,7 @@ On Error GoTo Err_Step3_Click
     '***************************************************
     If IsNull(ZMktID()) Then
         If IsNull(Me![MktID]) Then
-            stLinkCriteria = "[zVendor].[VendorCode]= 'THREEM'"
+            stLinkCriteria = "[zVendor].[VendorCode]= '" & config("3MD_CODE") & "'"
         Else
             Z_MktID = Me![MktID]
             stLinkCriteria = "[zVendor].[VendorCode]= '" & ZMktID() & "'"

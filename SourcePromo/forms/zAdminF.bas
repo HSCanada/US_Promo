@@ -128,7 +128,7 @@ Begin Form
                         0x8000000052006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff02000000e33ffe89f69f1b10b6780402 ,
-                        0x1c007002000000000000000000000000804c6dbad763d3010300000000010000 ,
+                        0x1c0070020000000000000000000000009064a5664878d3010300000000010000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -2397,7 +2397,7 @@ Begin Form
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x00000000030000000ac1000008000000e93d0000ed06000000000000b72526e7 ,
+                        0x00000000030000000ac1000008000000e93d0000ed06000000000000531c2689 ,
                         0xffffffff0100090000037960000001009a5f00000000050000000b0200000000 ,
                         0x050000000c02ed06e93d030000001e00070000001604ed06e93d000000000500 ,
                         0x00000b0200000000050000000c02ed06e93d050000000b020000000003000000 ,
@@ -5459,9 +5459,7 @@ On Error GoTo Err_VNDCompLst_Click
     
     Dim stIClist As String
     
-    stIClist = "\\usnym3fs03\Data\Dental\dentmkt\Promo\VndLists\" & Format(Now(), "yy") & ZSelVC() & Format(Now(), "mmdd") & ".xls"
-    'stIClist = "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\VndLists\" & Format(Now(), "yy") & ZSelVC() & Format(Now(), "mmdd") & ".xls"
-    'DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
+    stIClist = config("PATH_MAIN_PROD") & "Promo\VndLists\" & Format(Now(), "yy") & ZSelVC() & Format(Now(), "mmdd") & ".xls"
     DoCmd.TransferSpreadsheet acExport, 8, "rVndSelQ", stIClist, True
     MsgBox "NOTE: Exported to " & stIClist
 
@@ -5504,7 +5502,7 @@ On Error GoTo Err_AS400UpDt_Click
 
     Dim stAppName As String
 
-    stAppName = "MSAccess.exe \\Nym2212t\Corpshare\Dental\dentmkt\BD\ItemData\ItemData.mdb"
+    stAppName = "MSAccess.exe " & config("PATH_MAIN_PROD") & "BD\ItemData\ItemData.mdb"
     Call Shell(stAppName, 1)
 
 Exit_AS400UpDt_Click:

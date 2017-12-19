@@ -80,8 +80,8 @@ Begin
 End
 Begin
     Action ="OpenQuery"
-    Comment ="[VipItemFileAQ] writes to linked table [VipMasterItemFile] in \\\\nahsinyhqdw07\\"
-        "vip_promos_prod\\Vip_Pickup\\OKdData.mdb    aka [VipMasterItemFile]"
+    Comment ="[VipItemFileAQ] writes to linked table [VipMasterItemFile] in .\\vip_promos_prod"
+        "\\Vip_Pickup\\OKdData.mdb    aka [VipMasterItemFile]"
     Argument ="VipItemFileAQ"
     Argument ="0"
     Argument ="1"
@@ -153,17 +153,17 @@ Begin
 End
 Begin
     Comment ="_AXL:ligibility</Comment><Comment>[VipItemFileAQ] writes to linked table [VipMas"
-        "terItemFile] in \\\\nahsinyhqdw07\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb    a"
-        "ka [VipMasterItemFile]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"Quer"
-        "yName\">VipItemFileAQ<"
+        "terItemFile] in .\\vip_promos_prod\\Vip_Pickup\\OKdData.mdb    aka [VipMasterIte"
+        "mFile]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipItemF"
+        "ileAQ</Argument></Ac"
 End
 Begin
-    Comment ="_AXL:/Argument></Action><Comment>    Add [Stk].[Stk] for stocking status \"S\", "
-        "stocking, or \"N\", Non-Stock</Comment><Comment>[VipMstrDenticUQ] Bassed on a Un"
-        "ique Vendor Request - Switch Supplier Name to DENTIC Where Display Mfg = \"DENTI"
-        "C\"</Comment><Actio"
+    Comment ="_AXL:tion><Comment>    Add [Stk].[Stk] for stocking status \"S\", stocking, or \""
+        "N\", Non-Stock</Comment><Comment>[VipMstrDenticUQ] Bassed on a Unique Vendor Req"
+        "uest - Switch Supplier Name to DENTIC Where Display Mfg = \"DENTIC\"</Comment><A"
+        "ction Name=\"OpenQu"
 End
 Begin
-    Comment ="_AXL:n Name=\"OpenQuery\"><Argument Name=\"QueryName\">VipMstrDenticUQ</Argument"
-        "></Action></Statements></UserInterfaceMacro>"
+    Comment ="_AXL:ery\"><Argument Name=\"QueryName\">VipMstrDenticUQ</Argument></Action></Sta"
+        "tements></UserInterfaceMacro>"
 End

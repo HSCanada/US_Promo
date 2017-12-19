@@ -130,7 +130,6 @@ On Error GoTo VIPimportAppF_Err
     ' From Table/Field:  [A3Promos*].mdb [VipLiveVCs] is linked from [Vip_Active_Promo_Vendors].[Vendor_Key]
     ' Match [VipLiveVCs].[Vendor_Key] with  [A3Promos*].mdb [zSubVC].[SubVC] to get the Marketing Codes for the listed suppliers [VendorCode]
     ' REM: 4/26/13 [VIPImportAppM] is Working Fine so REM out
-    ' REM: Send Richard Zepernick message LAUNCH [VIPImportAppM]
     ' REM: Subject: "Promo Launch[VIPImportAppM]"
     ' REM: Body: "Launching Promo.mdb, Launch [VIPImportAppM]. "
     On Error GoTo 0
@@ -263,13 +262,12 @@ On Error GoTo VIPimportAppF_Err
     DoCmd.OpenQuery "DispNmAQ", acViewNormal, acEdit
     ' [UpDtBNPm] UpDt Brand Name on Pkg on both [zPromo] and [zReadPromo]
     DoCmd.RunMacro "UpDtBNPm", , ""
-    ' REM: Send Richard Zepernick message COMPLETED [VIPImportAppM]
     ' REM: Subject: "Promo COMPLETED [VIPImportAppM]"
     ' REM: Body: "COMPLETED Promo.mdb, [VIPImportAppM]. "
     ' This macro is launched from the Scheduler
     'DoCmd.Quit acExit
     'Exit Function
-    DoCmd.SendObject , "", "", "richard.zepernick@henryschein.com", "", "", "END SSPEvent - Promo10Z* VIP Import - 19:00pm 5Ds Launch VIPimportAppM", "\\usnym3fs03\Data\Dental\dentmkt\Promo\Promo10Z.accdb /x VIPimportAppM", False, ""
+    DoCmd.SendObject , "", "", config("OPERATOR_EMAIL"), "", "", "END SSPEvent - Promo10Z* VIP Import - 19:00pm 5Ds Launch VIPimportAppM", "\\usnym3fs03\Data\Dental\dentmkt\Promo\Promo10Z.accdb /x VIPimportAppM", False, ""
 
 
 VIPimportAppF_Exit:

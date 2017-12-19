@@ -978,8 +978,7 @@ On Error GoTo Err_VuImpSrc_Click
 
     stAppName = "explorer.exe"
     'VIP DropOff is Promo db's Import file-source
-    stShell = Shell(stAppName & " \\nahsinyhqdw07\Vip_Promos_prod\Vip_Dropoff\", 1)
-    '\\nahsinyhqdw07\Vip_Promos_prod\Vip_Dropoff\update_vip_buffer.mdb
+    stShell = Shell(stAppName & " " & config("PATH_VIP_PROD") & "Vip_Dropoff\", 1)
 
 Exit_VuImpSrc_Click:
     Exit Sub
@@ -1017,8 +1016,7 @@ On Error GoTo Err_VuSrcTbls_Click
 
     stAppName = "explorer.exe"
     'VIP DropOff update_vip_buffer.mdb is Promo db's Import file-source tables
-    stShell = Shell(stAppName & " \\nahsinyhqdw07\Vip_Promos_prod\Vip_Dropoff\update_vip_buffer.mdb", 1)
-    '\\nahsinyhqdw07\Vip_Promos_prod\Vip_Dropoff\update_vip_buffer.mdb
+    stShell = Shell(stAppName & " " & config("PATH_VIP_PROD") & "Vip_Dropoff\update_vip_buffer.mdb", 1)
 
 Exit_VuSrcTbls_Click:
     Exit Sub
@@ -1039,8 +1037,7 @@ On Error GoTo Err_VuExpFldr_Click
 
     stAppName = "explorer.exe"
     'VIP PickUp is Promo db's Export data-destination
-    stShell = Shell(stAppName & " \\nahsinyhqdw07\Vip_Promos_prod\Vip_Pickup\", 1)
-    '\\nahsinyhqdw07\Vip_Promos_prod\Vip_Pickup\OKdData.mdb
+    stShell = Shell(stAppName & " " & config("PATH_VIP_PROD") & "Vip_Pickup\", 1)
 
 Exit_VuExpFldr_Click:
     Exit Sub
@@ -1061,8 +1058,7 @@ On Error GoTo Err_VuExpTbls_Click
 
     stAppName = "explorer.exe"
     'VIP PickUp \OKdData.mdb is Promo db's Export data-destination db tables
-    stShell = Shell(stAppName & " \\nahsinyhqdw07\Vip_Promos_prod\Vip_Pickup\OKdData.mdb", 1)
-    '\\nahsinyhqdw07\Vip_Promos_prod\Vip_Pickup\OKdData.mdb
+    stShell = Shell(stAppName & " " & config("PATH_VIP_PROD") & "Vip_Pickup\OKdData.mdb", 1)
 
 Exit_VuExpTbls_Click:
     Exit Sub
@@ -1102,9 +1098,7 @@ On Error GoTo Err_VuBuyGetStats_Click
 
     stAppName = "explorer.exe"
     'VIP DropOff update_vip_buffer.mdb is Promo db's Import file-source tables
-    stShell = Shell(stAppName & " \\usnymefs01\Corpshare\Public\E-Commerce\Redemptions\DntPromo.mdb", 1)
-    'stShell = Shell(stAppName & " \\usnymefs01\Corpshare\Public\E-Commerce\Redemptions\DntPromo.mdb", 1)
-    '\\nahsinyhqdw07\Vip_Promos_prod\Vip_Dropoff\update_vip_buffer.mdb
+    stShell = Shell(stAppName & " " & config("PATH_EXPORT_ECOM_PROD") & "DntPromo.mdb", 1)
 
 Exit_VuBuyGetStats_Click:
     Exit Sub
@@ -1125,7 +1119,7 @@ On Error GoTo Err_VuBuyFldr_Click
     Dim stAppName As String
 
     stAppName = "explorer.exe"
-    stShell = Shell(stAppName & " \\usnymefs01\Corpshare\Public\E-Commerce\Redemptions", 1)
+    stShell = Shell(stAppName & " " & config("PATH_EXPORT_ECOM_PROD"), 1)
 
 Exit_VuBuyFldr_Click:
     Exit Sub
@@ -1146,7 +1140,7 @@ On Error GoTo Err_VuQaFldr_Click
     Dim stAppName As String
 
     stAppName = "explorer.exe"
-    stShell = Shell(stAppName & " \\usnym3fs03\Data\promoQA", 1)
+    stShell = Shell(stAppName & " " & config("PATH_MAIN_QA"), 1)
 
 Exit_VuQaFldr_Click:
     Exit Sub
@@ -1167,7 +1161,7 @@ On Error GoTo Err_VuBkUpFiles_Click
     Dim stAppName As String
 
     stAppName = "explorer.exe"
-    stShell = Shell(stAppName & " \\usnym3fs03\Data\Dental\dentmkt\Promo\VIPsrc", 1)
+    stShell = Shell(stAppName & " " & config("PATH_MAIN_PROD") & "Promo\VIPsrc", 1)
 
 Exit_VuBkUpFiles_Click:
     Exit Sub
@@ -1188,7 +1182,7 @@ On Error GoTo Err_QAFileSrc_Click
     Dim stAppName As String
 
     stAppName = "explorer.exe"
-    stShell = Shell(stAppName & " \\nahsinyhqdw07\Vip_Promos_QA\Vip_Dropoff\Update_Vip_Buffer.mdb", 1)
+    stShell = Shell(stAppName & " " & config("PATH_VIP_QA") & "Vip_Dropoff\Update_Vip_Buffer.mdb", 1)
 
 Exit_QAFileSrc_Click:
     Exit Sub
@@ -1209,7 +1203,7 @@ On Error GoTo Err_QAExpDB_Click
     Dim stAppName As String
 
     stAppName = "explorer.exe"
-    stShell = Shell(stAppName & " \\nahsinyhqdw07\Vip_Promos_QA\Vip_Pickup\OKdData.mdb", 1)
+    stShell = Shell(stAppName & " " & config("PATH_VIP_QA") & "Vip_Pickup\OKdData.mdb", 1)
 
 Exit_QAExpDB_Click:
     Exit Sub
@@ -1230,7 +1224,7 @@ On Error GoTo Err_QAImpFldr_Click
     Dim stAppName As String
 
     stAppName = "explorer.exe"
-    stShell = Shell(stAppName & " \\nahsinyhqdw07\Vip_Promos_QA\Vip_Dropoff", 1)
+    stShell = Shell(stAppName & " " & config("PATH_VIP_QA") & "Vip_Dropoff", 1)
 
 Exit_QAImpFldr_Click:
     Exit Sub
@@ -1251,7 +1245,7 @@ On Error GoTo Err_QAXportFldr_Click
     Dim stAppName As String
 
     stAppName = "explorer.exe"
-    stShell = Shell(stAppName & " \\nahsinyhqdw07\Vip_Promos_QA\Vip_Pickup", 1)
+    stShell = Shell(stAppName & " " & config("PATH_VIP_PROD") & "Vip_Pickup", 1)
     
 Exit_QAXportFldr_Click:
     Exit Sub
@@ -1273,11 +1267,12 @@ Dim stPorQ As String
 
 stMyDir = Application.CodeProject.Path
 
-If stMyDir = "X:\PromoQA" Then
+' TC trailing \ logic?, 18 Dec 17
+If stMyDir = config("PATH_MAIN_QA") Then
    'MsgBox stMyDir
    stPorQ = "QA"
    MsgBox stPorQ
-ElseIf stMyDir = "X:\Dental\dentmkt\Promo" Then
+ElseIf stMyDir = config("PATH_MAIN_PROD") Then
    'MsgBox stMyDir
    stPorQ = "Prod"
    MsgBox stPorQ
@@ -1308,15 +1303,15 @@ Dim stPorQ As String
 Dim stDocName As String
 stMyDir = Application.CodeProject.Path
 
-If stMyDir = "X:\PromoQA" Then
+If stMyDir = config("PATH_MAIN_QA") Then
    stPorQ = "QA"
    stDocName = "VIPimportAppQA"
    DoCmd.RunMacro stDocName
-ElseIf stMyDir = "X:\Dental\dentmkt\Promo" Then
+ElseIf stMyDir = config("PATH_MAIN_PROD") Then
    stPorQ = "Prod"
    MsgBox "I am not authorized to manually launch 'VIPimportAppQA' and import " & _
    "VIP promotions. You must be in the QA mode to launch this macro. " & _
-   "This is Production mode, location is X:\Dental\dentmkt\Promo."
+   "This is Production mode, location is " & config("PATH_MAIN_PROD")
 Else
    stPorQ = "Daffy Duck"
    MsgBox "Promo db is neither in the " & _
@@ -1343,15 +1338,15 @@ Dim stPorQ As String
 Dim stDocName As String
 stMyDir = Application.CodeProject.Path
 
-If stMyDir = "X:\PromoQA" Then
+If stMyDir = config("PATH_MAIN_QA") Then
    stPorQ = "QA"
    stDocName = "VIPexportQA"
    DoCmd.RunMacro stDocName
-ElseIf stMyDir = "X:\Dental\dentmkt\Promo" Then
+ElseIf stMyDir = config("PATH_MAIN_PROD") Then
    stPorQ = "Prod"
    MsgBox "I am not authorized to manually launch 'VIPexportQA' and export " & _
    "promotion data to VIP. You must be in the QA mode to launch this macro. " & _
-   "This is Production mode, location is X:\Dental\dentmkt\Promo."
+   "This is Production mode, location is " & config("PATH_MAIN_PROD")
 Else
    stPorQ = "Daffy Duck"
    MsgBox "Promo db is neither in the " & _

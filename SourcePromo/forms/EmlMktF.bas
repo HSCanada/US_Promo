@@ -1205,23 +1205,10 @@ Debug.Assert False
    '1.A. Generate Instruction Letter
    stQtr = DLookup("[EffQtr]", "ExpDts")
    stYr = DLookup("[EffYr]", "ExpDts")
-   stPath = "\\usnym3fs03\Data\Dental\dentmkt\Promo\VndLists\"
+   stPath = config("PATH_MAIN_PROD") & "Promo\VndLists\"
    stExpLtr = stYr & "ExpLtrQ" & stQtr & ".rtf"   ' switch back to rtf 12/3/09  ".snp"   ' changed 2/2008 ".rtf"
    'Switching back to .rtf prohits logo, but it allows web address (must reformat each paragraph of letter)
    
-   'i.e.\\usnym3fs03\Data\Dental\dentmkt\Promo\VndLists\& stExp2Nm & ".rtf"
-   'MsgBox "Generating an instruction letter, for Quarter "
-   '& stQtr &
-   '", " & stYr & ": " & stExpLtr
-
-
-   'Set fs = Application.FileSearch
-   'With fs
-   '     .LookIn = stPath
-   '     .FileName = stExpLtr
-   '     If .Execute > 0 Then                     'MsgBox "There were " & .FoundFiles.Count & " Databases found."
-            'MsgBox "Found " & stPath & stExpLtr
-            'MsgBox "About to search for " & stPath & stExpLtr
    If fCountFiles(stPath & stExpLtr) > 0 Then   ' stExpLtr) > 0 Then
        FF = fCountFiles(stPath & stExpLtr)
        'MsgBox "Found " & FF & " of " & stPath & stExpLtr
@@ -1235,12 +1222,6 @@ Debug.Assert False
    'End With
    '1.B. Generate Generic Attachment
    '*********************************************************************************
-   '**** '\\usnym3fs03\Data\Dental\dentmkt\Promo\VndLists\ & stExp2             *****
-   '**** 'stPath = "\\usnym3fs03\Data\Dental\dentmkt\Promo\VndLists\"           *****
-   '**** 'stExp2 = Me![Exp2]     'ObjectName, i.e. "ExpLtrVIPreqs"              *****
-   '**** 'stExp2Nm i.e.= "New Requirements"                                     *****
-   '**** 'stExp2NmExt    'ObjectFile, i.e. "New_Requirements.rtf"               *****
-   '**** 'If Not IsNull(stExp2Nm) And Not IsNull(stExp2) Then                   *****
    stExp2PathNm = stPath & stExp2NmExt
    DoCmd.OutputTo acOutputReport, stExp2, acFormatRTF, stExp2PathNm
    DoCmd.Close
@@ -1296,10 +1277,10 @@ Debug.Assert False
            '3. Create Excel Crossreference List
            '4. Send it all
         '2.A. Create        '"ExpTmpQ",
-               Kill "\\usnym3fs03\Data\Dental\dentmkt\Promo\ProExp\Promo.xls"
+               Kill config("PATH_MAIN_PROD") & "Promo\ProExp\Promo.xls"
                Dim SourceFile, DestinationFile
-               SourceFile = "\\usnym3fs03\Data\Dental\dentmkt\Promo\ProExp\promostruct.xls"
-               DestinationFile = "\\usnym3fs03\Data\Dental\dentmkt\Promo\ProExp\Promo.xls"
+               SourceFile = config("PATH_MAIN_PROD") & "Promo\ProExp\promostruct.xls"
+               DestinationFile = config("PATH_MAIN_PROD") & "Promo\ProExp\Promo.xls"
                FileCopy SourceFile, DestinationFile    ' Copy source to target.
         '2.B. Insert VC6digit (Zbase Vendor Code)
                'stData = DLookup("[VC6digit]", "zCorpNSub", "[EmlID] = " & x)
@@ -1309,53 +1290,36 @@ Debug.Assert False
                Z_ExpData = ZSelVC()
                DoCmd.OpenQuery "ExpValAQ"
                DoCmd.TransferSpreadsheet acExport, 8, "ExpVal", _
-                "\\usnym3fs03\Data\Dental\dentmkt\Promo\ProExp\Promo.xls", True, "Promo!S11:S11"
+                config("PATH_MAIN_PROD") & "Promo\ProExp\Promo.xls", True, "Promo!S11:S11"
         '2.C. Insert Vendor Name (Zbase Vendor Code)
                stData = DLookup("[Company]", "zCorpNSubSend", "[VC6digit] = '" & ZSelVC() & "'")
                DoCmd.RunSQL "DELETE * FROM ExpVal;"
                Z_ExpData = stData
                DoCmd.OpenQuery "ExpValAQ"
                DoCmd.TransferSpreadsheet acExport, 8, "ExpVal", _
-                "\\usnym3fs03\Data\Dental\dentmkt\Promo\ProExp\Promo.xls", True, "Promo!M5:M5"
+                config("PATH_MAIN_PROD") & "Promo\ProExp\Promo.xls", True, "Promo!M5:M5"
         '2.D. Insert Qtr
                stData = DLookup("[EffQtr]", "ExpDts")
                DoCmd.RunSQL "DELETE * FROM ExpVal;"
                Z_ExpData = stData
                DoCmd.OpenQuery "ExpValAQ"
                DoCmd.TransferSpreadsheet acExport, 8, "ExpVal", _
-                "\\usnym3fs03\Data\Dental\dentmkt\Promo\ProExp\Promo.xls", True, "Promo!C7:C7"
+                config("PATH_MAIN_PROD") & "Promo\ProExp\Promo.xls", True, "Promo!C7:C7"
         '2.E. Insert Eff Date
                stData = DLookup("[EffDt]", "ExpDts")
                DoCmd.RunSQL "DELETE * FROM ExpVal;"
                Z_ExpData = stData
                DoCmd.OpenQuery "ExpValAQ"
                DoCmd.TransferSpreadsheet acExport, 8, "ExpVal", _
-                "\\usnym3fs03\Data\Dental\dentmkt\Promo\ProExp\Promo.xls", True, "Promo!E7:E7"
+                config("PATH_MAIN_PROD") & "Promo\ProExp\Promo.xls", True, "Promo!E7:E7"
         '2.F. Insert Exp Date
                stData = DLookup("[ExpDt]", "ExpDts")
                DoCmd.RunSQL "DELETE * FROM ExpVal;"
                Z_ExpData = stData
                DoCmd.OpenQuery "ExpValAQ"
                DoCmd.TransferSpreadsheet acExport, 8, "ExpVal", _
-                "\\usnym3fs03\Data\Dental\dentmkt\Promo\ProExp\Promo.xls", True, "Promo!H7:H7"
+                config("PATH_MAIN_PROD") & "Promo\ProExp\Promo.xls", True, "Promo!H7:H7"
 
-        '3. REM out process 8/18/2008 Create Excel Crossreference List
-               ' Return reference to current database.
-        '       Set dbs = CurrentDb
-               ' Open table-type Recordset object.
-        '       Set rst = dbs.OpenRecordset("rVndSelQ")
-        '       intCnt = rst.RecordCount
-        '       rst.Close
-               'MsgBox intCnt
-        '       Set dbs = Nothing
-        '       If intCnt > 0 Then
-        '           stIClist = "M:\Dental\dentmkt\Promo\VndLists\" & Format(Now(), "yy") & _
-        '           ZSelVC() & Format(Now(), "mmdd") & ".xls"
-        '           DoCmd.TransferSpreadsheet acExport, 8, "rVndSelQ", stIClist, True
-        '       End If
-              'MsgBox "NOTE: Exported to " & stIClist
-        '4. Send it all (for this vendor)
-               'Call AttachMyFile()
     'Reference created to: Microsoft Outlook 11.0 Object Library
     Dim objOutlook As Outlook.Application
     Dim objOutlookMsg As Outlook.MailItem
@@ -1393,7 +1357,7 @@ Debug.Assert False
             'that contains the e-mail address
             '*********************************************************
             Set objOutlookRecip = .Recipients.Add(rs("email"))
-            'Set objOutlookRecip = .Recipients.Add("Richard.Zepernick@henryschein.com")
+            'Set objOutlookRecip = .Recipients.Add("xxx")
             '*********************************************************
             objOutlookRecip.Type = olTo
 
@@ -1420,10 +1384,6 @@ Debug.Assert False
             
             .importance = olImportanceHigh  'High importance
 
-            ' Add attachments to the message. Drive:\Folder\FileName needs
-            'to be the full path to the file such as "C:\MY Documents\My File.XLS".
-            '1st Attachment
-            '8/18/2008 REM Set objOutlookAttach = .Attachments.Add("M:\Dental\dentmkt\Promo\ProExp\Promo.xls")
             '  This was the Excel Form that Vendors filled in and returned to us for import
             
             '2nd Attachment
@@ -1436,10 +1396,8 @@ Debug.Assert False
 '**************************************************************************************
 '****                    2nd Attachment                                           *****
 '****       stExp2PathNm = stPath & stExp2NmExt                                   *****
-'****   i.e. stPath = "\\usnym3fs03\Data\Dental\dentmkt\Promo\VndLists\"          *****
 '****   stExp2NmExt = stExp2Nm = Me![Exp2Nm] and stExp2NmExt = stExp2Nm & ".rtf"  *****
 '****   i.e. stExp2NmExt =  "New Requirements.rtf"                                *****
-'****   \\usnym3fs03\Data\Dental\dentmkt\Promo\VndLists\New_Requirements.rtf      *****
 '****        - Does Not Yet Exist                                                 *****
 '**************************************************************************************
             If xLtr2 = 1 Then Set objOutlookAttach = .Attachments.Add(stExp2PathNm)
@@ -1549,10 +1507,7 @@ On Error GoTo Err_MkLtr_Click
     
    stQtr = DLookup("[EffQtr]", "ExpDts")
    stYr = DLookup("[EffYr]", "ExpDts")
-   'stExpLtr = "M:\Dental\dentmkt\Promo\VndLists\" & Format(Now(), "yy") & _
-   '"ExpLtr" & Format(Now(), "mmdd") & ".rtf"
-   'stExpLtr = "M:\Dental\dentmkt\Promo\VndLists\" & stYr & "ExpLtrQ" & stQtr & ".rtf"
-   stExpLtr = "\\usnym3fs03\Data\Dental\dentmkt\Promo\VndLists\" & stYr & "ExpLtrQ" & stQtr & ".rtf" '".snp"
+   stExpLtr = config("PATH_MAIN_PROD") & "Promo\VndLists\" & stYr & "ExpLtrQ" & stQtr & ".rtf" '".snp"
    MsgBox "Generating an instruction letter, for Quarter " & stQtr & _
    ", " & stYr & ": " & stExpLtr
    DoCmd.OutputTo acOutputReport, "ExpLtr", acFormatRTF, stExpLtr, True
@@ -1649,16 +1604,6 @@ On Error GoTo Err_SendIt_Click
             
             .importance = olImportanceHigh  'High importance
 
-            ' Add attachments to the message. Drive:\Folder\FileName needs
-            'to be the full path to the file such as "C:\MY Documents\My File.XLS".
-            '1st Attachment
-            'Set objOutlookAttach = .Attachments.Add("M:\Dental\dentmkt\Promo\ProExp\Promo.xls")
-            '2nd Attachment
-            'If intCnt > 0 Then
-            '    Set objOutlookAttach = .Attachments.Add(stIClist)
-            'End If
-            '3rd Attachment
-            'Set objOutlookAttach = .Attachments.Add(stPath & stExpLtr)
             
             ' Resolve each Recipient's name.
             For Each objOutlookRecip In .Recipients

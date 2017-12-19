@@ -526,11 +526,11 @@ Dim td As DAO.TableDef
   strConnectString = CurrentDb.TableDefs("zPromo").connect
   strFilePath = Mid(strConnectString, InStr(strConnectString, "=") + 1) 'MsgBox strFilePath
  
-  If strFilePath = "\\usnym3fs03\Data\dental\dentmkt\2KFLDTBL.MDB" Then
+  If strFilePath = config("PATH_MAIN_PROD") & "2KFLDTBL.MDB" Then
       'MsgBox "Tables are linked for the Production Version"
       VerQA.Visible = False
       VerProd.Visible = True
-  ElseIf strFilePath = "\\usnym3fs03\Data\promoQA\PromoData\2KFLDTBL.MDB" Then
+  ElseIf strFilePath = config("PATH_MAIN_QA") & "PromoData\2KFLDTBL.MDB" Then
       'MsgBox "Tables are linked for the QA Version"
       VerQA.Visible = True
       VerProd.Visible = False
@@ -559,13 +559,13 @@ Debug.Assert False
 
     Set db = CurrentDb()
 
-    sExportLocation = "X:\Dental\dentmkt\Zbase\Promos\MacroTxt\"
+    sExportLocation = config("PATH_MAIN_PROD") & "Zbase\Promos\MacroTxt\"
     Set c = db.Containers("Scripts")
     For Each d In c.Documents
        Application.SaveAsText acMacro, d.Name, sExportLocation & "Macro_" & d.Name & ".txt"
     Next d
     
-    MsgBox "Promo ACCDB Text Files have been sent to X:\Dental\dentmkt\Zbase\Promos\MacroTxt\"
+    MsgBox "Promo ACCDB Text Files have been sent to " & config("PATH_MAIN_PROD") & " Zbase\Promos\MacroTxt\"
 '****************************************************************************
 '****     Alternate Code
 '****
@@ -588,11 +588,12 @@ Dim stPorQ As String
 
 stMyDir = Application.CodeProject.Path
 
-If stMyDir = "X:\PromoQA" Then
+' TC trailing \ logic needed? 18 Dec 17
+If stMyDir = config("PATH_MAIN_QA") Then
    'MsgBox stMyDir
    stPorQ = "QA"
    MsgBox stPorQ
-ElseIf stMyDir = "X:\Dental\dentmkt\Promo" Then
+ElseIf stMyDir = config("PATH_MAIN_PROD") & "Promo" Then
    'MsgBox stMyDir
    stPorQ = "Prod"
    MsgBox stPorQ
