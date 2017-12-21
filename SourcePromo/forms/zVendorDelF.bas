@@ -430,7 +430,8 @@ Option Compare Database
 Option Explicit
 
 Private Sub Command17_Click()
-Debug.Print "x"
+Debug.Print "Form_zVendorDelF - Command17_Click"
+
 
 On Error GoTo Err_Command17_Click
 

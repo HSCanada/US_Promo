@@ -286,7 +286,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub NuRec_Click()
-Debug.Print "x"
+Debug.Print "Form_AlphaSF - NuRec_Click"
 On Error GoTo Err_NuRec_Click
 
 
@@ -302,7 +302,7 @@ Err_NuRec_Click:
 End Sub
 
 Private Sub Project_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_AlphaSF - Project_AfterUpdate"
 
 If IsNull(Me![Entered]) Then Me![Entered] = Format(Now(), "mm/dd/yyyy")
 

@@ -508,7 +508,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Report_Open(Cancel As Integer)
-Debug.Print "x"
+Debug.Print "Report_mMnSFSWOsR - Report_Open"
 
 If ZRptType() = "Default Promos" Then
     'MsgBox "OK"

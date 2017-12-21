@@ -12,7 +12,7 @@ Begin Form
     ItemSuffix =18
     Left =870
     Top =1410
-    Right =12285
+    Right =12330
     Bottom =4830
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
@@ -313,9 +313,9 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub CloseF_Click()
-Debug.Print "x"
-On Error GoTo Err_CloseF_Click
+Debug.Print "Form_NoPromoNotesF - CloseF_Click"
 
+On Error GoTo Err_CloseF_Click
 
     DoCmd.Close
 

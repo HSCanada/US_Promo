@@ -354,7 +354,8 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Close_Click()
-Debug.Print "x"
+Debug.Print "Form_BuyGetbyQtyYrF - Close_Click"
+
 On Error GoTo Err_Close_Click
 
 

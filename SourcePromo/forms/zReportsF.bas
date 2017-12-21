@@ -2723,7 +2723,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub BadTextS_Click()
-Debug.Print "BadTextS_Click"
+Debug.Print "Form_zReportsF - BadTextS_Click"
 
 On Error GoTo Err_BadTextS_Click
 
@@ -2757,7 +2757,7 @@ Err_BadTextS_Click:
 End Sub
 
 Private Sub Command1_Click()
-Debug.Print "Command1_Click"
+Debug.Print "Form_zReportsF - Command1_Click"
 
 On Error GoTo Err_Command1_Click
 
@@ -2776,7 +2776,7 @@ End Sub
 
 
 Private Sub xFSCRptByTyp_Click()
-Debug.Print "xFSCRptByTyp_Click"
+Debug.Print "Form_zReportsF - xFSCRptByTyp_Click"
 
 'On Error GoTo Err_FSCRptByTyp_Click
     
@@ -2806,7 +2806,7 @@ Debug.Print "Command151_Click"
 End Sub
 
 Private Sub CurrVsPriorNoSWOorDft_Click()
-Debug.Print "CurrVsPriorNoSWOorDft_Click"
+Debug.Print "Form_zReportsF - CurrVsPriorNoSWOorDft_Click"
 On Error GoTo Err_CurrVsPriorNoSWOorDft
 
     Dim stDocName As String
@@ -2823,25 +2823,25 @@ Err_CurrVsPriorNoSWOorDft:
 End Sub
 
 Private Sub EffMn_AfterUpdate()
-Debug.Print "EffMn_AfterUpdate"
+Debug.Print "Form_zReportsF - EffMn_AfterUpdate"
   Z_EffMn = Me![EffMn]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub EffQtr_AfterUpdate()
-Debug.Print "EffQtr_AfterUpdate"
+Debug.Print "Form_zReportsF - EffQtr_AfterUpdate"
   Z_EffQtr = Me![EffQtr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub EffYr_AfterUpdate()
-Debug.Print "EffYr_AfterUpdate"
+Debug.Print "Form_zReportsF - EffYr_AfterUpdate"
   Z_EffYr = Me![EffYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Form_Current()
-Debug.Print "Form_Current"
+Debug.Print "Form_zReportsF - Form_Current"
 On Error GoTo Err_Form_Current
 
 Me![TestEffDt] = Format(Now(), "mm/dd/yyyy")
@@ -2856,14 +2856,14 @@ Err_Form_Current:
 End Sub
 
 Private Sub Form_GotFocus()
-Debug.Print "Form_GotFocus"
+Debug.Print "Form_zReportsF - Form_GotFocus"
    Me.Refresh
 End Sub
 
 
 
 Private Sub LabWcodes_Click()
-Debug.Print "LabWcodes_Click"
+Debug.Print "Form_zReportsF - LabWcodes_Click"
 On Error GoTo Err_LabWcodes_Click
 
     Dim stDocName As String
@@ -2880,7 +2880,7 @@ Err_LabWcodes_Click:
 End Sub
 
 Private Sub MnNo_AfterUpdate()
-Debug.Print "MnNo_AfterUpdate"
+Debug.Print "Form_zReportsF - MnNo_AfterUpdate"
    Z_Var2 = Me![MnNo]
    'MsgBox ZVar2()
    Me.Refresh
@@ -2888,7 +2888,7 @@ Debug.Print "MnNo_AfterUpdate"
 End Sub
 
 Private Sub OnLineDtls_Click()
-Debug.Print "OnLineDtls_Click"
+Debug.Print "Form_zReportsF - OnLineDtls_Click"
 
 On Error GoTo Err_OnLineDtls_Click
 
@@ -2908,7 +2908,7 @@ Err_OnLineDtls_Click:
 End Sub
 
 Private Sub ProCode_AfterUpdate()
-Debug.Print "ProCode_AfterUpdate"
+Debug.Print "Form_zReportsF - ProCode_AfterUpdate"
 On Error GoTo Err_ProCode_AfterUpdate
 
     S_PrCd = Me![ProCode]
@@ -2923,7 +2923,7 @@ Err_ProCode_AfterUpdate:
 End Sub
 
 Private Sub ProCode_KeyPress(KeyAscii As Integer)
-Debug.Print "ProCode_KeyPress"
+Debug.Print "Form_zReportsF - ProCode_KeyPress"
 '   Dim strCharacter As String
     
     ' Convert ANSI value to character string.
@@ -2933,7 +2933,7 @@ Debug.Print "ProCode_KeyPress"
 End Sub
 
 Private Sub PromobyQw_oICsActive_Click()
-Debug.Print "PromobyQw_oICsActive_Click"
+Debug.Print "Form_zReportsF - PromobyQw_oICsActive_Click"
 On Error GoTo Err_PromobyQw_oICsActive_Click
 
     Dim stDocName As String
@@ -2950,7 +2950,7 @@ Err_PromobyQw_oICsActive_Click:
 End Sub
 
 Private Sub SSDPromo_Click()
-Debug.Print "SSDPromo_Click"
+Debug.Print "Form_zReportsF - SSDPromo_Click"
 On Error GoTo Err_SSDPromo_Click
 
     Dim stDocName As String
@@ -2968,7 +2968,7 @@ Err_SSDPromo_Click:
 End Sub
 
 Private Sub TestEffDt_AfterUpdate()
-Debug.Print "TestEffDt_AfterUpdate"
+Debug.Print "Form_zReportsF - TestEffDt_AfterUpdate"
 
     If IsNull(Me![TestEffDt]) Then
        Me![TestEffDt] = Format(Now(), "mm/dd/yyyy")
@@ -2985,7 +2985,7 @@ Debug.Print "TestEffDt_AfterUpdate"
 End Sub
 
 Private Sub TestEffDtS_AfterUpdate()
-Debug.Print "TestEffDtS_AfterUpdate"
+Debug.Print "Form_zReportsF - TestEffDtS_AfterUpdate"
 
     If IsNull(Me![TestEffDtS]) Then
        Me![TestEffDtS] = Format(Now(), "mm/dd/yyyy")
@@ -3002,19 +3002,19 @@ Debug.Print "TestEffDtS_AfterUpdate"
 End Sub
 
 Private Sub Text46_AfterUpdate()
-Debug.Print "Text46_AfterUpdate"
+Debug.Print "Form_zReportsF - Text46_AfterUpdate"
   Z_EffQtr = Me![EffQtr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Text48_AfterUpdate()
-Debug.Print "Text48_AfterUpdate"
+Debug.Print "Form_zReportsF - Text48_AfterUpdate"
   Z_EffYr = Me![EffYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub w_ICs_Click()
-Debug.Print "w_ICs_Click"
+Debug.Print "Form_zReportsF - w_ICs_Click"
 On Error GoTo Err_w_ICs_Click
 
     Dim stDocName As String
@@ -3032,8 +3032,11 @@ Err_w_ICs_Click:
 End Sub
 
 Private Sub PromoCmpICs_Click()
-Debug.Print "PromoCmpICs_Click"
+Debug.Print "Form_zReportsF - PromoCmpICs_Click"
+Debug.Assert False
+
 On Error GoTo Err_PromoCmpICs_Click
+
 
 Dim stDocName As String
 Dim intProCnt As Integer
@@ -3166,7 +3169,7 @@ Err_PromoCmpICs_Click:
 End Sub
 
 Private Sub ProWcodes_Click()
-Debug.Print "ProWcodes_Click"
+Debug.Print "Form_zReportsF - ProWcodes_Click"
 On Error GoTo Err_ProWcodes_Click
 
     Dim stDocName As String
@@ -3184,7 +3187,7 @@ Err_ProWcodes_Click:
 End Sub
 
 Private Sub PromobyQw_oICs_Click()
-Debug.Print "PromobyQw_oICs_Click"
+Debug.Print "Form_zReportsF - PromobyQw_oICs_Click"
 On Error GoTo Err_PromobyQw_oICs_Click
 
     Dim stDocName As String
@@ -3202,7 +3205,7 @@ Err_PromobyQw_oICs_Click:
 End Sub
 
 Private Sub ProDetails_Click()
-Debug.Print "ProDetails_Click"
+Debug.Print "Form_zReportsF - ProDetails_Click"
 On Error GoTo Err_ProDetails_Click
 
     Dim stDocName As String
@@ -3220,7 +3223,7 @@ Err_ProDetails_Click:
 End Sub
 
 Private Sub OpenProW_ICs_Click()
-Debug.Print "OpenProW_ICs_Click"
+Debug.Print "Form_zReportsF - OpenProW_ICs_Click"
 On Error GoTo Err_OpenProW_ICs_Click
 
     Cancel.Visible = True
@@ -3244,7 +3247,7 @@ Err_OpenProW_ICs_Click:
 End Sub
 
 Private Sub Cancel_Click()
-Debug.Print "Cancel_Click"
+Debug.Print "Form_zReportsF - Cancel_Click"
 On Error GoTo Err_Cancel_Click
 
     ProWcodes.Visible = False
@@ -3265,7 +3268,7 @@ Err_Cancel_Click:
 End Sub
 
 Private Sub ApprvDisplayNm_Click()
-Debug.Print "ApprvDisplayNm_Click"
+Debug.Print "Form_zReportsF - ApprvDisplayNm_Click"
 On Error GoTo Err_ApprvDisplayNm_Click
 
     Dim stDocName As String
@@ -3283,7 +3286,7 @@ Err_ApprvDisplayNm_Click:
 End Sub
 
 Private Sub NoDisplayNms_Click()
-Debug.Print "NoDisplayNms_Click"
+Debug.Print "Form_zReportsF - NoDisplayNms_Click"
 On Error GoTo Err_NoDisplayNms_Click
 
     Dim stDocName As String
@@ -3301,7 +3304,7 @@ Err_NoDisplayNms_Click:
 End Sub
 
 Private Sub MnSWO_Click()
-Debug.Print "MnSWO_Click"
+Debug.Print "Form_zReportsF - MnSWO_Click"
 On Error GoTo Err_MnSWO_Click
 
     Dim stDocName As String
@@ -3330,7 +3333,7 @@ Err_MnSWO_Click:
 End Sub
 
 Private Sub DftPromo_Click()
-Debug.Print "DftPromo_Click"
+Debug.Print "Form_zReportsF - DftPromo_Click"
 On Error GoTo Err_DftPromo_Click
 
     Dim stDocName As String
@@ -3352,7 +3355,7 @@ Err_DftPromo_Click:
 End Sub
 
 Private Sub Test_Click()
-Debug.Print "Test_Click"
+Debug.Print "Form_zReportsF - Test_Click"
 On Error GoTo Err_Test_Click
 
     Dim intISCode As String 'Integer '[CodeID] from [zItemSub] As [ISCode]
@@ -3386,7 +3389,7 @@ Err_Test_Click:
 End Sub
 
 Private Sub ZDftPromo_Click()
-Debug.Print "ZDftPromo_Click"
+Debug.Print "Form_zReportsF - ZDftPromo_Click"
 On Error GoTo Err_ZDftPromo_Click
 
     Dim stDocName As String
@@ -3407,26 +3410,26 @@ Err_ZDftPromo_Click:
 End Sub
 
 Private Sub ZEffMn_AfterUpdate()
-Debug.Print "ZEffMn_AfterUpdate"
+Debug.Print "Form_zReportsF - ZEffMn_AfterUpdate"
   Z_EffMn = Me![ZEffMn]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub ZNowGV_AfterUpdate()
-Debug.Print "ZNowGV_AfterUpdate"
+Debug.Print "Form_zReportsF - ZNowGV_AfterUpdate"
   Z_EffDate = Me![ZNowGV]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub ZEffYr_AfterUpdate()
-Debug.Print "ZEffYr_AfterUpdate"
+Debug.Print "Form_zReportsF - ZEffYr_AfterUpdate"
   Z_EffYr = Me![ZEffYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 
 Private Sub ZMnSWO_Click()
-Debug.Print "ZMnSWO_Click"
+Debug.Print "Form_zReportsF - ZMnSWO_Click"
 On Error GoTo Err_ZMnSWO_Click
 
     Dim stDocName As String
@@ -3447,7 +3450,7 @@ Err_ZMnSWO_Click:
 End Sub
 
 Private Sub DenCnvSpcR_Click()
-Debug.Print "DenCnvSpcR_Click"
+Debug.Print "Form_zReportsF - DenCnvSpcR_Click"
 On Error GoTo Err_DenCnvSpcR_Click
 
     Dim stDocName As String
@@ -3465,7 +3468,7 @@ Err_DenCnvSpcR_Click:
 End Sub
 
 Private Sub VndrListQ_Click()
-Debug.Print "VndrListQ_Click"
+Debug.Print "Form_zReportsF - VndrListQ_Click"
 On Error GoTo Err_VndrListQ_Click
 
     Dim stDocName As String
@@ -3483,7 +3486,7 @@ Err_VndrListQ_Click:
 End Sub
 
 Private Sub VndWOpromo_Click()
-Debug.Print "VndWOpromo_Click"
+Debug.Print "Form_zReportsF - VndWOpromo_Click"
 On Error GoTo Err_VndWOpromo_Click
 
     Dim stDocName As String
@@ -3501,7 +3504,7 @@ Err_VndWOpromo_Click:
 End Sub
 
 Private Sub CurrYrPromo_Click()
-Debug.Print "CurrYrPromo_Click"
+Debug.Print "Form_zReportsF - CurrYrPromo_Click"
 On Error GoTo Err_CurrYrPromo_Click
 
     Dim stDocName As String
@@ -3519,7 +3522,7 @@ Err_CurrYrPromo_Click:
 End Sub
 
 Private Sub CurrVsPrior_Click()
-Debug.Print "CurrVsPrior_Click"
+Debug.Print "Form_zReportsF - CurrVsPrior_Click"
 On Error GoTo Err_CurrVsPrior_Click
 
     Dim stDocName As String
@@ -3537,7 +3540,7 @@ Err_CurrVsPrior_Click:
 End Sub
 
 Private Sub ZhnAllDet_Click()
-Debug.Print "ZhnAllDet_Click"
+Debug.Print "Form_zReportsF - ZhnAllDet_Click"
 On Error GoTo Err_ZhnAllDet_Click
 
     Dim stDocName As String
@@ -3555,7 +3558,7 @@ Err_ZhnAllDet_Click:
 End Sub
 
 Private Sub ZahnNoICs_Click()
-Debug.Print "ZahnNoICs_Click"
+Debug.Print "Form_zReportsF - ZahnNoICs_Click"
 On Error GoTo Err_ZahnNoICs_Click
 
     Dim stDocName As String
@@ -3573,7 +3576,7 @@ Err_ZahnNoICs_Click:
 End Sub
 
 Private Sub LongRedeemVu_Click()
-Debug.Print "LongRedeemVu_Click"
+Debug.Print "Form_zReportsF - LongRedeemVu_Click"
 On Error GoTo Err_LongRedeemVu_Click
 
     Dim stDocName As String
@@ -3591,7 +3594,7 @@ Err_LongRedeemVu_Click:
 End Sub
 
 Private Sub RdmTextLenXceptns_Click()
-Debug.Print "RdmTextLenXceptns_Click"
+Debug.Print "Form_zReportsF - RdmTextLenXceptns_Click"
 On Error GoTo Err_RdmTextLenXceptns_Click
 
     Dim stDocName As String
@@ -3609,7 +3612,7 @@ Err_RdmTextLenXceptns_Click:
 End Sub
 
 Private Sub FSCRptNoRedeemOrICs_Click()
-Debug.Print "FSCRptNoRedeemOrICs_Click"
+Debug.Print "Form_zReportsF - FSCRptNoRedeemOrICs_Click"
 On Error GoTo Err_FSCRptNoRedeemOrICs_Click
 
     Dim stDocName As String
@@ -3627,7 +3630,7 @@ Err_FSCRptNoRedeemOrICs_Click:
 End Sub
 
 Private Sub ProdNmNDescUQ_Click()
-Debug.Print "ProdNmNDescUQ_Click"
+Debug.Print "Form_zReportsF - ProdNmNDescUQ_Click"
 On Error GoTo Err_ProdNmNDescUQ_Click
 
     Dim stDocName As String
@@ -3645,7 +3648,7 @@ Err_ProdNmNDescUQ_Click:
 End Sub
 
 Private Sub TabStop0_Click()
-Debug.Print "TabStop0_Click"
+Debug.Print "Form_zReportsF - TabStop0_Click"
 On Error GoTo Err_TabStop0_Click
 
 
@@ -3661,7 +3664,7 @@ Err_TabStop0_Click:
 End Sub
 
 Private Sub InvalidRdm_Click()
-Debug.Print "InvalidRdm_Click"
+Debug.Print "Form_zReportsF - InvalidRdm_Click"
 On Error GoTo Err_InvalidRdm_Click
 
     Dim stDocName As String
@@ -3679,7 +3682,7 @@ Err_InvalidRdm_Click:
 End Sub
 
 Private Sub MissingICs_Click()
-Debug.Print "MissingICs_Click"
+Debug.Print "Form_zReportsF - MissingICs_Click"
 
 On Error GoTo Err_MissingICs_Click
 
@@ -3698,7 +3701,7 @@ Err_MissingICs_Click:
 End Sub
 
 Private Sub DispVariants_Click()
-Debug.Print "DispVariants_Click"
+Debug.Print "Form_zReportsF - DispVariants_Click"
 On Error GoTo Err_DispVariants_Click
 
     Dim stDocName As String
@@ -3716,7 +3719,7 @@ Err_DispVariants_Click:
 End Sub
 
 Private Sub InvalidGet_Click()
-Debug.Print "x"
+Debug.Print "Form_zReportsF - InvalidGet_Click"
 On Error GoTo Err_InvalidGet_Click
 
     Dim stDocName As String
@@ -3734,7 +3737,7 @@ Err_InvalidGet_Click:
 End Sub
 
 Private Sub PromoByTypSel_Click()
-Debug.Print "PromoByTypSel_Click"
+Debug.Print "Form_zReportsF - PromoByTypSel_Click"
 On Error GoTo Err_PromoByTypSel_Click
 
     Dim stDocName As String
@@ -3757,7 +3760,7 @@ Err_PromoByTypSel_Click:
 End Sub
 
 Private Sub HiGetValu_Click()
-Debug.Print "HiGetValu_Click"
+Debug.Print "Form_zReportsF - HiGetValu_Click"
 On Error GoTo Err_HiGetValu_Click
 
     Dim stDocName As String
@@ -3775,7 +3778,7 @@ Err_HiGetValu_Click:
 End Sub
 
 Private Sub VndrParticByMn_Click()
-Debug.Print "VndrParticByMn_Click"
+Debug.Print "Form_zReportsF - VndrParticByMn_Click"
 On Error GoTo Err_VndrParticByMn_Click
 
     Dim stDocName As String
@@ -3793,7 +3796,7 @@ Err_VndrParticByMn_Click:
 End Sub
 
 Private Sub VnAdsByMnDesc_Click()
-Debug.Print "VnAdsByMnDesc_Click"
+Debug.Print "Form_zReportsF - VnAdsByMnDesc_Click"
 On Error GoTo Err_VnAdsByMnDesc_Click
 
     Dim stDocName As String
@@ -3811,7 +3814,7 @@ Err_VnAdsByMnDesc_Click:
 End Sub
 
 Private Sub Default_Promo_Price_Cntrl_Rpt_Click()
-Debug.Print "Default_Promo_Price_Cntrl_Rpt_Click_XXX"
+Debug.Print "Form_zReportsF - Default_Promo_Price_Cntrl_Rpt_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_Default_Promo_Price_Cntrl_Rpt_Click
@@ -3844,7 +3847,7 @@ Err_Default_Promo_Price_Cntrl_Rpt_Click:
 End Sub
 
 Private Sub MnQYr_Click()
-Debug.Print "MnQYr_Click"
+Debug.Print "Form_zReportsF - MnQYr_Click"
 
 On Error GoTo Err_MnQYr_Click
 
@@ -3861,7 +3864,7 @@ Err_MnQYr_Click:
 End Sub
 
 Private Sub VuDftArchFldr_Click()
-Debug.Print "VuDftArchFldr_Click_XXX"
+Debug.Print "Form_zReportsF - VuDftArchFldr_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_VuDftArchFldr_Click
@@ -3887,7 +3890,7 @@ Err_VuDftArchFldr_Click:
 End Sub
 
 Private Sub TurboTues_Click()
-Debug.Print "TurboTues_Click"
+Debug.Print "Form_zReportsF - TurboTues_Click"
 On Error GoTo Err_TurboTues_Click
 
     Dim stDocName As String
@@ -3908,7 +3911,7 @@ Err_TurboTues_Click:
 End Sub
 
 Private Sub BadText_Click()
-Debug.Print "BadText_Click"
+Debug.Print "Form_zReportsF - BadText_Click"
 On Error GoTo Err_BadText_Click
 
     Dim stDocName As String
@@ -3964,7 +3967,7 @@ Err_BadText_Click:
 End Sub
 
 Private Sub VuDivPrcR_Click()
-Debug.Print "VuDivPrcR_Click_XXX"
+Debug.Print "Form_zReportsF - VuDivPrcR_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_VuDivPrcR_Click

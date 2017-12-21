@@ -265,7 +265,7 @@ Begin Form
                         0xffffffff52006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff020000000a00030000000000c0000000 ,
-                        0x0000004600000000000000000000000080cf31dc8b64d30103000000800c0000 ,
+                        0x00000046000000000000000000000000d0608061f879d30103000000800c0000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -786,7 +786,7 @@ Begin Form
                     Top =615
                     Width =1860
                     TabIndex =12
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"Company Name\";\"\";\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SelGoVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCT zVendor.Company, zVendor.VendorCode, zVendor.CityStZip FROM zSub"
@@ -845,13 +845,14 @@ Option Explicit
 
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "x_PASS"
+Debug.Print "Form_zUnivSelPromoF - Form_Open"
+
 
    'Forms![zVendorSelRecF]![Company].SetFocus
 End Sub
 
 Private Sub Close_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivSelPromoF - Close_Click"
 On Error GoTo Err_Close_Click
 
     DoCmd.Close
@@ -866,7 +867,7 @@ Err_Close_Click:
 End Sub
 
 Private Sub SelGoVndr_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zUnivSelPromoF - SelGoVndr_AfterUpdate"
     ' Find the record that matches the control.
     'Dim rs As Object
 

@@ -314,7 +314,8 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Form_Activate()
-Debug.Print "x"
+Debug.Print "Form_DftLogFOld - Form_Activate"
+
 On Error GoTo Err_Form_Activate
 
 Dim NowDt As Date

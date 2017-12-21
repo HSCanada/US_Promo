@@ -12,10 +12,10 @@ Begin Form
     Width =9045
     DatasheetFontHeight =10
     ItemSuffix =66
-    Left =7575
-    Top =7830
-    Right =17910
-    Bottom =8670
+    Left =-18398
+    Top =-18833
+    Right =-16703
+    Bottom =-18833
     DatasheetGridlinesColor =12632256
     PaintPalette = Begin
         0x000301000000000000000000
@@ -643,7 +643,8 @@ Option Compare Database
 
 
 Private Sub CopyAdd_Click()
-Debug.Print "x"
+Debug.Print "Form_zItemFamSetF - CopyAdd_Click"
+
 On Error GoTo Err_CopyAdd_Click
 
     Dim stDocName As String
@@ -667,7 +668,7 @@ Err_CopyAdd_Click:
 End Sub
 
 Private Sub Form_Load()
-Debug.Print "x"
+Debug.Print "Form_zItemFamSetF - Form_Load"
 
 DoCmd.OpenQuery "ItemSubCopyAQ"  'Add check marks to all items
 
@@ -679,7 +680,7 @@ DoCmd.OpenQuery "ItemSubCopyAQ"  'Add check marks to all items
 End Sub
 
 Private Sub CloseIt_Click()
-Debug.Print "x"
+Debug.Print "Form_zItemFamSetF - CloseIt_Click"
 On Error GoTo Err_CloseIt_Click
 
 
@@ -695,7 +696,7 @@ Err_CloseIt_Click:
 End Sub
 
 Private Sub Command65_Click()
-Debug.Print "x"
+Debug.Print "Form_zItemFamSetF - Command65_Click"
 
 On Error GoTo Err_Command65_Click
 

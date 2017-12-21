@@ -1970,7 +1970,8 @@ Option Compare Database
 Option Explicit
 
 Private Sub ItemList_Click()
-Debug.Print "x"
+Debug.Print "Form_zPromoSubSSDF - ItemList_Click"
+
 On Error GoTo Err_ItemList_Click
 
     Dim stDocName As String

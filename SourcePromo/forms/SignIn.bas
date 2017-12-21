@@ -154,7 +154,7 @@ Begin Form
                         0x8000000052006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff02000000e33ffe89f69f1b10b6780402 ,
-                        0x1c00700200000000000000000000000030b2d7bc9a64d3010300000000010000 ,
+                        0x1c007002000000000000000000000000301b93bfef79d3010300000000010000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -2423,7 +2423,7 @@ Begin Form
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x00000000030000000ac1000008000000e93d0000ed06000000000000761e2685 ,
+                        0x00000000030000000ac1000008000000e93d0000ed06000000000000c60126c4 ,
                         0xffffffff0100090000037960000001009a5f00000000050000000b0200000000 ,
                         0x050000000c02ed06e93d030000001e00070000001604ed06e93d000000000500 ,
                         0x00000b0200000000050000000c02ed06e93d050000000b020000000003000000 ,
@@ -4581,7 +4581,8 @@ Attribute VB_Exposed = False
 Option Compare Database   'Use database order for string comparisons
 
 Private Sub Admin_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - Admin_Click"
+
 On Error GoTo Err_Admin_Click
 
     Dim DocName As String
@@ -4621,7 +4622,7 @@ Err_Admin_Click:
 End Sub
 
 Private Sub AdminLabel_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - AdminLabel_Click"
 On Error GoTo Err_AdminLabel_Click
 
     Dim DocName As String
@@ -4656,7 +4657,7 @@ End Sub
 
 
 Private Sub Close_Form2_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - Close_Form2_Click"
 On Error GoTo Err_Close_Form2_Click
 
     DoCmd.Close
@@ -4671,7 +4672,7 @@ Err_Close_Form2_Click:
 End Sub
 
 Private Sub Dept_Click()
-Debug.Print "Dept_Click_XXX"
+Debug.Print "Form_SignIn - Dept_Click"
 Debug.Assert False
 
 On Error GoTo Err_Dept_Click
@@ -4709,7 +4710,7 @@ Err_Dept_Click:
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "x"
+Debug.Print "Form_SignIn - Form_Open"
 
    Dim stDept As String
    
@@ -4729,7 +4730,7 @@ Debug.Print "x"
 End Sub
 
 Private Sub Form_Timer()
-Debug.Print "x"
+Debug.Print "Form_SignIn - Form_Timer"
 If IsNull(DLookup("[Fire]", "Defaults")) Then
    'MsgBox "No Warnings Found"
 Else
@@ -4742,12 +4743,12 @@ End If
 End Sub
 
 Private Sub GetItB_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - XXX"
     DoCmd.OpenForm "EditSubmF", acNormal
 End Sub
 
 Private Sub GetItUB_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - GetItUB_Click"
 On Error GoTo Err_GetItUB_Click
 
     Dim stUVC As String
@@ -4808,12 +4809,12 @@ Err_GetItUB_Click:
 End Sub
 
 Private Sub GetNewB_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - GetNewB_Click"
     DoCmd.OpenForm "EditSubmNewF", acNormal
 End Sub
 
 Private Sub NewTOC_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - NewTOC_Click"
 On Error GoTo Err_NewTOC_Click
 
     Dim stDocName As String
@@ -4834,7 +4835,7 @@ Err_NewTOC_Click:
 End Sub
 
 Private Sub NewTOCSTOC_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - NewTOCSTOC_Click"
 On Error GoTo Err_NewTOCSTOC_Click
 
     Dim stDocName As String
@@ -4855,7 +4856,7 @@ Err_NewTOCSTOC_Click:
 End Sub
 
 Private Sub GetNewUB_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - GetNewUB_Click"
 On Error GoTo Err_GetNewUB_Click
 
     Dim stUVC As String
@@ -4911,7 +4912,7 @@ End Sub
 
 
 Private Sub User_LostFocus()
-Debug.Print "x"
+Debug.Print "Form_SignIn - User_LostFocus"
    
    Dim UserNm As String
    Dim rs As Object
@@ -4985,7 +4986,7 @@ End If
 End Sub
 
 Private Sub Command319_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - Command319_Click"
 On Error GoTo Err_Command319_Click
 
 
@@ -5001,7 +5002,7 @@ Err_Command319_Click:
 End Sub
 
 Private Sub ICAdmin_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - ICAdmin_Click"
 On Error GoTo Err_ICAdmin_Click
 
     Dim stDocName As String
@@ -5055,7 +5056,7 @@ Err_ICAdmin_Click:
 End Sub
 
 Private Sub LabRpts_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - LabRpts_Click"
 On Error GoTo Err_LabRpts_Click
 
     Dim DocName As String
@@ -5091,7 +5092,7 @@ Err_LabRpts_Click:
 End Sub
 
 Private Sub LabScn_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - LabScn_Click"
 On Error GoTo Err_LabScn_Click
 
     Dim DocName As String
@@ -5128,7 +5129,7 @@ End Sub
 
 
 Private Sub UVC_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_SignIn - UVC_AfterUpdate"
  On Error GoTo Err_UVC_AfterUpdate
 'Use ZVC6() in NPFs to filter list of Display Names
 
@@ -5146,7 +5147,7 @@ Err_UVC_AfterUpdate:
 End Sub
 
 Private Sub MkToNow_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - XXX"
 On Error GoTo Err_MkToNow_Click
 
    Me![ToDt] = Format(Now(), "Short Date")
@@ -5161,7 +5162,7 @@ Err_MkToNow_Click:
 End Sub
 
 Private Sub OpenSel_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - OpenSel_Click"
 On Error GoTo Err_OpenSel_Click
 
     Dim stDocName As String
@@ -5181,7 +5182,7 @@ End Sub
 
 
 Private Sub Admin3_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - Admin3_Click"
 On Error GoTo Err_Admin3_Click
 
     Dim stDocName As String
@@ -5219,7 +5220,7 @@ Err_Admin3_Click:
 End Sub
 
 Private Sub OpenMain_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - OpenMain_Click"
 On Error GoTo Err_OpenMain_Click
 
     Dim stDocName As String
@@ -5238,7 +5239,7 @@ Err_OpenMain_Click:
 End Sub
 
 Private Sub OpenUnivF_Click()
-Debug.Print "x"
+Debug.Print "Form_SignIn - OpenUnivF_Click"
 On Error GoTo Err_OpenUnivF_Click
 
     Dim stDocName As String

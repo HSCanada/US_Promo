@@ -289,7 +289,7 @@ Begin Form
                         0x8000000052006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff02000000e33ffe89f69f1b10b6780402 ,
-                        0x1c007002000000000000000000000000207371ae4a78d3010300000000010000 ,
+                        0x1c00700200000000000000000000000040d5dcb0f479d3010300000000010000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -2558,8 +2558,8 @@ Begin Form
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x00000000030000000ac1000008000000e93d0000ed06000000000000f21a267a ,
-                        0x000000000100090000037960000001009a5f00000000050000000b0200000000 ,
+                        0x00000000030000000ac1000008000000e93d0000ed060000000000008a0126a0 ,
+                        0xffffffff0100090000037960000001009a5f00000000050000000b0200000000 ,
                         0x050000000c02ed06e93d030000001e00070000001604ed06e93d000000000500 ,
                         0x00000b0200000000050000000c02ed06e93d050000000b020000000003000000 ,
                         0x1e00070000001604ed06e93d00000000050000000b0200000000050000000c02 ,
@@ -4874,25 +4874,26 @@ Option Explicit
 
 
 Private Sub EffQtr_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - EffQtr_AfterUpdate"
+
   Z_EffQtr = Me![EffQtr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub EffYr_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - EffYr_AfterUpdate"
   Z_EffYr = Me![EffYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Form_Current()
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - Form_Current"
    Import.Visible = False
    CancelImp.Visible = False
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - Form_Open"
   Z_EffQtr = Me![EffQtr]
   Z_EffYr = Me![EffYr]
   Z_ImpQtr = Me![ImpQtr]
@@ -4900,7 +4901,7 @@ Debug.Print "x"
 End Sub
 
 Private Sub Import_Click()
-Debug.Print "Import_Click_XXX"
+Debug.Print "Form_zMainF2 - Import_Click"
 Debug.Assert False
 
 On Error GoTo Err_Import_Click
@@ -5014,19 +5015,19 @@ Err_Import_Click:
 End Sub
 
 Private Sub ImpQtr_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - ImpQtr_AfterUpdate"
   Z_ImpQtr = Me![ImpQtr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub ImpYr_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - ImpYr_AfterUpdate"
   Z_ImpYr = Me![ImpYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Reports_Click()
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - Reports_Click"
 On Error GoTo Err_Reports_Click
 
     Import.Visible = False
@@ -5046,7 +5047,7 @@ Err_Reports_Click:
 End Sub
 
 Private Sub Command1_Click()
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - Command1_Click"
 On Error GoTo Err_Command1_Click
 
 
@@ -5062,7 +5063,7 @@ Err_Command1_Click:
 End Sub
 
 Private Sub EditClubs_Click()
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - EditClubs_Click"
 On Error GoTo Err_EditClubs_Click
 
     Import.Visible = False
@@ -5082,7 +5083,7 @@ Err_EditClubs_Click:
 End Sub
 
 Private Sub SelID_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - SelID_AfterUpdate"
 On Error GoTo Err_SelID_Click
 
     Import.Visible = False
@@ -5105,7 +5106,7 @@ End Sub
 
 
 Private Sub SelVndr_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - SelVndr_AfterUpdate"
 On Error GoTo Err_SelVndr_Click
 
     Dim stDocName As String
@@ -5125,7 +5126,7 @@ Err_SelVndr_Click:
 End Sub
 
 Private Sub SetImp_Click()
-Debug.Print "SetImp_Click_XXX"
+Debug.Print "Form_zMainF2 - SetImp_Click"
 Debug.Assert False
 
 On Error GoTo Err_SetImp_Click
@@ -5167,7 +5168,7 @@ Err_SetImp_Click:
 End Sub
 
 Private Sub CancelImp_Click()
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - CancelImp_Click"
 On Error GoTo Err_CancelImp_Click
 
    Import.Visible = False
@@ -5182,7 +5183,7 @@ Err_CancelImp_Click:
 End Sub
 
 Private Sub Command18_Click()
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - Command18_Click"
 On Error GoTo Err_Command18_Click
 
 
@@ -5198,12 +5199,12 @@ Err_Command18_Click:
 End Sub
 
 Private Sub UpICDesc_GotFocus()
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - UpICDesc_GotFocus"
     Import.Visible = False
 End Sub
 
 Private Sub ViewAsLineItms_Click()
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - ViewAsLineItms_Click"
 On Error GoTo Err_ViewAsLineItms_Click
 
     Import.Visible = False
@@ -5223,7 +5224,7 @@ Err_ViewAsLineItms_Click:
 End Sub
 
 Private Sub Admin_Click()
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - Admin_Click"
 On Error GoTo Err_Admin_Click
 
     Dim stDocName As String
@@ -5242,7 +5243,7 @@ Err_Admin_Click:
 End Sub
 
 Private Sub Command33_Click()
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - Command33_Click"
 On Error GoTo Err_Command33_Click
 
     'DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -5271,7 +5272,7 @@ Err_Command33_Click:
 End Sub
 
 Private Sub VuSelQtr_Click()
-Debug.Print "x"
+Debug.Print "Form_zMainF2 - VuSelQtr_Click"
 On Error GoTo Err_VuSelQtr_Click
 
     Dim stDocName As String

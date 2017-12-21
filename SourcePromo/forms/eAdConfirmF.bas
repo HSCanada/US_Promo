@@ -18,10 +18,10 @@ Begin Form
     Width =3555
     DatasheetFontHeight =10
     ItemSuffix =2
-    Left =6735
-    Top =3840
-    Right =10635
-    Bottom =5295
+    Left =-18398
+    Top =-18833
+    Right =-16703
+    Bottom =-18833
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
         0x489a52d10d42e240
@@ -154,7 +154,8 @@ Option Compare Database
 Option Explicit
 
 Private Sub AdReplace_Click()
-Debug.Print "x"
+Debug.Print "Form_eAdConfirmF - AdReplace_Click"
+
 On Error GoTo Err_AdReplace_Click
 
     Z_Confirm = -1
@@ -170,7 +171,7 @@ Err_AdReplace_Click:
 End Sub
 
 Private Sub AdKeep_Click()
-Debug.Print "x"
+Debug.Print "Form_eAdConfirmF - AdKeep_Click"
 On Error GoTo Err_AdKeep_Click
 
     Z_Confirm = 0
@@ -186,7 +187,7 @@ Err_AdKeep_Click:
 End Sub
 
 Private Sub Command0_Click()
-Debug.Print "x"
+Debug.Print "Form_eAdConfirmF - Command0_Click"
 On Error GoTo Err_Command0_Click
 
 
@@ -202,6 +203,6 @@ Err_Command0_Click:
 End Sub
 
 Private Sub Form_Current()
-Debug.Print "x"
+Debug.Print "Form_eAdConfirmF - Form_Current"
     Z_Confirm = 0
 End Sub

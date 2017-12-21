@@ -2,15 +2,15 @@ config("3MD_CODE")
 
 config("APP_NAME")
 
-config("OPERATOR_EMAIL")
+config("OPERATOR_EMAIL")	Zepernick
 
 config("PATH_EXPORT_ECOM_PROD")
 
 config("PATH_EXPORT_MARKETING_PROD")
 
-config("PATH_MAIN_PROD")
+config("PATH_MAIN_PROD")	dentmkt
 
-config("PATH_MAIN_QA")
+config("PATH_MAIN_QA")		usny
 
 config("PATH_VIP_PROD")
 

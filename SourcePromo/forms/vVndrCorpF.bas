@@ -1825,7 +1825,8 @@ Option Compare Database   'Use database order for string comparisons
 
 
 Private Sub Deadline___Eff__Mont_Click()
-Debug.Print "x"
+Debug.Print "Form_vVndrCorpF - Deadline___Eff__Mont_Click"
+
 On Error GoTo Err_Deadline___Eff__Mont_Click
 
     Dim DocName As String
@@ -1844,7 +1845,7 @@ Err_Deadline___Eff__Mont_Click:
 End Sub
 
 Private Sub Exit_Deadlin_Mn_Click()
-Debug.Print "x"
+Debug.Print "Form_vVndrCorpF - Exit_Deadlin_Mn_Click"
 On Error GoTo Err_Exit_Deadlin_Mn_Click
 
     DoCmd.Close
@@ -1859,17 +1860,17 @@ Err_Exit_Deadlin_Mn_Click:
 End Sub
 
 Private Sub Form_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_vVndrCorpF - Form_AfterUpdate"
     DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Form_Close()
-Debug.Print "x"
+Debug.Print "Form_vVndrCorpF - Form_Close"
    DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Form_Current()
-Debug.Print "x_PASS"
+Debug.Print "Form_vVndrCorpF - Form_Current - PASS"
 
 'Dim stVC As String
 'D'im stCompany As String
@@ -1894,7 +1895,7 @@ End Sub
 
 
 Private Sub Open_Vndr_Edit_Form__Click()
-Debug.Print "x"
+Debug.Print "Form_vVndrCorpF - Open_Vndr_Edit_Form__Click"
 On Error GoTo Err_Open_Vndr_Edit_Form__Click
 
     Dim DocName As String
@@ -1913,7 +1914,7 @@ Err_Open_Vndr_Edit_Form__Click:
 End Sub
 
 Private Sub FaxCvrB_Click()
-Debug.Print "x"
+Debug.Print "Form_vVndrCorpF - FaxCvrB_Click"
 On Error GoTo Err_FaxCvrB_Click
 
     Dim stDocName As String
@@ -1936,7 +1937,7 @@ End Sub
 
 
 Private Sub Eml_Click()
-Debug.Print "x"
+Debug.Print "Form_vVndrCorpF - Eml_Click"
 On Error GoTo Err_Eml_Click
 
 'Send an email w/ bcc to user
@@ -1955,7 +1956,7 @@ End Sub
 
 
 Private Sub Close_Click()
-Debug.Print "x"
+Debug.Print "Form_vVndrCorpF - Close_Click"
 On Error GoTo Err_Close_Click
 
 

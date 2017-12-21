@@ -274,7 +274,7 @@ Begin Form
                         0xffffffff52006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff020000000a00030000000000c0000000 ,
-                        0x0000004600000000000000000000000050097ddc8b64d30103000000800c0000 ,
+                        0x0000004600000000000000000000000040652330f979d30103000000800c0000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -758,12 +758,13 @@ Option Compare Database
 Option Explicit
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "x"
+Debug.Print "Form_zVendorF - Form_Open"
+
 Forms![zVendorF]![Company].SetFocus
 End Sub
 
 Private Sub Close_Click()
-Debug.Print "x"
+Debug.Print "Form_zVendorF - Close_Click"
 On Error GoTo Err_Close_Click
 
 

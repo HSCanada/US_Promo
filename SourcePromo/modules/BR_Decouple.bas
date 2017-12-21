@@ -13,6 +13,7 @@ Private cConfig As Collection
 
 ' hard code this for now.  external file .env would be ideal
 Public Sub config_init()
+    Debug.Print "BR_Decouple.config_init"
     Set cConfig = New Collection
     
    
@@ -34,6 +35,7 @@ End Sub
 
 
 Public Function config(sParam As Variant) As String
+    Debug.Print "BR_Decouple.config_init(sParam=" & sParam & ")"
     Debug.Assert Not cConfig Is Nothing
     config = cConfig(sParam)
 End Function

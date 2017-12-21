@@ -1948,7 +1948,8 @@ Option Explicit
 
 
 Private Sub AdMn_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zVIPSubSelRecF - AdMn_AfterUpdate"
+
 On Error GoTo Err_AdMn_AfterUpdate
 
 Dim dbMn As Double
@@ -1975,17 +1976,17 @@ Err_AdMn_AfterUpdate:
 End Sub
 
 Private Sub Approvd_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zVIPSubSelRecF - Approvd_AfterUpdate"
     Me![ApprvDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub Deletd_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zVIPSubSelRecF - Deletd_AfterUpdate"
     Me![DelDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub DftPromo_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zVIPSubSelRecF - DftPromo_AfterUpdate"
     If Me![DftPromo] = -1 Then
        If IsNull(Me![SWO]) Then Me![SWO] = -1
     Else
@@ -1993,25 +1994,25 @@ Debug.Print "x"
 End Sub
 
 Private Sub EffMnth_LostFocus()
-Debug.Print "x"
+Debug.Print "Form_zVIPSubSelRecF - EffMnth_LostFocus"
 CopyRec.Visible = "False"
 End Sub
 
 Private Sub Form_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zVIPSubSelRecF - Form_AfterUpdate"
 If IsNull(Me!ID) Or Me!ID = "" Then
   Me!ID = Me!zVndDefProF.ID
 End If
 End Sub
 
 Private Sub Form_Current()
-Debug.Print "x_PASS"
+Debug.Print "Form_zVIPSubSelRecF - Form_Current"
 'If Me![DftSub] = -1 Then [DSbx].Visible = True
 
 End Sub
 
 Private Sub SWO_Click()
-Debug.Print "x"
+Debug.Print "Form_zVIPSubSelRecF - SWO_Click"
    If Me![DftPromo] = -1 Then
       MsgBox "There is Defaulted Promo text in the SubForm - which we remove for SWO only entries."
    Else
@@ -2019,7 +2020,7 @@ Debug.Print "x"
 End Sub
 
 Private Sub Type_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zVIPSubSelRecF - Type_AfterUpdate"
 On Error GoTo Err_Type_AfterUpdate
 
     Dim stType As String
@@ -2041,13 +2042,14 @@ Err_Type_AfterUpdate:
 End Sub
 
 Private Sub Unbnd_GotFocus()
-Debug.Print "x"
+Debug.Print "Form_zVIPSubSelRecF - Unbnd_GotFocus"
 Dim lngRed As Long
 lngRed = RGB(255, 0, 0)
 Me!Unbnd.BackColor = lngRed
 End Sub
 
 Private Sub ViewDet_Click()
+Debug.Print "Form_zVIPSubSelRecF - ViewDet_Click"
 On Error GoTo Err_ViewDet_Click
 
     Dim stDocName As String
@@ -2068,7 +2070,7 @@ Err_ViewDet_Click:
 End Sub
 
 Private Sub Export_Click()
-Debug.Print "x_PASS"
+Debug.Print "Form_zVIPSubSelRecF - Export_Click - PASS"
 On Error GoTo Err_Export_Click
 
 
@@ -2085,7 +2087,7 @@ Err_Export_Click:
 End Sub
 
 Private Sub CopyRec_Click()
-Debug.Print "x"
+Debug.Print "Form_zVIPSubSelRecF - CopyRec_Click"
 On Error GoTo Err_CopyRec_Click
 
 Z_RecOld = Me![RecID]
@@ -2146,7 +2148,7 @@ Err_CopyRec_Click:
 End Sub
 
 Private Sub CopyItems_Click()
-Debug.Print "x"
+Debug.Print "Form_zVIPSubSelRecF - CopyItems_Click"
 On Error GoTo Err_CopyItems_Click
 
 'Dim intRec As Integer
@@ -2168,7 +2170,7 @@ Err_CopyItems_Click:
 End Sub
 
 Private Sub ShowCopy_Click()
-Debug.Print "x"
+Debug.Print "Form_zVIPSubSelRecF - ShowCopy_Click"
 On Error GoTo Err_ShowCopy_Click
 
 HideCopy.Visible = "True"
@@ -2184,7 +2186,7 @@ Err_ShowCopy_Click:
 End Sub
 
 Private Sub HideCopy_Click()
-Debug.Print "x"
+Debug.Print "Form_zVIPSubSelRecF - HideCopy_Click"
 On Error GoTo Err_HideCopy_Click
 
 CopyRec.Visible = "False"

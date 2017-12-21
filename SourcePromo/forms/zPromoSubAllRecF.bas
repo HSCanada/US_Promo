@@ -580,7 +580,8 @@ Option Compare Database
 Option Explicit
 
 Private Sub ViewDet_Click()
-Debug.Print "x"
+Debug.Print "Form_zPromoSubALLRecF - ViewDet_Click"
+
 
 On Error GoTo Err_ViewDet_Click
 

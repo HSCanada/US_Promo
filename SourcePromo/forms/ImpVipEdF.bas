@@ -299,7 +299,8 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Close_Click()
-Debug.Print "x"
+Debug.Print "Form_ImpVipEdF - Close_Click"
+
 On Error GoTo Err_Close_Click
 
     DoCmd.Close
@@ -314,7 +315,7 @@ Err_Close_Click:
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "x"
+Debug.Print "Form_ImpVipEdF - Form_Open"
 On Error GoTo Err_Form_Open
 
 Dim x As Integer

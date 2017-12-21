@@ -11,10 +11,10 @@ Begin Form
     Width =14520
     DatasheetFontHeight =10
     ItemSuffix =14
-    Left =30
-    Top =150
-    Right =14835
-    Bottom =4830
+    Left =5415
+    Top =3090
+    Right =20220
+    Bottom =7710
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
         0x7854c0c66c9be340
@@ -377,7 +377,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub By_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_dbLogF - By_AfterUpdate"
 On Error GoTo Err_By_AfterUpdate
 
 If IsNull(Me![LogDate]) Then Me![LogDate] = Format(Now(), "mm/dd/yyyy")
@@ -391,7 +391,7 @@ Err_By_AfterUpdate:
 End Sub
 
 Private Sub Close_Click()
-Debug.Print "x"
+Debug.Print "Form_dbLogF - Close_Click"
 On Error GoTo Err_Close_Click
 
 

@@ -60,28 +60,27 @@ End
 Begin
     Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
         "nterfaceMacro MinimumClientDesignVersion=\"14.0.0000.0000\" xmlns=\"http://schem"
-        "as.microsoft.com/office/accessservices/2009/11/application\" xmlns:a=\"http://sc"
-        "hemas.microsoft.com/office/acc"
+        "as.microsoft.com/office/accessservices/2009/11/application\"><Statements><Commen"
+        "t>SetVer and Open</Comment><C"
 End
 Begin
-    Comment ="_AXL:essservices/2009/11/forms\"><Statements><Comment>SetVer and Open</Comment><"
-        "Comment>Off</Comment><Action Name=\"Echo\"><Argument Name=\"EchoOn\">No</Argumen"
-        "t></Action><Comment>[DefF]</Comment><Action Name=\"OpenForm\"><Argument Name=\"F"
-        "ormName\">DefF</Argume"
+    Comment ="_AXL:omment>Off</Comment><Action Name=\"Echo\"><Argument Name=\"EchoOn\">No</Arg"
+        "ument></Action><Comment>[DefF]</Comment><Action Name=\"OpenForm\"><Argument Name"
+        "=\"FormName\">DefF</Argument></Action><Action Name=\"CloseWindow\"><Argument Nam"
+        "e=\"ObjectType\">Form</Ar"
 End
 Begin
-    Comment ="_AXL:nt></Action><Action Name=\"CloseWindow\"><Argument Name=\"ObjectType\">Form"
-        "</Argument><Argument Name=\"ObjectName\">DefF</Argument></Action><Comment>[zMain"
-        "F] in Admin version</Comment><Action Name=\"OpenForm\"><Argument Name=\"FormName"
-        "\">DefaultsF</Argument>"
+    Comment ="_AXL:gument><Argument Name=\"ObjectName\">DefF</Argument></Action><Comment>[zMai"
+        "nF] in Admin version</Comment><Action Name=\"OpenForm\"><Argument Name=\"FormNam"
+        "e\">DefaultsF</Argument></Action><Action Name=\"CloseWindow\"><Argument Name=\"O"
+        "bjectType\">Form</Argum"
 End
 Begin
-    Comment ="_AXL:</Action><Action Name=\"CloseWindow\"><Argument Name=\"ObjectType\">Form</A"
-        "rgument><Argument Name=\"ObjectName\">DefaultsF</Argument></Action><Action Name="
-        "\"OpenForm\"><Argument Name=\"FormName\">zMainF</Argument></Action><Comment>Open"
-        "Form [VIPpromosF] in .."
+    Comment ="_AXL:ent><Argument Name=\"ObjectName\">DefaultsF</Argument></Action><Action Name"
+        "=\"OpenForm\"><Argument Name=\"FormName\">zMainF</Argument></Action><Comment>Ope"
+        "nForm [VIPpromosF] in ...</Comment><Action Name=\"MaximizeWindow\"/><Action Name"
+        "=\"Echo\"/></Statements"
 End
 Begin
-    Comment ="_AXL:.</Comment><Action Name=\"MaximizeWindow\"/><Action Name=\"Echo\"/></Statem"
-        "ents></UserInterfaceMacro>"
+    Comment ="_AXL:></UserInterfaceMacro>"
 End

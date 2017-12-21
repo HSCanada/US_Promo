@@ -12,9 +12,10 @@ Begin Form
     Width =19230
     DatasheetFontHeight =10
     ItemSuffix =38
-    Top =645
-    Right =14880
-    Bottom =4830
+    Left =3060
+    Top =3240
+    Right =22575
+    Bottom =7380
     DatasheetGridlinesColor =12632256
     OrderBy ="zVendor.ID"
     RecSrcDt = Begin
@@ -634,7 +635,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub CloseF_Click()
-Debug.Print "x"
+Debug.Print "Form_zVndrNoEmlF - CloseF_Click"
 
 On Error GoTo Err_CloseF_Click
 

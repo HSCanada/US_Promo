@@ -128,7 +128,7 @@ Begin Form
                         0x8000000052006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff02000000e33ffe89f69f1b10b6780402 ,
-                        0x1c0070020000000000000000000000009064a5664878d3010300000000010000 ,
+                        0x1c007002000000000000000000000000d016f5c7c679d3010300000000010000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -2397,7 +2397,7 @@ Begin Form
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x00000000030000000ac1000008000000e93d0000ed06000000000000531c2689 ,
+                        0x00000000030000000ac1000008000000e93d0000ed060000000000005b1f2694 ,
                         0xffffffff0100090000037960000001009a5f00000000050000000b0200000000 ,
                         0x050000000c02ed06e93d030000001e00070000001604ed06e93d000000000500 ,
                         0x00000b0200000000050000000c02ed06e93d050000000b020000000003000000 ,
@@ -5291,7 +5291,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Command26_Click()
-Debug.Print "Command26_Click"
+Debug.Print "Form_zAdminF - Command26_Click"
 On Error GoTo Err_Command26_Click
 
 
@@ -5307,7 +5307,7 @@ Err_Command26_Click:
 End Sub
 
 Private Sub EdContacts_Click()
-Debug.Print "EdContacts_Click"
+Debug.Print "Form_zAdminF - EdContacts_Click"
 On Error GoTo Err_EdContacts_Click
 
     Dim stDocName As String
@@ -5327,7 +5327,7 @@ Err_EdContacts_Click:
 End Sub
 
 Private Sub ItmSubReadDescUpDt_Click()
-Debug.Print "ItmSubReadDescUpDt_Click"
+Debug.Print "Form_zAdminF - ItmSubReadDescUpDt_Click"
 On Error GoTo Err_ItmSubReadDescUpDt_Click
 
     Dim stDocName As String
@@ -5345,7 +5345,7 @@ Err_ItmSubReadDescUpDt_Click:
 End Sub
 
 Private Sub SelVndr_AfterUpdate()
-Debug.Print "SelVndr_AfterUpdate"
+Debug.Print "Form_zAdminF - SelVndr_AfterUpdate"
 On Error GoTo Err_SelVndr_AfterUpdate
 
     Dim stDocName As String
@@ -5364,18 +5364,18 @@ Err_SelVndr_AfterUpdate:
 End Sub
 
 Private Sub SelVndr_Enter()
-Debug.Print "SelVndr_Enter"
+Debug.Print "Form_zAdminF - SelVndr_Enter"
     DoCmd.Requery "SelVndr"
 End Sub
 
 Private Sub VndLst_AfterUpdate()
-Debug.Print "VndLst_AfterUpdate"
+Debug.Print "Form_zAdminF - VndLst_AfterUpdate"
    Z_SelVC = Me![VndLst]
    MsgBox ZSelVC()
 End Sub
 
 Private Sub WCSUpDt_Click()
-Debug.Print "WCSUpDt_Click"
+Debug.Print "Form_zAdminF - WCSUpDt_Click"
 On Error GoTo Err_WCSUpDt_Click
 
     Dim stDocName As String
@@ -5411,7 +5411,7 @@ Err_CancelAS400UpDt_Click:
 End Sub
 
 Private Sub StartAS400UpDt_Click()
-Debug.Print "StartAS400UpDt_Click"
+Debug.Print "Form_zAdminF - StartAS400UpDt_Click"
 On Error GoTo Err_StartAS400UpDt_Click
 
     MsgBox "Are you sure?  Running this update will mean you can't do anything for at least 5 minutes."
@@ -5429,7 +5429,7 @@ Err_StartAS400UpDt_Click:
 End Sub
 
 Private Sub UpDtALLICs_Click()
-Debug.Print "UpDtALLICs_Click"
+Debug.Print "Form_zAdminF - UpDtALLICs_Click"
 On Error GoTo Err_UpDtALLICs_Click
 
     Dim stDocName As String
@@ -5447,7 +5447,7 @@ Err_UpDtALLICs_Click:
 End Sub
 
 Private Sub VNDCompLst_Click()
-Debug.Print "VNDCompLst_Click_XXX"
+Debug.Print "Form_zAdminF - VNDCompLst_Click"
 Debug.Assert False
 
 On Error GoTo Err_VNDCompLst_Click
@@ -5477,7 +5477,7 @@ Err_VNDCompLst_Click:
 End Sub
 
 Private Sub VCList_Click()
-Debug.Print "VCList_Click"
+Debug.Print "Form_zAdminF - VCList_Click"
 On Error GoTo Err_VCList_Click
 
     Dim stDocName As String
@@ -5495,7 +5495,7 @@ Err_VCList_Click:
 End Sub
 
 Private Sub AS400UpDt_Click()
-Debug.Print "AS400UpDt_Click_XXX"
+Debug.Print "Form_zAdminF - AS400UpDt_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_AS400UpDt_Click
@@ -5515,7 +5515,7 @@ Err_AS400UpDt_Click:
 End Sub
 
 Private Sub DelOrphans_Click()
-Debug.Print "DelOrphans_Click"
+Debug.Print "Form_zAdminF - DelOrphans_Click"
 On Error GoTo Err_DelOrphans_Click
 
     Dim stDocName As String
@@ -5533,7 +5533,7 @@ Err_DelOrphans_Click:
 End Sub
 
 Private Sub DelOrphanPromos_Click()
-Debug.Print "DelOrphanPromos_Click"
+Debug.Print "Form_zAdminF - DelOrphanPromos_Click"
 On Error GoTo Err_DelOrphanPromos_Click
 
     Dim stDocName As String
@@ -5551,7 +5551,7 @@ Err_DelOrphanPromos_Click:
 End Sub
 
 Private Sub VuICList_Click()
-Debug.Print "VuICList_Click"
+Debug.Print "Form_zAdminF - VuICList_Click"
 On Error GoTo Err_VuICList_Click
 
     Dim stDocName As String
@@ -5570,7 +5570,7 @@ Err_VuICList_Click:
 End Sub
 
 Private Sub DelVndrDups_Click()
-Debug.Print "DelVndrDups_Click"
+Debug.Print "Form_zAdminF - DelVndrDups_Click"
 On Error GoTo Err_DelVndrDups_Click
 
     Dim stDocName As String
@@ -5589,7 +5589,7 @@ Err_DelVndrDups_Click:
 End Sub
 
 Private Sub BuyGets_Click()
-Debug.Print "BuyGets_Click"
+Debug.Print "Form_zAdminF - BuyGets_Click"
 On Error GoTo Err_BuyGets_Click
 
     Dim stDocName As String
@@ -5608,7 +5608,7 @@ Err_BuyGets_Click:
 End Sub
 
 Private Sub Upgrades_Click()
-Debug.Print "Upgrades_Click"
+Debug.Print "Form_zAdminF - Upgrades_Click"
 On Error GoTo Err_Upgrades_Click
 
     Dim stDocName As String
@@ -5627,7 +5627,7 @@ Err_Upgrades_Click:
 End Sub
 
 Private Sub VuVipICs_Click()
-Debug.Print "VuVipICs_Click"
+Debug.Print "Form_zAdminF - VuVipICs_Click"
 On Error GoTo Err_VuVipICs_Click
 
     Dim stDocName As String
@@ -5647,7 +5647,7 @@ Err_VuVipICs_Click:
 End Sub
 
 Private Sub VuOrphanPromos_Click()
-Debug.Print "VuOrphanPromos_Click"
+Debug.Print "Form_zAdminF - VuOrphanPromos_Click"
 On Error GoTo Err_VuOrphanPromos_Click
 
     Dim stDocName As String
@@ -5666,7 +5666,7 @@ Err_VuOrphanPromos_Click:
 End Sub
 
 Private Sub PromoNoItem_Click()
-Debug.Print "PromoNoItem_Click"
+Debug.Print "Form_zAdminF - PromoNoItem_Click"
 On Error GoTo Err_PromoNoItem_Click
 
     Dim stDocName As String
@@ -5684,7 +5684,7 @@ Err_PromoNoItem_Click:
 End Sub
 
 Private Sub E3SzLftDgtsQ_Click()
-Debug.Print "E3SzLftDgtsQ_Click"
+Debug.Print "Form_zAdminF - E3SzLftDgtsQ_Click"
 
 On Error GoTo Err_E3SzLftDgtsQ_Click
 
@@ -5703,7 +5703,7 @@ Err_E3SzLftDgtsQ_Click:
 End Sub
 
 Private Sub E3NmSizeAvlVndLDigitsQ_Click()
-Debug.Print "E3NmSizeAvlVndLDigitsQ_Click"
+Debug.Print "Form_zAdminF - E3NmSizeAvlVndLDigitsQ_Click"
 
 On Error GoTo Err_E3NmSizeAvlVndLDigitsQ_Click
 
@@ -5722,7 +5722,7 @@ Err_E3NmSizeAvlVndLDigitsQ_Click:
 End Sub
 
 Private Sub VIPitmFile_Click()
-Debug.Print "VIPitmFile_Click"
+Debug.Print "Form_zAdminF - VIPitmFile_Click"
 
 On Error GoTo Err_VIPitmFile_Click
 
@@ -5749,7 +5749,7 @@ Err_VIPitmFile_Click:
 End Sub
 
 Private Sub ProdNmNDescUQ_Click()
-Debug.Print "ProdNmNDescUQ_Click"
+Debug.Print "Form_zAdminF - ProdNmNDescUQ_Click"
 
 On Error GoTo Err_ProdNmNDescUQ_Click
 
@@ -5776,7 +5776,7 @@ Err_ProdNmNDescUQ_Click:
 End Sub
 
 Private Sub zItmSbDescUpDt_Click()
-Debug.Print "zItmSbDescUpDt_Click"
+Debug.Print "Form_zAdminF - zItmSbDescUpDt_Click"
 On Error GoTo Err_zItmSbDescUpDt_Click
 
     Dim stDocName As String
@@ -5802,7 +5802,7 @@ Err_zItmSbDescUpDt_Click:
 End Sub
 
 Private Sub zSubVCMissing_Click()
-Debug.Print "zSubVCMissing_Click"
+Debug.Print "Form_zAdminF - zSubVCMissing_Click"
 On Error GoTo Err_zSubVCMissing_Click
 
     Dim stDocName As String

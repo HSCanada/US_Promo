@@ -45,7 +45,7 @@ Begin Form
         End
         Begin Section
             CanGrow = NotDefault
-            Height =9000
+            Height =8970
             BackColor =-2147483633
             Name ="Detail"
             Begin
@@ -168,7 +168,8 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Close_Click()
-Debug.Print "x"
+Debug.Print "Form_mReadF - Close_Click"
+
 On Error GoTo Err_Close_Click
 
 

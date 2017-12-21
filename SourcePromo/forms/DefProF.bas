@@ -541,7 +541,8 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub DftFlier_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_DefProF - DftFlier_AfterUpdate"
+
 If Not IsNull(Me!DftFlier) Then Me!DftPromo = -1
 If Not IsNull(Me!DftFlier) Then Forms![zPromoF]![DftPromo] = -1
 'If IsNull(Forms![zPromoF]![DftPromo]) Then Forms![zPromoF]![DftPromo] = -1
@@ -549,7 +550,7 @@ Me.Refresh
 End Sub
 
 Private Sub DftPromo_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_DefProF - DftPromo_AfterUpdate"
 On Error GoTo Err_DftPromo_AfterUpdate
 
 If Me![DftPromo] = -1 Then Me![DivPrc] = 0
@@ -563,7 +564,7 @@ Err_DftPromo_AfterUpdate:
 End Sub
 
 Private Sub DivPrc_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_DefProF - DivPrc_AfterUpdate"
 On Error GoTo Err_DivPrc_AfterUpdate
 
 If Me![DivPrc] = -1 Then Me![DftPromo] = 0
@@ -577,7 +578,7 @@ Err_DivPrc_AfterUpdate:
 End Sub
 
 Private Sub Dt_Click()
-Debug.Print "x"
+Debug.Print "Form_DefProF - Dt_Click"
 On Error GoTo Err_Dt_Click
 
 Dim dtEff As Date
@@ -606,12 +607,12 @@ Err_Dt_Click:
 End Sub
 
 Private Sub ProCd_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_DefProF - ProCd_AfterUpdate"
 If Not IsNull(Me!ProCd) Then Me!DftPromo = -1
 End Sub
 
 Private Sub InFly_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_DefProF - InFly_AfterUpdate"
 'If Not IsNull(Me!DftFlier) Then
 Me!DftPromo = -1
 'If Not IsNull(Me!DftFlier) Then

@@ -15,8 +15,8 @@ Begin Form
     ItemSuffix =283
     Left =165
     Top =240
-    Right =7485
-    Bottom =11865
+    Right =25830
+    Bottom =14880
     TimerInterval =60000
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
@@ -84,6 +84,7 @@ Begin Form
             OldBorderStyle =1
         End
         Begin Section
+            CanGrow = NotDefault
             Height =15225
             BackColor =8421376
             Name ="Detail"
@@ -373,7 +374,7 @@ Begin Form
                         0x8000000052006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff02000000e33ffe89f69f1b10b6780402 ,
-                        0x1c007002000000000000000000000000c06138ae4a78d3010300000000010000 ,
+                        0x1c00700200000000000000000000000080866f34fc79d3010300000000010000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -2642,7 +2643,7 @@ Begin Form
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x00000000030000000ac1000008000000e93d0000ed06000000000000a2192670 ,
+                        0x00000000030000000ac1000008000000e93d0000ed060000000000000919262d ,
                         0x000000000100090000037960000001009a5f00000000050000000b0200000000 ,
                         0x050000000c02ed06e93d030000001e00070000001604ed06e93d000000000500 ,
                         0x00000b0200000000050000000c02ed06e93d050000000b020000000003000000 ,
@@ -4747,7 +4748,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =22
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SelVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCT zVendor.ID, zVendor.Company FROM zVendor INNER JOIN zPromo ON zV"
@@ -4824,7 +4825,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =23
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SFselVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCTROW zVendor.ID, zVendor.Company FROM zVendor ORDER BY zVendor.Com"
@@ -5630,9 +5631,13 @@ Begin Form
                     OverlapFlags =255
                     Left =2655
                     Top =10245
-                    Width =3990
-                    Height =3675
+                    Width =4065
+                    Height =4065
                     Name ="Box97"
+                    LayoutCachedLeft =2655
+                    LayoutCachedTop =10245
+                    LayoutCachedWidth =6720
+                    LayoutCachedHeight =14310
                 End
                 Begin Label
                     FontItalic = NotDefault
@@ -5667,17 +5672,17 @@ Begin Form
                     SpecialEffect =0
                     BackStyle =1
                     OverlapFlags =247
-                    Left =2625
-                    Top =10155
-                    Width =4395
-                    Height =3915
+                    Left =2574
+                    Top =10086
+                    Width =4380
+                    Height =4305
                     BackColor =8421376
                     BorderColor =8421376
                     Name ="Box100"
-                    LayoutCachedLeft =2625
-                    LayoutCachedTop =10155
-                    LayoutCachedWidth =7020
-                    LayoutCachedHeight =14070
+                    LayoutCachedLeft =2574
+                    LayoutCachedTop =10086
+                    LayoutCachedWidth =6954
+                    LayoutCachedHeight =14391
                 End
                 Begin Label
                     OverlapFlags =247
@@ -5946,7 +5951,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =47
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="Combo119"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCTROW zVendor.ID, zVendor.Company FROM zVendor ORDER BY zVendor.Com"
@@ -6026,7 +6031,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =49
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SelMnByVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCT zVendor.ID, zVendor.Company FROM zVendor INNER JOIN zPromo ON zV"
@@ -6456,18 +6461,6 @@ Begin Form
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
                     WebImagePaddingBottom =1
-                End
-                Begin Label
-                    OverlapFlags =215
-                    TextAlign =2
-                    Left =2700
-                    Top =4485
-                    Width =3960
-                    Height =180
-                    FontSize =6
-                    Name ="Label24"
-                    Caption ="\\\\usnym3fs03\\Data\\Dental\\dentmkt\\Promo\\ProData\\Promo.xls"
-                    FontName ="Small Fonts"
                 End
                 Begin CommandButton
                     OverlapFlags =247
@@ -7778,7 +7771,7 @@ Begin Form
                     TabIndex =103
                     BorderColor =12632256
                     Name ="EffDate"
-                    ControlSource ="EffDate"
+                    ControlSource ="DftEff"
                     Format ="mm/dd/yyyy"
                     FontName ="Small Fonts"
                     InputMask ="99/99/0000"
@@ -7796,7 +7789,7 @@ Begin Form
                     TabIndex =104
                     BorderColor =12632256
                     Name ="ExpDate"
-                    ControlSource ="ExpDate"
+                    ControlSource ="EDtExp"
                     Format ="mm/dd/yyyy"
                     FontName ="Small Fonts"
                     InputMask ="99/99/0000"
@@ -7820,7 +7813,7 @@ Begin Form
                     BoundColumn =1
                     BorderColor =12632256
                     Name ="EffMnth"
-                    ControlSource ="EffMnth"
+                    ControlSource ="EffMn"
                     RowSourceType ="Value List"
                     RowSource ="\"January\";1;\"February\";2;\"March\";3;\"April\";4;\"May\";5;\"June\";6;\"July"
                         "\";7;\"August\";8;\"September\";9;\"October\";10;\"November\";11;\"December\";12"
@@ -10781,7 +10774,7 @@ Begin Form
                     End
                     Picture ="HenryScheinDentalClrOnWhtMed.JPG"
 
-                    TabIndex =136
+                    TabIndex =138
                 End
                 Begin CommandButton
                     OverlapFlags =247
@@ -11080,21 +11073,6 @@ Begin Form
                     WebImagePaddingRight =1
                     WebImagePaddingBottom =1
                     Overlaps =1
-                End
-                Begin Label
-                    OverlapFlags =215
-                    Left =75
-                    Top =10965
-                    Width =2415
-                    Height =240
-                    FontSize =7
-                    Name ="Label258"
-                    Caption ="X:\\Dental\\1User Data Marketing\\SWO"
-                    FontName ="Small Fonts"
-                    LayoutCachedLeft =75
-                    LayoutCachedTop =10965
-                    LayoutCachedWidth =2490
-                    LayoutCachedHeight =11205
                 End
                 Begin ComboBox
                     OverlapFlags =247
@@ -11601,6 +11579,47 @@ Begin Form
                     LayoutCachedWidth =2520
                     LayoutCachedHeight =4740
                 End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =215
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =75
+                    Top =10965
+                    Width =2415
+                    FontSize =7
+                    TabIndex =136
+                    Name ="Label258"
+                    ControlSource ="=config(\"PATH_EXPORT_MARKETING_PROD\") & \"SWO\""
+                    FontName ="Small Fonts"
+
+                    LayoutCachedLeft =75
+                    LayoutCachedTop =10965
+                    LayoutCachedWidth =2490
+                    LayoutCachedHeight =11205
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =215
+                    TextAlign =2
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2700
+                    Top =4485
+                    Width =3960
+                    Height =180
+                    FontSize =6
+                    TabIndex =137
+                    Name ="Label24"
+                    ControlSource ="=config(\"PATH_MAIN_PROD\") & \"Promo\\ProData\\Promo.xls\""
+                    FontName ="Small Fonts"
+
+                    LayoutCachedLeft =2700
+                    LayoutCachedTop =4485
+                    LayoutCachedWidth =6660
+                    LayoutCachedHeight =4665
+                End
             End
         End
     End
@@ -11614,7 +11633,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Cancel23_Click()
-Debug.Print "Cancel23_Click"
+Debug.Print "Form_zMainF - Cancel23_Click"
 On Error GoTo Err_Cancel23_Click
 
    If Copy23.Enabled = True Then Copy23.Visible = False
@@ -11644,7 +11663,7 @@ Err_CancelPaste_Click:
 End Sub
 
 Private Sub Copy23_Click()
-Debug.Print "Copy23_Click"
+Debug.Print "Form_zMainF - Copy23_Click"
 On Error GoTo Err_Copy23_Click
 
 Dim CMnYr As String
@@ -11769,7 +11788,7 @@ Err_Copy23_Click:
 End Sub
 
 Private Sub CopyDoIt_Click()
-Debug.Print "CopyDoIt_Click"
+Debug.Print "Form_zMainF - CopyDoIt_Click"
 On Error GoTo Err_CopyDoIt_Click
 
 Dim CMnYr As String
@@ -11896,7 +11915,7 @@ Err_CopyDoIt_Click:
 End Sub
 
 Private Sub CopyPaste23_Click()
-Debug.Print "CopyPaste23_Click"
+Debug.Print "Form_zMainF - CopyPaste23_Click"
 
 On Error GoTo Err_Copy23_Click
 
@@ -11912,7 +11931,7 @@ Err_Copy23_Click:
 End Sub
 
 Private Sub CopyPasteMn_Click()
-Debug.Print "CopyPasteMn_Click"
+Debug.Print "Form_zMainF - CopyPasteMn_Click"
 
 On Error GoTo Err_CopyPasteMn_Click
 
@@ -11928,7 +11947,7 @@ Err_CopyPasteMn_Click:
 End Sub
 
 Private Sub Form_Load()
-Debug.Print "Form_Load"
+Debug.Print "Form_zMainF - Form_Load"
 
 
 CommandBars.ActiveMenuBar.Enabled = True 'Turn Access' Menu Bar ON !!
@@ -11942,7 +11961,7 @@ Z_User = LCase(Environ("USERNAME"))
 End Sub
 
 Private Sub NullBuyOrIC_Click()
-Debug.Print "NullBuyOrIC_Click"
+Debug.Print "Form_zMainF - NullBuyOrIC_Click"
 
 On Error GoTo Err_NullBuyOrIC_Click
 
@@ -11962,36 +11981,36 @@ Err_NullBuyOrIC_Click:
 End Sub
 
 Private Sub EDtEff_AfterUpdate()
-Debug.Print "EDtEff_AfterUpdate"
+Debug.Print "Form_zMainF - EDtEff_AfterUpdate"
   
   Z_EDtEff = Me![EDtEff]
 End Sub
 
 Private Sub EDtExp_AfterUpdate()
-Debug.Print "EDtExp_AfterUpdate"
+Debug.Print "Form_zMainF - EDtExp_AfterUpdate"
    Z_EDtExp = Me![EDtExp]
 End Sub
 
 Private Sub EffMn_AfterUpdate()
-Debug.Print "EffMn_AfterUpdate"
+Debug.Print "Form_zMainF - EffMn_AfterUpdate"
   Z_EffMn = Me![EffMn]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub EffQtr_AfterUpdate()
-Debug.Print "EffQtr_AfterUpdate"
+Debug.Print "Form_zMainF - EffQtr_AfterUpdate"
   Z_EffQtr = Me![EffQtr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub EffYr_AfterUpdate()
-Debug.Print "EffYr_AfterUpdate"
+Debug.Print "Form_zMainF - EffYr_AfterUpdate"
   Z_EffYr = Me![EffYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Form_Current()
-Debug.Print "Form_Current"
+Debug.Print "Form_zMainF - Form_Current"
    'Import Promos from Spreadsheet Process
    Import.Visible = False
    CancelImp.Visible = False
@@ -12004,8 +12023,7 @@ Debug.Print "Form_Current"
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "Form_Open-XXX"
-' Debug.Assert False
+Debug.Print "Form_zMainF - Form_Open"
 
 Dim strConnectString As String
 Dim strFilePath As String
@@ -12049,7 +12067,7 @@ Dim td As DAO.TableDef
 End Sub
 
 Private Sub Form_Timer()
-Debug.Print "Form_Timer"
+Debug.Print "Form_zMainF - Form_Timer"
 
 If IsNull(DLookup("[Fire]", "Defaults")) Then
    'MsgBox "No Warnings Found"
@@ -12063,7 +12081,7 @@ End If
 End Sub
 
 Private Sub Import_Click()
-Debug.Print "Import_Click-XXX"
+Debug.Print "Form_zMainF - Import_Click"
 Debug.Assert False
 
 On Error GoTo Err_Import_Click
@@ -12210,27 +12228,27 @@ Err_Import_Click:
 End Sub
 
 Private Sub ImpQtr_AfterUpdate()
-Debug.Print "ImpQtr_AfterUpdate"
+Debug.Print "Form_zMainF - ImpQtr_AfterUpdate"
 
   Z_ImpQtr = Me![ImpQtr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub ImpYr_AfterUpdate()
-Debug.Print "ImpYr_AfterUpdate"
+Debug.Print "Form_zMainF - ImpYr_AfterUpdate"
 
   Z_ImpYr = Me![ImpYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub PCVar_AfterUpdate()
-Debug.Print "PCVar_AfterUpdate"
+Debug.Print "Form_zMainF - PCVar_AfterUpdate"
 
   S_WOPC = Me![PCVar]
 End Sub
 
 Private Sub Reports_Click()
-Debug.Print "Reports_Click"
+Debug.Print "Form_zMainF - Reports_Click"
 
 On Error GoTo Err_Reports_Click
 
@@ -12254,7 +12272,7 @@ Err_Reports_Click:
     
 End Sub
 Private Sub Command1_Click()
-Debug.Print "Command1_Click"
+Debug.Print "Form_zMainF - Command1_Click"
 
 On Error GoTo Err_Command1_Click
 
@@ -12270,7 +12288,7 @@ Err_Command1_Click:
     
 End Sub
 Private Sub EditClubs_Click()
-Debug.Print "EditClubs_Click"
+Debug.Print "Form_zMainF - EditClubs_Click"
 
 On Error GoTo Err_EditClubs_Click
 
@@ -12291,7 +12309,7 @@ Err_EditClubs_Click:
 End Sub
 
 Private Sub SelID_AfterUpdate()
-Debug.Print "SelID_AfterUpdate"
+Debug.Print "Form_zMainF - SelID_AfterUpdate"
 
 On Error GoTo Err_SelID_Click
 
@@ -12315,7 +12333,7 @@ End Sub
 
 
 Private Sub SelMnByVndr_AfterUpdate()
-Debug.Print "SelMnByVndr_AfterUpdate"
+Debug.Print "Form_zMainF - SelMnByVndr_AfterUpdate"
 
 On Error GoTo Err_SelMnByVndr_Click
 
@@ -12337,7 +12355,7 @@ Err_SelMnByVndr_Click:
 End Sub
 
 Private Sub SelVndr_AfterUpdate()
-Debug.Print "SelVndr_AfterUpdate"
+Debug.Print "Form_zMainF - SelVndr_AfterUpdate"
 
 On Error GoTo Err_SelVndr_Click
 
@@ -12359,7 +12377,7 @@ End Sub
 
 
 Private Sub SetImp_Click()
-Debug.Print "SetImp_Click-XXX"
+Debug.Print "Form_zMainF - SetImp_Click-XXX"
 Debug.Assert False
 
 On Error GoTo Err_SetImp_Click
@@ -12399,7 +12417,7 @@ Err_SetImp_Click:
     
 End Sub
 Private Sub CancelImp_Click()
-Debug.Print "CancelImp_Click"
+Debug.Print "Form_zMainF - CancelImp_Click"
 
 On Error GoTo Err_CancelImp_Click
 
@@ -12416,7 +12434,7 @@ Err_CancelImp_Click:
     
 End Sub
 Private Sub Command18_Click()
-Debug.Print "Command18_Click"
+Debug.Print "Form_zMainF - Command18_Click"
 
 On Error GoTo Err_Command18_Click
 
@@ -12433,21 +12451,21 @@ Err_Command18_Click:
 End Sub
 
 Private Sub SetZDftEff_AfterUpdate()
-Debug.Print "SetZDftEff_AfterUpdate"
+Debug.Print "Form_zMainF - SetZDftEff_AfterUpdate"
 
     Z_DftEff = Me!SetZDftEff
     MsgBox "I have set ZDftEff() to " & ZDftEff()
 End Sub
 
 Private Sub SetZDftEff2_AfterUpdate()
-Debug.Print "SetZDftEff2_AfterUpdate"
+Debug.Print "Form_zMainF - SetZDftEff2_AfterUpdate"
 
     Z_DftEff2 = Me!SetZDftEff2
     MsgBox "I have set ZDftEff2() to " & ZDftEff2()
 End Sub
 
 Private Sub SFselVndr_AfterUpdate()
-Debug.Print "SFselVndr_AfterUpdate"
+Debug.Print "Form_zMainF - SFselVndr_AfterUpdate"
 
 On Error GoTo Err_SelSFVndr_AfterUpdate
 
@@ -12469,7 +12487,7 @@ Err_SelSFVndr_AfterUpdate:
 End Sub
 
 Private Sub SWOPrcCntrlRpt_AfterUpdate()
-Debug.Print "SWOPrcCntrlRpt_AfterUpdate"
+Debug.Print "Form_zMainF - SWOPrcCntrlRpt_AfterUpdate"
 
 On Error GoTo Err_SWOPrcCntrlRpt_AfterUpdate
 
@@ -12515,7 +12533,7 @@ Err_SWOPrcCntrlRpt_AfterUpdate:
 End Sub
 
 Private Sub SWOrpt_AfterUpdate()
-Debug.Print "SWOrpt_AfterUpdate"
+Debug.Print "Form_zMainF - SWOrpt_AfterUpdate"
 
 On Error GoTo Err_SWOrpt_AfterUpdate
 
@@ -12553,7 +12571,7 @@ Err_SWOrpt_AfterUpdate:
 End Sub
 
 Private Sub SWOStart_AfterUpdate()
-Debug.Print "SWOStart_AfterUpdate"
+Debug.Print "Form_zMainF - SWOStart_AfterUpdate"
 
 On Error GoTo Err_SWOStart_AfterUpdate
 
@@ -12610,13 +12628,13 @@ Debug.Print "Text213_AfterUpdate"
 End Sub
 
 Private Sub UpICDesc_GotFocus()
-Debug.Print "UpICDesc_GotFocus"
+Debug.Print "Form_zMainF - UpICDesc_GotFocus"
 
     Import.Visible = False
 End Sub
 
 Private Sub ViewAsLineItms_Click()
-Debug.Print "ViewAsLineItms_Click"
+Debug.Print "Form_zMainF - ViewAsLineItms_Click"
 
 On Error GoTo Err_ViewAsLineItms_Click
 
@@ -12636,7 +12654,7 @@ Err_ViewAsLineItms_Click:
     
 End Sub
 Private Sub Admin_Click()
-Debug.Print "Admin_Click"
+Debug.Print "Form_zMainF - Admin_Click"
 
 On Error GoTo Err_Admin_Click
 
@@ -12656,7 +12674,7 @@ Err_Admin_Click:
 End Sub
 
 Private Sub Command33_Click()
-Debug.Print "Command33_Click"
+Debug.Print "Form_zMainF - Command33_Click"
 
 On Error GoTo Err_Command33_Click
 
@@ -12686,7 +12704,7 @@ Err_Command33_Click:
 End Sub
 
 Private Sub VuImps_Click()
-Debug.Print "VuImps_Click"
+Debug.Print "Form_zMainF - VuImps_Click"
 
 On Error GoTo Err_VuImps_Click
 
@@ -12703,7 +12721,7 @@ Err_VuImps_Click:
 End Sub
 
 Private Sub VuSelQtr_Click()
-Debug.Print "VuSelQtr_Click"
+Debug.Print "Form_zMainF - VuSelQtr_Click"
 
 On Error GoTo Err_VuSelQtr_Click
 
@@ -12726,7 +12744,7 @@ Err_VuSelQtr_Click:
 End Sub
 
 Private Sub SeekPromoByIC_Click()
-Debug.Print "SeekPromoByIC_Click"
+Debug.Print "Form_zMainF - SeekPromoByIC_Click"
 
 On Error GoTo Err_SeekPromoByIC_Click
 
@@ -12749,7 +12767,7 @@ Err_SeekPromoByIC_Click:
 End Sub
 
 Private Sub ViewAllPromo_Click()
-Debug.Print "ViewAllPromo_Click"
+Debug.Print "Form_zMainF - ViewAllPromo_Click"
 
 On Error GoTo Err_ViewAllPromo_Click
 
@@ -12769,7 +12787,7 @@ Err_ViewAllPromo_Click:
 End Sub
 
 Private Sub EUpDt_Click()
-Debug.Print "EUpDt_Click-XXX"
+Debug.Print "Form_zMainF - EUpDt_Click"
 Debug.Assert False
 
 On Error GoTo Err_EUpDt_Click
@@ -13109,7 +13127,7 @@ Err_Command68_Click:
 End Sub
 
 Private Sub EdVndrs_Click()
-Debug.Print "EdVndrs_Click"
+Debug.Print "Form_zMainF - EdVndrs_Click"
 
 On Error GoTo Err_EdVndrs_Click
 
@@ -13129,7 +13147,7 @@ Err_EdVndrs_Click:
 End Sub
 
 Private Sub WorkZone_Click()
-Debug.Print "WorkZone_Click"
+Debug.Print "Form_zMainF - WorkZone_Click"
 
 On Error GoTo Err_WorkZone_Click
 
@@ -13149,7 +13167,7 @@ Err_WorkZone_Click:
 End Sub
 
 Private Sub EdPromos_Click()
-Debug.Print "EdPromos_Click"
+Debug.Print "Form_zMainF - EdPromos_Click"
 
 On Error GoTo Err_EdPromos_Click
 
@@ -13169,7 +13187,7 @@ Err_EdPromos_Click:
 End Sub
 
 Private Sub EmlScn_Click()
-Debug.Print "EmlScn_Click"
+Debug.Print "Form_zMainF - EmlScn_Click"
 
 On Error GoTo Err_EmlScn_Click
 
@@ -13191,7 +13209,7 @@ Err_EmlScn_Click:
 End Sub
 
 Private Sub VuMn_Click()
-Debug.Print "VuMn_Click"
+Debug.Print "Form_zMainF - VuMn_Click"
 
 On Error GoTo Err_VuMn_Click
 
@@ -13213,7 +13231,7 @@ Err_VuMn_Click:
 End Sub
 
 Private Sub VipUpDts_Click()
-Debug.Print "VipUpDts_Click"
+Debug.Print "Form_zMainF - VipUpDts_Click"
 
 On Error GoTo Err_VipUpDts_Click
 
@@ -13232,7 +13250,7 @@ Err_VipUpDts_Click:
 End Sub
 
 Private Sub VIPsubmits_Click()
-Debug.Print "VIPsubmits_Click"
+Debug.Print "Form_zMainF - VIPsubmits_Click"
 
 On Error GoTo Err_VIPsubmits_Click
 
@@ -13251,7 +13269,7 @@ Err_VIPsubmits_Click:
 End Sub
 
 Private Sub VIPadmin_Click()
-Debug.Print "VIPadmin_Click"
+Debug.Print "Form_zMainF - VIPadmin_Click"
 
 On Error GoTo Err_VIPadmin_Click
 
@@ -13271,7 +13289,7 @@ Err_VIPadmin_Click:
 End Sub
 
 Private Sub UpDtBuySet_Click()
-Debug.Print "UpDtBuySet_Click"
+Debug.Print "Form_zMainF - UpDtBuySet_Click"
 
 On Error GoTo Err_UpDtBuySet_Click
     '*************************************************************************
@@ -13318,7 +13336,7 @@ Err_UpDtBuySet_Click:
 End Sub
 
 Private Sub NullBuyOrItem_Click()
-Debug.Print "NullBuyOrItem_Click"
+Debug.Print "Form_zMainF - NullBuyOrItem_Click"
 
 On Error GoTo Err_NullBuyOrItem_Click
 
@@ -13337,7 +13355,7 @@ Err_NullBuyOrItem_Click:
 End Sub
 
 Private Sub PathFinder_Click()
-Debug.Print "PathFinder_Click"
+Debug.Print "Form_zMainF - PathFinder_Click"
 
 On Error GoTo Err_PathFinder_Click
 
@@ -13359,7 +13377,7 @@ Err_PathFinder_Click:
 End Sub
 
 Private Sub Utilities_Click()
-Debug.Print "Utilities_Click"
+Debug.Print "Form_zMainF - Utilities_Click"
 
 
 On Error GoTo Err_Utilities_Click
@@ -13380,7 +13398,7 @@ Err_Utilities_Click:
 End Sub
 
 Private Sub VuBuyPartCnts_Click()
-Debug.Print "VuBuyPartCnts_Click"
+Debug.Print "Form_zMainF - VuBuyPartCnts_Click"
 
 On Error GoTo Err_VuBuyPartCnts_Click
 
@@ -13400,7 +13418,7 @@ Err_VuBuyPartCnts_Click:
 End Sub
 
 Private Sub UpDtVer_Click()
-Debug.Print "UpDtVer_Click"
+Debug.Print "Form_zMainF - UpDtVer_Click"
 
 On Error GoTo Err_UpDtVer_Click
 
@@ -13420,7 +13438,7 @@ Err_UpDtVer_Click:
 End Sub
 
 Private Sub zBuyXcptns_Click()
-Debug.Print "zBuyXcptns_Click"
+Debug.Print "Form_zMainF - zBuyXcptns_Click"
 
 On Error GoTo Err_zBuyXcptns_Click
 
@@ -13439,7 +13457,7 @@ Err_zBuyXcptns_Click:
 End Sub
 
 Private Sub ICsXcptions_Click()
-Debug.Print "ICsXcptions_Click"
+Debug.Print "Form_zMainF - ICsXcptions_Click"
 
 On Error GoTo Err_ICsXcptions_Click
 
@@ -13458,6 +13476,7 @@ Err_ICsXcptions_Click:
 End Sub
 
 Private Sub Log_Click()
+Debug.Print "Form_zMainF - Log_Click"
 
 On Error GoTo Err_Log_Click
 
@@ -13479,7 +13498,7 @@ Err_Log_Click:
 End Sub
 
 Private Sub VuEComXport_Click()
-Debug.Print "VuEComXport_Click"
+Debug.Print "Form_zMainF - VuEComXport_Click"
 
 On Error GoTo Err_VuEComXport_Click
 
@@ -13499,7 +13518,7 @@ Err_VuEComXport_Click:
 End Sub
 
 Private Sub VuVndrByID_Click()
-Debug.Print "VuVndrByID_Click"
+Debug.Print "Form_zMainF - VuVndrByID_Click"
 
 On Error GoTo Err_VuVndrByID_Click
 
@@ -13519,7 +13538,7 @@ Err_VuVndrByID_Click:
 End Sub
 
 Private Sub VuVndrByAlpha_Click()
-Debug.Print "VuVndrByAlpha_Click"
+Debug.Print "Form_zMainF - VuVndrByAlpha_Click"
 
 On Error GoTo Err_VuVndrByAlpha_Click
 
@@ -13539,7 +13558,7 @@ Err_VuVndrByAlpha_Click:
 End Sub
 
 Private Sub VuZBuyXport_Click()
-Debug.Print "VuZBuyXport_Click"
+Debug.Print "Form_zMainF - VuZBuyXport_Click"
 
 On Error GoTo Err_VuZBuyXport_Click
 
@@ -13559,7 +13578,7 @@ Err_VuZBuyXport_Click:
 End Sub
 
 Private Sub TestBNP_Click()
-Debug.Print "TestBNP_Click"
+Debug.Print "Form_zMainF - TestBNP_Click"
 
 On Error GoTo Err_TestBNP_Click
 
@@ -13592,7 +13611,7 @@ Err_TestBNP_Click:
 End Sub
 
 Private Sub ShoUpDt_Click()
-Debug.Print "ShoUpDt_Click"
+Debug.Print "Form_zMainF - ShoUpDt_Click"
 
 
 On Error GoTo Err_ShoUpDt_Click
@@ -13610,7 +13629,7 @@ Err_ShoUpDt_Click:
 End Sub
 
 Private Sub CancelUpDt_Click()
-Debug.Print "CancelUpDt_Click"
+Debug.Print "Form_zMainF - CancelUpDt_Click"
 
 On Error GoTo Err_CancelUpDt_Click
 
@@ -13626,7 +13645,7 @@ Err_CancelUpDt_Click:
 End Sub
 
 Private Sub VuPromoDups_Click()
-Debug.Print "VuPromoDups_Click"
+Debug.Print "Form_zMainF - VuPromoDups_Click"
 
 On Error GoTo Err_VuPromoDups_Click
 
@@ -13645,7 +13664,7 @@ Err_VuPromoDups_Click:
 End Sub
 
 Private Sub MasterLookup_Click()
-Debug.Print "MasterLookup_Click"
+Debug.Print "Form_zMainF - MasterLookup_Click"
 
 On Error GoTo Err_MasterLookup_Click
 
@@ -13664,7 +13683,7 @@ Err_MasterLookup_Click:
 End Sub
 
 Private Sub ManAdd_Click()
-Debug.Print "ManAdd_Click"
+Debug.Print "Form_zMainF - ManAdd_Click"
 
 On Error GoTo Err_ManAdd_Click
 
@@ -13684,7 +13703,7 @@ Err_ManAdd_Click:
 End Sub
 
 Private Sub DataChks_Click()
-Debug.Print "DataChks_Click"
+Debug.Print "Form_zMainF - DataChks_Click"
 
 On Error GoTo Err_DataChks_Click
 
@@ -13704,7 +13723,7 @@ Err_DataChks_Click:
 End Sub
 
 Private Sub zItmSbDescUpDt_Click()
-Debug.Print "zItmSbDescUpDt_Click"
+Debug.Print "Form_zMainF - zItmSbDescUpDt_Click"
 
 On Error GoTo Err_zItmSbDescUpDt_Click
 
@@ -13723,7 +13742,7 @@ Err_zItmSbDescUpDt_Click:
 End Sub
 
 Private Sub zItmSubDescChk_Click()
-Debug.Print "zItmSubDescChk_Click"
+Debug.Print "Form_zMainF - zItmSubDescChk_Click"
 
 On Error GoTo Err_zItmSubDescChk_Click
 
@@ -13742,7 +13761,7 @@ Err_zItmSubDescChk_Click:
 End Sub
 
 Private Sub ItmSubReadDescUpDt_Click()
-Debug.Print "ItmSubReadDescUpDt_Click"
+Debug.Print "Form_zMainF - ItmSubReadDescUpDt_Click"
 
 On Error GoTo Err_ItmSubReadDescUpDt_Click
 
@@ -13761,7 +13780,7 @@ Err_ItmSubReadDescUpDt_Click:
 End Sub
 
 Private Sub zItemSubDescAllUpDtNulls_Click()
-Debug.Print "zItemSubDescAllUpDtNulls_Click"
+Debug.Print "Form_zMainF - zItemSubDescAllUpDtNulls_Click"
 
 On Error GoTo Err_zItemSubDescAllUpDtNulls_Click
 
@@ -13780,7 +13799,7 @@ Err_zItemSubDescAllUpDtNulls_Click:
 End Sub
 
 Private Sub NonParticipants_Click()
-Debug.Print "NonParticipants_Click"
+Debug.Print "Form_zMainF - NonParticipants_Click"
 
 On Error GoTo Err_NonParticipants_Click
 
@@ -13799,7 +13818,7 @@ Err_NonParticipants_Click:
 End Sub
 
 Private Sub PromoContacts_Click()
-Debug.Print "PromoContacts_Click"
+Debug.Print "Form_zMainF - PromoContacts_Click"
 
 On Error GoTo Err_PromoContacts_Click
 
@@ -13818,7 +13837,7 @@ Err_PromoContacts_Click:
 End Sub
 
 Private Sub NoEml_Click()
-Debug.Print "NoEml_Click"
+Debug.Print "Form_zMainF - NoEml_Click"
 
 On Error GoTo Err_NoEml_Click
 
@@ -13837,7 +13856,7 @@ Err_NoEml_Click:
 End Sub
 
 Private Sub PromoEmls_Click()
-Debug.Print "PromoEmls_Click"
+Debug.Print "Form_zMainF - PromoEmls_Click"
 
 On Error GoTo Err_PromoEmls_Click
 
@@ -13856,7 +13875,7 @@ Err_PromoEmls_Click:
 End Sub
 
 Private Sub DftOnly_Click()
-Debug.Print "DftOnly_Click"
+Debug.Print "Form_zMainF - DftOnly_Click"
 
 On Error GoTo Err_DftOnly_Click
 
@@ -13881,7 +13900,7 @@ Err_DftOnly_Click:
 End Sub
 
 Private Sub VndDefPro_Click()
-Debug.Print "VndDefPro_Click"
+Debug.Print "Form_zMainF - VndDefPro_Click"
 
 On Error GoTo Err_VndDefPro_Click
 
@@ -13908,7 +13927,7 @@ Err_VndDefPro_Click:
 End Sub
 
 Private Sub NoEmlList_Click()
-Debug.Print "NoEmlList_Click"
+Debug.Print "Form_zMainF - NoEmlList_Click"
 
 On Error GoTo Err_NoEmlList_Click
 
@@ -13928,7 +13947,7 @@ Err_NoEmlList_Click:
 End Sub
 
 Private Sub EmlCYQ1_Click()
-Debug.Print "EmlCYQ1_Click"
+Debug.Print "Form_zMainF - EmlCYQ1_Click"
 
 On Error GoTo Err_EmlCYQ1_Click
 
@@ -13947,7 +13966,7 @@ Err_EmlCYQ1_Click:
 End Sub
 
 Private Sub EmlCYQ2_Click()
-Debug.Print "EmlCYQ2_Click"
+Debug.Print "Form_zMainF - EmlCYQ2_Click"
 
 On Error GoTo Err_EmlCYQ2_Click
 
@@ -13966,7 +13985,7 @@ Err_EmlCYQ2_Click:
 End Sub
 
 Private Sub EmlCYQ3_Click()
-Debug.Print "EmlCYQ3_Click"
+Debug.Print "Form_zMainF - EmlCYQ3_Click"
 
 On Error GoTo Err_EmlCYQ3_Click
 
@@ -13985,7 +14004,7 @@ Err_EmlCYQ3_Click:
 End Sub
 
 Private Sub EmlCYQ4_Click()
-Debug.Print "EmlCYQ4_Click"
+Debug.Print "Form_zMainF - EmlCYQ4_Click"
 
 On Error GoTo Err_EmlCYQ4_Click
 
@@ -14004,7 +14023,7 @@ Err_EmlCYQ4_Click:
 End Sub
 
 Private Sub EmlNYQ1_Click()
-Debug.Print "EmlNYQ1_Click"
+Debug.Print "Form_zMainF - EmlNYQ1_Click"
 
 On Error GoTo Err_EmlNYQ1_Click
 
@@ -14023,7 +14042,7 @@ Err_EmlNYQ1_Click:
 End Sub
 
 Private Sub EdNoPromoNtz_Click()
-Debug.Print "EdNoPromoNtz_Click"
+Debug.Print "Form_zMainF - EdNoPromoNtz_Click"
 
 On Error GoTo Err_EdNoPromoNtz_Click
 
@@ -14043,7 +14062,7 @@ Err_EdNoPromoNtz_Click:
 End Sub
 
 Private Sub ztst_Click()
-Debug.Print "ztst_Click"
+Debug.Print "Form_zMainF - ztst_Click"
 
 On Error GoTo Err_ztst_Click
 
@@ -14065,7 +14084,7 @@ Err_ztst_Click:
 End Sub
 
 Private Sub EmailzReadPromoMktToQ_Click()
-Debug.Print "EmailzReadPromoMktToQ_Click"
+Debug.Print "Form_zMainF - EmailzReadPromoMktToQ_Click"
 
 On Error GoTo Err_EmailzReadPromoMktToQ_Click
 
@@ -14084,7 +14103,7 @@ Err_EmailzReadPromoMktToQ_Click:
 End Sub
 
 Private Sub DaBuzzaQ_Click()
-Debug.Print "DaBuzzaQ_Click"
+Debug.Print "Form_zMainF - DaBuzzaQ_Click"
 
 On Error GoTo Err_DaBuzzaQ_Click
 
@@ -14103,7 +14122,7 @@ Err_DaBuzzaQ_Click:
 End Sub
 
 Private Sub VuVars_Click()
-Debug.Print "VuVars_Click"
+Debug.Print "Form_zMainF - VuVars_Click"
 
 On Error GoTo Err_VuVars_Click
 
@@ -14127,7 +14146,7 @@ Err_VuVars_Click:
 End Sub
 
 Private Sub VuYrsProCds_Click()
-Debug.Print "VuYrsProCds_Click"
+Debug.Print "Form_zMainF - VuYrsProCds_Click"
 
 On Error GoTo Err_VuYrsProCds_Click
 
@@ -14147,7 +14166,7 @@ Err_VuYrsProCds_Click:
 End Sub
 
 Private Sub FlyFreeGoods_Click()
-Debug.Print "FlyFreeGoods_Click"
+Debug.Print "Form_zMainF - FlyFreeGoods_Click"
 
 On Error GoTo Err_FlyFreeGoods_Click
 
@@ -14184,7 +14203,7 @@ Err_FlyFreeGoods_Click:
 End Sub
 
 Private Sub AddByProCd_Click()
-Debug.Print "AddByProCd_Click"
+Debug.Print "Form_zMainF - AddByProCd_Click"
 
 
 On Error GoTo Err_AddByProCd_Click
@@ -14202,7 +14221,7 @@ Err_AddByProCd_Click:
 End Sub
 
 Private Sub GloVarRGZ_Click()
-Debug.Print "GloVarRGZ_Click"
+Debug.Print "Form_zMainF - GloVarRGZ_Click"
 
 On Error GoTo Err_GloVarRGZ_Click
 
@@ -14221,7 +14240,7 @@ Err_GloVarRGZ_Click:
 End Sub
 
 Private Sub VuDivPrc_Click()
-Debug.Print "VuDivPrc_Click"
+Debug.Print "Form_zMainF - VuDivPrc_Click"
 
 On Error GoTo Err_VuDivPrc_Click
 
@@ -14245,9 +14264,4 @@ Err_VuDivPrc_Click:
     MsgBox Err.Description
     Resume Exit_VuDivPrc_Click
     
-End Sub
-
-
-Sub test1()
-Debug.Print "help"
 End Sub

@@ -88,7 +88,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "Form_Open_XXX"
+Debug.Print "Form_VipImportAppF - Form_Open"
 Debug.Assert False
 
 

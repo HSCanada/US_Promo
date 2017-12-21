@@ -13,7 +13,7 @@ Begin Form
     Right =13830
     Bottom =5850
     RecSrcDt = Begin
-        0x9c95ee73cb83e240
+        0x6d4022c1390ae540
     End
     RecordSource ="SELECT DISTINCTROW CorpList.RecID, CorpList.Company, CorpList.VendorCode, CorpLi"
         "st.VC6digit, CorpList.LN, CorpList.FN, CorpList.email, CorpList.DCMktTo, CorpLis"

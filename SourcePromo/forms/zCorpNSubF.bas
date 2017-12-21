@@ -768,7 +768,8 @@ Option Compare Database
 Option Explicit
 
 Private Sub Close_Click()
-Debug.Print "x"
+Debug.Print "Form_zCorpNsubF - Close_Click"
+
 On Error GoTo Err_Close_Click
 
     DoCmd.Close
@@ -783,7 +784,7 @@ Err_Close_Click:
 End Sub
 
 Private Sub Form_Close()
-Debug.Print "x"
+Debug.Print "Form_zCorpNsubF - Form_Close"
 On Error GoTo Err_Form_Close
 
     Dim stDocName As String

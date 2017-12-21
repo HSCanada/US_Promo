@@ -12,10 +12,10 @@ Begin Form
     Width =14460
     DatasheetFontHeight =10
     ItemSuffix =34
-    Left =7935
-    Top =9840
-    Right =15075
-    Bottom =18780
+    Left =7920
+    Top =825
+    Right =15060
+    Bottom =9765
     DatasheetGridlinesColor =12632256
     PaintPalette = Begin
         0x000301000000000000000000
@@ -614,7 +614,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Command17_Click()
-Debug.Print "Command17_Click"
+Debug.Print "Form_zVendorDEF - Command17_Click"
 
 On Error GoTo Err_Command17_Click
 
@@ -631,7 +631,7 @@ Err_Command17_Click:
 End Sub
 
 Private Sub VendorCode_AfterUpdate()
-Debug.Print "VendorCode_AfterUpdate"
+Debug.Print "Form_zVendorDEF - VendorCode_AfterUpdate"
 
 Z_MktID = Me![VendorCode]
 End Sub

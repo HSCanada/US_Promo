@@ -15,14 +15,14 @@ Begin Form
     Width =27630
     DatasheetFontHeight =10
     ItemSuffix =191
-    Top =285
-    Right =18705
-    Bottom =9420
+    Top =1590
+    Right =25635
+    Bottom =10710
     DatasheetGridlinesColor =12632256
     PaintPalette = Begin
         0x000301000000000000000000
     End
-    Filter ="[RecID]=24589"
+    Filter ="[RecID]=41073"
     RecSrcDt = Begin
         0x6cb7367ad190e440
     End
@@ -3563,7 +3563,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Command102_Click()
-Debug.Print "x"
+Debug.Print "Form_zPromoF - Command102_Click"
 
 On Error GoTo Err_Command102_Click
 
@@ -3580,7 +3580,8 @@ Err_Command102_Click:
 End Sub
 
 Private Sub DftPromo_AfterUpdate()
-    If Me![DftPromo] = -1 Then
+Debug.Print "Form_zPromoF - DftPromo_AfterUpdate"
+If Me![DftPromo] = -1 Then
        If IsNull(Me![SO]) Then Me![SO] = -1
     Else
     End If
@@ -3589,7 +3590,7 @@ End Sub
 
 
 Private Sub Form_Close()
-Debug.Print "x_PASS"
+Debug.Print "Form_zPromoF - Form_Close - PASS"
 
 'For the Manual process' "Buy" statement...
 'First get a count of all [zHdr] records linked to the promotion's [RecID].
@@ -3638,7 +3639,7 @@ Debug.Print "x_PASS"
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "x"
+Debug.Print "Form_zPromoF - Form_Open"
 
     'Dim stVndrCd As String
     'DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -3653,7 +3654,8 @@ Debug.Print "x"
 End Sub
 
 Private Sub STOC_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zPromoF - STOC_AfterUpdate"
+
 On Error GoTo Err_STOC_AfterUpdate_Click
 
     Dim stDocName As String
@@ -3675,7 +3677,8 @@ Err_STOC_AfterUpdate_Click:
 End Sub
 
 Private Sub TOC_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zPromoF - TOC_AfterUpdate"
+
 On Error GoTo Err_TOC_AfterUpdate_Click
 
     Dim stDocName As String
@@ -3700,7 +3703,8 @@ Err_TOC_AfterUpdate_Click:
 End Sub
 
 Private Sub Type_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zPromoF - Type_AfterUpdate"
+
 On Error GoTo Err_Type_AfterUpdate
 
     Dim stType As String
@@ -3722,7 +3726,8 @@ Err_Type_AfterUpdate:
 End Sub
 
 Private Sub UpTOC_Click()
-Debug.Print "x"
+Debug.Print "Form_zPromoF - UpTOC_Click"
+
 On Error GoTo Err_UpTOC_Click
 
     Dim stDocName As String
@@ -3748,7 +3753,8 @@ Err_UpTOC_Click:
 End Sub
 
 Private Sub AddAllSTOC_Click()
-Debug.Print "x"
+Debug.Print "Form_zPromoF - AddAllSTOC_Click"
+
 On Error GoTo Err_AddAllSTOC_Click
 
     DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -3768,7 +3774,8 @@ Err_AddAllSTOC_Click:
 End Sub
 
 Private Sub SELICs_Click()
-Debug.Print "x"
+Debug.Print "Form_zPromoF - SELICs_Click"
+
 On Error GoTo Err_SELICs_Click
 
     DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -3809,7 +3816,8 @@ Err_SELICs_Click:
 End Sub
 
 Private Sub CancelPop_Click()
-Debug.Print "x"
+Debug.Print "Form_zPromoF - CancelPop_Click"
+
 On Error GoTo Err_CancelPop_Click
 
     [TOC].Visible = False
@@ -3826,7 +3834,8 @@ Err_CancelPop_Click:
 End Sub
 
 Private Sub UpdtFromVndrIC_Click()
-Debug.Print "x"
+Debug.Print "Form_zPromoF - UpdtFromVndrIC_Click"
+
 On Error GoTo Err_UpdtFromVndrIC_Click
 
     DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -3847,9 +3856,11 @@ Err_UpdtFromVndrIC_Click:
     
 End Sub
 Private Sub Approvd_AfterUpdate()
+Debug.Print "Form_zPromoF - Approvd_AfterUpdate"
     Me![ApprvDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub Deletd_AfterUpdate()
+Debug.Print "Form_zPromoF - Deletd_AfterUpdate"
     Me![DelDt] = Format(Now(), "mm/dd/yyyy")
 End Sub

@@ -10,9 +10,10 @@ Begin Form
     Width =15435
     DatasheetFontHeight =10
     ItemSuffix =32
-    Top =390
-    Right =14640
-    Bottom =4830
+    Left =5100
+    Top =3195
+    Right =20535
+    Bottom =7470
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
         0xef44c0da1479e240
@@ -533,7 +534,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Close_Click()
-Debug.Print "Close_Click"
+Debug.Print "Form_zPromoDEF - Close_Click"
 
 On Error GoTo Err_Close_Click
 

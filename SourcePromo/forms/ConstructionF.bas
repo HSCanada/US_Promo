@@ -16813,7 +16813,8 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "x"
+Debug.Print "Form_ContructionF - Form_Open"
+
 
     DoCmd.Maximize
     'DoCmd.Close acForm, "z1__EntryScreen"

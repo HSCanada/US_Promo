@@ -1016,7 +1016,8 @@ Option Compare Database
 Option Explicit
 
 Private Sub AdMn_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zPromoSelSFRdmF - AdMn_AfterUpdate"
+
 
 On Error GoTo Err_AdMn_AfterUpdate
 
@@ -1045,7 +1046,7 @@ End Sub
 
 
 Private Sub PromoCode_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zPromoSelSFRdmF - PromoCode_AfterUpdate"
 
 
 Dim stAdNm As String
@@ -1071,7 +1072,7 @@ If IsNull([AdRdmDt]) Then dtAdRdmDt = Me![RedeemDt]: Me![AdRdmDt] = dtAdRdmDt
 End Sub
 
 Private Sub ViewDet_Click()
-Debug.Print "x"
+Debug.Print "Form_zPromoSelSFRdmF - ViewDet_Click"
 On Error GoTo Err_ViewDet_Click
 
     Dim stDocName As String
@@ -1092,7 +1093,7 @@ Err_ViewDet_Click:
 End Sub
 
 Private Sub Command174_Click()
-Debug.Print "x"
+Debug.Print "Form_zPromoSelSFRdmF - Command174_Click"
 On Error GoTo Err_Command174_Click
 
 

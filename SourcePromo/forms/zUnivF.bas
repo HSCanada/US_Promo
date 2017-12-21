@@ -328,7 +328,7 @@ Begin Form
                         0x8000000052006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff02000000e33ffe89f69f1b10b6780402 ,
-                        0x1c0070020000000000000000000000007073d8f44c78d3010300000000010000 ,
+                        0x1c0070020000000000000000000000001067893af879d3010300000000010000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -2597,7 +2597,7 @@ Begin Form
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x00000000030000000ac1000008000000e93d0000ed060000000000005612266f ,
+                        0x00000000030000000ac1000008000000e93d0000ed06000000000000941f2640 ,
                         0x000000000100090000037960000001009a5f00000000050000000b0200000000 ,
                         0x050000000c02ed06e93d030000001e00070000001604ed06e93d000000000500 ,
                         0x00000b0200000000050000000c02ed06e93d050000000b020000000003000000 ,
@@ -6037,36 +6037,37 @@ Option Compare Database
 Option Explicit
 
 Private Sub EDtEff_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - EDtEff_AfterUpdate"
+
 
   Z_EDtEff = Me![EDtEff]
 End Sub
 
 Private Sub EDtExp_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - EDtExp_AfterUpdate"
    Z_EDtExp = Me![EDtExp]
 End Sub
 
 Private Sub EffMn_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - EffMn_AfterUpdate"
   Z_EffMn = Me![EffMn]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub EffQtr_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - EffQtr_AfterUpdate"
   Z_EffQtr = Me![EffQtr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub EffYr_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - EffYr_AfterUpdate"
   Z_EffYr = Me![EffYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Form_Current()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - Form_Current"
    Import.Visible = False
    CancelImp.Visible = False
    NuVnd.Visible = False
@@ -6074,7 +6075,7 @@ Debug.Print "x"
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "x"
+Debug.Print "Form_zUnivF - Form_Open"
   Z_EffMn = Me![EffMn]
   Z_EffQtr = Me![EffQtr]
   Z_EffYr = Me![EffYr]
@@ -6086,7 +6087,7 @@ Debug.Print "x"
 End Sub
 
 Private Sub Import_Click()
-Debug.Print "Import_Click_XXX"
+Debug.Print "Form_zUnivF - Import_Click"
 Debug.Assert False
 
 On Error GoTo Err_Import_Click
@@ -6230,19 +6231,19 @@ Err_Import_Click:
 End Sub
 
 Private Sub ImpQtr_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - ImpQtr_AfterUpdate"
   Z_ImpQtr = Me![ImpQtr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub ImpYr_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - ImpYr_AfterUpdate"
   Z_ImpYr = Me![ImpYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Reports_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - Reports_Click"
 On Error GoTo Err_Reports_Click
 
     Import.Visible = False
@@ -6262,7 +6263,7 @@ Err_Reports_Click:
 End Sub
 
 Private Sub Command1_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - Command1_Click"
 On Error GoTo Err_Command1_Click
 
 
@@ -6278,7 +6279,7 @@ Err_Command1_Click:
 End Sub
 
 Private Sub EditClubs_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - EditClubs_Click"
 On Error GoTo Err_EditClubs_Click
 
     Import.Visible = False
@@ -6298,7 +6299,7 @@ Err_EditClubs_Click:
 End Sub
 
 Private Sub SelID_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - SelID_AfterUpdate"
 On Error GoTo Err_SelID_Click
 
     Import.Visible = False
@@ -6321,7 +6322,7 @@ End Sub
 
 
 Private Sub SelMnByVndr_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - SelMnByVndr_AfterUpdate"
 On Error GoTo Err_SelMnByVndr_Click
 
     Dim stDocName As String
@@ -6342,7 +6343,7 @@ Err_SelMnByVndr_Click:
 End Sub
 
 Private Sub SelVndr_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - SelVndr_AfterUpdate"
 On Error GoTo Err_SelVndr_Click
 
     Dim stDocName As String
@@ -6362,7 +6363,7 @@ Err_SelVndr_Click:
 End Sub
 
 Private Sub SetImp_Click()
-Debug.Print "SetImp_Click_XXX"
+Debug.Print "Form_zUnivF - SetImp_Click"
 Debug.Assert False
 
 On Error GoTo Err_SetImp_Click
@@ -6407,7 +6408,7 @@ Err_SetImp_Click:
 End Sub
 
 Private Sub CancelImp_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - CancelImp_Click"
 On Error GoTo Err_CancelImp_Click
 
    Import.Visible = False
@@ -6424,7 +6425,7 @@ Err_CancelImp_Click:
 End Sub
 
 Private Sub Command18_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - Command18_Click"
 On Error GoTo Err_Command18_Click
 
 
@@ -6440,7 +6441,7 @@ Err_Command18_Click:
 End Sub
 
 Private Sub SFselVndr_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - SFselVndr_AfterUpdate"
 On Error GoTo Err_SelSFVndr_AfterUpdate
 
     Dim stDocName As String
@@ -6461,12 +6462,12 @@ Err_SelSFVndr_AfterUpdate:
 End Sub
 
 Private Sub UpICDesc_GotFocus()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - UpICDesc_GotFocus"
     Import.Visible = False
 End Sub
 
 Private Sub ViewAsLineItms_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - ViewAsLineItms_Click"
 On Error GoTo Err_ViewAsLineItms_Click
 
     Import.Visible = False
@@ -6486,7 +6487,7 @@ Err_ViewAsLineItms_Click:
 End Sub
 
 Private Sub Admin_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - Admin_Click"
 On Error GoTo Err_Admin_Click
 
     Dim stDocName As String
@@ -6505,7 +6506,7 @@ Err_Admin_Click:
 End Sub
 
 Private Sub Command33_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - Command33_Click"
 On Error GoTo Err_Command33_Click
 
     'DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -6534,7 +6535,7 @@ Err_Command33_Click:
 End Sub
 
 Private Sub VuSelQtr_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - VuSelQtr_Click"
 On Error GoTo Err_VuSelQtr_Click
 
     Dim stDocName As String
@@ -6556,7 +6557,7 @@ Err_VuSelQtr_Click:
 End Sub
 
 Private Sub SeekPromoByIC_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - SeekPromoByIC_Click"
 On Error GoTo Err_SeekPromoByIC_Click
 
     Dim stDocName As String
@@ -6578,7 +6579,7 @@ Err_SeekPromoByIC_Click:
 End Sub
 
 Private Sub ViewAllPromo_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - ViewAllPromo_Click"
 On Error GoTo Err_ViewAllPromo_Click
 
     Dim stDocName As String
@@ -6597,7 +6598,7 @@ Err_ViewAllPromo_Click:
 End Sub
 
 Private Sub EUpDt_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - EUpDt_Click"
 On Error GoTo Err_EUpDt_Click
 
     DoCmd.RunSQL "DELETE * FROM zReadPromo;"  'Del data from [2kfldtbl].[zPromo] aka [Promo].[zReadPromo]
@@ -6623,7 +6624,7 @@ Err_EUpDt_Click:
 End Sub
 
 Private Sub Command68_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - Command68_Click"
 On Error GoTo Err_Command68_Click
 
 MsgBox ZVar3()
@@ -6639,7 +6640,7 @@ Err_Command68_Click:
 End Sub
 
 Private Sub EdVndrs_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - EdVndrs_Click"
 On Error GoTo Err_EdVndrs_Click
 
     Dim stDocName As String
@@ -6658,7 +6659,7 @@ Err_EdVndrs_Click:
 End Sub
 
 Private Sub WorkZone_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - WorkZone_Click"
 On Error GoTo Err_WorkZone_Click
 
     Dim stDocName As String
@@ -6677,7 +6678,7 @@ Err_WorkZone_Click:
 End Sub
 
 Private Sub EdPromos_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - EdPromos_Click"
 On Error GoTo Err_EdPromos_Click
 
     Dim stDocName As String
@@ -6696,7 +6697,7 @@ Err_EdPromos_Click:
 End Sub
 
 Private Sub EmlScn_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - EmlScn_Click"
 On Error GoTo Err_EmlScn_Click
 
     Dim stDocName As String
@@ -6715,7 +6716,7 @@ Err_EmlScn_Click:
 End Sub
 
 Private Sub ImpLoop_Click()
-Debug.Print "ImpLoop_Click_XXX"
+Debug.Print "Form_zUnivF - ImpLoop_Click"
 Debug.Assert False
 
 On Error GoTo Err_ImpLoop_Click
@@ -6872,7 +6873,7 @@ Err_ImpLoop_Click:
 End Sub
 
 Private Sub VuMn_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - VuMn_Click"
 On Error GoTo Err_VuMn_Click
 
     Dim stDocName As String
@@ -6893,7 +6894,7 @@ Err_VuMn_Click:
 End Sub
 
 Private Sub VipUpDts_Click()
-Debug.Print "x"
+Debug.Print "Form_zUnivF - VipUpDts_Click"
 On Error GoTo Err_VipUpDts_Click
 
     Dim stDocName As String

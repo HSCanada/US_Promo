@@ -16,7 +16,7 @@ Begin Form
     ItemSuffix =17
     Left =4470
     Top =5985
-    Right =5835
+    Right =6165
     Bottom =7770
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
@@ -393,11 +393,14 @@ Option Compare Database
 Option Explicit
 
 Private Sub Form_Load()
-Debug.Print "x"
+Debug.Print "Form_ExpDtlF - Form_Load"
+
 Me![StartAt] = 1
 Me![EndAt] = 100
 End Sub
 
 Private Sub User_AfterUpdate()
+Debug.Print "Form_ExpDtlF - User_AfterUpdate"
+
     Z_EUser = Me![User]
 End Sub

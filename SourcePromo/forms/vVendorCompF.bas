@@ -15,7 +15,7 @@ Begin Form
     Left =435
     Top =4575
     Right =7725
-    Bottom =4650
+    Bottom =4575
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
         0x61f3bf898ee8e140
@@ -289,7 +289,8 @@ Option Compare Database
 Option Explicit
 
 Private Sub Command10_Click()
-Debug.Print "x"
+Debug.Print "Form_vVendorCompF - Command10_Click"
+
 
 On Error GoTo Err_Command10_Click
 

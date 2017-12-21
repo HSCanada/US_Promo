@@ -17,8 +17,8 @@ Begin Form
     ItemSuffix =12
     Left =2055
     Top =255
-    Right =8640
-    Bottom =3600
+    Right =8895
+    Bottom =3855
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
         0xfd1007a1ce91e340
@@ -243,6 +243,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Close_Click()
+Debug.Print "Form_DefF - Close_Click"
 On Error GoTo Err_Close_Click
 
 If Len(Me![Ver]) < 4 Then
@@ -263,6 +264,8 @@ Err_Close_Click:
 End Sub
 
 Private Sub Form_Activate()
+Debug.Print "Form_DefF - Form_Activate"
+
 On Error GoTo Err_Form_Activate
 
 '*********************************************************************
@@ -272,6 +275,9 @@ On Error GoTo Err_Form_Activate
 Dim NowDt As Date
 Dim LastDt As Date
 Dim intCnt As Long
+
+' added by TC, 29 Dec 17
+BR_Decouple.config_init
 
 NowDt = Date
 
@@ -306,6 +312,7 @@ Err_Form_Activate:
 End Sub
 
 Private Sub Form_Close()
+Debug.Print "Form_DefF - Form_Close"
 On Error GoTo Err_Form_Close
 
 If Len(Me![Ver]) < 4 Then
@@ -325,6 +332,7 @@ End Sub
 
 
 Private Sub Ver_AfterUpdate()
+Debug.Print "Form_DefF - Ver_AfterUpdate"
 On Error GoTo Err_Ver_AfterUpdate
 
     Z_Ver = Me![Ver]

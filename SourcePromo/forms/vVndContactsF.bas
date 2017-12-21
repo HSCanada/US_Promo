@@ -12,10 +12,10 @@ Begin Form
     Width =12225
     DatasheetFontHeight =10
     ItemSuffix =15
-    Left =480
-    Top =1410
-    Right =14640
-    Bottom =4830
+    Left =345
+    Top =1050
+    Right =7620
+    Bottom =10005
     DatasheetGridlinesColor =12632256
     Filter ="VC6digit = 'BUFF'"
     RecSrcDt = Begin
@@ -346,7 +346,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Command10_Click()
-Debug.Print "x"
+Debug.Print "Form_vVndContactsF - Command10_Click"
 On Error GoTo Err_Command10_Click
 
 
@@ -362,7 +362,7 @@ Err_Command10_Click:
 End Sub
 
 Private Sub EdVnDptCodes_Click()
-Debug.Print "x"
+Debug.Print "Form_vVndContactsF - EdVnDptCodes_Click"
 On Error GoTo Err_EdVnDptCodes_Click
 
     Dim stDocName As String
@@ -381,14 +381,14 @@ Err_EdVnDptCodes_Click:
 End Sub
 
 Private Sub Form_AfterUpdate()
-Debug.Print "x"
+Debug.Print "Form_vVndContactsF - Form_AfterUpdate"
     DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Form_Close()
+Debug.Print "Form_vVndContactsF - Form_Close"
 
 DoCmd.SetWarnings False
-Debug.Print "x"
 On Error Resume Next
 DoCmd.RunSQL "DELETE * FROM VendCnt;"
 DoCmd.SetWarnings True

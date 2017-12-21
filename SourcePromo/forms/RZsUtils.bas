@@ -491,7 +491,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Close_Click()
-Debug.Print "Close_Click_XXX"
+Debug.Print "Form_RZsUtils - Close_Click"
 Debug.Assert False
 
 On Error GoTo Err_Close_Click
@@ -509,7 +509,7 @@ Err_Close_Click:
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "Form_Open_XXX"
+Debug.Print "Form_RZsUtils - Form_Open"
 Debug.Assert False
 
 Dim strConnectString As String
@@ -541,7 +541,7 @@ Dim td As DAO.TableDef
 End Sub
 
 Private Sub PrintMacroTxt_Click()
-Debug.Print "PrintMacroTxt_Click_XXX"
+Debug.Print "Form_RZsUtils - PrintMacroTxt_Click"
 Debug.Assert False
 
 
@@ -578,7 +578,7 @@ Debug.Assert False
 End Sub
 
 Private Sub ProdVsQA_Click()
-Debug.Print "ProdVsQA_Click_XXX"
+Debug.Print "Form_RZsUtils - ProdVsQA_Click"
 Debug.Assert False
 
 On Error GoTo Err_ProdVsQA_Click
@@ -614,7 +614,7 @@ Err_ProdVsQA_Click:
 End Sub
 
 Private Sub BuyXcptions_Click()
-Debug.Print "BuyXcptions_Click"
+Debug.Print "Form_RZsUtils - BuyXcptions_Click"
 On Error GoTo Err_BuyXcptions_Click
 
     Dim stDocName As String
@@ -632,7 +632,7 @@ Err_BuyXcptions_Click:
 End Sub
 
 Private Sub E3SzLftDgtsQ_Click()
-Debug.Print "E3SzLftDgtsQ_Click"
+Debug.Print "Form_RZsUtils - E3SzLftDgtsQ_Click"
 On Error GoTo Err_E3SzLftDgtsQ_Click
 
     Dim stDocName As String
@@ -650,7 +650,7 @@ Err_E3SzLftDgtsQ_Click:
 End Sub
 
 Private Sub E3NmSizeAvlVndLDigitsQ_Click()
-Debug.Print "E3NmSizeAvlVndLDigitsQ_Click"
+Debug.Print "Form_RZsUtils - E3NmSizeAvlVndLDigitsQ_Click"
 On Error GoTo Err_E3NmSizeAvlVndLDigitsQ_Click
 
     Dim stDocName As String
@@ -668,7 +668,7 @@ Err_E3NmSizeAvlVndLDigitsQ_Click:
 End Sub
 
 Private Sub PreVuBuys_Click()
-Debug.Print "PreVuBuys_Click"
+Debug.Print "Form_RZsUtils - PreVuBuys_Click"
 On Error GoTo Err_PreVuBuys_Click
 
     Dim stDocName As String
@@ -686,7 +686,7 @@ Err_PreVuBuys_Click:
 End Sub
 
 Private Sub SelBuysDts_Click()
-Debug.Print "SelBuysDts_Click"
+Debug.Print "Form_RZsUtils - SelBuysDts_Click"
 On Error GoTo Err_SelBuysDts_Click
 
     Dim stDocName As String
