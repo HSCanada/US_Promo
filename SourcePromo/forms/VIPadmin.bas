@@ -1265,7 +1265,9 @@ On Error GoTo Err_ProdVsQA_Click
 Dim stMyDir As String
 Dim stPorQ As String
 
-stMyDir = Application.CodeProject.Path
+' TC trailing \ logic needed? 18 Dec 17
+stMyDir = Application.CodeProject.Path & "\"
+'stMyDir = Application.CodeProject.Path
 
 ' TC trailing \ logic?, 18 Dec 17
 If stMyDir = config("PATH_MAIN_QA") Then
@@ -1301,7 +1303,10 @@ On Error GoTo Err_VIPmanualImp_Click
 Dim stMyDir As String
 Dim stPorQ As String
 Dim stDocName As String
-stMyDir = Application.CodeProject.Path
+
+' TC trailing \ logic needed? 18 Dec 17
+stMyDir = Application.CodeProject.Path & "\"
+'stMyDir = Application.CodeProject.Path
 
 If stMyDir = config("PATH_MAIN_QA") Then
    stPorQ = "QA"
@@ -1336,7 +1341,10 @@ On Error GoTo Err_VIPmanualXport_Click
 Dim stMyDir As String
 Dim stPorQ As String
 Dim stDocName As String
-stMyDir = Application.CodeProject.Path
+
+' TC trailing \ logic needed? 18 Dec 17
+stMyDir = Application.CodeProject.Path & "\"
+'stMyDir = Application.CodeProject.Path
 
 If stMyDir = config("PATH_MAIN_QA") Then
    stPorQ = "QA"

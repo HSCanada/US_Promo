@@ -19,23 +19,32 @@ Public Sub config_init()
    
     cConfig.Add "Promo10Copy-20170911-working.mdb", "APP_NAME"
     cConfig.Add "trevor.crowley@henryschein.ca", "OPERATOR_EMAIL"
+    cConfig.Add "IT", "OPERATOR_NAME"
     cConfig.Add "THREEM", "3MD_CODE"
     
-    cConfig.Add "S:\Business Reporting\zDev\US_Promo\DataSourceUS\", "PATH_MAIN_PROD"
-    cConfig.Add "S:\Business Reporting\zDev\US_Promo\DataSourceUS\QA\", "PATH_MAIN_QA"
+    cConfig.Add "S:\Business Reporting\Promo\", "PATH_MAIN_PROD"
+    cConfig.Add "PromoData\", "PATH_DATA_PROD"
     
+    cConfig.Add "S:\Business Reporting\zDev\US_Promo\", "PATH_MAIN_QA"
+    cConfig.Add "DataSourceUS\", "PATH_DATA_QA"
+    
+  
     cConfig.Add "S:\Business Reporting\zDev\US_Promo\DataSourceUS\Export\", "PATH_EXPORT_MARKETING_PROD"
     cConfig.Add "S:\Business Reporting\zDev\US_Promo\DataSourceUS\Export\", "PATH_EXPORT_ECOM_PROD"
     
     cConfig.Add "S:\Business Reporting\zDev\US_Promo\DataSourceUS\Vip\", "PATH_VIP_PROD"
     cConfig.Add "S:\Business Reporting\zDev\US_Promo\DataSourceUS\QA\", "PATH_VIP_QA"
     cConfig.Add "https://vendor.henryschein.com/FormStaticDisplay.aspx?PAGE=PromoFaqdental.com", "URL_VIP_PROD"
-
+    
+    cConfig.Add "ARCPDTA71", "PRODUCTION_SERVER_FILE_LIBRARY"
+    cConfig.Add "ARCQDTA71", "TEST_SERVER_FILE_LIBRARY"
+    
+ 
 End Sub
 
 
 Public Function config(sParam As Variant) As String
-    Debug.Print "BR_Decouple.config_init(sParam=" & sParam & ")"
+    Debug.Print "BR_Decouple.config(sParam=" & sParam & ")"
     Debug.Assert Not cConfig Is Nothing
     config = cConfig(sParam)
 End Function

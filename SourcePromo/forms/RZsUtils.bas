@@ -492,7 +492,7 @@ Option Compare Database
 
 Private Sub Close_Click()
 Debug.Print "Form_RZsUtils - Close_Click"
-Debug.Assert False
+' Debug.Assert False
 
 On Error GoTo Err_Close_Click
 
@@ -510,7 +510,7 @@ End Sub
 
 Private Sub Form_Open(Cancel As Integer)
 Debug.Print "Form_RZsUtils - Form_Open"
-Debug.Assert False
+' Debug.Assert False
 
 Dim strConnectString As String
 Dim strFilePath As String
@@ -526,11 +526,11 @@ Dim td As DAO.TableDef
   strConnectString = CurrentDb.TableDefs("zPromo").connect
   strFilePath = Mid(strConnectString, InStr(strConnectString, "=") + 1) 'MsgBox strFilePath
  
-  If strFilePath = config("PATH_MAIN_PROD") & "2KFLDTBL.MDB" Then
+  If strFilePath = config("PATH_MAIN_PROD") & config("PATH_DATA_PROD") & "2KFLDTBL.MDB" Then
       'MsgBox "Tables are linked for the Production Version"
       VerQA.Visible = False
       VerProd.Visible = True
-  ElseIf strFilePath = config("PATH_MAIN_QA") & "PromoData\2KFLDTBL.MDB" Then
+  ElseIf strFilePath = config("PATH_MAIN_QA") & config("PATH_DATA_QA") & "2KFLDTBL.MDB" Then
       'MsgBox "Tables are linked for the QA Version"
       VerQA.Visible = True
       VerProd.Visible = False
@@ -579,21 +579,22 @@ End Sub
 
 Private Sub ProdVsQA_Click()
 Debug.Print "Form_RZsUtils - ProdVsQA_Click"
-Debug.Assert False
+' Debug.Assert False
 
 On Error GoTo Err_ProdVsQA_Click
 
 Dim stMyDir As String
 Dim stPorQ As String
 
-stMyDir = Application.CodeProject.Path
-
 ' TC trailing \ logic needed? 18 Dec 17
+stMyDir = Application.CodeProject.Path & "\"
+'stMyDir = Application.CodeProject.Path
+
 If stMyDir = config("PATH_MAIN_QA") Then
    'MsgBox stMyDir
    stPorQ = "QA"
    MsgBox stPorQ
-ElseIf stMyDir = config("PATH_MAIN_PROD") & "Promo" Then
+ElseIf stMyDir = config("PATH_MAIN_PROD") Then
    'MsgBox stMyDir
    stPorQ = "Prod"
    MsgBox stPorQ

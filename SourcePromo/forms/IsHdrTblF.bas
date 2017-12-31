@@ -165,8 +165,6 @@ If IsTable(stTbl) = "True" Then
       CopyFile stSrc, stDST
       'MsgBox "QP = " & ZQP() & "  and M = " & stMn & "  and D = " & stDay
    Else
-     'Daffy Duck, skop copy/paste
-     'MsgBox "QP = Daffy Duck  and M = " & stMn & "  and D = " & stDay
    End If
 
 Else

@@ -17,7 +17,7 @@ Begin Form
     ItemSuffix =16
     Left =4635
     Top =420
-    Right =15120
+    Right =16950
     Bottom =4785
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
@@ -414,7 +414,7 @@ Err_Step2_Click:
 End Sub
 
 Private Sub Step3_Click()
-Debug.Print "Form_NewF - Step3_Click_XXX"
+Debug.Print "Form_NewF - Step3_Click"
 Debug.Assert False
 
 On Error GoTo Err_Step3_Click

@@ -12,14 +12,18 @@ Global Const PRODUCTION_SERVER = "E"
 Global Const PRODUCTION_SERVER_ADDRESS = "E"
 Global Const PRODUCTION_JOBD = "JDEJOBD"
 Global Const PRODUCTION_JOBD_LIBRARY = "QGPL"
-Global Const PRODUCTION_SERVER_FILE_LIBRARY = "HSIPDTA71"
+
+' TC repace with decouple version, 20 Dec 17
+'Global Const PRODUCTION_SERVER_FILE_LIBRARY = "HSIPDTA71"
 
 Global Const TEST_SERVER = "D"
 Global Const TEST_SERVER_ADDRESS = "D"
 Global Const TEST_JOBD = "JDEJOBD"
 'Global Const TEST_JOBD_LIBRARY = "HSIQEOBJ"
 Global Const TEST_JOBD_LIBRARY = "HSIQUNOBJ"
-Global Const TEST_SERVER_FILE_LIBRARY = "HSIQDTA71"
+
+' TC repace with decouple version, 20 Dec 17
+'Global Const TEST_SERVER_FILE_LIBRARY = "HSIQDTA71"
 
 Global Const SERVER_FILE_NAME = "F554509"
 
@@ -1074,9 +1078,9 @@ Function GetServerFileLibrary()
 Debug.Print "GetServerFileLibrary"
 
     If sProdTest = "P" Then
-        GetServerFileLibrary = PRODUCTION_SERVER_FILE_LIBRARY
+        GetServerFileLibrary = config("PRODUCTION_SERVER_FILE_LIBRARY")
     Else
-        GetServerFileLibrary = TEST_SERVER_FILE_LIBRARY
+        GetServerFileLibrary = config("TEST_SERVER_FILE_LIBRARY")
     End If
 End Function
 
