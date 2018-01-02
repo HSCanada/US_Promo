@@ -1,4 +1,4 @@
 ﻿mReadGiftCode
-;DATABASE=.\DataSourceUS\2KFLDTBL.mdb
+;DATABASE=.\PromoBE.accdb
 zGiftCode
 CodeID

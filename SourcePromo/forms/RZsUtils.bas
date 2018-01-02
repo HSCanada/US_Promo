@@ -526,11 +526,11 @@ Dim td As DAO.TableDef
   strConnectString = CurrentDb.TableDefs("zPromo").connect
   strFilePath = Mid(strConnectString, InStr(strConnectString, "=") + 1) 'MsgBox strFilePath
  
-  If strFilePath = config("PATH_MAIN_PROD") & config("PATH_DATA_PROD") & "2KFLDTBL.MDB" Then
+  If strFilePath = config("PATH_MAIN_PROD") & config("PATH_DATA_PROD") Then
       'MsgBox "Tables are linked for the Production Version"
       VerQA.Visible = False
       VerProd.Visible = True
-  ElseIf strFilePath = config("PATH_MAIN_QA") & config("PATH_DATA_QA") & "2KFLDTBL.MDB" Then
+  ElseIf strFilePath = config("PATH_MAIN_QA") & config("PATH_DATA_QA") Then
       'MsgBox "Tables are linked for the QA Version"
       VerQA.Visible = True
       VerProd.Visible = False

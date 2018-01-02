@@ -1,3 +1,3 @@
 ﻿ItemCdWdispMfgCd
-Text;DSN=CatTocItmDEN Link Specification;FMT=Delimited;HDR=NO;IMEX=2;CharacterSet=437;;DATABASE=.\DataSourceUS
-ItemBrandNamePkg.csv
+;DATABASE=.\PromoBE.accdb
+ItemCdWdispMfgCd

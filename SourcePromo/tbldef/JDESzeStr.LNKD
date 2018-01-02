@@ -1,3 +1,3 @@
 ﻿JDESzeStr
-Text;DSN=CatTocItmDEN Link Specification;FMT=Delimited;HDR=NO;IMEX=2;CharacterSet=437;;DATABASE=.\DataSourceUS
-F5613SzeStr.csv
+;DATABASE=.\PromoBE.accdb
+JDESzeStr

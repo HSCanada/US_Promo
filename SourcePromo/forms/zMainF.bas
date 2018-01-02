@@ -3204,7 +3204,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =22
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
                     Name ="SelVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCT zVendor.ID, zVendor.Company FROM zVendor INNER JOIN zPromo ON zV"
@@ -3281,7 +3281,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =23
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
                     Name ="SFselVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCTROW zVendor.ID, zVendor.Company FROM zVendor ORDER BY zVendor.Com"
@@ -4407,7 +4407,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =47
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
                     Name ="Combo119"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCTROW zVendor.ID, zVendor.Company FROM zVendor ORDER BY zVendor.Com"
@@ -4487,7 +4487,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =49
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
                     Name ="SelMnByVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCT zVendor.ID, zVendor.Company FROM zVendor INNER JOIN zPromo ON zV"
@@ -10504,12 +10504,12 @@ Dim td As DAO.TableDef
   strConnectString = CurrentDb.TableDefs("zPromo").connect
   strFilePath = Mid(strConnectString, InStr(strConnectString, "=") + 1) 'MsgBox strFilePath
  
-  If strFilePath = config("PATH_MAIN_PROD") & config("PATH_DATA_PROD") & "2KFLDTBL.MDB" Then
+  If strFilePath = config("PATH_MAIN_PROD") & config("PATH_DATA_PROD") Then
       'MsgBox "Tables are linked for the Production Version"
       VerQA.Visible = False
       VerProd.Visible = True
       Z_QP = "Prod"
-  ElseIf strFilePath = config("PATH_MAIN_QA") & config("PATH_DATA_QA") & "2KFLDTBL.MDB" Then
+  ElseIf strFilePath = config("PATH_MAIN_QA") & config("PATH_DATA_QA") Then
       'MsgBox "Tables are linked for the QA Version"
       VerQA.Visible = True
       VerProd.Visible = False

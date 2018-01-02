@@ -22,11 +22,12 @@ Public Sub config_init()
     cConfig.Add "IT", "OPERATOR_NAME"
     cConfig.Add "THREEM", "3MD_CODE"
     
+'S:\Business Reporting\zDev\US_Promo\PromoBE.accdb
     cConfig.Add "S:\Business Reporting\Promo\", "PATH_MAIN_PROD"
     cConfig.Add "PromoData\", "PATH_DATA_PROD"
     
     cConfig.Add "S:\Business Reporting\zDev\US_Promo\", "PATH_MAIN_QA"
-    cConfig.Add "DataSourceUS\", "PATH_DATA_QA"
+    cConfig.Add "PromoBE.accdb", "PATH_DATA_QA"
     
   
     cConfig.Add "S:\Business Reporting\zDev\US_Promo\DataSourceUS\Export\", "PATH_EXPORT_MARKETING_PROD"

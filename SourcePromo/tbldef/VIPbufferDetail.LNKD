@@ -1,4 +1,4 @@
 ﻿VIPbufferDetail
-;DATABASE=.\DataSourceUS\Update_Vip_Buffer.mdb
-Promotion_Detail_Update
+;DATABASE=.\PromoBE.accdb
+VIPbufferDetail
 Update_Line_Id
