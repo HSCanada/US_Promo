@@ -1,0 +1,4 @@
+﻿tbl_lkp_Vendor
+ODBC;DSN=Redemptions;Description=Redemptions;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=Redemptions
+dbo.tbl_lkp_Vendor
+VendorNumber

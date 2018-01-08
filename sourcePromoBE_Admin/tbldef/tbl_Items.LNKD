@@ -1,0 +1,4 @@
+﻿tbl_Items
+ODBC;DSN=Redemptions;Description=Redemptions;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=Redemptions
+dbo.tbl_Items
+ItemID
