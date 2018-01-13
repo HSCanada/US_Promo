@@ -4874,26 +4874,26 @@ Option Explicit
 
 
 Private Sub EffQtr_AfterUpdate()
-Debug.Print "Form_zMainF2 - EffQtr_AfterUpdate"
+config_log "Form_zMainF2 - EffQtr_AfterUpdate"
 
   Z_EffQtr = Me![EffQtr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub EffYr_AfterUpdate()
-Debug.Print "Form_zMainF2 - EffYr_AfterUpdate"
+config_log "Form_zMainF2 - EffYr_AfterUpdate"
   Z_EffYr = Me![EffYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Form_Current()
-Debug.Print "Form_zMainF2 - Form_Current"
+config_log "Form_zMainF2 - Form_Current"
    Import.Visible = False
    CancelImp.Visible = False
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "Form_zMainF2 - Form_Open"
+config_log "Form_zMainF2 - Form_Open"
   Z_EffQtr = Me![EffQtr]
   Z_EffYr = Me![EffYr]
   Z_ImpQtr = Me![ImpQtr]
@@ -4901,7 +4901,7 @@ Debug.Print "Form_zMainF2 - Form_Open"
 End Sub
 
 Private Sub Import_Click()
-Debug.Print "Form_zMainF2 - Import_Click"
+config_log "Form_zMainF2 - Import_Click"
 Debug.Assert False
 
 On Error GoTo Err_Import_Click
@@ -4959,7 +4959,7 @@ Dim stText As String
     ' Open table-type Recordset object.
     Set rst = dbs.OpenRecordset("zPromo")
     rst.MoveLast
-    'Debug.Print rst.RecordCount
+    'debug.prt rst.RecordCount
     intLastRec = rst!RecID
     rst.Close
     Set dbs = Nothing
@@ -5015,19 +5015,19 @@ Err_Import_Click:
 End Sub
 
 Private Sub ImpQtr_AfterUpdate()
-Debug.Print "Form_zMainF2 - ImpQtr_AfterUpdate"
+config_log "Form_zMainF2 - ImpQtr_AfterUpdate"
   Z_ImpQtr = Me![ImpQtr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub ImpYr_AfterUpdate()
-Debug.Print "Form_zMainF2 - ImpYr_AfterUpdate"
+config_log "Form_zMainF2 - ImpYr_AfterUpdate"
   Z_ImpYr = Me![ImpYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Reports_Click()
-Debug.Print "Form_zMainF2 - Reports_Click"
+config_log "Form_zMainF2 - Reports_Click"
 On Error GoTo Err_Reports_Click
 
     Import.Visible = False
@@ -5047,7 +5047,7 @@ Err_Reports_Click:
 End Sub
 
 Private Sub Command1_Click()
-Debug.Print "Form_zMainF2 - Command1_Click"
+config_log "Form_zMainF2 - Command1_Click"
 On Error GoTo Err_Command1_Click
 
 
@@ -5063,7 +5063,7 @@ Err_Command1_Click:
 End Sub
 
 Private Sub EditClubs_Click()
-Debug.Print "Form_zMainF2 - EditClubs_Click"
+config_log "Form_zMainF2 - EditClubs_Click"
 On Error GoTo Err_EditClubs_Click
 
     Import.Visible = False
@@ -5083,7 +5083,7 @@ Err_EditClubs_Click:
 End Sub
 
 Private Sub SelID_AfterUpdate()
-Debug.Print "Form_zMainF2 - SelID_AfterUpdate"
+config_log "Form_zMainF2 - SelID_AfterUpdate"
 On Error GoTo Err_SelID_Click
 
     Import.Visible = False
@@ -5106,7 +5106,7 @@ End Sub
 
 
 Private Sub SelVndr_AfterUpdate()
-Debug.Print "Form_zMainF2 - SelVndr_AfterUpdate"
+config_log "Form_zMainF2 - SelVndr_AfterUpdate"
 On Error GoTo Err_SelVndr_Click
 
     Dim stDocName As String
@@ -5126,7 +5126,7 @@ Err_SelVndr_Click:
 End Sub
 
 Private Sub SetImp_Click()
-Debug.Print "Form_zMainF2 - SetImp_Click"
+config_log "Form_zMainF2 - SetImp_Click"
 Debug.Assert False
 
 On Error GoTo Err_SetImp_Click
@@ -5168,7 +5168,7 @@ Err_SetImp_Click:
 End Sub
 
 Private Sub CancelImp_Click()
-Debug.Print "Form_zMainF2 - CancelImp_Click"
+config_log "Form_zMainF2 - CancelImp_Click"
 On Error GoTo Err_CancelImp_Click
 
    Import.Visible = False
@@ -5183,7 +5183,7 @@ Err_CancelImp_Click:
 End Sub
 
 Private Sub Command18_Click()
-Debug.Print "Form_zMainF2 - Command18_Click"
+config_log "Form_zMainF2 - Command18_Click"
 On Error GoTo Err_Command18_Click
 
 
@@ -5199,12 +5199,12 @@ Err_Command18_Click:
 End Sub
 
 Private Sub UpICDesc_GotFocus()
-Debug.Print "Form_zMainF2 - UpICDesc_GotFocus"
+config_log "Form_zMainF2 - UpICDesc_GotFocus"
     Import.Visible = False
 End Sub
 
 Private Sub ViewAsLineItms_Click()
-Debug.Print "Form_zMainF2 - ViewAsLineItms_Click"
+config_log "Form_zMainF2 - ViewAsLineItms_Click"
 On Error GoTo Err_ViewAsLineItms_Click
 
     Import.Visible = False
@@ -5224,7 +5224,7 @@ Err_ViewAsLineItms_Click:
 End Sub
 
 Private Sub Admin_Click()
-Debug.Print "Form_zMainF2 - Admin_Click"
+config_log "Form_zMainF2 - Admin_Click"
 On Error GoTo Err_Admin_Click
 
     Dim stDocName As String
@@ -5243,7 +5243,7 @@ Err_Admin_Click:
 End Sub
 
 Private Sub Command33_Click()
-Debug.Print "Form_zMainF2 - Command33_Click"
+config_log "Form_zMainF2 - Command33_Click"
 On Error GoTo Err_Command33_Click
 
     'DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -5272,7 +5272,7 @@ Err_Command33_Click:
 End Sub
 
 Private Sub VuSelQtr_Click()
-Debug.Print "Form_zMainF2 - VuSelQtr_Click"
+config_log "Form_zMainF2 - VuSelQtr_Click"
 On Error GoTo Err_VuSelQtr_Click
 
     Dim stDocName As String

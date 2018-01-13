@@ -16813,7 +16813,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "Form_ContructionF - Form_Open"
+config_log "Form_ContructionF - Form_Open"
 
 
     DoCmd.Maximize
@@ -16821,7 +16821,7 @@ Debug.Print "Form_ContructionF - Form_Open"
 End Sub
 
 Private Sub Form_Timer()
-Debug.Print "x"
+config_log "x"
 
     DoCmd.Quit
     

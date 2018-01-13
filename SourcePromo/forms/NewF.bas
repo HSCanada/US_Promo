@@ -338,7 +338,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Close_Click()
-Debug.Print "Form_NewF - Close_Click"
+config_log "Form_NewF - Close_Click"
 
 On Error GoTo Err_Close_Click
 
@@ -354,7 +354,7 @@ Err_Close_Click:
 End Sub
 
 Private Sub Step1_Click()
-Debug.Print "Form_NewF - Step1_Click"
+config_log "Form_NewF - Step1_Click"
 On Error GoTo Err_Step1_Click
 
     Dim stDocName As String
@@ -380,7 +380,7 @@ Err_Step1_Click:
 End Sub
 
 Private Sub Step2_Click()
-Debug.Print "Form_NewF - Step2_Click"
+config_log "Form_NewF - Step2_Click"
 On Error GoTo Err_Step2_Click
 
     Dim stDocName As String
@@ -414,7 +414,7 @@ Err_Step2_Click:
 End Sub
 
 Private Sub Step3_Click()
-Debug.Print "Form_NewF - Step3_Click"
+config_log "Form_NewF - Step3_Click"
 Debug.Assert False
 
 On Error GoTo Err_Step3_Click
@@ -453,7 +453,7 @@ Err_Step3_Click:
 End Sub
 
 Private Sub ManSet_Click()
-Debug.Print "Form_NewF - ManSet_Click"
+config_log "Form_NewF - ManSet_Click"
 On Error GoTo Err_ManSet_Click
 
     Z_MktID = Me![SetID]

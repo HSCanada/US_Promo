@@ -154,7 +154,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub AdReplace_Click()
-Debug.Print "Form_eAdConfirmF - AdReplace_Click"
+config_log "Form_eAdConfirmF - AdReplace_Click"
 
 On Error GoTo Err_AdReplace_Click
 
@@ -171,7 +171,7 @@ Err_AdReplace_Click:
 End Sub
 
 Private Sub AdKeep_Click()
-Debug.Print "Form_eAdConfirmF - AdKeep_Click"
+config_log "Form_eAdConfirmF - AdKeep_Click"
 On Error GoTo Err_AdKeep_Click
 
     Z_Confirm = 0
@@ -187,7 +187,7 @@ Err_AdKeep_Click:
 End Sub
 
 Private Sub Command0_Click()
-Debug.Print "Form_eAdConfirmF - Command0_Click"
+config_log "Form_eAdConfirmF - Command0_Click"
 On Error GoTo Err_Command0_Click
 
 
@@ -203,6 +203,6 @@ Err_Command0_Click:
 End Sub
 
 Private Sub Form_Current()
-Debug.Print "Form_eAdConfirmF - Form_Current"
+config_log "Form_eAdConfirmF - Form_Current"
     Z_Confirm = 0
 End Sub

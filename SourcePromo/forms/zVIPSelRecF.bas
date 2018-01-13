@@ -930,13 +930,13 @@ Option Compare Database
 Option Explicit
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "Form_zVIPSelRecF - Form_Open - PASS"
+config_log "Form_zVIPSelRecF - Form_Open - PASS"
 
    'Forms![zVendorSelRecF]![Company].SetFocus
 End Sub
 
 Private Sub Close_Click()
-Debug.Print "Form_zVIPSelRecF - XXX"
+config_log "Form_zVIPSelRecF - XXX"
 On Error GoTo Err_Close_Click
 
     DoCmd.Close
@@ -953,7 +953,7 @@ End Sub
 
 
 Private Sub SelGoVndr_AfterUpdate()
-Debug.Print "Form_zVIPSelRecF - SelGoVndr_AfterUpdate"
+config_log "Form_zVIPSelRecF - SelGoVndr_AfterUpdate"
     ' Find the record that matches the control.
     'Dim rs As Object
 
@@ -980,7 +980,7 @@ Debug.Print "Form_zVIPSelRecF - SelGoVndr_AfterUpdate"
    
 End Sub
 Private Sub GoRecID_Click()
-Debug.Print "Form_zVIPSelRecF - GoRecID_Click"
+config_log "Form_zVIPSelRecF - GoRecID_Click"
 
 On Error GoTo Err_GoRecID_Click
 

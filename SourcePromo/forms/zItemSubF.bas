@@ -13,8 +13,8 @@ Begin Form
     ItemSuffix =67
     Left =435
     Top =5925
-    Right =15090
-    Bottom =9690
+    Right =15075
+    Bottom =9675
     DatasheetGridlinesColor =12632256
     PaintPalette = Begin
         0x000301000000000000000000
@@ -116,7 +116,7 @@ Begin Form
         End
         Begin FormHeader
             Height =360
-            BackColor =12632256
+            BackColor =-2147483612
             Name ="FormHeader"
             Begin
                 Begin Label
@@ -374,7 +374,6 @@ Begin Form
                     Height =180
                     FontSize =7
                     FontWeight =700
-                    ForeColor =8421376
                     Name ="Label51"
                     Caption ="Flag"
                     FontName ="Small Fonts"
@@ -383,6 +382,7 @@ Begin Form
                     LayoutCachedTop =165
                     LayoutCachedWidth =11835
                     LayoutCachedHeight =345
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =223
@@ -392,7 +392,6 @@ Begin Form
                     Height =180
                     FontSize =7
                     FontWeight =700
-                    ForeColor =8421376
                     Name ="Label54"
                     Caption ="NAC"
                     FontName ="Small Fonts"
@@ -400,6 +399,7 @@ Begin Form
                     LayoutCachedLeft =12690
                     LayoutCachedWidth =13155
                     LayoutCachedHeight =180
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =223
@@ -409,7 +409,6 @@ Begin Form
                     Height =180
                     FontSize =7
                     FontWeight =700
-                    ForeColor =8421376
                     Name ="Label58"
                     Caption ="Not Buy"
                     FontName ="Small Fonts"
@@ -417,6 +416,7 @@ Begin Form
                     LayoutCachedLeft =11895
                     LayoutCachedWidth =12570
                     LayoutCachedHeight =180
+                    ForeThemeColorIndex =0
                 End
                 Begin Line
                     Visible = NotDefault
@@ -438,7 +438,6 @@ Begin Form
                     Height =180
                     FontSize =7
                     FontWeight =700
-                    ForeColor =8421376
                     Name ="Label64"
                     Caption ="One Buy"
                     FontName ="Small Fonts"
@@ -447,6 +446,7 @@ Begin Form
                     LayoutCachedTop =180
                     LayoutCachedWidth =13410
                     LayoutCachedHeight =360
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =215
@@ -456,7 +456,6 @@ Begin Form
                     Height =180
                     FontSize =7
                     FontWeight =700
-                    ForeColor =8421376
                     Name ="Label65"
                     Caption ="Msg"
                     FontName ="Small Fonts"
@@ -464,6 +463,7 @@ Begin Form
                     LayoutCachedLeft =11370
                     LayoutCachedWidth =11835
                     LayoutCachedHeight =180
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =87
@@ -474,7 +474,6 @@ Begin Form
                     Height =180
                     FontSize =7
                     FontWeight =700
-                    ForeColor =8421376
                     Name ="Label66"
                     Caption ="Item"
                     FontName ="Small Fonts"
@@ -483,13 +482,14 @@ Begin Form
                     LayoutCachedTop =180
                     LayoutCachedWidth =12570
                     LayoutCachedHeight =360
+                    ForeThemeColorIndex =0
                 End
             End
         End
         Begin Section
             Height =450
-            BackColor =8421376
             Name ="Detail"
+            BackThemeColorIndex =1
             Begin
                 Begin TextBox
                     TabStop = NotDefault
@@ -516,13 +516,15 @@ Begin Form
                     Width =810
                     Height =210
                     ColumnWidth =960
-                    BackColor =8421376
-                    ForeColor =13434828
+                    BorderColor =0
                     Name ="HSICode"
                     ControlSource ="HSICode"
                     Format ="@@@-@@@@"
                     InputMask ="AAA\\-AAAA"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     TabStop = NotDefault
@@ -534,11 +536,13 @@ Begin Form
                     Height =210
                     ColumnWidth =2310
                     TabIndex =1
-                    BackColor =8421376
-                    ForeColor =13434828
+                    BorderColor =0
                     Name ="ProdNm"
                     ControlSource ="ProdNm"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     TabStop = NotDefault
@@ -552,11 +556,13 @@ Begin Form
                     Height =210
                     ColumnWidth =3000
                     TabIndex =2
-                    BackColor =8421376
-                    ForeColor =13434828
+                    BorderColor =0
                     Name ="ProdDesc"
                     ControlSource ="ProdDesc"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     TabStop = NotDefault
@@ -570,11 +576,11 @@ Begin Form
                     Width =30
                     Height =210
                     TabIndex =4
-                    BackColor =8421376
-                    ForeColor =13434828
                     Name ="SpecPricing"
                     ControlSource ="SpecPricing"
 
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     Visible = NotDefault
@@ -587,12 +593,14 @@ Begin Form
                     Width =495
                     Height =195
                     TabIndex =5
-                    BackColor =8421376
-                    ForeColor =13434828
+                    BorderColor =0
                     Name ="New"
                     ControlSource ="New"
                     Format ="Yes/No"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     TabStop = NotDefault
@@ -604,12 +612,14 @@ Begin Form
                     Height =180
                     FontSize =7
                     TabIndex =6
-                    BackColor =8421376
-                    ForeColor =13434828
+                    BorderColor =0
                     Name ="Text19"
                     ControlSource ="TOC"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     TabStop = NotDefault
@@ -621,12 +631,14 @@ Begin Form
                     Height =180
                     FontSize =7
                     TabIndex =7
-                    BackColor =8421376
-                    ForeColor =13434828
+                    BorderColor =0
                     Name ="TOCNm"
                     ControlSource ="TOCNm"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     TabStop = NotDefault
@@ -638,12 +650,14 @@ Begin Form
                     Height =180
                     FontSize =7
                     TabIndex =8
-                    BackColor =8421376
-                    ForeColor =13434828
+                    BorderColor =0
                     Name ="STOC"
                     ControlSource ="STOC"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     TabStop = NotDefault
@@ -655,12 +669,14 @@ Begin Form
                     Height =180
                     FontSize =7
                     TabIndex =9
-                    BackColor =8421376
-                    ForeColor =13434828
+                    BorderColor =0
                     Name ="STOCNm"
                     ControlSource ="STOCNm"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin CheckBox
                     Visible = NotDefault
@@ -682,12 +698,14 @@ Begin Form
                     Left =13920
                     Top =30
                     TabIndex =11
-                    BackColor =8421376
-                    ForeColor =13434828
+                    BorderColor =0
                     Name ="FotoID"
                     ControlSource ="FotoID"
                     StatusBarText ="Specific Foto where multiple shots"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     TabStop = NotDefault
@@ -717,12 +735,14 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =13
-                    BackColor =8421376
-                    ForeColor =13434828
+                    BorderColor =0
                     Name ="BuyPart"
                     ControlSource ="BuyPart"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     TabStop = NotDefault
@@ -736,12 +756,14 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =14
-                    BackColor =8421376
-                    ForeColor =13434828
+                    BorderColor =0
                     Name ="ItmQty"
                     ControlSource ="ItmQty"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin CheckBox
                     TabStop = NotDefault
@@ -762,10 +784,10 @@ Begin Form
                     Height =195
                     FontSize =6
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Type_Label"
                     Caption ="Do Not"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =247
@@ -776,10 +798,10 @@ Begin Form
                     Height =135
                     FontSize =6
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label52"
                     Caption ="Enter"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin CheckBox
                     TabStop = NotDefault
@@ -800,11 +822,13 @@ Begin Form
                     Width =1140
                     Height =210
                     TabIndex =17
-                    BackColor =8421376
-                    ForeColor =13434828
+                    BorderColor =0
                     Name ="ItmSet"
                     ControlSource ="ItmSet"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin CheckBox
                     TabStop = NotDefault
@@ -829,13 +853,13 @@ Begin Form
                     Height =195
                     FontSize =6
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label60"
                     Caption ="Get Only"
                     FontName ="Small Fonts"
                     LayoutCachedLeft =11790
                     LayoutCachedWidth =12705
                     LayoutCachedHeight =195
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =255
@@ -846,7 +870,6 @@ Begin Form
                     Height =195
                     FontSize =6
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label62"
                     Caption ="No Add'l"
                     FontName ="Small Fonts"
@@ -854,6 +877,7 @@ Begin Form
                     LayoutCachedTop =195
                     LayoutCachedWidth =13185
                     LayoutCachedHeight =390
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =247
@@ -864,7 +888,6 @@ Begin Form
                     Height =135
                     FontSize =6
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label63"
                     Caption ="Charge"
                     FontName ="Small Fonts"
@@ -872,6 +895,7 @@ Begin Form
                     LayoutCachedTop =285
                     LayoutCachedWidth =13185
                     LayoutCachedHeight =420
+                    ForeThemeColorIndex =0
                 End
             End
         End

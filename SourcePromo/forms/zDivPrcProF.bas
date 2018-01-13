@@ -961,13 +961,13 @@ Option Compare Database
 Option Explicit
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "Form_zDivPrcProF - Form_Open"
+config_log "Form_zDivPrcProF - Form_Open"
 
    'Forms![zVendorSelRecF]![Company].SetFocus
 End Sub
 
 Private Sub Close_Click()
-Debug.Print "Form_zDivPrcProF - Close_Click"
+config_log "Form_zDivPrcProF - Close_Click"
 On Error GoTo Err_Close_Click
 
     DoCmd.Close
@@ -984,7 +984,7 @@ End Sub
 
 
 Private Sub SelGoVndr_AfterUpdate()
-Debug.Print "Form_zDivPrcProF - SelGoVndr_AfterUpdate"
+config_log "Form_zDivPrcProF - SelGoVndr_AfterUpdate"
     ' Find the record that matches the control.
     'Dim rs As Object
 
@@ -1012,7 +1012,7 @@ Debug.Print "Form_zDivPrcProF - SelGoVndr_AfterUpdate"
 End Sub
 
 Private Sub GoRecID_Click()
-Debug.Print "Form_zDivPrcProF - GoRecID_Click"
+config_log "Form_zDivPrcProF - GoRecID_Click"
 On Error GoTo Err_GoRecID_Click
 
     Dim rst As Recordset, intRec As Integer, intID As Integer, strCriteria As String
@@ -1043,7 +1043,7 @@ Err_GoRecID_Click:
 End Sub
 
 Private Sub zVndDefProSF_Enter()
-Debug.Print "Form_zDivPrcProF - zVndDefProSF_Enter"
+config_log "Form_zDivPrcProF - zVndDefProSF_Enter"
 'Forms("Order Entry").Controls("OK").OnEnter = "Enter_Macro"
 'Z_MktID = Forms!zVndDefProF!MktgID
 If IsNull(Me!ID) Or Me!ID = "" Then

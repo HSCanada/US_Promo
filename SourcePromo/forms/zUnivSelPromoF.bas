@@ -845,14 +845,14 @@ Option Explicit
 
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "Form_zUnivSelPromoF - Form_Open"
+config_log "Form_zUnivSelPromoF - Form_Open"
 
 
    'Forms![zVendorSelRecF]![Company].SetFocus
 End Sub
 
 Private Sub Close_Click()
-Debug.Print "Form_zUnivSelPromoF - Close_Click"
+config_log "Form_zUnivSelPromoF - Close_Click"
 On Error GoTo Err_Close_Click
 
     DoCmd.Close
@@ -867,7 +867,7 @@ Err_Close_Click:
 End Sub
 
 Private Sub SelGoVndr_AfterUpdate()
-Debug.Print "Form_zUnivSelPromoF - SelGoVndr_AfterUpdate"
+config_log "Form_zUnivSelPromoF - SelGoVndr_AfterUpdate"
     ' Find the record that matches the control.
     'Dim rs As Object
 

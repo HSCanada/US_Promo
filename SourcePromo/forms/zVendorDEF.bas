@@ -614,7 +614,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Command17_Click()
-Debug.Print "Form_zVendorDEF - Command17_Click"
+config_log "Form_zVendorDEF - Command17_Click"
 
 On Error GoTo Err_Command17_Click
 
@@ -631,7 +631,7 @@ Err_Command17_Click:
 End Sub
 
 Private Sub VendorCode_AfterUpdate()
-Debug.Print "Form_zVendorDEF - VendorCode_AfterUpdate"
+config_log "Form_zVendorDEF - VendorCode_AfterUpdate"
 
 Z_MktID = Me![VendorCode]
 End Sub

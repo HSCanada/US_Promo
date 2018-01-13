@@ -10,7 +10,7 @@ Declare PtrSafe Sub sapiSleep Lib "kernel32" _
 
 Sub CopyFile(SourceFile As String, DestFile As String)
 
-Debug.Print "CopyFile"
+config_log "CopyFile"
 
 
 '---------------------------------------------------------------
@@ -29,7 +29,7 @@ End Sub
 
 Public Function IsTable(tblName As String)
 
-Debug.Print "IsTable"
+config_log "IsTable"
 
  'Dim MyDB As DAO.Database
  Dim MyDB As Database
@@ -49,7 +49,7 @@ End Function
 
 Public Function LogFunc(FuncText As String)
 
-Debug.Print "LogFunc"
+config_log "LogFunc"
 
     Z_Log = FuncText
 End Function
@@ -75,7 +75,7 @@ End Function
 
 Public Function fCountFiles(sPattern As String)
 
-Debug.Print "fCountFiles"
+config_log "fCountFiles"
 
 Dim strFileName As String, n As Integer
    strFileName = Dir(sPattern)
@@ -89,7 +89,7 @@ End Function
 
 Public Function CheckCommandLine() As Boolean
 
-Debug.Print "CheckCommandLine"
+config_log "CheckCommandLine"
 
   CheckCommandLine = True
   If Len(Trim(Command)) = 0 Then Exit Function ' this is a regular open
@@ -113,7 +113,7 @@ End Function
 
 Function FileExists(ByVal strFile As String, Optional bFindFolders As Boolean) As Boolean
 
-Debug.Print "FileExists"
+config_log "FileExists"
 
     'Purpose:   Return True if the file exists, even if it is hidden.
     'Arguments: strFile: File name to look for. Current directory searched if no path included.
@@ -152,7 +152,7 @@ End Function
 
 Function FolderExists(strPath As String) As Boolean
 
-Debug.Print "FolderExists"
+config_log "FolderExists"
 
     On Error Resume Next
     FolderExists = ((GetAttr(strPath) And vbDirectory) = vbDirectory)
@@ -160,7 +160,7 @@ End Function
 
 Function TrailingSlash(varIn As Variant) As String
 
-Debug.Print "TrailingSlash"
+config_log "TrailingSlash"
 
     If Len(varIn) > 0 Then
         If Right(varIn, 1) = "\" Then
@@ -173,14 +173,14 @@ End Function
 
 Function Wait15sec()
 
-Debug.Print "Wait15sec"
+config_log "Wait15sec"
 
     sSleep 15000
 End Function
 
 Sub sSleep(lngMilliSec As Long)
 
-Debug.Print "sSleep"
+config_log "sSleep"
 
     If lngMilliSec > 0 Then
         Call sapiSleep(lngMilliSec)
@@ -189,7 +189,7 @@ End Sub
 
 Public Function GetUserName() As String
 
-Debug.Print "GetUserName"
+config_log "GetUserName"
 
     ' GetUserName = Environ("USERNAME")
     ' Better method, see comment by HansUp

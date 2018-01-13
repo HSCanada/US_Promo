@@ -14,9 +14,10 @@ Begin Form
     Width =15375
     DatasheetFontHeight =10
     ItemSuffix =44
-    Top =585
-    Right =14670
-    Bottom =4830
+    Left =4410
+    Top =1140
+    Right =19530
+    Bottom =11595
     DatasheetGridlinesColor =12632256
     PaintPalette = Begin
         0x000301000000000000000000
@@ -124,8 +125,8 @@ Begin Form
         Begin FormHeader
             CanGrow = NotDefault
             Height =1095
-            BackColor =8421376
             Name ="FormHeader"
+            BackThemeColorIndex =1
             Begin
                 Begin Label
                     OverlapFlags =93
@@ -136,12 +137,12 @@ Begin Form
                     Height =210
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Company Label"
                     Caption ="Vendor Company Name"
                     FontName ="Small Fonts"
                     Tag ="DetachedLabel"
                     EventProcPrefix ="Company_Label"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =93
@@ -262,7 +263,7 @@ Begin Form
                         0xffffffff52006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff020000000a00030000000000c0000000 ,
-                        0x00000046000000000000000000000000a0c1162f357bd30103000000800c0000 ,
+                        0x00000046000000000000000000000000605ceb70ad8cd30103000000800c0000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -515,6 +516,7 @@ Begin Form
 
                 End
                 Begin Label
+                    BackStyle =1
                     OverlapFlags =85
                     TextAlign =1
                     TextFontFamily =18
@@ -523,11 +525,11 @@ Begin Form
                     Height =330
                     FontSize =12
                     FontWeight =700
-                    BackColor =13434828
-                    ForeColor =13434828
                     Name ="Label23"
                     Caption ="Promo db"
                     FontName ="Times New Roman"
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     OverlapFlags =85
@@ -721,8 +723,8 @@ Begin Form
                     Left =1155
                     Top =885
                     Width =11205
-                    BorderColor =65280
                     Name ="Line103"
+                    BorderThemeColorIndex =0
                 End
                 Begin Subform
                     OverlapFlags =247
@@ -749,6 +751,7 @@ Begin Form
                             Name ="Label31"
                             Caption ="Vendor Codes"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -822,11 +825,11 @@ Begin Form
                     Height =630
                     FontSize =7
                     FontWeight =700
-                    BackColor =8421376
-                    ForeColor =13434828
                     Name ="DNP"
                     Caption ="DNP = Dental Nat'l Promo  DCS = Dental Conv. Special ZNP = Zahn Nat'l Promo"
                     FontName ="Small Fonts"
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     OverlapFlags =255
@@ -838,9 +841,10 @@ Begin Form
                     Height =225
                     ColumnOrder =11
                     TabIndex =14
-                    BackColor =13434828
                     Name ="SelRecID"
 
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     OverlapFlags =247
@@ -870,10 +874,10 @@ Begin Form
                     Height =210
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label186"
                     Caption ="Go To RecID"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     BackStyle =1
@@ -884,11 +888,11 @@ Begin Form
                     Height =210
                     FontSize =7
                     FontWeight =700
-                    BackColor =8421376
-                    ForeColor =13434828
                     Name ="Label41"
                     Caption ="TYPE of Redemption Promo "
                     FontName ="Small Fonts"
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =215
@@ -924,8 +928,7 @@ Begin Form
                     Height =210
                     FontSize =7
                     FontWeight =700
-                    BackColor =10092543
-                    ForeColor =255
+                    BackColor =11854021
                     Name ="Label165"
                     Caption ="DEL"
                     FontName ="Small Fonts"
@@ -933,6 +936,9 @@ Begin Form
                     LayoutCachedTop =30
                     LayoutCachedWidth =7395
                     LayoutCachedHeight =240
+                    BackThemeColorIndex =9
+                    BackTint =40.0
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =85
@@ -943,7 +949,6 @@ Begin Form
                     Height =195
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label43"
                     Caption ="=Not In UpLoad"
                     FontName ="Small Fonts"
@@ -951,6 +956,7 @@ Begin Form
                     LayoutCachedTop =45
                     LayoutCachedWidth =8700
                     LayoutCachedHeight =240
+                    ForeThemeColorIndex =0
                 End
             End
         End
@@ -962,6 +968,7 @@ Begin Form
             Begin
                 Begin Subform
                     OverlapFlags =85
+                    SpecialEffect =0
                     Top =45
                     Width =15210
                     Height =9255
@@ -970,6 +977,10 @@ Begin Form
                     LinkChildFields ="ID"
                     LinkMasterFields ="ID"
 
+                    LayoutCachedTop =45
+                    LayoutCachedWidth =15210
+                    LayoutCachedHeight =9300
+                    BorderThemeColorIndex =0
                 End
             End
         End
@@ -988,13 +999,13 @@ Option Compare Database
 Option Explicit
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "Form_zVendorSelRecF - Form_Open"
+config_log "Form_zVendorSelRecF - Form_Open"
 
    'Forms![zVendorSelRecF]![Company].SetFocus
 End Sub
 
 Private Sub Close_Click()
-Debug.Print "Form_zVendorSelRecF - Close_Click"
+config_log "Form_zVendorSelRecF - Close_Click"
 
 On Error GoTo Err_Close_Click
 
@@ -1012,7 +1023,7 @@ End Sub
 
 
 Private Sub SelGoVndr_AfterUpdate()
-Debug.Print "Form_zVendorSelRecF - SelGoVndr_AfterUpdate"
+config_log "Form_zVendorSelRecF - SelGoVndr_AfterUpdate"
 
     ' Find the record that matches the control.
     'Dim rs As Object
@@ -1041,7 +1052,7 @@ Debug.Print "Form_zVendorSelRecF - SelGoVndr_AfterUpdate"
 End Sub
 
 Private Sub GoRecID_Click()
-Debug.Print "Form_zVendorSelRecF - GoRecID_Click"
+config_log "Form_zVendorSelRecF - GoRecID_Click"
 On Error GoTo Err_GoRecID_Click
 
     Dim rst As Recordset, intRec As Integer, intID As Integer, strCriteria As String

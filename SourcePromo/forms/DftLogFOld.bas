@@ -314,7 +314,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Form_Activate()
-Debug.Print "Form_DftLogFOld - Form_Activate"
+config_log "Form_DftLogFOld - Form_Activate"
 
 On Error GoTo Err_Form_Activate
 

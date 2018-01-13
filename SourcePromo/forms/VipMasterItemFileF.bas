@@ -403,7 +403,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Command15_Click()
-Debug.Print "Form_VipMasterItemFileF - Command15_Click"
+config_log "Form_VipMasterItemFileF - Command15_Click"
 
 On Error GoTo Err_Command15_Click
 

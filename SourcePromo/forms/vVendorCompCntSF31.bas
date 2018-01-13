@@ -449,4 +449,4 @@ Attribute VB_Exposed = False
 Option Compare Database   'Use database order for string comparisons
 
 
-' Debug.Print "x"
+' config_log "x"

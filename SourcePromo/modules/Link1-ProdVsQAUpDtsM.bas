@@ -4,7 +4,7 @@ Global db As Database
 Global rs As Recordset
 
 Sub CreateTableLinks()
-Debug.Print "CreateTableLinks_XXX"
+config_log "CreateTableLinks_XXX"
 Debug.Assert False
 
 
@@ -185,7 +185,7 @@ Function ConnectOutputTEMP(dbsTemp As Database, _
    strTable As String, strConnect As String, _
    strSourceTable As String) As Integer
 
-Debug.Print "ConnectOutputTEMP"
+config_log "ConnectOutputTEMP"
 
 Dim tdfLinked As TableDef
 Dim rstLinked As Recordset
@@ -225,7 +225,7 @@ Sub ConnectOutput(dbsTemp As Database, _
    strTable As String, strConnect As String, _
    strSourceTable As String)
 
-Debug.Print "ConnectOutput"
+config_log "ConnectOutput"
 
    Dim tdfLinked As TableDef
    Dim rstLinked As Recordset
@@ -245,7 +245,7 @@ Debug.Print "ConnectOutput"
 End Sub
 
 Function DoesExist(dbIn As Database, strTable As String) As Boolean
-Debug.Print "DoesExist"
+config_log "DoesExist"
 
 'Tests if table exists, returns True if it does & False if it doesn't
 Dim td As TableDef

@@ -534,7 +534,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Close_Click()
-Debug.Print "Form_zPromoDEF - Close_Click"
+config_log "Form_zPromoDEF - Close_Click"
 
 On Error GoTo Err_Close_Click
 

@@ -4619,7 +4619,7 @@ Option Compare Database   'Use database order for string comparisons
 
 
 Private Sub ButtonAdmin_Click()
-Debug.Print "Form_z1EntryF - ButtonAdmin_Click"
+config_log "Form_z1EntryF - ButtonAdmin_Click"
 On Error GoTo Err_ButtonAdmin_Click
 
     Dim DocName As String
@@ -4638,7 +4638,7 @@ Err_ButtonAdmin_Click:
 End Sub
 
 Private Sub ButtonCD_Click()
-Debug.Print "Form_z1EntryF - ButtonCD_Click"
+config_log "Form_z1EntryF - ButtonCD_Click"
 
 On Error GoTo Err_ButtonCD_Click
 
@@ -4659,7 +4659,7 @@ Err_ButtonCD_Click:
 End Sub
 
 Private Sub Call_Help_Screen_Click()
-Debug.Print "Form_z1EntryF - Call_Help_Screen_Click"
+config_log "Form_z1EntryF - Call_Help_Screen_Click"
 
 On Error GoTo Err_Call_Help_Screen_Click
 
@@ -4679,7 +4679,7 @@ Err_Call_Help_Screen_Click:
 End Sub
 
 Private Sub Close_Form2_Click()
-Debug.Print "Form_z1EntryF - Close_Form2_Click"
+config_log "Form_z1EntryF - Close_Form2_Click"
 
 On Error GoTo Err_Close_Form2_Click
 
@@ -4696,7 +4696,7 @@ Err_Close_Form2_Click:
 End Sub
 
 Private Sub ClosedJobsB_Click()
-Debug.Print "Form_z1EntryF - ClosedJobsB_Click"
+config_log "Form_z1EntryF - ClosedJobsB_Click"
 
 On Error GoTo Err_ClosedJobsB_Click
 
@@ -4745,7 +4745,7 @@ End Sub
 
 
 Private Sub Edit_Acct_Click()
-Debug.Print "Form_z1EntryF - Edit_Acct_Click"
+config_log "Form_z1EntryF - Edit_Acct_Click"
 
 On Error GoTo Err_Edit_Acct_Click
 
@@ -4765,7 +4765,7 @@ Err_Edit_Acct_Click:
 End Sub
 
 Private Sub Edit_Cost_Centers_Bu_Click()
-Debug.Print "Form_z1EntryF - Edit_Cost_Centers_Bu_Click"
+config_log "Form_z1EntryF - Edit_Cost_Centers_Bu_Click"
 
 On Error GoTo Err_Edit_Cost_Centers_Bu_Click
 
@@ -4785,7 +4785,7 @@ Err_Edit_Cost_Centers_Bu_Click:
 End Sub
 
 Private Sub Edit_Project_Sort_Gr_Click()
-Debug.Print "Form_z1EntryF - Edit_Project_Sort_Gr_Click"
+config_log "Form_z1EntryF - Edit_Project_Sort_Gr_Click"
 
 On Error GoTo Err_Edit_Project_Sort_Gr_Click
 
@@ -4805,7 +4805,7 @@ Err_Edit_Project_Sort_Gr_Click:
 End Sub
 
 Private Sub EditEquipBgt_Click()
-Debug.Print "Form_z1EntryF - EditEquipBgt_Click"
+config_log "Form_z1EntryF - EditEquipBgt_Click"
 
 On Error GoTo Err_EditEquipBgt_Click
 
@@ -4828,7 +4828,7 @@ End Sub
 
 
 Private Sub Field104_Click()
-Debug.Print "Form_z1EntryF - Field104_Click"
+config_log "Form_z1EntryF - Field104_Click"
 
 On Error GoTo Err_Field104_Click
 
@@ -4849,7 +4849,7 @@ Err_Field104_Click:
 End Sub
 
 Private Sub Field116_Click()
-Debug.Print "Form_z1EntryF - Field116_Click"
+config_log "Form_z1EntryF - Field116_Click"
 
 On Error GoTo Err_Field116_Click
 
@@ -4869,67 +4869,67 @@ Err_Field116_Click:
 End Sub
 
 Private Sub Field55_GotFocus()
-Debug.Print "Form_z1EntryF - Field55_GotFocus"
+config_log "Form_z1EntryF - Field55_GotFocus"
 
    DoCmd.OpenForm "z1__Core Main Menu"
 End Sub
 
 Private Sub Field56_GotFocus()
-Debug.Print "Form_z1EntryF - Field56_GotFocus"
+config_log "Form_z1EntryF - Field56_GotFocus"
 
    DoCmd.OpenForm "z1__Equipment Main Menu"
 End Sub
 
 Private Sub Field57_GotFocus()
-Debug.Print "Form_z1EntryF - Field57_GotFocus"
+config_log "Form_z1EntryF - Field57_GotFocus"
 
    DoCmd.OpenForm "z1__SCS Main Menu"
 End Sub
 
 Private Sub Field58_GotFocus()
-Debug.Print "Form_z1EntryF - Field58_GotFocus"
+config_log "Form_z1EntryF - Field58_GotFocus"
 
    DoCmd.OpenForm "z1__Accounting Main Menu"
 End Sub
 
 Private Sub Field59_GotFocus()
-Debug.Print "Form_z1EntryF - Field59_GotFocus"
+config_log "Form_z1EntryF - Field59_GotFocus"
 
        DoCmd.OpenForm "z1__Admin Main Menu"
 End Sub
 
 Private Sub Field84_GotFocus()
-Debug.Print "Form_z1EntryF - Field84_GotFocus"
+config_log "Form_z1EntryF - Field84_GotFocus"
 
   DoCmd.OpenForm "z1__Core Main Menu"
 End Sub
 
 Private Sub Field85_GotFocus()
-Debug.Print "Form_z1EntryF - Field85_GotFocus"
+config_log "Form_z1EntryF - Field85_GotFocus"
 
   DoCmd.OpenForm "z1__Equipment Main Menu"
 End Sub
 
 Private Sub Field86_GotFocus()
-Debug.Print "Form_z1EntryF - Field86_GotFocus"
+config_log "Form_z1EntryF - Field86_GotFocus"
 
   DoCmd.OpenForm "z1__SCS Main Menu"
 End Sub
 
 Private Sub Field87_GotFocus()
-Debug.Print "Form_z1EntryF - Field87_GotFocus"
+config_log "Form_z1EntryF - Field87_GotFocus"
 
   DoCmd.OpenForm "z1__Accounting Main Menu"
 End Sub
 
 Private Sub Field88_GotFocus()
-Debug.Print "Form_z1EntryF - Field88_GotFocus"
+config_log "Form_z1EntryF - Field88_GotFocus"
 
   DoCmd.OpenForm "z1__Admin Main Menu"
 End Sub
 
 Private Sub Get_Reports_Click()
-Debug.Print "Form_z1EntryF - Get_Reports_Click"
+config_log "Form_z1EntryF - Get_Reports_Click"
 
 On Error GoTo Err_Get_Reports_Click
 
@@ -4949,7 +4949,7 @@ Err_Get_Reports_Click:
 End Sub
 
 Private Sub Help_Text_Click()
-Debug.Print "Form_z1EntryF - Help_Text_Click"
+config_log "Form_z1EntryF - Help_Text_Click"
 
 On Error GoTo Err_Help_Text_Click
 
@@ -4969,7 +4969,7 @@ Err_Help_Text_Click:
 End Sub
 
 Private Sub OKID_Click()
-Debug.Print "Form_z1EntryF - OKID_Click"
+config_log "Form_z1EntryF - OKID_Click"
 
 On Error GoTo Err_OKID_Click
 
@@ -4986,13 +4986,13 @@ Err_OKID_Click:
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "Form_z1EntryF - Form_Open - PASS"
+config_log "Form_z1EntryF - Form_Open - PASS"
 
     'Z_Timer1 = ResetTime()
 End Sub
 
 Private Sub Form_Timer()
-Debug.Print "Form_z1EntryF - Form_Timer - PASS"
+config_log "Form_z1EntryF - Form_Timer - PASS"
 
 
 Dim stDiff As String
@@ -5042,7 +5042,7 @@ End Sub
 
 
 Private Sub Open_SPA_Menu_Click()
-Debug.Print "Form_z1EntryF - Open_SPA_Menu_Click"
+config_log "Form_z1EntryF - Open_SPA_Menu_Click"
 
 On Error GoTo Err_Open_SPA_Menu_Click
 
@@ -5062,7 +5062,7 @@ Err_Open_SPA_Menu_Click:
 End Sub
 
 Private Sub Open_SPA_Menu_Form_Click()
-Debug.Print "Form_z1EntryF - Open_SPA_Menu_Form_Click"
+config_log "Form_z1EntryF - Open_SPA_Menu_Form_Click"
 
 On Error GoTo Err_Open_SPA_Menu_Form_Click
 
@@ -5088,7 +5088,7 @@ End Sub
 
 
 Private Sub Quit_Appl_Click()
-Debug.Print "Form_z1EntryF - Quit_Appl_Click"
+config_log "Form_z1EntryF - Quit_Appl_Click"
 
 On Error GoTo Err_Quit_Appl_Click
 
@@ -5107,7 +5107,7 @@ End Sub
 
 
 Private Sub SPAAR_Click()
-Debug.Print "Form_z1EntryF - SPAAR_Click"
+config_log "Form_z1EntryF - SPAAR_Click"
 
 
 On Error GoTo Err_SPAAR_Click
@@ -5164,7 +5164,7 @@ Err_SPAAR_Click:
 End Sub
 
 Private Sub Update_Prog_Costs____Click()
-Debug.Print "Form_z1EntryF - Update_Prog_Costs____Click"
+config_log "Form_z1EntryF - Update_Prog_Costs____Click"
 
 On Error GoTo Err_Update_Prog_Costs____Click
 
@@ -5183,13 +5183,13 @@ Err_Update_Prog_Costs____Click:
 End Sub
 
 Private Sub User_AfterUpdate()
-Debug.Print "Form_z1EntryF - User_AfterUpdate - PASS"
+config_log "Form_z1EntryF - User_AfterUpdate - PASS"
 
 'Z_Timer1 = ResetTime()
 End Sub
 
 Private Sub User_LostFocus()
-Debug.Print "Form_z1EntryF - User_LostFocus"
+config_log "Form_z1EntryF - User_LostFocus"
 
    
    Dim UserNm As String
@@ -5234,7 +5234,7 @@ End Select
 End Sub
 
 Private Sub Command143_Click()
-Debug.Print "Form_z1EntryF - Command143_Click"
+config_log "Form_z1EntryF - Command143_Click"
 
 On Error GoTo Err_Command143_Click
 
@@ -5267,7 +5267,7 @@ Err_Command143_Click:
 End Sub
 
 Private Sub NewJobs_Click()
-Debug.Print "Form_z1EntryF - NewJobs_Click"
+config_log "Form_z1EntryF - NewJobs_Click"
 
 On Error GoTo Err_NewJobs_Click
 
@@ -5315,7 +5315,7 @@ End Sub
 
 
 Private Sub DEJobNo_Click()
-Debug.Print "Form_z1EntryF - DEJobNo_Click"
+config_log "Form_z1EntryF - DEJobNo_Click"
 
 On Error GoTo Err_DEJobNo_Click
 
@@ -5361,7 +5361,7 @@ Err_DEJobNo_Click:
 End Sub
 
 Private Sub JobNoAdmin_Click()
-Debug.Print "Form_z1EntryF - JobNoAdmin_Click"
+config_log "Form_z1EntryF - JobNoAdmin_Click"
 
 On Error GoTo Err_JobNoAdmin_Click
 
@@ -5407,7 +5407,7 @@ Err_JobNoAdmin_Click:
 End Sub
 
 Private Sub ListTSMs_Click()
-Debug.Print "Form_z1EntryF - ListTSMs_Click"
+config_log "Form_z1EntryF - ListTSMs_Click"
 
 On Error GoTo Err_ListTSMs_Click
 
@@ -5453,7 +5453,7 @@ Err_ListTSMs_Click:
 End Sub
 
 Private Sub Close_Click()
-Debug.Print "Form_z1EntryF - Close_Click"
+config_log "Form_z1EntryF - Close_Click"
 
 On Error GoTo Err_Close_Click
 

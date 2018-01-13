@@ -2,7 +2,7 @@ Option Compare Database
 Option Explicit
 
 Public Function AttachMyFile()
-Debug.Print "AttachMyFile_XXX"
+config_log "AttachMyFile_XXX"
 Debug.Assert False
 
 'On Error GoTo AttachMyFile_Err
@@ -77,7 +77,7 @@ Debug.Assert False
 End Function
 
 Sub Send_Via_Outlook(sTo$, sSubject$, sMessage$, bAttach_Batch_File As Boolean, Optional File_PathAndName$)
-Debug.Print "Send_Via_Outlook"
+config_log "Send_Via_Outlook"
 
 Dim objOutlook As Outlook.Application, sCurrentMessage As MailItem
 Set objOutlook = CreateObject("Outlook.application")

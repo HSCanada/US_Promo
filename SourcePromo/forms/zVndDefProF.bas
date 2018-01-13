@@ -14,16 +14,16 @@ Begin Form
     Width =15375
     DatasheetFontHeight =10
     ItemSuffix =44
-    Left =4950
-    Top =1425
-    Right =20325
-    Bottom =11265
+    Left =1635
+    Top =165
+    Right =17010
+    Bottom =10005
     DatasheetGridlinesColor =12632256
     PaintPalette = Begin
         0x000301000000000000000000
     End
     RecSrcDt = Begin
-        0x48daef7517f8e440
+        0xf3f72a227c0ce540
     End
     RecordSource ="zVndDefProQ"
     Caption ="zVendor"
@@ -125,8 +125,8 @@ Begin Form
         Begin FormHeader
             CanGrow = NotDefault
             Height =9855
-            BackColor =8421376
             Name ="FormHeader"
+            BackThemeColorIndex =1
             Begin
                 Begin Label
                     OverlapFlags =93
@@ -137,7 +137,6 @@ Begin Form
                     Height =210
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Company Label"
                     Caption ="Vendor Company Name"
                     FontName ="Small Fonts"
@@ -147,6 +146,7 @@ Begin Form
                     LayoutCachedTop =465
                     LayoutCachedWidth =4410
                     LayoutCachedHeight =675
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =85
@@ -272,7 +272,7 @@ Begin Form
                         0xffffffff52006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff020000000a00030000000000c0000000 ,
-                        0x00000046000000000000000000000000902f1ccfec79d30103000000800c0000 ,
+                        0x00000046000000000000000000000000a010c391ac8cd30103000000800c0000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -429,96 +429,7 @@ Begin Form
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000008000000080b0000280000001f0000001d0000000100180000000000 ,
-                        0xe00a0000ce0e0000d80e00000000000000000000ffffffffffffffffffffffff ,
-                        0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff ,
-                        0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff ,
-                        0xffffffffffffffffffffffffffffffffff000000ffffff800000800000800000 ,
-                        0x8000008000008000008000008000008000008000008000008000008000008000 ,
-                        0x0080000080000080000080000080000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffffffffff800000800000 ,
-                        0x8000008000008000008000008000008000008000008000008000008000008000 ,
-                        0x0080000080000080000080000080000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffffffffffffffffffffff ,
-                        0x8000008000008000008000008000008000008000008000008000008000008000 ,
-                        0x0080000080000080000080000080000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ffffffffffffff ,
-                        0xffffffffffff8000008000008000008000008000008000008000008000008000 ,
-                        0x0080000080000080000080000080000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0xffffffffffffffffffffffff8000008000008000008000008000008000008000 ,
-                        0x0080000080000080000080000080000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ffffffffffffffffffff8000008000008000008000008000008000 ,
-                        0x0080000080000080000080000080000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ffffffffffffffffffff8000008000008000008000008000 ,
-                        0x0080000080000080000080000080000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ffffffffffffffffffff8000008000008000008000 ,
-                        0x0080000080000080000080000080000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ffffffffffffffffffff8000008000008000 ,
-                        0x0080000080000080000080000080000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ffffffffffffffffffff8000008000 ,
-                        0x0080000080000080000080000080000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ff0000ffffffffffffffffffff8000 ,
-                        0x0080000080000080000080000080000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ffffffffffffffffff ,
-                        0xff80000080000080000080000080000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ffffffffffff ,
-                        0xff80000080000080000080000080000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ffffffffffff ,
-                        0xffffffff80000080000080000080000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ffffff ,
-                        0xffffffffffffff80000080000080000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000 ,
-                        0xffffffffffffff80000080000080000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000 ,
-                        0xffffffffffffffffffff80000080000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000 ,
-                        0xff0000ffffffffffffffffffff80000080000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000 ,
-                        0xff0000ff0000ffffffffffffffffffff80000080000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000 ,
-                        0xff0000ff0000ff0000ffffffffffffffffffff80000080000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000 ,
-                        0xff0000ff0000ff0000ff0000ffffffffffffffffffff80000080000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000 ,
-                        0xff0000ff0000ff0000ff0000ff0000ffffffffffffffffffff80000080000080 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000 ,
-                        0xff0000ff0000ff0000ff0000ff0000ff0000ffffffffffffffffffffffffff80 ,
-                        0x0000800000800000800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000 ,
-                        0xff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ffffffffffffffff ,
-                        0xffffffffffffffff800000800000ffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000 ,
-                        0xff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ffff ,
-                        0xffffffffffffffffffffffffffffffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000 ,
-                        0xff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff00 ,
-                        0x00ff0000ff0000ffffffffffffffffffff000000ffffff0000ff0000ff0000ff ,
-                        0x0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000 ,
-                        0xff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff00 ,
-                        0x00ff0000ff0000ff0000ff0000ffffffff000000ffffffffffffffffffffffff ,
-                        0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff ,
-                        0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff ,
-                        0xffffffffffffffffffffffffffffffffff00000031030000fb02000060000000 ,
-                        0x60000000
+                        0x0000000000000000
                     End
                     Class ="Paint.Picture"
                     OLEClass ="Paint"
@@ -535,10 +446,10 @@ Begin Form
                     FontSize =12
                     FontWeight =700
                     BackColor =13434828
-                    ForeColor =13434828
                     Name ="Label23"
                     Caption ="Promo db"
                     FontName ="Times New Roman"
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     OverlapFlags =85
@@ -737,8 +648,8 @@ Begin Form
                     Left =180
                     Top =885
                     Width =11205
-                    BorderColor =65280
                     Name ="Line103"
+                    BorderThemeColorIndex =0
                 End
                 Begin Subform
                     OverlapFlags =247
@@ -771,27 +682,36 @@ Begin Form
                 Begin TextBox
                     Locked = NotDefault
                     OldBorderStyle =0
-                    OverlapFlags =93
+                    OverlapFlags =85
                     TextAlign =1
-                    Left =14280
-                    Top =60
+                    Left =14711
+                    Top =70
                     Width =510
+                    Height =255
                     ColumnOrder =9
                     TabIndex =12
-                    ForeColor =3355443
                     Name ="Text32"
                     ControlSource ="ID"
 
+                    LayoutCachedLeft =14711
+                    LayoutCachedTop =70
+                    LayoutCachedWidth =15221
+                    LayoutCachedHeight =325
+                    ForeThemeColorIndex =0
                     Begin
                         Begin Label
-                            OverlapFlags =93
+                            OverlapFlags =85
                             TextAlign =3
-                            Left =14025
-                            Top =60
+                            Left =14456
+                            Top =70
                             Width =210
                             Height =255
                             Name ="Label33"
                             Caption ="ID"
+                            LayoutCachedLeft =14456
+                            LayoutCachedTop =70
+                            LayoutCachedWidth =14666
+                            LayoutCachedHeight =325
                         End
                     End
                 End
@@ -808,8 +728,8 @@ Begin Form
                     Height =225
                     ColumnOrder =10
                     TabIndex =13
-                    BackColor =13434828
-                    ColumnInfo ="\"Company Name\";\"\";\"\";\"\";\"10\";\"100\""
+                    BorderColor =0
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SelGoVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCT zVendor.Company, IIf(IsNull([CSubVCs]),\"Must Assign Sub Vendor "
@@ -823,6 +743,8 @@ Begin Form
                     ColumnWidths ="2592;720"
                     AfterUpdate ="[Event Procedure]"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
                     Begin
                         Begin Label
                             OverlapFlags =255
@@ -830,9 +752,9 @@ Begin Form
                             Top =420
                             Width =1575
                             Height =210
-                            ForeColor =13434828
                             Name ="SelGoVndr_Label"
                             Caption ="Select N Go Vendor"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -846,11 +768,11 @@ Begin Form
                     Height =630
                     FontSize =7
                     FontWeight =700
-                    BackColor =8421376
-                    ForeColor =13434828
                     Name ="DNP"
                     Caption ="DNP = Dental Nat'l Promo  DCS = Dental Conv. Special ZNP = Zahn Nat'l Promo"
                     FontName ="Small Fonts"
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     OverlapFlags =223
@@ -862,9 +784,12 @@ Begin Form
                     Height =225
                     ColumnOrder =11
                     TabIndex =14
-                    BackColor =13434828
+                    BorderColor =0
                     Name ="SelRecID"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     OverlapFlags =87
@@ -894,25 +819,25 @@ Begin Form
                     Height =210
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label186"
                     Caption ="Go To RecID"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     BackStyle =1
-                    OverlapFlags =247
+                    OverlapFlags =87
                     TextAlign =1
                     Left =11730
                     Width =2625
                     Height =210
                     FontSize =7
                     FontWeight =700
-                    BackColor =8421376
-                    ForeColor =13434828
                     Name ="Label41"
                     Caption ="TYPE of Redemption Promo "
                     FontName ="Small Fonts"
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =215
@@ -931,6 +856,7 @@ Begin Form
                 End
                 Begin Subform
                     OverlapFlags =85
+                    SpecialEffect =0
                     Left =150
                     Top =1125
                     Width =15210
@@ -946,6 +872,7 @@ Begin Form
                     LayoutCachedTop =1125
                     LayoutCachedWidth =15360
                     LayoutCachedHeight =9825
+                    BorderThemeColorIndex =0
                 End
                 Begin TextBox
                     OverlapFlags =85
@@ -966,8 +893,7 @@ Begin Form
                     Height =210
                     FontSize =7
                     FontWeight =700
-                    BackColor =10092543
-                    ForeColor =255
+                    BackColor =14282978
                     Name ="Label165"
                     Caption ="DEL"
                     FontName ="Small Fonts"
@@ -975,6 +901,9 @@ Begin Form
                     LayoutCachedTop =210
                     LayoutCachedWidth =8670
                     LayoutCachedHeight =420
+                    BackThemeColorIndex =9
+                    BackTint =20.0
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =85
@@ -985,7 +914,6 @@ Begin Form
                     Height =195
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label43"
                     Caption ="=Not In UpLoad"
                     FontName ="Small Fonts"
@@ -993,16 +921,18 @@ Begin Form
                     LayoutCachedTop =225
                     LayoutCachedWidth =9975
                     LayoutCachedHeight =420
+                    ForeThemeColorIndex =0
                 End
             End
         End
         Begin Section
             CanGrow = NotDefault
             Height =0
-            BackColor =8421376
             Name ="Detail"
+            BackThemeColorIndex =1
         End
         Begin FormFooter
+            Visible = NotDefault
             Height =0
             Name ="FormFooter"
         End
@@ -1017,13 +947,13 @@ Option Compare Database
 Option Explicit
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "Form_zVndDefProF - Form_Open"
+config_log "Form_zVndDefProF - Form_Open"
 
    'Forms![zVendorSelRecF]![Company].SetFocus
 End Sub
 
 Private Sub Close_Click()
-Debug.Print "Close_Click"
+config_log "Close_Click"
 On Error GoTo Err_Close_Click
 
     DoCmd.Close
@@ -1038,7 +968,7 @@ Err_Close_Click:
 End Sub
 
 Private Sub ID_Change()
-Debug.Print "Form_zVndDefProF - ID_Change"
+config_log "Form_zVndDefProF - ID_Change"
 On Error GoTo Err_ID_Change
 
     Z_ID = Me!ID
@@ -1052,7 +982,7 @@ Err_ID_Change:
 End Sub
 
 Private Sub SelGoVndr_AfterUpdate()
-Debug.Print "Form_zVndDefProF - SelGoVndr_AfterUpdate"
+config_log "Form_zVndDefProF - SelGoVndr_AfterUpdate"
     ' Find the record that matches the control.
     'Dim rs As Object
 
@@ -1081,7 +1011,7 @@ Debug.Print "Form_zVndDefProF - SelGoVndr_AfterUpdate"
 End Sub
 
 Private Sub GoRecID_Click()
-Debug.Print "Form_zVndDefProF - GoRecID_Click"
+config_log "Form_zVndDefProF - GoRecID_Click"
 On Error GoTo Err_GoRecID_Click
 
     Dim rst As Recordset, intRec As Integer, intID As Integer, strCriteria As String
@@ -1117,7 +1047,7 @@ Err_GoRecID_Click:
 End Sub
 
 Private Sub zVndDefProSF_Enter()
-Debug.Print "Form_zVndDefProF - zVndDefProSF_Enter"
+config_log "Form_zVndDefProF - zVndDefProSF_Enter"
 On Error GoTo Err_zVndDefProSF_Enter
 
 'Forms("Order Entry").Controls("OK").OnEnter = "Enter_Macro"

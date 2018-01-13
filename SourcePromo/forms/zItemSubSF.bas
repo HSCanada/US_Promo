@@ -640,7 +640,7 @@ Option Compare Database
 
 
 Private Sub CopyAdd_Click()
-Debug.Print "Form_zItemSubSF - CopyAdd_Click"
+config_log "Form_zItemSubSF - CopyAdd_Click"
 
 On Error GoTo Err_CopyAdd_Click
 
@@ -666,7 +666,7 @@ Err_CopyAdd_Click:
 End Sub
 
 Private Sub Form_Load()
-Debug.Print "Form_zItemSubSF - Form_Load"
+config_log "Form_zItemSubSF - Form_Load"
 
 DoCmd.OpenQuery "ItemSubCopyAQ"  'Add check marks to all items
 
@@ -678,7 +678,7 @@ DoCmd.OpenQuery "ItemSubCopyAQ"  'Add check marks to all items
 End Sub
 
 Private Sub CloseIt_Click()
-Debug.Print "Form_zItemSubSF - CloseIt_Click"
+config_log "Form_zItemSubSF - CloseIt_Click"
 On Error GoTo Err_CloseIt_Click
 
 

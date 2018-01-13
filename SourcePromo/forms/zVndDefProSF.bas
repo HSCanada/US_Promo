@@ -185,7 +185,7 @@ Begin Form
         Begin Section
             CanGrow = NotDefault
             Height =1125
-            BackColor =8421376
+            BackColor =-2147483613
             Name ="Detail"
             Begin
                 Begin Label
@@ -257,11 +257,11 @@ Begin Form
                     Height =195
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="OfferTextLbl"
                     Caption ="Buy"
                     FontName ="Small Fonts"
                     Tag ="DetachedLabel"
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     OverlapFlags =87
@@ -314,6 +314,7 @@ Begin Form
                     FontName ="Small Fonts"
                     InputMask ="99/99/0000"
 
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     EnterKeyBehavior = NotDefault
@@ -327,10 +328,14 @@ Begin Form
                     ColumnWidth =3000
                     FontSize =7
                     TabIndex =10
+                    BorderColor =0
                     Name ="RedeemOpt"
                     ControlSource ="RedeemOpt"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     OverlapFlags =93
@@ -342,10 +347,14 @@ Begin Form
                     ColumnWidth =2310
                     FontSize =7
                     TabIndex =1
+                    BorderColor =0
+                    ForeColor =-2147483615
                     Name ="PromoNm"
                     ControlSource ="PromoNm"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
                 End
                 Begin TextBox
                     OverlapFlags =93
@@ -357,10 +366,14 @@ Begin Form
                     ColumnWidth =2310
                     FontSize =7
                     TabIndex =3
+                    BorderColor =0
+                    ForeColor =-2147483615
                     Name ="PromoOffer"
                     ControlSource ="PromoOffer"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
                 End
                 Begin TextBox
                     EnterKeyBehavior = NotDefault
@@ -374,10 +387,14 @@ Begin Form
                     ColumnWidth =3000
                     FontSize =7
                     TabIndex =2
+                    BorderColor =0
+                    ForeColor =-2147483615
                     Name ="OfferText"
                     ControlSource ="OfferText"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
                 End
                 Begin ComboBox
                     RowSourceTypeInt =1
@@ -466,18 +483,18 @@ Begin Form
                     Height =225
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label89"
                     Caption ="PROMO"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Line
                     OverlapFlags =85
                     Left =90
                     Top =1065
                     Width =14145
-                    BorderColor =65280
                     Name ="Line103"
+                    BorderThemeColorIndex =0
                 End
                 Begin CommandButton
                     OverlapFlags =215
@@ -539,7 +556,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    SpecialEffect =2
                     OverlapFlags =85
                     TextAlign =2
                     BackStyle =1
@@ -550,13 +566,20 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =12
-                    BackColor =12632256
+                    BorderColor =0
                     Name ="PromoCode"
                     ControlSource ="PromoCode"
                     StatusBarText ="2 Character Promotional Code"
                     FontName ="Small Fonts"
                     ControlTipText ="Sale Flyer Promo Code"
 
+                    LayoutCachedLeft =8355
+                    LayoutCachedTop =45
+                    LayoutCachedWidth =8805
+                    LayoutCachedHeight =240
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                     Begin
                         Begin Label
                             BackStyle =1
@@ -568,11 +591,11 @@ Begin Form
                             Height =195
                             FontSize =7
                             FontWeight =700
-                            BackColor =8421376
-                            ForeColor =12632256
                             Name ="Label148"
                             Caption ="ProCd"
                             FontName ="Small Fonts"
+                            BackThemeColorIndex =1
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -629,11 +652,11 @@ Begin Form
                     Height =195
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label149"
                     Caption ="EFF"
                     FontName ="Small Fonts"
                     Tag ="DetachedLabel"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =93
@@ -644,11 +667,11 @@ Begin Form
                     Height =210
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label150"
                     Caption ="EXP"
                     FontName ="Small Fonts"
                     Tag ="DetachedLabel"
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     OverlapFlags =87
@@ -699,11 +722,11 @@ Begin Form
                     Height =210
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label160"
                     Caption ="Get"
                     FontName ="Small Fonts"
                     Tag ="DetachedLabel"
+                    ForeThemeColorIndex =0
                 End
                 Begin CheckBox
                     OverlapFlags =93
@@ -724,10 +747,10 @@ Begin Form
                             Height =210
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Label159"
                             Caption ="SWO"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -741,11 +764,14 @@ Begin Form
                     Height =195
                     FontSize =7
                     TabIndex =17
-                    BackColor =13434828
+                    BorderColor =0
                     Name ="DelDt"
                     ControlSource ="DelDt"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin CheckBox
                     OverlapFlags =93
@@ -769,11 +795,13 @@ Begin Form
                             Height =210
                             FontSize =7
                             FontWeight =700
-                            BackColor =10092543
-                            ForeColor =255
+                            BackColor =14282978
                             Name ="Label165"
                             Caption ="DEL"
                             FontName ="Small Fonts"
+                            BackThemeColorIndex =9
+                            BackTint =20.0
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -787,11 +815,14 @@ Begin Form
                     Height =195
                     FontSize =7
                     TabIndex =19
-                    BackColor =13434828
+                    BorderColor =0
                     Name ="ApprvDt"
                     ControlSource ="ApprvDt"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin CheckBox
                     OverlapFlags =93
@@ -813,10 +844,10 @@ Begin Form
                             Height =225
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Label163"
                             Caption ="APV"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -846,10 +877,10 @@ Begin Form
                             Height =195
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Label131"
                             Caption ="Flyer Pg"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -875,10 +906,10 @@ Begin Form
                             Height =210
                             FontSize =7
                             FontWeight =700
-                            ForeColor =10092543
                             Name ="Label169"
                             Caption ="DftPro"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -1093,10 +1124,10 @@ Begin Form
                             Height =200
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Type_Label"
                             Caption ="Type"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -1150,10 +1181,10 @@ Begin Form
                             Height =210
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="DNP"
                             Caption ="DNP"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -1176,10 +1207,10 @@ Begin Form
                             Height =210
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="DCS"
                             Caption ="DCS"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -1202,10 +1233,10 @@ Begin Form
                             Height =210
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Label186"
                             Caption ="ZNP"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -1258,10 +1289,10 @@ Begin Form
                             Height =210
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Label190"
                             Caption ="5"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -1286,10 +1317,10 @@ Begin Form
                             Height =210
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Label192"
                             Caption ="6"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -1314,10 +1345,10 @@ Begin Form
                             Height =210
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Label194"
                             Caption ="7"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -1358,10 +1389,14 @@ Begin Form
                     Height =195
                     FontSize =7
                     TabIndex =41
+                    BorderColor =0
                     Name ="RdmOpt1"
                     ControlSource ="RdmOpt1"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =247
@@ -1388,10 +1423,14 @@ Begin Form
                     Height =195
                     FontSize =7
                     TabIndex =42
+                    BorderColor =0
                     Name ="RdmOpt2"
                     ControlSource ="RdmOpt2"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =247
@@ -1418,10 +1457,14 @@ Begin Form
                     Height =195
                     FontSize =7
                     TabIndex =43
+                    BorderColor =0
                     Name ="RdmOpt3"
                     ControlSource ="RdmOpt3"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =255
@@ -1448,10 +1491,14 @@ Begin Form
                     Height =195
                     FontSize =7
                     TabIndex =44
+                    BorderColor =0
                     Name ="RdmOpt4"
                     ControlSource ="RdmOpt4"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =255
@@ -1478,10 +1525,14 @@ Begin Form
                     Height =195
                     FontSize =7
                     TabIndex =45
+                    BorderColor =0
                     Name ="RdmOpt5"
                     ControlSource ="RdmOpt5"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     OverlapFlags =93
@@ -1493,11 +1544,14 @@ Begin Form
                     Height =195
                     FontSize =7
                     TabIndex =46
-                    BackColor =12632256
+                    BorderColor =0
                     Name ="BuyCnt"
                     ControlSource ="BuyCnt"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =255
@@ -1524,13 +1578,16 @@ Begin Form
                     Height =195
                     FontSize =7
                     TabIndex =47
-                    BackColor =12632256
+                    BorderColor =0
                     Name ="GetValu"
                     ControlSource ="GetValu"
                     Format ="$#,##0.00;($#,##0.00)"
                     StatusBarText ="FreeGoods have an $xxx.xx value"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin Line
                     LineSlant = NotDefault
@@ -1538,8 +1595,8 @@ Begin Form
                     Left =5880
                     Top =285
                     Width =2970
-                    BorderColor =13434828
                     Name ="Line223"
+                    BorderThemeColorIndex =0
                 End
                 Begin Line
                     LineSlant = NotDefault
@@ -1547,8 +1604,8 @@ Begin Form
                     Left =9075
                     Top =300
                     Width =4515
-                    BorderColor =10092543
                     Name ="Line224"
+                    BorderThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =247
@@ -1595,10 +1652,10 @@ Begin Form
                             Height =180
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Label228"
                             Caption ="Same"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -1611,11 +1668,11 @@ Begin Form
                     Height =225
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label229"
                     Caption ="BrandPkg"
                     FontName ="Small Fonts"
                     Tag ="DetachedLabel"
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     OverlapFlags =87
@@ -1627,10 +1684,14 @@ Begin Form
                     Height =195
                     FontSize =7
                     TabIndex =49
+                    BorderColor =0
                     Name ="BrandNmPkg"
                     ControlSource ="BrandNmPkg"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     OldBorderStyle =0
@@ -1663,10 +1724,10 @@ Begin Form
                             Height =180
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Label234"
                             Caption ="1 Ord"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -1689,10 +1750,10 @@ Begin Form
                             Height =210
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Label236"
                             Caption ="ZCS"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -1704,10 +1765,13 @@ Begin Form
                     Height =165
                     FontSize =7
                     TabIndex =52
+                    BorderColor =0
                     Name ="ImpDt"
                     ControlSource ="ImpDt"
                     FontName ="Small Fonts"
 
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                     Begin
                         Begin Label
                             OverlapFlags =247
@@ -1761,10 +1825,13 @@ Begin Form
                     Height =180
                     FontSize =7
                     TabIndex =54
+                    BorderColor =0
                     Name ="RdmTel"
                     ControlSource ="RdmTel"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
                     Begin
                         Begin Label
                             OverlapFlags =85
@@ -1790,10 +1857,14 @@ Begin Form
                     Height =180
                     FontSize =7
                     TabIndex =55
+                    BorderColor =0
                     Name ="RdmFax"
                     ControlSource ="RdmFax"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    ForeThemeColorIndex =0
                     Begin
                         Begin Label
                             OverlapFlags =247
@@ -1806,6 +1877,7 @@ Begin Form
                             Name ="Label242"
                             Caption ="RFax:"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -1828,10 +1900,10 @@ Begin Form
                             Height =180
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Label244"
                             Caption ="Same"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -1844,11 +1916,11 @@ Begin Form
                     Height =225
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label245"
                     Caption ="BrandPkg"
                     FontName ="Small Fonts"
                     Tag ="DetachedLabel"
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     OverlapFlags =87
@@ -1884,10 +1956,10 @@ Begin Form
                             Height =180
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Label248"
                             Caption ="1 Ord"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -1917,10 +1989,10 @@ Begin Form
                             Height =135
                             FontSize =7
                             FontWeight =700
-                            ForeColor =10092543
                             Name ="Label212"
                             Caption ="Flyer"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -1951,10 +2023,10 @@ Begin Form
                             Height =180
                             FontSize =7
                             FontWeight =700
-                            ForeColor =10092543
                             Name ="Pg"
                             Caption ="Pg"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -1988,27 +2060,19 @@ Begin Form
                             Height =180
                             FontSize =7
                             FontWeight =700
-                            ForeColor =10092543
                             Name ="Msg_Label"
                             Caption ="Msg"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
-                End
-                Begin TextBox
-                    OverlapFlags =215
-                    IMESentenceMode =3
-                    Width =45
-                    TabIndex =62
-                    Name ="SetF"
-
                 End
                 Begin CheckBox
                     OverlapFlags =247
                     Left =9945
                     Top =90
                     Height =255
-                    TabIndex =63
+                    TabIndex =62
                     Name ="DivPrc"
                     ControlSource ="DivPrc"
                     ControlTipText ="'Green Sheets' Default Promotion"
@@ -2023,10 +2087,10 @@ Begin Form
                             Height =210
                             FontSize =7
                             FontWeight =700
-                            ForeColor =16764057
                             Name ="Label250"
                             Caption ="DivPrc"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -2038,7 +2102,7 @@ Begin Form
                     Height =210
                     FontSize =6
                     FontWeight =700
-                    TabIndex =64
+                    TabIndex =63
                     Name ="FILL"
                     Caption ="FILL>"
                     OnClick ="[Event Procedure]"
@@ -2057,14 +2121,15 @@ Begin Form
                 Begin TextBox
                     OldBorderStyle =0
                     OverlapFlags =247
+                    TextAlign =3
                     IMESentenceMode =3
                     Left =630
                     Width =255
                     Height =270
                     FontSize =10
                     FontWeight =700
-                    TabIndex =65
-                    ForeColor =255
+                    TabIndex =64
+                    ForeColor =4697456
                     Name ="DftD"
                     ControlSource ="=IIf([DftPromo]=-1,\"D\",Null)"
                     FontName ="Arial Black"
@@ -2072,6 +2137,7 @@ Begin Form
                     LayoutCachedLeft =630
                     LayoutCachedWidth =885
                     LayoutCachedHeight =270
+                    ForeThemeColorIndex =9
                 End
             End
         End
@@ -2092,7 +2158,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub AdMn_AfterUpdate()
-Debug.Print "Form_zVndDefProSF - AdMn_AfterUpdate"
+config_log "Form_zVndDefProSF - AdMn_AfterUpdate"
 
 On Error GoTo Err_AdMn_AfterUpdate
 
@@ -2120,17 +2186,17 @@ Err_AdMn_AfterUpdate:
 End Sub
 
 Private Sub Approvd_AfterUpdate()
-Debug.Print "Form_zVndDefProSF - Approvd_AfterUpdate"
+config_log "Form_zVndDefProSF - Approvd_AfterUpdate"
     Me![ApprvDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub Deletd_AfterUpdate()
-Debug.Print "Form_zVndDefProSF - Deletd_AfterUpdate"
+config_log "Form_zVndDefProSF - Deletd_AfterUpdate"
     Me![DelDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub DftPromo_AfterUpdate()
-Debug.Print "Form_zVndDefProSF - DftPromo_AfterUpdate"
+config_log "Form_zVndDefProSF - DftPromo_AfterUpdate"
     If Me![DftPromo] = -1 Then
        If IsNull(Me![SWO]) Then Me![SWO] = 0 '3/3/15 was -1
 '       If IsNull(Me![Dftd]) Then
@@ -2150,12 +2216,12 @@ Debug.Print "Form_zVndDefProSF - DftPromo_AfterUpdate"
 End Sub
 
 Private Sub EffMnth_LostFocus()
-Debug.Print "Form_zVndDefProSF - EffMnth_LostFocus"
+config_log "Form_zVndDefProSF - EffMnth_LostFocus"
 CopyRec.Visible = "False"
 End Sub
 
 Private Sub Form_AfterUpdate()
-Debug.Print "Form_zVndDefProSF - Form_AfterUpdate"
+config_log "Form_zVndDefProSF - Form_AfterUpdate"
 If IsNull(Me!ID) Or Me!ID = "" Then
   Z_ID = Me.Parent.ID ' Get the Marketing ID
   Me!ID = ZID()
@@ -2166,7 +2232,7 @@ If IsNull([SubmitDt]) Then Me![SubmitDt] = Date
 End Sub
 
 Private Sub Fill_Click()
-Debug.Print "Form_zVndDefProSF - Fill_Click"
+config_log "Form_zVndDefProSF - Fill_Click"
 On Error GoTo Err_Fill_Click
 
 If IsNull(Me![EffDate]) And IsNull(Me![ExpDate]) Then
@@ -2202,7 +2268,7 @@ Err_Fill_Click:
 End Sub
 
 Private Sub Type_AfterUpdate()
-Debug.Print "Form_zVndDefProSF - Type_AfterUpdate"
+config_log "Form_zVndDefProSF - Type_AfterUpdate"
 On Error GoTo Err_Type_AfterUpdate
 
     Dim stType As String
@@ -2224,14 +2290,14 @@ Err_Type_AfterUpdate:
 End Sub
 
 Private Sub Unbnd_GotFocus()
-Debug.Print "Form_zVndDefProSF - Unbnd_GotFocus"
+config_log "Form_zVndDefProSF - Unbnd_GotFocus"
 Dim lngRed As Long
 lngRed = RGB(255, 0, 0)
 Me!Unbnd.BackColor = lngRed
 End Sub
 
 Private Sub ViewDet_Click()
-Debug.Print "Form_zVndDefProSF - ViewDet_Click"
+config_log "Form_zVndDefProSF - ViewDet_Click"
 On Error GoTo Err_ViewDet_Click
 
     Dim stDoc As String
@@ -2275,7 +2341,7 @@ Err_ViewDet_Click:
 End Sub
 
 Private Sub Export_Click()
-Debug.Print "Form_zVndDefProSF - Export_Click - PASS"
+config_log "Form_zVndDefProSF - Export_Click - PASS"
 On Error GoTo Err_Export_Click
 
 
@@ -2292,7 +2358,7 @@ Err_Export_Click:
 End Sub
 
 Private Sub CopyRec_Click()
-Debug.Print "Form_zVndDefProSF - CopyRec_Click"
+config_log "Form_zVndDefProSF - CopyRec_Click"
 On Error GoTo Err_CopyRec_Click
  
 Z_RecOld = Me![RecID]
@@ -2392,7 +2458,7 @@ Err_CopyRec_Click:
 End Sub
 
 Private Sub CopyItems_Click()
-Debug.Print "Form_zVndDefProSF - CopyItems_Click"
+config_log "Form_zVndDefProSF - CopyItems_Click"
 On Error GoTo Err_CopyItems_Click
 
 'Dim intRec As Integer
@@ -2414,7 +2480,7 @@ Err_CopyItems_Click:
 End Sub
 
 Private Sub ShowCopy_Click()
-Debug.Print "Form_zVndDefProSF - ShowCopy_Click"
+config_log "Form_zVndDefProSF - ShowCopy_Click"
 On Error GoTo Err_ShowCopy_Click
 
 DoCmd.RunCommand acCmdSaveRecord
@@ -2433,7 +2499,7 @@ Err_ShowCopy_Click:
 End Sub
 
 Private Sub HideCopy_Click()
-Debug.Print "Form_zVndDefProSF - HideCopy_Click"
+config_log "Form_zVndDefProSF - HideCopy_Click"
 On Error GoTo Err_HideCopy_Click
 
 CopyRec.Visible = "False"

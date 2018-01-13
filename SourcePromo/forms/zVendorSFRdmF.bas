@@ -993,14 +993,14 @@ Option Compare Database
 Option Explicit
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "Form_zVendorSFRdmF - Form_Open"
+config_log "Form_zVendorSFRdmF - Form_Open"
 
    'Forms![zVendorSelRecF]![Company].SetFocus
    
 End Sub
 
 Private Sub Close_Click()
-Debug.Print "Form_zVendorSFRdmF - Close_Click"
+config_log "Form_zVendorSFRdmF - Close_Click"
 On Error GoTo Err_Close_Click
 
 
@@ -1016,7 +1016,7 @@ Err_Close_Click:
 End Sub
 
 Private Sub GoRecID_Click()
-Debug.Print "Form_zVendorSFRdmF - GoRecID_Click"
+config_log "Form_zVendorSFRdmF - GoRecID_Click"
 On Error GoTo Err_GoRecID_Click
 
     Dim rst As Recordset, intRec As Integer, intID As Integer, strCriteria As String
@@ -1051,7 +1051,7 @@ Err_GoRecID_Click:
 End Sub
 
 Private Sub SelGoVndr_AfterUpdate()
-Debug.Print "Form_zVendorSFRdmF - SelGoVndr_AfterUpdate"
+config_log "Form_zVendorSFRdmF - SelGoVndr_AfterUpdate"
    Dim rst As Recordset, strCriteria As String
     'strCriteria = "[ContactName] Like '*" & InputBox("Enter the " _
     '    & "first few letters of the name to find") & "*'"

@@ -775,7 +775,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub CloseF_Click()
-Debug.Print "Form_VIPpromosF - CloseF_Click"
+config_log "Form_VIPpromosF - CloseF_Click"
 
 On Error GoTo Err_CloseF_Click
 
@@ -796,7 +796,7 @@ Err_CloseF_Click:
 End Sub
 
 Private Sub Default_Promo_Price_Cntrl_Rpt_Click()
-Debug.Print "Form_VIPpromosF - Default_Promo_Price_Cntrl_Rpt_Click"
+config_log "Form_VIPpromosF - Default_Promo_Price_Cntrl_Rpt_Click"
 On Error GoTo Err_Default_Promo_Price_Cntrl_Rpt_Click
 
     Dim stDocName As String
@@ -816,7 +816,7 @@ Err_Default_Promo_Price_Cntrl_Rpt_Click:
 End Sub
 
 Private Sub Form_Activate()
-Debug.Print "Form_VIPpromosF - Form_Activate"
+config_log "Form_VIPpromosF - Form_Activate"
 DoCmd.Maximize
 End Sub
 
@@ -825,14 +825,14 @@ End Sub
 'End Sub
 
 Private Sub Form_Load()
-Debug.Print "Form_VIPpromosF - Form_Load"
+config_log "Form_VIPpromosF - Form_Load"
 CommandBars.ActiveMenuBar.Enabled = False 'Turn Access' Menu Bar OFF !!
 DoCmd.ShowToolbar "Form View", acToolbarNo
 DoCmd.ShowToolbar "Formatting (Form/Report)", acToolbarNo
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "Form_VIPpromosF - Form_Open"
+config_log "Form_VIPpromosF - Form_Open"
 On Error GoTo Err_Form_Open
 
 Z_EffYr = DatePart("yyyy", Now())
@@ -853,7 +853,7 @@ Err_Form_Open:
 End Sub
 
 Private Sub MnQYr_Click()
-Debug.Print "Form_VIPpromosF - MnQYr_Click"
+config_log "Form_VIPpromosF - MnQYr_Click"
 
 On Error GoTo Err_MnQYr_Click
 
@@ -868,7 +868,7 @@ Err_MnQYr_Click:
 End Sub
 
 Private Sub SelVndr_AfterUpdate()
-Debug.Print "Form_VIPpromosF - SelVndr_AfterUpdate"
+config_log "Form_VIPpromosF - SelVndr_AfterUpdate"
 
 On Error GoTo Err_SelVndr_Click
 
@@ -896,12 +896,12 @@ Err_SelVndr_Click:
 End Sub
 
 Private Sub SelVndr_GotFocus()
-Debug.Print "Form_VIPpromosF - SelVndr_GotFocus"
+config_log "Form_VIPpromosF - SelVndr_GotFocus"
     DoCmd.Maximize
 End Sub
 
 Private Sub VuSelQtr_Click()
-Debug.Print "Form_VIPpromosF - VuSelQtr_Click"
+config_log "Form_VIPpromosF - VuSelQtr_Click"
 On Error GoTo Err_VuSelQtr_Click
 
     Dim stDocName As String

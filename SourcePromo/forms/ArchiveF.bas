@@ -405,7 +405,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub NuRec_Click()
-Debug.Print "Form_ArchiveF - NuRec_Click"
+config_log "Form_ArchiveF - NuRec_Click"
 
 
 On Error GoTo Err_NuRec_Click

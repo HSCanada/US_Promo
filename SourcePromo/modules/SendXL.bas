@@ -6,7 +6,7 @@ Option Explicit
 'Here's how to send an attachment
 Function Sendxls(sZipFile As String) As Boolean
 
-Debug.Print "Sendxls_XXX"
+config_log "Sendxls_XXX"
 Debug.Assert False
 
 ' Send the file who's full path is in sZipFile as an attachment via email

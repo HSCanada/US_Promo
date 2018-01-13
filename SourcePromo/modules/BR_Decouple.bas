@@ -2,10 +2,10 @@ Option Compare Database
 Option Explicit
 
 ' function decouple tag map:
-'   1. debug.print "*.XXX"      = hard-coded info
-'   2. debug.print "function"   = OK, Core
-'   3. debug.print "x"          = OK,non-core
-'   4. debug.print "*.PASS"     = function does nothing
+'   1. config_log "*.XXX"      = hard-coded info
+'   2. config_log "function"   = OK, Core
+'   3. config_log "x"          = OK,non-core
+'   4. config_log "*.PASS"     = function does nothing
 '
 
 Private cConfig As Collection
@@ -13,7 +13,6 @@ Private cConfig As Collection
 
 ' hard code this for now.  external file .env would be ideal
 Public Sub config_init()
-    Debug.Print "BR_Decouple.config_init"
     Set cConfig = New Collection
     
    
@@ -22,7 +21,6 @@ Public Sub config_init()
     cConfig.Add "IT", "OPERATOR_NAME"
     cConfig.Add "THREEM", "3MD_CODE"
     
-'S:\Business Reporting\zDev\US_Promo\PromoBE.accdb
     cConfig.Add "S:\Business Reporting\Promo\", "PATH_MAIN_PROD"
     cConfig.Add "PromoData\", "PATH_DATA_PROD"
     
@@ -40,22 +38,45 @@ Public Sub config_init()
     cConfig.Add "ARCPDTA71", "PRODUCTION_SERVER_FILE_LIBRARY"
     cConfig.Add "ARCQDTA71", "TEST_SERVER_FILE_LIBRARY"
     
+    cConfig.Add "S:\Business Reporting\zDev\US_Promo\promo_log.txt", "PATH_LOG_FILE"
+    
+    config_log "BR_Decouple.config_init"
+  
+    config_log "APP_START"
+    
  
 End Sub
 
 
 Public Function config(sParam As Variant) As String
-    Debug.Print "BR_Decouple.config(sParam=" & sParam & ")"
+'    config_log "BR_Decouple.config(sParam=" & sParam & ")"
     Debug.Assert Not cConfig Is Nothing
     config = cConfig(sParam)
 End Function
 
 
+Public Sub config_log(sEventMsg As String)
+    On Error Resume Next
+    
+    Dim sLogMsg As String
+    
+    
+    sLogMsg = Now() & " | " & Environ("USERNAME") & " | " & sEventMsg & vbCrLf
+    
+    Debug.Print sLogMsg
+    
+    Open config("PATH_LOG_FILE") For Append Access Write Lock Write As #1
+    
+    Print #1, sLogMsg  ' Print text to file.
+    Close #1
+
+End Sub
+
 
 Sub Test()
     config_init
     
-    Debug.Print config("APP_NAME")
+    config_log "test"
     
 End Sub
 

@@ -187,4 +187,4 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 
-' Debug.Print "x"
+' config_log "x"

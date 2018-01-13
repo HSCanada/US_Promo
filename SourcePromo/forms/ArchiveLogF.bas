@@ -145,7 +145,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Close_Click()
-Debug.Print "Form_ArchiveLog - Close_Click"
+config_log "Form_ArchiveLog - Close_Click"
 
 On Error GoTo Err_Close_Click
 

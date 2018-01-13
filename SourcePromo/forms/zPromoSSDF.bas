@@ -1789,7 +1789,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Command102_Click()
-Debug.Print "Form_zPromoSSDF - Command102_Click"
+config_log "Form_zPromoSSDF - Command102_Click"
 
 
 On Error GoTo Err_Command102_Click
@@ -1807,7 +1807,7 @@ Err_Command102_Click:
 End Sub
 
 Private Sub UpTOC_Click()
-Debug.Print "Form_zPromoSSDF - UpTOC_Click"
+config_log "Form_zPromoSSDF - UpTOC_Click"
 On Error GoTo Err_UpTOC_Click
 
     Dim stDocName As String

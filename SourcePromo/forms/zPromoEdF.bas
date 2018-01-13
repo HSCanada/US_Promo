@@ -1358,7 +1358,7 @@ Option Explicit
 
 
 Private Sub AdMn_AfterUpdate()
-Debug.Print "Form_zPromoEdF - AdMn_AfterUpdate"
+config_log "Form_zPromoEdF - AdMn_AfterUpdate"
 
 
 On Error GoTo Err_AdMn_AfterUpdate
@@ -1387,18 +1387,18 @@ Err_AdMn_AfterUpdate:
 End Sub
 
 Private Sub Approvd_AfterUpdate()
-Debug.Print "Form_zPromoEdF - Approvd_AfterUpdate"
+config_log "Form_zPromoEdF - Approvd_AfterUpdate"
 
     Me![ApprvDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub Deletd_AfterUpdate()
-Debug.Print "Form_zPromoEdF - Deletd_AfterUpdate"
+config_log "Form_zPromoEdF - Deletd_AfterUpdate"
     Me![DelDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub DftPromo_AfterUpdate()
-Debug.Print "Form_zPromoEdF - DftPromo_AfterUpdate"
+config_log "Form_zPromoEdF - DftPromo_AfterUpdate"
     If Me![DftPromo] = -1 Then
        If IsNull(Me![SWO]) Then Me![SWO] = -1
     Else
@@ -1406,13 +1406,13 @@ Debug.Print "Form_zPromoEdF - DftPromo_AfterUpdate"
 End Sub
 
 Private Sub EffMnth_LostFocus()
-Debug.Print "Form_zPromoEdF - EffMnth_LostFocus"
+config_log "Form_zPromoEdF - EffMnth_LostFocus"
 
 CopyRec.Visible = "False"
 End Sub
 
 Private Sub Type_AfterUpdate()
-Debug.Print "Form_zPromoEdF - Type_AfterUpdate"
+config_log "Form_zPromoEdF - Type_AfterUpdate"
 
 On Error GoTo Err_Type_AfterUpdate
 
@@ -1435,7 +1435,7 @@ Err_Type_AfterUpdate:
 End Sub
 
 Private Sub ViewDet_Click()
-Debug.Print "Form_zPromoEdF - ViewDet_Click"
+config_log "Form_zPromoEdF - ViewDet_Click"
 
 On Error GoTo Err_ViewDet_Click
 
@@ -1458,7 +1458,7 @@ Err_ViewDet_Click:
 End Sub
 
 Private Sub Export_Click()
-Debug.Print "Form_zPromoEdF - Export_Click"
+config_log "Form_zPromoEdF - Export_Click"
 
 On Error GoTo Err_Export_Click
 
@@ -1476,7 +1476,7 @@ Err_Export_Click:
 End Sub
 
 Private Sub CopyRec_Click()
-Debug.Print "Form_zPromoEdF - CopyRec_Click"
+config_log "Form_zPromoEdF - CopyRec_Click"
 
 On Error GoTo Err_CopyRec_Click
 
@@ -1537,7 +1537,7 @@ Err_CopyRec_Click:
 End Sub
 
 Private Sub CopyItems_Click()
-Debug.Print "Form_zPromoEdF - CopyItems_Click"
+config_log "Form_zPromoEdF - CopyItems_Click"
 
 On Error GoTo Err_CopyItems_Click
 
@@ -1560,7 +1560,7 @@ Err_CopyItems_Click:
 End Sub
 
 Private Sub ShowCopy_Click()
-Debug.Print "Form_zPromoEdF - ShowCopy_Click"
+config_log "Form_zPromoEdF - ShowCopy_Click"
 
 On Error GoTo Err_ShowCopy_Click
 
@@ -1577,7 +1577,7 @@ Err_ShowCopy_Click:
 End Sub
 
 Private Sub HideCopy_Click()
-Debug.Print "Form_zPromoEdF - HideCopy_Click"
+config_log "Form_zPromoEdF - HideCopy_Click"
 
 On Error GoTo Err_HideCopy_Click
 

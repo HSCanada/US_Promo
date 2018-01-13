@@ -600,7 +600,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Command22_Click()
-Debug.Print "Form_eLookupSpclsF - Command22_Click"
+config_log "Form_eLookupSpclsF - Command22_Click"
 On Error GoTo Err_Command22_Click
 
 
@@ -616,7 +616,7 @@ Err_Command22_Click:
 End Sub
 
 Private Sub GoToPromo_Click()
-Debug.Print "Form_eLookupSpclsF - GoToPromo_Click"
+config_log "Form_eLookupSpclsF - GoToPromo_Click"
 On Error GoTo Err_GoToPromo_Click
 
     Dim stDocName As String
@@ -637,7 +637,7 @@ Err_GoToPromo_Click:
 End Sub
 
 Private Sub GoTozPromo_Click()
-Debug.Print "Form_eLookupSpclsF - GoTozPromo_Click"
+config_log "Form_eLookupSpclsF - GoTozPromo_Click"
 On Error GoTo Err_GoTozPromo_Click
 
     Dim stDocName As String

@@ -289,7 +289,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Command10_Click()
-Debug.Print "Form_vVendorCompF - Command10_Click"
+config_log "Form_vVendorCompF - Command10_Click"
 
 
 On Error GoTo Err_Command10_Click

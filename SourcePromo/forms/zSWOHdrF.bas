@@ -420,7 +420,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Form_AfterDelConfirm(Status As Integer)
-Debug.Print "Form_zSWOHdrF - Form_AfterDelConfirm"
+config_log "Form_zSWOHdrF - Form_AfterDelConfirm"
 
 
 Dim a, b
@@ -467,7 +467,7 @@ Forms!zSWONuF![OfferText] = HOffer()
 End Sub
 
 Private Sub Form_AfterUpdate()
-Debug.Print "Form_zSWOHdrF - Form_AfterUpdate"
+config_log "Form_zSWOHdrF - Form_AfterUpdate"
 'For the Manual process' "Buy" statement...
 'First get a count of all [zHdr] records linked to the promotion's [RecID].
 'How?

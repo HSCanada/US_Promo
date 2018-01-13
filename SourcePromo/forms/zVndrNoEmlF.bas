@@ -635,7 +635,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub CloseF_Click()
-Debug.Print "Form_zVndrNoEmlF - CloseF_Click"
+config_log "Form_zVndrNoEmlF - CloseF_Click"
 
 On Error GoTo Err_CloseF_Click
 

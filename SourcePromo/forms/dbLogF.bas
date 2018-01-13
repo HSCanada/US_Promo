@@ -377,7 +377,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub By_AfterUpdate()
-Debug.Print "Form_dbLogF - By_AfterUpdate"
+config_log "Form_dbLogF - By_AfterUpdate"
 On Error GoTo Err_By_AfterUpdate
 
 If IsNull(Me![LogDate]) Then Me![LogDate] = Format(Now(), "mm/dd/yyyy")
@@ -391,7 +391,7 @@ Err_By_AfterUpdate:
 End Sub
 
 Private Sub Close_Click()
-Debug.Print "Form_dbLogF - Close_Click"
+config_log "Form_dbLogF - Close_Click"
 On Error GoTo Err_Close_Click
 
 

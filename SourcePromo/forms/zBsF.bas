@@ -169,7 +169,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Close_Click()
-Debug.Print "Form_zBsF - Close_Click"
+config_log "Form_zBsF - Close_Click"
 
 
 On Error GoTo Err_Close_Click

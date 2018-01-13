@@ -12,9 +12,9 @@ Begin Form
     Width =9030
     DatasheetFontHeight =10
     ItemSuffix =27
-    Left =75
-    Top =2370
-    Right =9450
+    Left =345
+    Top =2385
+    Right =9705
     Bottom =3810
     DatasheetGridlinesColor =12632256
     AfterDelConfirm ="[Event Procedure]"
@@ -166,6 +166,7 @@ Begin Form
                     Width =840
                     Height =195
                     ColumnWidth =900
+                    ColumnOrder =0
                     FontSize =7
                     BackColor =12632256
                     ForeColor =3355443
@@ -183,11 +184,12 @@ Begin Form
                     Height =180
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
+                    ForeColor =0
                     Name ="Label19"
                     Caption ="BUY DETAILS"
                     FontName ="Small Fonts"
                     Tag ="DetachedLabel"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =85
@@ -349,9 +351,9 @@ Begin Form
                     Left =30
                     Width =555
                     Height =225
-                    BackColor =8421376
-                    BorderColor =8421376
                     Name ="Box20"
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
                 End
                 Begin TextBox
                     SpecialEffect =0
@@ -419,7 +421,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Form_AfterDelConfirm(Status As Integer)
-Debug.Print "Form_zHdrF - Form_AfterDelConfirm"
+config_log "Form_zHdrF - Form_AfterDelConfirm"
 
 
 Dim a, b
@@ -466,7 +468,7 @@ Forms!zPromoF![OfferText] = HOffer()
 End Sub
 
 Private Sub Form_AfterUpdate()
-Debug.Print "Form_zHdrF - Form_AfterUpdate"
+config_log "Form_zHdrF - Form_AfterUpdate"
 'For the Manual process' "Buy" statement...
 'First get a count of all [zHdr] records linked to the promotion's [RecID].
 'How?

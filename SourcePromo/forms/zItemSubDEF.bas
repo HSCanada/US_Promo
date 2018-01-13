@@ -803,7 +803,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Close_Click()
-Debug.Print "Form_zItemSubDEF - Close_Click"
+config_log "Form_zItemSubDEF - Close_Click"
 
 On Error GoTo Err_Close_Click
 

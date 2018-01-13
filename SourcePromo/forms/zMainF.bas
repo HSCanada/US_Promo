@@ -13,9 +13,9 @@ Begin Form
     Width =17775
     DatasheetFontHeight =10
     ItemSuffix =283
-    Left =165
+    Left =1335
     Top =240
-    Right =17940
+    Right =17310
     Bottom =13890
     TimerInterval =60000
     DatasheetGridlinesColor =12632256
@@ -85,8 +85,8 @@ Begin Form
         End
         Begin Section
             CanGrow = NotDefault
-            Height =15225
-            BackColor =8421376
+            Height =14834
+            BackColor =-2147483613
             Name ="Detail"
             Begin
                 Begin Label
@@ -98,10 +98,10 @@ Begin Form
                     Height =195
                     FontSize =7
                     BackColor =8421376
-                    ForeColor =13434828
                     Name ="Label165"
                     Caption ="\\\\nym2212t\\corpshare\\...2KFLDTBL.mdb"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =93
@@ -160,6 +160,19 @@ Begin Form
                     LayoutCachedTop =9855
                     LayoutCachedWidth =2280
                     LayoutCachedHeight =10140
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -243,7 +256,7 @@ Begin Form
                     FontSize =7
                     TabIndex =3
                     BoundColumn =1
-                    ColumnInfo ="\"Company Name\";\"\";\"\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SelID"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCTROW zVendor.Company, zVendor.ID FROM zVendor ORDER BY zVendor.Com"
@@ -312,6 +325,7 @@ Begin Form
                     LayoutCachedTop =9585
                     LayoutCachedWidth =2460
                     LayoutCachedHeight =9840
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     FontItalic = NotDefault
@@ -327,6 +341,7 @@ Begin Form
                     Name ="Label10"
                     Caption ="1. Defaulted Promotions"
                     FontName ="Times New Roman"
+                    ForeThemeColorIndex =0
                 End
                 Begin UnboundObjectFrame
                     SpecialEffect =1
@@ -374,7 +389,7 @@ Begin Form
                         0x8000000052006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff02000000e33ffe89f69f1b10b6780402 ,
-                        0x1c00700200000000000000000000000030925256a97ad3010300000000010000 ,
+                        0x1c007002000000000000000000000000b0e8f30fa28cd3010300000000010000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -2661,11 +2676,11 @@ Begin Form
                     Height =240
                     FontSize =7
                     FontWeight =700
-                    BackColor =12632256
-                    ForeColor =8421376
                     Name ="Text65"
                     Caption ="Main Vendor Promotions Screen"
                     FontName ="Small Fonts"
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     SpecialEffect =0
@@ -2887,6 +2902,23 @@ Begin Form
                     End
                     ControlTipText ="Quit App"
 
+                    LayoutCachedLeft =5355
+                    LayoutCachedTop =165
+                    LayoutCachedWidth =5901
+                    LayoutCachedHeight =501
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -2916,6 +2948,11 @@ Begin Form
                     Name ="Label20"
                     Caption ="3. Effective Quarter"
                     FontName ="Times New Roman"
+                    LayoutCachedLeft =6855
+                    LayoutCachedTop =960
+                    LayoutCachedWidth =9105
+                    LayoutCachedHeight =1230
+                    ForeThemeColorIndex =0
                 End
                 Begin Rectangle
                     SpecialEffect =1
@@ -2940,6 +2977,11 @@ Begin Form
                     Name ="Label22"
                     Caption ="8. Updates and Such"
                     FontName ="Times New Roman"
+                    LayoutCachedLeft =6840
+                    LayoutCachedTop =3945
+                    LayoutCachedWidth =9120
+                    LayoutCachedHeight =4215
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     Visible = NotDefault
@@ -2998,6 +3040,23 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     FontName ="Small Fonts"
 
+                    LayoutCachedLeft =7275
+                    LayoutCachedTop =4290
+                    LayoutCachedWidth =8670
+                    LayoutCachedHeight =4575
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -3015,12 +3074,12 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =15
-                    BackColor =65535
                     Name ="EffQtr"
                     ControlSource ="EffQtr"
                     AfterUpdate ="[Event Procedure]"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
                     Begin
                         Begin Label
                             OverlapFlags =215
@@ -3031,10 +3090,10 @@ Begin Form
                             Height =195
                             FontSize =7
                             FontWeight =700
-                            ForeColor =65535
                             Name ="Label29"
                             Caption ="QTR"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -3048,12 +3107,12 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =16
-                    BackColor =65535
                     Name ="EffYr"
                     ControlSource ="EffYr"
                     AfterUpdate ="[Event Procedure]"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
                     Begin
                         Begin Label
                             OverlapFlags =215
@@ -3064,10 +3123,10 @@ Begin Form
                             Height =195
                             FontSize =7
                             FontWeight =700
-                            ForeColor =65535
                             Name ="Label30"
                             Caption ="Yr"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -3204,7 +3263,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =22
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SelVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCT zVendor.ID, zVendor.Company FROM zVendor INNER JOIN zPromo ON zV"
@@ -3253,6 +3312,11 @@ Begin Form
                     Name ="Label44"
                     Caption ="4. Sale Flyer"
                     FontName ="Times New Roman"
+                    LayoutCachedLeft =9360
+                    LayoutCachedTop =960
+                    LayoutCachedWidth =11640
+                    LayoutCachedHeight =1230
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =223
@@ -3281,7 +3345,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =23
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SFselVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCTROW zVendor.ID, zVendor.Company FROM zVendor ORDER BY zVendor.Com"
@@ -3415,12 +3479,12 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =27
-                    BackColor =65535
                     Name ="EffMn"
                     ControlSource ="EffMn"
                     AfterUpdate ="[Event Procedure]"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
                     Begin
                         Begin Label
                             OverlapFlags =93
@@ -3431,10 +3495,10 @@ Begin Form
                             Height =210
                             FontSize =7
                             FontWeight =700
-                            ForeColor =65535
                             Name ="Label49"
                             Caption ="Month"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -3461,6 +3525,11 @@ Begin Form
                     Name ="Label52"
                     Caption ="2. Monthly Promotions "
                     FontName ="Times New Roman"
+                    LayoutCachedLeft =2670
+                    LayoutCachedTop =960
+                    LayoutCachedWidth =6615
+                    LayoutCachedHeight =1230
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =255
@@ -3552,7 +3621,6 @@ Begin Form
                     End
                 End
                 Begin CommandButton
-                    Visible = NotDefault
                     OverlapFlags =93
                     Left =4485
                     Top =6225
@@ -3561,7 +3629,6 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =30
-                    ForeColor =255
                     Name ="EUpDt"
                     Caption ="2.A. Update On-Line Data  "
                     OnClick ="[Event Procedure]"
@@ -3571,6 +3638,19 @@ Begin Form
                     LayoutCachedTop =6225
                     LayoutCachedWidth =6555
                     LayoutCachedHeight =6495
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -3607,10 +3687,10 @@ Begin Form
                     Width =4170
                     Height =285
                     FontWeight =700
-                    BackColor =8421376
-                    ForeColor =13434828
                     Name ="Label61"
                     Caption ="[zItemSub] is linked to [2kfldtbl].[zEItemSub]"
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     Visible = NotDefault
@@ -3621,10 +3701,10 @@ Begin Form
                     Width =4170
                     Height =285
                     FontWeight =700
-                    BackColor =8421376
-                    ForeColor =13434828
                     Name ="Label62"
                     Caption ="[zPromo] is linked to [2kfldtbl].[zEPromo]"
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     Visible = NotDefault
@@ -3635,10 +3715,10 @@ Begin Form
                     Width =5475
                     Height =285
                     FontWeight =700
-                    BackColor =8421376
-                    ForeColor =13434828
                     Name ="Label63"
                     Caption ="[zVendor] is still linked to [2kfldtbl].[zVendor], not ...[zEVendor]"
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     SpecialEffect =0
@@ -3650,11 +3730,12 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =31
-                    BackColor =13434828
                     Name ="LastUpDt"
                     ControlSource ="LastUpDt"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                     Begin
                         Begin Label
                             OverlapFlags =255
@@ -3724,11 +3805,11 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =33
-                    BackColor =12632256
                     Name ="Text69"
                     ControlSource ="EffQtr"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
                     Begin
                         Begin Label
                             OverlapFlags =247
@@ -3756,11 +3837,11 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =34
-                    BackColor =12632256
                     Name ="Text71"
                     ControlSource ="EffYr"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
                     Begin
                         Begin Label
                             OverlapFlags =247
@@ -3801,14 +3882,14 @@ Begin Form
                     Width =4170
                     Height =525
                     FontWeight =700
-                    BackColor =8421376
-                    ForeColor =13434828
                     Name ="Label74"
                     Caption ="12/26/02 Repoint Item Code conversions to the ArubA database itemcode table."
                     LayoutCachedLeft =3000
                     LayoutCachedTop =9420
                     LayoutCachedWidth =7170
                     LayoutCachedHeight =9945
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     OverlapFlags =215
@@ -3819,12 +3900,28 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =35
-                    ForeColor =6697881
                     Name ="EdVndrs"
                     Caption ="B. Edit Vendors"
                     OnClick ="[Event Procedure]"
                     FontName ="Small Fonts"
 
+                    LayoutCachedLeft =7290
+                    LayoutCachedTop =5115
+                    LayoutCachedWidth =8670
+                    LayoutCachedHeight =5370
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -3858,9 +3955,9 @@ Begin Form
                     Width =405
                     Height =210
                     FontWeight =700
-                    ForeColor =65535
                     Name ="Label77"
                     Caption ="JG !"
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     OverlapFlags =215
@@ -3876,6 +3973,23 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     FontName ="Small Fonts"
 
+                    LayoutCachedLeft =7290
+                    LayoutCachedTop =5460
+                    LayoutCachedWidth =8670
+                    LayoutCachedHeight =5715
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -3905,6 +4019,11 @@ Begin Form
                     Name ="Label80"
                     Caption ="9. Marketing"
                     FontName ="Times New Roman"
+                    LayoutCachedLeft =11880
+                    LayoutCachedTop =5250
+                    LayoutCachedWidth =14655
+                    LayoutCachedHeight =5520
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     OverlapFlags =223
@@ -3949,11 +4068,11 @@ Begin Form
                     Width =2685
                     Height =630
                     FontSize =7
-                    ForeColor =13434828
                     Name ="Label85"
                     Caption ="When entering [Eff] date enter the first day of the Quarter OR you will lose the"
                         " promos that start on the first day of the Quarter."
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =247
@@ -3975,12 +4094,12 @@ Begin Form
                     Height =1080
                     FontSize =7
                     BackColor =8421376
-                    ForeColor =13434828
                     Name ="Label87"
                     Caption ="There is a  button on the vendor screens \"COPY REC.\" Look to the right of the "
                         "screen.  To confirm click \"COPY!\"  It will copy BOTH a promotion and all the I"
                         "temCodes from the old promotion.  ItemCodes show after close and reopen."
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =215
@@ -3992,10 +4111,10 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     BackColor =8421376
-                    ForeColor =13434828
                     Name ="Label89"
                     Caption ="Allows ItemDesc UpDts + vendor edit w/ a view only of Mktg DB Contacts"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     Visible = NotDefault
@@ -4127,18 +4246,19 @@ Begin Form
                 Begin Rectangle
                     SpecialEffect =0
                     BackStyle =1
+                    OldBorderStyle =0
                     OverlapFlags =247
                     Left =2574
                     Top =10086
                     Width =4380
                     Height =4305
-                    BackColor =8421376
                     BorderColor =8421376
                     Name ="Box100"
                     LayoutCachedLeft =2574
                     LayoutCachedTop =10086
                     LayoutCachedWidth =6954
                     LayoutCachedHeight =14391
+                    BackThemeColorIndex =1
                 End
                 Begin Label
                     OverlapFlags =247
@@ -4148,10 +4268,10 @@ Begin Form
                     Width =3990
                     Height =240
                     FontSize =7
-                    ForeColor =13434828
                     Name ="Label103"
                     Caption ="UpDates include all promotions with live redemption dates"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     Visible = NotDefault
@@ -4164,11 +4284,11 @@ Begin Form
                     Height =180
                     FontSize =6
                     FontWeight =700
-                    BackColor =8421376
-                    ForeColor =13434828
                     Name ="Label104"
                     Caption ="Import process eliminates duplicate family set codes "
                     FontName ="Small Fonts"
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     Visible = NotDefault
@@ -4179,10 +4299,10 @@ Begin Form
                     Width =4560
                     Height =285
                     FontWeight =700
-                    BackColor =8421376
-                    ForeColor =16777164
                     Name ="Label105"
                     Caption ="[zReadPromo] is linked to [2kfldtbl].[zPromo]"
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     Visible = NotDefault
@@ -4193,10 +4313,10 @@ Begin Form
                     Width =4320
                     Height =330
                     FontWeight =700
-                    BackColor =8421376
-                    ForeColor =16777164
                     Name ="Label107"
                     Caption ="[zReadItemSub] is linked to [2kfldtbl].[zItemSub]"
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     Visible = NotDefault
@@ -4210,10 +4330,10 @@ Begin Form
                     Height =270
                     FontSize =10
                     FontWeight =700
-                    ForeColor =16777164
                     Name ="Label108"
                     Caption ="8. Update E-Commerce Table"
                     FontName ="Times New Roman"
+                    ForeThemeColorIndex =0
                 End
                 Begin CheckBox
                     Visible = NotDefault
@@ -4233,10 +4353,10 @@ Begin Form
                             Height =210
                             FontSize =6
                             FontWeight =700
-                            ForeColor =65535
                             Name ="NuVndLbl"
                             Caption ="NEW VENDOR?"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -4249,10 +4369,10 @@ Begin Form
                     Height =180
                     FontSize =6
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label111"
                     Caption ="All Active Promos by Promo Nm"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Rectangle
                     Visible = NotDefault
@@ -4387,6 +4507,19 @@ Begin Form
                     LayoutCachedTop =11895
                     LayoutCachedWidth =2220
                     LayoutCachedHeight =12225
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -4407,7 +4540,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =47
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="Combo119"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCTROW zVendor.ID, zVendor.Company FROM zVendor ORDER BY zVendor.Com"
@@ -4446,13 +4579,13 @@ Begin Form
                     Height =600
                     FontSize =6
                     FontWeight =700
-                    ForeColor =65535
                     Name ="Label121"
                     Caption ="Shows All ACTIVE REDEMPTIONS as of 4/13/2006 Sorted by Promo Name"
                     FontName ="Small Fonts"
                     LayoutCachedTop =12210
                     LayoutCachedWidth =2445
                     LayoutCachedHeight =12810
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     OverlapFlags =247
@@ -4487,7 +4620,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =49
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SelMnByVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCT zVendor.ID, zVendor.Company FROM zVendor INNER JOIN zPromo ON zV"
@@ -4521,9 +4654,9 @@ Begin Form
                     Height =210
                     FontWeight =700
                     BackColor =8421376
-                    ForeColor =65535
                     Name ="Label127"
                     Caption ="w/ [Type]"
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     Visible = NotDefault
@@ -4555,12 +4688,28 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =51
-                    ForeColor =6697881
                     Name ="VIPsubmits"
                     Caption ="2. VIP submissions"
                     OnClick ="[Event Procedure]"
                     FontName ="Small Fonts"
 
+                    LayoutCachedLeft =6960
+                    LayoutCachedTop =6825
+                    LayoutCachedWidth =9060
+                    LayoutCachedHeight =7080
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -4594,6 +4743,11 @@ Begin Form
                     Name ="Label131"
                     Caption ="9. VIP"
                     FontName ="Times New Roman"
+                    LayoutCachedLeft =6900
+                    LayoutCachedTop =6240
+                    LayoutCachedWidth =9105
+                    LayoutCachedHeight =6735
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =93
@@ -4603,10 +4757,10 @@ Begin Form
                     Width =2520
                     Height =210
                     FontSize =7
-                    ForeColor =13434828
                     Name ="Label132"
                     Caption ="[Typ1] = Dental National Promotions"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     Visible = NotDefault
@@ -4627,11 +4781,11 @@ Begin Form
                     Width =3960
                     Height =345
                     FontSize =7
-                    ForeColor =13434828
                     Name ="Label134"
                     Caption ="FIRST, from box 7. Updates, button A. Admin, run 3 updates for AS400 ItemCodes a"
                         "nd Descriptions"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     Visible = NotDefault
@@ -4645,10 +4799,10 @@ Begin Form
                     Height =495
                     FontSize =18
                     FontWeight =700
-                    BackColor =13434828
                     Name ="VerQA"
                     Caption ="  QA  Mode"
                     FontName ="Rockwell Extra Bold"
+                    BackThemeColorIndex =1
                 End
                 Begin CommandButton
                     OverlapFlags =215
@@ -4659,12 +4813,28 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =52
-                    ForeColor =6697881
                     Name ="VIPadmin"
                     Caption ="1. VIP Admin"
                     OnClick ="[Event Procedure]"
                     FontName ="Small Fonts"
 
+                    LayoutCachedLeft =6960
+                    LayoutCachedTop =6510
+                    LayoutCachedWidth =9060
+                    LayoutCachedHeight =6765
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -4680,9 +4850,9 @@ Begin Form
                     Top =510
                     Width =5070
                     Height =210
-                    BackColor =16777164
                     Name ="Label137"
                     Caption ="Still must Get BrandNmPkg into [zPromo] in [zBsDSLTyp1PromoAQ]"
+                    BackThemeColorIndex =1
                 End
                 Begin Label
                     Visible = NotDefault
@@ -4694,10 +4864,10 @@ Begin Form
                     Width =3165
                     Height =150
                     FontSize =7
-                    BackColor =16777164
                     Name ="Label139"
                     Caption =" UpDtBuyTblesM"
                     FontName ="Small Fonts"
+                    BackThemeColorIndex =1
                 End
                 Begin CommandButton
                     OverlapFlags =247
@@ -4741,6 +4911,11 @@ Begin Form
                     Name ="Label142"
                     Caption ="10. Buy Updates"
                     FontName ="Times New Roman"
+                    LayoutCachedLeft =9405
+                    LayoutCachedTop =6915
+                    LayoutCachedWidth =11640
+                    LayoutCachedHeight =7185
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     OverlapFlags =215
@@ -4790,10 +4965,10 @@ Begin Form
                     Height =255
                     FontSize =9
                     FontWeight =700
-                    BackColor =13434828
                     Name ="VerProd"
                     Caption ="  A Production _Promo db"
                     FontName ="Rockwell"
+                    BackThemeColorIndex =1
                 End
                 Begin Label
                     OverlapFlags =255
@@ -4803,10 +4978,10 @@ Begin Form
                     Width =2220
                     Height =180
                     FontSize =7
-                    ForeColor =13434828
                     Name ="LinkSet"
                     Caption ="Reset links in: MdbLinkUpDtsM"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     OverlapFlags =215
@@ -4817,12 +4992,28 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =56
-                    ForeColor =3355443
                     Name ="Utilities"
                     Caption ="D. Utilities"
                     OnClick ="[Event Procedure]"
                     FontName ="Small Fonts"
 
+                    LayoutCachedLeft =7290
+                    LayoutCachedTop =5805
+                    LayoutCachedWidth =8670
+                    LayoutCachedHeight =6060
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -4861,13 +5052,13 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =58
-                    BackColor =8421376
-                    ForeColor =13434828
                     Name ="DbNm"
                     ControlSource ="=\"Full db Name:  \" & [Application].[CurrentProject].[Path] & \"\\\" & [Applica"
                         "tion].[CurrentProject].[Name]"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     Locked = NotDefault
@@ -4880,12 +5071,12 @@ Begin Form
                     Height =180
                     FontSize =7
                     TabIndex =59
-                    BackColor =8421376
-                    ForeColor =13434828
                     Name ="Ver"
                     ControlSource ="Ver"
                     FontName ="Small Fonts"
 
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                     Begin
                         Begin Label
                             OverlapFlags =87
@@ -4893,10 +5084,10 @@ Begin Form
                             Width =315
                             Height =180
                             FontSize =7
-                            ForeColor =13434828
                             Name ="Label151"
                             Caption ="Ver:"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -4997,6 +5188,11 @@ Begin Form
                     Name ="Label157"
                     Caption ="11. View E-Comm Updates"
                     FontName ="Times New Roman"
+                    LayoutCachedLeft =11835
+                    LayoutCachedTop =960
+                    LayoutCachedWidth =14700
+                    LayoutCachedHeight =1230
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =223
@@ -5007,10 +5203,10 @@ Begin Form
                     Height =195
                     FontSize =7
                     BackColor =8421376
-                    ForeColor =13434828
                     Name ="Label161"
                     Caption ="VENDORs -View By"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     OverlapFlags =215
@@ -5041,10 +5237,10 @@ Begin Form
                     Height =195
                     FontSize =7
                     BackColor =8421376
-                    ForeColor =13434828
                     Name ="Label163"
                     Caption ="\\\\usnymefs01\\Corpshare\\...DntPromo.mdb"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     OverlapFlags =215
@@ -5100,6 +5296,11 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     FontName ="Small Fonts"
 
+                    LayoutCachedLeft =12015
+                    LayoutCachedTop =1875
+                    LayoutCachedWidth =13050
+                    LayoutCachedHeight =2160
+                    UseTheme =255
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -5176,9 +5377,9 @@ Begin Form
                     Top =135
                     Width =795
                     Height =210
-                    BackColor =8421376
                     Name ="Label168"
                     Caption ="20100428"
+                    BackThemeColorIndex =1
                 End
                 Begin CommandButton
                     OverlapFlags =215
@@ -5189,12 +5390,28 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =71
-                    ForeColor =6697881
                     Name ="VuPromoDups"
                     Caption ="3. Vu Promo Dups (if any)"
                     OnClick ="[Event Procedure]"
                     FontName ="Small Fonts"
 
+                    LayoutCachedLeft =6960
+                    LayoutCachedTop =7140
+                    LayoutCachedWidth =9060
+                    LayoutCachedHeight =7395
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -5210,12 +5427,28 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =72
-                    ForeColor =6697881
                     Name ="MasterLookup"
                     Caption ="F. Master Supplier LookUp"
                     OnClick ="[Event Procedure]"
                     FontName ="Small Fonts"
 
+                    LayoutCachedLeft =6870
+                    LayoutCachedTop =3480
+                    LayoutCachedWidth =9135
+                    LayoutCachedHeight =3735
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -5231,12 +5464,28 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =73
-                    ForeColor =6697881
                     Name ="VuImps"
                     Caption ="4. View Imported Promos "
                     OnClick ="[Event Procedure]"
                     FontName ="Small Fonts"
 
+                    LayoutCachedLeft =6960
+                    LayoutCachedTop =7455
+                    LayoutCachedWidth =9060
+                    LayoutCachedHeight =7710
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -5252,12 +5501,30 @@ Begin Form
                     FontSize =6
                     FontWeight =700
                     TabIndex =74
-                    ForeColor =16711680
+                    ForeColor =0
                     Name ="ManAdd"
                     Caption ="2. Form - Manually Add Vendor and Promotion"
                     OnClick ="[Event Procedure]"
                     FontName ="Small Fonts"
 
+                    LayoutCachedLeft =2805
+                    LayoutCachedTop =3960
+                    LayoutCachedWidth =6540
+                    LayoutCachedHeight =4215
+                    ForeThemeColorIndex =0
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -5282,6 +5549,19 @@ Begin Form
                     LayoutCachedTop =10245
                     LayoutCachedWidth =2280
                     LayoutCachedHeight =10530
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -5289,7 +5569,6 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    Visible = NotDefault
                     OverlapFlags =215
                     Left =6870
                     Top =2850
@@ -5303,6 +5582,23 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     FontName ="Small Fonts"
 
+                    LayoutCachedLeft =6870
+                    LayoutCachedTop =2850
+                    LayoutCachedWidth =9135
+                    LayoutCachedHeight =3105
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -5342,7 +5638,6 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    Visible = NotDefault
                     OverlapFlags =215
                     Left =6870
                     Top =3165
@@ -5356,6 +5651,23 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     FontName ="Small Fonts"
 
+                    LayoutCachedLeft =6870
+                    LayoutCachedTop =3165
+                    LayoutCachedWidth =9135
+                    LayoutCachedHeight =3420
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -5503,7 +5815,6 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    Visible = NotDefault
                     OverlapFlags =215
                     Left =6870
                     Top =2535
@@ -5517,6 +5828,23 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     FontName ="Small Fonts"
 
+                    LayoutCachedLeft =6870
+                    LayoutCachedTop =2535
+                    LayoutCachedWidth =9135
+                    LayoutCachedHeight =2790
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -5553,7 +5881,6 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =86
-                    ForeColor =255
                     Name ="NullBuyOrIC"
                     Caption ="1. Find Promos w/o Buys, Items or Buy Parts"
                     OnClick ="[Event Procedure]"
@@ -5563,6 +5890,19 @@ Begin Form
                     LayoutCachedTop =5550
                     LayoutCachedWidth =6315
                     LayoutCachedHeight =5820
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -5598,10 +5938,10 @@ Begin Form
                     Width =2535
                     Height =180
                     FontSize =5
-                    ForeColor =13434828
                     Name ="Label191"
                     Caption ="2. NOT FLAGGED IN A [CORPLIST] PROMO BOX"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =215
@@ -5611,10 +5951,10 @@ Begin Form
                     Width =2745
                     Height =180
                     FontSize =5
-                    ForeColor =13434828
                     Name ="Label192"
                     Caption ="4. FLAGGED FOR PROMO IN [CORPLIST] BUT NO EMAIL"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Rectangle
                     SpecialEffect =1
@@ -5748,10 +6088,10 @@ Begin Form
                     Width =2790
                     Height =210
                     FontSize =7
-                    ForeColor =13434828
                     Name ="Label200"
                     Caption ="Select Qtr in Current (CY) or Next (NY) Year"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     OverlapFlags =215
@@ -5781,10 +6121,10 @@ Begin Form
                     Width =2790
                     Height =210
                     FontSize =7
-                    ForeColor =13434828
                     Name ="Label202"
                     Caption ="Track Suppliers w/o promos"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =215
@@ -5794,10 +6134,10 @@ Begin Form
                     Width =2790
                     Height =435
                     FontSize =7
-                    ForeColor =13434828
                     Name ="Label203"
                     Caption ="CY = Defaulted \"Current Year\""
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =223
@@ -5807,10 +6147,10 @@ Begin Form
                     Width =2790
                     Height =210
                     FontSize =7
-                    ForeColor =13434828
                     Name ="Label204"
                     Caption ="Copy and Paste list into bcc of email"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =215
@@ -5820,10 +6160,10 @@ Begin Form
                     Width =2790
                     Height =210
                     FontSize =7
-                    ForeColor =13434828
                     Name ="Label205"
                     Caption ="- - - - - - - - - - - - - - - - -"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin ComboBox
                     ColumnHeads = NotDefault
@@ -5861,7 +6201,6 @@ Begin Form
                             Width =1140
                             Height =180
                             FontSize =7
-                            ForeColor =13434828
                             Name ="SWOStart_Label"
                             Caption ="2. SWO  EDIT"
                             FontName ="Small Fonts"
@@ -5869,6 +6208,7 @@ Begin Form
                             LayoutCachedTop =5520
                             LayoutCachedWidth =2460
                             LayoutCachedHeight =5700
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -5926,6 +6266,7 @@ Begin Form
                     LayoutCachedTop =5265
                     LayoutCachedWidth =2430
                     LayoutCachedHeight =5535
+                    ForeThemeColorIndex =0
                 End
                 Begin ComboBox
                     ColumnHeads = NotDefault
@@ -5963,7 +6304,6 @@ Begin Form
                             Width =1200
                             Height =210
                             FontSize =7
-                            ForeColor =13434828
                             Name ="Label212"
                             Caption ="4. SWO  REPORT"
                             FontName ="Small Fonts"
@@ -5971,6 +6311,7 @@ Begin Form
                             LayoutCachedTop =6255
                             LayoutCachedWidth =1425
                             LayoutCachedHeight =6465
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -6001,7 +6342,6 @@ Begin Form
                             Width =1155
                             Height =195
                             FontSize =7
-                            ForeColor =13434828
                             Name ="Label214"
                             Caption ="1. PromoCode"
                             FontName ="Small Fonts"
@@ -6009,6 +6349,7 @@ Begin Form
                             LayoutCachedTop =5505
                             LayoutCachedWidth =1365
                             LayoutCachedHeight =5700
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -6058,7 +6399,6 @@ Begin Form
                             Width =1320
                             Height =210
                             FontSize =7
-                            ForeColor =13434828
                             Name ="Label217"
                             Caption ="3. PRICE CTRL Rpt"
                             FontName ="Small Fonts"
@@ -6066,6 +6406,7 @@ Begin Form
                             LayoutCachedTop =5985
                             LayoutCachedWidth =1380
                             LayoutCachedHeight =6195
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -6167,10 +6508,10 @@ Begin Form
                     Width =1905
                     Height =360
                     FontSize =7
-                    ForeColor =13434828
                     Name ="Label224"
                     Caption ="Eff Dt Range - Promo begins after x and before y"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =85
@@ -6180,10 +6521,10 @@ Begin Form
                     Width =2070
                     Height =210
                     FontSize =7
-                    ForeColor =13434828
                     Name ="Label225"
                     Caption ="DftUL series of queries"
                     FontName ="Small Fonts"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =85
@@ -6378,11 +6719,11 @@ Begin Form
                     Height =165
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label228"
                     Caption ="Eff"
                     FontName ="Small Fonts"
                     Tag ="DetachedLabel"
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =255
@@ -6393,11 +6734,11 @@ Begin Form
                     Height =165
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label229"
                     Caption ="Exp"
                     FontName ="Small Fonts"
                     Tag ="DetachedLabel"
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     SpecialEffect =0
@@ -6470,10 +6811,10 @@ Begin Form
                             Height =165
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Label233"
                             Caption ="Mnth"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -6510,10 +6851,10 @@ Begin Form
                             Height =195
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Label235"
                             Caption ="Qtr"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -6534,7 +6875,7 @@ Begin Form
                     Name ="DftYr"
                     ControlSource ="DftYr"
                     RowSourceType ="Value List"
-                    RowSource ="2008;2009;2010;2011;2012;2013;2014;2015;2016;2017"
+                    RowSource ="2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018"
                     ColumnWidths ="1050"
                     FontName ="Small Fonts"
 
@@ -6548,14 +6889,15 @@ Begin Form
                             Height =195
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Label237"
                             Caption ="Yr"
                             FontName ="Small Fonts"
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
                 Begin Label
+                    BackStyle =1
                     OverlapFlags =247
                     TextAlign =2
                     Left =75
@@ -6563,10 +6905,11 @@ Begin Form
                     Width =2325
                     Height =210
                     FontSize =7
-                    ForeColor =13434828
                     Name ="Label238"
                     Caption ="Set Default Edit Values Below"
                     FontName ="Small Fonts"
+                    BackThemeColorIndex =1
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     OverlapFlags =247
@@ -9273,6 +9616,19 @@ Begin Form
                     LayoutCachedTop =7125
                     LayoutCachedWidth =2460
                     LayoutCachedHeight =7410
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -9288,7 +9644,6 @@ Begin Form
                     Height =165
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label243"
                     Caption ="Eff"
                     FontName ="Small Fonts"
@@ -9297,6 +9652,7 @@ Begin Form
                     LayoutCachedTop =7440
                     LayoutCachedWidth =465
                     LayoutCachedHeight =7605
+                    ForeThemeColorIndex =0
                 End
                 Begin Label
                     OverlapFlags =247
@@ -9307,7 +9663,6 @@ Begin Form
                     Height =165
                     FontSize =7
                     FontWeight =700
-                    ForeColor =13434828
                     Name ="Label244"
                     Caption ="Exp"
                     FontName ="Small Fonts"
@@ -9316,6 +9671,7 @@ Begin Form
                     LayoutCachedTop =7455
                     LayoutCachedWidth =1605
                     LayoutCachedHeight =7620
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     SpecialEffect =0
@@ -9396,7 +9752,6 @@ Begin Form
                             Height =195
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Label250"
                             Caption ="Yr"
                             FontName ="Small Fonts"
@@ -9404,6 +9759,7 @@ Begin Form
                             LayoutCachedTop =7695
                             LayoutCachedWidth =1740
                             LayoutCachedHeight =7890
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -9434,7 +9790,6 @@ Begin Form
                             Height =180
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Label252"
                             Caption ="Promo Code"
                             FontName ="Small Fonts"
@@ -9442,6 +9797,7 @@ Begin Form
                             LayoutCachedTop =7920
                             LayoutCachedWidth =1260
                             LayoutCachedHeight =8100
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -9451,12 +9807,12 @@ Begin Form
                     Left =240
                     Top =6945
                     Width =2160
-                    BorderColor =13434828
                     Name ="Line253"
                     LayoutCachedLeft =240
                     LayoutCachedTop =6945
                     LayoutCachedWidth =2400
                     LayoutCachedHeight =6945
+                    BorderThemeColorIndex =0
                 End
                 Begin ComboBox
                     RowSourceTypeInt =1
@@ -9495,7 +9851,6 @@ Begin Form
                             Height =200
                             FontSize =7
                             FontWeight =700
-                            ForeColor =13434828
                             Name ="Mn_Label"
                             Caption ="Mn"
                             FontName ="Small Fonts"
@@ -9503,6 +9858,7 @@ Begin Form
                             LayoutCachedTop =7695
                             LayoutCachedWidth =615
                             LayoutCachedHeight =7895
+                            ForeThemeColorIndex =0
                         End
                     End
                 End
@@ -9645,6 +10001,7 @@ Begin Form
                     LayoutCachedTop =8385
                     LayoutCachedWidth =2400
                     LayoutCachedHeight =8655
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     OverlapFlags =247
@@ -9655,7 +10012,6 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =125
-                    ForeColor =0
                     Name ="VuDivPrc"
                     Caption ="1. View Div. Pricing Promos"
                     OnClick ="[Event Procedure]"
@@ -9665,6 +10021,19 @@ Begin Form
                     LayoutCachedTop =8670
                     LayoutCachedWidth =2460
                     LayoutCachedHeight =8970
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -9728,6 +10097,19 @@ Begin Form
                     LayoutCachedTop =7770
                     LayoutCachedWidth =9060
                     LayoutCachedHeight =8040
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -9742,7 +10124,6 @@ Begin Form
                     Width =2145
                     Height =210
                     FontSize =7
-                    ForeColor =13434828
                     Name ="Label270"
                     Caption ="Search VIP Buffer DB ItemCodes"
                     FontName ="Small Fonts"
@@ -9750,6 +10131,7 @@ Begin Form
                     LayoutCachedTop =8055
                     LayoutCachedWidth =9045
                     LayoutCachedHeight =8265
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     OverlapFlags =215
@@ -9790,7 +10172,6 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =129
-                    ForeColor =255
                     Name ="Command272"
                     Caption ="2.B. Exception Rpts"
                     OnClick ="UpDtRptsM"
@@ -9800,8 +10181,19 @@ Begin Form
                     LayoutCachedTop =6765
                     LayoutCachedWidth =6555
                     LayoutCachedHeight =7035
-                    HoverForeColor =255
-                    PressedForeColor =255
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -9843,7 +10235,6 @@ Begin Form
                     Width =2445
                     Height =210
                     FontSize =7
-                    ForeColor =13434828
                     Name ="Label274"
                     Caption ="FIRST: Specify the NEW  MONTH /"
                     FontName ="Small Fonts"
@@ -9851,6 +10242,7 @@ Begin Form
                     LayoutCachedTop =3315
                     LayoutCachedWidth =2505
                     LayoutCachedHeight =3525
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     Visible = NotDefault
@@ -9897,6 +10289,19 @@ Begin Form
                     LayoutCachedTop =3045
                     LayoutCachedWidth =2475
                     LayoutCachedHeight =3300
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -9911,7 +10316,6 @@ Begin Form
                     Width =2475
                     Height =150
                     FontSize =7
-                    ForeColor =13434828
                     Name ="Label277"
                     Caption ="YEAR / QTR / EFF / EXP Dates"
                     FontName ="Small Fonts"
@@ -9919,6 +10323,7 @@ Begin Form
                     LayoutCachedTop =3495
                     LayoutCachedWidth =2520
                     LayoutCachedHeight =3645
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     Visible = NotDefault
@@ -9955,7 +10360,6 @@ Begin Form
                     Width =2475
                     Height =210
                     FontSize =7
-                    ForeColor =13434828
                     Name ="Label279"
                     Caption ="FIRST: Specify Only NEW  MONTH "
                     FontName ="Small Fonts"
@@ -9963,6 +10367,7 @@ Begin Form
                     LayoutCachedTop =4410
                     LayoutCachedWidth =2520
                     LayoutCachedHeight =4620
+                    ForeThemeColorIndex =0
                 End
                 Begin CommandButton
                     Visible = NotDefault
@@ -10000,7 +10405,7 @@ Begin Form
                     FontSize =7
                     FontWeight =700
                     TabIndex =135
-                    ForeColor =1643706
+                    ForeColor =0
                     Name ="CopyPaste23"
                     Caption ="Copy-Paste: 2nd, 3rd Month"
                     OnClick ="[Event Procedure]"
@@ -10010,8 +10415,20 @@ Begin Form
                     LayoutCachedTop =4140
                     LayoutCachedWidth =2475
                     LayoutCachedHeight =4395
-                    HoverForeColor =1643706
-                    PressedForeColor =1643706
+                    ForeThemeColorIndex =0
+                    UseTheme =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =0
+                    HoverColor =15983578
+                    HoverThemeColorIndex =4
+                    HoverTint =20.0
+                    PressedColor =14083579
+                    PressedThemeColorIndex =5
+                    PressedTint =20.0
+                    HoverForeColor =12874308
+                    HoverForeThemeColorIndex =4
+                    PressedForeColor =3243501
+                    PressedForeThemeColorIndex =5
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -10026,7 +10443,6 @@ Begin Form
                     Width =2475
                     Height =150
                     FontSize =7
-                    ForeColor =13434828
                     Name ="Label282"
                     Caption ="YEAR and QTR"
                     FontName ="Small Fonts"
@@ -10034,6 +10450,7 @@ Begin Form
                     LayoutCachedTop =4590
                     LayoutCachedWidth =2520
                     LayoutCachedHeight =4740
+                    ForeThemeColorIndex =0
                 End
                 Begin TextBox
                     CanGrow = NotDefault
@@ -10089,7 +10506,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Cancel23_Click()
-Debug.Print "Form_zMainF - Cancel23_Click"
+config_log "Form_zMainF - Cancel23_Click"
 On Error GoTo Err_Cancel23_Click
 
    If Copy23.Enabled = True Then Copy23.Visible = False
@@ -10104,7 +10521,7 @@ Err_Cancel23_Click:
 End Sub
 
 Private Sub CancelPaste_Click()
-Debug.Print "CancelPaste_Click"
+config_log "CancelPaste_Click"
 On Error GoTo Err_CancelPaste_Click
 
    If CopyDoIt.Enabled = True Then CopyDoIt.Visible = False
@@ -10119,7 +10536,7 @@ Err_CancelPaste_Click:
 End Sub
 
 Private Sub Copy23_Click()
-Debug.Print "Form_zMainF - Copy23_Click"
+config_log "Form_zMainF - Copy23_Click"
 On Error GoTo Err_Copy23_Click
 
 Dim CMnYr As String
@@ -10244,7 +10661,7 @@ Err_Copy23_Click:
 End Sub
 
 Private Sub CopyDoIt_Click()
-Debug.Print "Form_zMainF - CopyDoIt_Click"
+config_log "Form_zMainF - CopyDoIt_Click"
 On Error GoTo Err_CopyDoIt_Click
 
 Dim CMnYr As String
@@ -10371,7 +10788,7 @@ Err_CopyDoIt_Click:
 End Sub
 
 Private Sub CopyPaste23_Click()
-Debug.Print "Form_zMainF - CopyPaste23_Click"
+config_log "Form_zMainF - CopyPaste23_Click"
 
 On Error GoTo Err_Copy23_Click
 
@@ -10387,7 +10804,7 @@ Err_Copy23_Click:
 End Sub
 
 Private Sub CopyPasteMn_Click()
-Debug.Print "Form_zMainF - CopyPasteMn_Click"
+config_log "Form_zMainF - CopyPasteMn_Click"
 
 On Error GoTo Err_CopyPasteMn_Click
 
@@ -10403,7 +10820,7 @@ Err_CopyPasteMn_Click:
 End Sub
 
 Private Sub Form_Load()
-Debug.Print "Form_zMainF - Form_Load"
+config_log "Form_zMainF - Form_Load"
 
 
 CommandBars.ActiveMenuBar.Enabled = True 'Turn Access' Menu Bar ON !!
@@ -10417,7 +10834,7 @@ Z_User = LCase(Environ("USERNAME"))
 End Sub
 
 Private Sub NullBuyOrIC_Click()
-Debug.Print "Form_zMainF - NullBuyOrIC_Click"
+config_log "Form_zMainF - NullBuyOrIC_Click"
 
 On Error GoTo Err_NullBuyOrIC_Click
 
@@ -10437,36 +10854,36 @@ Err_NullBuyOrIC_Click:
 End Sub
 
 Private Sub EDtEff_AfterUpdate()
-Debug.Print "Form_zMainF - EDtEff_AfterUpdate"
+config_log "Form_zMainF - EDtEff_AfterUpdate"
   
   Z_EDtEff = Me![EDtEff]
 End Sub
 
 Private Sub EDtExp_AfterUpdate()
-Debug.Print "Form_zMainF - EDtExp_AfterUpdate"
+config_log "Form_zMainF - EDtExp_AfterUpdate"
    Z_EDtExp = Me![EDtExp]
 End Sub
 
 Private Sub EffMn_AfterUpdate()
-Debug.Print "Form_zMainF - EffMn_AfterUpdate"
+config_log "Form_zMainF - EffMn_AfterUpdate"
   Z_EffMn = Me![EffMn]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub EffQtr_AfterUpdate()
-Debug.Print "Form_zMainF - EffQtr_AfterUpdate"
+config_log "Form_zMainF - EffQtr_AfterUpdate"
   Z_EffQtr = Me![EffQtr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub EffYr_AfterUpdate()
-Debug.Print "Form_zMainF - EffYr_AfterUpdate"
+config_log "Form_zMainF - EffYr_AfterUpdate"
   Z_EffYr = Me![EffYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Form_Current()
-Debug.Print "Form_zMainF - Form_Current"
+config_log "Form_zMainF - Form_Current"
    'Import Promos from Spreadsheet Process
    Import.Visible = False
    CancelImp.Visible = False
@@ -10479,7 +10896,7 @@ Debug.Print "Form_zMainF - Form_Current"
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "Form_zMainF - Form_Open"
+config_log "Form_zMainF - Form_Open"
 
 Dim strConnectString As String
 Dim strFilePath As String
@@ -10523,7 +10940,7 @@ Dim td As DAO.TableDef
 End Sub
 
 Private Sub Form_Timer()
-Debug.Print "Form_zMainF - Form_Timer"
+config_log "Form_zMainF - Form_Timer"
 
 If IsNull(DLookup("[Fire]", "Defaults")) Then
    'MsgBox "No Warnings Found"
@@ -10537,7 +10954,7 @@ End If
 End Sub
 
 Private Sub Import_Click()
-Debug.Print "Form_zMainF - Import_Click"
+config_log "Form_zMainF - Import_Click"
 Debug.Assert False
 
 On Error GoTo Err_Import_Click
@@ -10610,7 +11027,7 @@ stNuVnd = Me![NuVnd]
     Set rst = dbs.OpenRecordset("zPromo")
     rst.MoveLast
     'MsgBox "Flag 3B"
-    'Debug.Print rst.RecordCount
+    'debug.prt rst.RecordCount
     intLastRec = rst!RecID
     rst.Close
     Set dbs = Nothing
@@ -10684,27 +11101,27 @@ Err_Import_Click:
 End Sub
 
 Private Sub ImpQtr_AfterUpdate()
-Debug.Print "Form_zMainF - ImpQtr_AfterUpdate"
+config_log "Form_zMainF - ImpQtr_AfterUpdate"
 
   Z_ImpQtr = Me![ImpQtr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub ImpYr_AfterUpdate()
-Debug.Print "Form_zMainF - ImpYr_AfterUpdate"
+config_log "Form_zMainF - ImpYr_AfterUpdate"
 
   Z_ImpYr = Me![ImpYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub PCVar_AfterUpdate()
-Debug.Print "Form_zMainF - PCVar_AfterUpdate"
+config_log "Form_zMainF - PCVar_AfterUpdate"
 
   S_WOPC = Me![PCVar]
 End Sub
 
 Private Sub Reports_Click()
-Debug.Print "Form_zMainF - Reports_Click"
+config_log "Form_zMainF - Reports_Click"
 
 On Error GoTo Err_Reports_Click
 
@@ -10728,7 +11145,7 @@ Err_Reports_Click:
     
 End Sub
 Private Sub Command1_Click()
-Debug.Print "Form_zMainF - Command1_Click"
+config_log "Form_zMainF - Command1_Click"
 
 On Error GoTo Err_Command1_Click
 
@@ -10744,7 +11161,7 @@ Err_Command1_Click:
     
 End Sub
 Private Sub EditClubs_Click()
-Debug.Print "Form_zMainF - EditClubs_Click"
+config_log "Form_zMainF - EditClubs_Click"
 
 On Error GoTo Err_EditClubs_Click
 
@@ -10765,7 +11182,7 @@ Err_EditClubs_Click:
 End Sub
 
 Private Sub SelID_AfterUpdate()
-Debug.Print "Form_zMainF - SelID_AfterUpdate"
+config_log "Form_zMainF - SelID_AfterUpdate"
 
 On Error GoTo Err_SelID_Click
 
@@ -10789,7 +11206,7 @@ End Sub
 
 
 Private Sub SelMnByVndr_AfterUpdate()
-Debug.Print "Form_zMainF - SelMnByVndr_AfterUpdate"
+config_log "Form_zMainF - SelMnByVndr_AfterUpdate"
 
 On Error GoTo Err_SelMnByVndr_Click
 
@@ -10811,7 +11228,7 @@ Err_SelMnByVndr_Click:
 End Sub
 
 Private Sub SelVndr_AfterUpdate()
-Debug.Print "Form_zMainF - SelVndr_AfterUpdate"
+config_log "Form_zMainF - SelVndr_AfterUpdate"
 
 On Error GoTo Err_SelVndr_Click
 
@@ -10833,7 +11250,7 @@ End Sub
 
 
 Private Sub SetImp_Click()
-Debug.Print "Form_zMainF - SetImp_Click-XXX"
+config_log "Form_zMainF - SetImp_Click-XXX"
 Debug.Assert False
 
 On Error GoTo Err_SetImp_Click
@@ -10873,7 +11290,7 @@ Err_SetImp_Click:
     
 End Sub
 Private Sub CancelImp_Click()
-Debug.Print "Form_zMainF - CancelImp_Click"
+config_log "Form_zMainF - CancelImp_Click"
 
 On Error GoTo Err_CancelImp_Click
 
@@ -10890,7 +11307,7 @@ Err_CancelImp_Click:
     
 End Sub
 Private Sub Command18_Click()
-Debug.Print "Form_zMainF - Command18_Click"
+config_log "Form_zMainF - Command18_Click"
 
 On Error GoTo Err_Command18_Click
 
@@ -10907,21 +11324,21 @@ Err_Command18_Click:
 End Sub
 
 Private Sub SetZDftEff_AfterUpdate()
-Debug.Print "Form_zMainF - SetZDftEff_AfterUpdate"
+config_log "Form_zMainF - SetZDftEff_AfterUpdate"
 
     Z_DftEff = Me!SetZDftEff
     MsgBox "I have set ZDftEff() to " & ZDftEff()
 End Sub
 
 Private Sub SetZDftEff2_AfterUpdate()
-Debug.Print "Form_zMainF - SetZDftEff2_AfterUpdate"
+config_log "Form_zMainF - SetZDftEff2_AfterUpdate"
 
     Z_DftEff2 = Me!SetZDftEff2
     MsgBox "I have set ZDftEff2() to " & ZDftEff2()
 End Sub
 
 Private Sub SFselVndr_AfterUpdate()
-Debug.Print "Form_zMainF - SFselVndr_AfterUpdate"
+config_log "Form_zMainF - SFselVndr_AfterUpdate"
 
 On Error GoTo Err_SelSFVndr_AfterUpdate
 
@@ -10943,7 +11360,7 @@ Err_SelSFVndr_AfterUpdate:
 End Sub
 
 Private Sub SWOPrcCntrlRpt_AfterUpdate()
-Debug.Print "Form_zMainF - SWOPrcCntrlRpt_AfterUpdate"
+config_log "Form_zMainF - SWOPrcCntrlRpt_AfterUpdate"
 
 On Error GoTo Err_SWOPrcCntrlRpt_AfterUpdate
 
@@ -10989,7 +11406,7 @@ Err_SWOPrcCntrlRpt_AfterUpdate:
 End Sub
 
 Private Sub SWOrpt_AfterUpdate()
-Debug.Print "Form_zMainF - SWOrpt_AfterUpdate"
+config_log "Form_zMainF - SWOrpt_AfterUpdate"
 
 On Error GoTo Err_SWOrpt_AfterUpdate
 
@@ -11027,7 +11444,7 @@ Err_SWOrpt_AfterUpdate:
 End Sub
 
 Private Sub SWOStart_AfterUpdate()
-Debug.Print "Form_zMainF - SWOStart_AfterUpdate"
+config_log "Form_zMainF - SWOStart_AfterUpdate"
 
 On Error GoTo Err_SWOStart_AfterUpdate
 
@@ -11078,19 +11495,19 @@ Err_SWOStart_AfterUpdate:
 End Sub
 
 Private Sub Text213_AfterUpdate()
-Debug.Print "Text213_AfterUpdate"
+config_log "Text213_AfterUpdate"
 
 
 End Sub
 
 Private Sub UpICDesc_GotFocus()
-Debug.Print "Form_zMainF - UpICDesc_GotFocus"
+config_log "Form_zMainF - UpICDesc_GotFocus"
 
     Import.Visible = False
 End Sub
 
 Private Sub ViewAsLineItms_Click()
-Debug.Print "Form_zMainF - ViewAsLineItms_Click"
+config_log "Form_zMainF - ViewAsLineItms_Click"
 
 On Error GoTo Err_ViewAsLineItms_Click
 
@@ -11110,7 +11527,7 @@ Err_ViewAsLineItms_Click:
     
 End Sub
 Private Sub Admin_Click()
-Debug.Print "Form_zMainF - Admin_Click"
+config_log "Form_zMainF - Admin_Click"
 
 On Error GoTo Err_Admin_Click
 
@@ -11130,7 +11547,7 @@ Err_Admin_Click:
 End Sub
 
 Private Sub Command33_Click()
-Debug.Print "Form_zMainF - Command33_Click"
+config_log "Form_zMainF - Command33_Click"
 
 On Error GoTo Err_Command33_Click
 
@@ -11160,7 +11577,7 @@ Err_Command33_Click:
 End Sub
 
 Private Sub VuImps_Click()
-Debug.Print "Form_zMainF - VuImps_Click"
+config_log "Form_zMainF - VuImps_Click"
 
 On Error GoTo Err_VuImps_Click
 
@@ -11177,7 +11594,7 @@ Err_VuImps_Click:
 End Sub
 
 Private Sub VuSelQtr_Click()
-Debug.Print "Form_zMainF - VuSelQtr_Click"
+config_log "Form_zMainF - VuSelQtr_Click"
 
 On Error GoTo Err_VuSelQtr_Click
 
@@ -11200,7 +11617,7 @@ Err_VuSelQtr_Click:
 End Sub
 
 Private Sub SeekPromoByIC_Click()
-Debug.Print "Form_zMainF - SeekPromoByIC_Click"
+config_log "Form_zMainF - SeekPromoByIC_Click"
 
 On Error GoTo Err_SeekPromoByIC_Click
 
@@ -11223,7 +11640,7 @@ Err_SeekPromoByIC_Click:
 End Sub
 
 Private Sub ViewAllPromo_Click()
-Debug.Print "Form_zMainF - ViewAllPromo_Click"
+config_log "Form_zMainF - ViewAllPromo_Click"
 
 On Error GoTo Err_ViewAllPromo_Click
 
@@ -11243,7 +11660,7 @@ Err_ViewAllPromo_Click:
 End Sub
 
 Private Sub EUpDt_Click()
-Debug.Print "Form_zMainF - EUpDt_Click"
+config_log "Form_zMainF - EUpDt_Click"
 Debug.Assert False
 
 On Error GoTo Err_EUpDt_Click
@@ -11564,7 +11981,7 @@ Err_EUpDt_Click:
 End Sub
 
 Private Sub Command68_Click()
-Debug.Print "Command68_Click"
+config_log "Command68_Click"
 
 On Error GoTo Err_Command68_Click
 
@@ -11581,7 +11998,7 @@ Err_Command68_Click:
 End Sub
 
 Private Sub EdVndrs_Click()
-Debug.Print "Form_zMainF - EdVndrs_Click"
+config_log "Form_zMainF - EdVndrs_Click"
 
 On Error GoTo Err_EdVndrs_Click
 
@@ -11601,7 +12018,7 @@ Err_EdVndrs_Click:
 End Sub
 
 Private Sub WorkZone_Click()
-Debug.Print "Form_zMainF - WorkZone_Click"
+config_log "Form_zMainF - WorkZone_Click"
 
 On Error GoTo Err_WorkZone_Click
 
@@ -11621,7 +12038,7 @@ Err_WorkZone_Click:
 End Sub
 
 Private Sub EdPromos_Click()
-Debug.Print "Form_zMainF - EdPromos_Click"
+config_log "Form_zMainF - EdPromos_Click"
 
 On Error GoTo Err_EdPromos_Click
 
@@ -11641,7 +12058,7 @@ Err_EdPromos_Click:
 End Sub
 
 Private Sub EmlScn_Click()
-Debug.Print "Form_zMainF - EmlScn_Click"
+config_log "Form_zMainF - EmlScn_Click"
 
 On Error GoTo Err_EmlScn_Click
 
@@ -11663,7 +12080,7 @@ Err_EmlScn_Click:
 End Sub
 
 Private Sub VuMn_Click()
-Debug.Print "Form_zMainF - VuMn_Click"
+config_log "Form_zMainF - VuMn_Click"
 
 On Error GoTo Err_VuMn_Click
 
@@ -11685,7 +12102,7 @@ Err_VuMn_Click:
 End Sub
 
 Private Sub VipUpDts_Click()
-Debug.Print "Form_zMainF - VipUpDts_Click"
+config_log "Form_zMainF - VipUpDts_Click"
 
 On Error GoTo Err_VipUpDts_Click
 
@@ -11704,7 +12121,7 @@ Err_VipUpDts_Click:
 End Sub
 
 Private Sub VIPsubmits_Click()
-Debug.Print "Form_zMainF - VIPsubmits_Click"
+config_log "Form_zMainF - VIPsubmits_Click"
 
 On Error GoTo Err_VIPsubmits_Click
 
@@ -11723,7 +12140,7 @@ Err_VIPsubmits_Click:
 End Sub
 
 Private Sub VIPadmin_Click()
-Debug.Print "Form_zMainF - VIPadmin_Click"
+config_log "Form_zMainF - VIPadmin_Click"
 
 On Error GoTo Err_VIPadmin_Click
 
@@ -11743,7 +12160,7 @@ Err_VIPadmin_Click:
 End Sub
 
 Private Sub UpDtBuySet_Click()
-Debug.Print "Form_zMainF - UpDtBuySet_Click"
+config_log "Form_zMainF - UpDtBuySet_Click"
 
 On Error GoTo Err_UpDtBuySet_Click
     '*************************************************************************
@@ -11790,7 +12207,7 @@ Err_UpDtBuySet_Click:
 End Sub
 
 Private Sub NullBuyOrItem_Click()
-Debug.Print "Form_zMainF - NullBuyOrItem_Click"
+config_log "Form_zMainF - NullBuyOrItem_Click"
 
 On Error GoTo Err_NullBuyOrItem_Click
 
@@ -11809,7 +12226,7 @@ Err_NullBuyOrItem_Click:
 End Sub
 
 Private Sub PathFinder_Click()
-Debug.Print "Form_zMainF - PathFinder_Click"
+config_log "Form_zMainF - PathFinder_Click"
 
 On Error GoTo Err_PathFinder_Click
 
@@ -11831,7 +12248,7 @@ Err_PathFinder_Click:
 End Sub
 
 Private Sub Utilities_Click()
-Debug.Print "Form_zMainF - Utilities_Click"
+config_log "Form_zMainF - Utilities_Click"
 
 
 On Error GoTo Err_Utilities_Click
@@ -11852,7 +12269,7 @@ Err_Utilities_Click:
 End Sub
 
 Private Sub VuBuyPartCnts_Click()
-Debug.Print "Form_zMainF - VuBuyPartCnts_Click"
+config_log "Form_zMainF - VuBuyPartCnts_Click"
 
 On Error GoTo Err_VuBuyPartCnts_Click
 
@@ -11872,7 +12289,7 @@ Err_VuBuyPartCnts_Click:
 End Sub
 
 Private Sub UpDtVer_Click()
-Debug.Print "Form_zMainF - UpDtVer_Click"
+config_log "Form_zMainF - UpDtVer_Click"
 
 On Error GoTo Err_UpDtVer_Click
 
@@ -11892,7 +12309,7 @@ Err_UpDtVer_Click:
 End Sub
 
 Private Sub zBuyXcptns_Click()
-Debug.Print "Form_zMainF - zBuyXcptns_Click"
+config_log "Form_zMainF - zBuyXcptns_Click"
 
 On Error GoTo Err_zBuyXcptns_Click
 
@@ -11911,7 +12328,7 @@ Err_zBuyXcptns_Click:
 End Sub
 
 Private Sub ICsXcptions_Click()
-Debug.Print "Form_zMainF - ICsXcptions_Click"
+config_log "Form_zMainF - ICsXcptions_Click"
 
 On Error GoTo Err_ICsXcptions_Click
 
@@ -11930,14 +12347,14 @@ Err_ICsXcptions_Click:
 End Sub
 
 Private Sub Log_Click()
-Debug.Print "Form_zMainF - Log_Click"
+config_log "Form_zMainF - Log_Click"
 
 On Error GoTo Err_Log_Click
 
     Dim stDocName As String
     Dim stLinkCriteria As String
 
-Debug.Print "Log_Click"
+config_log "Log_Click"
 
     stDocName = "dbLogF"
     DoCmd.OpenForm stDocName, , , stLinkCriteria
@@ -11952,7 +12369,7 @@ Err_Log_Click:
 End Sub
 
 Private Sub VuEComXport_Click()
-Debug.Print "Form_zMainF - VuEComXport_Click"
+config_log "Form_zMainF - VuEComXport_Click"
 
 On Error GoTo Err_VuEComXport_Click
 
@@ -11972,7 +12389,7 @@ Err_VuEComXport_Click:
 End Sub
 
 Private Sub VuVndrByID_Click()
-Debug.Print "Form_zMainF - VuVndrByID_Click"
+config_log "Form_zMainF - VuVndrByID_Click"
 
 On Error GoTo Err_VuVndrByID_Click
 
@@ -11992,7 +12409,7 @@ Err_VuVndrByID_Click:
 End Sub
 
 Private Sub VuVndrByAlpha_Click()
-Debug.Print "Form_zMainF - VuVndrByAlpha_Click"
+config_log "Form_zMainF - VuVndrByAlpha_Click"
 
 On Error GoTo Err_VuVndrByAlpha_Click
 
@@ -12012,7 +12429,7 @@ Err_VuVndrByAlpha_Click:
 End Sub
 
 Private Sub VuZBuyXport_Click()
-Debug.Print "Form_zMainF - VuZBuyXport_Click"
+config_log "Form_zMainF - VuZBuyXport_Click"
 
 On Error GoTo Err_VuZBuyXport_Click
 
@@ -12032,7 +12449,7 @@ Err_VuZBuyXport_Click:
 End Sub
 
 Private Sub TestBNP_Click()
-Debug.Print "Form_zMainF - TestBNP_Click"
+config_log "Form_zMainF - TestBNP_Click"
 
 On Error GoTo Err_TestBNP_Click
 
@@ -12065,7 +12482,7 @@ Err_TestBNP_Click:
 End Sub
 
 Private Sub ShoUpDt_Click()
-Debug.Print "Form_zMainF - ShoUpDt_Click"
+config_log "Form_zMainF - ShoUpDt_Click"
 
 
 On Error GoTo Err_ShoUpDt_Click
@@ -12083,7 +12500,7 @@ Err_ShoUpDt_Click:
 End Sub
 
 Private Sub CancelUpDt_Click()
-Debug.Print "Form_zMainF - CancelUpDt_Click"
+config_log "Form_zMainF - CancelUpDt_Click"
 
 On Error GoTo Err_CancelUpDt_Click
 
@@ -12099,7 +12516,7 @@ Err_CancelUpDt_Click:
 End Sub
 
 Private Sub VuPromoDups_Click()
-Debug.Print "Form_zMainF - VuPromoDups_Click"
+config_log "Form_zMainF - VuPromoDups_Click"
 
 On Error GoTo Err_VuPromoDups_Click
 
@@ -12118,7 +12535,7 @@ Err_VuPromoDups_Click:
 End Sub
 
 Private Sub MasterLookup_Click()
-Debug.Print "Form_zMainF - MasterLookup_Click"
+config_log "Form_zMainF - MasterLookup_Click"
 
 On Error GoTo Err_MasterLookup_Click
 
@@ -12137,7 +12554,7 @@ Err_MasterLookup_Click:
 End Sub
 
 Private Sub ManAdd_Click()
-Debug.Print "Form_zMainF - ManAdd_Click"
+config_log "Form_zMainF - ManAdd_Click"
 
 On Error GoTo Err_ManAdd_Click
 
@@ -12157,7 +12574,7 @@ Err_ManAdd_Click:
 End Sub
 
 Private Sub DataChks_Click()
-Debug.Print "Form_zMainF - DataChks_Click"
+config_log "Form_zMainF - DataChks_Click"
 
 On Error GoTo Err_DataChks_Click
 
@@ -12177,7 +12594,7 @@ Err_DataChks_Click:
 End Sub
 
 Private Sub zItmSbDescUpDt_Click()
-Debug.Print "Form_zMainF - zItmSbDescUpDt_Click"
+config_log "Form_zMainF - zItmSbDescUpDt_Click"
 
 On Error GoTo Err_zItmSbDescUpDt_Click
 
@@ -12196,7 +12613,7 @@ Err_zItmSbDescUpDt_Click:
 End Sub
 
 Private Sub zItmSubDescChk_Click()
-Debug.Print "Form_zMainF - zItmSubDescChk_Click"
+config_log "Form_zMainF - zItmSubDescChk_Click"
 
 On Error GoTo Err_zItmSubDescChk_Click
 
@@ -12215,7 +12632,7 @@ Err_zItmSubDescChk_Click:
 End Sub
 
 Private Sub ItmSubReadDescUpDt_Click()
-Debug.Print "Form_zMainF - ItmSubReadDescUpDt_Click"
+config_log "Form_zMainF - ItmSubReadDescUpDt_Click"
 
 On Error GoTo Err_ItmSubReadDescUpDt_Click
 
@@ -12234,7 +12651,7 @@ Err_ItmSubReadDescUpDt_Click:
 End Sub
 
 Private Sub zItemSubDescAllUpDtNulls_Click()
-Debug.Print "Form_zMainF - zItemSubDescAllUpDtNulls_Click"
+config_log "Form_zMainF - zItemSubDescAllUpDtNulls_Click"
 
 On Error GoTo Err_zItemSubDescAllUpDtNulls_Click
 
@@ -12253,7 +12670,7 @@ Err_zItemSubDescAllUpDtNulls_Click:
 End Sub
 
 Private Sub NonParticipants_Click()
-Debug.Print "Form_zMainF - NonParticipants_Click"
+config_log "Form_zMainF - NonParticipants_Click"
 
 On Error GoTo Err_NonParticipants_Click
 
@@ -12272,7 +12689,7 @@ Err_NonParticipants_Click:
 End Sub
 
 Private Sub PromoContacts_Click()
-Debug.Print "Form_zMainF - PromoContacts_Click"
+config_log "Form_zMainF - PromoContacts_Click"
 
 On Error GoTo Err_PromoContacts_Click
 
@@ -12291,7 +12708,7 @@ Err_PromoContacts_Click:
 End Sub
 
 Private Sub NoEml_Click()
-Debug.Print "Form_zMainF - NoEml_Click"
+config_log "Form_zMainF - NoEml_Click"
 
 On Error GoTo Err_NoEml_Click
 
@@ -12310,7 +12727,7 @@ Err_NoEml_Click:
 End Sub
 
 Private Sub PromoEmls_Click()
-Debug.Print "Form_zMainF - PromoEmls_Click"
+config_log "Form_zMainF - PromoEmls_Click"
 
 On Error GoTo Err_PromoEmls_Click
 
@@ -12329,7 +12746,7 @@ Err_PromoEmls_Click:
 End Sub
 
 Private Sub DftOnly_Click()
-Debug.Print "Form_zMainF - DftOnly_Click"
+config_log "Form_zMainF - DftOnly_Click"
 
 On Error GoTo Err_DftOnly_Click
 
@@ -12354,7 +12771,7 @@ Err_DftOnly_Click:
 End Sub
 
 Private Sub VndDefPro_Click()
-Debug.Print "Form_zMainF - VndDefPro_Click"
+config_log "Form_zMainF - VndDefPro_Click"
 
 On Error GoTo Err_VndDefPro_Click
 
@@ -12381,7 +12798,7 @@ Err_VndDefPro_Click:
 End Sub
 
 Private Sub NoEmlList_Click()
-Debug.Print "Form_zMainF - NoEmlList_Click"
+config_log "Form_zMainF - NoEmlList_Click"
 
 On Error GoTo Err_NoEmlList_Click
 
@@ -12401,7 +12818,7 @@ Err_NoEmlList_Click:
 End Sub
 
 Private Sub EmlCYQ1_Click()
-Debug.Print "Form_zMainF - EmlCYQ1_Click"
+config_log "Form_zMainF - EmlCYQ1_Click"
 
 On Error GoTo Err_EmlCYQ1_Click
 
@@ -12420,7 +12837,7 @@ Err_EmlCYQ1_Click:
 End Sub
 
 Private Sub EmlCYQ2_Click()
-Debug.Print "Form_zMainF - EmlCYQ2_Click"
+config_log "Form_zMainF - EmlCYQ2_Click"
 
 On Error GoTo Err_EmlCYQ2_Click
 
@@ -12439,7 +12856,7 @@ Err_EmlCYQ2_Click:
 End Sub
 
 Private Sub EmlCYQ3_Click()
-Debug.Print "Form_zMainF - EmlCYQ3_Click"
+config_log "Form_zMainF - EmlCYQ3_Click"
 
 On Error GoTo Err_EmlCYQ3_Click
 
@@ -12458,7 +12875,7 @@ Err_EmlCYQ3_Click:
 End Sub
 
 Private Sub EmlCYQ4_Click()
-Debug.Print "Form_zMainF - EmlCYQ4_Click"
+config_log "Form_zMainF - EmlCYQ4_Click"
 
 On Error GoTo Err_EmlCYQ4_Click
 
@@ -12477,7 +12894,7 @@ Err_EmlCYQ4_Click:
 End Sub
 
 Private Sub EmlNYQ1_Click()
-Debug.Print "Form_zMainF - EmlNYQ1_Click"
+config_log "Form_zMainF - EmlNYQ1_Click"
 
 On Error GoTo Err_EmlNYQ1_Click
 
@@ -12496,7 +12913,7 @@ Err_EmlNYQ1_Click:
 End Sub
 
 Private Sub EdNoPromoNtz_Click()
-Debug.Print "Form_zMainF - EdNoPromoNtz_Click"
+config_log "Form_zMainF - EdNoPromoNtz_Click"
 
 On Error GoTo Err_EdNoPromoNtz_Click
 
@@ -12516,7 +12933,7 @@ Err_EdNoPromoNtz_Click:
 End Sub
 
 Private Sub ztst_Click()
-Debug.Print "Form_zMainF - ztst_Click"
+config_log "Form_zMainF - ztst_Click"
 
 On Error GoTo Err_ztst_Click
 
@@ -12538,7 +12955,7 @@ Err_ztst_Click:
 End Sub
 
 Private Sub EmailzReadPromoMktToQ_Click()
-Debug.Print "Form_zMainF - EmailzReadPromoMktToQ_Click"
+config_log "Form_zMainF - EmailzReadPromoMktToQ_Click"
 
 On Error GoTo Err_EmailzReadPromoMktToQ_Click
 
@@ -12557,7 +12974,7 @@ Err_EmailzReadPromoMktToQ_Click:
 End Sub
 
 Private Sub DaBuzzaQ_Click()
-Debug.Print "Form_zMainF - DaBuzzaQ_Click"
+config_log "Form_zMainF - DaBuzzaQ_Click"
 
 On Error GoTo Err_DaBuzzaQ_Click
 
@@ -12576,7 +12993,7 @@ Err_DaBuzzaQ_Click:
 End Sub
 
 Private Sub VuVars_Click()
-Debug.Print "Form_zMainF - VuVars_Click"
+config_log "Form_zMainF - VuVars_Click"
 
 On Error GoTo Err_VuVars_Click
 
@@ -12600,7 +13017,7 @@ Err_VuVars_Click:
 End Sub
 
 Private Sub VuYrsProCds_Click()
-Debug.Print "Form_zMainF - VuYrsProCds_Click"
+config_log "Form_zMainF - VuYrsProCds_Click"
 
 On Error GoTo Err_VuYrsProCds_Click
 
@@ -12620,7 +13037,7 @@ Err_VuYrsProCds_Click:
 End Sub
 
 Private Sub FlyFreeGoods_Click()
-Debug.Print "Form_zMainF - FlyFreeGoods_Click"
+config_log "Form_zMainF - FlyFreeGoods_Click"
 
 On Error GoTo Err_FlyFreeGoods_Click
 
@@ -12657,7 +13074,7 @@ Err_FlyFreeGoods_Click:
 End Sub
 
 Private Sub AddByProCd_Click()
-Debug.Print "Form_zMainF - AddByProCd_Click"
+config_log "Form_zMainF - AddByProCd_Click"
 
 
 On Error GoTo Err_AddByProCd_Click
@@ -12675,7 +13092,7 @@ Err_AddByProCd_Click:
 End Sub
 
 Private Sub GloVarRGZ_Click()
-Debug.Print "Form_zMainF - GloVarRGZ_Click"
+config_log "Form_zMainF - GloVarRGZ_Click"
 
 On Error GoTo Err_GloVarRGZ_Click
 
@@ -12694,7 +13111,7 @@ Err_GloVarRGZ_Click:
 End Sub
 
 Private Sub VuDivPrc_Click()
-Debug.Print "Form_zMainF - VuDivPrc_Click"
+config_log "Form_zMainF - VuDivPrc_Click"
 
 On Error GoTo Err_VuDivPrc_Click
 

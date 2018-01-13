@@ -313,7 +313,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub CloseF_Click()
-Debug.Print "Form_NoPromoNotesF - CloseF_Click"
+config_log "Form_NoPromoNotesF - CloseF_Click"
 
 On Error GoTo Err_CloseF_Click
 

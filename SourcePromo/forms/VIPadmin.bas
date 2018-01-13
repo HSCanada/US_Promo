@@ -968,7 +968,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub VuImpSrc_Click()
-Debug.Print "Form_VIPadmin - VuImpSrc_Click_XXX"
+config_log "Form_VIPadmin - VuImpSrc_Click_XXX"
 Debug.Assert False
 
 On Error GoTo Err_VuImpSrc_Click
@@ -990,7 +990,7 @@ Err_VuImpSrc_Click:
 End Sub
 
 Private Sub Close_Click()
-Debug.Print "Form_VIPadmin - Close_Click"
+config_log "Form_VIPadmin - Close_Click"
 On Error GoTo Err_Close_Click
 
 
@@ -1006,7 +1006,7 @@ Err_Close_Click:
 End Sub
 
 Private Sub VuSrcTbls_Click()
-Debug.Print "Form_VIPadmin - VuSrcTbls_Click"
+config_log "Form_VIPadmin - VuSrcTbls_Click"
 Debug.Assert False
 
 On Error GoTo Err_VuSrcTbls_Click
@@ -1027,7 +1027,7 @@ Err_VuSrcTbls_Click:
     
 End Sub
 Private Sub VuExpFldr_Click()
-Debug.Print "Form_VIPadmin - VuExpFldr_Click"
+config_log "Form_VIPadmin - VuExpFldr_Click"
 Debug.Assert False
 
 On Error GoTo Err_VuExpFldr_Click
@@ -1049,7 +1049,7 @@ Err_VuExpFldr_Click:
 End Sub
 
 Private Sub VuExpTbls_Click()
-Debug.Print "Form_VIPadmin - VuExpTbls_Click"
+config_log "Form_VIPadmin - VuExpTbls_Click"
 Debug.Assert False
 On Error GoTo Err_VuExpTbls_Click
 
@@ -1070,7 +1070,7 @@ Err_VuExpTbls_Click:
 End Sub
 
 Private Sub VuLog_Click()
-Debug.Print "Form_VIPadmin - VuLog_Click"
+config_log "Form_VIPadmin - VuLog_Click"
 
 On Error GoTo Err_VuLog_Click
 
@@ -1088,7 +1088,7 @@ Err_VuLog_Click:
 End Sub
 
 Private Sub VuBuyGetStats_Click()
-Debug.Print "Form_VIPadmin - VuBuyGetStats_Click"
+config_log "Form_VIPadmin - VuBuyGetStats_Click"
 Debug.Assert False
 
 On Error GoTo Err_VuBuyGetStats_Click
@@ -1110,7 +1110,7 @@ Err_VuBuyGetStats_Click:
 End Sub
 
 Private Sub VuBuyFldr_Click()
-Debug.Print "Form_VIPadmin - VuBuyFldr_Click"
+config_log "Form_VIPadmin - VuBuyFldr_Click"
 Debug.Assert False
 
 On Error GoTo Err_VuBuyFldr_Click
@@ -1131,7 +1131,7 @@ Err_VuBuyFldr_Click:
 End Sub
 
 Private Sub VuQaFldr_Click()
-Debug.Print "Form_VIPadmin - VuQaFldr_Click"
+config_log "Form_VIPadmin - VuQaFldr_Click"
 Debug.Assert False
 
 On Error GoTo Err_VuQaFldr_Click
@@ -1152,7 +1152,7 @@ Err_VuQaFldr_Click:
 End Sub
 
 Private Sub VuBkUpFiles_Click()
-Debug.Print "Form_VIPadmin - VuBkUpFiles_Click"
+config_log "Form_VIPadmin - VuBkUpFiles_Click"
 Debug.Assert False
 
 On Error GoTo Err_VuBkUpFiles_Click
@@ -1173,7 +1173,7 @@ Err_VuBkUpFiles_Click:
 End Sub
 
 Private Sub QAFileSrc_Click()
-Debug.Print "Form_VIPadmin - QAFileSrc_Click"
+config_log "Form_VIPadmin - QAFileSrc_Click"
 Debug.Assert False
 
 On Error GoTo Err_QAFileSrc_Click
@@ -1194,7 +1194,7 @@ Err_QAFileSrc_Click:
 End Sub
 
 Private Sub QAExpDB_Click()
-Debug.Print "Form_VIPadmin - QAExpDB_Click"
+config_log "Form_VIPadmin - QAExpDB_Click"
 Debug.Assert False
 
 On Error GoTo Err_QAExpDB_Click
@@ -1215,7 +1215,7 @@ Err_QAExpDB_Click:
 End Sub
 
 Private Sub QAImpFldr_Click()
-Debug.Print "Form_VIPadmin - QAImpFldr_Click"
+config_log "Form_VIPadmin - QAImpFldr_Click"
 Debug.Assert False
 
 On Error GoTo Err_QAImpFldr_Click
@@ -1236,7 +1236,7 @@ Err_QAImpFldr_Click:
 End Sub
 
 Private Sub QAXportFldr_Click()
-Debug.Print "Form_VIPadmin - QAXportFldr_Click"
+config_log "Form_VIPadmin - QAXportFldr_Click"
 Debug.Assert False
 
 On Error GoTo Err_QAXportFldr_Click
@@ -1257,7 +1257,7 @@ Err_QAXportFldr_Click:
 End Sub
 
 Private Sub ProdVsQA_Click()
-Debug.Print "Form_VIPadmin - ProdVsQA_Click"
+config_log "Form_VIPadmin - ProdVsQA_Click"
 Debug.Assert False
 
 On Error GoTo Err_ProdVsQA_Click
@@ -1295,7 +1295,7 @@ Err_ProdVsQA_Click:
 End Sub
 
 Private Sub VIPmanualImp_Click()
-Debug.Print "Form_VIPadmin - VIPmanualImp_Click"
+config_log "Form_VIPadmin - VIPmanualImp_Click"
 Debug.Assert False
 
 On Error GoTo Err_VIPmanualImp_Click
@@ -1333,7 +1333,7 @@ Err_VIPmanualImp_Click:
 End Sub
 
 Private Sub VIPmanualXport_Click()
-Debug.Print "Form_VIPadmin - VIPmanualXport_Click"
+config_log "Form_VIPadmin - VIPmanualXport_Click"
 Debug.Assert False
 
 On Error GoTo Err_VIPmanualXport_Click
@@ -1372,7 +1372,7 @@ Err_VIPmanualXport_Click:
 End Sub
 
 Private Sub VIPHdrReVu_Click()
-Debug.Print "Form_VIPadmin - VIPHdrReVu_Click"
+config_log "Form_VIPadmin - VIPHdrReVu_Click"
 
 On Error GoTo Err_VIPHdrReVu_Click
 
@@ -1391,7 +1391,7 @@ Err_VIPHdrReVu_Click:
 End Sub
 
 Private Sub VIPBuyReVu_Click()
-Debug.Print "Form_VIPadmin - VIPBuyReVu_Click"
+config_log "Form_VIPadmin - VIPBuyReVu_Click"
 On Error GoTo Err_VIPBuyReVu_Click
 
     Dim stDocName As String
@@ -1408,7 +1408,7 @@ Err_VIPBuyReVu_Click:
     
 End Sub
 Private Sub VIPDetReVu_Click()
-Debug.Print "Form_VIPadmin - VIPDetReVu_Click"
+config_log "Form_VIPadmin - VIPDetReVu_Click"
 On Error GoTo Err_VIPDetReVu_Click
 
     Dim stDocName As String
@@ -1426,7 +1426,7 @@ Err_VIPDetReVu_Click:
 End Sub
 
 Private Sub ChkVndrsIDbyPendIDQ_Click()
-Debug.Print "Form_VIPadmin - ChkVndrsIDbyPendIDQ_Click"
+config_log "Form_VIPadmin - ChkVndrsIDbyPendIDQ_Click"
 On Error GoTo Err_ChkVndrsIDbyPendIDQ_Click
 
     Dim stDocName As String
@@ -1444,7 +1444,7 @@ Err_ChkVndrsIDbyPendIDQ_Click:
 End Sub
 
 Private Sub VuImps_Click()
-Debug.Print "Form_VIPadmin - VuImps_Click"
+config_log "Form_VIPadmin - VuImps_Click"
 On Error GoTo Err_VuImps_Click
 
     DoCmd.OpenQuery "ImpOKVQ", acViewNormal, acReadOnly
@@ -1461,7 +1461,7 @@ Err_VuImps_Click:
 End Sub
 
 Private Sub BuyCntChk_Click()
-Debug.Print "Form_VIPadmin - BuyCntChk_Click"
+config_log "Form_VIPadmin - BuyCntChk_Click"
 On Error GoTo Err_BuyCntChk_Click
 
     Dim stDocName As String
@@ -1479,7 +1479,7 @@ Err_BuyCntChk_Click:
 End Sub
 
 Private Sub ISubsWICs_Click()
-Debug.Print "Form_VIPadmin - ISubsWICs_Click"
+config_log "Form_VIPadmin - ISubsWICs_Click"
 On Error GoTo Err_ISubsWICs_Click
 
     Dim stDocName As String
@@ -1497,7 +1497,7 @@ Err_ISubsWICs_Click:
 End Sub
 
 Private Sub ISubsICsWoBParts_Click()
-Debug.Print "Form_VIPadmin - ISubsICsWoBParts_Click"
+config_log "Form_VIPadmin - ISubsICsWoBParts_Click"
 On Error GoTo Err_ISubsICsWoBParts_Click
 
     Dim stDocName As String
@@ -1515,7 +1515,7 @@ Err_ISubsICsWoBParts_Click:
 End Sub
 
 Private Sub MultiOrderPromos_Click()
-Debug.Print "Form_VIPadmin - MultiOrderPromos_Click"
+config_log "Form_VIPadmin - MultiOrderPromos_Click"
 On Error GoTo Err_MultiOrderPromos_Click
 
     Dim stDocName As String
@@ -1533,7 +1533,7 @@ Err_MultiOrderPromos_Click:
 End Sub
 
 Private Sub RevuSame_Click()
-Debug.Print "Form_VIPadmin - RevuSame_Click"
+config_log "Form_VIPadmin - RevuSame_Click"
 On Error GoTo Err_RevuSame_Click
 
     Dim stDocName As String

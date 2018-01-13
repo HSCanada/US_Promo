@@ -450,4 +450,4 @@ Option Compare Database   'Use database order for string comparisons
 
 
 
-'Debug.Print "x"
+'debug.prt "x"

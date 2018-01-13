@@ -383,7 +383,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub CloseIt_Click()
-Debug.Print "Form_ImportOKF - RevuSame_Click"
+config_log "Form_ImportOKF - RevuSame_Click"
 
 On Error GoTo Err_CloseIt_Click
 

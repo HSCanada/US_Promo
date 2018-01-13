@@ -1970,7 +1970,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub ItemList_Click()
-Debug.Print "Form_zPromoSubF - ItemList_Click"
+config_log "Form_zPromoSubF - ItemList_Click"
 
 
 On Error GoTo Err_ItemList_Click

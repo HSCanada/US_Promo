@@ -449,7 +449,7 @@ Attribute VB_Exposed = False
 Option Compare Database   'Use database order for string comparisons
 
 Private Sub Button17_Click()
-Debug.Print "Form_xyPermissionsF - Button17_Click"
+config_log "Form_xyPermissionsF - Button17_Click"
 
 On Error GoTo Err_Button17_Click
 
@@ -466,7 +466,7 @@ Err_Button17_Click:
 End Sub
 
 Private Sub Form_Current()
-Debug.Print "Form_xyPermissionsF - Form_Current"
+config_log "Form_xyPermissionsF - Form_Current"
      
      If Me.[Lock] = True Then
         Me.FullName.Locked = True
@@ -489,7 +489,7 @@ Debug.Print "Form_xyPermissionsF - Form_Current"
 End Sub
 
 Private Sub UserLock_AfterUpdate()
-Debug.Print "Form_xyPermissionsF - UserLock_AfterUpdate"
+config_log "Form_xyPermissionsF - UserLock_AfterUpdate"
 
    Me.Date.SetFocus
    Me![Date] = Now()

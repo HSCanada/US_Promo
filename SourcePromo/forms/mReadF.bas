@@ -168,7 +168,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Close_Click()
-Debug.Print "Form_mReadF - Close_Click"
+config_log "Form_mReadF - Close_Click"
 
 On Error GoTo Err_Close_Click
 

@@ -1507,7 +1507,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Command1_Click()
-Debug.Print "Form_zRptChksF - Command1_Click"
+config_log "Form_zRptChksF - Command1_Click"
 
 On Error GoTo Err_Command1_Click
 
@@ -1524,7 +1524,7 @@ Err_Command1_Click:
 End Sub
 
 Private Sub YrsBuyGetDups_Click()
-Debug.Print "Form_zRptChksF - YrsBuyGetDups_Click"
+config_log "Form_zRptChksF - YrsBuyGetDups_Click"
 On Error GoTo Err_YrsBuyGetDups_Click
 
     Dim stDocName As String
@@ -1541,7 +1541,7 @@ Err_YrsBuyGetDups_Click:
 End Sub
 
 Private Sub FSCRptByTyp_Click()
-Debug.Print "Form_zRptChksF - FSCRptByTyp_Click"
+config_log "Form_zRptChksF - FSCRptByTyp_Click"
 On Error GoTo Err_FSCRptByTyp_Click
 
     Dim stDocName As String
@@ -1559,7 +1559,7 @@ Err_FSCRptByTyp_Click:
 End Sub
 
 Private Sub CurrVsPriorNoSWOorDft_Click()
-Debug.Print "Form_zRptChksF - CurrVsPriorNoSWOorDft_Click"
+config_log "Form_zRptChksF - CurrVsPriorNoSWOorDft_Click"
 On Error GoTo Err_CurrVsPriorNoSWOorDft
 
     Dim stDocName As String
@@ -1576,12 +1576,12 @@ Err_CurrVsPriorNoSWOorDft:
 End Sub
 
 Private Sub Form_GotFocus()
-Debug.Print "Form_zRptChksF - Form_GotFocus"
+config_log "Form_zRptChksF - Form_GotFocus"
    Me.Refresh
 End Sub
 
 Private Sub ISubsICsWoBParts_Click()
-Debug.Print "Form_zRptChksF - ISubsICsWoBParts_Click"
+config_log "Form_zRptChksF - ISubsICsWoBParts_Click"
 On Error GoTo Err_ISubsICsWoBParts_Click
 
     Dim stDocName As String
@@ -1599,7 +1599,7 @@ Err_ISubsICsWoBParts_Click:
 End Sub
 
 Private Sub ISubsWICs_Click()
-Debug.Print "Form_zRptChksF - ISubsWICs_Click"
+config_log "Form_zRptChksF - ISubsWICs_Click"
 On Error GoTo Err_ISubsWICs_Click
 
     Dim stDocName As String
@@ -1617,7 +1617,7 @@ Err_ISubsWICs_Click:
 End Sub
 
 Private Sub MultiOrderPromos_Click()
-Debug.Print "Form_zRptChksF - MultiOrderPromos_Click"
+config_log "Form_zRptChksF - MultiOrderPromos_Click"
 On Error GoTo Err_MultiOrderPromos_Click
 
     Dim stDocName As String
@@ -1635,7 +1635,7 @@ Err_MultiOrderPromos_Click:
 End Sub
 
 Private Sub NullBuyOrItem_Click()
-Debug.Print "Form_zRptChksF - NullBuyOrItem_Click"
+config_log "Form_zRptChksF - NullBuyOrItem_Click"
 On Error GoTo Err_NullBuyOrItem_Click
 
     Dim stDocName As String
@@ -1653,7 +1653,7 @@ Err_NullBuyOrItem_Click:
 End Sub
 
 Private Sub RevuSame_Click()
-Debug.Print "Form_zRptChksF - RevuSame_Click"
+config_log "Form_zRptChksF - RevuSame_Click"
 
 On Error GoTo Err_RevuSame_Click
 
@@ -1672,7 +1672,7 @@ Err_RevuSame_Click:
 End Sub
 
 Private Sub VndrListQ_Click()
-Debug.Print "Form_zRptChksF - VndrListQ_Click"
+config_log "Form_zRptChksF - VndrListQ_Click"
 On Error GoTo Err_VndrListQ_Click
 
     Dim stDocName As String
@@ -1690,7 +1690,7 @@ Err_VndrListQ_Click:
 End Sub
 
 Private Sub VndWOpromo_Click()
-Debug.Print "Form_zRptChksF - VndWOpromo_Click"
+config_log "Form_zRptChksF - VndWOpromo_Click"
 On Error GoTo Err_VndWOpromo_Click
 
     Dim stDocName As String
@@ -1708,7 +1708,7 @@ Err_VndWOpromo_Click:
 End Sub
 
 Private Sub CurrYrPromo_Click()
-Debug.Print "Form_zRptChksF - CurrYrPromo_Click"
+config_log "Form_zRptChksF - CurrYrPromo_Click"
 On Error GoTo Err_CurrYrPromo_Click
 
     Dim stDocName As String
@@ -1726,7 +1726,7 @@ Err_CurrYrPromo_Click:
 End Sub
 
 Private Sub CurrVsPrior_Click()
-Debug.Print "Form_zRptChksF - CurrVsPrior_Click"
+config_log "Form_zRptChksF - CurrVsPrior_Click"
 On Error GoTo Err_CurrVsPrior_Click
 
     Dim stDocName As String
@@ -1745,7 +1745,7 @@ End Sub
 
 
 Private Sub LongRedeemVu_Click()
-Debug.Print "Form_zRptChksF - LongRedeemVu_Click"
+config_log "Form_zRptChksF - LongRedeemVu_Click"
 On Error GoTo Err_LongRedeemVu_Click
 
     Dim stDocName As String
@@ -1763,7 +1763,7 @@ Err_LongRedeemVu_Click:
 End Sub
 
 Private Sub RdmTextLenXceptns_Click()
-Debug.Print "Form_zRptChksF - RdmTextLenXceptns_Click"
+config_log "Form_zRptChksF - RdmTextLenXceptns_Click"
 On Error GoTo Err_RdmTextLenXceptns_Click
 
     Dim stDocName As String
@@ -1783,7 +1783,7 @@ End Sub
 
 
 Private Sub InvalidRdm_Click()
-Debug.Print "Form_zRptChksF - InvalidRdm_Click"
+config_log "Form_zRptChksF - InvalidRdm_Click"
 On Error GoTo Err_InvalidRdm_Click
 
     Dim stDocName As String
@@ -1801,7 +1801,7 @@ Err_InvalidRdm_Click:
 End Sub
 
 Private Sub MissingICs_Click()
-Debug.Print "Form_zRptChksF - MissingICs_Click"
+config_log "Form_zRptChksF - MissingICs_Click"
 On Error GoTo Err_MissingICs_Click
 
     Dim stDocName As String
@@ -1819,7 +1819,7 @@ Err_MissingICs_Click:
 End Sub
 
 Private Sub DispVariants_Click()
-Debug.Print "Form_zRptChksF - DispVariants_Click"
+config_log "Form_zRptChksF - DispVariants_Click"
 On Error GoTo Err_DispVariants_Click
 
     Dim stDocName As String
@@ -1837,7 +1837,7 @@ Err_DispVariants_Click:
 End Sub
 
 Private Sub InvalidGet_Click()
-Debug.Print "Form_zRptChksF - InvalidGet_Click"
+config_log "Form_zRptChksF - InvalidGet_Click"
 On Error GoTo Err_InvalidGet_Click
 
     Dim stDocName As String
@@ -1855,7 +1855,7 @@ Err_InvalidGet_Click:
 End Sub
 
 Private Sub HiGetValu_Click()
-Debug.Print "Form_zRptChksF - HiGetValu_Click"
+config_log "Form_zRptChksF - HiGetValu_Click"
 On Error GoTo Err_HiGetValu_Click
 
     Dim stDocName As String
@@ -1873,7 +1873,7 @@ Err_HiGetValu_Click:
 End Sub
 
 Private Sub PkgQtys_Click()
-Debug.Print "Form_zRptChksF - PkgQtys_Click"
+config_log "Form_zRptChksF - PkgQtys_Click"
 On Error GoTo Err_PkgQtys_Click
 
     Dim stDocName As String
@@ -1891,7 +1891,7 @@ Err_PkgQtys_Click:
 End Sub
 
 Private Sub BuyPartErrs_Click()
-Debug.Print "Form_zRptChksF - BuyPartErrs_Click"
+config_log "Form_zRptChksF - BuyPartErrs_Click"
 On Error GoTo Err_BuyPartErrs_Click
 
     Dim stDocName As String
@@ -1909,7 +1909,7 @@ Err_BuyPartErrs_Click:
 End Sub
 
 Private Sub BuyNICsNullR_Click()
-Debug.Print "Form_zRptChksF - BuyNICsNullR_Click"
+config_log "Form_zRptChksF - BuyNICsNullR_Click"
 On Error GoTo Err_BuyNICsNullR_Click
 
     Dim stDocName As String
@@ -1927,7 +1927,7 @@ Err_BuyNICsNullR_Click:
 End Sub
 
 Private Sub FixItmQty_Click()
-Debug.Print "Form_zRptChksF - FixItmQty_Click"
+config_log "Form_zRptChksF - FixItmQty_Click"
 On Error GoTo Err_FixItmQty_Click
 
     Dim stDocName As String
@@ -1951,7 +1951,7 @@ Err_FixItmQty_Click:
 End Sub
 
 Private Sub VuBuyPartDups_Click()
-Debug.Print "Form_zRptChksF - VuBuyPartDups_Click"
+config_log "Form_zRptChksF - VuBuyPartDups_Click"
 On Error GoTo Err_VuBuyPartDups_Click
 
     Dim stDocName As String
@@ -1971,7 +1971,7 @@ Err_VuBuyPartDups_Click:
 End Sub
 
 Private Sub DelzBuyDups_Click()
-Debug.Print "Form_zRptChksF - DelzBuyDups_Click"
+config_log "Form_zRptChksF - DelzBuyDups_Click"
 On Error GoTo Err_DelzBuyDups_Click
 
     Dim stMTQ As String
@@ -1996,7 +1996,7 @@ Err_DelzBuyDups_Click:
 End Sub
 
 Private Sub BRndNmPkgItmCds_Click()
-Debug.Print "Form_zRptChksF - BRndNmPkgItmCds_Click"
+config_log "Form_zRptChksF - BRndNmPkgItmCds_Click"
 On Error GoTo Err_BRndNmPkgItmCds_Click
 
     Dim stDocName As String
@@ -2014,7 +2014,7 @@ Err_BRndNmPkgItmCds_Click:
 End Sub
 
 Private Sub BrndNmRecCnt_Click()
-Debug.Print "Form_zRptChksF - BrndNmRecCnt_Click"
+config_log "Form_zRptChksF - BrndNmRecCnt_Click"
 On Error GoTo Err_BrndNmRecCnt_Click
 
     Dim stDocName As String
@@ -2032,7 +2032,7 @@ Err_BrndNmRecCnt_Click:
 End Sub
 
 Private Sub DispNmXcptns_Click()
-Debug.Print "Form_zRptChksF - DispNmXcptns_Click"
+config_log "Form_zRptChksF - DispNmXcptns_Click"
 On Error GoTo Err_DispNmXcptns_Click
 
     Dim stDocName As String
@@ -2050,7 +2050,7 @@ Err_DispNmXcptns_Click:
 End Sub
 
 Private Sub MainMissingItems_Click()
-Debug.Print "Form_zRptChksF - MainMissingItems_Click"
+config_log "Form_zRptChksF - MainMissingItems_Click"
 On Error GoTo Err_MainMissingItems_Click
 
     Dim stDocName As String
@@ -2068,7 +2068,7 @@ Err_MainMissingItems_Click:
 End Sub
 
 Private Sub LostBuyPart1_Click()
-Debug.Print "Form_zRptChksF - LostBuyPart1_Click"
+config_log "Form_zRptChksF - LostBuyPart1_Click"
 On Error GoTo Err_LostBuyPart1_Click
 
     Dim stDocName As String
@@ -2086,7 +2086,7 @@ Err_LostBuyPart1_Click:
 End Sub
 
 Private Sub PromosWOitemCodes_Click()
-Debug.Print "Form_zRptChksF - PromosWOitemCodes_Click"
+config_log "Form_zRptChksF - PromosWOitemCodes_Click"
 On Error GoTo Err_PromosWOitemCodes_Click
 
     Dim stDocName As String
@@ -2104,7 +2104,7 @@ Err_PromosWOitemCodes_Click:
 End Sub
 
 Private Sub ICDups_Click()
-Debug.Print "Form_zRptChksF - ICDups_Click"
+config_log "Form_zRptChksF - ICDups_Click"
 On Error GoTo Err_ICDups_Click
 
     Dim stDocName As String
@@ -2122,7 +2122,7 @@ Err_ICDups_Click:
 End Sub
 
 Private Sub ICDelDups_Click()
-Debug.Print "Form_zRptChksF - ICDelDups_Click"
+config_log "Form_zRptChksF - ICDelDups_Click"
 On Error GoTo Err_ICDelDups_Click
 
     Dim stMTQ As String
@@ -2144,7 +2144,7 @@ Err_ICDelDups_Click:
 End Sub
 
 Private Sub zBsItmQtyChk_Click()
-Debug.Print "Form_zRptChksF - zBsItmQtyChk_Click"
+config_log "Form_zRptChksF - zBsItmQtyChk_Click"
 On Error GoTo Err_zBsItmQtyChk_Click
 
     Dim stDocName As String
@@ -2162,7 +2162,7 @@ Err_zBsItmQtyChk_Click:
 End Sub
 
 Private Sub ItmQtyChk_Click()
-Debug.Print "Form_zRptChksF - ItmQtyChk_Click"
+config_log "Form_zRptChksF - ItmQtyChk_Click"
 On Error GoTo Err_ItmQtyChk_Click
 
     Dim stDocName As String
@@ -2180,7 +2180,7 @@ Err_ItmQtyChk_Click:
 End Sub
 
 Private Sub QtyMisMatch_Click()
-Debug.Print "Form_zRptChksF - QtyMisMatch_Click"
+config_log "Form_zRptChksF - QtyMisMatch_Click"
 On Error GoTo Err_QtyMisMatch_Click
 
    DoCmd.DeleteObject acTable, "QtyMisMatch"
@@ -2200,7 +2200,7 @@ Err_QtyMisMatch_Click:
 End Sub
 
 Private Sub BuyGetDups_Click()
-Debug.Print "Form_zRptChksF - BuyGetDups_Click"
+config_log "Form_zRptChksF - BuyGetDups_Click"
 On Error GoTo Err_BuyGetDups_Click
 
     Dim stDocName As String
@@ -2218,7 +2218,7 @@ Err_BuyGetDups_Click:
 End Sub
 
 Private Sub fixPkgQty_Click()
-Debug.Print "Form_zRptChksF - fixPkgQty_Click"
+config_log "Form_zRptChksF - fixPkgQty_Click"
 On Error GoTo Err_fixPkgQty_Click
 
     Dim stDocName As String
@@ -2242,7 +2242,7 @@ Err_fixPkgQty_Click:
 End Sub
 
 Private Sub FindNmBuyGetNDtsDups_Click()
-Debug.Print "Form_zRptChksF - FindNmBuyGetNDtsDups_Click"
+config_log "Form_zRptChksF - FindNmBuyGetNDtsDups_Click"
 On Error GoTo Err_FindNmBuyGetNDtsDups_Click
 
     Dim stDocName As String

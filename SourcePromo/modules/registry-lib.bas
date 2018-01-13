@@ -72,7 +72,7 @@ Option Explicit
        Dim hkey As Long         'handle of opened key
        Dim vValue As Variant      'setting of queried value
 
-Debug.Print "QueryValue"
+config_log "QueryValue"
 
        lRetVal = RegOpenKeyEx(mainkey, sKeyName, 0, _
    KEY_QUERY_VALUE, hkey)
@@ -84,7 +84,7 @@ Debug.Print "QueryValue"
    Public Sub SetKeyValue(mainkey As Long, sKeyName As String, sValueName As String, _
    vValueSetting As Variant, lValueType As Long)
        
-Debug.Print "SetKeyValue"
+config_log "SetKeyValue"
        
        Dim lRetVal As Long         'result of the SetValueEx function
        Dim hkey As Long         'handle of open key
@@ -98,7 +98,7 @@ Debug.Print "SetKeyValue"
 
    Public Sub CreateNewKey(sNewKeyName As String, lPredefinedKey As Long)
        
-Debug.Print "CreateNewKey"
+config_log "CreateNewKey"
        
        Dim hNewKey As Long         'handle to the new key
        Dim lRetVal As Long         'result of the RegCreateKeyEx function
@@ -113,7 +113,7 @@ Debug.Print "CreateNewKey"
    Public Function SetValueEx(ByVal hkey As Long, sValueName As String, _
    lType As Long, vValue As Variant) As Long
        
-Debug.Print "SetValueEx"
+config_log "SetValueEx"
        
        Dim lValue As Long
        Dim sValue As String
@@ -132,7 +132,7 @@ Debug.Print "SetValueEx"
    Function QueryValueEx(ByVal lhKey As Long, ByVal szValueName As _
    String, vValue As Variant) As Long
        
-Debug.Print "QueryValueEx"
+config_log "QueryValueEx"
        
        Dim cch As Long
        Dim lrc As Long

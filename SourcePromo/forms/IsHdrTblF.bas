@@ -108,7 +108,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Form_Current()
-Debug.Print "Form_IsHdrTblF - Form_Current"
+config_log "Form_IsHdrTblF - Form_Current"
 Debug.Assert False
 
 Dim stTbl As String

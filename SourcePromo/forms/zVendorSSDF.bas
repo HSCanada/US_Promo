@@ -616,14 +616,14 @@ Option Compare Database
 Option Explicit
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "Form_zVendorSSDF - Form_Open"
+config_log "Form_zVendorSSDF - Form_Open"
 
 
 Forms![zVendorF]![Company].SetFocus
 End Sub
 
 Private Sub Close_Click()
-Debug.Print "Form_zVendorSSDF - Close_Click"
+config_log "Form_zVendorSSDF - Close_Click"
 On Error GoTo Err_Close_Click
 
 

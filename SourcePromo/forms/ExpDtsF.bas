@@ -393,14 +393,14 @@ Option Compare Database
 Option Explicit
 
 Private Sub Form_Load()
-Debug.Print "Form_ExpDtlF - Form_Load"
+config_log "Form_ExpDtlF - Form_Load"
 
 Me![StartAt] = 1
 Me![EndAt] = 100
 End Sub
 
 Private Sub User_AfterUpdate()
-Debug.Print "Form_ExpDtlF - User_AfterUpdate"
+config_log "Form_ExpDtlF - User_AfterUpdate"
 
     Z_EUser = Me![User]
 End Sub

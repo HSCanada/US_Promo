@@ -394,7 +394,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Close_Click()
-Debug.Print "Form_rVndICsF - Close_Click"
+config_log "Form_rVndICsF - Close_Click"
 
 On Error GoTo Err_Close_Click
 

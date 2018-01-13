@@ -1089,7 +1089,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub BuyNo_AfterUpdate()
-Debug.Print "Form_SWOInptF - BuyNo_AfterUpdate"
+config_log "Form_SWOInptF - BuyNo_AfterUpdate"
 On Error GoTo Err_BuyNo_AfterUpdate
 
 Dim DblBuy As Double
@@ -1130,7 +1130,7 @@ Err_BuyNo_AfterUpdate:
 End Sub
 
 Private Sub Form_Load()
-Debug.Print "Form_SWOInptF - Form_Load"
+config_log "Form_SWOInptF - Form_Load"
 On Error GoTo Err_Form_Load
 
     'S_WOEff = DLookup("[SWOEff]", "DefQtr")
@@ -1148,7 +1148,7 @@ Err_Form_Load:
 End Sub
 
 Private Sub GetNo_AfterUpdate()
-Debug.Print "Form_SWOInptF - GetNo_AfterUpdate"
+config_log "Form_SWOInptF - GetNo_AfterUpdate"
 On Error GoTo Err_GetNo_AfterUpdate
 
 Dim DblBuy As Double
@@ -1188,7 +1188,7 @@ Err_GetNo_AfterUpdate:
 End Sub
 
 Private Sub Vendor_Name_AfterUpdate()
-Debug.Print "Form_SWOInptF - Vendor_Name_AfterUpdate"
+config_log "Form_SWOInptF - Vendor_Name_AfterUpdate"
 On Error GoTo Err_Vendor_Name_AfterUpdate
 
     Dim intVID As Integer
@@ -1261,7 +1261,7 @@ Err_Vendor_Name_AfterUpdate:
 End Sub
 
 Private Sub VID_AfterUpdate()
-Debug.Print "Form_SWOInptF - VID_AfterUpdate - PASS"
+config_log "Form_SWOInptF - VID_AfterUpdate - PASS"
 'On Error GoTo Err_VID_AfterUpdate
 
 '    Dim intVID As Integer
@@ -1304,7 +1304,7 @@ Debug.Print "Form_SWOInptF - VID_AfterUpdate - PASS"
 End Sub
 
 Private Sub CloseIt_Click()
-Debug.Print "Form_SWOInptF - CloseIt_Click"
+config_log "Form_SWOInptF - CloseIt_Click"
 On Error GoTo Err_CloseIt_Click
 
 
@@ -1320,7 +1320,7 @@ Err_CloseIt_Click:
 End Sub
 
 Private Sub SaveExpClear_Click()
-Debug.Print "Form_SWOInptF - SaveExpClear_Click"
+config_log "Form_SWOInptF - SaveExpClear_Click"
 Debug.Assert False
 
 On Error GoTo Err_SaveExpClear_Click
@@ -1399,7 +1399,7 @@ Err_SaveExpClear_Click:
 End Sub
 
 Private Sub Purge_Click()
-Debug.Print "Form_SWOInptF - Purge_Click"
+config_log "Form_SWOInptF - Purge_Click"
 On Error GoTo Err_Purge_Click
 
 DeleteIt.Visible = True
@@ -1415,7 +1415,7 @@ Err_Purge_Click:
 End Sub
 
 Private Sub GloVarTest_Click()
-Debug.Print "Form_SWOInptF - GloVarTest_Click"
+config_log "Form_SWOInptF - GloVarTest_Click"
 On Error GoTo Err_GloVarTest_Click
 
 Dim dtEff As Date
@@ -1448,7 +1448,7 @@ Err_GloVarTest_Click:
 End Sub
 
 Private Sub ViewDet_Click()
-Debug.Print "Form_SWOInptF - ViewDet_Click"
+config_log "Form_SWOInptF - ViewDet_Click"
 On Error GoTo Err_ViewDet_Click
 
     'DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -1477,7 +1477,7 @@ Err_ViewDet_Click:
 End Sub
 
 Private Sub DeleteIt_Click()
-Debug.Print "Form_SWOInptF - DeleteIt_Click"
+config_log "Form_SWOInptF - DeleteIt_Click"
 On Error GoTo Err_DeleteIt_Click
 
     Dim stDocName As String
@@ -1496,7 +1496,7 @@ Err_DeleteIt_Click:
 End Sub
 
 Private Sub CancelIt_Click()
-Debug.Print "Form_SWOInptF - CancelIt_Click"
+config_log "Form_SWOInptF - CancelIt_Click"
 On Error GoTo Err_CancelIt_Click
 
 DeleteIt.Visible = False
@@ -1511,7 +1511,7 @@ Err_CancelIt_Click:
 End Sub
 
 Private Sub BuyNoGetNo_Click()
-Debug.Print "Form_SWOInptF - BuyNoGetNo_Click"
+config_log "Form_SWOInptF - BuyNoGetNo_Click"
 On Error GoTo Err_BuyNoGetNo_Click
 
 Dim DblBuy As Double
@@ -1540,7 +1540,7 @@ Err_BuyNoGetNo_Click:
 End Sub
 
 Private Sub TxtTestMod_Click()
-Debug.Print "Form_SWOInptF - TxtTestMod_Click"
+config_log "Form_SWOInptF - TxtTestMod_Click"
 On Error GoTo Err_TxtTestMod_Click
 
 Dim DblBuyPos As Double

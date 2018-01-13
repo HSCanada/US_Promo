@@ -1473,7 +1473,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub AdMn_AfterUpdate()
-Debug.Print "Form_zPromoSubSFRdmF - AdMn_AfterUpdate"
+config_log "Form_zPromoSubSFRdmF - AdMn_AfterUpdate"
 
 On Error GoTo Err_AdMn_AfterUpdate
 
@@ -1502,12 +1502,12 @@ End Sub
 
 
 Private Sub Approvd_AfterUpdate()
-Debug.Print "Form_zPromoSubSFRdmF - Approvd_AfterUpdate"
+config_log "Form_zPromoSubSFRdmF - Approvd_AfterUpdate"
     Me![ApprvDt] = Format(Now(), "mm/dd/yyyy")
 End Sub
 
 Private Sub CopyRec_Click()
-Debug.Print "Form_zPromoSubSFRdmF - CopyRec_Click"
+config_log "Form_zPromoSubSFRdmF - CopyRec_Click"
 On Error GoTo Err_CopyRec_Click
 
 'DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -1567,12 +1567,12 @@ Err_CopyRec_Click:
 End Sub
 
 Private Sub EffMnth_LostFocus()
-Debug.Print "Form_zPromoSubSFRdmF - EffMnth_LostFocus"
+config_log "Form_zPromoSubSFRdmF - EffMnth_LostFocus"
 CopyRec.Visible = "False"
 End Sub
 
 Private Sub Form_AfterUpdate()
-Debug.Print "Form_zPromoSubSFRdmF - Form_AfterUpdate"
+config_log "Form_zPromoSubSFRdmF - Form_AfterUpdate"
 If IsNull(Me!ID) Or Me!ID = "" Then
   'Me!ID = Me!zVndDefProF.ID
   Me!ID = Me.Parent!ID
@@ -1580,7 +1580,7 @@ End If
 End Sub
 
 Private Sub ShowCopy_Click()
-Debug.Print "Form_zPromoSubSFRdmF - ShowCopy_Click"
+config_log "Form_zPromoSubSFRdmF - ShowCopy_Click"
 On Error GoTo Err_ShowCopy_Click
 
 DoCmd.RunCommand acCmdSaveRecord
@@ -1599,7 +1599,7 @@ Err_ShowCopy_Click:
 End Sub
 
 Private Sub HideCopy_Click()
-Debug.Print "Form_zPromoSubSFRdmF - HideCopy_Click"
+config_log "Form_zPromoSubSFRdmF - HideCopy_Click"
 On Error GoTo Err_HideCopy_Click
 
 CopyRec.Visible = "False"
@@ -1614,7 +1614,7 @@ Err_HideCopy_Click:
 End Sub
 
 Private Sub DftPromo_AfterUpdate()
-Debug.Print "Form_zPromoSubSFRdmF - DftPromo_AfterUpdate"
+config_log "Form_zPromoSubSFRdmF - DftPromo_AfterUpdate"
 
     If Me![DftPromo] = -1 Then
        If IsNull(Me![SWO]) Then Me![SWO] = 0 '3/3/15 was -1
@@ -1640,7 +1640,7 @@ End Sub
 'End Sub
 
 Private Sub PromoCode_AfterUpdate()
-Debug.Print "Form_zPromoSubSFRdmF - PromoCode_AfterUpdate_PASS"
+config_log "Form_zPromoSubSFRdmF - PromoCode_AfterUpdate_PASS"
 
 
 'Dim stAdNm As String
@@ -1666,7 +1666,7 @@ Debug.Print "Form_zPromoSubSFRdmF - PromoCode_AfterUpdate_PASS"
 End Sub
 
 Private Sub MakeAd_Click()
-Debug.Print "Form_zPromoSubSFRdmF - MakeAd_Click"
+config_log "Form_zPromoSubSFRdmF - MakeAd_Click"
 
 On Error GoTo Err_MakeAd_Click
 
@@ -1694,7 +1694,7 @@ Err_MakeAd_Click:
 End Sub
 
 Private Sub NewAd_Click()
-Debug.Print "Form_zPromoSubSFRdmF - NewAd_Click"
+config_log "Form_zPromoSubSFRdmF - NewAd_Click"
 
 On Error GoTo Err_NewAd_Click
 
@@ -1711,7 +1711,7 @@ Err_NewAd_Click:
 End Sub
 
 Private Sub ICs_Click()  'Command178_Click()
-Debug.Print "Form_zPromoSubSFRdmF - ICs_Click"
+config_log "Form_zPromoSubSFRdmF - ICs_Click"
 On Error GoTo Err_ICs_Click   'Command178_Click
 Dim stText As String
 
@@ -1736,7 +1736,7 @@ Err_ICs_Click:   'Command178_Click:
 End Sub
 
 Private Sub SWO_Click()
-Debug.Print "Form_zPromoSubSFRdmF - SWO_Click"
+config_log "Form_zPromoSubSFRdmF - SWO_Click"
    If Me![DftPromo] = -1 Then
       MsgBox "There is Defaulted Promo text in the SubForm - which we remove for SWO only entries."
    Else
@@ -1744,7 +1744,7 @@ Debug.Print "Form_zPromoSubSFRdmF - SWO_Click"
 End Sub
 
 Private Sub Type_AfterUpdate()
-Debug.Print "Form_zPromoSubSFRdmF - Type_AfterUpdate"
+config_log "Form_zPromoSubSFRdmF - Type_AfterUpdate"
 On Error GoTo Err_Type_AfterUpdate
 
     Dim stType As String
@@ -1766,14 +1766,14 @@ Err_Type_AfterUpdate:
 End Sub
 
 Private Sub Unbnd_GotFocus()
-Debug.Print "Form_zPromoSubSFRdmF - Unbnd_GotFocus"
+config_log "Form_zPromoSubSFRdmF - Unbnd_GotFocus"
    'Dim lngRed As Long
    'lngRed = RGB(255, 0, 0)
    'Me!Unbnd.BackColor = lngRed
 End Sub
 
 Private Sub ViewDet_Click()
-Debug.Print "Form_zPromoSubSFRdmF - ViewDet_Click"
+config_log "Form_zPromoSubSFRdmF - ViewDet_Click"
 On Error GoTo Err_ViewDet_Click
 
 If IsNull(Me!ID) Or Me!ID = "" Then

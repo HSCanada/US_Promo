@@ -773,7 +773,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Close_Click()
-Debug.Print "Form_zCorpNsubVuF - Close_Click"
+config_log "Form_zCorpNsubVuF - Close_Click"
 
 On Error GoTo Err_Close_Click
 
@@ -789,7 +789,7 @@ Err_Close_Click:
 End Sub
 
 Private Sub Form_Close()
-Debug.Print "Form_zCorpNsubVuF - Form_Close"
+config_log "Form_zCorpNsubVuF - Form_Close"
 On Error GoTo Err_Form_Close
 
     Dim stDocName As String

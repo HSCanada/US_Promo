@@ -346,7 +346,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Command10_Click()
-Debug.Print "Form_vVndContactsF - Command10_Click"
+config_log "Form_vVndContactsF - Command10_Click"
 On Error GoTo Err_Command10_Click
 
 
@@ -362,7 +362,7 @@ Err_Command10_Click:
 End Sub
 
 Private Sub EdVnDptCodes_Click()
-Debug.Print "Form_vVndContactsF - EdVnDptCodes_Click"
+config_log "Form_vVndContactsF - EdVnDptCodes_Click"
 On Error GoTo Err_EdVnDptCodes_Click
 
     Dim stDocName As String
@@ -381,12 +381,12 @@ Err_EdVnDptCodes_Click:
 End Sub
 
 Private Sub Form_AfterUpdate()
-Debug.Print "Form_vVndContactsF - Form_AfterUpdate"
+config_log "Form_vVndContactsF - Form_AfterUpdate"
     DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Form_Close()
-Debug.Print "Form_vVndContactsF - Form_Close"
+config_log "Form_vVndContactsF - Form_Close"
 
 DoCmd.SetWarnings False
 On Error Resume Next

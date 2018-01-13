@@ -259,7 +259,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Close_Click()
-Debug.Print "Form_zSubVC2F - Close_Click"
+config_log "Form_zSubVC2F - Close_Click"
 
 On Error GoTo Err_Close_Click
 
@@ -276,6 +276,6 @@ Err_Close_Click:
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "Form_zSubVC2F - Form_Open"
+config_log "Form_zSubVC2F - Form_Open"
 DoCmd.GoToRecord , "zSubVC2F", acNewRec
 End Sub

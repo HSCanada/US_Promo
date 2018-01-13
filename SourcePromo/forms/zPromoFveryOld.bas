@@ -1126,7 +1126,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Command102_Click()
-Debug.Print "Form_zPromoFveryOld - Command102_Click"
+config_log "Form_zPromoFveryOld - Command102_Click"
 
 On Error GoTo Err_Command102_Click
 

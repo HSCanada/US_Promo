@@ -1577,7 +1577,7 @@ Option Compare Database   'Use database order for string comparisons
 
 
 Private Sub Button57_Click()
-Debug.Print "Form_DefaultsF - Button57_Click"
+config_log "Form_DefaultsF - Button57_Click"
 
 On Error GoTo Err_Button57_Click
 
@@ -1594,7 +1594,7 @@ Err_Button57_Click:
 End Sub
 
 Private Sub Form_Close()
-Debug.Print "Form_DefaultsF - Form_Close"
+config_log "Form_DefaultsF - Form_Close"
 
   Z_DCompany = [DCompany]
   Z_DSPAprefix = [DSPAprefix]
@@ -1653,7 +1653,7 @@ Debug.Print "Form_DefaultsF - Form_Close"
 End Sub
 
 Private Sub Preview_Defaults_Click()
-Debug.Print "Form_DefaultsF - Preview_Defaults_Click"
+config_log "Form_DefaultsF - Preview_Defaults_Click"
 
 
 On Error GoTo Err_Preview_Defaults_Click

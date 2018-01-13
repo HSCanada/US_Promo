@@ -1104,7 +1104,7 @@ Option Compare Database
 Option Explicit
 
 Private Sub Close_Click()
-Debug.Print "Form_EmlMkF - Close_Click"
+config_log "Form_EmlMkF - Close_Click"
 On Error GoTo Err_Close_Click
 
 
@@ -1120,7 +1120,7 @@ Err_Close_Click:
 End Sub
 
 Private Sub AddPromo_Click()
-Debug.Print "Form_EmlMkF - AddPromo_Click"
+config_log "Form_EmlMkF - AddPromo_Click"
 On Error GoTo Err_AddPromo_Click
 
     Dim stDocName As String
@@ -1139,7 +1139,7 @@ Err_AddPromo_Click:
 End Sub
 
 Private Sub FindUnlisted_Click()
-Debug.Print "Form_EmlMkF - FindUnlisted_Click_XXX"
+config_log "Form_EmlMkF - FindUnlisted_Click_XXX"
 Debug.Assert False
 
  On Error GoTo Err_FindUnlisted_Click
@@ -1449,7 +1449,7 @@ Err_FindUnlisted_Click:
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
-Debug.Print "Form_EmlMkF - Form_Open_PASS"
+config_log "Form_EmlMkF - Form_Open_PASS"
 'Dim stUser As String
 'stUser = Forms![EmlMktF]![ExpDtsF]![User]
 'DoCmd.FindRecord stUser, , True, , True
@@ -1457,7 +1457,7 @@ Debug.Print "Form_EmlMkF - Form_Open_PASS"
 End Sub
 
 Private Sub VuDelList_Click()
-Debug.Print "VuDelList_Click"
+config_log "VuDelList_Click"
 On Error GoTo Err_VuDelList_Click
 
     Dim stDocName As String
@@ -1477,7 +1477,7 @@ Err_VuDelList_Click:
 End Sub
 
 Private Sub PreVuExpLtr_Click()
-Debug.Print "Form_EmlMkF - PreVuExpLtr_Click"
+config_log "Form_EmlMkF - PreVuExpLtr_Click"
 On Error GoTo Err_PreVuExpLtr_Click
 
     Dim stDocName As String
@@ -1495,7 +1495,7 @@ Err_PreVuExpLtr_Click:
 End Sub
 
 Private Sub MkLtr_Click()
-Debug.Print "Form_EmlMkF - MkLtr_Click"
+config_log "Form_EmlMkF - MkLtr_Click"
 Debug.Assert False
 
 On Error GoTo Err_MkLtr_Click
@@ -1524,7 +1524,7 @@ Err_MkLtr_Click:
 End Sub
 
 Private Sub SelEml_Click()
-Debug.Print "Form_EmlMkF - SelEml_Click"
+config_log "Form_EmlMkF - SelEml_Click"
 On Error GoTo Err_SelEml_Click
 
     Dim stAQ As String
@@ -1550,7 +1550,7 @@ Err_SelEml_Click:
 End Sub
 
 Private Sub SendIt_Click()
-Debug.Print "Form_EmlMkF - SendIt_Click"
+config_log "Form_EmlMkF - SendIt_Click"
 On Error GoTo Err_SendIt_Click
 
    Dim stUser As String
@@ -1646,7 +1646,7 @@ Err_SendIt_Click:
 End Sub
 
 Private Sub VuSel_Click()
-Debug.Print "Form_EmlMkF - VuSel_Click"
+config_log "Form_EmlMkF - VuSel_Click"
 On Error GoTo Err_VuSel_Click
 
     Dim stDocName As String
@@ -1665,7 +1665,7 @@ Err_VuSel_Click:
 End Sub
 
 Private Sub OpenEml_Click()
-Debug.Print "Form_EmlMkF - OpenEml_Click"
+config_log "Form_EmlMkF - OpenEml_Click"
 On Error GoTo Err_OpenEml_Click
 
     FindUnlisted.Visible = True
@@ -1681,7 +1681,7 @@ Err_OpenEml_Click:
 End Sub
 
 Private Sub Cancel_Click()
-Debug.Print "Form_EmlMkF - Cancel_Click"
+config_log "Form_EmlMkF - Cancel_Click"
 On Error GoTo Err_Cancel_Click
 
     FindUnlisted.Visible = False
@@ -1696,7 +1696,7 @@ Err_Cancel_Click:
 End Sub
 
 Private Sub EmlContacts_Click()
-Debug.Print "Form_EmlMkF - EmlContacts_Click"
+config_log "Form_EmlMkF - EmlContacts_Click"
 On Error GoTo Err_EmlContacts_Click
 
     Dim stDocName As String
@@ -1714,7 +1714,7 @@ Err_EmlContacts_Click:
 End Sub
 
 Private Sub EmlMissingContact_Click()
-Debug.Print "Form_EmlMkF - EmlMissingContact_Click"
+config_log "Form_EmlMkF - EmlMissingContact_Click"
 On Error GoTo Err_EmlMissingContact_Click
 
     Dim stDocName As String
