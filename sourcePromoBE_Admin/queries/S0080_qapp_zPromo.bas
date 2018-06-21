@@ -51,6 +51,9 @@ Begin OutputColumns
     Expression ="1"
     Name ="PromoNm"
     Expression ="tbl_Main.Buy"
+    Alias ="Expr4"
+    Name ="SWO"
+    Expression ="True"
 End
 Begin Joins
     LeftTable ="tbl_Main"
@@ -177,17 +180,21 @@ Begin
         dbText "Name" ="zVendor.ID"
         dbLong "AggregateType" ="-1"
     End
+    Begin
+        dbText "Name" ="Expr4"
+        dbLong "AggregateType" ="-1"
+    End
 End
 Begin
     State =0
     Left =0
     Top =0
-    Right =1290
+    Right =1219
     Bottom =956
     Left =-1
     Top =-1
-    Right =1274
-    Bottom =248
+    Right =1203
+    Bottom =231
     Left =0
     Top =0
     ColumnsShown =651

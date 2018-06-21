@@ -11,10 +11,10 @@ Begin Form
     Width =15360
     DatasheetFontHeight =10
     ItemSuffix =67
-    Left =435
-    Top =5925
-    Right =15075
-    Bottom =9675
+    Left =450
+    Top =7995
+    Right =15090
+    Bottom =11745
     DatasheetGridlinesColor =12632256
     PaintPalette = Begin
         0x000301000000000000000000
@@ -488,8 +488,8 @@ Begin Form
         End
         Begin Section
             Height =450
+            BackColor =-2147483613
             Name ="Detail"
-            BackThemeColorIndex =1
             Begin
                 Begin TextBox
                     TabStop = NotDefault

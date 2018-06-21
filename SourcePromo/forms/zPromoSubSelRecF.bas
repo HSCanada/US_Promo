@@ -190,8 +190,8 @@ Begin Form
         Begin Section
             CanGrow = NotDefault
             Height =1110
+            BackColor =-2147483613
             Name ="Detail"
-            BackThemeColorIndex =1
             Begin
                 Begin Label
                     OverlapFlags =85

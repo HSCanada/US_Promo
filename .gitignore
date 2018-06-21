@@ -5,6 +5,7 @@
 *.csv
 *.zip
 *.xls
+*.log
 DataSourceUS/
 
 # Prerequisites

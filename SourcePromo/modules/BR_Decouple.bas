@@ -38,7 +38,7 @@ Public Sub config_init()
     cConfig.Add "ARCPDTA71", "PRODUCTION_SERVER_FILE_LIBRARY"
     cConfig.Add "ARCQDTA71", "TEST_SERVER_FILE_LIBRARY"
     
-    cConfig.Add "S:\Business Reporting\zDev\US_Promo\promo_log.txt", "PATH_LOG_FILE"
+    cConfig.Add "S:\Business Reporting\zDev\US_Promo\promo.log", "PATH_LOG_FILE"
     
     config_log "BR_Decouple.config_init"
   
@@ -65,10 +65,13 @@ Public Sub config_log(sEventMsg As String)
     
     Debug.Print sLogMsg
     
-    Open config("PATH_LOG_FILE") For Append Access Write Lock Write As #1
+    If Not cConfig Is Nothing Then
+  
+        Open config("PATH_LOG_FILE") For Append Access Write Lock Write As #1
     
-    Print #1, sLogMsg  ' Print text to file.
-    Close #1
+        Print #1, sLogMsg  ' Print text to file.
+        Close #1
+    End If
 
 End Sub
 

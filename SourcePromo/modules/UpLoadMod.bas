@@ -13,11 +13,12 @@ Global Const PRODUCTION_SERVER_ADDRESS = "E"
 Global Const PRODUCTION_JOBD = "JDEJOBD"
 Global Const PRODUCTION_JOBD_LIBRARY = "QGPL"
 
-' TC repace with decouple version, 20 Dec 17
+' TC replace with decouple version, 20 Dec 17
 'Global Const PRODUCTION_SERVER_FILE_LIBRARY = "HSIPDTA71"
 
-Global Const TEST_SERVER = "D"
-Global Const TEST_SERVER_ADDRESS = "D"
+' TC replace D with EQ as per Gregary R
+Global Const TEST_SERVER = "EQ"
+Global Const TEST_SERVER_ADDRESS = "EQ"
 Global Const TEST_JOBD = "JDEJOBD"
 'Global Const TEST_JOBD_LIBRARY = "HSIQEOBJ"
 Global Const TEST_JOBD_LIBRARY = "HSIQUNOBJ"

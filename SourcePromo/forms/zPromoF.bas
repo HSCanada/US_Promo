@@ -16,13 +16,13 @@ Begin Form
     DatasheetFontHeight =10
     ItemSuffix =191
     Top =1590
-    Right =23955
-    Bottom =10710
+    Right =24255
+    Bottom =10680
     DatasheetGridlinesColor =12632256
     PaintPalette = Begin
         0x000301000000000000000000
     End
-    Filter ="[RecID]=171753"
+    Filter ="[RecID]=175349"
     RecSrcDt = Begin
         0x6cb7367ad190e440
     End
@@ -146,8 +146,8 @@ Begin Form
         Begin FormHeader
             CanGrow = NotDefault
             Height =5040
+            BackColor =-2147483613
             Name ="FormHeader"
-            BackThemeColorIndex =1
             Begin
                 Begin Rectangle
                     Visible = NotDefault
@@ -664,7 +664,7 @@ Begin Form
                     Top =2945
                     Width =5445
                     Height =198
-                    ColumnOrder =17
+                    ColumnOrder =22
                     FontSize =7
                     TabIndex =12
                     BackColor =-2147483612
@@ -727,7 +727,7 @@ Begin Form
                     Top =4665
                     Width =2385
                     Height =210
-                    ColumnOrder =16
+                    ColumnOrder =20
                     FontSize =7
                     TabIndex =13
                     BackColor =-2147483612
@@ -769,7 +769,7 @@ Begin Form
                     Top =4455
                     Width =2385
                     Height =210
-                    ColumnOrder =15
+                    ColumnOrder =18
                     FontSize =7
                     TabIndex =14
                     BackColor =-2147483612
@@ -810,7 +810,7 @@ Begin Form
                     Top =4665
                     Width =2385
                     Height =210
-                    ColumnOrder =14
+                    ColumnOrder =16
                     FontSize =7
                     TabIndex =15
                     Name ="Tier2"
@@ -848,7 +848,7 @@ Begin Form
                     Top =4440
                     Width =2385
                     Height =225
-                    ColumnOrder =13
+                    ColumnOrder =14
                     FontSize =7
                     TabIndex =16
                     Name ="Tier1"
@@ -903,7 +903,7 @@ Begin Form
                     Top =2520
                     Width =285
                     Height =195
-                    ColumnOrder =12
+                    ColumnOrder =13
                     FontSize =7
                     TabIndex =17
                     Name ="OrderLevel"
@@ -953,7 +953,7 @@ Begin Form
                     Top =3450
                     Width =1095
                     Height =225
-                    ColumnOrder =19
+                    ColumnOrder =25
                     FontSize =7
                     TabIndex =19
                     BackColor =-2147483612
@@ -1037,7 +1037,7 @@ Begin Form
                     Top =3705
                     Width =1785
                     Height =225
-                    ColumnOrder =21
+                    ColumnOrder =28
                     FontSize =7
                     TabIndex =21
                     BackColor =-2147483612
@@ -1079,7 +1079,7 @@ Begin Form
                     Top =3705
                     Width =345
                     Height =225
-                    ColumnOrder =13
+                    ColumnOrder =15
                     FontSize =7
                     TabIndex =22
                     Name ="PromoCode"
@@ -1110,7 +1110,7 @@ Begin Form
                     Top =3195
                     Width =570
                     Height =225
-                    ColumnOrder =23
+                    ColumnOrder =31
                     FontSize =7
                     TabIndex =23
                     BackColor =-2147483612
@@ -1157,7 +1157,7 @@ Begin Form
                     Top =3195
                     Width =1425
                     Height =225
-                    ColumnOrder =14
+                    ColumnOrder =17
                     FontSize =7
                     TabIndex =24
                     Name ="Combo140"
@@ -1190,7 +1190,7 @@ Begin Form
                     Top =3450
                     Width =1050
                     Height =225
-                    ColumnOrder =15
+                    ColumnOrder =19
                     FontSize =7
                     TabIndex =25
                     Name ="SentDate"
@@ -1225,7 +1225,7 @@ Begin Form
                     Top =3195
                     Width =510
                     Height =225
-                    ColumnOrder =16
+                    ColumnOrder =21
                     FontSize =7
                     TabIndex =26
                     Name ="Combo142"
@@ -1261,7 +1261,7 @@ Begin Form
                     Top =4200
                     Width =1575
                     Height =210
-                    ColumnOrder =31
+                    ColumnOrder =42
                     FontSize =7
                     TabIndex =30
                     Name ="TargetZone"
@@ -1306,7 +1306,7 @@ Begin Form
                     Top =4200
                     Width =1830
                     Height =210
-                    ColumnOrder =30
+                    ColumnOrder =41
                     FontSize =7
                     TabIndex =31
                     BackColor =-2147483612
@@ -1368,7 +1368,7 @@ Begin Form
                     Top =3195
                     Width =270
                     Height =225
-                    ColumnOrder =27
+                    ColumnOrder =36
                     FontSize =7
                     TabIndex =27
                     Name ="MP"
@@ -1404,7 +1404,7 @@ Begin Form
                     OverlapFlags =247
                     Left =24015
                     Top =3750
-                    ColumnOrder =17
+                    ColumnOrder =23
                     TabIndex =28
                     Name ="EZ"
                     ControlSource ="EZ"
@@ -1488,7 +1488,7 @@ Begin Form
                     Top =30
                     Width =5565
                     Height =210
-                    ColumnOrder =20
+                    ColumnOrder =27
                     FontSize =7
                     FontWeight =700
                     TabIndex =34
@@ -1525,7 +1525,7 @@ Begin Form
                     Left =22650
                     Top =480
                     Width =750
-                    ColumnOrder =21
+                    ColumnOrder =29
                     TabIndex =36
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"20\""
                     Name ="TOC"
@@ -1546,7 +1546,7 @@ Begin Form
                     Left =23415
                     Top =480
                     Width =3780
-                    ColumnOrder =22
+                    ColumnOrder =30
                     TabIndex =37
                     BackColor =14671839
                     Name ="TOCNm"
@@ -1581,7 +1581,7 @@ Begin Form
                     Left =22635
                     Top =915
                     Width =765
-                    ColumnOrder =23
+                    ColumnOrder =32
                     TabIndex =38
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"20\""
                     Name ="STOC"
@@ -1602,7 +1602,7 @@ Begin Form
                     Left =23415
                     Top =915
                     Width =3780
-                    ColumnOrder =24
+                    ColumnOrder =33
                     TabIndex =39
                     BackColor =14671839
                     Name ="STOCNm"
@@ -1870,7 +1870,7 @@ Begin Form
                     Top =1560
                     Width =4125
                     Height =180
-                    ColumnOrder =26
+                    ColumnOrder =35
                     FontSize =7
                     TabIndex =43
                     Name ="FSCOrderLevel"
@@ -1886,7 +1886,7 @@ Begin Form
                     Top =1155
                     Width =4125
                     Height =375
-                    ColumnOrder =27
+                    ColumnOrder =37
                     FontSize =7
                     TabIndex =44
                     BackColor =-2147483612
@@ -1903,7 +1903,7 @@ Begin Form
                     Top =840
                     Width =2745
                     Height =210
-                    ColumnOrder =31
+                    ColumnOrder =43
                     FontSize =7
                     TabIndex =48
                     BackColor =-2147483612
@@ -1919,7 +1919,7 @@ Begin Form
                     Top =840
                     Width =2625
                     Height =210
-                    ColumnOrder =32
+                    ColumnOrder =44
                     FontSize =7
                     TabIndex =49
                     Name ="HSIRebate"
@@ -1937,7 +1937,7 @@ Begin Form
                     Top =255
                     Width =4830
                     Height =300
-                    ColumnOrder =28
+                    ColumnOrder =38
                     FontSize =7
                     TabIndex =45
                     BackColor =-2147483612
@@ -1953,7 +1953,7 @@ Begin Form
                     Top =45
                     Width =900
                     Height =180
-                    ColumnOrder =29
+                    ColumnOrder =39
                     FontSize =7
                     TabIndex =46
                     BackColor =-2147483612
@@ -1970,7 +1970,7 @@ Begin Form
                     Top =45
                     Width =885
                     Height =180
-                    ColumnOrder =30
+                    ColumnOrder =40
                     FontSize =7
                     TabIndex =47
                     Name ="BuyInEnd"
@@ -2061,7 +2061,7 @@ Begin Form
                     Top =2070
                     Width =375
                     Height =210
-                    ColumnOrder =33
+                    ColumnOrder =45
                     FontSize =7
                     TabIndex =50
                     BackColor =-2147483612
@@ -2093,7 +2093,7 @@ Begin Form
                     Top =1800
                     Width =2400
                     Height =225
-                    ColumnOrder =34
+                    ColumnOrder =46
                     FontSize =7
                     TabIndex =51
                     BackColor =-2147483612
@@ -2109,7 +2109,7 @@ Begin Form
                     Top =2025
                     Width =2610
                     Height =210
-                    ColumnOrder =35
+                    ColumnOrder =47
                     FontSize =7
                     TabIndex =52
                     BackColor =-2147483612
@@ -2151,7 +2151,7 @@ Begin Form
                     Top =1800
                     Width =555
                     Height =225
-                    ColumnOrder =36
+                    ColumnOrder =48
                     FontSize =7
                     TabIndex =53
                     BackColor =-2147483612
@@ -2366,7 +2366,7 @@ Begin Form
                     Top =3315
                     Width =1965
                     Height =195
-                    ColumnOrder =37
+                    ColumnOrder =49
                     FontSize =7
                     TabIndex =55
                     Name ="SubmittedBy"
@@ -2395,7 +2395,7 @@ Begin Form
                     Top =3555
                     Width =1035
                     Height =195
-                    ColumnOrder =38
+                    ColumnOrder =50
                     FontSize =7
                     TabIndex =56
                     BackColor =-2147483612
@@ -2428,7 +2428,7 @@ Begin Form
                     Left =19830
                     Top =3555
                     Height =195
-                    ColumnOrder =39
+                    ColumnOrder =51
                     FontSize =7
                     TabIndex =57
                     BackColor =-2147483612
@@ -2459,7 +2459,7 @@ Begin Form
                     Top =3315
                     Width =1020
                     Height =195
-                    ColumnOrder =40
+                    ColumnOrder =52
                     FontSize =7
                     TabIndex =58
                     Name ="Title"
@@ -2488,7 +2488,7 @@ Begin Form
                     Top =3795
                     Width =1035
                     Height =195
-                    ColumnOrder =41
+                    ColumnOrder =53
                     FontSize =7
                     TabIndex =59
                     BackColor =-2147483612
@@ -2521,7 +2521,7 @@ Begin Form
                     Top =3795
                     Width =585
                     Height =195
-                    ColumnOrder =42
+                    ColumnOrder =54
                     FontSize =7
                     TabIndex =60
                     BackColor =-2147483612
@@ -2553,7 +2553,7 @@ Begin Form
                     Top =3795
                     Width =1035
                     Height =195
-                    ColumnOrder =43
+                    ColumnOrder =55
                     FontSize =7
                     TabIndex =61
                     BackColor =-2147483612
@@ -2586,7 +2586,7 @@ Begin Form
                     Top =4035
                     Width =3405
                     Height =195
-                    ColumnOrder =44
+                    ColumnOrder =56
                     FontSize =7
                     TabIndex =62
                     BackColor =-2147483612
@@ -2710,7 +2710,7 @@ Begin Form
                     Top =495
                     Width =3150
                     Height =195
-                    ColumnOrder =45
+                    ColumnOrder =57
                     FontSize =7
                     TabIndex =64
                     Name ="SO"
@@ -2722,7 +2722,7 @@ Begin Form
                     OverlapFlags =93
                     Left =8385
                     Top =990
-                    ColumnOrder =46
+                    ColumnOrder =58
                     TabIndex =65
                     Name ="Deletd"
                     ControlSource ="Deletd"
@@ -2757,7 +2757,7 @@ Begin Form
                     Top =975
                     Width =600
                     Height =180
-                    ColumnOrder =47
+                    ColumnOrder =59
                     FontSize =7
                     TabIndex =66
                     BorderColor =0
@@ -2776,7 +2776,7 @@ Begin Form
                     Top =705
                     Width =675
                     Height =195
-                    ColumnOrder =48
+                    ColumnOrder =60
                     FontSize =7
                     TabIndex =67
                     BorderColor =0
@@ -2791,7 +2791,7 @@ Begin Form
                     OverlapFlags =87
                     Left =8130
                     Top =735
-                    ColumnOrder =49
+                    ColumnOrder =61
                     TabIndex =68
                     Name ="Approvd"
                     ControlSource ="Approvd"
@@ -2820,7 +2820,7 @@ Begin Form
                     Top =1020
                     Width =230
                     Height =195
-                    ColumnOrder =50
+                    ColumnOrder =62
                     TabIndex =69
                     Name ="DftPromo"
                     ControlSource ="DftPromo"
@@ -2852,7 +2852,7 @@ Begin Form
                     Top =1545
                     Width =450
                     Height =165
-                    ColumnOrder =51
+                    ColumnOrder =63
                     FontSize =7
                     FontWeight =700
                     TabIndex =70
@@ -2891,7 +2891,7 @@ Begin Form
                     Top =1530
                     Width =540
                     Height =180
-                    ColumnOrder =52
+                    ColumnOrder =64
                     FontSize =7
                     FontWeight =700
                     TabIndex =71
@@ -2937,7 +2937,7 @@ Begin Form
                     Top =1545
                     Width =450
                     Height =165
-                    ColumnOrder =53
+                    ColumnOrder =65
                     FontSize =7
                     FontWeight =700
                     TabIndex =72
@@ -2969,7 +2969,7 @@ Begin Form
                     Top =1290
                     Width =200
                     Height =135
-                    ColumnOrder =54
+                    ColumnOrder =66
                     TabIndex =73
                     Name ="SWO"
                     ControlSource ="SWO"
@@ -3018,7 +3018,7 @@ Begin Form
                     Top =1500
                     Width =600
                     Height =195
-                    ColumnOrder =55
+                    ColumnOrder =67
                     FontSize =7
                     TabIndex =76
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"10\";\"4\""
@@ -3055,7 +3055,7 @@ Begin Form
                     Top =4035
                     Width =1155
                     Height =210
-                    ColumnOrder =19
+                    ColumnOrder =26
                     FontSize =7
                     TabIndex =32
                     BackColor =-2147483612
@@ -3088,7 +3088,7 @@ Begin Form
                     Top =2925
                     Width =495
                     Height =165
-                    ColumnOrder =68
+                    ColumnOrder =80
                     FontSize =6
                     TabIndex =75
                     BackColor =-2147483612
@@ -3136,7 +3136,7 @@ Begin Form
                     Top =4020
                     Width =1155
                     Height =210
-                    ColumnOrder =18
+                    ColumnOrder =24
                     FontSize =7
                     TabIndex =29
                     BackColor =-2147483612
@@ -3195,7 +3195,7 @@ Begin Form
                     Top =1950
                     Width =5265
                     Height =330
-                    ColumnOrder =56
+                    ColumnOrder =68
                     FontSize =7
                     TabIndex =77
                     Name ="RdmOpt1"
@@ -3228,7 +3228,7 @@ Begin Form
                     Top =2280
                     Width =5265
                     Height =300
-                    ColumnOrder =57
+                    ColumnOrder =69
                     FontSize =7
                     TabIndex =78
                     Name ="RdmOpt2"
@@ -3261,7 +3261,7 @@ Begin Form
                     Top =2580
                     Width =5265
                     Height =315
-                    ColumnOrder =58
+                    ColumnOrder =70
                     FontSize =7
                     TabIndex =79
                     Name ="RdmOpt3"
@@ -3294,7 +3294,7 @@ Begin Form
                     Top =2895
                     Width =5265
                     Height =315
-                    ColumnOrder =59
+                    ColumnOrder =71
                     FontSize =7
                     TabIndex =80
                     Name ="RdmOpt4"
@@ -3340,7 +3340,7 @@ Begin Form
                     Left =9690
                     Top =3210
                     Width =5265
-                    ColumnOrder =60
+                    ColumnOrder =72
                     FontSize =7
                     TabIndex =81
                     Name ="RdmOpt5"
@@ -3367,7 +3367,7 @@ Begin Form
                     Left =1545
                     Top =1545
                     Height =180
-                    ColumnOrder =61
+                    ColumnOrder =73
                     TabIndex =83
                     BackColor =15790320
                     Name ="GetValu"
@@ -3397,7 +3397,7 @@ Begin Form
                     Top =840
                     Width =270
                     Height =210
-                    ColumnOrder =62
+                    ColumnOrder =74
                     FontSize =7
                     TabIndex =84
                     BorderColor =0
@@ -3428,7 +3428,7 @@ Begin Form
                     OverlapFlags =93
                     Left =6445
                     Top =435
-                    ColumnOrder =63
+                    ColumnOrder =75
                     TabIndex =85
                     Name ="1inv"
                     ControlSource ="1inv"
@@ -3460,7 +3460,7 @@ Begin Form
                     Top =3480
                     Width =2205
                     Height =180
-                    ColumnOrder =64
+                    ColumnOrder =76
                     FontSize =7
                     FontWeight =700
                     TabIndex =86
@@ -3496,7 +3496,7 @@ Begin Form
                     Top =3480
                     Width =450
                     Height =180
-                    ColumnOrder =65
+                    ColumnOrder =77
                     FontSize =7
                     FontWeight =700
                     TabIndex =87
@@ -3544,7 +3544,7 @@ Begin Form
                     Top =1545
                     Width =1230
                     Height =165
-                    ColumnOrder =66
+                    ColumnOrder =78
                     FontSize =7
                     TabIndex =88
                     Name ="RdmTel"
@@ -3575,7 +3575,7 @@ Begin Form
                     Top =1545
                     Width =1470
                     Height =165
-                    ColumnOrder =67
+                    ColumnOrder =79
                     FontSize =7
                     TabIndex =89
                     Name ="RdmFax"
@@ -3642,7 +3642,7 @@ Begin Form
                     OverlapFlags =93
                     Left =7195
                     Top =450
-                    ColumnOrder =68
+                    ColumnOrder =81
                     TabIndex =91
                     Name ="Same"
                     ControlSource ="Same"
@@ -3688,7 +3688,7 @@ Begin Form
                     Top =420
                     Width =660
                     Height =195
-                    ColumnOrder =69
+                    ColumnOrder =82
                     FontSize =7
                     TabIndex =92
                     Name ="BrandNmPkg"
@@ -3700,7 +3700,7 @@ Begin Form
                     OverlapFlags =223
                     Left =7870
                     Top =450
-                    ColumnOrder =70
+                    ColumnOrder =83
                     TabIndex =93
                     Name ="Check187"
                     ControlSource ="1inv"
@@ -3730,7 +3730,7 @@ Begin Form
                     Top =1545
                     Width =495
                     Height =180
-                    ColumnOrder =71
+                    ColumnOrder =84
                     FontSize =7
                     FontWeight =700
                     TabIndex =94
@@ -3763,7 +3763,7 @@ Begin Form
                     Top =735
                     Width =230
                     Height =195
-                    ColumnOrder =72
+                    ColumnOrder =85
                     TabIndex =95
                     Name ="DivPrc"
                     ControlSource ="DivPrc"
@@ -3799,7 +3799,7 @@ Begin Form
                     Top =1875
                     Width =645
                     Height =330
-                    ColumnOrder =25
+                    ColumnOrder =34
                     FontSize =6
                     TabIndex =40
                     Name ="VendorCode"
@@ -3818,8 +3818,8 @@ Begin Form
         Begin Section
             CanGrow = NotDefault
             Height =4065
+            BackColor =-2147483613
             Name ="Detail"
-            BackThemeColorIndex =1
             Begin
                 Begin Subform
                     CanShrink = NotDefault

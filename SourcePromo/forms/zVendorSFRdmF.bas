@@ -14,15 +14,16 @@ Begin Form
     Width =15375
     DatasheetFontHeight =10
     ItemSuffix =44
-    Top =345
-    Right =16755
-    Bottom =4830
+    Left =4440
+    Top =1485
+    Right =19560
+    Bottom =10920
     DatasheetGridlinesColor =12632256
     PaintPalette = Begin
         0x000301000000000000000000
     End
     RecSrcDt = Begin
-        0x1ce1028d54dbe340
+        0x73af92fa0d13e540
     End
     RecordSource ="SELECT DISTINCT zVendor.ID, zVendor.Company, zVendor.VendorCode, zVendor.StreetS"
         "uite, zVendor.CityStZip, zVendor.VndTel, zVendor.VndFax, zVendor.WebSite FROM zV"
@@ -266,7 +267,7 @@ Begin Form
                         0xffffffff52006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff020000000a00030000000000c0000000 ,
-                        0x0000004600000000000000000000000010783630f979d30103000000800c0000 ,
+                        0x00000046000000000000000000000000a01a220772b1d30103000000800c0000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,

@@ -13,19 +13,17 @@ Begin Form
     Width =14580
     DatasheetFontHeight =10
     ItemSuffix =193
-    Left =60
-    Top =1140
-    Right =15090
-    Bottom =9075
+    Left =4860
+    Top =3990
+    Right =19635
+    Bottom =11955
     DatasheetGridlinesColor =12632256
     PaintPalette = Begin
         0x000301000000000000000000
     End
     Tag ="1"
-    Filter ="([zPromoSubSFRdmF].[EffDate]=#4/1/2017#)"
-    OrderBy ="[zPromoSubSFRdmF].[EffYr] DESC, [zPromoSubSFRdmF].[PromoNm]"
     RecSrcDt = Begin
-        0x5920ddb9ca8ee440
+        0xc1c58afa0d13e540
     End
     RecordSource ="SELECT zPromo.AdStart, zPromo.EffDate, zPromo.EffYr, zPromo.EffQtr, zPromo.Promo"
         "Nm, zPromo.ExpDate, zPromo.MediaMn, zPromo.RecID, zPromo.ID, zPromo.HSImedia, zP"
