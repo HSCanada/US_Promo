@@ -1,6 +1,10 @@
 Option Compare Database
 Option Explicit
 
+' no logging on this module -- just light-weight global references, tmc, 26 Jun 19
+'config_log ""
+
+
 Global Z_Yr    '4 Character Year
 Global Z_Yr2   '2 Character Year
 Global Z_Mn    'Month

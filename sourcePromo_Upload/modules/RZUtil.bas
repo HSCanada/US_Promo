@@ -6,6 +6,8 @@ ByVal lpNewFileName As String, _
 ByVal bFailIfExists As Long) As Long
 
 Sub CopyFile(SourceFile As String, DestFile As String)
+config_log "CopyFile"
+
 '---------------------------------------------------------------
 ' PURPOSE: Copy a file on disk from one location to another.
 ' ACCEPTS: The name of the source file and destination file.
@@ -19,7 +21,9 @@ Sub CopyFile(SourceFile As String, DestFile As String)
       Result = apiCopyFile(SourceFile, DestFile, False)
    End If
 End Sub
+
 Public Function IsTable(tblName As String)
+config_log "IsTable"
  'Dim MyDB As DAO.Database
  Dim MyDB As Database
  Set MyDB = CurrentDb
@@ -35,8 +39,10 @@ Public Function IsTable(tblName As String)
  
 'We could also pass a reference to MyDB into the function.
 End Function
- Function DoesFieldExist(TableName As String, _
+
+Function DoesFieldExist(TableName As String, _
                          FieldName As String) As Boolean
+config_log "DoesFieldExist"
      Dim dbs As Database, tdf As TableDef
      Dim fld As Field
      Dim blnReturn As Boolean
@@ -62,6 +68,8 @@ End Function
 
 'Option Compare Database
 Sub ImpTbls()
+config_log "ImpTbls"
+
 'MsgBox "You have engaged The Function ImpTbls().  Congrats!", , Yeah!
 Dim stPath, stUser, stYr, stMn, stID, stPrfx, stPrfx2, stFile, stFullNm, stDef, fs, x
 Dim stMsg, stMsg2, stMsg3, stSpec, stStruct
@@ -138,6 +146,8 @@ Next x
 End Sub
 
 Sub MakeTbls()
+config_log "MakeTbls"
+
 'MsgBox "You have started the [MAKETbls] function"
 'Convert 8 linked files into 7 tables (ie. [Lcb] to [cb] thru [cbAQ])
     '(Esp. [Lcm] and [Lcz] become [cmcz] thru [cmczAQ], 2 files folded into one)
@@ -184,6 +194,8 @@ Next x
 End Sub
 
 Sub SumTbls()
+config_log "SumTbls"
+
 'Convert linked tables into Summary, Roll-up, Hierarchial tables for
 'Form & SubForm RecordSources
 
@@ -256,7 +268,9 @@ Next Z
 End If
 
 End Sub
+
 Sub Update()
+config_log "Update"
 'MsgBox "You have started the [Update] function"
 'Launched from [SignIn].[OK].[OnClick]
 
@@ -330,7 +344,9 @@ SumTbls 'Run Roll-Up Queries.  3/30/2004 Level 1 Territory Only.
 
 'MsgBox "You have completed the [Update] function"
 End Sub
+
 Sub DelData()
+config_log "DelData"
 'Housecleaning - Delete all the dynamic data from selected tables
 'DoCmd.SetWarnings False
 'On Error Resume Next
@@ -395,7 +411,9 @@ DoCmd.DeleteObject acTable, "Lox"
 DoCmd.DeleteObject acTable, "sPrivEb"
 DoCmd.DeleteObject acTable, "sEbSum"
 End Sub
+
 Public Function IsNotzTable(tblName As String)
+config_log "IsNotzTable"
 Dim MyDB As DAO.Database
 'Dim stTbl As String
 Dim stStruct As String
@@ -432,7 +450,10 @@ tblNm = "zGrow"
  
 'We could also pass a reference to MyDB into the function.
 End Function
+
 Public Function IsNotHistTable(tblName As String)
+config_log "IsNotHistTable"
+
 Dim MyDB As DAO.Database
 'Dim stTbl As String
 Dim stStruct As String
@@ -468,7 +489,9 @@ tblNm = "zGroHist"
  
 'We could also pass a reference to MyDB into the function.
 End Function
+
 Public Function fCountFiles(sPattern As String)
+config_log "fCountFiles"
 Dim strFileName As String, n As Integer
    strFileName = Dir(sPattern)
    On Error Resume Next

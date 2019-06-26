@@ -1,4 +1,4 @@
-﻿Version =20
+﻿Version =21
 VersionRequired =20
 Begin Form
     RecordSelectors = NotDefault
@@ -70,6 +70,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Form_Close()
+config_log "Form_SetRefF - Form_Close"
 Dim stDayFunc As String
 Dim stDay As String
 Dim stHrFunc As String

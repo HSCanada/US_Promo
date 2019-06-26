@@ -1,4 +1,4 @@
-﻿Version =20
+﻿Version =21
 VersionRequired =20
 Begin Form
     PopUp = NotDefault
@@ -14,10 +14,10 @@ Begin Form
     Width =8895
     DatasheetFontHeight =10
     ItemSuffix =27
-    Left =4305
-    Top =1845
-    Right =12615
-    Bottom =6795
+    Left =5280
+    Top =2385
+    Right =13590
+    Bottom =7335
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
         0x97c26febb0b9e240
@@ -482,6 +482,8 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Form_Close()
+config_log "Form_DefaultsF - Form_Close"
+
 On Error GoTo Err_Form_Close
 
 Z_Yr = Me![Yr]
@@ -500,7 +502,9 @@ Err_Form_Close:
     MsgBox Err.Description
     Resume Exit_Form_Close
 End Sub
+
 Private Sub Close_Click()
+config_log "Form_DefaultsF - Close_Click"
 On Error GoTo Err_Close_Click
 
 If Mid(Me![AsOf], 5, 2) = Me![Mn2] Then

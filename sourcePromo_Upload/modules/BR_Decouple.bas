@@ -2,7 +2,7 @@ Option Compare Database
 Option Explicit
 
 ' function decouple tag map:
-'   1. config_log "*.XXX"      = hard-coded info
+'   1. config_log "*.YYY"      = hard-coded info
 '   2. config_log "function"   = OK, Core
 '   3. config_log "x"          = OK,non-core
 '   4. config_log "*.PASS"     = function does nothing

@@ -14,9 +14,10 @@ Begin Form
     Width =20790
     DatasheetFontHeight =10
     ItemSuffix =258
-    Top =8160
-    Right =18495
-    Bottom =11115
+    Left =405
+    Top =2100
+    Right =20940
+    Bottom =6000
     TimerInterval =60000
     DatasheetGridlinesColor =12632256
     RecSrcDt = Begin
@@ -365,7 +366,7 @@ Begin Form
                         0x8000000052006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff02000000e33ffe89f69f1b10b6780402 ,
-                        0x1c0070020000000000000000000000004054fb004e2cd5010300000000010000 ,
+                        0x1c007002000000000000000000000000e0e24db05e2cd5010300000000010000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -2634,7 +2635,7 @@ Begin Form
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x00000000030000000ac1000008000000e93d0000ed06000000000000292e26fe ,
+                        0x00000000030000000ac1000008000000e93d0000ed060000000000002a3326f1 ,
                         0xffffffff0100090000037960000001009a5f00000000050000000b0200000000 ,
                         0x050000000c02ed06e93d030000001e00070000001604ed06e93d000000000500 ,
                         0x00000b0200000000050000000c02ed06e93d050000000b020000000003000000 ,
@@ -11002,6 +11003,8 @@ Option Compare Database
 Option Explicit
 
 Private Sub BadTxt_Click()
+config_log "Form_zMainF - BadTxt_Click"
+
 On Error GoTo Err_BadTxt_Click
 
     Dim stDocName As String
@@ -11033,6 +11036,8 @@ Err_BadTxt_Click:
 End Sub
 
 Private Sub Default_Promo_Price_Cntrl_Rpt_Click()
+config_log "Form_zMainF - BadTxt_Click"
+
 On Error GoTo Err_Default_Promo_Price_Cntrl_Rpt_Click
 
     Dim stDocName As String
@@ -11062,7 +11067,6 @@ DoCmd.ShowToolbar "Form View", acToolbarYes  'vs acToolbarNo
 DoCmd.ShowToolbar "Formatting (Form/Report)", acToolbarYes
 
 ' added by TC, 26 Jun 19
-
 BR_Decouple.config_init
 config_log "Form_zMainF - Form_Load"
 
@@ -11070,6 +11074,7 @@ config_log "Form_zMainF - Form_Load"
 End Sub
 
 Private Sub NullBuyOrIC_Click()
+config_log "Form_zMainF - NullBuyOrIC_Click"
 On Error GoTo Err_NullBuyOrIC_Click
 
     Dim stDocName As String
@@ -11087,29 +11092,35 @@ Err_NullBuyOrIC_Click:
 End Sub
 
 Private Sub EDtEff_AfterUpdate()
+config_log "Form_zMainF - EDtEff_AfterUpdate"
   Z_EDtEff = Me![EDtEff]
 End Sub
 
 Private Sub EDtExp_AfterUpdate()
+config_log "Form_zMainF - EDtExp_AfterUpdate"
    Z_EDtExp = Me![EDtExp]
 End Sub
 
 Private Sub EffMn_AfterUpdate()
+config_log "Form_zMainF - EffMn_AfterUpdate"
   Z_EffMn = Me![EffMn]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub EffQtr_AfterUpdate()
+config_log "Form_zMainF - EffQtr_AfterUpdate"
   Z_EffQtr = Me![EffQtr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub EffYr_AfterUpdate()
+config_log "Form_zMainF - EffYr_AfterUpdate"
   Z_EffYr = Me![EffYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub Form_Current()
+config_log "Form_zMainF - Form_Current"
    'Import Promos from Spreadsheet Process
    Import.Visible = False
    CancelImp.Visible = False
@@ -11130,6 +11141,7 @@ Private Sub Form_Current()
 End Sub
 
 Private Sub Form_Open(Cancel As Integer)
+config_log "Form_zMainF - Form_Open"
 
 Dim strConnectString As String
 Dim strFilePath As String
@@ -11179,6 +11191,7 @@ Dim td As DAO.TableDef
 End Sub
 
 Private Sub Form_Timer()
+config_log "Form_zMainF - Form_Timer"
 If IsNull(DLookup("[Fire]", "Defaults")) Then
    'MsgBox "No Warnings Found"
 Else
@@ -11191,6 +11204,7 @@ End If
 End Sub
 
 Private Sub Import_Click()
+config_log "Form_zMainF - Import_Click"
 On Error GoTo Err_Import_Click
 
 Dim dbs As Database, rst As Recordset
@@ -11340,24 +11354,29 @@ Err_Import_Click:
 End Sub
 
 Private Sub ImpQtr_AfterUpdate()
+config_log "Form_zMainF - ImpQtr_AfterUpdate"
   Z_ImpQtr = Me![ImpQtr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub ImpYr_AfterUpdate()
+config_log "Form_zMainF - ImpYr_AfterUpdate"
   Z_ImpYr = Me![ImpYr]
   DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
 End Sub
 
 Private Sub PCVar_AfterUpdate()
+config_log "Form_zMainF - PCVar_AfterUpdate"
   S_WOPC = Me![PCVar]
 End Sub
 
 Private Sub PT_AfterUpdate()
+config_log "Form_zMainF - PT_AfterUpdate"
     Z_PT = Me![PT]
 End Sub
 
 Private Sub Reports_Click()
+config_log "Form_zMainF - Reports_Click"
 On Error GoTo Err_Reports_Click
 
     Import.Visible = False
@@ -11379,7 +11398,9 @@ Err_Reports_Click:
     Resume Exit_Reports_Click
     
 End Sub
+
 Private Sub Command1_Click()
+config_log "Form_zMainF - Command1_Click"
 On Error GoTo Err_Command1_Click
 
 
@@ -11393,7 +11414,9 @@ Err_Command1_Click:
     Resume Exit_Command1_Click
     
 End Sub
+
 Private Sub EditClubs_Click()
+config_log "Form_zMainF - EditClubs_Click"
 On Error GoTo Err_EditClubs_Click
 
     Import.Visible = False
@@ -11413,6 +11436,7 @@ Err_EditClubs_Click:
 End Sub
 
 Private Sub SelID_AfterUpdate()
+config_log "Form_zMainF - SelID_AfterUpdate"
 On Error GoTo Err_SelID_Click
 
     Import.Visible = False
@@ -11435,6 +11459,7 @@ End Sub
 
 
 Private Sub SelMnByVndr_AfterUpdate()
+config_log "Form_zMainF - SelMnByVndr_AfterUpdate"
 On Error GoTo Err_SelMnByVndr_Click
 
     Dim stDocName As String
@@ -11455,6 +11480,7 @@ Err_SelMnByVndr_Click:
 End Sub
 
 Private Sub SelVndr_AfterUpdate()
+config_log "Form_zMainF - SelVndr_AfterUpdate"
 On Error GoTo Err_SelVndr_Click
 
     Dim stDocName As String
@@ -11475,6 +11501,7 @@ End Sub
 
 
 Private Sub SetImp_Click()
+config_log "Form_zMainF - SetImp_Click"
 On Error GoTo Err_SetImp_Click
 
 Dim fs, i, FF
@@ -11520,7 +11547,9 @@ Err_SetImp_Click:
     Resume Exit_SetImp_Click
     
 End Sub
+
 Private Sub CancelImp_Click()
+config_log "Form_zMainF - CancelImp_Click"
 On Error GoTo Err_CancelImp_Click
 
    Import.Visible = False
@@ -11535,7 +11564,9 @@ Err_CancelImp_Click:
     Resume Exit_CancelImp_Click
     
 End Sub
+
 Private Sub Command18_Click()
+config_log "Form_zMainF - Command18_Click"
 On Error GoTo Err_Command18_Click
 
 
@@ -11551,16 +11582,19 @@ Err_Command18_Click:
 End Sub
 
 Private Sub SetZDftEff_AfterUpdate()
+config_log "Form_zMainF - SetZDftEff_AfterUpdate"
     Z_DftEff = Me!SetZDftEff
     MsgBox "I have set ZDftEff() to " & ZDftEff()
 End Sub
 
 Private Sub SetZDftEff2_AfterUpdate()
+config_log "Form_zMainF - SetZDftEff2_AfterUpdate"
     Z_DftEff2 = Me!SetZDftEff2
     MsgBox "I have set ZDftEff2() to " & ZDftEff2()
 End Sub
 
 Private Sub SFselVndr_AfterUpdate()
+config_log "Form_zMainF - SFselVndr_AfterUpdate"
 On Error GoTo Err_SelSFVndr_AfterUpdate
 
     Dim stDocName As String
@@ -11581,6 +11615,7 @@ Err_SelSFVndr_AfterUpdate:
 End Sub
 
 Private Sub SWOPrcCntrlRpt_AfterUpdate()
+config_log "Form_zMainF - SWOPrcCntrlRpt_AfterUpdate"
 On Error GoTo Err_SWOPrcCntrlRpt_AfterUpdate
 
     Dim stRpt As String
@@ -11625,6 +11660,7 @@ Err_SWOPrcCntrlRpt_AfterUpdate:
 End Sub
 
 Private Sub SWOrpt_AfterUpdate()
+config_log "Form_zMainF - SWOrpt_AfterUpdate"
 On Error GoTo Err_SWOrpt_AfterUpdate
 
     Dim stRpt As String
@@ -11661,6 +11697,7 @@ Err_SWOrpt_AfterUpdate:
 End Sub
 
 Private Sub SWOStart_AfterUpdate()
+config_log "Form_zMainF - SWOStart_AfterUpdate"
 On Error GoTo Err_SWOStart_AfterUpdate
 
     Dim stDoc As String
@@ -11705,6 +11742,7 @@ Err_SWOStart_AfterUpdate:
 End Sub
 
 Private Sub TestEffDt_AfterUpdate()
+config_log "Form_zMainF - TestEffDt_AfterUpdate"
     
     'If IsNull(Me![TestEffDt]) Then
         's_woEffDt
@@ -11730,10 +11768,12 @@ Private Sub TestEffDt_AfterUpdate()
 End Sub
 
 Private Sub UpICDesc_GotFocus()
+config_log "Form_zMainF - UpICDesc_GotFocus"
     Import.Visible = False
 End Sub
 
 Private Sub ViewAsLineItms_Click()
+config_log "Form_zMainF - ViewAsLineItms_Click"
 On Error GoTo Err_ViewAsLineItms_Click
 
     Import.Visible = False
@@ -11751,7 +11791,9 @@ Err_ViewAsLineItms_Click:
     Resume Exit_ViewAsLineItms_Click
     
 End Sub
+
 Private Sub Admin_Click()
+config_log "Form_zMainF - Admin_Click"
 On Error GoTo Err_Admin_Click
 
     Dim stDocName As String
@@ -11768,7 +11810,9 @@ Err_Admin_Click:
     Resume Exit_Admin_Click
     
 End Sub
+
 Private Sub Command33_Click()
+config_log "Form_zMainF - Command33_Click"
 On Error GoTo Err_Command33_Click
 
     'DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
@@ -11797,6 +11841,7 @@ Err_Command33_Click:
 End Sub
 
 Private Sub VuImps_Click()
+config_log "Form_zMainF - VuImps_Click"
 On Error GoTo Err_VuImps_Click
 
     'DoCmd.OpenTable "ImportOK", acViewNormal, acReadOnly
@@ -11812,6 +11857,7 @@ Err_VuImps_Click:
 End Sub
 
 Private Sub VuSelQtr_Click()
+config_log "Form_zMainF - VuSelQtr_Click"
 On Error GoTo Err_VuSelQtr_Click
 
     Dim stDocName As String
@@ -11831,7 +11877,9 @@ Err_VuSelQtr_Click:
     Resume Exit_VuSelQtr_Click
     
 End Sub
+
 Private Sub SeekPromoByIC_Click()
+config_log "Form_zMainF - SeekPromoByIC_Click"
 On Error GoTo Err_SeekPromoByIC_Click
 
     Dim stDocName As String
@@ -11851,7 +11899,9 @@ Err_SeekPromoByIC_Click:
     Resume Exit_SeekPromoByIC_Click
     
 End Sub
+
 Private Sub ViewAllPromo_Click()
+config_log "Form_zMainF - ViewAllPromo_Click"
 On Error GoTo Err_ViewAllPromo_Click
 
     Dim stDocName As String
@@ -11870,6 +11920,7 @@ Err_ViewAllPromo_Click:
 End Sub
 
 Private Sub EUpDt_Click()
+config_log "Form_zMainF - EUpDt_Click"
  On Error GoTo Err_EUpDt_Click
 
 Dim stMyDir As String
@@ -12103,7 +12154,9 @@ Err_EUpDt_Click:
     Resume Exit_EUpDt_Click
     
 End Sub
+
 Private Sub Command68_Click()
+config_log "Form_zMainF - Command68_Click"
 On Error GoTo Err_Command68_Click
 
 MsgBox ZVar3()
@@ -12117,7 +12170,9 @@ Err_Command68_Click:
     Resume Exit_Command68_Click
     
 End Sub
+
 Private Sub EdVndrs_Click()
+config_log "Form_zMainF - EdVndrs_Click"
 On Error GoTo Err_EdVndrs_Click
 
     Dim stDocName As String
@@ -12134,7 +12189,9 @@ Err_EdVndrs_Click:
     Resume Exit_EdVndrs_Click
     
 End Sub
+
 Private Sub WorkZone_Click()
+config_log "Form_zMainF - WorkZone_Click"
 On Error GoTo Err_WorkZone_Click
 
     Dim stDocName As String
@@ -12151,7 +12208,9 @@ Err_WorkZone_Click:
     Resume Exit_WorkZone_Click
     
 End Sub
+
 Private Sub EdPromos_Click()
+config_log "Form_zMainF - EdPromos_Click"
 On Error GoTo Err_EdPromos_Click
 
     Dim stDocName As String
@@ -12168,7 +12227,9 @@ Err_EdPromos_Click:
     Resume Exit_EdPromos_Click
     
 End Sub
+
 Private Sub EmlScn_Click()
+config_log "Form_zMainF - EmlScn_Click"
 On Error GoTo Err_EmlScn_Click
 
     Dim stDocName As String
@@ -12187,7 +12248,9 @@ Err_EmlScn_Click:
     Resume Exit_EmlScn_Click
     
 End Sub
+
 Private Sub ImpLoop_Click()
+config_log "Form_zMainF - ImpLoop_Click"
 On Error GoTo Err_ImpLoop_Click
 
 Dim fs, i, FF, ProFind, ProOld, ProNew, NmPath
@@ -12343,7 +12406,9 @@ Err_ImpLoop_Click:
     Resume Exit_ImpLoop_Click
     
 End Sub
+
 Private Sub VuMn_Click()
+config_log "Form_zMainF - VuMn_Click"
 On Error GoTo Err_VuMn_Click
 
     Dim stDocName As String
@@ -12362,7 +12427,9 @@ Err_VuMn_Click:
     Resume Exit_VuMn_Click
     
 End Sub
+
 Private Sub VipUpDts_Click()
+config_log "Form_zMainF - VipUpDts_Click"
 On Error GoTo Err_VipUpDts_Click
 
     Dim stDocName As String
@@ -12378,7 +12445,9 @@ Err_VipUpDts_Click:
     Resume Exit_VipUpDts_Click
     
 End Sub
+
 Private Sub VIPsubmits_Click()
+config_log "Form_zMainF - VIPsubmits_Click"
 On Error GoTo Err_VIPsubmits_Click
 
     Dim stDocName As String
@@ -12396,6 +12465,7 @@ Err_VIPsubmits_Click:
 End Sub
 
 Private Sub VIPadmin_Click()
+config_log "Form_zMainF - VIPadmin_Click"
 On Error GoTo Err_VIPadmin_Click
 
     Dim stDocName As String
@@ -12412,7 +12482,9 @@ Err_VIPadmin_Click:
     Resume Exit_VIPadmin_Click
     
 End Sub
+
 Private Sub UpDtBuySet_Click()
+config_log "Form_zMainF - UpDtBuySet_Click"
 On Error GoTo Err_UpDtBuySet_Click
     '*************************************************************************
     '****       Populate for Kevin Fitzpatrick and Laura Warrin          *****
@@ -12457,7 +12529,9 @@ Err_UpDtBuySet_Click:
     Resume Exit_UpDtBuySet_Click
     
 End Sub
+
 Private Sub NullBuyOrItem_Click()
+config_log "Form_zMainF - NullBuyOrItem_Click"
 On Error GoTo Err_NullBuyOrItem_Click
 
     Dim stDocName As String
@@ -12473,7 +12547,9 @@ Err_NullBuyOrItem_Click:
     Resume Exit_NullBuyOrItem_Click
     
 End Sub
+
 Private Sub PathFinder_Click()
+config_log "Form_zMainF - PathFinder_Click"
 On Error GoTo Err_PathFinder_Click
 
     Dim strConnectString As String
@@ -12492,7 +12568,9 @@ Err_PathFinder_Click:
     Resume Exit_PathFinder_Click
     
 End Sub
+
 Private Sub Utilities_Click()
+config_log "Form_zMainF - Utilities_Click"
 On Error GoTo Err_Utilities_Click
 
     Dim stDocName As String
@@ -12509,7 +12587,9 @@ Err_Utilities_Click:
     Resume Exit_Utilities_Click
     
 End Sub
+
 Private Sub VuBuyPartCnts_Click()
+config_log "Form_zMainF - VuBuyPartCnts_Click"
 On Error GoTo Err_VuBuyPartCnts_Click
 
     Dim stDocName As String
@@ -12526,7 +12606,9 @@ Err_VuBuyPartCnts_Click:
     Resume Exit_VuBuyPartCnts_Click
     
 End Sub
+
 Private Sub UpDtVer_Click()
+config_log "Form_zMainF - UpDtVer_Click"
 On Error GoTo Err_UpDtVer_Click
 
     Dim stDocName As String
@@ -12543,7 +12625,9 @@ Err_UpDtVer_Click:
     Resume Exit_UpDtVer_Click
     
 End Sub
+
 Private Sub zBuyXcptns_Click()
+config_log "Form_zMainF - zBuyXcptns_Click"
 On Error GoTo Err_zBuyXcptns_Click
 
     Dim stDocName As String
@@ -12559,7 +12643,9 @@ Err_zBuyXcptns_Click:
     Resume Exit_zBuyXcptns_Click
     
 End Sub
+
 Private Sub ICsXcptions_Click()
+config_log "Form_zMainF - ICsXcptions_Click"
 On Error GoTo Err_ICsXcptions_Click
 
     Dim stDocName As String
@@ -12575,7 +12661,9 @@ Err_ICsXcptions_Click:
     Resume Exit_ICsXcptions_Click
     
 End Sub
+
 Private Sub Log_Click()
+config_log "Form_zMainF - Log_Click"
 On Error GoTo Err_Log_Click
 
     Dim stDocName As String
@@ -12592,7 +12680,9 @@ Err_Log_Click:
     Resume Exit_Log_Click
     
 End Sub
+
 Private Sub VuEComXport_Click()
+config_log "Form_zMainF - VuEComXport_Click"
 On Error GoTo Err_VuEComXport_Click
 
     Dim stDocName As String
@@ -12609,7 +12699,9 @@ Err_VuEComXport_Click:
     Resume Exit_VuEComXport_Click
     
 End Sub
+
 Private Sub VuVndrByID_Click()
+config_log "Form_zMainF - VuVndrByID_Click"
 On Error GoTo Err_VuVndrByID_Click
 
     Dim stDocName As String
@@ -12626,7 +12718,9 @@ Err_VuVndrByID_Click:
     Resume Exit_VuVndrByID_Click
     
 End Sub
+
 Private Sub VuVndrByAlpha_Click()
+config_log "Form_zMainF - VuVndrByAlpha_Click"
 On Error GoTo Err_VuVndrByAlpha_Click
 
     Dim stDocName As String
@@ -12643,7 +12737,9 @@ Err_VuVndrByAlpha_Click:
     Resume Exit_VuVndrByAlpha_Click
     
 End Sub
+
 Private Sub VuZBuyXport_Click()
+config_log "Form_zMainF - VuZBuyXport_Click"
 On Error GoTo Err_VuZBuyXport_Click
 
     Dim stDocName As String
@@ -12660,7 +12756,9 @@ Err_VuZBuyXport_Click:
     Resume Exit_VuZBuyXport_Click
     
 End Sub
+
 Private Sub TestBNP_Click()
+config_log "Form_zMainF - TestBNP_Click"
 On Error GoTo Err_TestBNP_Click
 
 Dim intCnt As Integer
@@ -12690,7 +12788,9 @@ Err_TestBNP_Click:
     Resume Exit_TestBNP_Click
     
 End Sub
+
 Private Sub ShoUpDt_Click()
+config_log "Form_zMainF - ShoUpDt_Click"
 On Error GoTo Err_ShoUpDt_Click
 
     CancelUpDt.Visible = True
@@ -12704,7 +12804,9 @@ Err_ShoUpDt_Click:
     Resume Exit_ShoUpDt_Click
     
 End Sub
+
 Private Sub CancelUpDt_Click()
+config_log "Form_zMainF - CancelUpDt_Click"
 On Error GoTo Err_CancelUpDt_Click
 
    EUpDt.Visible = False
@@ -12717,7 +12819,9 @@ Err_CancelUpDt_Click:
     Resume Exit_CancelUpDt_Click
     
 End Sub
+
 Private Sub VuPromoDups_Click()
+config_log "Form_zMainF - VuPromoDups_Click"
 On Error GoTo Err_VuPromoDups_Click
 
     Dim stDocName As String
@@ -12733,7 +12837,9 @@ Err_VuPromoDups_Click:
     Resume Exit_VuPromoDups_Click
     
 End Sub
+
 Private Sub MasterLookup_Click()
+config_log "Form_zMainF - MasterLookup_Click"
 On Error GoTo Err_MasterLookup_Click
 
     Dim stDocName As String
@@ -12749,7 +12855,9 @@ Err_MasterLookup_Click:
     Resume Exit_MasterLookup_Click
     
 End Sub
+
 Private Sub ManAdd_Click()
+config_log "Form_zMainF - ManAdd_Click"
 On Error GoTo Err_ManAdd_Click
 
     Dim stDocName As String
@@ -12766,7 +12874,9 @@ Err_ManAdd_Click:
     Resume Exit_ManAdd_Click
     
 End Sub
+
 Private Sub DataChks_Click()
+config_log "Form_zMainF - DataChks_Click"
 On Error GoTo Err_DataChks_Click
 
     Dim stDocName As String
@@ -12783,7 +12893,9 @@ Err_DataChks_Click:
     Resume Exit_DataChks_Click
     
 End Sub
+
 Private Sub zItmSbDescUpDt_Click()
+config_log "Form_zMainF - zItmSbDescUpDt_Click"
 On Error GoTo Err_zItmSbDescUpDt_Click
 
     Dim stDocName As String
@@ -12799,7 +12911,9 @@ Err_zItmSbDescUpDt_Click:
     Resume Exit_zItmSbDescUpDt_Click
     
 End Sub
+
 Private Sub zItmSubDescChk_Click()
+config_log "Form_zMainF - zItmSubDescChk_Click"
 On Error GoTo Err_zItmSubDescChk_Click
 
     Dim stDocName As String
@@ -12815,7 +12929,9 @@ Err_zItmSubDescChk_Click:
     Resume Exit_zItmSubDescChk_Click
     
 End Sub
+
 Private Sub ItmSubReadDescUpDt_Click()
+config_log "Form_zMainF - ItmSubReadDescUpDt_Click"
 On Error GoTo Err_ItmSubReadDescUpDt_Click
 
     Dim stDocName As String
@@ -12831,7 +12947,9 @@ Err_ItmSubReadDescUpDt_Click:
     Resume Exit_ItmSubReadDescUpDt_Click
     
 End Sub
+
 Private Sub zItemSubDescAllUpDtNulls_Click()
+config_log "Form_zMainF - zItemSubDescAllUpDtNulls_Click"
 On Error GoTo Err_zItemSubDescAllUpDtNulls_Click
 
     Dim stDocName As String
@@ -12847,7 +12965,9 @@ Err_zItemSubDescAllUpDtNulls_Click:
     Resume Exit_zItemSubDescAllUpDtNulls_Click
     
 End Sub
+
 Private Sub NonParticipants_Click()
+config_log "Form_zMainF - NonParticipants_Click"
 On Error GoTo Err_NonParticipants_Click
 
     Dim stDocName As String
@@ -12863,7 +12983,9 @@ Err_NonParticipants_Click:
     Resume Exit_NonParticipants_Click
     
 End Sub
+
 Private Sub PromoContacts_Click()
+config_log "Form_zMainF - PromoContacts_Click"
 On Error GoTo Err_PromoContacts_Click
 
     Dim stDocName As String
@@ -12879,7 +13001,9 @@ Err_PromoContacts_Click:
     Resume Exit_PromoContacts_Click
     
 End Sub
+
 Private Sub NoEml_Click()
+config_log "Form_zMainF - NoEml_Click"
 On Error GoTo Err_NoEml_Click
 
     Dim stDocName As String
@@ -12895,7 +13019,9 @@ Err_NoEml_Click:
     Resume Exit_NoEml_Click
     
 End Sub
+
 Private Sub PromoEmls_Click()
+config_log "Form_zMainF - PromoEmls_Click"
 On Error GoTo Err_PromoEmls_Click
 
     Dim stDocName As String
@@ -12911,7 +13037,9 @@ Err_PromoEmls_Click:
     Resume Exit_PromoEmls_Click
     
 End Sub
+
 Private Sub DftOnly_Click()
+config_log "Form_zMainF - DftOnly_Click"
 On Error GoTo Err_DftOnly_Click
 
     Dim stDocName As String
@@ -12933,7 +13061,9 @@ Err_DftOnly_Click:
     Resume Exit_DftOnly_Click
     
 End Sub
+
 Private Sub VndDefPro_Click()
+config_log "Form_zMainF - VndDefPro_Click"
 On Error GoTo Err_VndDefPro_Click
 
     Dim stDocName As String
@@ -12950,7 +13080,9 @@ Err_VndDefPro_Click:
     Resume Exit_VndDefPro_Click
     
 End Sub
+
 Private Sub NoEmlList_Click()
+config_log "Form_zMainF - NoEmlList_Click"
 On Error GoTo Err_NoEmlList_Click
 
     Dim stDocName As String
@@ -12967,7 +13099,9 @@ Err_NoEmlList_Click:
     Resume Exit_NoEmlList_Click
     
 End Sub
+
 Private Sub EmlCYQ1_Click()
+config_log "Form_zMainF - EmlCYQ1_Click"
 On Error GoTo Err_EmlCYQ1_Click
 
     Dim stDocName As String
@@ -12983,7 +13117,9 @@ Err_EmlCYQ1_Click:
     Resume Exit_EmlCYQ1_Click
     
 End Sub
+
 Private Sub EmlCYQ2_Click()
+config_log "Form_zMainF - EmlCYQ2_Click"
 On Error GoTo Err_EmlCYQ2_Click
 
     Dim stDocName As String
@@ -12999,7 +13135,9 @@ Err_EmlCYQ2_Click:
     Resume Exit_EmlCYQ2_Click
     
 End Sub
+
 Private Sub EmlCYQ3_Click()
+config_log "Form_zMainF - EmlCYQ3_Click"
 On Error GoTo Err_EmlCYQ3_Click
 
     Dim stDocName As String
@@ -13015,7 +13153,9 @@ Err_EmlCYQ3_Click:
     Resume Exit_EmlCYQ3_Click
     
 End Sub
+
 Private Sub EmlCYQ4_Click()
+config_log "Form_zMainF - EmlCYQ4_Click"
 On Error GoTo Err_EmlCYQ4_Click
 
     Dim stDocName As String
@@ -13031,7 +13171,9 @@ Err_EmlCYQ4_Click:
     Resume Exit_EmlCYQ4_Click
     
 End Sub
+
 Private Sub EmlNYQ1_Click()
+config_log "Form_zMainF - EmlNYQ1_Click"
 On Error GoTo Err_EmlNYQ1_Click
 
     Dim stDocName As String
@@ -13047,7 +13189,9 @@ Err_EmlNYQ1_Click:
     Resume Exit_EmlNYQ1_Click
     
 End Sub
+
 Private Sub EdNoPromoNtz_Click()
+config_log "Form_zMainF - EdNoPromoNtz_Click"
 On Error GoTo Err_EdNoPromoNtz_Click
 
     Dim stDocName As String
@@ -13064,7 +13208,9 @@ Err_EdNoPromoNtz_Click:
     Resume Exit_EdNoPromoNtz_Click
     
 End Sub
+
 Private Sub ztst_Click()
+config_log "Form_zMainF - ztst_Click"
 On Error GoTo Err_ztst_Click
 
     Dim stDocName As String
@@ -13083,7 +13229,9 @@ Err_ztst_Click:
     Resume Exit_ztst_Click
     
 End Sub
+
 Private Sub EmailzReadPromoMktToQ_Click()
+config_log "Form_zMainF - EmailzReadPromoMktToQ_Click"
 On Error GoTo Err_EmailzReadPromoMktToQ_Click
 
     Dim stDocName As String
@@ -13099,7 +13247,9 @@ Err_EmailzReadPromoMktToQ_Click:
     Resume Exit_EmailzReadPromoMktToQ_Click
     
 End Sub
+
 Private Sub DaBuzzaQ_Click()
+config_log "Form_zMainF - DaBuzzaQ_Click"
 On Error GoTo Err_DaBuzzaQ_Click
 
     Dim stDocName As String
@@ -13115,7 +13265,9 @@ Err_DaBuzzaQ_Click:
     Resume Exit_DaBuzzaQ_Click
     
 End Sub
+
 Private Sub UpLd_Click()
+config_log "Form_zMainF - UpLd_Click"
 On Error GoTo Err_UpLd_Click
 
     Dim stDocName As String
@@ -13240,7 +13392,9 @@ Err_UpLd_Click:
     Resume Exit_UpLd_Click
     
 End Sub
+
 Private Sub VuDestinatnFiles_Click()
+config_log "Form_zMainF - VuDestinatnFiles_Click"
 On Error GoTo Err_VuDestinatnFiles_Click
 
     Dim stShell As String
@@ -13260,7 +13414,9 @@ Err_VuDestinatnFiles_Click:
     Resume Exit_VuDestinatnFiles_Click
     
 End Sub
+
 Private Sub TestAQ_Click()
+config_log "Form_zMainF - TestAQ_Click"
 On Error GoTo Err_TestAQ_Click
 
 Dim RecCnt As Integer
@@ -13299,7 +13455,9 @@ Err_TestAQ_Click:
     Resume Exit_TestAQ_Click
     
 End Sub
+
 Private Sub PrepUpLd_Click()
+config_log "Form_zMainF - PrepUpLd_Click"
 On Error GoTo Err_PrepUpLd_Click
 
     If IsNull(Me![TestEffDt]) Then
@@ -13335,7 +13493,9 @@ Err_PrepUpLd_Click:
     Resume Exit_PrepUpLd_Click
     
 End Sub
+
 Private Sub CancelUpLd_Click()
+config_log "Form_zMainF - CancelUpLd_Click"
 On Error GoTo Err_CancelUpLd_Click
 
     UpLd.Visible = False
@@ -13353,7 +13513,9 @@ Err_CancelUpLd_Click:
     Resume Exit_CancelUpLd_Click
     
 End Sub
+
 Private Sub TestArchive_Click()
+config_log "Form_zMainF - TestArchive_Click"
 On Error GoTo Err_TestArchive_Click
 
     Dim stDocName As String
@@ -13396,7 +13558,9 @@ Err_TestArchive_Click:
     Resume Exit_TestArchive_Click
     
 End Sub
+
 Private Sub VuArcFldr_Click()
+config_log "Form_zMainF - VuArcFldr_Click"
 On Error GoTo Err_VuArcFldr_Click
 
     Dim stShell As String
@@ -13417,7 +13581,9 @@ Err_VuArcFldr_Click:
     Resume Exit_VuArcFldr_Click
     
 End Sub
+
 Private Sub SwoUpLd_Click()
+config_log "Form_zMainF - SwoUpLd_Click"
 On Error GoTo Err_SwoUpLd_Click
 
     Dim stDocName As String
@@ -13470,7 +13636,9 @@ Err_SwoUpLd_Click:
     Resume Exit_SwoUpLd_Click
     
 End Sub
+
 Private Sub VuFullTxt_Click()
+config_log "Form_zMainF - VuFullTxt_Click"
 On Error GoTo Err_VuFullTxt_Click
 
     Dim stShell As String
@@ -13488,7 +13656,9 @@ Err_VuFullTxt_Click:
     Resume Exit_VuFullTxt_Click
     
 End Sub
+
 Private Sub ChkICs_Click()
+config_log "Form_zMainF - ChkICs_Click"
 On Error GoTo Err_ChkICs_Click
 
     Dim stDocName As String
@@ -13504,7 +13674,9 @@ Err_ChkICs_Click:
     Resume Exit_ChkICs_Click
     
 End Sub
+
 Private Sub ShoAll_Click()
+config_log "Form_zMainF - ShoAll_Click"
 On Error GoTo Err_ShoAll_Click
 
     Dim stDocName As String
@@ -13534,7 +13706,9 @@ Err_ShoAll_Click:
     Resume Exit_ShoAll_Click
     
 End Sub
+
 Private Sub SWOvsDft_Click()
+config_log "Form_zMainF - SWOvsDft_Click"
 On Error GoTo Err_SWOvsDft_Click
 
     Dim stDocName As String

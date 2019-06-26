@@ -106,6 +106,8 @@ Dim bDirFound As Boolean
 Dim sCrlf As String
 
 Function OnClickSend()
+config_log "OnClickSend"
+
 'MsgBox "Flag 1"
     On Error GoTo SomeError
     
@@ -196,6 +198,8 @@ SomeError:
 End Function
 
 Sub CleanUpWorkFiles()
+config_log "CleanUpWorkFiles"
+
     Close
     'DeleteFile ("C:\temp\DVLINFG.tmp")
     'DeleteFile ("C:\temp\DVLINFG.ftp")
@@ -205,6 +209,8 @@ Sub CleanUpWorkFiles()
 End Sub
 
 Function ValidateSpreadsheetData() As Boolean
+config_log "ValidateSpreadsheetData"
+
 On Error GoTo SomeError:
 
     ValidateSpreadsheetData = True
@@ -258,18 +264,24 @@ SomeError:
 End Function
 
 Sub SetApplicationName()
+config_log "SetApplicationName"
     Dim sRange As String
     sRange = APPLICATION_TITLE_CELL
     'Range(sRange).Select
     'ActiveCell.FormulaR1C1 = APPLICATION_TITLE
 End Sub
+
 Sub SetAdjustmentName()
+config_log "SetAdjustmentName"
     Dim sRange As String
     sRange = ADJUSTMENT_CODE_CELL
     'Range(sRange).Select
     'ActiveCell.FormulaR1C1 = ADJUSTMENT_CODE
 End Sub
+
 Sub SetRevisionDate()
+config_log "SetRevisionDate"
+   
     Dim sRange As String
     sRange = REVISION_DATE_CELL
     'Range(sRange).Select
@@ -277,6 +289,8 @@ Sub SetRevisionDate()
 End Sub
 
 Function CheckForValidProductionTestFlag() As Boolean
+config_log "CheckForValidProductionTestFlag"
+
 '    Dim sRange As String
 '    sRange = PRODUCTION_TEST_CELL
 '    sProdTest = ZPT()  'UCase(LeftJustify(sRange, 1))
@@ -298,6 +312,8 @@ Function CheckForValidProductionTestFlag() As Boolean
 End Function
 
 Function CheckForValidRunHoldJobFlag() As Boolean
+config_log "CheckForValidRunHoldJobFlag"
+    
     Dim sRange As String
     sRange = RUN_HOLD_JOB_CELL
     sRunHoldJob = RUN_HOLD_JOB_CELL  '= "Y"  '  UCase(LeftJustify(sRange, 1))
@@ -311,7 +327,9 @@ Function CheckForValidRunHoldJobFlag() As Boolean
     'End If
     CheckForValidRunHoldJobFlag = True
 End Function
+
 Function CheckForRefNo() As Boolean
+config_log "CheckForRefNo"
     Dim sRange As String
     Dim sRefNo As String
         'sRange = "C3"
@@ -325,7 +343,9 @@ Function CheckForRefNo() As Boolean
     End If
     CheckForRefNo = True
 End Function
+
 Function CheckForAtLeastOneLine() As Boolean
+config_log "CheckForAtLeastOneLine"
     Dim sRange As String
     Dim sItemPriceGroup As String
     Dim sCnt As Integer
@@ -361,7 +381,9 @@ End Function
     'End If
     'CheckForAddExpire = True
 'End Function
+
 Function CheckForPromoCode() As Boolean
+config_log "CheckForPromoCode"
     Dim sRange As String
     Dim sPromo As String
     sRange = "DSL"  '  "C5"
@@ -379,7 +401,9 @@ Function CheckForPromoCode() As Boolean
     End If
     CheckForPromoCode = True
 End Function
+
 Function CheckForAdjustment() As Boolean
+config_log "CheckForAdjustment"
     Dim sRange As String
     Dim sAdjNo As String
     sRange = ADJUSTMENT_CODE_CELL
@@ -398,7 +422,9 @@ Function CheckForAdjustment() As Boolean
     End If
     CheckForAdjustment = True
 End Function
+
 Function CheckNonRequiredFields() As Boolean
+config_log "CheckNonRequiredFields"
     Dim nRow As Integer
     
     CheckNonRequiredFields = True
@@ -410,6 +436,7 @@ Function CheckNonRequiredFields() As Boolean
 End Function
 
 Function CheckRequiredFields() As Boolean
+config_log "CheckRequiredFields"
     Dim nRow As Integer
     
     CheckRequiredFields = True
@@ -470,6 +497,7 @@ Function CheckRequiredFields() As Boolean
 End Function
 
 Function CheckForNextRecord(nRow As Integer) As Boolean
+config_log "CheckForNextRecord"
     Dim sValue As String
     Dim sRange As String
     CheckForNextRecord = False
@@ -527,13 +555,16 @@ Function CheckForNextRecord(nRow As Integer) As Boolean
 End Function
 
 Function CheckPriceGroup(nRow As Integer) As Boolean
+config_log "CheckPriceGroup"
 '    If Not CheckCell("A", nRow, "Item") Then
 '        CheckPriceGroup = False
 '        Exit Function
 '    End If
     CheckPriceGroup = True
 End Function
+
 Function CheckPromoLimit(nRow As Integer) As Boolean
+config_log "CheckPromoLimit"
     Dim sValue As String
     Dim sRange As String
     Dim sPromo As Integer
@@ -556,7 +587,9 @@ Function CheckPromoLimit(nRow As Integer) As Boolean
       
    CheckPromoLimit = True
 End Function
+
 Function CheckQuantity(nRow As Integer) As Boolean
+config_log "CheckQuantity"
 '    Dim sValue As String
 '    Dim sRange As String
 '    sRange = "D" & nRow
@@ -569,14 +602,18 @@ Function CheckQuantity(nRow As Integer) As Boolean
       
    CheckQuantity = True
 End Function
+
 Function CheckFreeGoodItem(nRow As Integer) As Boolean
+config_log "CheckFreeGoodItem"
 '    If Not CheckCell("G", nRow, "Free Good Item") Then
 '        CheckFreeGoodItem = False
 '        Exit Function
 '    End If
     CheckFreeGoodItem = True
 End Function
+
 Function CheckFreeGoodQty(nRow As Integer) As Boolean
+config_log "CheckFreeGoodQty"
   'Free Good Qty
 '   Dim sValue As String
 '   Dim sValue1 As String
@@ -591,7 +628,9 @@ Function CheckFreeGoodQty(nRow As Integer) As Boolean
   
    CheckFreeGoodQty = True
 End Function
+
 Function CheckCatalogPrice(nRow As Integer) As Boolean
+config_log "CheckCatalogPrice"
   'Free Good Price
 '   Dim sValue As String
 '   Dim sValue1 As String
@@ -607,7 +646,9 @@ Function CheckCatalogPrice(nRow As Integer) As Boolean
   
    CheckCatalogPrice = True
 End Function
- Function CheckPriceEffectiveDate(nRow As Integer) As Boolean
+ 
+Function CheckPriceEffectiveDate(nRow As Integer) As Boolean
+config_log "CheckPriceEffectiveDate"
 '    Dim sValue As String
 '    Dim sRange As String
 '    sRange = "E" & nRow
@@ -616,6 +657,8 @@ End Function
     CheckPriceEffectiveDate = True
 End Function
 Function CheckPriceExpiryDate(nRow As Integer) As Boolean
+config_log "CheckPriceExpiryDate"
+
 '    Dim sValue As String
 '    Dim sRange As String
 '    sRange = "F" & nRow
@@ -623,7 +666,9 @@ Function CheckPriceExpiryDate(nRow As Integer) As Boolean
                    
     CheckPriceExpiryDate = True
 End Function
+
 Function CheckFSI(nRow As Integer) As Boolean
+config_log "CheckFSI"
 '    Dim sValue As String
 '    Dim sRange As String
 '    sRange = "B" & nRow
@@ -638,7 +683,9 @@ Function CheckFSI(nRow As Integer) As Boolean
 '    End If
     CheckFSI = True
 End Function
+
 Function CheckCell(sCol As String, nRow As Integer, sFieldName As String)
+config_log "CheckCell"
 '    Dim sValue As String
 '    Dim sRange As String
     
@@ -654,6 +701,7 @@ Function CheckCell(sCol As String, nRow As Integer, sFieldName As String)
 End Function
 
 Function CheckNumeric(sCol As String, nRow As Integer, sFieldName As String) As Boolean
+config_log "CheckNumeric"
 '    Dim sValue As String
 '    Dim sRange As String
     
@@ -671,6 +719,7 @@ Function CheckNumeric(sCol As String, nRow As Integer, sFieldName As String) As 
 End Function
 
 Function MakeFileOfSpreadsheetData(sFileName As String) As Boolean
+config_log "MakeFileOfSpreadsheetData"
 '    Dim sLine As String
 '    Dim sRange As String
 '    Dim nRow As Integer
@@ -723,6 +772,7 @@ SomeError:
 End Function
 
 Sub SetJobDescription()
+config_log "SetJobDescription"
     If sProdTest = "P" Then
         sJobd = PRODUCTION_JOBD
         sJobdLib = PRODUCTION_JOBD_LIBRARY
@@ -740,36 +790,49 @@ Sub SetJobDescription()
 End Sub
 
 Sub PositionToHomeCell()
+config_log "PositionToHomeCell"
     'Range(RECORD_START_CELL).Select
 End Sub
 
 Function GetItemPriceGroup(nRow As Integer)
+config_log "GetItemPriceGroup"
     'Dim sRange As String
     'sRange = "A" & nRow
     'GetItemPriceGroup = UCase(LeftJustify(sRange, 25))
 End Function
+
 Function GetFreeItem(nRow As Integer)
+config_log "GetFreeItem"
     'Dim sRange As String
     'sRange = "G" & nRow
     'GetFreeItem = UCase(LeftJustify(sRange, 15))
 End Function
+
 Function GetQuantity(nRow As Integer)
+config_log "GetQuantity"
     'For Item Qty
     'GetQuantity = RightJustifyZeroFilled(nRow, "D", 10, 0)
 End Function
+
 Function GetFreeQuantity(nRow As Integer)
+config_log "GetFreeQuantity"
     'Free Good Qty
     'GetFreeQuantity = RightJustifyZeroFilled(nRow, "I", 8, 0)
 End Function
+
 Function GetPromoLimit(nRow As Integer)
+config_log "GetPromoLimit"
     '    GetPromoLimit = RightJustifyZeroFilled(nRow, "C", 8, 0)
 End Function
+
 Function GetCatalogPrice(nRow As Integer)
+config_log "GetCatalogPrice"
 'Free item price
     'GetCatalogPrice = RightJustifyZeroFilled(nRow, "J", 15, 4)
 End Function
 
 Function GetPriceEffectiveDate(nRow As Integer)
+config_log "GetPriceEffectiveDate"
     'Promo Start Date
     'Dim sRange As String
     'sRange = "D" & nRow
@@ -814,7 +877,9 @@ Function GetPriceEffectiveDate(nRow As Integer)
     '    GetPriceEffectiveDate = "          "
     ' End If
 End Function
+
 Function GetPriceExpiryDate(nRow As Integer)
+config_log "GetPriceExpiryDate"
     'Promo End Date
     'Dim sRange As String
     'Dim sCol As String
@@ -855,22 +920,30 @@ Function GetPriceExpiryDate(nRow As Integer)
     '    GetPriceExpiryDate = "          "
      'End If
 End Function
+
 Function GetFSI(nRow As Integer)
+config_log "GetFSI"
     'Dim sRange As String
     'sRange = "B" & nRow
     'GetFSI = UCase(LeftJustify(sRange, 1))
 End Function
+
 Function GetAddExpire()
+config_log "GetAddExpire"
     'Dim sRange As String
     'sRange = AddExpire_Cell
     'GetAddExpire = UCase(LeftJustify(sRange, 1))
 End Function
+
 Function GetReferenceNumber()
+config_log "GetReferenceNumber"
     'Dim sRange As String
     'sRange = ReferenceNumber_Cell
     'GetReferenceNumber = UCase(LeftJustify(sRange, 15))
 End Function
+
 Function GetAdjustment(nRow As Integer)
+config_log "GetAdjustment"
     'Dim sRange As String
         
     '    If GetFSI(nRow) = "I" Then
@@ -881,27 +954,37 @@ Function GetAdjustment(nRow As Integer)
     'End If
       
 End Function
+
 Function GetUserID()
+config_log "GetUserID"
     'Dim sRange As String
     'sRange = USER_ID_CELL
     'GetUserID = UCase(LeftJustify(sRange, 10))
 End Function
+
 Function GetDivnCode()
+config_log "GetDivnCode"
     'Dim sRange As String
     'sRange = DivnCode_Cell
     'GetDivnCode = UCase(LeftJustify(sRange, 3))
 End Function
+
 Function GetCustCode()
+config_log "GetCustCode"
     'Dim sRange As String
     'sRange = Cust_Cell
     'GetCustCode = UCase(LeftJustify(sRange, 8))
 End Function
+
 Function GetContractNo()
+config_log "GetContractNo"
     'Dim sRange As String
     'sRange = Contract_Cell
     'GetContractNo = UCase(LeftJustify(sRange, 15))
 End Function
+
 Function SendFileToServer(sFileName As String) As Boolean
+config_log "SendFileToServer"
     Dim bGetFile As Boolean
     
     SendFileToServer = True
@@ -928,6 +1011,7 @@ SomeError:
 End Function
 
 Sub SubmitJobOnServer()
+config_log "SubmitJobOnServer"
     Dim sTxt As String
     Dim sRange As String
     Dim sValue As String
@@ -957,6 +1041,8 @@ Sub SubmitJobOnServer()
 End Sub
 
 Sub PutFileOnServer(sFileName As String)
+config_log "PutFileOnServer"
+
     Dim sTxt As String
     ClearLogFile
     CreateTempFileForDelayingApplication
@@ -975,6 +1061,8 @@ Sub PutFileOnServer(sFileName As String)
 End Sub
 
 Function GetServerAddress()
+config_log "GetServerAddress"
+
     If sProdTest = "P" Then
         GetServerAddress = PRODUCTION_SERVER_ADDRESS  '= "E", or, = "EQ"
         sSUBMIT_USERID = PRODUCTION_USERID  '= "ADVPRC"
@@ -987,6 +1075,8 @@ Function GetServerAddress()
 End Function
 
 Function GetServerFileLibrary()
+config_log "GetServerFileLibrary"
+
     If sProdTest = "P" Then
         GetServerFileLibrary = PRODUCTION_SERVER_FILE_LIBRARY
     Else
@@ -995,18 +1085,24 @@ Function GetServerFileLibrary()
 End Function
 
 Sub CreateTempFileForDelayingApplication()
+config_log "CreateTempFileForDelayingApplication"
+
     Open "\\usnym3fs03\Data\UpLdz\DVLINFG.tmp" For Output As #1
     Print #1, "Temp File for Delaying Application"
     Close #1
 End Sub
 
 Sub ClearLogFile()
+config_log "ClearLogFile"
+    
     Open "\\usnym3fs03\Data\UpLdz\DVLINFG.log" For Output As #1
     Print #1, ""
     Close #1
 End Sub
 
 Sub CreatePutFTPFile(sFileName As String)
+config_log "CreatePutFTPFile"
+    
     Open "\\usnym3fs03\Data\UpLdz\DVLINFG.ftp" For Output As #1
     Print #1, "open " & GetServerAddress()
     Print #1, "user " & sSUBMIT_USERID
@@ -1018,6 +1114,8 @@ Sub CreatePutFTPFile(sFileName As String)
 End Sub
 
 Sub CreateSubmitFTPFile()
+config_log "CreateSubmitFTPFile"
+    
     Dim sRange As String
     Dim sParam1 As String
     Dim sParam2 As String
@@ -1045,6 +1143,8 @@ Sub CreateSubmitFTPFile()
 End Sub
 
 Sub CreateFTPBatchFile()
+config_log "CreateFTPBatchFile"
+    
     Open "\\usnym3fs03\Data\UpLdz\DVLINFG.BAT" For Output As #1
     Print #1, "@echo off"
     Print #1, "ftp -n -s:\\usnym3fs03\Data\UpLdz\DVLINFG.ftp  >>\\usnym3fs03\Data\UpLdz\DVLINFG.log"
@@ -1053,6 +1153,8 @@ Sub CreateFTPBatchFile()
 End Sub
 
 Sub RunFTPBatchFile()
+config_log "RunFTPBatchFile"
+
 On Error GoTo ShellError:
   
     Dim iNum As Integer
@@ -1077,12 +1179,15 @@ ShellError:
 End Sub
 
 Function LeftJustify(sRange As String, nLen As Integer) As String
+config_log "LeftJustify"
+    
     'Dim sCell As String
     'sCell = Trim(Range(sRange).Value) & String(nLen, " ")
     'LeftJustify = Left(sCell, nLen)
 End Function
 
 Function RightJustify(nRow As Integer, sCol As String, nLen As Integer) As String
+config_log "RightJustify"
     'Dim sCell As String
     'Dim sRange As String
     'sRange = sCol & nRow
@@ -1091,6 +1196,7 @@ Function RightJustify(nRow As Integer, sCol As String, nLen As Integer) As Strin
 End Function
 
 Function RightJustifyZeroFilled(nRow As Integer, sCol As String, nLen As Integer, nDecimal As Integer) As String
+config_log "RightJustifyZeroFilled"
     'Dim sCell As String
     'Dim sRange As String
     'Dim sFormat As String
@@ -1118,6 +1224,7 @@ Function RightJustifyZeroFilled(nRow As Integer, sCol As String, nLen As Integer
 End Function
 
 Sub CheckFTPResults()
+config_log "CheckFTPResults"
     Dim bGoodFTP As Boolean
     Dim sTxt$
     Dim return_count%
@@ -1220,6 +1327,8 @@ nxtrcd:
 End Sub
 
 Sub DeleteFile(sFile$)
+config_log "DeleteFile"
+    
     On Error Resume Next
     
     If CheckIfFileExists(sFile) Then
@@ -1228,6 +1337,8 @@ Sub DeleteFile(sFile$)
 End Sub
 
 Function CheckIfFileExists(sFile$) As Boolean
+config_log "CheckIfFileExists"
+    
     CheckIfFileExists = True
     Dim nResult As Integer
     On Error GoTo FileError
@@ -1238,6 +1349,7 @@ FileError:
 End Function
 
 Function GenerateReferenceNumber() As String
+config_log "GenerateReferenceNumber"
     'Dim sName As String
     'Dim sDay As String
     'Dim sHours As String
