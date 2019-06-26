@@ -321,7 +321,7 @@ config_log "CheckForValidRunHoldJobFlag"
     'ActiveCell.FormulaR1C1 = sRunHoldJob
     'If (sRunHoldJob = "Y") Or (sRunHoldJob = "N") Then
     'Else
-    '    MsgBox "Run xxxx must be Y or N.", 16, APPLICATION_TITLE
+    '    MsgBox "Run yyy must be Y or N.", 16, APPLICATION_TITLE
     '    CheckForValidRunHoldJobFlag = False
     '    Exit Function
     'End If
@@ -1136,7 +1136,7 @@ config_log "CreateSubmitFTPFile"
     Print #1, "open " & GetServerAddress()
     Print #1, "user " & sSUBMIT_USERID
     Print #1, sSUBMIT_PASSWORD
-    'rint #1, "quote rcmd sbmjob cmd(call J554542) job(J5xxxxx) jobd(" & Trim(sJobdLib) & "/" & Trim(sJobd) & ")"
+    'rint #1, "quote rcmd sbmjob cmd(call J554542) job(J5yyyyy) jobd(" & Trim(sJobdLib) & "/" & Trim(sJobd) & ")"
     Print #1, "quote rcmd sbmjob cmd(call J554542F parm(" & sParam1 & " " & sParam2 & " " & sParam3 & " " & sParam4 & "  )) job(J554542F) jobd(" & Trim(sJobdLib) & "/" & Trim(sJobd) & ")"
     Print #1, "quit"
     Close #1
