@@ -1,3 +1,4 @@
 ﻿zBuy
-;DATABASE=X:\Dental\dentmkt\2KFLDTBL.mdb
+;DATABASE=.\PromoBE.accdb
 zEBuy
+BuyID
