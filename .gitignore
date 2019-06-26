@@ -6,6 +6,7 @@
 *.zip
 *.xls
 *.log
+*.msg
 DataSourceUS/
 
 # Prerequisites
