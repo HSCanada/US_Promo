@@ -2,19 +2,21 @@ Option Explicit
 ' to change the sheet use "orange" as password
 
 Global Const APPLICATION_TITLE = "QA Divisional Item Free Goods Upload"
-Global Const REVISION_DATE = "Rev. 07/17/2012"
-Global Const VERSION = "20120717"
+Global Const REVISION_DATE = "Rev. 27 Jun 2019"
+Global Const VERSION = "20190627"
 Global Const ADJUSTMENT_CODE = "DVLINFG"
 
 Global Const PRODUCTION_JOBD = "JDEJOBD"
 Global Const PRODUCTION_JOBD_LIBRARY = "QGPL"
-Global Const PRODUCTION_SERVER_FILE_LIBRARY = "HSIPDTA71"
+Global Const PRODUCTION_SERVER_FILE_LIBRARY = "ARCPDTA71"
+'Global Const PRODUCTION_SERVER_FILE_LIBRARY = "HSIPDTA71"
 
-Global Const TEST_SERVER = "D"
-Global Const TEST_SERVER_ADDRESS = "D"
+Global Const TEST_SERVER = "EQ"
+Global Const TEST_SERVER_ADDRESS = "EQ"
 Global Const TEST_JOBD = "JDEJOBD"
 Global Const TEST_JOBD_LIBRARY = "HSIQUNOBJ"
-Global Const TEST_SERVER_FILE_LIBRARY = "HSIQDTA71"
+Global Const TEST_SERVER_FILE_LIBRARY = "ARCPDTA71"
+'Global Const TEST_SERVER_FILE_LIBRARY = "HSIQDTA71"
 
 Global Const SERVER_FILE_NAME = "F554509"
 
@@ -27,7 +29,7 @@ Global Const TEST_PASSWORD = "PRICE"
 'Global Const RECORD_START_CELL = "A7"
 'Global Const RECORD_END_CELL = "E7"
 Global Const APPLICATION_TITLE_CELL = "QA Divisional Item Free Goods Upload"  '  "A1"
-Global Const REVISION_DATE_CELL = "07/17/2012"  '  "A2"
+Global Const REVISION_DATE_CELL = "27 Jun 2019"  '  "A2"
 Global Const ADJUSTMENT_CODE_CELL = "DVLINFG"  '  "I1"
 'Global Const USER_ID_CELL = "CCOR01" '"KFANG" 'DENTAL"  '  "C4"
 Global Const RUN_HOLD_JOB_CELL = "Y"  '  "F3"
@@ -51,7 +53,8 @@ Global Const ProofFinal_Cell = "F"  'FINAL                 '*****
 '*****                                                       *****
 '*****                                                       *****
 '***** Email Spreadsheet to Carol Corso                      *****
-Global Const USER_ID_CELL = "CCOR01" 'to Send report to Carol C.*
+Global Const USER_ID_CELL = "TCROWL" 'to Send report to Trevor *
+'Global Const USER_ID_CELL = "CCOR01" 'to Send report to Carol C.*
 '***** Email Spreadsheet to Karen King                       *****
 'Global Const USER_ID_CELL = "KFANG" 'Testing - Send to K. Fang***
 '*****                                                       *****
@@ -168,9 +171,9 @@ config_log "OnClickSend"
                'bNoErrs =
 
                'SendFileToServer ("C:\temp\DVLINFG.txt")
-               SendFileToServer ("\\usnym3fs03\Data\UpLdz\DVLINFG.txt")
+               SendFileToServer (config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".txt")
                'Z_LgLoc = "C:\temp\DVLINFG.txt"
-               Z_LgLoc = "\\usnym3fs03\Data\UpLdz\DVLINFG.txt"
+               Z_LgLoc = config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".txt"
             'MsgBox "Flag 4"
                CleanUpWorkFiles
             'End If
@@ -413,7 +416,7 @@ config_log "CheckForAdjustment"
     'Range(sRange).Select
     'ActiveCell.FormulaR1C1 = sAdjNo
     'If (sAdjNo <> "        ") Then
-    If (sAdjNo = "DVLINFG") Then
+    If (sAdjNo = config("FILE_PROMO_DVLINFG")) Then
        CheckForAdjustment = True
     Else
         MsgBox "Adjustment No Cannot be blanks", 16, APPLICATION_TITLE
@@ -1087,7 +1090,7 @@ End Function
 Sub CreateTempFileForDelayingApplication()
 config_log "CreateTempFileForDelayingApplication"
 
-    Open "\\usnym3fs03\Data\UpLdz\DVLINFG.tmp" For Output As #1
+    Open config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".tmp" For Output As #1
     Print #1, "Temp File for Delaying Application"
     Close #1
 End Sub
@@ -1095,7 +1098,7 @@ End Sub
 Sub ClearLogFile()
 config_log "ClearLogFile"
     
-    Open "\\usnym3fs03\Data\UpLdz\DVLINFG.log" For Output As #1
+    Open config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".log" For Output As #1
     Print #1, ""
     Close #1
 End Sub
@@ -1103,7 +1106,7 @@ End Sub
 Sub CreatePutFTPFile(sFileName As String)
 config_log "CreatePutFTPFile"
     
-    Open "\\usnym3fs03\Data\UpLdz\DVLINFG.ftp" For Output As #1
+    Open config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".ftp" For Output As #1
     Print #1, "open " & GetServerAddress()
     Print #1, "user " & sSUBMIT_USERID
     Print #1, sSUBMIT_PASSWORD
@@ -1132,7 +1135,7 @@ config_log "CreateSubmitFTPFile"
     sRange = ZFP() 'ProofFinal_Cell  '= "F" = sParam4  OR "P" Proof
     sParam4 = "'" & ZFP() & "'"        '"'" & ProofFinal_Cell & "'"
     '  UCase(LeftJustify(sRange, 1)) & "'"
-    Open "\\usnym3fs03\Data\UpLdz\DVLINFG.ftp" For Output As #1
+    Open config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".ftp" For Output As #1
     Print #1, "open " & GetServerAddress()
     Print #1, "user " & sSUBMIT_USERID
     Print #1, sSUBMIT_PASSWORD
@@ -1144,11 +1147,17 @@ End Sub
 
 Sub CreateFTPBatchFile()
 config_log "CreateFTPBatchFile"
+
+    Dim sLine1, sLine2 As String
     
-    Open "\\usnym3fs03\Data\UpLdz\DVLINFG.BAT" For Output As #1
+    Open config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".BAT" For Output As #1
+    
+    sLine1 = "ftp -n -s:" & config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".ftp  >>" & config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".log"
+    sLine2 = "del " & config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".tmp"
+
     Print #1, "@echo off"
-    Print #1, "ftp -n -s:\\usnym3fs03\Data\UpLdz\DVLINFG.ftp  >>\\usnym3fs03\Data\UpLdz\DVLINFG.log"
-    Print #1, "del \\usnym3fs03\Data\UpLdz\DVLINFG.tmp"
+    Print #1, sLine1
+    Print #1, sLine2
     Close #1
 End Sub
 
@@ -1159,10 +1168,10 @@ On Error GoTo ShellError:
   
     Dim iNum As Integer
     
-    Shell ("\\usnym3fs03\Data\UpLdz\DVLINFG.bat")
+    Shell (config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".bat")
     Do
         iNum = DoEvents()
-        If Not CheckIfFileExists("\\usnym3fs03\Data\UpLdz\DVLINFG.tmp") Then
+        If Not CheckIfFileExists(config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".tmp") Then
             Exit Sub
         End If
     Loop
@@ -1237,7 +1246,7 @@ config_log "CheckFTPResults"
     Err = 0
     On Error Resume Next
     
-    Open "\\usnym3fs03\Data\UpLdz\DVLINFG.log" For Input As 1
+    Open config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".log" For Input As 1
     If Err <> 0 Then
       sTxt = "No FTP Log file was created.  Possible reasons are:" + sCrlf
       sTxt = sTxt + "Not enough memory to run a Batch file," + sCrlf

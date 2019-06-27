@@ -1,5 +1,9 @@
 Option Compare Database
 Option Explicit
+
+' *** Clean ***, 27 Jun 19
+'
+
 Declare PtrSafe Function apiCopyFile Lib "kernel32" Alias "CopyFileA" _
 (ByVal lpExistingFileName As String, _
 ByVal lpNewFileName As String, _
@@ -412,82 +416,86 @@ DoCmd.DeleteObject acTable, "sPrivEb"
 DoCmd.DeleteObject acTable, "sEbSum"
 End Sub
 
+' block out due to CatNotes.mdb dependecy and lack of use, tmc 27 Jun 19
+'
 Public Function IsNotzTable(tblName As String)
 config_log "IsNotzTable"
-Dim MyDB As DAO.Database
-'Dim stTbl As String
-Dim stStruct As String
-Dim notzDB As Database
-Dim stPathNnm As String
-
-'Dim tblNm As String
-'D_Path = RetrievePathFile()   '  Changed from DPath() 2/22/06
-N_Path = "C:\Program Files\EzCat"
-'REM-stPathNnm = NPath() & "\CatNotes.mdb"   '  Changed from DPath() 2/22/06
-stPathNnm = NPath() & "\CatNotes.mdb"
-'Look in CATnotes.mdb for the table
-Set notzDB = DBEngine.Workspaces(0).OpenDatabase(stPathNnm)
-
+'Dim MyDB As DAO.Database
+''Dim stTbl As String
+'Dim stStruct As String
 'Dim notzDB As Database
-Dim tblNm As String
-'Set notzDB = DBEngine.Workspaces(0).OpenDatabase("CATnotes.mdb")
-tblNm = "zGrow"
- IsNotzTable = False
- Dim i As Integer
- For i = 0 To notzDB.TableDefs.Count - 1
-    If notzDB.TableDefs(i).name = tblNm Then
- 'Dim MyDB As Database
- 'Set MyDB = CurrentDb
- 'IsTable = False
- 'Dim I As Integer
- 'For I = 0 To MyDB.TableDefs.Count - 1
- '   If MyDB.TableDefs(I).NAME = tblName Then
-       IsNotzTable = True
-       Exit For
-    End If
- Next i
- Set MyDB = Nothing
- 
-'We could also pass a reference to MyDB into the function.
+'Dim stPathNnm As String
+'
+''Dim tblNm As String
+''D_Path = RetrievePathFile()   '  Changed from DPath() 2/22/06
+'N_Path = "C:\Program Files\EzCat"
+''REM-stPathNnm = NPath() & "\CatNotes.mdb"   '  Changed from DPath() 2/22/06
+'stPathNnm = NPath() & "\CatNotes.mdb"
+''Look in CATnotes.mdb for the table
+'Set notzDB = DBEngine.Workspaces(0).OpenDatabase(stPathNnm)
+'
+''Dim notzDB As Database
+'Dim tblNm As String
+''Set notzDB = DBEngine.Workspaces(0).OpenDatabase("CATnotes.mdb")
+'tblNm = "zGrow"
+' IsNotzTable = False
+' Dim i As Integer
+' For i = 0 To notzDB.TableDefs.Count - 1
+'    If notzDB.TableDefs(i).name = tblNm Then
+' 'Dim MyDB As Database
+' 'Set MyDB = CurrentDb
+' 'IsTable = False
+' 'Dim I As Integer
+' 'For I = 0 To MyDB.TableDefs.Count - 1
+' '   If MyDB.TableDefs(I).NAME = tblName Then
+'       IsNotzTable = True
+'       Exit For
+'    End If
+' Next i
+' Set MyDB = Nothing
+'
+''We could also pass a reference to MyDB into the function.
 End Function
 
+' block out due to CatNotes.mdb dependecy and lack of use, tmc 27 Jun 19
+'
 Public Function IsNotHistTable(tblName As String)
 config_log "IsNotHistTable"
-
-Dim MyDB As DAO.Database
-'Dim stTbl As String
-Dim stStruct As String
-Dim notzDB As Database
-Dim stPathNnm As String
-'Dim tblNm As String
-' D_Path = RetrievePathFile()   '  Changed from DPath() 2/22/06
-N_Path = "C:\Program Files\EzCat"
-'REM- stPathNnm = NPath() & "\CatNotes.mdb" '  Changed from DPath() 2/22/06
-stPathNnm = NPath() & "\CatNotes.mdb"
-'Look in CATnotes.mdb for the table
-Set notzDB = DBEngine.Workspaces(0).OpenDatabase(stPathNnm)
-
+Debug.Assert False
+'Dim MyDB As DAO.Database
+''Dim stTbl As String
+'Dim stStruct As String
 'Dim notzDB As Database
-Dim tblNm As String
-'Set notzDB = DBEngine.Workspaces(0).OpenDatabase("CATnotes.mdb")
-tblNm = "zGroHist"
- IsNotHistTable = False
- Dim i As Integer
- For i = 0 To notzDB.TableDefs.Count - 1
-    If notzDB.TableDefs(i).name = tblNm Then
- 'Dim MyDB As Database
- 'Set MyDB = CurrentDb
- 'IsTable = False
- 'Dim I As Integer
- 'For I = 0 To MyDB.TableDefs.Count - 1
- '   If MyDB.TableDefs(I).NAME = tblName Then
-       IsNotHistTable = True
-       Exit For
-    End If
- Next i
- Set MyDB = Nothing
- 
-'We could also pass a reference to MyDB into the function.
+'Dim stPathNnm As String
+''Dim tblNm As String
+'' D_Path = RetrievePathFile()   '  Changed from DPath() 2/22/06
+'N_Path = "C:\Program Files\EzCat"
+''REM- stPathNnm = NPath() & "\CatNotes.mdb" '  Changed from DPath() 2/22/06
+'stPathNnm = NPath() & "\CatNotes.mdb"
+''Look in CATnotes.mdb for the table
+'Set notzDB = DBEngine.Workspaces(0).OpenDatabase(stPathNnm)
+'
+''Dim notzDB As Database
+'Dim tblNm As String
+''Set notzDB = DBEngine.Workspaces(0).OpenDatabase("CATnotes.mdb")
+'tblNm = "zGroHist"
+' IsNotHistTable = False
+' Dim i As Integer
+' For i = 0 To notzDB.TableDefs.Count - 1
+'    If notzDB.TableDefs(i).name = tblNm Then
+' 'Dim MyDB As Database
+' 'Set MyDB = CurrentDb
+' 'IsTable = False
+' 'Dim I As Integer
+' 'For I = 0 To MyDB.TableDefs.Count - 1
+' '   If MyDB.TableDefs(I).NAME = tblName Then
+'       IsNotHistTable = True
+'       Exit For
+'    End If
+' Next i
+' Set MyDB = Nothing
+'
+''We could also pass a reference to MyDB into the function.
 End Function
 
 Public Function fCountFiles(sPattern As String)

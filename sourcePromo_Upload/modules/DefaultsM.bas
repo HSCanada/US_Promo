@@ -1,6 +1,7 @@
 Option Compare Database
 Option Explicit
-
+' *** Clean ***, 27 Jun 19
+'
 ' no logging on this module -- just light-weight global references, tmc, 26 Jun 19
 'config_log ""
 

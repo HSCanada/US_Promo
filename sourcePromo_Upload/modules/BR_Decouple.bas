@@ -14,7 +14,6 @@ Private cConfig As Collection
 ' hard code this for now.  external file .env would be ideal
 Public Sub config_init()
     Set cConfig = New Collection
-    
    
     cConfig.Add "Promo10Upload.mdb", "APP_NAME"
     cConfig.Add "trevor.crowley@henryschein.ca", "OPERATOR_EMAIL"
@@ -27,7 +26,6 @@ Public Sub config_init()
     cConfig.Add "S:\BR\zDev\US_Promo\", "PATH_MAIN_QA"
     cConfig.Add "PromoBE.accdb", "PATH_DATA_QA"
     
-  
     cConfig.Add "S:\BR\zDev\US_Promo\DataSourceUS\Export\", "PATH_EXPORT_MARKETING_PROD"
     cConfig.Add "S:\BR\zDev\US_Promo\DataSourceUS\Export\", "PATH_EXPORT_ECOM_PROD"
     
@@ -40,9 +38,20 @@ Public Sub config_init()
     
     cConfig.Add "S:\BR\zDev\US_Promo\promo_upload.log", "PATH_LOG_FILE"
     
+    ' promo upload
+    cConfig.Add "DVLINFG", "FILE_PROMO_DVLINFG"
+    cConfig.Add "Promo.xls", "FILE_PROMO_EXCEL"
+    
+    cConfig.Add "S:\BR\Promo\", "PATH_PROMO"
+    cConfig.Add "S:\BR\Promo\\upload\", "PATH_PROMO_UPLOAD"
+    
+    cConfig.Add "S:\BR\zDev\US_Promo\promo\", "PATH_PROMO_QA"
+    cConfig.Add "S:\BR\zDev\US_Promo\promo\upload\", "PATH_PROMO_UPLOAD_QA"
+    
+    ' log setup
     config_log "BR_Decouple.config_init"
-  
     config_log "APP_START"
+    
     
  
 End Sub
@@ -84,7 +93,10 @@ Sub Test()
 End Sub
 
 Sub test2()
-Dim a As String
-a = InputBox("Enter the Server Path you want to replace (current).  EX: \\usnym3fs03\Data", _
-        "Server Path", "\\usnym3fs03\Data\dental\dentmkt")
+'    config_init
+
+' TC trailing \ logic? 18 Dec 17
+Debug.Print Application.CodeProject.Path
+'MsgBox config("PATH_PROMO")
+
 End Sub

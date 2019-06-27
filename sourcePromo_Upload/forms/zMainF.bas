@@ -366,7 +366,7 @@ Begin Form
                         0x8000000052006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff02000000e33ffe89f69f1b10b6780402 ,
-                        0x1c007002000000000000000000000000e0e24db05e2cd5010300000000010000 ,
+                        0x1c00700200000000000000000000000000e60a94302dd5010300000000010000 ,
                         0x0000000001004f006c0065000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000000a000201ffffffffffffffffffffffff000000000000000000000000 ,
@@ -2635,8 +2635,8 @@ Begin Form
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x00000000030000000ac1000008000000e93d0000ed060000000000002a3326f1 ,
-                        0xffffffff0100090000037960000001009a5f00000000050000000b0200000000 ,
+                        0x00000000030000000ac1000008000000e93d0000ed06000000000000cf192674 ,
+                        0x000000000100090000037960000001009a5f00000000050000000b0200000000 ,
                         0x050000000c02ed06e93d030000001e00070000001604ed06e93d000000000500 ,
                         0x00000b0200000000050000000c02ed06e93d050000000b020000000003000000 ,
                         0x1e00070000001604ed06e93d00000000050000000b0200000000050000000c02 ,
@@ -4761,7 +4761,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =22
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SelVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCT zVendor.ID, zVendor.Company FROM zVendor INNER JOIN zPromo ON zV"
@@ -4843,7 +4843,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =23
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SFselVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCTROW zVendor.ID, zVendor.Company FROM zVendor ORDER BY zVendor.Com"
@@ -5990,7 +5990,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =48
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="Combo119"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCTROW zVendor.ID, zVendor.Company FROM zVendor ORDER BY zVendor.Com"
@@ -6062,7 +6062,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =50
                     BoundColumn =1
-                    ColumnInfo ="\"\";\"\";\"Company Name\";\"\";\"10\";\"100\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
                     Name ="SelMnByVndr"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT DISTINCT zVendor.ID, zVendor.Company FROM zVendor INNER JOIN zPromo ON zV"
@@ -11043,7 +11043,7 @@ On Error GoTo Err_Default_Promo_Price_Cntrl_Rpt_Click
     Dim stDocName As String
     Dim stPath As String
     stDocName = "DefPrcCntrlR"
-    stPath = "\\usnym3fs03\Data\Dental\1User Data Marketing\Promos\" & ZEffYr() & ZEffMn() & _
+    stPath = config("PATH_PROMO") & ZEffYr() & ZEffMn() & _
     "DefaultedPromos" & Format(Now(), "yyyymmdd") & ".snp"
     
 '    DoCmd.OpenQuery "zWCSDescUQ"
@@ -11147,6 +11147,9 @@ Dim strConnectString As String
 Dim strFilePath As String
 Dim td As DAO.TableDef
 
+Dim stMyDir As String
+
+
   'Me![TestEffDt] = Format(Now(), "mm/dd/yyyy")
   Z_EffMn = Me![EffMn]
   Z_EffQtr = Me![EffQtr]
@@ -11159,31 +11162,32 @@ Dim td As DAO.TableDef
   UpLd.Visible = False
   CancelUpLd.Visible = False
   Me![NuVnd] = 0  'Means not new vendor
-
-  '***********************************************************************
-  '****                  ? Am I "Prod" or "QA" ?                     *****
-  '****                Find Path for Linked Tables                   *****
-  '****      Get path of mdb for [zPromo] aka [2KFLDTBL].[zEPromo]   *****
-  '****    Show version on screen, "Production db" or "QA Version"   *****                                        *****
-  '****                                                              *****
-  strConnectString = CurrentDb.TableDefs("zPromo").connect
-  strFilePath = Mid(strConnectString, InStr(strConnectString, "=") + 1)
-  'MsgBox strFilePath
-  If strFilePath = "\\usnym3fs03\Data\dental\dentmkt\2KFLDTBL.MDB" Then
-      'MsgBox "Tables are linked for the Production Version"
-      VerQA.Visible = False
-      VerProd.Visible = True
-      Z_QP = "Prod"
-  ElseIf strFilePath = "\\usnym3fs03\Data\promoQA\PromoData\2KFLDTBL.MDB" Then
+  
+    '************************************************************
+    '****                 Who / Where Am I?                 *****
+    '****             Production or QA Version?             *****
+    '****    Set local variable stPorQ, by file location    *****
+    '****                                                   *****
+    '************************************************************
+    stMyDir = Application.CodeProject.Path & "\"
+'    stMyNm = Application.CurrentProject.name
+'    stMyPath = Application.CurrentProject.Path
+    
+    If stMyDir = config("PATH_PROMO_QA") Then
       'MsgBox "Tables are linked for the QA Version"
       VerQA.Visible = True
       VerProd.Visible = False
       Z_QP = "Q/A"
-  Else
-  '    MsgBox "[zPromo] is in the wrong folder. It is neither in the " & _
-  '  "'Production' not the 'Q/A' folder. This version has gone Daffy Duck"
-  '    Z_QP = "??"
-  End If
+    ElseIf stMyDir = config("PATH_PROMO") Then
+      VerQA.Visible = False
+      VerProd.Visible = True
+      Z_QP = "Prod"
+    Else
+       Z_QP = "Daffy Duck"
+       MsgBox "This 'Promo' app is in the wrong folder. It is neither in the " & _
+       "'Production' not the 'Q/A' folder." 'stPorQ"
+       'Exit Sub
+    End If
   '****                                                              *****
   '****                                                              *****
   '***********************************************************************
@@ -11230,8 +11234,8 @@ stNuVnd = Me![NuVnd]
    DoCmd.DeleteObject acTable, "TmpPromo"
    DoCmd.CopyObject , "TmpPromo", acTable, "zTmpPromoStruct"
    DoCmd.TransferSpreadsheet acImport, 8, "TmpPromo", _
-      "\\usnym3fs03\Data\Dental\dentmkt\Promo\ProData\Promo.xls", True, "Promo!A1:AA2"
-      '"\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls", True, "Promo!A1:AA2"  '5/23/02"Sheet1!A1:AA2" /01"ProData!A1:AS2
+      config("PATH_PROMO") & " " & config("FILE_PROMO_EXCEL"), True, "Promo!A1:AA2"
+      '"\\2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls", True, "Promo!A1:AA2"  '5/23/02"Sheet1!A1:AA2" /01"ProData!A1:AS2
       
    'Search for existing Vendor Code record. Use VC from temp table.
    stVC = DLookup("[VendorCode]", "TmpPromo", "[ID] = 1")
@@ -11292,11 +11296,11 @@ stNuVnd = Me![NuVnd]
    'MsgBox "Flag 4"
 '02/28/2005 Change import here: Use FamilySet instead of ItemCode
 '   DoCmd.TransferSpreadsheet acImport, 8, "TmpIC", _
-'      "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls", True, "ItemCodes!A5:D205" ' 05/23/02 "Sheet1!A31:L231", /01"Sheet1!A31:R231"  '"ItemCodes!A1:G200"
+'      "\\2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls", True, "ItemCodes!A5:D205" ' 05/23/02 "Sheet1!A31:L231", /01"Sheet1!A31:R231"  '"ItemCodes!A1:G200"
 'IMPORT 200 rows from ItemCodes sheet of current Promo.xls
    DoCmd.TransferSpreadsheet acImport, 8, "PreIC", _
-      "\\usnym3fs03\Data\Dental\dentmkt\Promo\ProData\Promo.xls", True, "ItemCodes!A5:A205"
-      '"\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls", True, "ItemCodes!A5:A205" ' 05/23/02 "Sheet1!A31:L231", /01"Sheet1!A31:R231"  '"ItemCodes!A1:G200"
+      config("PATH_PROMO") & config("FILE_PROMO_EXCEL"), True, "ItemCodes!A5:A205"
+      '"\\2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls", True, "ItemCodes!A5:A205" ' 05/23/02 "Sheet1!A31:L231", /01"Sheet1!A31:R231"  '"ItemCodes!A1:G200"
    'MsgBox "Flag 5"
 '!!!!!!!!!!!!!!!!!!!!Here is where it is messing up!
    DoCmd.OpenQuery "ssICAppQ"
@@ -11328,16 +11332,16 @@ stNuVnd = Me![NuVnd]
    Next x
    'SECTION II
    stPromoNm = DLookup("[PromoNm]", "zPromo", "[RecID] = " & ZVar3())
-   stOldName = "\\usnym3fs03\Data\Dental\dentmkt\Promo\ProData\Promo.xls"
-   'stOldName = "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls"
-   stNewName = "\\usnym3fs03\Data\Dental\dentmkt\Promo\ProData\" & Format(Now(), "mmddyy") & _
+   stOldName = config("PATH_PROMO") & config("FILE_PROMO_EXCEL")
+   'stOldName = "\\2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls"
+   stNewName = config("PATH_PROMO") & Format(Now(), "mmddyy") & _
                stVC & Format(Time(), "hhmmss") & stText & ".xls"   'Left(stPromoNm, 12) & ".xls"
       'MsgBox stOldName
       'MsgBox "Flag 9, " & stNewName
    Name stOldName As stNewName ' Rename file.
       'MsgBox "Flag 10"
    MsgBox "The new " & stVC & " promotion " & stPromoNm & " has been added. " & _
-      "The data source file 'Promo.xls' has been renamed to " & stNewName & _
+      "The data source file '" & config("FILE_PROMO_EXCEL") & "' has been renamed to " & stNewName & _
       ".  Please purge old data source files regularly."
    Confirm.Visible = True
    Me![Confirm] = "Imported to " & ZImpYr() & ", Q " & ZImpQtr()
@@ -11507,13 +11511,13 @@ On Error GoTo Err_SetImp_Click
 Dim fs, i, FF
 Dim NmPath As String
 
-NmPath = "\\usnym3fs03\Data\Dental\dentmkt\Promo\ProData\Promo.xls"
+NmPath = config("PATH_PROMO") & config("FILE_PROMO_EXCEL")
 
 If fCountFiles(NmPath) > 0 Then
    FF = fCountFiles(NmPath)
 'Set fs = Application.FileSearch
 'With fs
-'    .LookIn = "\\usnym3fs03\Data\Dental\dentmkt\Promo\ProData\"
+'    .LookIn = "\\m3fs03\Data\Dental\dentmkt\Promo\ProData\"
 '    .FileName = "Promo.xls"
 '    If .Execute > 0 Then
         'Con
@@ -11533,8 +11537,8 @@ If fCountFiles(NmPath) > 0 Then
         Next i
         'When file not found...
         MsgBox "No file was found to import!  The file to import must " & _
-        "be named 'Promo.xls' and it must be located in " & _
-        "'\\usnym3fs03\Data\Dental\dentmkt\Promo\ProData\...'"
+        "be named '" & config("FILE_PROMO_EXCEL") & "' and it must be located in " & _
+        "'" & config("PATH_PROMO") & "...'"
         Exit Sub
 End If
 'End With
@@ -11921,6 +11925,7 @@ End Sub
 
 Private Sub EUpDt_Click()
 config_log "Form_zMainF - EUpDt_Click"
+
  On Error GoTo Err_EUpDt_Click
 
 Dim stMyDir As String
@@ -11934,15 +11939,13 @@ Dim stMyPath As String
 '****    Set local variable stPorQ, by file location    *****
 '****                                                   *****
 '************************************************************
-stMyDir = Application.CodeProject.Path
+stMyDir = Application.CodeProject.Path & "\"
 stMyNm = Application.CurrentProject.name
 stMyPath = Application.CurrentProject.Path
 
-If stMyDir = "X:\PromoQA" Then
+If stMyDir = config("PATH_PROMO_QA") Then
    stPorQ = "QA"
-ElseIf stMyDir = "X:\Dental\dentmkt\Promo" Then
-   stPorQ = "Prod"
-ElseIf stMyDir = "\\usnym3fs03\Data\Dental\dentmkt\Promo" Then
+ElseIf stMyDir = config("PATH_PROMO") Then
    stPorQ = "Prod"
 Else
    stPorQ = "Daffy Duck"
@@ -11964,7 +11967,7 @@ DoCmd.OpenQuery "DispMfgAQ"
 
     '*****************************************************************
     '****             Original/Future Web Version                *****
-    '****  Populate \\usnym3fs03\Data\ version of \2KFLDTBL.mdb  *****
+    '****  Populate \\m3fs03\Data\ version of \2KFLDTBL.mdb  *****
     '****  Link/refill zReadPromo, zReadItemSub, zReadGiftCode   *****
     '****                                                        *****
     '****       Runs in either "Prod" or "QA" version,           *****
@@ -12005,16 +12008,16 @@ DoCmd.OpenQuery "DispMfgAQ"
     Me![LastUpDt] = Format(Now(), "mm/dd/yyyy, hh:mm:ss AMPM")
     
     'See RZUtil CopyFile for following procedure: CopyString = "CMD.EXE /C COPY " & SourceFile & " " & DestFile
-    'CopyFile "\\usnym3fs03\Data\Dental\dentmkt\2KFLDTBL.mdb", "\\nym2212t\corpshare\Dental\dentmkt\2KFLDTBL.mdb"
+    'CopyFile "\\m3fs03\Data\Dental\dentmkt\2KFLDTBL.mdb", "\\2212t\corpshare\Dental\dentmkt\2KFLDTBL.mdb"
     
     '****************************************************************
     '****        Current/Legacy Web Version (M:\drive)          *****
-    '****    Populate \\nym2212t\ version of \2KFLDTBL.mdb      *****
+    '****    Populate \\2212t\ version of \2KFLDTBL.mdb      *****
     '****   REM out CopyFile, duplicate "zRead..." processes    *****
     '****  Link/refill mReadPromo, mReadItemSub, mReadGiftCode  *****
     '****                                                       *****
     '****  REM: 9/23/09 QA version reLinks to 2KFLDTBL.mdb in   *****
-    '****  REM:  \\nym2212t\corpshare\Dental\dentmkt\Promo      *****
+    '****  REM:  \\2212t\corpshare\Dental\dentmkt\Promo      *****
     '****                                                       *****
     '****************************************************************
     'If stPorQ = "Prod" Then
@@ -12063,8 +12066,7 @@ DoCmd.OpenQuery "DispMfgAQ"
     '****  David.Wyatt@henryschein.com;", Added 2/16/11   *****
     '****      CC: "ron.kralik@henryschein.com"           *****
     '**********************************************************
-       DoCmd.SendObject , , , "Eric.Silverstein@henryschein.com;Marie.Catalano@henryschein.com;" & _
-       "David.Wyatt@henryschein.com;", "ron.kralik@henryschein.com", _
+       DoCmd.SendObject , , , config("OPERATOR_EMAIL"), _
        , "Promotion UpDates", "The 'X' and 'M' drive Promotion tables have been updated with " & _
        "the latest approved submissions. DB Source is " & stPorQ & ": " & _
        "Path and db: " & stMyPath & " and " & stMyNm & " v " & ZVer(), False
@@ -12080,7 +12082,7 @@ DoCmd.OpenQuery "DispMfgAQ"
     '****         Populate for Kevin Fitzpatrick and Laura Warrin            *****
     '****                      and Judy Liang x6249                          *****
     '****                           "K" drive                                *****
-    '****     \\usnymefs01\Corpshare\E-Commerce\Redemptions\DntPromo.mdb     *****
+    '****     \\mefs01\Corpshare\E-Commerce\Redemptions\DntPromo.mdb     *****
     '****                           2009 07 02                               *****
     '****        Link/refill zBsPromo, zBsBuy, zBsItemSub, zBsGiftCode       *****
     '****                    2009 07 07 Dental not Zahn                      *****
@@ -12137,8 +12139,7 @@ DoCmd.OpenQuery "DispMfgAQ"
        'Fuggetaboutit - Skip SendObject
     Else
         If DLookup("[SWOCount]", "SWOCountQ") > 0 Then
-            DoCmd.SendObject acSendQuery, "SWOpromoVIPQ", acFormatXLS, "Eric.Silverstein@henryschein.com;", _
-            "marie.catalano@henryschein.com;riczep@henryschein.com", , "VIP entered SWO Promotions", _
+            DoCmd.SendObject acSendQuery, "SWOpromoVIPQ", acFormatXLS, config("OPERATOR_EMAIL"), , "VIP entered SWO Promotions", _
             "The attached report shows current VIP entered SWO Promotions. Please review them to be sure " & _
             "they are included in all appropriate systems and media. DB Source is " & stPorQ & ": " & _
             "Path and db: " & stMyPath & " and " & stMyNm & " v " & ZVer(), False
@@ -12270,12 +12271,12 @@ Dim stChar As String
 Dim stText As String
 'Dim stDocName As String
 'Dim stLink As String
-NmPath = "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\"
+NmPath = config("PATH_PROMO_UPLOAD")
 
 ProFind = "Promo*.xls" 'Add files and rename all to Promo(plus anything to non-unique it)
     'When run code will change 1st name to Promo.xls so I can use the code from the
     'original procedure.
-ProNew = "Promo.xls"
+ProNew = config("FILE_PROMO_EXCEL")
 
 If fCountFiles(NmPath & ProFind) > 0 Then
     FF = fCountFiles(NmPath & ProFind)
@@ -12306,7 +12307,7 @@ If fCountFiles(NmPath & ProFind) > 0 Then
    DoCmd.DeleteObject acTable, "TmpPromo"
    DoCmd.CopyObject , "TmpPromo", acTable, "zTmpPromoStruct"
    DoCmd.TransferSpreadsheet acImport, 8, "TmpPromo", _
-      "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls", True, "Promo!A1:AA2"  '5/23/02"Sheet1!A1:AA2" /01"ProData!A1:AS2
+      config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_EXCEL"), True, "Promo!A1:AA2"  '5/23/02"Sheet1!A1:AA2" /01"ProData!A1:AS2
    'Search for existing Vendor Code record. Use VC from temp table.
    stVC = DLookup("[VendorCode]", "TmpPromo", "[ID] = 1")
        'MsgBox "VendorCode is " & stVC
@@ -12347,7 +12348,7 @@ If fCountFiles(NmPath & ProFind) > 0 Then
    DoCmd.CopyObject , "TmpIC", acTable, "zTmpICStruct"
       'MsgBox "Flag 4"
    DoCmd.TransferSpreadsheet acImport, 8, "TmpIC", _
-      "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls", True, "ItemCodes!A5:D205" ' 05/23/02 "Sheet1!A31:L231", /01"Sheet1!A31:R231"  '"ItemCodes!A1:G200"
+      config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_EXCEL"), True, "ItemCodes!A5:D205" ' 05/23/02 "Sheet1!A31:L231", /01"Sheet1!A31:R231"  '"ItemCodes!A1:G200"
 '      MsgBox "Flag 5"
 '!!!!!!!!!!!!!!!!!!!!Here is where it is messing up!
    DoCmd.OpenQuery "zICAppQ"
@@ -12369,8 +12370,8 @@ If fCountFiles(NmPath & ProFind) > 0 Then
    Next x
    'SECTION II
    stPromoNm = DLookup("[PromoNm]", "zPromo", "[RecID] = " & ZVar3())
-   stOldName = "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\Promo.xls"
-   stNewName = "\\Nym2212t\Corpshare\Dental\dentmkt\Promo\ProData\" & Format(Now(), "mmddyy") & _
+   stOldName = config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_EXCEL")
+   stNewName = config("PATH_PROMO_UPLOAD") & Format(Now(), "mmddyy") & _
                stVC & Format(Time(), "hhmmss") & stText & ".xls"   'Left(stPromoNm, 12) & ".xls"
       'MsgBox stOldName
       'MsgBox "Flag 8, " & stNewName
@@ -12488,7 +12489,7 @@ config_log "Form_zMainF - UpDtBuySet_Click"
 On Error GoTo Err_UpDtBuySet_Click
     '*************************************************************************
     '****       Populate for Kevin Fitzpatrick and Laura Warrin          *****
-    '****   \\usnymefs01\Corpshare\E-Commerce\Redemptions\DntPromo.mdb   *****
+    '****   \\mefs01\Corpshare\E-Commerce\Redemptions\DntPromo.mdb   *****
     '****                         2009 07 02                             *****
     '****      Link/refill zBsPromo, zBsBuy, zBsItemSub, zBsGiftCode     *****
     '****                  2009 07 07 Dental not Zahn                    *****
@@ -13354,13 +13355,13 @@ On Error GoTo Err_UpLd_Click
 '****                                                           *****
 '****    from C:\temp                                           *****
 '****    to                                                     *****
-'****    \\usnym3fs03\Data\Dental\dentmkt\Promo\ArchiveUpLds    *****
+'****    \\m3fs03\Data\Dental\dentmkt\Promo\ArchiveUpLds    *****
 '****                                                           *****
 '********************************************************************
 
 stNow = Format(Now(), "yyyymmddhhnnss")
-stSrcPath = "\\usnym3fs03\Data\UpLdz\DVLINFG."   '   C:\temp\DVLINFG."
-stDstPath = "\\usnym3fs03\Data\Dental\dentmkt\Promo\ArchiveUpLds\DP" & stNow & "DVLINFG."
+stSrcPath = config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & "."   '   C:\temp\DVLINFG."
+stDstPath = config("PATH_PROMO") & "archive\" & "DP" & stNow & config("FILE_PROMO_DVLINFG") & "."
 'On Error Resume Next
 For x = 1 To 4
    If x = 1 Then y = "BAT"
@@ -13376,12 +13377,12 @@ Next
 'DoCmd.TransferSpreadsheet acImport, 3, _
     "Employees","C:\Lotus\Newemps.wk3", True, "A1:G12"
 DoCmd.TransferSpreadsheet acExport, acSpreadsheetTypeExcel9, "DftULSrptQ", _
-    "\\usnym3fs03\Data\Dental\dentmkt\Promo\PromoUpLdRpts\DftPro" & stNow & ".xls", True
+    config("PATH_PROMO") & "DftPro" & stNow & ".xls", True
 
-   DeleteFile ("\\usnym3fs03\Data\UpLdz\DVLINFG.log")
-   DeleteFile ("\\usnym3fs03\Data\UpLdz\DVLINFG.ftp")
-   DeleteFile ("\\usnym3fs03\Data\UpLdz\DVLINFG.bat")
-   DeleteFile ("\\usnym3fs03\Data\UpLdz\DVLINFG.txt")
+   DeleteFile (config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".log")
+   DeleteFile (config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".ftp")
+   DeleteFile (config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".bat")
+   DeleteFile (config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".txt")
    UpLdLogVuF.Requery
 
 Exit_UpLd_Click:
@@ -13402,9 +13403,9 @@ On Error GoTo Err_VuDestinatnFiles_Click
 
     stAppName = "explorer.exe"
     'VIP DropOff is Promo db's Import file-source
-    stShell = Shell(stAppName & " \\usnym3fs03\Data\UpLdz\", 1)
+    stShell = Shell(stAppName & " " & config("PATH_PROMO_UPLOAD"), 1)
     '\\nahsinyhqdw07\Vip_Promos_prod\Vip_Dropoff\update_vip_buffer.mdb
-'\\usnym3fs03\Data\Dental\dentmkt\Promo\ArchiveUpLds
+'\\m3fs03\Data\Dental\dentmkt\Promo\ArchiveUpLds
 
 Exit_VuDestinatnFiles_Click:
     Exit Sub
@@ -13532,12 +13533,12 @@ On Error GoTo Err_TestArchive_Click
 '****                                                           *****
 '****    from C:\temp                                           *****
 '****    to                                                     *****
-'****    \\usnym3fs03\Data\Dental\dentmkt\Promo\ArchiveUpLds    *****
+'****    \\m3fs03\Data\Dental\dentmkt\Promo\ArchiveUpLds    *****
 '****                                                           *****
 '********************************************************************
 stNow = Format(Now(), "yyyymmddhhnnss")
-stSrcPath = "\\usnym3fs03\Data\UpLdz\DVLINFG."
-stDstPath = "\\usnym3fs03\Data\Dental\dentmkt\Promo\ArchiveUpLds\DP" & stNow & "DVLINFG."
+stSrcPath = config("PATH_PROMO_UPLOAD") & "DVLINFG."
+stDstPath = config("PATH_PROMO") & "archive\" & "DP" & stNow & config("FILE_PROMO_DVLINFG") & "."
 'On Error Resume Next
 For x = 1 To 4
    If x = 1 Then y = "BAT"
@@ -13568,9 +13569,9 @@ On Error GoTo Err_VuArcFldr_Click
 
     stAppName = "explorer.exe"
     'VIP DropOff is Promo db's Import file-source
-    stShell = Shell(stAppName & " \\usnym3fs03\Data\Dental\dentmkt\Promo\ArchiveUpLds\", 1)
+    stShell = Shell(stAppName & " " & config("PATH_PROMO") & "archive\", 1)
     '\\nahsinyhqdw07\Vip_Promos_prod\Vip_Dropoff\update_vip_buffer.mdb
-    '\\usnym3fs03\Data\Dental\dentmkt\Promo\ArchiveUpLds
+    '\\m3fs03\Data\Dental\dentmkt\Promo\ArchiveUpLds
   
 
 Exit_VuArcFldr_Click:
@@ -13605,13 +13606,13 @@ On Error GoTo Err_SwoUpLd_Click
 '****                                                           *****
 '****    from C:\temp                                           *****
 '****    to                                                     *****
-'****    \\usnym3fs03\Data\Dental\dentmkt\Promo\ArchiveUpLds    *****
+'****    \\m3fs03\Data\Dental\dentmkt\Promo\ArchiveUpLds    *****
 '****                                                           *****
 '********************************************************************
 
 stNow = Format(Now(), "yyyymmddhhnnss")
-stSrcPath = "\\usnym3fs03\Data\UpLdz\DVLINFG."
-stDstPath = "\\usnym3fs03\Data\Dental\dentmkt\Promo\ArchiveUpLds\SW" & stNow & "DVLINFG."
+stSrcPath = config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & "."
+stDstPath = config("PATH_PROMO") & "archive\" & "SW" & stNow & config("FILE_PROMO_DVLINFG") & "."
 'On Error Resume Next
 For x = 1 To 4
    If x = 1 Then y = "BAT"
@@ -13623,10 +13624,10 @@ For x = 1 To 4
    stDST = stDstPath & y
    CopyFile stSrc, stDST
 Next
-   DeleteFile ("\\usnym3fs03\Data\UpLdz\DVLINFG.log")
-   DeleteFile ("\\usnym3fs03\Data\UpLdz\DVLINFG.ftp")
-   DeleteFile ("\\usnym3fs03\Data\UpLdz\DVLINFG.bat")
-   DeleteFile ("\\usnym3fs03\Data\UpLdz\DVLINFG.txt")
+   DeleteFile (config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".log")
+   DeleteFile (config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".ftp")
+   DeleteFile (config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".bat")
+   DeleteFile (config("PATH_PROMO_UPLOAD") & config("FILE_PROMO_DVLINFG") & ".txt")
 
 Exit_SwoUpLd_Click:
     Exit Sub
@@ -13646,7 +13647,7 @@ On Error GoTo Err_VuFullTxt_Click
 
     stAppName = "explorer.exe"
     'VIP DropOff is Promo db's Import file-source
-    stShell = Shell(stAppName & " \\usnym3fs03\Data\Dental\dentmkt\Promo\PromoUpLdRpts\", 1)
+    stShell = Shell(stAppName & " " & config("PATH_PROMO"), 1)
 
 Exit_VuFullTxt_Click:
     Exit Sub
