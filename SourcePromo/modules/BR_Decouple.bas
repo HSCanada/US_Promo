@@ -16,29 +16,29 @@ Public Sub config_init()
     Set cConfig = New Collection
     
    
-    cConfig.Add "Promo10Copy-20170911-working.mdb", "APP_NAME"
+    cConfig.Add "Promo10-20170911.mdb", "APP_NAME"
     cConfig.Add "trevor.crowley@henryschein.ca", "OPERATOR_EMAIL"
     cConfig.Add "IT", "OPERATOR_NAME"
     cConfig.Add "THREEM", "3MD_CODE"
     
-    cConfig.Add "S:\Business Reporting\Promo\", "PATH_MAIN_PROD"
+    cConfig.Add "S:\BR\zDev\US_Promo\", "PATH_MAIN_PROD"
     cConfig.Add "PromoData\", "PATH_DATA_PROD"
     
-    cConfig.Add "S:\Business Reporting\zDev\US_Promo\", "PATH_MAIN_QA"
+    cConfig.Add "S:\BR\zDev\US_Promo\", "PATH_MAIN_QA"
     cConfig.Add "PromoBE.accdb", "PATH_DATA_QA"
     
   
-    cConfig.Add "S:\Business Reporting\zDev\US_Promo\DataSourceUS\Export\", "PATH_EXPORT_MARKETING_PROD"
-    cConfig.Add "S:\Business Reporting\zDev\US_Promo\DataSourceUS\Export\", "PATH_EXPORT_ECOM_PROD"
+    cConfig.Add "S:\BR\zDev\US_Promo\DataSourceUS\Export\", "PATH_EXPORT_MARKETING_PROD"
+    cConfig.Add "S:\BR\zDev\US_Promo\DataSourceUS\Export\", "PATH_EXPORT_ECOM_PROD"
     
-    cConfig.Add "S:\Business Reporting\zDev\US_Promo\DataSourceUS\Vip\", "PATH_VIP_PROD"
-    cConfig.Add "S:\Business Reporting\zDev\US_Promo\DataSourceUS\QA\", "PATH_VIP_QA"
+    cConfig.Add "S:\BR\zDev\US_Promo\DataSourceUS\Vip\", "PATH_VIP_PROD"
+    cConfig.Add "S:\BR\zDev\US_Promo\DataSourceUS\QA\", "PATH_VIP_QA"
     cConfig.Add "https://vendor.henryschein.com/FormStaticDisplay.aspx?PAGE=PromoFaqdental.com", "URL_VIP_PROD"
     
     cConfig.Add "ARCPDTA71", "PRODUCTION_SERVER_FILE_LIBRARY"
     cConfig.Add "ARCQDTA71", "TEST_SERVER_FILE_LIBRARY"
     
-    cConfig.Add "S:\Business Reporting\zDev\US_Promo\promo.log", "PATH_LOG_FILE"
+    cConfig.Add "S:\BR\zDev\US_Promo\promo.log", "PATH_LOG_FILE"
     
     config_log "BR_Decouple.config_init"
   
