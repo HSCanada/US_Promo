@@ -1,8 +1,9 @@
 Option Compare Database
 Option Explicit
 
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 ' *** Clean ***, 27 Jun 19
-'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Declare PtrSafe Function apiCopyFile Lib "kernel32" Alias "CopyFileA" _
 (ByVal lpExistingFileName As String, _

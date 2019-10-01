@@ -4,8 +4,8 @@ Begin
     Action ="MsgBox"
     Comment ="Upload Defaulted Promotions to AS400"
     Argument ="Not yet implemented"
-    Argument ="-1"
     Argument ="0"
+    Argument ="3"
 End
 Begin
     Action ="StopMacro"
@@ -716,478 +716,479 @@ Begin
 End
 Begin
     Comment ="_AXL: to AS400</Comment><Action Name=\"MessageBox\"><Argument Name=\"Message\">N"
-        "ot yet implemented</Argument></Action><Action Name=\"StopMacro\"/><Comment>QA vs"
-        " Production - Look for Module1, \"SendFileToServer\" function - Set \"T\" test o"
-        "r \"P\" production</Comme"
+        "ot yet implemented</Argument><Argument Name=\"Beep\">No</Argument><Argument Name"
+        "=\"Type\">Warning!</Argument></Action><Action Name=\"StopMacro\"/><Comment>QA vs"
+        " Production - Look for "
 End
 Begin
-    Comment ="_AXL:nt><Comment>****CURRENT SETTING**** </Comment><Comment>       \"P\" = Produ"
-        "ction</Comment><Comment>For \"T\" Add \"StopMacro\" below \"TransferText\" comma"
-        "nds</Comment><Comment>ReSet GloVars - Will show all the month and year data calc"
-        "ulated</Comment><Acti"
+    Comment ="_AXL:Module1, \"SendFileToServer\" function - Set \"T\" test or \"P\" production"
+        "</Comment><Comment>****CURRENT SETTING**** </Comment><Comment>       \"P\" = Pro"
+        "duction</Comment><Comment>For \"T\" Add \"StopMacro\" below \"TransferText\" com"
+        "mands</Comment><Comment>ReS"
 End
 Begin
-    Comment ="_AXL:on Name=\"OpenForm\"><Argument Name=\"FormName\">DefaultsF</Argument><Argum"
-        "ent Name=\"DataMode\">Read Only</Argument></Action><Comment>[DefaultsF] property"
-        " [OnClose] will set Global Variables for the Reporting Period</Comment><Action N"
-        "ame=\"CloseWindow\"><"
+    Comment ="_AXL:et GloVars - Will show all the month and year data calculated</Comment><Act"
+        "ion Name=\"OpenForm\"><Argument Name=\"FormName\">DefaultsF</Argument><Argument "
+        "Name=\"DataMode\">Read Only</Argument></Action><Comment>[DefaultsF] property [On"
+        "Close] will set Glo"
 End
 Begin
-    Comment ="_AXL:Argument Name=\"ObjectType\">Form</Argument><Argument Name=\"ObjectName\">D"
-        "efaultsF</Argument></Action><Comment>-- 2. Process Dental Defaulted Promotions -"
-        "-</Comment><Comment> \"DP\" &amp; Day(Date()) &amp; Hour(Time()) &amp; Minute(Ti"
-        "me()) &amp; Second("
+    Comment ="_AXL:bal Variables for the Reporting Period</Comment><Action Name=\"CloseWindow\""
+        "><Argument Name=\"ObjectType\">Form</Argument><Argument Name=\"ObjectName\">Defa"
+        "ultsF</Argument></Action><Comment>-- 2. Process Dental Defaulted Promotions --</"
+        "Comment><Comment> "
 End
 Begin
-    Comment ="_AXL:Time())</Comment><Action Name=\"OpenForm\"><Argument Name=\"FormName\">SetR"
-        "efF</Argument></Action><Comment>      [DefaultsF] property [OnClose] will set Gl"
-        "obal Variables for the Reporting Period</Comment><Action Name=\"CloseWindow\"><A"
-        "rgument Name=\"Objec"
+    Comment ="_AXL:\"DP\" &amp; Day(Date()) &amp; Hour(Time()) &amp; Minute(Time()) &amp; Seco"
+        "nd(Time())</Comment><Action Name=\"OpenForm\"><Argument Name=\"FormName\">SetRef"
+        "F</Argument></Action><Comment>      [DefaultsF] property [OnClose] will set Glob"
+        "al Variables for th"
 End
 Begin
-    Comment ="_AXL:tType\">Form</Argument><Argument Name=\"ObjectName\">SetRefF</Argument></Ac"
-        "tion><Comment>Export [DftULQ] to \"\\\\usnym3fs03\\Data\\UpLdz\\DVLINFG.txt\" Us"
-        "e fixed width specs \"DftExpSpec\"</Comment><Action Name=\"ImportExportText\"><A"
-        "rgument Name=\"TransferType\""
+    Comment ="_AXL:e Reporting Period</Comment><Action Name=\"CloseWindow\"><Argument Name=\"O"
+        "bjectType\">Form</Argument><Argument Name=\"ObjectName\">SetRefF</Argument></Act"
+        "ion><Comment>Export [DftULQ] to \"\\\\usnym3fs03\\Data\\UpLdz\\DVLINFG.txt\" Use"
+        " fixed width specs \"DftExp"
 End
 Begin
-    Comment ="_AXL:>Export Delimited</Argument><Argument Name=\"SpecificationName\">DftULQExpS"
-        "pec</Argument><Argument Name=\"TableName\">DftULQ</Argument><Argument Name=\"Fil"
-        "eName\">=\"\\\\usnym3fs03\\Data\\UpLdz\\DVLINFG.txt\"</Argument></Action><Commen"
-        "t>[DftULQ]&gt;[DftULSQ]&gt"
+    Comment ="_AXL:Spec\"</Comment><Action Name=\"ImportExportText\"><Argument Name=\"Transfer"
+        "Type\">Export Delimited</Argument><Argument Name=\"SpecificationName\">DftULQExp"
+        "Spec</Argument><Argument Name=\"TableName\">DftULQ</Argument><Argument Name=\"Fi"
+        "leName\">=\"\\\\usnym3fs03\\"
 End
 Begin
-    Comment ="_AXL:;[DftULPreQ]&gt;[DftULPrePreQ]&gt;[BuyNgetQ]&gt;[BuyNgetSamePreQ]&gt;[zProm"
-        "o]+[zItemSub]</Comment><Comment>20080805- add [Send] = \"Y\" field</Comment><Com"
-        "ment>=\"About to launch 'OnClickSend()'. Note Promo Upload Reference # \" &amp; "
-        "ZRef() &amp; \". &"
+    Comment ="_AXL:Data\\UpLdz\\DVLINFG.txt\"</Argument></Action><Comment>[DftULQ]&gt;[DftULSQ"
+        "]&gt;[DftULPreQ]&gt;[DftULPrePreQ]&gt;[BuyNgetQ]&gt;[BuyNgetSamePreQ]&gt;[zPromo"
+        "]+[zItemSub]</Comment><Comment>20080805- add [Send] = \"Y\" field</Comment><Comm"
+        "ent>=\"About to lau"
 End
 Begin
-    Comment ="_AXL:lt;Esc&gt; to cancel.</Comment><Action Name=\"MessageBox\"><Argument Name=\""
-        "Message\">=\"About to launch 'OnClickSend()'. Note Promo Upload Reference # \" &"
-        "amp; ZRef()</Argument></Action><Comment>OnClickSend() </Comment><Action Name=\"R"
-        "unCode\"><Argument N"
+    Comment ="_AXL:nch 'OnClickSend()'. Note Promo Upload Reference # \" &amp; ZRef() &amp; \""
+        ". &lt;Esc&gt; to cancel.</Comment><Action Name=\"MessageBox\"><Argument Name=\"M"
+        "essage\">=\"About to launch 'OnClickSend()'. Note Promo Upload Reference # \" &a"
+        "mp; ZRef()</Argument>"
 End
 Begin
-    Comment ="_AXL:ame=\"FunctionName\">OnClickSend()</Argument></Action><Comment>ZRefF - show"
-        "s file reference number</Comment><Comment>- End Promo UpLoad -  The following co"
-        "de is informational only</Comment><Action Name=\"StopMacro\"/><Comment>MacFlag A"
-        "</Comment><Action"
+    Comment ="_AXL:</Action><Comment>OnClickSend() </Comment><Action Name=\"RunCode\"><Argumen"
+        "t Name=\"FunctionName\">OnClickSend()</Argument></Action><Comment>ZRefF - shows "
+        "file reference number</Comment><Comment>- End Promo UpLoad -  The following code"
+        " is informational"
 End
 Begin
-    Comment ="_AXL: Name=\"MessageBox\"><Argument Name=\"Message\">MacFlag A</Argument></Actio"
-        "n><Comment>ZRefF - shows file reference number</Comment><Action Name=\"OpenForm\""
-        "><Argument Name=\"FormName\">ZRefF</Argument></Action><Comment>*****  TESTING: F"
-        "or Testing, Add Temp"
+    Comment ="_AXL: only</Comment><Action Name=\"StopMacro\"/><Comment>MacFlag A</Comment><Act"
+        "ion Name=\"MessageBox\"><Argument Name=\"Message\">MacFlag A</Argument></Action>"
+        "<Comment>ZRefF - shows file reference number</Comment><Action Name=\"OpenForm\">"
+        "<Argument Name=\"FormN"
 End
 Begin
-    Comment ="_AXL:orary StopMacro  *****</Comment><Comment>-- Log 4 Comparison - Append SubTo"
-        "tals --</Comment><Comment>[YrMnResultsAQ] appends this Month's SubTotals to [Yea"
-        "rMnSubTtls]</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">YrM"
-        "nResultsAQ</Argum"
+    Comment ="_AXL:ame\">ZRefF</Argument></Action><Comment>*****  TESTING: For Testing, Add Te"
+        "mporary StopMacro  *****</Comment><Comment>-- Log 4 Comparison - Append SubTotal"
+        "s --</Comment><Comment>[YrMnResultsAQ] appends this Month's SubTotals to [YearMn"
+        "SubTtls]</Comm"
 End
 Begin
-    Comment ="_AXL:ent></Action><Comment>Send copy of  [YrMnResults] to RGZ</Comment><Action N"
+    Comment ="_AXL:ent><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">YrMnResultsAQ</"
+        "Argument></Action><Comment>Send copy of  [YrMnResults] to RGZ</Comment><Action N"
         "ame=\"EMailDatabaseObject\"><Argument Name=\"ObjectType\">Table</Argument><Argum"
-        "ent Name=\"ObjectName\">YearMnSubTtls</Argument><Argument Name=\"OutputFormat\">"
-        "MicrosoftExcelBiff8(*"
+        "ent Name=\"ObjectName\""
 End
 Begin
-    Comment ="_AXL:.xls)</Argument><Argument Name=\"To\">Richard.Zepernick@henryschein.com</Ar"
-        "gument><Argument Name=\"Subject\">=\"RGZ - Review for Dups!!! - YearMn Privilege"
-        "s SubTotals as of \" &amp; ZAsOf()</Argument><Argument Name=\"MessageText\">Appe"
-        "nds w/ each run to [Y"
+    Comment ="_AXL:>YearMnSubTtls</Argument><Argument Name=\"OutputFormat\">MicrosoftExcelBiff"
+        "8(*.xls)</Argument><Argument Name=\"To\">Richard.Zepernick@henryschein.com</Argu"
+        "ment><Argument Name=\"Subject\">=\"RGZ - Review for Dups!!! - YearMn Privileges "
+        "SubTotals as of \" &a"
 End
 Begin
-    Comment ="_AXL:earMnSubTtls] so, multiple runs result in Dups - Comparison Log of Sub and "
-        "Grand Totals for the monthly Earned, AutoPay, Colgate, Welcome, Web and Bonus po"
-        "ints files.</Argument><Argument Name=\"EditMessage\">No</Argument></Action><Comm"
-        "ent>Subject: =\""
+    Comment ="_AXL:mp; ZAsOf()</Argument><Argument Name=\"MessageText\">Appends w/ each run to"
+        " [YearMnSubTtls] so, multiple runs result in Dups - Comparison Log of Sub and Gr"
+        "and Totals for the monthly Earned, AutoPay, Colgate, Welcome, Web and Bonus poin"
+        "ts files.</Argu"
 End
 Begin
-    Comment ="_AXL:RGZ - Review for Dups!!! - YearMn Privileges SubTotals as of \" &amp; ZAsOf"
-        "()</Comment><Comment>Msg Body - Appends w/ each run to [YearMnSubTtls] so, multi"
-        "ple runs result in Dups - Comparison Log of Sub and Grand Totals for the monthly"
-        " Earned, AutoP"
+    Comment ="_AXL:ment><Argument Name=\"EditMessage\">No</Argument></Action><Comment>Subject:"
+        " =\"RGZ - Review for Dups!!! - YearMn Privileges SubTotals as of \" &amp; ZAsOf("
+        ")</Comment><Comment>Msg Body - Appends w/ each run to [YearMnSubTtls] so, multip"
+        "le runs result in"
 End
 Begin
-    Comment ="_AXL:ay, Colgate, Welcome, Web and Bonus points files.</Comment><Comment>To: RGZ"
-        "</Comment><Comment>-- Send Email Reports, notices --</Comment><Comment>Send copy"
-        " of [ACHaccountsQ] to RGZ</Comment><Action Name=\"EMailDatabaseObject\"><Argumen"
-        "t Name=\"ObjectT"
+    Comment ="_AXL: Dups - Comparison Log of Sub and Grand Totals for the monthly Earned, Auto"
+        "Pay, Colgate, Welcome, Web and Bonus points files.</Comment><Comment>To: RGZ</Co"
+        "mment><Comment>-- Send Email Reports, notices --</Comment><Comment>Send copy of "
+        "[ACHaccountsQ"
 End
 Begin
-    Comment ="_AXL:ype\">Query</Argument><Argument Name=\"ObjectName\">ACHaccountsQ</Argument>"
-        "<Argument Name=\"OutputFormat\">MicrosoftExcelBiff8(*.xls)</Argument><Argument N"
-        "ame=\"To\">Gene.Leddy@henryschein.com</Argument><Argument Name=\"Bcc\">Richard.Z"
-        "epernick@henryschein.c"
+    Comment ="_AXL:] to RGZ</Comment><Action Name=\"EMailDatabaseObject\"><Argument Name=\"Obj"
+        "ectType\">Query</Argument><Argument Name=\"ObjectName\">ACHaccountsQ</Argument><"
+        "Argument Name=\"OutputFormat\">MicrosoftExcelBiff8(*.xls)</Argument><Argument Na"
+        "me=\"To\">Gene.Leddy@he"
 End
 Begin
-    Comment ="_AXL:om</Argument><Argument Name=\"Subject\">=\"ACH Accounts as of \" &amp; ZAsO"
-        "f()</Argument><Argument Name=\"MessageText\">Each account receives 500, 750 or 1"
-        "000 POINTS through the Privileges Program</Argument><Argument Name=\"EditMessage"
-        "\">No</Argument></Act"
+    Comment ="_AXL:nryschein.com</Argument><Argument Name=\"Bcc\">Richard.Zepernick@henryschei"
+        "n.com</Argument><Argument Name=\"Subject\">=\"ACH Accounts as of \" &amp; ZAsOf("
+        ")</Argument><Argument Name=\"MessageText\">Each account receives 500, 750 or 100"
+        "0 POINTS through the "
 End
 Begin
-    Comment ="_AXL:ion><Comment>Subject - =\"ACH Accounts as of \" &amp;  ZAsOf()</Comment><Co"
-        "mment>Msg Body - Each account receives 500, 750 or 1000 POINTS through the Privi"
-        "leges Program</Comment><Comment>To: Gene.Leddy@henryschein.com</Comment><Comment"
-        ">Send copy of ["
+    Comment ="_AXL:Privileges Program</Argument><Argument Name=\"EditMessage\">No</Argument></"
+        "Action><Comment>Subject - =\"ACH Accounts as of \" &amp;  ZAsOf()</Comment><Comm"
+        "ent>Msg Body - Each account receives 500, 750 or 1000 POINTS through the Privile"
+        "ges Program</Comm"
 End
 Begin
-    Comment ="_AXL:SumTotalUQ] </Comment><Action Name=\"EMailDatabaseObject\"><Argument Name=\""
-        "ObjectType\">Query</Argument><Argument Name=\"ObjectName\">SumTotalUQ</Argument>"
-        "<Argument Name=\"OutputFormat\">MicrosoftExcelBiff8(*.xls)</Argument><Argument N"
-        "ame=\"To\">Richard.Zep"
+    Comment ="_AXL:ent><Comment>To: Gene.Leddy@henryschein.com</Comment><Comment>Send copy of "
+        "[SumTotalUQ] </Comment><Action Name=\"EMailDatabaseObject\"><Argument Name=\"Obj"
+        "ectType\">Query</Argument><Argument Name=\"ObjectName\">SumTotalUQ</Argument><Ar"
+        "gument Name=\"Output"
 End
 Begin
-    Comment ="_AXL:ernick@henryschein.com</Argument><Argument Name=\"Subject\">=\"Privileges P"
-        "oints Totals as of \" &amp; ZAsOf()</Argument><Argument Name=\"MessageText\">Sub"
-        " and Grand Totals for the monthly Earned, AutoPay, Colgate, Welcome, Web and Bon"
-        "us points files. Mi"
+    Comment ="_AXL:Format\">MicrosoftExcelBiff8(*.xls)</Argument><Argument Name=\"To\">Richard"
+        ".Zepernick@henryschein.com</Argument><Argument Name=\"Subject\">=\"Privileges Po"
+        "ints Totals as of \" &amp; ZAsOf()</Argument><Argument Name=\"MessageText\">Sub "
+        "and Grand Totals for t"
 End
 Begin
-    Comment ="_AXL:nor differences in totals may occur.</Argument><Argument Name=\"EditMessage"
-        "\">No</Argument></Action><Comment>Subject - =\"Privileges Points Totals as of \""
-        " &amp;  ZAsOf()</Comment><Comment>Msg Body - Sub and Grand Totals for the monthl"
-        "y Earned, AutoPay"
+    Comment ="_AXL:he monthly Earned, AutoPay, Colgate, Welcome, Web and Bonus points files. M"
+        "inor differences in totals may occur.</Argument><Argument Name=\"EditMessage\">N"
+        "o</Argument></Action><Comment>Subject - =\"Privileges Points Totals as of \" &am"
+        "p;  ZAsOf()</Comm"
 End
 Begin
-    Comment ="_AXL:, Colgate, Welcome, Web and Bonus points files. Minor differences in totals"
-        " may occur.</Comment><Comment>To: RGZ</Comment><Comment>[zPtsLogAQ]</Comment><Ac"
-        "tion Name=\"OpenQuery\"><Argument Name=\"QueryName\">zPtsLogAQ</Argument></Actio"
-        "n><Comment>Genera"
+    Comment ="_AXL:ent><Comment>Msg Body - Sub and Grand Totals for the monthly Earned, AutoPa"
+        "y, Colgate, Welcome, Web and Bonus points files. Minor differences in totals may"
+        " occur.</Comment><Comment>To: RGZ</Comment><Comment>[zPtsLogAQ]</Comment><Action"
+        " Name=\"OpenQu"
 End
 Begin
-    Comment ="_AXL:te Gene Leddy copy of current Privileges Members listing</Comment><Comment>"
-        "\\\\usnym3fs03\\Data\\Dental\\1User Data Marketing\\Privileges\\zMembers2.txt Ta"
-        "b delimited</Comment><Action Name=\"ImportExportText\"><Argument Name=\"Transfer"
-        "Type\">Export Delimited<"
+    Comment ="_AXL:ery\"><Argument Name=\"QueryName\">zPtsLogAQ</Argument></Action><Comment>Ge"
+        "nerate Gene Leddy copy of current Privileges Members listing</Comment><Comment>\\"
+        "\\usnym3fs03\\Data\\Dental\\1User Data Marketing\\Privileges\\zMembers2.txt Tab "
+        "delimited</Comment><Ac"
 End
 Begin
-    Comment ="_AXL:/Argument><Argument Name=\"SpecificationName\">ZMemXportSpecs</Argument><Ar"
+    Comment ="_AXL:tion Name=\"ImportExportText\"><Argument Name=\"TransferType\">Export Delim"
+        "ited</Argument><Argument Name=\"SpecificationName\">ZMemXportSpecs</Argument><Ar"
         "gument Name=\"TableName\">zMembers</Argument><Argument Name=\"FileName\">\\\\usn"
-        "ym3fs03\\Data\\Dental\\1User Data Marketing\\Privileges\\zMembers2.txt</Argument"
-        "><Argument Name=\"HasFieldN"
+        "ym3fs03\\Data\\Dental\\1User"
 End
 Begin
-    Comment ="_AXL:ames\">Yes</Argument></Action><Comment>Send UpDate notice to Gene Leddy</Co"
-        "mment><Action Name=\"EMailDatabaseObject\"><Argument Name=\"To\">Gene.Leddy@henr"
-        "yschein.com</Argument><Argument Name=\"Cc\">Ron.Kralik@henryschein.com</Argument"
-        "><Argument Name=\"Bcc"
+    Comment ="_AXL: Data Marketing\\Privileges\\zMembers2.txt</Argument><Argument Name=\"HasFi"
+        "eldNames\">Yes</Argument></Action><Comment>Send UpDate notice to Gene Leddy</Com"
+        "ment><Action Name=\"EMailDatabaseObject\"><Argument Name=\"To\">Gene.Leddy@henry"
+        "schein.com</Argument>"
 End
 Begin
-    Comment ="_AXL:\">Richard.Zepernick@henryschein.com</Argument><Argument Name=\"Subject\">="
-        "\"zMembers2.txt updated \" &amp; ZAsOf()</Argument><Argument Name=\"MessageText\""
-        ">Updated file is:                                                    \\\\usnym3f"
-        "s03\\Data\\Dental\\1User"
+    Comment ="_AXL:<Argument Name=\"Cc\">Ron.Kralik@henryschein.com</Argument><Argument Name=\""
+        "Bcc\">Richard.Zepernick@henryschein.com</Argument><Argument Name=\"Subject\">=\""
+        "zMembers2.txt updated \" &amp; ZAsOf()</Argument><Argument Name=\"MessageText\">"
+        "Updated file is:      "
 End
 Begin
-    Comment ="_AXL: Data Marketing\\Privileges\\zMembers2.txt. This is an automated message, n"
+    Comment ="_AXL:                                              \\\\usnym3fs03\\Data\\Dental\\"
+        "1User Data Marketing\\Privileges\\zMembers2.txt. This is an automated message, n"
         "o response is required.</Argument><Argument Name=\"EditMessage\">No</Argument></"
-        "Action><Comment>Subject - =\"zMembers2.txt updated \" &amp; ZAsOf()</Comment><Co"
-        "mment>Msg Body - Up"
+        "Action><Comment>Subje"
 End
 Begin
-    Comment ="_AXL:dated file is \\\\usnym3fs03\\Data\\Dental\\1User Data Marketing\\Privilege"
-        "s\\zMembers2.txt. This is an automated message, no response is required.</Commen"
-        "t><Comment>To: RGZ, RK, Gene Leddy</Comment><Comment>-- MS Access Points Process"
-        "ing Completed -- Now"
+    Comment ="_AXL:ct - =\"zMembers2.txt updated \" &amp; ZAsOf()</Comment><Comment>Msg Body -"
+        " Updated file is \\\\usnym3fs03\\Data\\Dental\\1User Data Marketing\\Privileges\\"
+        "zMembers2.txt. This is an automated message, no response is required.</Comment><"
+        "Comment>To: RGZ, RK, "
 End
 Begin
-    Comment ="_AXL: Let's look at the AS400 process</Comment><Action Name=\"StopMacro\"/><Comm"
-        "ent>AS40090</Comment><Comment>Lieblich, Minnie   ext 5803</Comment><Comment>E-Sy"
-        "stem - Launch it</Comment><Comment>EAH &lt;Enter&gt;</Comment><Comment>1 HSI Pro"
-        "duction &lt;Ent"
+    Comment ="_AXL:Gene Leddy</Comment><Comment>-- MS Access Points Processing Completed -- No"
+        "w Let's look at the AS400 process</Comment><Action Name=\"StopMacro\"/><Comment>"
+        "AS40090</Comment><Comment>Lieblich, Minnie   ext 5803</Comment><Comment>E-System"
+        " - Launch it</C"
 End
 Begin
-    Comment ="_AXL:er&gt;</Comment><Comment>17 &lt;Enter&gt; PRIVILEGED CUSTOMER MENU</Comment"
-        "><Comment>8 &lt;Enter&gt; POINTS UPLOAD MENU</Comment><Comment>Then Choose from "
-        "Options 1,2,3 or 13</Comment><Comment>1 &lt;Enter&gt; =  review files / delete m"
-        "ultiples  Use"
+    Comment ="_AXL:omment><Comment>EAH &lt;Enter&gt;</Comment><Comment>1 HSI Production &lt;En"
+        "ter&gt;</Comment><Comment>17 &lt;Enter&gt; PRIVILEGED CUSTOMER MENU</Comment><Co"
+        "mment>8 &lt;Enter&gt; POINTS UPLOAD MENU</Comment><Comment>Then Choose from Opti"
+        "ons 1,2,3 or "
 End
 Begin
-    Comment ="_AXL: 5 &lt;Enter&gt; to Display details of report &lt;Page Down&gt; or up</Comm"
-        "ent><Comment>2  [Action Code] type\"i\"=inquiry, [Reference No] enter file ID, L"
-        "ike  \"DP06083109\" - Use &lt;F9&gt; key to delete whole file.</Comment><Comment"
-        ">3 &lt;Enter&gt; "
+    Comment ="_AXL:13</Comment><Comment>1 &lt;Enter&gt; =  review files / delete multiples  Us"
+        "e 5 &lt;Enter&gt; to Display details of report &lt;Page Down&gt; or up</Comment>"
+        "<Comment>2  [Action Code] type\"i\"=inquiry, [Reference No] enter file ID, Like "
+        " \"DP06083109\" -"
 End
 Begin
-    Comment ="_AXL:Only Required to Confirm Counts to BI - To view... Type Mn (MM), Yr (YYYY),"
-        " and Division (\"DEN\") &lt;Enter&gt; = Show files available</Comment><Comment> "
-        "    Where MN is the data month (not the current month)</Comment><Comment>      T"
-        "o \"refresh scre"
+    Comment ="_AXL: Use &lt;F9&gt; key to delete whole file.</Comment><Comment>3 &lt;Enter&gt;"
+        " Only Required to Confirm Counts to BI - To view... Type Mn (MM), Yr (YYYY), and"
+        " Division (\"DEN\") &lt;Enter&gt; = Show files available</Comment><Comment>     "
+        "Where MN is the"
 End
 Begin
-    Comment ="_AXL:en\", must close, re-open, re-enter data and hit &lt;Enter&gt; </Comment><C"
-        "omment>      See all 4 files, Then  &lt;F3&gt; to Exit</Comment><Comment>13 &lt;"
-        "Enter&gt; MUST change Month, min. - Type Mn (MM), Yr (YYYY), and Division (\"DEN"
-        "\") Then &lt;Ent"
+    Comment ="_AXL: data month (not the current month)</Comment><Comment>      To \"refresh sc"
+        "reen\", must close, re-open, re-enter data and hit &lt;Enter&gt; </Comment><Comm"
+        "ent>      See all 4 files, Then  &lt;F3&gt; to Exit</Comment><Comment>13 &lt;Ent"
+        "er&gt; MUST cha"
 End
 Begin
-    Comment ="_AXL:er&gt; = Sends files to BI</Comment><Comment>      Screen msg \"Send point "
-        "File to BI-DENTAL  submitted to batch\"</Comment><Comment>- - CONFIRM COUNTS TO "
-        "BI - - Post UpLoad - -</Comment><Comment>From AS400 Privileges Processing Screen"
-        " open [3. Priv/"
+    Comment ="_AXL:nge Month, min. - Type Mn (MM), Yr (YYYY), and Division (\"DEN\") Then &lt;"
+        "Enter&gt; = Sends files to BI</Comment><Comment>      Screen msg \"Send point Fi"
+        "le to BI-DENTAL  submitted to batch\"</Comment><Comment>- - CONFIRM COUNTS TO BI"
+        " - - Post UpLoad "
 End
 Begin
-    Comment ="_AXL:Prem Control File Inquiry]</Comment><Comment>Pull the Total Pnts Sent  and "
-        "Total Rcds Sent from the top right corner of the screen.</Comment><Comment>Those"
-        " 2 hash totals is all they need to verify the counts.</Comment><Comment>Total Pn"
-        "ts Sent:     "
+    Comment ="_AXL:- -</Comment><Comment>From AS400 Privileges Processing Screen open [3. Priv"
+        "/Prem Control File Inquiry]</Comment><Comment>Pull the Total Pnts Sent  and Tota"
+        "l Rcds Sent from the top right corner of the screen.</Comment><Comment>Those 2 h"
+        "ash totals is"
 End
 Begin
-    Comment ="_AXL:39,261,072  and Total Rcds Sent:         13,705</Comment><Comment>Use the E"
-        "-Esytem Edit/Copy and paste into [z04-Eml-BI-PtsReleasedEmail] when it opens for"
-        " editing</Comment><Comment>Email:  Carol.Venezia@biworldwide.com; Jill.Ohnsorg@b"
-        "iworldwide.co"
+    Comment ="_AXL: all they need to verify the counts.</Comment><Comment>Total Pnts Sent:    "
+        " 39,261,072  and Total Rcds Sent:         13,705</Comment><Comment>Use the E-Esy"
+        "tem Edit/Copy and paste into [z04-Eml-BI-PtsReleasedEmail] when it opens for edi"
+        "ting</Comment"
 End
 Begin
-    Comment ="_AXL:m; Lieblich, Minnie; Zepernick, Richard; Kralik, Ron; Leddy, Gene</Comment>"
-        "<Comment>********************* End Macro ************************</Comment><Acti"
-        "on Name=\"StopMacro\"/><Comment>Last Run: 10/1/12; 9/4/12; 8/6/12; 7/2/12;  6/4/"
-        "12; 4/30/12; 4/"
+    Comment ="_AXL:><Comment>Email:  Carol.Venezia@biworldwide.com; Jill.Ohnsorg@biworldwide.c"
+        "om; Lieblich, Minnie; Zepernick, Richard; Kralik, Ron; Leddy, Gene</Comment><Com"
+        "ment>********************* End Macro ************************</Comment><Action N"
+        "ame=\"StopMacr"
 End
 Begin
-    Comment ="_AXL:2/12; 3/6/12; 2/7/12; 1/3/12; 11/28/11; 10/31/11; 9/26/11; 8/29/11; 7/1/11;"
-        " 6/27/11; 5/31/11; 4/25/11; 3/28/11;  2/??/11; 1/31/11;</Comment><Comment>12/28/"
-        "10; 11/29/10; 11/1/10; 9/27/10; 8/30/10;  8/3/10; 6/28/10; 6/1/10; 4/27/10; 3/29"
-        "/10; 3/1/10; "
+    Comment ="_AXL:o\"/><Comment>Last Run: 10/1/12; 9/4/12; 8/6/12; 7/2/12;  6/4/12; 4/30/12; "
+        "4/2/12; 3/6/12; 2/7/12; 1/3/12; 11/28/11; 10/31/11; 9/26/11; 8/29/11; 7/1/11; 6/"
+        "27/11; 5/31/11; 4/25/11; 3/28/11;  2/??/11; 1/31/11;</Comment><Comment>12/28/10;"
+        " 11/29/10; 11/"
 End
 Begin
-    Comment ="_AXL:2/1/10</Comment><Comment>12/28/09; 11/30/09; 11/02/09; 9/28/09; 8/31/2009; "
-        "8/3/09; 6/29/09; 6/1/09; 3/30/09; 3/2/09; 2/ /09;</Comment><Comment>12/29/08; 12"
-        "/1/08; 11/04/2008; 9/29/08; 9/2/08; 6/30/08; 6/2/08; 4/28/08; 4/1/08; 3/3/08; 2/"
-        "27/08 (Run Pa"
+    Comment ="_AXL:1/10; 9/27/10; 8/30/10;  8/3/10; 6/28/10; 6/1/10; 4/27/10; 3/29/10; 3/1/10;"
+        " 2/1/10</Comment><Comment>12/28/09; 11/30/09; 11/02/09; 9/28/09; 8/31/2009; 8/3/"
+        "09; 6/29/09; 6/1/09; 3/30/09; 3/2/09; 2/ /09;</Comment><Comment>12/29/08; 12/1/0"
+        "8; 11/04/2008"
 End
 Begin
-    Comment ="_AXL:rt two of members list); 2/2/08; 12/3/07; 11/5/07; 10/2/07; </Comment><Comm"
-        "ent>9/4/07; 8/6/07; 7/2/07; 6/4/07; 5/2/07; 5/1/07; 4/2/07; 3/6/07; 2/3/07; 1/2/"
-        "07; 12/4/06; 11/3/06; 10/2/06; 9/8/06; 8/8/06; 7/3/06; 6/5/06; 4/3/06; 3/3/06; 2"
-        "/4/06; 1/3/20"
+    Comment ="_AXL:; 9/29/08; 9/2/08; 6/30/08; 6/2/08; 4/28/08; 4/1/08; 3/3/08; 2/27/08 (Run P"
+        "art two of members list); 2/2/08; 12/3/07; 11/5/07; 10/2/07; </Comment><Comment>"
+        "9/4/07; 8/6/07; 7/2/07; 6/4/07; 5/2/07; 5/1/07; 4/2/07; 3/6/07; 2/3/07; 1/2/07; "
+        "12/4/06; 11/3"
 End
 Begin
-    Comment ="_AXL:06; Rerun 11/30/05; 11/29/05; 11/2/05; 9/27/05; 8/30/05; 7/5/05</Comment><C"
-        "omment>[zCMnStatusQ] = Current Monthly Accts Recvble Status (N and X are OK... Y"
-        " is NG)</Comment><Comment>     \"CustSvcPts.csv\" is not the report that goes to"
-        " the Customer S"
+    Comment ="_AXL:/06; 10/2/06; 9/8/06; 8/8/06; 7/3/06; 6/5/06; 4/3/06; 3/3/06; 2/4/06; 1/3/2"
+        "006; Rerun 11/30/05; 11/29/05; 11/2/05; 9/27/05; 8/30/05; 7/5/05</Comment><Comme"
+        "nt>[zCMnStatusQ] = Current Monthly Accts Recvble Status (N and X are OK... Y is "
+        "NG)</Comment>"
 End
 Begin
-    Comment ="_AXL:ervice Dept, but a feature to give misc points to members</Comment><Comment"
-        ">[zCusSvcPtsSumF]  Loads variable ZPts() OnCLose</Comment><Action Name=\"OpenFor"
-        "m\"><Argument Name=\"FormName\">zCusSvcPtsSumF</Argument></Action><Comment>A mes"
-        "sage will pop up "
+    Comment ="_AXL:<Comment>     \"CustSvcPts.csv\" is not the report that goes to the Custome"
+        "r Service Dept, but a feature to give misc points to members</Comment><Comment>["
+        "zCusSvcPtsSumF]  Loads variable ZPts() OnCLose</Comment><Action Name=\"OpenForm\""
+        "><Argument Name="
 End
 Begin
-    Comment ="_AXL:in the event of no points (ergo No File Generated)</Comment><Action Name=\""
-        "CloseWindow\"><Argument Name=\"ObjectType\">Form</Argument><Argument Name=\"Obje"
-        "ctName\">zCusSvcPtsSumF</Argument></Action><Action Name=\"ExportWithFormatting\""
-        "><Argument Name=\"Obje"
+    Comment ="_AXL:\"FormName\">zCusSvcPtsSumF</Argument></Action><Comment>A message will pop "
+        "up in the event of no points (ergo No File Generated)</Comment><Action Name=\"Cl"
+        "oseWindow\"><Argument Name=\"ObjectType\">Form</Argument><Argument Name=\"Object"
+        "Name\">zCusSvcPtsSumF"
 End
 Begin
-    Comment ="_AXL:ctType\">Query</Argument><Argument Name=\"Encoding\">0</Argument></Action><"
-        "Comment>members 24K; 19,979</Comment><Comment>******* Members needs a source for"
-        " [ProfessionCode] - DMD or DDS</Comment><Comment>[zMemExpQ] &gt; [zMembers] - Ra"
-        "nge - MembersLis"
+    Comment ="_AXL:</Argument></Action><Action Name=\"ExportWithFormatting\"><Argument Name=\""
+        "ObjectType\">Query</Argument><Argument Name=\"Encoding\">0</Argument></Action><C"
+        "omment>members 24K; 19,979</Comment><Comment>******* Members needs a source for "
+        "[ProfessionCode] - "
 End
 Begin
-    Comment ="_AXL:t  - \"M:\\Dental\\denmerch\\Privileges\\Pts\\\" &amp;  ZAsOf() &amp; \"Mem"
-        "bersList.csv\"</Comment><Action Name=\"ImportExportText\"><Argument Name=\"Trans"
-        "ferType\">Export Delimited</Argument><Argument Name=\"TableName\">zMemExpQ</Argu"
-        "ment><Argument Name=\"FileNam"
+    Comment ="_AXL:DMD or DDS</Comment><Comment>[zMemExpQ] &gt; [zMembers] - Range - MembersLi"
+        "st  - \"M:\\Dental\\denmerch\\Privileges\\Pts\\\" &amp;  ZAsOf() &amp; \"Members"
+        "List.csv\"</Comment><Action Name=\"ImportExportText\"><Argument Name=\"TransferT"
+        "ype\">Export Delimited</Ar"
 End
 Begin
-    Comment ="_AXL:e\">=\"M:\\Dental\\denmerch\\Privileges\\Pts\\\" &amp; ZAsOf() &amp; \"Memb"
-        "ersList.csv\"</Argument><Argument Name=\"HasFieldNames\">Yes</Argument></Action>"
-        "<Comment>Use Macro 06-Accrual to check if the monthly numbers are reasonable</Co"
-        "mment><Comment>=\"Transfer"
+    Comment ="_AXL:gument><Argument Name=\"TableName\">zMemExpQ</Argument><Argument Name=\"Fil"
+        "eName\">=\"M:\\Dental\\denmerch\\Privileges\\Pts\\\" &amp; ZAsOf() &amp; \"Membe"
+        "rsList.csv\"</Argument><Argument Name=\"HasFieldNames\">Yes</Argument></Action><"
+        "Comment>Use Macro 06-Accrual"
 End
 Begin
-    Comment ="_AXL:s completed for \" &amp; ZAsOf()</Comment><Action Name=\"MessageBox\"><Argu"
-        "ment Name=\"Message\">=\"Transfers completed for \" &amp; ZAsOf()</Argument></Ac"
-        "tion><Comment>Get files at: M:\\Dental\\denmerch\\Privileges\\Pts\\</Comment><Co"
-        "mment>Message is like: At"
+    Comment ="_AXL: to check if the monthly numbers are reasonable</Comment><Comment>=\"Transf"
+        "ers completed for \" &amp; ZAsOf()</Comment><Action Name=\"MessageBox\"><Argumen"
+        "t Name=\"Message\">=\"Transfers completed for \" &amp; ZAsOf()</Argument></Actio"
+        "n><Comment>Get files "
 End
 Begin
-    Comment ="_AXL:tached are the Dental Privileges points files as of 2/2/2007. The AutoPay f"
-        "ile includes ACH. Once again there are no additional customer service points to "
-        "report. </Comment><Comment>Send transfers to:  weissd@inmarketing.net;  klemmond"
-        "s@InMarketing"
+    Comment ="_AXL:at: M:\\Dental\\denmerch\\Privileges\\Pts\\</Comment><Comment>Message is li"
+        "ke: Attached are the Dental Privileges points files as of 2/2/2007. The AutoPay "
+        "file includes ACH. Once again there are no additional customer service points to"
+        " report. </Comment"
 End
 Begin
-    Comment ="_AXL:.net </Comment><Comment>cc to:  Kralik, Ron; Loiacono, Jim; Hinsch, Paul; B"
-        "ond, Donna; Lieblich, Minnie</Comment><Comment>x When run:  In Pop-Up Windows en"
-        "ter \"yymm\", a 2 digit Year and a 2 digit Month</Comment><Comment>x 3/31/2005 a"
-        "dded filter to "
+    Comment ="_AXL:><Comment>Send transfers to:  weissd@inmarketing.net;  klemmonds@InMarketin"
+        "g.net </Comment><Comment>cc to:  Kralik, Ron; Loiacono, Jim; Hinsch, Paul; Bond,"
+        " Donna; Lieblich, Minnie</Comment><Comment>x When run:  In Pop-Up Windows enter "
+        "\"yymm\", a 2 d"
 End
 Begin
-    Comment ="_AXL:import to add leading zeros to Zips 8 or 4 digits long, and added hyphen to"
-        " Zip+ codes. Even opening in Word, the CSV still dropped leading Zip zeros</Comm"
-        "ent><Comment>x First Get JDEB - Download from AS400 - Ferrari: HSIPDTA71/F5691(F"
-        "5691) </Comme"
+    Comment ="_AXL:igit Year and a 2 digit Month</Comment><Comment>x 3/31/2005 added filter to"
+        " import to add leading zeros to Zips 8 or 4 digits long, and added hyphen to Zip"
+        "+ codes. Even opening in Word, the CSV still dropped leading Zip zeros</Comment>"
+        "<Comment>x Fi"
 End
 Begin
-    Comment ="_AXL:nt><Comment>x 4/25/05 = 17,507</Comment><Comment>x PtsSummary.csv - 4/25/05"
-        " = 10,214</Comment><Comment>x ErMembers - Get Memberslink from M:\\Dental\\denme"
-        "rch\\Privileges\\members.csv</Comment><Action Name=\"OpenQuery\"><Argument Name="
-        "\"QueryName\">ErMembe"
+    Comment ="_AXL:rst Get JDEB - Download from AS400 - Ferrari: HSIPDTA71/F5691(F5691) </Comm"
+        "ent><Comment>x 4/25/05 = 17,507</Comment><Comment>x PtsSummary.csv - 4/25/05 = 1"
+        "0,214</Comment><Comment>x ErMembers - Get Memberslink from M:\\Dental\\denmerch\\"
+        "Privileges\\memb"
 End
 Begin
-    Comment ="_AXL:rs</Argument></Action><Comment>x UpMember - Appends to [Members] - JDEB, cu"
+    Comment ="_AXL:ers.csv</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">Er"
+        "Members</Argument></Action><Comment>x UpMember - Appends to [Members] - JDEB, cu"
         "stomer, address, commit, enroll, PrivCode</Comment><Action Name=\"OpenQuery\"><A"
-        "rgument Name=\"QueryName\">UpMember</Argument></Action><Comment>x NEXT - Add JDE"
-        "S and Terr links "
+        "rgument Name=\"Query"
 End
 Begin
-    Comment ="_AXL:- from Ron Kralik x8030</Comment><Comment>x ErJdeshipTbl - Get jdeshpit fro"
-        "m M:\\Dental\\denmerch\\Privileges\\Jdeshipt.csv</Comment><Action Name=\"OpenQue"
-        "ry\"><Argument Name=\"QueryName\">ErJdeshipTbl</Argument></Action><Comment>x UpJ"
-        "deshipTbl - Appends t"
+    Comment ="_AXL:Name\">UpMember</Argument></Action><Comment>x NEXT - Add JDES and Terr link"
+        "s - from Ron Kralik x8030</Comment><Comment>x ErJdeshipTbl - Get jdeshpit from M"
+        ":\\Dental\\denmerch\\Privileges\\Jdeshipt.csv</Comment><Action Name=\"OpenQuery\""
+        "><Argument Name=\"Qu"
 End
 Begin
-    Comment ="_AXL:o [jdeshiptbl] - JDEB, JDES, B2Nm, S2Nm, TerrCode (Tbl used to link JDEB wi"
-        "th JDES tables)</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\""
-        ">UpJdeshipTbl</Argument></Action><Comment>x NEXT - Get Terr links to Ctr, Reg &a"
-        "mp; Zone - from M"
+    Comment ="_AXL:eryName\">ErJdeshipTbl</Argument></Action><Comment>x UpJdeshipTbl - Appends"
+        " to [jdeshiptbl] - JDEB, JDES, B2Nm, S2Nm, TerrCode (Tbl used to link JDEB with "
+        "JDES tables)</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">Up"
+        "JdeshipTbl</Argume"
 End
 Begin
-    Comment ="_AXL:onica Stenslie x2520 \"Namesxxxx.xls\" file.  Copy and Rename file to: Terr"
-        "itory.xls</Comment><Comment>x Change Tab on .xls to \"Sheet1\" Open Linked table"
-        " and query to check for changes</Comment><Comment>x ***REPLACE  HEADER !!! Use p"
-        "rior month's head"
+    Comment ="_AXL:nt></Action><Comment>x NEXT - Get Terr links to Ctr, Reg &amp; Zone - from "
+        "Monica Stenslie x2520 \"Namesxxxx.xls\" file.  Copy and Rename file to: Territor"
+        "y.xls</Comment><Comment>x Change Tab on .xls to \"Sheet1\" Open Linked table and"
+        " query to check f"
 End
 Begin
-    Comment ="_AXL:er - Change header \"Name  --------------------\" to \"Name\"</Comment><Com"
-        "ment>x Also watch for \"Cntr\" vs the original \"Center\"</Comment><Comment>x Ch"
-        "ange [As of] to a hard date and Privileges YYMM  - Added 3/30/2005 - Query didn'"
-        "t like \"For the Month"
+    Comment ="_AXL:or changes</Comment><Comment>x ***REPLACE  HEADER !!! Use prior month's hea"
+        "der - Change header \"Name  --------------------\" to \"Name\"</Comment><Comment"
+        ">x Also watch for \"Cntr\" vs the original \"Center\"</Comment><Comment>x Change"
+        " [As of] to a hard da"
 End
 Begin
-    Comment ="_AXL:: 200503\" but \"...2005-3\" worked</Comment><Comment>x </Comment><Comment>"
-        "x ErTerritoryTbl - Get Territory from M:\\Dental\\denmerch\\Privileges\\Territor"
-        "y.xls</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">ErTerrito"
-        "ryTbl</Argument></Action"
+    Comment ="_AXL:te and Privileges YYMM  - Added 3/30/2005 - Query didn't like \"For the Mon"
+        "th: 200503\" but \"...2005-3\" worked</Comment><Comment>x </Comment><Comment>x E"
+        "rTerritoryTbl - Get Territory from M:\\Dental\\denmerch\\Privileges\\Territory.x"
+        "ls</Comment><Action N"
 End
 Begin
-    Comment ="_AXL:><Comment>x UpTerritoryTbl - Appends to [territorytbl] - Code and Desc and "
+    Comment ="_AXL:ame=\"OpenQuery\"><Argument Name=\"QueryName\">ErTerritoryTbl</Argument></A"
+        "ction><Comment>x UpTerritoryTbl - Appends to [territorytbl] - Code and Desc and "
         "Name for Terr, Ctr, Rgn and Zone</Comment><Action Name=\"OpenQuery\"><Argument N"
-        "ame=\"QueryName\">UpTerritoryTbl</Argument></Action><Comment>x Export [territory"
-        "Tbl] to [Territor"
+        "ame=\"QueryName\">UpT"
 End
 Begin
-    Comment ="_AXL:yT] in \"\\\\Nym2212t\\Corpshare\\Dental\\dentmkt\\Tbls\\Tbls.mdb\"</Commen"
-        "t><Action Name=\"ImportExportData\"><Argument Name=\"TransferType\">Export</Argu"
-        "ment><Argument Name=\"DatabaseName\">=\"\\\\Nym2212t\\Corpshare\\Dental\\dentmkt"
-        "\\Tbls\\Tbls.mdb\"</Argument><Argumen"
+    Comment ="_AXL:erritoryTbl</Argument></Action><Comment>x Export [territoryTbl] to [Territo"
+        "ryT] in \"\\\\Nym2212t\\Corpshare\\Dental\\dentmkt\\Tbls\\Tbls.mdb\"</Comment><A"
+        "ction Name=\"ImportExportData\"><Argument Name=\"TransferType\">Export</Argument"
+        "><Argument Name=\"DatabaseN"
 End
 Begin
-    Comment ="_AXL:t Name=\"Source\">Territorytbl</Argument><Argument Name=\"Destination\">Ter"
-        "ritoryT</Argument></Action><Comment>x NEXT - Import members (moved 3/7/05 to fac"
-        "ilitate the later filtering of Colgate file on import)</Comment><Comment>x ErExp"
-        "ortMembers - Empt"
+    Comment ="_AXL:ame\">=\"\\\\Nym2212t\\Corpshare\\Dental\\dentmkt\\Tbls\\Tbls.mdb\"</Argume"
+        "nt><Argument Name=\"Source\">Territorytbl</Argument><Argument Name=\"Destination"
+        "\">TerritoryT</Argument></Action><Comment>x NEXT - Import members (moved 3/7/05 "
+        "to facilitate the later fil"
 End
 Begin
-    Comment ="_AXL:y and fill table [ExportMembers] from \"M:\\Dental\\denmerch\\Privileges\\m"
-        "embers.csv\"</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">Er"
-        "ExportMembers</Argument></Action><Comment>x UpExportMembers</Comment><Action Nam"
-        "e=\"OpenQuery\"><Argument"
+    Comment ="_AXL:tering of Colgate file on import)</Comment><Comment>x ErExportMembers - Emp"
+        "ty and fill table [ExportMembers] from \"M:\\Dental\\denmerch\\Privileges\\membe"
+        "rs.csv\"</Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">ErExpo"
+        "rtMembers</Argument></A"
 End
 Begin
-    Comment ="_AXL: Name=\"QueryName\">UpExportMembers</Argument></Action><Comment>x NEXT - De"
-        "tail usually only to answer customer account questions - Download from AS400 - F"
-        "errari: HSIURFLE/F031LCAMPO(1041029001)</Comment><Comment>x ErPtsDetailTbl - Get"
-        " Ptsdetail from"
+    Comment ="_AXL:ction><Comment>x UpExportMembers</Comment><Action Name=\"OpenQuery\"><Argum"
+        "ent Name=\"QueryName\">UpExportMembers</Argument></Action><Comment>x NEXT - Deta"
+        "il usually only to answer customer account questions - Download from AS400 - Fer"
+        "rari: HSIURFLE/F0"
 End
 Begin
-    Comment ="_AXL: M:\\Dental\\denmerch\\Privileges\\Ptsdetail.csv</Comment><Comment>x UpPtsd"
-        "etailTbl - Appends to [PtsDetailTbl]</Comment><Comment>x NEXT - Add purchase poi"
-        "nt summary - Download from AS400 - Ferrari: HSIURFLE/F030LCAMPO(1041029001)</Com"
-        "ment><Comment>x E"
+    Comment ="_AXL:31LCAMPO(1041029001)</Comment><Comment>x ErPtsDetailTbl - Get Ptsdetail fro"
+        "m M:\\Dental\\denmerch\\Privileges\\Ptsdetail.csv</Comment><Comment>x UpPtsdetai"
+        "lTbl - Appends to [PtsDetailTbl]</Comment><Comment>x NEXT - Add purchase point s"
+        "ummary - Download"
 End
 Begin
-    Comment ="_AXL:rPointsSummary - </Comment><Action Name=\"OpenQuery\"><Argument Name=\"Quer"
-        "yName\">ErPointsSummary</Argument></Action><Comment>x UpPointsSummary - Appends "
-        "to [pointssummary] - JDEB, Current &amp; Prior Year, Points and Sales by month</"
-        "Comment><Action N"
+    Comment ="_AXL: from AS400 - Ferrari: HSIURFLE/F030LCAMPO(1041029001)</Comment><Comment>x "
+        "ErPointsSummary - </Comment><Action Name=\"OpenQuery\"><Argument Name=\"QueryNam"
+        "e\">ErPointsSummary</Argument></Action><Comment>x UpPointsSummary - Appends to ["
+        "pointssummary] - "
 End
 Begin
-    Comment ="_AXL:ame=\"OpenQuery\"><Argument Name=\"QueryName\">UpPointsSummary</Argument></"
-        "Action><Comment>x MUST UPDATE fields [PriorYear] and [CYYTD] - Increment by two<"
-        "/Comment><Comment>x ?CAN WE GET THIS INFO FROM DW?  Is there a minimum for on-ca"
-        "rd purchases</Com"
+    Comment ="_AXL:JDEB, Current &amp; Prior Year, Points and Sales by month</Comment><Action "
+        "Name=\"OpenQuery\"><Argument Name=\"QueryName\">UpPointsSummary</Argument></Acti"
+        "on><Comment>x MUST UPDATE fields [PriorYear] and [CYYTD] - Increment by two</Com"
+        "ment><Comment>x ?"
 End
 Begin
-    Comment ="_AXL:ment><Comment>x NEXT - Add 500 points for customers in autopay program who "
-        "are \"current\" in payments - from Kally DiPreta x6884</Comment><Comment>x Open "
-        "Autopaylink linked table and query to check for changes</Comment><Comment>x ErPo"
-        "intsIssuedAutoP"
+    Comment ="_AXL:CAN WE GET THIS INFO FROM DW?  Is there a minimum for on-card purchases</Co"
+        "mment><Comment>x NEXT - Add 500 points for customers in autopay program who are "
+        "\"current\" in payments - from Kally DiPreta x6884</Comment><Comment>x Open Auto"
+        "paylink linked "
 End
 Begin
-    Comment ="_AXL:ay - Get Autopaylink from M:\\Dental\\denmerch\\Privileges\\autopay.csv</Co"
-        "mment><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">ErPointsIssuedAuto"
-        "Pay</Argument></Action><Comment>x UpPointsissuedautopay</Comment><Action Name=\""
-        "OpenQuery\"><Argument N"
+    Comment ="_AXL:table and query to check for changes</Comment><Comment>x ErPointsIssuedAuto"
+        "Pay - Get Autopaylink from M:\\Dental\\denmerch\\Privileges\\autopay.csv</Commen"
+        "t><Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">ErPointsIssuedAutoPay<"
+        "/Argument></Action><C"
 End
 Begin
-    Comment ="_AXL:ame=\"QueryName\">UpPointsissuedautopay</Argument></Action><Comment>x KEEP<"
-        "/Comment><Comment>x NEXT - Add points for Colgate activity - from Paviglianiti, "
-        "Cathy x 8496, or Helen Ferrarri x8158</Comment><Comment>x APPEND QUERY CONVERTS "
-        "TO JDE BILLTO ("
+    Comment ="_AXL:omment>x UpPointsissuedautopay</Comment><Action Name=\"OpenQuery\"><Argumen"
+        "t Name=\"QueryName\">UpPointsissuedautopay</Argument></Action><Comment>x KEEP</C"
+        "omment><Comment>x NEXT - Add points for Colgate activity - from Paviglianiti, Ca"
+        "thy x 8496, or He"
 End
 Begin
-    Comment ="_AXL:file comes at a SHIPTO level)</Comment><Comment>x erColgateptsissued - Get "
-        "Copptslink from M:\\Dental\\denmerch\\Privileges\\COPpts.xls</Comment><Action Na"
-        "me=\"OpenQuery\"><Argument Name=\"QueryName\">erColgateptsissued</Argument></Act"
-        "ion><Comment>x UpColg"
+    Comment ="_AXL:len Ferrarri x8158</Comment><Comment>x APPEND QUERY CONVERTS TO JDE BILLTO "
+        "(file comes at a SHIPTO level)</Comment><Comment>x erColgateptsissued - Get Copp"
+        "tslink from M:\\Dental\\denmerch\\Privileges\\COPpts.xls</Comment><Action Name=\""
+        "OpenQuery\"><Argum"
 End
 Begin
-    Comment ="_AXL:atePtsIssued - Modified to switch to JDEB from old JDES 3/8/2005</Comment><"
-        "Action Name=\"OpenQuery\"><Argument Name=\"QueryName\">UpColgatePtsIssued</Argum"
-        "ent></Action><Comment>x This query builds new data switching SHIPTOs to BILLTOs "
-        "thru [jdeshipt]</"
+    Comment ="_AXL:ent Name=\"QueryName\">erColgateptsissued</Argument></Action><Comment>x UpC"
+        "olgatePtsIssued - Modified to switch to JDEB from old JDES 3/8/2005</Comment><Ac"
+        "tion Name=\"OpenQuery\"><Argument Name=\"QueryName\">UpColgatePtsIssued</Argumen"
+        "t></Action><Comment"
 End
 Begin
-    Comment ="_AXL:Comment><Comment>x =\"DELETE * FROM [Defaults];\"  Empty the table.</Commen"
-        "t><Action Name=\"RunSQL\"><Argument Name=\"SQLStatement\">=\"DELETE * FROM [Defa"
-        "ults];\"</Argument></Action><Comment>x [CYDftsAQ] Loads Month and Year Data from"
-        " [CYMnQ]</Comment><Ac"
+    Comment ="_AXL:>x This query builds new data switching SHIPTOs to BILLTOs thru [jdeshipt]<"
+        "/Comment><Comment>x =\"DELETE * FROM [Defaults];\"  Empty the table.</Comment><A"
+        "ction Name=\"RunSQL\"><Argument Name=\"SQLStatement\">=\"DELETE * FROM [Defaults"
+        "];\"</Argument></Acti"
 End
 Begin
-    Comment ="_AXL:tion Name=\"OpenQuery\"><Argument Name=\"QueryName\">CYDftsAQ</Argument></A"
-        "ction><Comment>x Will show all the month and year data calculated</Comment><Acti"
-        "on Name=\"OpenForm\"><Argument Name=\"FormName\">DefaultsF</Argument><Argument N"
-        "ame=\"DataMode\">Read O"
+    Comment ="_AXL:on><Comment>x [CYDftsAQ] Loads Month and Year Data from [CYMnQ]</Comment><A"
+        "ction Name=\"OpenQuery\"><Argument Name=\"QueryName\">CYDftsAQ</Argument></Actio"
+        "n><Comment>x Will show all the month and year data calculated</Comment><Action N"
+        "ame=\"OpenForm\"><A"
 End
 Begin
-    Comment ="_AXL:nly</Argument></Action><Comment>x [OnClose] will set Global Variables for t"
+    Comment ="_AXL:rgument Name=\"FormName\">DefaultsF</Argument><Argument Name=\"DataMode\">R"
+        "ead Only</Argument></Action><Comment>x [OnClose] will set Global Variables for t"
         "he Reporting Period</Comment><Comment>x Open [DftTestF] to view the current vari"
-        "able values</Comment><Comment>x ************ ALWAYS ADD OPEN AND CLOSE OF [Defau"
-        "ltsF] TO EVER"
+        "able values</Comm"
 End
 Begin
-    Comment ="_AXL:Y MACRO***************</Comment><Comment>x ****TO ENSURE THAT CURRENT MONTH"
-        "/YEAR VALUES ARE LOADED INTO GLOBAL VARIABLES****</Comment><Action Name=\"StopMa"
-        "cro\"/><Comment>x The following E-Mail notice is sent ONLY AFTER Spending.mdb ha"
-        "s run its macro"
+    Comment ="_AXL:ent><Comment>x ************ ALWAYS ADD OPEN AND CLOSE OF [DefaultsF] TO EVE"
+        "RY MACRO***************</Comment><Comment>x ****TO ENSURE THAT CURRENT MONTH/YEA"
+        "R VALUES ARE LOADED INTO GLOBAL VARIABLES****</Comment><Action Name=\"StopMacro\""
+        "/><Comment>x T"
 End
 Begin
-    Comment ="_AXL:s</Comment><Comment>x Send Notice to Donna Bond (&amp; cc RK) that [members"
-        "] is updated and Greeting table is ready for Review and Edit</Comment><Action Na"
-        "me=\"EMailDatabaseObject\"><Argument Name=\"To\">Richard.Zepernick@henryschein.c"
-        "om</Argument><Arg"
+    Comment ="_AXL:he following E-Mail notice is sent ONLY AFTER Spending.mdb has run its macr"
+        "os</Comment><Comment>x Send Notice to Donna Bond (&amp; cc RK) that [members] is"
+        " updated and Greeting table is ready for Review and Edit</Comment><Action Name=\""
+        "EMailDatabase"
 End
 Begin
-    Comment ="_AXL:ument Name=\"Subject\">Edit Greeting table for Privileges Newsletter</Argum"
-        "ent><Argument Name=\"MessageText\">The members table has been updated.  So it is"
-        " time to Review and Edit the Greetings table.</Argument><Argument Name=\"EditMes"
-        "sage\">No</Argument"
+    Comment ="_AXL:Object\"><Argument Name=\"To\">Richard.Zepernick@henryschein.com</Argument>"
+        "<Argument Name=\"Subject\">Edit Greeting table for Privileges Newsletter</Argume"
+        "nt><Argument Name=\"MessageText\">The members table has been updated.  So it is "
+        "time to Review and E"
 End
 Begin
-    Comment ="_AXL:></Action><Comment>x NOTE: Currently email only goes to RZ</Comment><Commen"
-        "t>x Run [MembersBadZipsQ] to find errant Zip Codes</Comment><Comment>x END</Comm"
-        "ent><Comment>x Last Run: 7/2/12; 4/28/05; 4/26/05; 3/30/05; 3/7/2005</Comment></"
-        "Statements></"
+    Comment ="_AXL:dit the Greetings table.</Argument><Argument Name=\"EditMessage\">No</Argum"
+        "ent></Action><Comment>x NOTE: Currently email only goes to RZ</Comment><Comment>"
+        "x Run [MembersBadZipsQ] to find errant Zip Codes</Comment><Comment>x END</Commen"
+        "t><Comment>x La"
 End
 Begin
-    Comment ="_AXL:UserInterfaceMacro>"
+    Comment ="_AXL:st Run: 7/2/12; 4/28/05; 4/26/05; 3/30/05; 3/7/2005</Comment></Statements><"
+        "/UserInterfaceMacro>"
 End

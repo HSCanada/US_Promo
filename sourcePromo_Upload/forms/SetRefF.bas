@@ -69,8 +69,10 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Compare Database
 
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 ' *** Clean ***, 27 Jun 19
-'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
 
 Private Sub Form_Close()
 config_log "Form_SetRefF - Form_Close"

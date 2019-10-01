@@ -1,4 +1,8 @@
 Option Explicit
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Logged, needs ASSERT, 17 Jul 19
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
 ' to change the sheet use "orange" as password
 
 Global Const APPLICATION_TITLE = "QA Divisional Item Free Goods Upload"
