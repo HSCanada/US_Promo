@@ -11,7 +11,7 @@ ByVal lpNewFileName As String, _
 ByVal bFailIfExists As Long) As Long
 
 Sub CopyFile(SourceFile As String, DestFile As String)
-config_log "CopyFile"
+config_log "CopyFile (SourceFile=" & SourceFile & ", DestFile=" & DestFile
 
 '---------------------------------------------------------------
 ' PURPOSE: Copy a file on disk from one location to another.
