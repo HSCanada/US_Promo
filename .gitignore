@@ -8,6 +8,8 @@
 *.log
 *.msg
 *.xlsm
+*.docx
+*.xlsx
 DataSourceUS/
 
 # Prerequisites
