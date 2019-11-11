@@ -11,6 +11,8 @@
 *.docx
 *.xlsx
 DataSourceUS/
+*.mht
+*.xlsx
 
 # Prerequisites
 *.d
